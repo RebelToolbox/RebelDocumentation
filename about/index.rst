@@ -9,7 +9,6 @@ About
    faq
    troubleshooting
    list_of_features
-   docs_changelog
    release_policy
    complying_with_licenses
 
