@@ -17,16 +17,6 @@ This page gives a broad presentation of the engine and of the contents
 of this documentation, so that you know where to start if you are a beginner or
 where to look if you need info on a specific feature.
 
-Before you start
-----------------
-
-The :ref:`Tutorials and resources <doc_community_tutorials>` page lists
-video tutorials contributed by the community. If you prefer video to text,
-those may be worth a look.
-
-In case you have trouble with one of the tutorials or your project,
-you can find help on the various :ref:`Community channels <doc_community_channels>`.
-
 About Rebel Engine
 ------------------
 
@@ -90,11 +80,9 @@ relatively intuitive:
 - The :ref:`sec-devel` section is intended for advanced users and contributors
   to the engine development, with information on compiling the engine,
   developing C++ modules or editor plugins.
-- The :ref:`sec-community` section gives information related to contributing to
-  engine development and the life of its community, e.g. how to report bugs,
-  help with the documentation, etc. It also points to various community channels
-  like IRC and Discord and contains a list of recommended third-party tutorials
-  outside of this documentation.
+- The :ref:`sec-contributing` section gives information related to contributing to
+  engine development, how to report bugs,
+  help with the documentation, etc.
 - Finally, the :ref:`sec-class-ref` is the documentation of the Rebel Engine API,
   which is also available directly within the engine's script editor. It is
   generated automatically from a file in the main source repository, therefore

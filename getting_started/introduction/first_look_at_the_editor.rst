@@ -117,14 +117,6 @@ auto-completion, and built-in code reference.
 
 .. image:: img/editor_intro_workspace_script.png
 
-Finally, the **AssetLib** is a library of free and open-source add-ons, scripts,
-and assets to use in your projects.
-
-.. image:: img/editor_intro_workspace_assetlib.png
-
-.. seealso:: You can learn more about the asset library in
-             :ref:`doc_what_is_assetlib`.
-
 Integrated class reference
 --------------------------
 

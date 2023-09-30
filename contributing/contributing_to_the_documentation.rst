@@ -6,11 +6,6 @@ Contributing to the documentation
 This guide explains how to contribute to Godot's documentation, be it by
 writing or reviewing pages.
 
-.. seealso::
-
-   If you want to translate pages or the class reference from English to other
-   languages, read :ref:`doc_editor_and_docs_localization`.
-
 Getting started
 ---------------
 

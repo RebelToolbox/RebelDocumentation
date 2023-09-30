@@ -140,12 +140,3 @@ information:
 
 Following these guidelines will maximize your chances of getting the answer
 you're looking for. They will save time both to you and the persons helping you.
-
-Community tutorials
--------------------
-
-This manual aims to provide a comprehensive reference of Godot's features. Aside
-from the 2D and 3D getting started series, it does not contain tutorials to
-implement specific game genres. If you're looking for a tutorial about creating
-a role-playing game, a platformer, or other, please see
-:ref:`doc_community_tutorials`, which lists content made by the Godot community.

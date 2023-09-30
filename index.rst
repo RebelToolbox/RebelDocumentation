@@ -87,13 +87,10 @@ The main documentation for the site is organized into the following sections:
 
 .. toctree::
    :maxdepth: 1
-   :caption: Community
-   :name: sec-community
+   :caption: Contributing
+   :name: sec-contributing
 
-   community/contributing/index
-   community/asset_library/index
-   community/channels
-   community/tutorials
+   contributing/index
 
 
 .. toctree::
