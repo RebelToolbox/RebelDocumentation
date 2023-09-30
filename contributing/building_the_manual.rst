@@ -3,18 +3,18 @@
 Building the manual with Sphinx
 ===============================
 
-This page explains how to build a local copy of the Godot manual using the
+This page explains how to build a local copy of the Rebel Documentation manual using the
 Sphinx docs engine. This allows you to have local HTML files and build the
 documentation as a PDF, EPUB, or LaTeX file, for example.
 
 To get started, you need to:
 
-1. Clone the `godot-docs repository <https://github.com/godotengine/godot-docs/>`__.
+1. Clone the `Rebel Documenation repository <https://github.com/RebelToolbox/RebelDocumentation>`__.
 2. Install `Sphinx <https://www.sphinx-doc.org/>`__
 3. To build the docs as HTML files, install the `readthedocs.org theme
    <https://github.com/snide/sphinx_rtd_theme>`__.
-4. Install the Sphinx extensions defined in the `godot-docs repository
-   <https://github.com/godotengine/godot-docs/>`__ ``requirements.txt`` file.
+4. Install the Sphinx extensions defined in the `Rebel Documenation repository
+   <https://github.com/RebelToolbox/RebelDocumentation>`__ ``requirements.txt`` file.
 
 We recommend using `pip <https://pip.pypa.io>`__, Python’s package manager to
 install all these tools. It comes pre-installed with `Python
@@ -26,7 +26,7 @@ the commands to clone the repository and then install all requirements.
 
 .. code:: sh
 
-    git clone https://github.com/godotengine/godot-docs.git
+    git clone https://github.com/RebelToolbox/RebelDocumentation.git
     pip3 install -r requirements.txt
 
 
@@ -71,9 +71,7 @@ from the final HTML documentation but will keep the rest intact.
 
 .. note:: If you delete the ``classes/`` folder, do not use ``git add .`` when
           working on a pull request or the whole ``classes/`` folder will be
-          removed when you commit. See `#3157
-          <https://github.com/godotengine/godot-docs/issues/3157>`__ for more
-          detail.
+          removed when you commit.
 
 Alternatively, you can build the documentation by running the sphinx-build
 program manually:

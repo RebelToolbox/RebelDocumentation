@@ -5,7 +5,7 @@ Pull request workflow
 
 .. highlight:: shell
 
-The so-called "PR workflow" used by Godot is common to many projects using
+The so-called "PR workflow" used by Rebel Toolbox is common to many projects using
 Git, and should be familiar to veteran free software contributors. The idea
 is that only a small number (if any) commit directly to the *master* branch.
 Instead, contributors *fork* the project (i.e. create a copy of it, which
@@ -21,20 +21,20 @@ the *master* branch).
 
 We will go together through an example to show the typical workflow and
 associated Git commands. But first, let's have a quick look at the
-organization of Godot's Git repository.
+organization of Rebel Engine's Git repository.
 
 Git source repository
 ---------------------
 
-The `repository on GitHub <https://github.com/godotengine/godot>`_ is a
+The `repository on GitHub <https://github.com/RebelToolbox/RebelEngine>`_ is a
 `Git <https://git-scm.com>`_ code repository together with an embedded
 issue tracker and PR system.
 
 .. note:: If you are contributing to the documentation, its repository can
-          be found `here <https://github.com/godotengine/godot-docs>`_.
+          be found `here <https://github.com/RebelToolbox/RebelDocumentation>`_.
 
 The Git version control system is the tool used to keep track of successive
-edits to the source code - to contribute efficiently to Godot, learning the
+edits to the source code - to contribute efficiently to Rebel Toolbox, learning the
 basics of the Git command line is *highly* recommended. There exist some
 graphical interfaces for Git, but they usually encourage users to take bad
 habits regarding the Git and PR workflow, and we therefore recommend not to
@@ -51,27 +51,26 @@ which quickly leads to PRs with an unreadable Git history (especially after peer
 
 The branches on the Git repository are organized as follows:
 
--  The ``master`` branch is where the development of the next major version
+-  The ``main`` branch is where the development of the next major version
    occurs. As a development branch, it can be unstable
    and is not meant for use in production. This is where PRs should be done
    in priority.
--  The stable branches are named after their version, e.g. ``3.1`` and ``2.1``.
-   They are used to backport bugfixes and enhancements from the ``master``
-   branch to the currently maintained stable release (e.g. 3.1.2 or 2.1.6).
+-  The stable branches are named after their version, e.g. ``1.0`` and ``1.1``.
+   They are used to backport bugfixes and enhancements from the ``main``
+   branch to the currently maintained stable release (e.g. 1.1.1).
    As a rule of thumb, the last stable branch is maintained until the next
-   minor version (e.g. the ``3.0`` branch was maintained until the release of
-   Godot 3.1).
+   minor version.
    If you want to make PRs against a maintained stable branch, please check
-   first if your changes are also relevant for the ``master`` branch, and if so
-   make the PR for the ``master`` branch in priority. Release managers can then
+   first if your changes are also relevant for the ``main`` branch, and if so
+   make the PR for the ``main`` branch in priority. Release managers can then
    cherry-pick the fix to a stable branch if relevant.
 -  There might occasionally be feature branches, usually meant to be merged into
-   the ``master`` branch at some time.
+   the ``main`` branch at some time.
 
 Forking and cloning
 -------------------
 
-The first step is to *fork* the `godotengine/godot <https://github.com/godotengine/godot>`_
+The first step is to *fork* the `Rebel Engine <https://github.com/RebelToolbox/RebelEngine>`_
 repository on GitHub. To do so, you will need to have a GitHub account and to
 be logged in. In the top right corner of the repository's GitHub page, you
 should see the "Fork" button as shown below:
@@ -79,7 +78,7 @@ should see the "Fork" button as shown below:
 .. image:: img/github_fork_button.png
 
 Click it, and after a while you should be redirected to your own fork of the
-Godot repo, with your GitHub username as namespace:
+Rebel Engine repo, with your GitHub username as namespace:
 
 .. image:: img/github_fork_url.png
 
@@ -95,33 +94,33 @@ To clone your fork from GitHub, use the following command:
 
 ::
 
-    $ git clone https://github.com/USERNAME/godot
+    $ git clone https://github.com/<YourUsername>/RebelEngine.git
 
 .. note:: In our examples, the "$" character denotes the command line prompt
           on typical UNIX shells. It is not part of the command and should
           not be typed.
 
-After a little while, you should have a ``godot`` directory in your current
+After a little while, you should have a ``RebelEngine`` directory in your current
 working directory. Move into it using the ``cd`` command:
 
 ::
 
-    $ cd godot
+    $ cd RebelEngine
 
 We will start by setting up a reference to the original repository that we forked:
 
 ::
 
-    $ git remote add upstream https://github.com/godotengine/godot
+    $ git remote add upstream https://github.com/RebelToolbox/RebelEngine
     $ git fetch upstream
 
 This will create a reference named ``upstream`` pointing to the original
-``godotengine/godot`` repository. This will be useful when you want to pull new
-commits from its ``master`` branch to update your fork. You have another
-remote reference named ``origin``, which points to your fork (``USERNAME/godot``).
+``RebelToolbox/RebelEngine`` repository. This will be useful when you want to pull new
+commits from its ``main`` branch to update your fork. You have another
+remote reference named ``origin``, which points to your fork (``<YourUsername>/RebelEngine``).
 
 You only need to do the above steps once, as long as you keep that local
-``godot`` folder (which you can move around if you want, the relevant
+``RebelEngine`` folder (which you can move around if you want, the relevant
 metadata is hidden in its ``.git`` subfolder).
 
 .. note:: *Branch it, pull it, code it, stage it, commit, push it, rebase
@@ -136,7 +135,7 @@ metadata is hidden in its ``.git`` subfolder).
           working in Git.
 
 In the following, we will assume as an example that you want to implement a feature in
-Godot's project manager, which is coded in the ``editor/project_manager.cpp``
+Rebel Engine's project manager, which is coded in the ``editor/project_manager.cpp``
 file.
 
 Branching
@@ -355,18 +354,17 @@ Issuing a pull request
 ----------------------
 
 When you load your fork's branch on GitHub, you should see a line saying
-*"This branch is 2 commits ahead of godotengine:master."* (and potentially some
-commits behind, if your ``master`` branch was out of sync with the upstream
-``master`` branch).
+*"This branch is 2 commits ahead of RebelToolbox:main."* (and potentially some
+commits behind, if your ``main`` branch was out of sync with the upstream
+``main`` branch).
 
 .. image:: img/github_fork_make_pr.png
 
 On that line, there is a "Pull request" link. Clicking it will open a form
-that will let you issue a pull request on the ``godotengine/godot`` upstream
+that will let you issue a pull request on the ``RebelToolbox/RebelEngine`` upstream
 repository. It should show you your two commits, and state "Able to merge".
 If not (e.g. it has way more commits, or says there are merge conflicts),
-don't create the PR yet, something went wrong. Go to our
-`Godot Contributors Chat <https://chat.godotengine.org/>`_ and ask for support :)
+don't create the PR yet, something went wrong.
 
 Use an explicit title for the PR and put the necessary details in the comment
 area. You can drag and drop screenshots, GIFs or zipped projects if relevant,
@@ -434,7 +432,7 @@ aware of our workflow and Git usage tips, reviewers might request of your to
 
 Indeed, if some commits have been made following reviews to fix bugs, typos, etc.
 in the original commit, they are not relevant to a future changelog reader who
-would want to know what happened in the Godot codebase, or when and how a given
+would want to know what happened in the Rebel Engine codebase, or when and how a given
 file was last modified.
 
 To squash those extraneous commits into the main one, we will have to *rewrite
@@ -505,9 +503,9 @@ will raise an error:
 ::
 
     $ git push origin better-project-manager
-    To https://github.com/akien-mga/godot
+    To https://github.com/<YourUsername>/RebelEngine.git
      ! [rejected]        better-project-manager -> better-project-manager (non-fast-forward)
-    error: failed to push some refs to 'https://akien-mga@github.com/akien-mga/godot'
+    error: failed to push some refs to 'https://<YourUsername>@github.com/<YourUsername>/RebelEngine.git'
     hint: Updates were rejected because the tip of your current branch is behind
     hint: its remote counterpart.
 

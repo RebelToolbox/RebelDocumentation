@@ -6,7 +6,7 @@ Best practices for engine contributors
 Introduction
 ------------
 
-Godot has a large amount of users who have the ability to contribute, given the
+Rebel Toolbox has a large amount of users who have the ability to contribute, given the
 project itself is aimed mainly at users with the ability to do programming.
 Despite this, not all of them have the same level of experience working in large
 projects or in software engineering, which can lead to common misunderstandings
@@ -76,7 +76,7 @@ than it needs to be.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Software is designed to solve problems, but we can't expect it to solve *every
-problem that exists under the sun*. As a game engine, Godot will solve problems
+problem that exists under the sun*. As a game engine, Rebel Engine will solve problems
 for you, so it helps you to make games better and faster, but it won't make the
 *entire game* for you. A line must be drawn somewhere.
 
@@ -128,7 +128,7 @@ The only exception, in this case, is when an area of code has a clear owner
 (agreed by the other contributors), who talks to users directly and has the most
 knowledge to implement a solution directly.
 
-Also, Godot's philosophy is to favor ease of use and maintenance over absolute
+Also, Rebel Toolbox's philosophy is to favor ease of use and maintenance over absolute
 performance. Performance optimizations will be considered, but they may not
 be accepted if they make something too difficult to use or if they add too much
 complexity to the codebase.
@@ -225,7 +225,7 @@ but this path is always the advised one.
 Not every problem has a simple solution and, many times, the right choice is to
 use a third party library to solve the problem.
 
-As Godot requires to be shipped in a large amount of platforms, we can't
+As Rebel Engine requires to be shipped in a large amount of platforms, we can't
 link libraries dynamically. Instead, we bundle them in our source tree.
 
 .. image:: img/best_practices8.png
@@ -234,11 +234,11 @@ As a result, we are very picky with what goes in, and we tend to prefer smaller
 libraries (in fact, single header ones are our favorite). Only in cases where
 there is no other choice we end up bundling something larger.
 
-Also, libraries must use a permissive enough license to be included into Godot.
+Also, libraries must use a permissive enough license to be included into Rebel Engine.
 Some examples of acceptable licenses are Apache 2.0, BSD, MIT, ISC, and MPL 2.0.
 In particular, we cannot accept libraries licensed under the GPL or LGPL since
 these licenses effectively disallow static linking in proprietary software
-(which Godot is distributed as in most exported projects). This requirement also
+(which Rebel Engine is distributed as in most exported projects). This requirement also
 applies to the editor, since we may want to run it on iOS in the long term.
 Since iOS doesn't support dynamic linking, static linking the only option on
 that platform.
