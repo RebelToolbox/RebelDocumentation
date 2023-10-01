@@ -1,7 +1,7 @@
 :github_url: hide
 
-Godot API
-=========
+Rebel Engine API
+================
 
 .. toctree::
    :maxdepth: 1
