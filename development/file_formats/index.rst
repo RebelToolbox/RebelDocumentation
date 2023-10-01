@@ -1,5 +1,5 @@
-Godot file formats
-==================
+File formats
+============
 
 .. toctree::
    :maxdepth: 1
