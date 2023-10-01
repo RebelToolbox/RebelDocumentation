@@ -7,7 +7,7 @@ Cross-compiling for iOS on Linux
 
 The procedure for this is somewhat complex and requires a lot of steps,
 but once you have the environment properly configured it will be easy to
-compile Godot for iOS anytime you want.
+compile Rebel Engine for iOS anytime you want.
 
 Disclaimer
 ----------
@@ -121,8 +121,8 @@ to the following commands:
 Now you should have the iOS toolchain binaries in
 ``/home/user/iostoolchain/usr/bin``.
 
-Compiling Godot for iPhone
---------------------------
+Compiling Rebel Engine for iPhone
+---------------------------------
 
 Once you've done the above steps, you should keep two things in your
 environment: the built toolchain and the iPhoneOS SDK directory. Those
@@ -136,7 +136,7 @@ environment variable defined to anything.
 
     $ export OSXCROSS_IOS=anything
 
-Now you can compile for iPhone using SCons like the standard Godot
+Now you can compile for iPhone using SCons like the standard Rebel Engine
 way, with some additional arguments to provide the correct paths:
 
 ::
@@ -150,13 +150,13 @@ Producing fat binaries
 Apple requires a fat binary with both architectures (``armv7`` and
 ``arm64``) in a single file. To do this, use the
 ``arm-apple-darwin11-lipo`` executable. The following example assumes
-you are in the root Godot source directory:
+you are in the root Rebel Engine source directory:
 
 ::
 
-    $ /path/to/iostoolchain/usr/bin/arm-apple-darwin11-lipo -create bin/libgodot.iphone.opt.debug.arm.a bin/libgodot.iphone.opt.debug.arm64.a -output bin/libgodot.iphone.debug.fat.a
-    $ /path/to/iostoolchain/usr/bin/arm-apple-darwin11-lipo -create bin/libgodot_camera_module.iphone.opt.debug.arm.a bin/libgodot_camera_module.iphone.opt.debug.arm64.a -output bin/libgodot_camera_module.iphone.debug.fat.a
-    $ /path/to/iostoolchain/usr/bin/arm-apple-darwin11-lipo -create bin/libgodot_arkit_module.iphone.opt.debug.arm.a bin/libgodot_arkit_module.iphone.opt.debug.arm64.a -output bin/libgodot_arkit_module.iphone.debug.fat.a
+    $ /path/to/iostoolchain/usr/bin/arm-apple-darwin11-lipo -create bin/librebel.iphone.opt.debug.arm.a bin/librebel.iphone.opt.debug.arm64.a -output bin/librebel.iphone.debug.fat.a
+    $ /path/to/iostoolchain/usr/bin/arm-apple-darwin11-lipo -create bin/librebel_camera_module.iphone.opt.debug.arm.a bin/librebel_camera_module.iphone.opt.debug.arm64.a -output bin/librebel_camera_module.iphone.debug.fat.a
+    $ /path/to/iostoolchain/usr/bin/arm-apple-darwin11-lipo -create bin/librebel_arkit_module.iphone.opt.debug.arm.a bin/librebel_arkit_module.iphone.opt.debug.arm64.a -output bin/librebel_arkit_module.iphone.debug.fat.a
 
 
 Then you will have iOS fat binaries in ``bin`` directory.

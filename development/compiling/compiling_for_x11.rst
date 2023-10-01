@@ -31,10 +31,10 @@ required:
 -  *Optional* - libudev (build with ``udev=yes``).
 -  *Optional* - yasm (for WebM SIMD optimizations).
 
-.. seealso:: To get the Godot source code for compiling, see
+.. seealso:: To get the Rebel Engine source code for compiling, see
              :ref:`doc_getting_source`.
 
-             For a general overview of SCons usage for Godot, see
+             For a general overview of SCons usage for Rebel Engine, see
              :ref:`doc_introduction_to_the_buildsystem`.
 
 Distro-specific one-liners
@@ -109,7 +109,7 @@ Start a terminal, go to the root dir of the engine source code and type:
     scons -j8 platform=x11
 
 A good rule of thumb for the ``-j`` (*jobs*) flag, is to have at least as many
-threads compiling Godot as you have cores in your CPU, if not one or two more.
+threads compiling Rebel Engine as you have cores in your CPU, if not one or two more.
 Feel free to add the ``-j`` option to any SCons command you see below.
 
 If all goes well, the resulting binary executable will be placed in the
@@ -128,16 +128,16 @@ manager.
     Using Clang appears to be a requirement for OpenBSD, otherwise fonts
     would not build.
 
-.. note:: If you are compiling Godot for production use, then you can
+.. note:: If you are compiling Rebel Engine for production use, then you can
           make the final executable smaller and faster by adding the
           SCons option ``target=release_debug``.
 
-          If you are compiling Godot with GCC, you can make the binary
+          If you are compiling Rebel Engine with GCC, you can make the binary
           even smaller and faster by adding the SCons option ``use_lto=yes``.
           As link-time optimization is a memory-intensive process,
           this will require about 7 GB of available RAM while compiling.
 
-.. note:: If you want to use separate editor settings for your own Godot builds
+.. note:: If you want to use separate editor settings for your own Rebel Engine builds
           and official releases, you can enable
           :ref:`doc_data_paths_self_contained_mode` by creating a file called
           ``._sc_`` or ``_sc_`` in the ``bin/`` folder.
@@ -195,9 +195,9 @@ To create standard export templates, the resulting files must be copied to:
 
 ::
 
-    $HOME/.local/share/godot/templates/[gd-version]/
+    $HOME/.local/share/rebel/templates/[gd-version]/
 
-and named like this (even for \*BSD which is seen as "Linux X11" by Godot):
+and named like this (even for \*BSD which is seen as "Linux X11" by Rebel Engine):
 
 ::
 
@@ -213,16 +213,16 @@ here:
 .. image:: img/lintemplates.png
 
 You don't even need to copy them, you can just reference the resulting
-files in the ``bin/`` directory of your Godot source folder, so the next
+files in the ``bin/`` directory of your Rebel Engine source folder, so the next
 time you build, you automatically have the custom templates referenced.
 
 Using Clang and LLD for faster development
 ------------------------------------------
 
-You can also use Clang and LLD to build Godot. This has two upsides compared to
+You can also use Clang and LLD to build Rebel Engine. This has two upsides compared to
 the default GCC + GNU ld setup:
 
-- LLD links Godot significantly faster compared to GNU ld or gold. This leads to
+- LLD links Rebel Engine significantly faster compared to GNU ld or gold. This leads to
   faster iteration times.
 - Clang tends to give more useful error messages compared to GCC.
 
@@ -256,7 +256,7 @@ to get even faster builds.
     ln -s ~/.local/opt/pyston/bin/scons ~/.local/bin/pyston-scons
 
 - Instead of running ``scons <build arguments>``, run ``pyston-scons <build arguments>``
-  to compile Godot.
+  to compile Rebel Engine.
 
 If you can't run ``pyston-scons`` after creating the symbolic link,
 make sure ``$HOME/.local/bin/`` is part of your user's ``PATH`` environment variable.

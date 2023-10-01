@@ -40,10 +40,10 @@ For compiling under Windows, the following is required:
           For each MSYS2 MinGW subsystem, you should then run
           `pip3 install scons` in its shell.
 
-.. seealso:: To get the Godot source code for compiling, see
+.. seealso:: To get the Rebel Engine source code for compiling, see
              :ref:`doc_getting_source`.
 
-             For a general overview of SCons usage for Godot, see
+             For a general overview of SCons usage for Rebel Engine, see
              :ref:`doc_introduction_to_the_buildsystem`.
 
 Setting up SCons
@@ -88,25 +88,25 @@ C++ support, run the installer again; it should present you a **Modify** button.
 Running the installer from *Add/Remove Programs* will only give you
 a **Repair** option, which won't let you install C++ tools.
 
-Downloading Godot's source
---------------------------
+Downloading Rebel Engine's source
+---------------------------------
 
 Refer to :ref:`doc_getting_source` for detailed instructions.
 
 The tutorial will assume from now on that you placed the source code in
-``C:\godot``.
+``C:\RebelEngine``.
 
 .. warning::
 
     To prevent slowdowns caused by continuous virus scanning during compilation,
-    add the Godot source folder to the list of exceptions in your antivirus
+    add the Rebel Engine source folder to the list of exceptions in your antivirus
     software.
 
     For Windows Defender, hit the :kbd:`Windows` key, type
     "Windows Defender Settings" then hit :kbd:`Enter`.
     Under **Virus & threat protection**, go to **Virus & threat protection setting**
     and scroll down to **Exclusions**. Click **Add or remove exclusions** then
-    add the Godot source folder.
+    add the Rebel Engine source folder.
 
 Compiling
 ---------
@@ -122,7 +122,7 @@ builds cannot be performed from the MSYS2 or MinGW shells. Use either
 ``cmd.exe`` or PowerShell instead.
 
 During development, using the Visual Studio compiler is usually a better idea,
-as it links the Godot binary much faster than MinGW. However, MinGW can
+as it links the Rebel Engine binary much faster than MinGW. However, MinGW can
 produce more optimized binaries using link-time optimization (see below),
 making it a better choice for production use.
 
@@ -132,13 +132,13 @@ Running SCons
 After opening a command prompt, change to the root directory of
 the engine source code (using ``cd``) and type::
 
-    C:\godot> scons platform=windows
+    C:\RebelEngine> scons platform=windows
 
 You can specify a number of CPU threads to use to speed up the build::
 
-    C:\godot> scons -j6 platform=windows
+    C:\RebelEngine> scons -j6 platform=windows
 
-In general, it is OK to have at least as many threads compiling Godot as you
+In general, it is OK to have at least as many threads compiling Rebel Engine as you
 have cores in your CPU, if not one or two more. Feel free to add the ``-j``
 option to any SCons command you see below.
 
@@ -146,24 +146,24 @@ option to any SCons command you see below.
           pywin32 being missing. You can safely ignore this warning.
 
 If all goes well, the resulting binary executable will be placed in
-``C:\godot\bin\`` with the name ``godot.windows.tools.32.exe`` or
-``godot.windows.tools.64.exe``. By default, SCons will build a binary matching
+``C:\RebelEngine\bin\`` with the name ``rebel.windows.tools.32.exe`` or
+``rebel.windows.tools.64.exe``. By default, SCons will build a binary matching
 your CPU architecture, but this can be overridden using ``bits=64`` or
 ``bits=32``.
 
 This executable file contains the whole engine and runs without any
 dependencies. Running it will bring up the Project Manager.
 
-.. note:: If you are compiling Godot for production use, then you can
+.. note:: If you are compiling Rebel Engine for production use, then you can
           make the final executable smaller and faster by adding the
           SCons option ``target=release_debug``.
 
-          If you are compiling Godot with MinGW, you can make the binary
+          If you are compiling Rebel Engine with MinGW, you can make the binary
           even smaller and faster by adding the SCons option ``use_lto=yes``.
           As link-time optimization is a memory-intensive process,
           this will require about 7 GB of available RAM while compiling.
 
-.. note:: If you want to use separate editor settings for your own Godot builds
+.. note:: If you want to use separate editor settings for your own Rebel Engine builds
           and official releases, you can enable
           :ref:`doc_data_paths_self_contained_mode` by creating a file called
           ``._sc_`` or ``_sc_`` in the ``bin/`` folder.
@@ -180,11 +180,11 @@ the ``vsproj=yes`` parameter, like this::
 
    scons p=windows vsproj=yes
 
-You will be able to open Godot's source in a Visual Studio solution now,
-and able to build Godot using Visual Studio's **Build** button.
+You will be able to open Rebel Engine's source in a Visual Studio solution now,
+and able to build Rebel Engine using Visual Studio's **Build** button.
 
 If you need to edit the build commands, they are located in
-"Godot" project settings, NMAKE sheet. SCons is called at the end of
+"Rebel" project settings, NMAKE sheet. SCons is called at the end of
 the commands. If you make a mistake, copy the command from one of the
 other build configurations (debug, release_debug, release) or
 architectures (Win32/x64); they are equivalent.
@@ -266,19 +266,19 @@ And for 32-bit::
 Creating Windows export templates
 ---------------------------------
 
-Windows export templates are created by compiling Godot without the editor,
+Windows export templates are created by compiling Rebel Engine without the editor,
 with the following flags::
 
-    C:\godot> scons platform=windows tools=no target=release_debug bits=32
-    C:\godot> scons platform=windows tools=no target=release bits=32
-    C:\godot> scons platform=windows tools=no target=release_debug bits=64
-    C:\godot> scons platform=windows tools=no target=release bits=64
+    C:\RebelEngine> scons platform=windows tools=no target=release_debug bits=32
+    C:\RebelEngine> scons platform=windows tools=no target=release bits=32
+    C:\RebelEngine> scons platform=windows tools=no target=release_debug bits=64
+    C:\RebelEngine> scons platform=windows tools=no target=release bits=64
 
 If you plan on replacing the standard export templates, copy these to the
 following location, replacing ``<version>`` with the version identifier
-(such as ``3.1.1.stable`` or ``3.2.dev``)::
+(such as ``1.1.stable`` or ``1.2.dev``)::
 
-    %USERPROFILE%\AppData\Roaming\Godot\templates\<version>\
+    %USERPROFILE%\AppData\Roaming\Rebel\templates\<version>\
 
 With the following names::
 
@@ -294,5 +294,5 @@ here:
 .. image:: img/wintemplates.png
 
 You don't need to copy them in this case, just reference the resulting
-files in the ``bin\`` directory of your Godot source folder, so the next
+files in the ``bin\`` directory of your Rebel Engine source folder, so the next
 time you build, you will automatically have the custom templates referenced.
