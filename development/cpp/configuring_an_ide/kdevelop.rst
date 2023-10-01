@@ -16,7 +16,7 @@ Importing the project
 
    KDevelop's main screen.
 
-- Navigate to the Godot root folder and select it.
+- Navigate to the Rebel Engine root folder and select it.
 - On the next screen, choose **Custom Build System** for the **Project Manager**.
 
 .. figure:: img/kdevelop_custombuild.png
@@ -34,7 +34,7 @@ Importing the project
 
   .. code-block:: none
 
-     .  // A dot, to indicate the root of the Godot project
+     .  // A dot, to indicate the root of the Rebel Engine project
      core/
      core/os/
      core/math/
@@ -76,12 +76,9 @@ Debugging the project
 
 - Click **Add** to create a new launch configuration.
 - Select **Executable** option and specify the path to your executable located in 
-  the ``<Godot root directory>/bin`` folder. The name depends on your build configuration,
-  e.g. ``godot.x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled.
+  the ``RebelEngine/bin`` folder. The name depends on your build configuration,
+  e.g. ``rebel.x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled.
 
 .. figure:: img/kdevelop_configlaunches2.png
    :figclass: figure-w480
    :align: center
-
-If you run into any issues, ask for help in one of
-`Godot's community channels <https://godotengine.org/community>`__.
