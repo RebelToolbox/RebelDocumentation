@@ -1,16 +1,16 @@
-.. _doc_introduction_to_godot_development:
+.. _doc_introduction_to_rebel_development:
 
-Introduction to Godot development
-=================================
+Introduction to Rebel Engine development
+========================================
 
-This page is meant to introduce the global organization of Godot Engine's
+This page is meant to introduce the global organization of Rebel Engine's
 source code, and give useful tips for extending/fixing the engine on the
 C++ side.
 
 Architecture diagram
 --------------------
 
-The following diagram describes the architecture used by Godot, from the
+The following diagram describes the architecture used by Rebel Engine, from the
 core components down to the abstracted drivers, via the scene
 structure and the servers.
 
@@ -19,22 +19,22 @@ structure and the servers.
 Debugging the editor with gdb
 -----------------------------
 
-If you are writing or correcting bugs affecting Godot Engine's editor,
+If you are writing or correcting bugs affecting Rebel Editor,
 remember that the binary will by default run the project manager first,
 and then only run the editor in another process once you've selected a
 project. To launch a project directly, you need to run the editor by
-passing the ``-e`` argument to Godot Engine's binary from within your
+passing the ``-e`` argument to Rebel Engine's binary from within your
 project's folder. Typically:
 
 .. code-block:: none
 
     $ cd ~/myproject
-    $ gdb godot
+    $ gdb rebel
     > run -e
 
 Or:
 
 .. code-block:: none
 
-    $ gdb godot
+    $ gdb rebel
     > run -e --path ~/myproject

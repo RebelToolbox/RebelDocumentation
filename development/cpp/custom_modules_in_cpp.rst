@@ -6,7 +6,7 @@ Custom modules in C++
 Modules
 -------
 
-Godot allows extending the engine in a modular way. New modules can be
+Rebel Engine allows extending the engine in a modular way. New modules can be
 created and then enabled/disabled. This allows for adding new engine
 functionality at every level without modifying the core, which can be
 split for use and reuse in different modules.
@@ -25,7 +25,7 @@ While it's recommended that most of a game be written in scripting (as
 it is an enormous time saver), it's perfectly possible to use C++
 instead. Adding C++ modules can be useful in the following scenarios:
 
--  Binding an external library to Godot (like PhysX, FMOD, etc).
+-  Binding an external library to Rebel Engine (like PhysX, FMOD, etc).
 -  Optimize critical parts of a game.
 -  Adding new functionality to the engine and/or editor.
 -  Porting an existing game.
@@ -34,14 +34,14 @@ instead. Adding C++ modules can be useful in the following scenarios:
 Creating a new module
 ---------------------
 
-Before creating a module, make sure to :ref:`download the source code of Godot
+Before creating a module, make sure to :ref:`download the source code of Rebel Engine
 and compile it <toc-devel-compiling>`.
 
 To create a new module, the first step is creating a directory inside
 ``modules/``. If you want to maintain the module separately, you can checkout
 a different VCS into modules and use it.
 
-The example module will be called "summator" (``godot/modules/summator``).
+The example module will be called "summator" (``rebel/modules/summator``).
 Inside we will create a simple summator class:
 
 .. code-block:: cpp
@@ -160,7 +160,7 @@ string list:
     env.add_source_files(env.modules_sources, src_list)
 
 This allows for powerful possibilities using Python to construct the file list
-using loops and logic statements. Look at some modules that ship with Godot by
+using loops and logic statements. Look at some modules that ship with Rebel Engine by
 default for examples.
 
 To add include directories for the compiler to look at you can append it to the
@@ -172,7 +172,7 @@ environment's paths:
     env.Append(CPPPATH=["#myotherlib/include"]) # this is an 'absolute' path
 
 If you want to add custom compiler flags when building your module, you need to clone
-``env`` first, so it won't add those flags to whole Godot build (which can cause errors).
+``env`` first, so it won't add those flags to whole Rebel Engine build (which can cause errors).
 Example ``SCsub`` with custom flags:
 
 .. code-block:: python
@@ -210,12 +210,12 @@ this:
 
 .. code-block:: none
 
-    godot/modules/summator/config.py
-    godot/modules/summator/summator.h
-    godot/modules/summator/summator.cpp
-    godot/modules/summator/register_types.h
-    godot/modules/summator/register_types.cpp
-    godot/modules/summator/SCsub
+    rebel/modules/summator/config.py
+    rebel/modules/summator/summator.h
+    rebel/modules/summator/summator.cpp
+    rebel/modules/summator/register_types.h
+    rebel/modules/summator/register_types.cpp
+    rebel/modules/summator/SCsub
 
 You can then zip it and share the module with everyone else. When
 building for every platform (instructions in the previous sections),
@@ -316,7 +316,7 @@ Improving the build system for development
     :ref:`GDNative <doc_what_is_gdnative>` instead.
 
 So far, we defined a clean SCsub that allows us to add the sources
-of our new module as part of the Godot binary.
+of our new module as part of the Rebel Engine binary.
 
 This static approach is fine when we want to build a release version of our
 game, given we want all the modules in a single binary.
@@ -345,19 +345,19 @@ library that will be dynamically loaded when starting our game's binary.
     # Position-independent code is required for a shared library.
     module_env.Append(CCFLAGS=['-fPIC'])
 
-    # Don't inject Godot's dependencies into our shared library.
+    # Don't inject Rebel Engine's dependencies into our shared library.
     module_env['LIBS'] = []
 
     # Define the shared library. By default, it would be built in the module's
     # folder, however it's better to output it into `bin` next to the
-    # Godot binary.
+    # Rebel Engine binary.
     shared_lib = module_env.SharedLibrary(target='#bin/summator', source=sources)
 
     # Finally, notify the main build environment it now has our shared library
     # as a new dependency.
 
     # LIBPATH and LIBS need to be set on the real "env" (not the clone)
-    # to link the specified libraries to the Godot executable.
+    # to link the specified libraries to the Rebel Engine executable.
 
     env.Append(LIBPATH=['#bin'])
 
@@ -367,21 +367,21 @@ library that will be dynamically loaded when starting our game's binary.
     env.Append(LIBS=[shared_lib_shim])
 
 Once compiled, we should end up with a ``bin`` directory containing both the
-``godot*`` binary and our ``libsummator*.so``. However given the .so is not in
+``rebel*`` binary and our ``libsummator*.so``. However given the .so is not in
 a standard directory (like ``/usr/lib``), we have to help our binary find it
 during runtime with the ``LD_LIBRARY_PATH`` environment variable:
 
 .. code-block:: shell
 
     export LD_LIBRARY_PATH="$PWD/bin/"
-    ./bin/godot*
+    ./bin/rebel*
 
 .. note::
   You have to ``export`` the environment variable. Otherwise,
   you won't be able to run your project from the editor.
 
 On top of that, it would be nice to be able to select whether to compile our
-module as shared library (for development) or as a part of the Godot binary
+module as shared library (for development) or as a part of the Rebel Engine binary
 (for release). To do that we can define a custom flag to be passed to SCons
 using the ``ARGUMENT`` command:
 
@@ -411,7 +411,7 @@ using the ``ARGUMENT`` command:
         # Static compilation
         module_env.add_source_files(env.modules_sources, sources)
 
-Now by default ``scons`` command will build our module as part of Godot's binary
+Now by default ``scons`` command will build our module as part of Rebel Engine's binary
 and as a shared library when passing ``summator_shared=yes``.
 
 Finally, you can even speed up the build further by explicitly specifying your
@@ -463,7 +463,7 @@ main ``doc/classes`` directory.
     You can use Git to check if you have missed some of your classes by checking the
     untracked files with ``git status``. For example::
 
-        user@host:~/godot$ git status
+        user@host:~/RebelEngine$ git status
 
     Example output::
 
@@ -479,7 +479,7 @@ main ``doc/classes`` directory.
 
 3. Now we can generate the documentation:
 
-We can do this via running Godot's doctool i.e. ``godot --doctool <path>``,
+We can do this via running Rebel Engine's doctool i.e. ``rebel* --doctool <path>``,
 which will dump the engine API reference to the given ``<path>`` in XML format.
 
 In our case we'll point it to the root of the cloned repository. You can point it
@@ -489,9 +489,9 @@ Run command:
 
    ::
 
-      user@host:~/godot/bin$ ./bin/<godot_binary> --doctool .
+      user@host:~/RebelEngine/bin$ ./bin/<rebel_binary> --doctool .
 
-Now if you go to the ``godot/modules/summator/doc_classes`` folder, you will see
+Now if you go to the ``RebelEngine/modules/summator/doc_classes`` folder, you will see
 that it contains a ``Summator.xml`` file, or any other classes, that you referenced
 in your ``get_doc_classes`` function.
 
@@ -504,7 +504,7 @@ In order to keep documentation up-to-date, all you'll have to do is simply modif
 one of the XML files and recompile the engine from now on.
 
 If you change your module's API, you can also re-extract the docs, they will contain
-the things that you previously added. Of course if you point it to your godot
+the things that you previously added. Of course if you point it to your Rebel Engine
 folder, make sure you don't lose work by extracting older docs from an older engine build
 on top of the newer ones.
 
@@ -551,7 +551,7 @@ Summing up
 
 Remember to:
 
--  use ``GDCLASS`` macro for inheritance, so Godot can wrap it
+-  use ``GDCLASS`` macro for inheritance, so Rebel Engine can wrap it
 -  use ``_bind_methods`` to bind your functions to scripting, and to
    allow them to work as callbacks for signals.
 

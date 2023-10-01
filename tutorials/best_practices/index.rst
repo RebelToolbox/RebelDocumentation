@@ -12,7 +12,7 @@ Best practices
    autoloads_versus_internal_nodes
    node_alternatives
    godot_interfaces
-   godot_notifications
+   notifications
    data_preferences
    logic_preferences
    project_organization

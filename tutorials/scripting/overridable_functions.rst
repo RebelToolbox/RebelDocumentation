@@ -10,7 +10,7 @@ This document presents the ones you'll use most often.
 
 .. seealso:: Under the hood, these functions rely on Godot's low-level
              notifications system. To learn more about it, see
-             :ref:`doc_godot_notifications`.
+             :ref:`doc_notifications`.
 
 Two functions allow you to initialize and get nodes, besides the class's
 constructor: ``_enter_tree()`` and ``_ready()``.

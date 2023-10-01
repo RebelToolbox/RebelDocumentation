@@ -1,7 +1,7 @@
 Debugging on macOS
 ==================
 
-Debugging Godot editor
+Debugging Rebel Editor
 ----------------------
 
 Attaching a debugger to the signed macOS process requires the "com.apple.security.get-task-allow" entitlement, which is not enabled by default, since apps can't be notarized as long as it is enabled.
@@ -34,7 +34,7 @@ Create an ``editor.entitlements`` text file with the following contents:
 
 Then use the following command to re-sign the editor::
 
-    codesign -s - --deep --force --options=runtime --entitlements ./editor.entitlements ./path/to/Godot.app
+    codesign -s - --deep --force --options=runtime --entitlements ./editor.entitlements ./path/to/Rebel.app
 
 Debugging exported project
 --------------------------

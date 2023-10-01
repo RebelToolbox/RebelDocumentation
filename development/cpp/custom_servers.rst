@@ -1,24 +1,23 @@
-.. _doc_custom_godot_servers:
+.. _doc_custom_servers:
 
-Custom Godot servers
-====================
+Custom Servers
+==============
 
 Introduction
 ------------
 
-Godot implements multi-threading as servers. Servers are daemons which
+Rebel Engine implements multi-threading as servers. Servers are daemons which
 manage data, process it, and push the result. Servers implement the
 mediator pattern which interprets resource ID and process data for the
 engine and other modules. In addition, the server claims ownership for
 its RID allocations.
 
-This guide assumes the reader knows how to create C++ modules and Godot
+This guide assumes the reader knows how to create C++ modules and Rebel Engine
 data types. If not, refer to :ref:`doc_custom_modules_in_c++`.
 
 References
 ~~~~~~~~~~~
 
-- `Why does Godot use servers and RIDs? <https://godotengine.org/article/why-does-godot-use-servers-and-rids>`__
 - `Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__
 - `Mediator pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__
 
@@ -32,7 +31,7 @@ What for?
 - Adding a custom VoIP protocol.
 - And more...
 
-Creating a Godot server
+Creating a Rebel Server
 -----------------------
 
 At minimum, a server must have a static instance, a sleep timer, a thread loop,
@@ -76,7 +75,6 @@ an initialization state and a cleanup procedure.
 	private:
 		uint64_t counter;
 		RID_Owner<InfiniteBus> bus_owner;
-		// https://github.com/godotengine/godot/blob/3.x/core/rid.h#L196
 		Set<RID> buses;
 		void _emit_occupy_room(uint64_t room, RID rid);
 
@@ -204,7 +202,6 @@ an initialization state and a cleanup procedure.
 		return ret;
 	}
 
-	// https://github.com/godotengine/godot/blob/3.x/core/rid.h#L187
 	bool HilbertHotel::delete_bus(RID id) {
 		if (bus_owner.owns(id)) {
 			lock();
@@ -273,7 +270,7 @@ an initialization state and a cleanup procedure.
 Custom managed resource data
 ----------------------------
 
-Godot servers implement a mediator pattern. All data types inherit ``RID_Data``.
+Rebel Servers implement a mediator pattern. All data types inherit ``RID_Data``.
 ``RID_Owner<MyRID_Data>`` owns the object when ``make_rid`` is called. During debug mode only,
 RID_Owner maintains a list of RIDs. In practice, RIDs are similar to writing
 object-oriented C code.
@@ -316,7 +313,7 @@ References
 ~~~~~~~~~~~
 
 - :ref:`RID<class_rid>`
-- `core/rid.h <https://github.com/godotengine/godot/blob/3.x/core/rid.h>`__
+- `core/rid.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/rid.h>`__
 
 Registering the class in GDScript
 ---------------------------------
@@ -325,9 +322,9 @@ Servers are allocated in ``register_types.cpp``. The constructor sets the static
 instance and ``init()`` creates the managed thread; ``unregister_types.cpp``
 cleans up the server.
 
-Since a Godot server class creates an instance and binds it to a static singleton,
+Since a Rebel Server class creates an instance and binds it to a static singleton,
 binding the class might not reference the correct instance. Therefore, a dummy
-class must be created to reference the proper Godot server.
+class must be created to reference the proper Rebel Server.
 
 In ``register_server_types()``, ``Engine::get_singleton()->add_singleton``
 is used to register the dummy class in GDScript.
@@ -373,7 +370,7 @@ is used to register the dummy class in GDScript.
 	void register_hilbert_hotel_types();
 	void unregister_hilbert_hotel_types();
 
-- `servers/register_server_types.cpp <https://github.com/godotengine/godot/blob/master/servers/register_server_types.cpp>`__
+- `servers/register_server_types.h <https://github.com/RebelToolbox/RebelEngine/blob/main/servers/register_server_types.h>`__
 
 Bind methods
 ~~~~~~~~~~~~
@@ -474,7 +471,7 @@ to execute the desired behavior. The queue will be flushed whenever either
 References:
 ~~~~~~~~~~~
 
-- `core/message_queue.cpp <https://github.com/godotengine/godot/blob/3.x/core/message_queue.cpp>`__
+- `core/message_queue.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/message_queue.h>`__
 
 Summing it up
 -------------

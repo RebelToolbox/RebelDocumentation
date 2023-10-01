@@ -1,7 +1,7 @@
-.. _doc_godot_notifications:
+.. _doc_notifications:
 
-Godot notifications
-===================
+Notifications
+=============
 
 Every Object in Godot implements a
 :ref:`_notification <class_Object_method__notification>` method. Its purpose is to
