@@ -55,7 +55,7 @@ that. Each mob instance has both a memory and a processing cost, and we don't
 want to pay for it when the mob's outside the screen.
 
 Once a monster leaves the screen, we don't need it anymore, so we can delete it.
-Godot has a node that detects when objects leave the screen,
+Rebel Engine has a node that detects when objects leave the screen,
 *VisibilityNotifier*, and we're going to use it to destroy our mobs.
 
 .. note::
