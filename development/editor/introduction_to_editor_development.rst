@@ -14,7 +14,7 @@ To create editor plugins in GDScript, see :ref:`doc_making_plugins` instead.
 .. seealso::
 
     If you are new to Rebel, we recommended you to read
-    :ref:`doc_godot_design_philosophy` before continuing. Since the Rebel Editor
+    :ref:`doc_design_philosophy` before continuing. Since the Rebel Editor
     is a Rebel project written in C++, much of the engine's philosophy applies
     to the editor.
 

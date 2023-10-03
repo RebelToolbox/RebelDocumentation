@@ -6,10 +6,10 @@
 
 .. _doc_intro_to_the_editor_interface:
 
-First look at Godot's editor
-============================
+First look at the Rebel Editor
+==============================
 
-This page will give you a brief overview of Godot's interface. We're going to
+This page will give you a brief overview of Rebel Editor's interface. We're going to
 look at the different main screens and docks to help you situate yourself.
 
 .. seealso:: For a comprehensive breakdown of the editor's interface and how to
@@ -18,7 +18,7 @@ look at the different main screens and docks to help you situate yourself.
 The Project manager
 -------------------
 
-When you launch Godot, the first window you see is the Project Manager. In the
+When you launch Rebel Editor, the first window you see is the Project Manager. In the
 default tab, "Projects," you can manage existing projects, import or create new
 ones, and more.
 
@@ -36,8 +36,8 @@ English (EN).
 
 .. image:: img/editor_intro_language.png
 
-First look at Godot's editor
-----------------------------
+First look at Rebel Editor
+--------------------------
 
 When you open a new or an existing project, the editor's interface appears.
 Let's look at its main areas.
@@ -120,7 +120,7 @@ auto-completion, and built-in code reference.
 Integrated class reference
 --------------------------
 
-Godot comes with a built-in class reference.
+Rebel Engine comes with a built-in class reference.
 
 You can search for information about a class, method, property, constant, or
 signal by any one of the following methods:
