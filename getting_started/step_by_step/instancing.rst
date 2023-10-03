@@ -38,11 +38,11 @@ scene.
 In practice
 -----------
 
-Let's use instancing in practice to see how it works in Godot. We invite
+Let's use instancing in practice to see how it works in Rebel Engine. We invite
 you to download the ball's sample project we prepared for you:
 :download:`instancing.zip <files/instancing.zip>`.
 
-Extract the archive on your computer. Then, open Godot, and in the project
+Extract the archive on your computer. Then, open the Rebel Editor, and in the project
 manager, click the Import button to import the project.
 
 .. image:: img/instancing_import_button.png
@@ -52,7 +52,7 @@ you extracted.
 
 .. image:: img/instancing_import_browse.png
 
-Double-click the ``project.godot`` file to open it.
+Double-click the ``project.rebel`` file to open it.
 
 .. image:: img/instancing_import_project_file.png
 
@@ -155,18 +155,18 @@ Rerun the game and notice how this ball now falls much faster than the others.
           resource unique for one instance, right-click on it in the Inspector
           and click Make Unique in the contextual menu.
 
-          Resources are another essential building block of Godot games we will
+          Resources are another essential building block of Rebel games we will
           cover in a later lesson.
 
 Scene instances as a design language
 ------------------------------------
 
-Instances and scenes in Godot offer an excellent design language, setting the
-engine apart from others out there. We designed Godot around this concept from
+Instances and scenes in Rebel Engine offer an excellent design language, setting the
+engine apart from others out there. We designed Rebel Engine around this concept from
 the ground up.
 
 We recommend dismissing architectural code patterns when making games with
-Godot, such as Model-View-Controller (MVC) or Entity-Relationship diagrams.
+the Rebel Editor, such as Model-View-Controller (MVC) or Entity-Relationship diagrams.
 Instead, you can start by imagining the elements players will see in your game
 and structure your code around them.
 
@@ -202,11 +202,11 @@ would place the citadel. Each of these would be a scene instancing one or more s
 Later, we could create scenes representing guards and add them to the citadel.
 They would be indirectly added to the overall game world.
 
-With Godot, it's easy to iterate on your game like this, as all you need to do
+With the Rebel Editor, it's easy to iterate on your game like this, as all you need to do
 is create and instantiate more scenes. We designed the editor to be accessible
 to programmers, designers, and artists alike. A typical team development process
 can involve 2D or 3D artists, level designers, game designers, and animators,
-all working with the Godot editor.
+all working with the Rebel Editor.
 
 Summary
 -------

@@ -15,7 +15,7 @@ In this lesson, we will look at signals. They are messages that nodes emit when
 something specific happens to them, like a button being pressed. Other nodes can
 connect to that signal and call a function when the event occurs.
 
-Signals are a delegation mechanism built into Godot that allows one game object to
+Signals are a delegation mechanism built into Rebel Engine that allows one game object to
 react to a change in another without them referencing one another. Using signals
 limits `coupling
 <https://en.wikipedia.org/wiki/Coupling_(computer_programming)>`_ and keeps your
@@ -23,13 +23,13 @@ code flexible.
 
 For example, you might have a life bar on the screen that represents the
 player’s health. When the player takes damage or uses a healing potion, you want
-the bar to reflect the change. To do so, in Godot, you would use signals.
+the bar to reflect the change. To do so, in Rebel Engine, you would use signals.
 
-.. note:: As mentioned in the introduction, signals are Godot's version of the
+.. note:: As mentioned in the introduction, signals are Rebel Engine's version of the
           observer pattern. You can learn more about it here:
           https://gameprogrammingpatterns.com/observer.html
 
-We will now use a signal to make our Godot icon from the previous lesson
+We will now use a signal to make our Rebel icon from the previous lesson
 (:ref:`doc_scripting_player_input`) move and stop by pressing a button.
 
 .. Example
@@ -109,7 +109,7 @@ Double-click the "pressed" signal to open the node connection window.
 .. image:: img/signals_12_node_connection.png
 
 There, you can connect the signal to the Sprite node. The node needs a receiver
-method, a function that Godot will call when the Button emits the signal. The
+method, a function that Rebel Engine will call when the Button emits the signal. The
 editor generates one for you. By convention, we name these callback methods
 "_on_NodeName_signal_name". Here, it'll be "_on_Button_pressed".
 
@@ -140,7 +140,7 @@ connection. This feature is only available when connecting nodes in the editor.
 Let's replace the line with the ``pass`` keyword with code that'll toggle the
 node's motion.
 
-Our Sprite moves thanks to code in the ``_process()`` function. Godot provides a
+Our Sprite moves thanks to code in the ``_process()`` function. Rebel Engine provides a
 method to toggle processing on and off: :ref:`Node.set_process()
 <class_Node_method_set_process>`. Another method of the Node class,
 ``is_processing()``, returns ``true`` if idle processing is active. We can use
@@ -195,7 +195,7 @@ Connecting a signal via code
 You can connect signals via code instead of using the editor. This is necessary
 when you create nodes or instantiate scenes inside of a script.
 
-Let's use a different node here. Godot has a :ref:`Timer <class_Timer>` node
+Let's use a different node here. Rebel Engine has a :ref:`Timer <class_Timer>` node
 that's useful to implement skill cooldown times, weapon reloading, and more.
 
 Head back to the 2D workspace. You can either click the "2D" text at the top of
@@ -275,7 +275,7 @@ second intervals.
 Complete script
 ---------------
 
-That's it for our little moving and blinking Godot icon demo!
+That's it for our little moving and blinking Rebel icon demo!
 Here is the complete ``Sprite.gd`` file for reference.
 
 .. tabs::
@@ -355,7 +355,7 @@ names between parentheses:
 
 .. note::
 
-    The signal arguments show up in the editor's node dock, and Godot can use
+    The signal arguments show up in the editor's node dock, and Rebel Engine can use
     them to generate callback functions for you. However, you can still emit any
     number of arguments when you emit signals. So it's up to you to emit the
     correct values.
@@ -374,7 +374,7 @@ To emit values along with the signal, add them as extra arguments to the
 Summary
 -------
 
-Any node in Godot emits signals when something specific happens to them, like a
+Any node in Rebel Engine emits signals when something specific happens to them, like a
 button being pressed. Other nodes can connect to individual signals and react to
 selected events.
 

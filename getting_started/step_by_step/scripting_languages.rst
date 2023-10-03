@@ -7,7 +7,7 @@ Scripting languages
 ===================
 
 This lesson will give you an overview of the available scripting languages in
-Godot. You will learn the pros and cons of each option. In the next part, you
+Rebel Engine. You will learn the pros and cons of each option. In the next part, you
 will write your first script using GDScript.
 
 **Scripts attach to a node and extend its behavior**. This means that scripts
@@ -15,7 +15,7 @@ inherit all functions and properties of the node they attach to.
 
 For example, take a game where a Camera2D node follows a ship. The Camera2D node
 follows its parent by default. Imagine you want the camera to shake when the player
-takes damage. As this feature is not built into Godot, you would attach a script
+takes damage. As this feature is not built into Rebel Engine, you would attach a script
 to the Camera2D node and code the shake.
 
 .. image:: img/scripting_camera_shake.gif
@@ -23,7 +23,7 @@ to the Camera2D node and code the shake.
 Available scripting languages
 -----------------------------
 
-Godot offers **five gameplay programming languages**: GDScript, C#,
+Rebel Engine offers **five gameplay programming languages**: GDScript, C#,
 VisualScript, and, via its GDNative technology, C and C++. There are more
 :ref:`community-supported languages <doc_what_is_gdnative_third_party_bindings>`,
 but these are the official ones.
@@ -37,23 +37,13 @@ everything in GDScript or C#. It's your call.
 We provide this flexibility to answer the needs of different game projects and
 developers.
 
-.. warning::
-
-    `Godot 4.0 will remove VisualScript from core entirely. <https://godotengine.org/article/godot-4-will-discontinue-visual-scripting>`__
-    As a result, creating new projects using visual scripting in Godot is not recommended.
-    Future Godot 4.x releases may have VisualScript reimplemented as an extension.
-
-    While Godot 3.x will keep VisualScript supported, we recommend
-    :ref:`trying out GDScript <toc-learn-scripting-gdscript>` instead,
-    especially if you intend to migrate your project to Godot 4.
-
 Which language should I use?
 ----------------------------
 
 If you're a beginner, we recommend to **start with GDScript**. We made this
-language specifically for Godot and the needs of game developers. It has a
+language specifically for Rebel Engine and the needs of game developers. It has a
 lightweight and straightforward syntax and provides the tightest integration
-with Godot.
+with Rebel Engine.
 
 .. image:: img/scripting_gdscript.png
 
@@ -71,7 +61,7 @@ GDScript
 :ref:`GDScript<doc_gdscript>` is an
 `object-oriented <https://en.wikipedia.org/wiki/Object-oriented_programming>`_ and
 `imperative <https://en.wikipedia.org/wiki/Imperative_programming>`_
-programming language built for Godot. It's made by and for game developers
+programming language built for Rebel Engine. It's made by and for game developers
 to save you time coding games. Its features include:
 
 - A simple syntax that leads to short files.
@@ -98,13 +88,12 @@ languages, including Squirrel, Lua, and Python.
 
     Why don't we use Python or Lua directly?
 
-    Years ago, Godot used Python, then Lua. Both languages' integration took a
-    lot of work and had severe limitations. For example, threading support was a
-    big challenge with Python.
+    Integartion of a language takes a lot of work and there are severe limitations.
+    For example, it's difficult to provide threading support with Python.
 
-    Developing a dedicated language doesn't take us more work and we can tailor
-    it to game developers' needs. We're now working on performance optimizations
-    and features that would've been difficult to offer with third-party
+    Developing a dedicated language doesn't require more work and we can tailor
+    it to game developers' needs. We're also able to address performance optimizations
+    and features that would be difficult to offer with third-party
     languages.
 
 .NET / C#
@@ -121,12 +110,10 @@ thanks to a generous donation from Microsoft.
 C# offers a good tradeoff between performance and ease of use, although you
 should be aware of its garbage collector.
 
-.. note:: You must use the Mono edition of the Godot editor to script in C#. You
-          can download it on the Godot website's `download
-          <https://godotengine.org/download/>`_ page.
+.. note:: You must use the Mono edition of the Rebel Editor to script in C#.
 
-Since Godot uses the `Mono <https://mono-project.com>`_ .NET runtime, in theory,
-you can use any third-party .NET library or framework in Godot, as well as any
+Since Rebel Engine uses the `Mono <https://mono-project.com>`_ .NET runtime, in theory,
+you can use any third-party .NET library or framework in Rebel Engine, as well as any
 Common Language Infrastructure-compliant programming language, such as F#, Boo,
 or ClojureCLR. However, C# is the only officially supported .NET option.
 
@@ -138,16 +125,6 @@ or ClojureCLR. However, C# is the only officially supported .NET option.
 
 VisualScript
 ~~~~~~~~~~~~
-
-.. warning::
-
-    `Godot 4.0 will remove VisualScript from core entirely. <https://godotengine.org/article/godot-4-will-discontinue-visual-scripting>`__
-    As a result, creating new projects using visual scripting in Godot is not recommended.
-    Future Godot 4.x releases may have VisualScript reimplemented as an extension.
-
-    While Godot 3.x will keep VisualScript supported, we recommend
-    :ref:`trying out GDScript <toc-learn-scripting-gdscript>` instead,
-    especially if you intend to migrate your project to Godot 4.
 
 :ref:`Visual Scripting<doc_what_is_visual_script>` is a graph-based visual
 programming language where you connect blocks. It can be a great tool for
@@ -172,7 +149,7 @@ C and C++ via GDNative
 ~~~~~~~~~~~~~~~~~~~~~~
 
 GDNative allows you to write game code in C or C++ without needing to recompile
-or even restart Godot.
+or even restart the Rebel Editor.
 
 .. image:: img/scripting_cpp.png
 
@@ -184,7 +161,7 @@ throughout an entire game, as you can write other parts in GDScript, C#, or
 VisualScript.
 
 When working with GDNative, the available types, functions, and properties
-closely resemble Godot's actual C++ API.
+closely resemble Rebel Engine's actual C++ API.
 
 Summary
 -------
@@ -192,7 +169,7 @@ Summary
 Scripts are files containing code that you attach to a node to extend its
 functionality.
 
-Godot supports five official scripting languages, offering you flexibility
+Rebel Engine supports five official scripting languages, offering you flexibility
 between performance and ease of use.
 
 You can mix languages, for instance, to implement demanding algorithms with C or
