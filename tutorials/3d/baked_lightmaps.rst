@@ -58,7 +58,7 @@ Unwrap on scene import
 ~~~~~~~~~~~~~~~~~~~~~~
 
 This is probably the best approach overall. The only downside is that, on large
-models, unwrapping can take a while on import. Nonetheless, Godot will cache the UV2
+models, unwrapping can take a while on import. Nonetheless, Rebel Engine will cache the UV2
 across reimports, so it will only be regenerated when needed.
 
 Select the imported scene in the filesystem dock, then go to the **Import** dock.
@@ -85,10 +85,10 @@ their UV2 maps properly generated.
     as these files guarantee that UV2 reimports are consistent across platforms
     and engine versions.
 
-Unwrap from within Godot
-~~~~~~~~~~~~~~~~~~~~~~~~
+Unwrap from within Rebel Editor
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Godot has an option to unwrap meshes and visualize the UV channels.
+The Rebel Editor has an option to unwrap meshes and visualize the UV channels.
 It can be found in the Mesh menu:
 
 .. image:: img/baked_light_mesh_menu.png
@@ -102,7 +102,7 @@ Unwrap from your 3D DCC
 The last option is to do it from your favorite 3D app. This approach is generally
 not recommended, but it's explained first so that you know it exists.
 The main advantage is that, on complex objects that you may want to re-import a
-lot, the texture generation process can be quite costly within Godot,
+lot, the texture generation process can be quite costly within Rebel Engine,
 so having it unwrapped before import can be faster.
 
 Simply do an unwrap on the second UV2 layer.

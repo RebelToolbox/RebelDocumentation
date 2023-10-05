@@ -6,7 +6,7 @@ Introduction to 3D
 Creating a 3D game can be challenging. That extra Z coordinate makes
 many of the common techniques that helped to make 2D games simple no
 longer work. To aid in this transition, it is worth mentioning that
-Godot uses similar APIs for 2D and 3D. Most nodes are the same and
+Rebel Engine uses similar APIs for 2D and 3D. Most nodes are the same and
 are present in both 2D and 3D versions. In fact, it is worth checking
 the 3D platformer tutorial, or the 3D kinematic character tutorials,
 which are almost identical to their 2D counterparts.
@@ -42,15 +42,12 @@ Unlike 2D, where loading image content and drawing is straightforward,
 3D is a little more difficult. The content needs to be created with
 special 3D tools (usually referred to as Digital Content Creation tools, or
 DCCs) and exported to an exchange file format to be imported in
-Godot. This is required since 3D formats are not as standardized as images.
+Rebel Engine. This is required since 3D formats are not as standardized as images.
 
 DCC-created models
 ------------------
 
-.. FIXME: Needs update to properly description Godot 3.x workflow
-   (used to reference a non existing doc_importing_3d_meshes importer).
-
-There are two pipelines to import 3D models in Godot. The first and most
+There are two pipelines to import 3D models in the Rebel Editor. The first and most
 common one is by :ref:`doc_importing_3d_scenes`, which allows you to import
 entire scenes (just as they look in the DCC), including animation,
 skeletal rigs, blend shapes, etc.
@@ -77,7 +74,7 @@ Immediate geometry
 ------------------
 
 If, instead, there is a requirement to generate simple geometry that
-will be updated often, Godot provides a special node,
+will be updated often, Rebel Engine provides a special node,
 :ref:`ImmediateGeometry <class_ImmediateGeometry>`,
 which provides an OpenGL 1.x style immediate-mode API to create points,
 lines, triangles, etc.
@@ -85,7 +82,7 @@ lines, triangles, etc.
 2D in 3D
 --------
 
-While Godot packs a powerful 2D engine, many types of games use 2D in a
+While Rebel Engine packs a powerful 2D engine, many types of games use 2D in a
 3D environment. By using a fixed camera (either orthogonal or
 perspective) that does not rotate, nodes such as
 :ref:`Sprite3D <class_Sprite3D>` and
@@ -101,7 +98,7 @@ Environment
 ~~~~~~~~~~~
 
 Besides editing a scene, it is often common to edit the environment.
-Godot provides a :ref:`WorldEnvironment <class_WorldEnvironment>`
+Rebel Engine provides a :ref:`WorldEnvironment <class_WorldEnvironment>`
 node that allows changing the background color, mode (as in, put a
 skybox), and applying several types of built-in post-processing effects.
 Environments can also be overridden in the Camera.
@@ -125,13 +122,13 @@ similar to other tools in the Editor Settings:
 Coordinate system
 -----------------
 
-Godot uses the `metric <https://en.wikipedia.org/wiki/Metric_system>`__
+Rebel Engine uses the `metric <https://en.wikipedia.org/wiki/Metric_system>`__
 system for everything in 3D, with 1 unit being equal to 1 meter.
 Physics and other areas are tuned for this scale. Therefore, attempting to use a
 different scale is usually a bad idea (unless you know what you are doing).
 
 When working with 3D assets, it's always best to work in the correct
-scale (set your DCC to metric). Godot allows scaling post-import and,
+scale (set your DCC to metric). Rebel Engine allows scaling post-import and,
 while this works in most cases, in rare situations it may introduce
 floating-point precision issues (and thus, glitches or artifacts) in
 delicate areas such as rendering or physics. Make sure your artists
@@ -222,7 +219,7 @@ each viewport:
 Lights
 ------
 
-Godot has a limit of up to 8 lights per mesh. Aside from that, there
+Rebel Engine has a limit of up to 8 lights per mesh. Aside from that, there
 is no limitation on the number of lights, nor of types of lights, in
-Godot. As many as desired can be added, as long as performance allows,
+Rebel Engine. As many as desired can be added, as long as performance allows,
 and no more than 8 lights shine on a single mesh.

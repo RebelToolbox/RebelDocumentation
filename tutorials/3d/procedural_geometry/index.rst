@@ -3,7 +3,7 @@
 Procedural geometry
 ===================
 
-There are many ways to procedurally generate geometry in Godot. In this tutorial series
+There are many ways to procedurally generate geometry in Rebel Engine. In this tutorial series
 we will explore a few of them. Each technique has its own benefits and drawbacks, so
 it is best to understand each one and how it can be useful in a given situation.
 
@@ -20,12 +20,12 @@ What is geometry?
 -----------------
 
 Geometry is a fancy way of saying shape. In computer graphics, geometry is typically represented
-by an array of positions called "vertices". In Godot, geometry is represented by Meshes.
+by an array of positions called "vertices". In Rebel Engine, geometry is represented by Meshes.
 
 What is a Mesh?
 ---------------
 
-Many things in Godot have mesh in their name: the :ref:`Mesh <class_Mesh>`, the :ref:`ArrayMesh <class_ArrayMesh>`,
+Many things in Rebel Engine have mesh in their name: the :ref:`Mesh <class_Mesh>`, the :ref:`ArrayMesh <class_ArrayMesh>`,
 the :ref:`MeshInstance <class_MeshInstance>`, the :ref:`MultiMesh <class_MultiMesh>`, and
 the :ref:`MultiMeshInstance <class_MultiMeshInstance>`. While they are all related, they have slightly different uses.
 
@@ -75,7 +75,7 @@ array is faster, but it means you have to share vertex data between triangles, w
 Tools
 -----
 
-Godot provides different ways of accessing and working with geometry. More information on each will
+Rebel Engine provides different ways of accessing and working with geometry. More information on each will
 be provided in the following tutorials.
 
 ArrayMesh

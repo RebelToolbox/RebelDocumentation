@@ -1,12 +1,12 @@
 Using objects in Rooms and Portals
 ==================================
 
-Normally, when you use Godot, all objects that you can see (:ref:`VisualInstance<class_VisualInstance>`\ s) are treated in the same way by the engine. The portal renderer is slightly different, in that it makes a distinction between the different roles objects will have in your game. It makes this distinction to define the :ref:`Room<class_Room>`\ s, and to render and process everything in the most efficient way.
+Normally, when you use Rebel Engine, all objects that you can see (:ref:`VisualInstance<class_VisualInstance>`\ s) are treated in the same way by the engine. The portal renderer is slightly different, in that it makes a distinction between the different roles objects will have in your game. It makes this distinction to define the :ref:`Room<class_Room>`\ s, and to render and process everything in the most efficient way.
 
 Portal mode
 ~~~~~~~~~~~
 
-If you look in the inspector, every VisualInstance in Godot is derived from a :ref:`CullInstance<class_CullInstance>`, where you can set a ``PortalMode``. This determines how objects will behave in the portal system.
+If you look in the inspector, every VisualInstance in Rebel Engine is derived from a :ref:`CullInstance<class_CullInstance>`, where you can set a ``PortalMode``. This determines how objects will behave in the portal system.
 
 .. image:: img/cull_instance.png
 

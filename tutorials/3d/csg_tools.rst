@@ -7,26 +7,20 @@ CSG stands for **Constructive Solid Geometry**, and is a tool to combine basic
 shapes or custom meshes to create more complex shapes. In 3D modelling software,
 CSG is mostly known as "Boolean Operators".
 
-Level prototyping is one of the main uses of CSG in Godot. This technique allows
+Level prototyping is one of the main uses of CSG in Rebel Engine. This technique allows
 users to create simple versions of most common shapes by combining primitives.
 Interior environments can be created by using inverted primitives.
 
-.. note:: The CSG nodes in Godot are mainly intended for prototyping. There is
+.. note:: The CSG nodes in Rebel Engine are mainly intended for prototyping. There is
           no built-in support for UV mapping or editing 3D polygons (though
           extruded 2D polygons can be used with the CSGPolygon node).
-
-          If you're looking for an easy to use level design tool for a project,
-          you may want to use `Qodot <https://github.com/Shfty/qodot-plugin>`__
-          instead. It lets you design levels using
-          `TrenchBroom <https://kristianduske.com/trenchbroom/>`__ and import
-          them in Godot.
 
 .. image:: img/csg.gif
 
 Introduction to CSG nodes
 -------------------------
 
-Like other features of Godot, CSG is supported in the form of nodes. These are
+Like other features of Rebel Engine, CSG is supported in the form of nodes. These are
 the CSG nodes:
 
 - :ref:`CSGBox <class_CSGBox>`
@@ -80,7 +74,7 @@ Custom meshes
 ~~~~~~~~~~~~~
 
 Any mesh can be used for :ref:`CSGMesh <class_CSGMesh>`; the mesh can be
-modelled in other software and imported into Godot. Multiple materials are
+modelled in other software and imported into Rebel. Multiple materials are
 supported. There are some restrictions for geometry:
 
 - it must be closed,
@@ -242,16 +236,16 @@ this:
 
 .. image:: img/csg_room_result.png
 
-You've successfully prototyped a room level with the CSG tools in Godot.
+You've successfully prototyped a room level with the CSG tools in Rebel.
 CSG tools can be used for designing all kinds of levels, such as a maze
 or a city; explore its limitations when designing your game.
 
 Using prototype textures
 ------------------------
 
-Godot's :ref:`doc_spatial_material` supports *triplanar mapping*, which can be
+Rebel Engine's :ref:`doc_spatial_material` supports *triplanar mapping*, which can be
 used to automatically apply a texture to arbitrary objects without distortion.
-This is handy when using CSG as Godot doesn't support editing UV maps on CSG
+This is handy when using CSG as Rebel Engine doesn't support editing UV maps on CSG
 nodes yet. Triplanar mapping is relatively slow, which usually restricts its
 usage to organic surfaces like terrain. Still, when prototyping, it can be used
 to quickly apply textures to CSG-based levels.

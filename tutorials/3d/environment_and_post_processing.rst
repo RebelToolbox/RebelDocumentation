@@ -3,7 +3,7 @@
 Environment and post-processing
 ===============================
 
-Godot 3 provides a redesigned Environment resource, as well as a new
+Rebel Engine provides an Environment resource, as well as a
 post-processing system with many available effects right out of the box.
 
 Environment
@@ -59,7 +59,7 @@ Background
 ^^^^^^^^^^
 
 The Background section contains settings on how to fill the background (parts of
-the screen where objects were not drawn). In Godot 3.0, the background not only
+the screen where objects were not drawn). In Rebel Engine, the background not only
 serves the purpose of displaying an image or color, it can also change how objects
 are affected by ambient and reflected light.
 
@@ -113,8 +113,8 @@ Fog
 ^^^
 
 Fog, as in real life, makes distant objects fade away into an uniform color. The
-physical effect is actually pretty complex, but Godot provides a good approximation.
-There are two kinds of fog in Godot:
+physical effect is actually pretty complex, but Rebel Engine provides a good approximation.
+There are two kinds of fog in Rebel Engine:
 
 - **Depth Fog:** This one is applied based on the distance from the camera.
 - **Height Fog:** This one is applied to any objects below (or above) a certain height, regardless of the distance from the camera.
@@ -161,7 +161,7 @@ The tone mapping options are:
     bright lighting in a more realistic fashion by desaturating it as it becomes brighter.
     ACES typically has a more contrasted output compared to Reinhardt and Filmic.
     ACES is the recommended option when aiming for photorealistic visuals.
-  - **ACES:** *Deprecated (will be removed in Godot 4.0).* Behaves like ACES,
+  - **ACES:** Behaves like ACES Fitted,
     but doesn't desaturate lighting as it becomes brighter (which is less realistic).
     It's recommended to use ACES Fitted instead of ACES.
 
@@ -181,7 +181,7 @@ Auto Exposure (HDR)
 *This feature is only available when using the GLES3 backend.*
 
 Even though, in most cases, lighting and texturing are heavily artist controlled,
-Godot supports a simple high dynamic range implementation with the auto exposure
+Rebel Engine supports a simple high dynamic range implementation with the auto exposure
 mechanism. This is generally used for the sake of realism when combining
 interior areas with low light and outdoors. Auto exposure simulates the camera
 (or eye) in an effort to adapt between light and dark locations and their
@@ -222,7 +222,7 @@ Screen-Space Reflections (SSR)
 
 *This feature is only available when using the GLES3 backend.*
 
-While Godot supports three sources of reflection data (Sky, ReflectionProbe, and
+While Rebel Engine supports three sources of reflection data (Sky, ReflectionProbe, and
 GIProbe), they may not provide enough detail for all situations. Scenarios
 where Screen Space Reflections make the most sense are when objects are in
 contact with each other (object over floor, over a table, floating on water, etc).
@@ -250,7 +250,7 @@ Screen-Space Ambient Occlusion (SSAO)
 
 As mentioned in the **Ambient** section, areas where light from light nodes
 does not reach (either because it's outside the radius or shadowed) are lit
-with ambient light. Godot can simulate this using GIProbe, ReflectionProbe,
+with ambient light. Rebel Engine can simulate this using GIProbe, ReflectionProbe,
 the Sky, or a constant ambient color. The problem, however, is that all the
 methods proposed previously act more on a larger scale (large regions) than at the
 smaller geometry level.
@@ -323,7 +323,7 @@ Glow
 
 In photography and film, when light amount exceeds the maximum supported by the
 media (be it analog or digital), it generally bleeds outwards to darker regions
-of the image. This is simulated in Godot with the **Glow** effect.
+of the image. This is simulated in Rebel Engine with the **Glow** effect.
 
 .. image:: img/environment_glow1.png
 
@@ -352,7 +352,7 @@ The **Blend Mode** of the effect can also be changed:
 - **Softlight** is the default and weakest one, producing only a subtle color disturbance around the objects. This mode works best on dark scenes.
 - **Replace** can be used to blur the whole screen or debug the effect. It only shows the glow effect without the image below.
 
-To change the glow effect size and shape, Godot provides **Levels**. Smaller
+To change the glow effect size and shape, Rebel Engine provides **Levels**. Smaller
 levels are strong glows that appear around objects, while large levels are hazy
 glows covering the whole screen:
 
@@ -373,7 +373,7 @@ gets rids of it, at a minimal performance cost.
 Adjustments
 ^^^^^^^^^^^
 
-At the end of processing, Godot offers the possibility to do some standard
+At the end of processing, Rebel Engine offers the possibility to do some standard
 image adjustments.
 
 .. image:: img/environment_adjustments.png

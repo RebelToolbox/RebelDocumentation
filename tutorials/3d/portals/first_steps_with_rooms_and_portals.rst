@@ -13,7 +13,7 @@ This conversion must take place every time you want to activate the system. It d
 
 .. image:: img/convert_rooms_button.png
 
-If you convert the level while the editor is running, the portal culling system will take over from the normal Godot frustum culling, potentially interfering with editor features. To get around this, you can turn portal culling on and off using either the **View Portal Culling** toggle in the **View** menu on the editor toolbar (which also has a keyboard shortcut) or the **Active** setting in the RoomManager node.
+If you convert the level while the editor is running, the portal culling system will take over from the normal Rebel Engine frustum culling, potentially interfering with editor features. To get around this, you can turn portal culling on and off using either the **View Portal Culling** toggle in the **View** menu on the editor toolbar (which also has a keyboard shortcut) or the **Active** setting in the RoomManager node.
 
 .. note:: To use the RoomManager, you have to tell it where the rooms are in your scene tree, or, more specifically, where the RoomList node is. This RoomList is the parent of your rooms - see below. If the RoomList is not set, conversion will fail, and you will see a warning dialog box.
 
@@ -74,7 +74,7 @@ A :ref:`Room<class_Room>` is a node type that can be added to the scene tree lik
 How do I define the shape and position of my room convex hull?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Because defining the room bound is the most important aspect of the system, there are THREE methods available to define the shape of a room in Godot:
+Because defining the room bound is the most important aspect of the system, there are THREE methods available to define the shape of a room in Rebel Engine:
 
 1. Use the geometry of the objects contained within the room to automatically create an approximate bound.
 2. Manually edit the points that define the convex hull in the room inspector or drag the points around using the editor gizmo (see :ref:`doc_room_point_editing`).

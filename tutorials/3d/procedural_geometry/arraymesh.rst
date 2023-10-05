@@ -13,7 +13,7 @@ how to arrange the primitive based on the vertices given, i.e. whether they repr
 lines, points, etc. See :ref:`Mesh.PrimitiveType <enum_Mesh_PrimitiveType>` for the options available.
 
 The second parameter, ``arrays``, is the actual Array that stores the mesh information. The array is a
-normal Godot array that is constructed with empty brackets ``[]``. It stores a ``Pool**Array``
+normal Rebel array that is constructed with empty brackets ``[]``. It stores a ``Pool**Array``
 (e.g. PoolVector3Array, PoolIntArray, etc.) for each type of information that will be used to build the surface.
 
 The possible elements of ``arrays`` are listed below, together with the position they must have within ``arrays``.
@@ -92,7 +92,7 @@ Under ``_ready()``, create a new Array.
     var surface_array = []
 
 This will be the array that we keep our surface information in - it will hold
-all the arrays of data that the surface needs. Godot will expect it to be of
+all the arrays of data that the surface needs. Rebel Engine will expect it to be of
 size ``Mesh.ARRAY_MAX``, so resize it accordingly.
 
 .. tabs::
@@ -165,7 +165,7 @@ Generating geometry
 -------------------
 
 Here is sample code for generating a sphere. Although the code is presented in
-GDScript, there is nothing Godot specific about the approach to generating it.
+GDScript, there is nothing Rebel Engine specific about the approach to generating it.
 This implementation has nothing in particular to do with ArrayMeshes and is just a
 generic approach to generating a sphere. If you are having trouble understanding it
 or want to learn more about procedural geometry in general, you can use any tutorial
