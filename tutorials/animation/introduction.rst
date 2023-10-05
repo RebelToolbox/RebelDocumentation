@@ -13,7 +13,7 @@ In this guide you learn to:
 -  Create a simple animation
 -  Call functions with the powerful Call Function Tracks
 
-In Godot, you can animate anything available in the Inspector, such as
+In Rebel Engine, you can animate anything available in the Inspector, such as
 Node transforms, sprites, UI elements, particles, visibility and color
 of materials, and so on. You can also modify values of script variables
 and call any function.
@@ -63,9 +63,9 @@ Diamond shapes represent keyframes in the timeline. A line between two
 keyframes indicates that the value hasn't changed.
 
 .. figure:: img/animation_keyframes.png
-   :alt: Keyframes in Godot
+   :alt: Keyframes in the Rebel Editor
 
-   Keyframes in Godot
+   Keyframes in the Rebel Editor
 
 The engine interpolates values between keyframes, resulting in a gradual
 change in values over time.
@@ -123,7 +123,7 @@ its child. We will animate the sprite to move between two points on the screen.
    as a child of an AnimationPlayer node.
 
 The sprite holds an image texture. We animate that sprite to move
-between two points on the screen. For this tutorial, use the default Godot
+between two points on the screen. For this tutorial, use the default Rebel
 icon as the sprite's texture. As a starting point, move the sprite
 to a left position on the screen.
 
@@ -155,7 +155,7 @@ Deselect rotation, because we are only interested in the location of our
 sprite for this tutorial and click on the key button.
 
 As we don't have a track already set up for the transform/location
-property, Godot asks whether it should set it up for us. Click **Create**.
+property, the Rebel Editor asks whether it should set it up for us. Click **Create**.
 
 This creates a new track and our first keyframe at the beginning of
 the timeline:
@@ -201,8 +201,8 @@ Yay! Our animation runs:
 Back and forth
 ~~~~~~~~~~~~~~
 
-Godot has an additional feature here. Like said before,
-Godot always calculates the frames between two keyframes. In a loop, the
+The Rebel Editor has an additional feature here. Like said before,
+Rebel Engine always calculates the frames between two keyframes. In a loop, the
 first keyframe is also the last keyframe, if no keyframe is specified at
 the end.
 
@@ -226,7 +226,7 @@ mode, the track interpolation, and the loop mode.
 
    Track settings
 
-The update mode of a track tells Godot when to update the property
+The update mode of a track tells Rebel Engine when to update the property
 values. This can be:
 
 -  **Continuous:** Update the property on each frame.
@@ -249,7 +249,7 @@ values. This can be:
 In normal animations, you usually use "Continuous". The other types are
 used to script complex animations.
 
-The interpolation tells Godot how to calculate the frame values between
+The interpolation tells Rebel Engine how to calculate the frame values between
 the keyframes. These interpolation modes are supported:
 
 -  Nearest: Set the nearest keyframe value
@@ -268,7 +268,7 @@ animation is slower at a keyframe and faster between keyframes. This is
 usually used for character animation. Linear interpolation creates more
 of a robotic movement.
 
-Godot supports two loop modes, which affect the animation if it's set to
+Rebel Engine supports two loop modes, which affect the animation if it's set to
 loop:
 
 .. figure:: img/animation_track_loop_modes.png
@@ -279,19 +279,19 @@ loop:
 -  Clamp loop interpolation: When this is selected, the animation stops
    after the last keyframe for this track. When the first keyframe is
    reached again, the animation will reset to its values.
--  Wrap loop interpolation: When this is selected, Godot calculates the
+-  Wrap loop interpolation: When this is selected, Rebel Engine calculates the
    animation after the last keyframe to reach the values of the first
    keyframe again.
 
 Keyframes for other properties
 ------------------------------
 
-Godot doesn't restrict you to only edit transform properties. Every
+Rebel Engine doesn't restrict you to only edit transform properties. Every
 property can be used as a track where you can set keyframes.
 
 If you select your sprite while the animation panel is visible, you get
 a small keyframe button for all the sprite's properties. Click on
-this button and Godot automatically adds a track and keyframe to the
+this button and the Rebel Editor automatically adds a track and keyframe to the
 current animation.
 
 .. figure:: img/animation_properties_keyframe.png
@@ -312,7 +312,7 @@ directly edit its values.
    Keyframe editor editing a key
 
 Additionally, you can also edit the easing value for this keyframe by
-clicking and dragging the easing setting. This tells Godot, how to change
+clicking and dragging the easing setting. This tells Rebel Engine, how to change
 the property values when it reaches this keyframe.
 
 You usually tweak your animations this way, when the movement doesn't
@@ -321,8 +321,8 @@ You usually tweak your animations this way, when the movement doesn't
 Advanced: Call Method tracks
 ----------------------------
 
-Godot's animation engine doesn't stop here. If you're already
-comfortable with Godot's scripting language
+The Rebel animation engine doesn't stop here. If you're already
+comfortable with Rebel Engine's scripting language
 :ref:`doc_gdscript` and :doc:`/classes/index` you
 know that each node type is a class and has a bunch of callable
 methods.
@@ -334,7 +334,7 @@ Wouldn't it be great to use a method at a specific keyframe in an
 animation? This is where "Call Method Tracks" come in handy. These tracks
 reference a node again, this time without a reference to a property.
 Instead, a keyframe holds the name and arguments of a method, that
-Godot should call when it reaches this keyframe.
+Rebel Engine should call when it reaches this keyframe.
 
 To demonstrate, we're going to use a call method track to play audio at a
 specific keyframe. Normally to play audio you should use an audio track,
@@ -354,21 +354,21 @@ Select "Add Call Method Track" from the list of possible track types.
    Add Call Method Track
 
 Select the :ref:`class_AudioStreamPlayer` node in the selection
-window. Godot adds the track with the reference to the node.
+window. The Rebel Editor adds the track with the reference to the node.
 
 .. figure:: img/animation_select_audiostreamplayer.png
    :alt: Select AudioStreamPlayer
 
    Select AudioStreamPlayer
 
-Right click the timeline where Godot should play the sample and
+Right click the timeline where Rebel Engine should play the sample and
 click the "Insert Key" option. This will bring up a list of methods
 that can be called for the AudioStreamPlayer node. Select the first
 one.
 
 .. image:: img/animation_method_options.png
 
-When Godot reaches the keyframe, Godot calls the
+When Rebel Engine reaches the keyframe, Rebel Engine calls the
 :ref:`class_AudioStreamPlayer` node's "play" function and the stream
 plays.
 
@@ -405,5 +405,3 @@ animation editor's **Animation** dropdown menu.
 
 When adding tracks on new animations, the editor will ask you to automatically
 create a RESET track when using the keyframe icon next to a property in the inspector.
-This does not apply on tracks created with Godot versions prior to 3.4,
-as the animation reset track feature was added in 3.4.
