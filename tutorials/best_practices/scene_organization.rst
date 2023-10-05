@@ -10,7 +10,7 @@ How should they interact?
 How to build relationships effectively
 --------------------------------------
 
-When Godot users begin crafting their own scenes, they often run into the
+When Rebel users begin crafting their own scenes, they often run into the
 following problem:
 
 They create their first scene and fill it with content only to eventually end
@@ -391,6 +391,6 @@ If they are dependent, then it stands to reason that they should be children of
 that parent (and likely part of that parent's scene if they aren't already).
 
 Does this mean nodes themselves are components? Not at all.
-Godot's node trees form an aggregation relationship, not one of composition.
+Rebel node trees form an aggregation relationship, not one of composition.
 But while one still has the flexibility to move nodes around, it is still best
 when such moves are unnecessary by default.

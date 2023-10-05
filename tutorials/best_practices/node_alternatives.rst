@@ -9,7 +9,7 @@ have tens of thousands of nodes all doing things. The more complex their
 behavior though, the larger the strain each one adds to a project's
 performance.
 
-Godot provides more lightweight objects for creating APIs which nodes use.
+Rebel Engine provides more lightweight objects for creating APIs which nodes use.
 Be sure to keep these in mind as options when designing how you wish to build
 your project's features.
 
@@ -45,7 +45,7 @@ your project's features.
 
 3. :ref:`Resource <class_Resource>`: Only slightly more complex than Reference.
    They have the innate ability to serialize/deserialize (i.e. save and load)
-   their object properties to/from Godot resource files.
+   their object properties to/from Rebel resource files.
 
    - **Example:** Scripts, PackedScene (for scene files), and other types like
      each of the :ref:`AudioEffect <class_AudioEffect>` classes. Each of these
