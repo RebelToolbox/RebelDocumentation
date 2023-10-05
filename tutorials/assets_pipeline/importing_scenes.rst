@@ -3,24 +3,23 @@
 Importing 3D scenes
 ===================
 
-Godot scene importer
---------------------
+Rebel Editor scene importer
+---------------------------
 
-When dealing with 3D assets, Godot has a flexible and configurable importer.
+When dealing with 3D assets, Rebel Editor has a flexible and configurable importer.
 
-Godot works with *scenes*. This means that the entire scene being worked on in your favorite 3D DCC will be
+Rebel Engine works with *scenes*. This means that the entire scene being worked on in your favorite 3D DCC will be
 transferred as close as possible.
 
-Godot supports the following 3D *scene file formats*:
+Rebel Engine supports the following 3D *scene file formats*:
 
-* glTF 2.0 **(recommended)**. Godot has full support for both text (``.gltf``) and binary (``.glb``) formats.
+* glTF 2.0 **(recommended)**. Rebel Engine has full support for both text (``.gltf``) and binary (``.glb``) formats.
 * DAE (COLLADA), an older format that is fully supported.
 * OBJ (Wavefront) format + their MTL material files. This is also fully supported, but pretty limited (no support for pivots, skeletons, animations, PBR materials, ...).
-* ESCN, a Godot-specific format that Blender can export with a plugin.
 * FBX, supported via the Open Asset Import library. However, FBX is proprietary, so we recommend using other formats
   listed above, if suitable for your workflow.
 
-Just copy the scene file together with the texture to the project repository, and Godot will do a full import.
+Just copy the scene file together with the texture to the project repository, and Rebel Editor will do a full import.
 
 It is important that the mesh is not deformed by bones when exporting. Make sure that the skeleton is reset to its T-pose
 or default rest pose before exporting with your favorite 3D editor.
@@ -42,9 +41,9 @@ There are three ways to export glTF files from Blender. As a glTF binary (``.glb
 and with textures (``gltf`` + ``.bin`` + textures).
 
 glTF binary files are the smallest of the three options. They include the mesh and textures set up in Blender.
-When brought into Godot the textures are part of the object's material file.
+When brought into Rebel Editor the textures are part of the object's material file.
 
-glTF embedded files function the same way as binary files. They don't provide extra functionality in Godot,
+glTF embedded files function the same way as binary files. They don't provide extra functionality in Rebel Engine,
 and shouldn't be used since they have a larger file size.
 
 There are two reasons to use glTF with the textures separate. One is to have the scene description in a
@@ -60,7 +59,7 @@ either of those glTF binary files are fine.
 
     By default, Blender has backface culling disabled on materials and will
     export materials to match how they render in Blender. This means that
-    materials in Godot will have their cull mode set to **Disabled**. This can
+    materials in Rebel Engine will have their cull mode set to **Disabled**. This can
     decrease performance since backfaces will be rendered, even when they are
     being culled by other faces. To resolve this, enable **Backface Culling** in
     Blender's Materials tab, then export the scene to glTF again.
@@ -71,43 +70,27 @@ Exporting DAE files from Blender
 Blender has built-in COLLADA support, but it does not work properly for the needs of game engines
 and should not be used as is.
 
-Godot provides a `Blender plugin <https://github.com/godotengine/collada-exporter>`_
-that will correctly export COLLADA scenes for use in Godot. It does not work in Blender 2.8 or
-newer, but there are plans to update it in the future.
-
-Exporting ESCN files from Blender
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The most powerful one, called `godot-blender-exporter
-<https://github.com/godotengine/godot-blender-exporter>`__.
-It uses a .escn file, which is kind of another name for a .tscn file (Godot scene file);
-it keeps as much information as possible from a Blender scene. However, it is considered
-experimental.
-
-The ESCN exporter has a detailed `document <escn_exporter/index.html>`__ describing
-its functionality and usage.
-
 Exporting textures separately
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 While textures can be exported with a model in certain file formats, such as glTF 2.0, you can also export them
-separately. Godot uses PBR (physically based rendering) for its materials, so if a texturing program can export PBR
-textures, they can work in Godot. This includes the `Substance suite <https://www.substance3d.com/>`__,
+separately. Rebel Engine uses PBR (physically based rendering) for its materials, so if a texturing program can export PBR
+textures, they can work in Rebel Engine. This includes the `Substance suite <https://www.substance3d.com/>`__,
 `ArmorPaint (open source) <https://armorpaint.org/>`__, and `Material Maker (open source) <https://github.com/RodZill4/material-maker>`__.
 
-.. note:: For more information on Godot's materials, see :ref:`doc_spatial_material`.
+.. note:: For more information on Rebel Engine's materials, see :ref:`doc_spatial_material`.
 
 Exporting considerations
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 Since GPUs can only render triangles, meshes that contain quads or N-gons have
-to be *triangulated* before they can be rendered. Godot can triangulate meshes
+to be *triangulated* before they can be rendered. Rebel Engine can triangulate meshes
 on import, but results may be unpredictable or incorrect, especially with
 N-gons. Regardless of the target application, triangulating *before* exporting
 the scene will lead to more consistent results and should be done whenever
 possible.
 
-To avoid issues with incorrect triangulation after importing in Godot, it is
+To avoid issues with incorrect triangulation after importing in Rebel Editor, it is
 recommended to make the 3D DCC triangulate objects on its own. In Blender, this
 can be done by adding a Triangulate modifier to your objects and making sure
 **Apply Modifiers** is checked in the export dialog. Alternatively, depending on
@@ -120,7 +103,7 @@ object transform in the 3D DCC before exporting the scene.
 Import workflows
 ----------------
 
-Godot scene importer allows different workflows regarding how data is imported. Depending on many options, it is possible to
+Rebel Editor scene importer allows different workflows regarding how data is imported. Depending on many options, it is possible to
 import a scene with:
 
 * External materials (default): Where each material is saved to a file resource. Modifications to them are kept.
@@ -184,7 +167,7 @@ will finally be used must be returned. It can be a different one.
 Storage
 ^^^^^^^
 
-By default, Godot imports a single scene. This option allows specifying
+By default, Rebel Editor imports a single scene. This option allows specifying
 that nodes below the root will each be a separate scene and instanced
 into the imported one.
 
@@ -197,7 +180,7 @@ Materials
 Location
 ^^^^^^^^
 
-Godot supports materials in meshes or nodes. By default, materials will be put
+Rebel Engine supports materials in meshes or nodes. By default, materials will be put
 on each node.
 
 Storage
@@ -205,14 +188,14 @@ Storage
 
 Materials can be stored within the scene or in external files. By default,
 they are stored in external files so editing them is possible. This is because
-most 3D DCCs don't have the same material options as those present in Godot.
+most 3D DCCs don't have the same material options as those present in Rebel Engine.
 
 When materials are built-in, they will be lost each time the source scene
 is modified and re-imported.
 
 .. note::
 
-    Godot will not reimport materials that are stored in external files unless
+    Rebel Editor will not reimport materials that are stored in external files unless
     you remove the associated ``.material`` file before reimporting.
 
     To force reimporting materials every time the 3D scene is reimported, change
@@ -223,7 +206,7 @@ is modified and re-imported.
 Keep On Reimport
 ^^^^^^^^^^^^^^^^
 
-Once materials are edited to use Godot features, the importer will keep the
+Once materials are edited to use Rebel Engine features, the importer will keep the
 edited ones and ignore the ones coming from the source scene. This option
 is only present if materials are saved as files.
 
@@ -262,7 +245,7 @@ Ensure Tangents
 
 If textures with normal mapping are to be used, meshes need to have tangent arrays.
 This option ensures that these are generated if not present in the source scene.
-Godot uses `Mikktspace <http://www.mikktspace.com/>`__ for this,
+Rebel Engine uses `Mikktspace <http://www.mikktspace.com/>`__ for this,
 but it's always better to have them generated in the exporter.
 
 Storage
@@ -294,7 +277,7 @@ name of the scene.
 Animation options
 -----------------
 
-Godot provides many options regarding how animation data is dealt with. Some exporters
+Rebel Editor provides many options regarding how animation data is dealt with. Some exporters
 (such as Blender) can generate many animations in a single file. Others, such as
 3DS Max or Maya, need many animations put into the same timeline or, at worst, put
 each animation in a separate file.
@@ -307,7 +290,7 @@ Import of animations is enabled by default.
 
     To modify animations from an imported 3D scene, you need to change the animation
     storage option from **Built-In** to **Files** in the Import dock. Otherwise,
-    changes made to animations from Godot will be lost when the project is run.
+    changes made to animations in Rebel Editor will be lost when the project is run.
 
 FPS
 ~~~
@@ -383,14 +366,11 @@ must have only one animation that is named ``default``. To create clips, change 
 greater than zero. You can then name a clip, specify which frames it starts and stops on, and choose whether
 the animation loops or not.
 
-.. If this PR (https://github.com/godotengine/godot/pull/36709) is merged for Godot 4.0 this section must
-   be updated to reflect that for the 4.0 documentation.
-
 Scene inheritance
 -----------------
 
 In many cases, it may be desired to make modifications to the imported scene. By default, this is not possible because
-if the source asset changes (source ``.dae``, ``.gltf``, ``.obj`` file re-exported from 3D modelling app), Godot will re-import the whole scene.
+if the source asset changes (source ``.dae``, ``.gltf``, ``.obj`` file re-exported from 3D modelling app), Rebel Editor will re-import the whole scene.
 
 It is possible, however, to make local modifications by using *Scene Inheritance*. Try to open the imported scene and the
 following dialog will appear:
@@ -415,8 +395,8 @@ Many times, when editing a scene, there are common tasks that need to be done af
 - Setting objects as navigation meshes.
 - Deleting nodes that are not used in the game engine (like specific lights used for modelling).
 
-To simplify this workflow, Godot offers several suffixes that can be added to
-the names of the objects in your 3D modelling software. When imported, Godot
+To simplify this workflow, Rebel Editor offers several suffixes that can be added to
+the names of the objects in your 3D modelling software. When imported, Rebel Editor
 will detect suffixes in object names and will perform actions automatically.
 
 .. note::
@@ -511,7 +491,7 @@ Animation loop (-loop, -cycle)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Animation clips in the COLLADA document that start or end with the token ``loop`` or ``cycle``
-will be imported as a Godot Animation with the loop flag set.
+will be imported as a Rebel Animation with the loop flag set.
 **Unlike the other suffixes described above, this does not require a hyphen.**
 
 In Blender, this requires using the NLA Editor and naming the Action with the ``loop`` or

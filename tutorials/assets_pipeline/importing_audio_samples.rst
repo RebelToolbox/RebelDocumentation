@@ -6,7 +6,7 @@ Importing audio samples
 Supported files
 ---------------
 
-Godot provides three options to import your audio data: WAV, Ogg Vorbis
+The Rebel Editor provides three options to import your audio data: WAV, Ogg Vorbis
 and MP3.
 
 Each has different advantages.
@@ -49,7 +49,7 @@ for music, speech, and long sound effects.
 Best practices
 --------------
 
-Godot has an :ref:`extensive bus system <doc_audio_buses>` with built-in effects.
+Rebel Engine has an :ref:`extensive bus system <doc_audio_buses>` with built-in effects.
 This saves SFX artists the need to add reverb to the sound effects,
 reducing their size greatly and ensuring correct trimming. Say no to SFX
 with baked reverb!
@@ -72,7 +72,7 @@ this.
 Looping
 ~~~~~~~
 
-Godot supports looping in the samples (tools such as Sound Forge or
+Rebel Engine supports looping in the samples (tools such as Sound Forge or
 Audition can add loop points to WAV files). This is useful for sound
 effects, such as engines, machine guns etc. Ping-pong looping is also
 supported.
