@@ -28,7 +28,7 @@ but for this demo we'll stick to this small set.
 
 Create a new project and place the above image in the project folder.
 
-When using a tileset, it's important that adjacent tiles match up. Godot's default
+When using a tileset, it's important that adjacent tiles match up. Rebel Engine's default
 is to import 2D images using an interpolated "filter" mode, which will result in
 ugly borders between the tiles. Select the image and click the Import tab. Turn
 off ``Filter`` and click "Reimport". See :ref:`doc_import_images` for details.
@@ -177,7 +177,7 @@ Tile selection is controlled by bitmasks. Bitmasks can be added by clicking
 Left-clicking an area of the tile adds a bit, right-click removes "off",
 and shift-left-click sets an "ignore" bit.
 
-Whenever Godot updates a cell using an autotile, it first creates a pattern
+Whenever Rebel Engine updates a cell using an autotile, it first creates a pattern
 based on which adjacent cells are already set. Then, it searches the autotile
 for a single tile with a bitmask matching the created pattern. If no matching
 bitmask is found, the "icon" tile will be used instead. If more than one

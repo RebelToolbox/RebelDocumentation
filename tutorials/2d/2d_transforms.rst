@@ -30,7 +30,7 @@ Viewports also have a Global Canvas transform (also a
 :ref:`Transform2D <class_Transform2D>`). This is the master transform and
 affects all individual *Canvas Layer* transforms. Generally, this
 transform is not of much use, but is used in the CanvasItem Editor
-in Godot's editor.
+in the Rebel Editor.
 
 Stretch transform
 -----------------

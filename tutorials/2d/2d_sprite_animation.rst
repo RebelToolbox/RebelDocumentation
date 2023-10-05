@@ -9,7 +9,7 @@ Introduction
 In this tutorial, you'll learn how to create 2D animated
 characters with the AnimatedSprite class and the AnimationPlayer. Typically, when you create or download an animated character, it
 will come in one of two ways: as individual images or as a single sprite sheet
-containing all the animation's frames. Both can be animated in Godot with the AnimatedSprite class.
+containing all the animation's frames. Both can be animated in Rebel Engine with the AnimatedSprite class.
 
 First, we'll use :ref:`AnimatedSprite <class_AnimatedSprite>` to
 animate a collection of individual images. Then we will animate a sprite sheet using this class. Finally, we will learn another way to animate a sprite sheet
@@ -263,7 +263,7 @@ released.
 Summary
 -------
 
-These examples illustrate the two classes you can use in Godot for
+These examples illustrate the two classes you can use in Rebel Engine for
 2D animation. ``AnimationPlayer`` is
 a bit more complex than ``AnimatedSprite``, but it provides additional functionality, since you can also
 animate other properties like position or scale. The class ``AnimationPlayer`` can also be used with an ``AnimatedSprite``. Experiment to see what works best for your needs.
