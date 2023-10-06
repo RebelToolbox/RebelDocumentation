@@ -3,14 +3,14 @@
 Localization using gettext
 ==========================
 
-In addition to :ref:`doc_importing_translations` in CSV format, Godot
+In addition to :ref:`doc_importing_translations` in CSV format, Rebel Engine
 also supports loading translation files written in the GNU gettext
 (``.po``) format.
 
 .. note:: For an introduction to gettext, check out
           `A Quick Gettext Tutorial <https://www.labri.fr/perso/fleury/posts/programming/a-quick-gettext-tutorial.html>`_.
           It's written with C projects in mind, but much of the advice
-          also applies to Godot (with the exception of ``xgettext``).
+          also applies to Rebel Engine (with the exception of ``xgettext``).
 
 Advantages
 ----------
@@ -31,14 +31,14 @@ Disadvantages
 - gettext is a more complex format than CSV and can be harder to grasp for
   people new to software localization.
 - People who maintain localization files will have to install gettext tools
-  on their system. However, as Godot doesn't use compiled message object files
+  on their system. However, as Rebel Engine doesn't use compiled message object files
   (``.mo``), translators can test their work without having to install
   gettext tools.
 
 Caveats
 -------
 
-- As Godot uses its own PO file parser behind the scenes
+- As Rebel Engine uses its own PO file parser behind the scenes
   (which is more limited than the reference GNU gettext implementation),
   some features such as pluralization aren't supported.
 
@@ -63,7 +63,7 @@ install them.
 Creating the PO template (POT) manually
 ---------------------------------------
 
-Godot currently doesn't support extracting source strings using ``xgettext``,
+Rebel Engine currently doesn't support extracting source strings using ``xgettext``,
 so the ``.pot`` file must be created manually. This file can be placed anywhere
 in the project directory, but it's recommended to keep it in a subdirectory, as
 each locale will be defined in its own file.
@@ -87,40 +87,10 @@ the translated string.
 The ``msgstr`` value in PO template files (``.pot``) should **always** be empty.
 Localization will be done in the generated ``.po`` files instead.
 
-Creating the PO template (POT) using pybabel
---------------------------------------------
+Creating the PO template (POT)
+------------------------------
 
-The Python tool pybabel has support for Godot and can be used to automatically
-create and update the POT file from your scene files and scripts.
-
-After installing ``babel`` and ``babel-godot``, for example using pip:
-
-.. code-block:: shell
-
-    pip3 install babel babel-godot
-
-Write a mapping file (for example ``babelrc``) which will indicate which files
-pybabel needs to process (note that we process GDScript as Python, which is
-generally sufficient):
-
-.. code-block:: none
-
-    [python: **.gd]
-    encoding = utf-8
-
-    [godot_scene: **.tscn]
-    encoding = utf-8
-
-You can then run pybabel like so:
-
-.. code-block:: shell
-
-    pybabel extract -F babelrc -k text -k LineEdit/placeholder_text -k tr -o godot-l10n.pot .
-
-Use the ``-k`` option to specify what needs to be extracted. In this case,
-arguments to :ref:`tr() <class_Object_method_tr>` will be translated, as well
-as properties named "text" (commonly used by Control nodes) and LineEdit's
-"placeholder_text" property.
+.. To do
 
 Creating a messages file from a PO template
 -------------------------------------------
@@ -139,8 +109,8 @@ as the PO template.
 Alternatively, you can do that graphically using Poedit, or by uploading the
 POT file to your web platform of choice.
 
-Loading a messages file in Godot
---------------------------------
+Loading a messages file in Rebel Editor
+---------------------------------------
 
 To register a messages file as a translation in a project, open the
 **Project Settings**, then go to the **Localization** tab.
@@ -149,7 +119,7 @@ in the file dialog. The locale will be inferred from the
 ``"Language: <code>\n"`` property in the messages file.
 
 .. note:: See :ref:`doc_internationalizing_games` for more information on
-          importing and testing translations in Godot.
+          importing and testing translations in Rebel Editor.
 
 Updating message files to follow the PO template
 ------------------------------------------------
@@ -174,7 +144,7 @@ saved as ``fr.po~`` in this example), remove the ``--backup=none`` argument.
     denotes that the translation should be updated to match the new source string,
     as the translation will most likely be inaccurate until it's updated.
 
-    Strings with "fuzzy" comments will **not** be read by Godot until the
+    Strings with "fuzzy" comments will **not** be read by Rebel Engine until the
     translation is updated and the "fuzzy" comment is removed.
 
 Checking the validity of a PO file or template
