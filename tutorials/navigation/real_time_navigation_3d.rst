@@ -6,7 +6,7 @@ Real Time Navigation (3D)
 Introduction
 ------------
 
-Godot provides two nodes which can be used to achieve real time navigation
+Rebel Engine provides two nodes which can be used to achieve real time navigation
 in a 3D environment, :ref:`Navigation <class_Navigation>` and :ref:`NavigationMeshInstance <class_NavigationMeshInstance>`.
 
 A navigation mesh instance is used to hold a :ref:`NavigationMesh <class_NavigationMesh>`,
@@ -56,9 +56,8 @@ The method will return a :ref:`PoolVector3Array <class_PoolVector3Array>` consis
 points that make a path. If there is no way to navigate to the end
 location the method will return a blank :ref:`PoolVector3Array <class_PoolVector3Array>`.
 
-Official example project
-------------------------
+Example project
+---------------
 
-There is an official example project on how to use 3D navigation.
-You can find the repository `here <https://github.com/godotengine/godot-demo-projects/tree/master/3d/navmesh>`__.
-It can also be found in the asset library.
+An example project on how to use 3D navigation can be downloaded here:
+:download:`Navigation Mesh <files/navigation-mesh.zip>`
