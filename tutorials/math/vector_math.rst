@@ -9,7 +9,7 @@ Introduction
 This tutorial is a short and practical introduction to linear algebra as
 it applies to game development. Linear algebra is the study of vectors and
 their uses. Vectors have many applications in both 2D and 3D development
-and Godot uses them extensively. Developing a good understanding of vector
+and Rebel Engine uses them extensively. Developing a good understanding of vector
 math is essential to becoming a strong game developer.
 
 .. note:: This tutorial is **not** a formal textbook on linear algebra. We
@@ -59,7 +59,7 @@ Vector operations
 
 You can use either method (x and y coordinates or angle and magnitude) to
 refer to a vector, but for convenience, programmers typically use the
-coordinate notation. For example, in Godot, the origin is the top-left
+coordinate notation. For example, in Rebel Engine, the origin is the top-left
 corner of the screen, so to place a 2D node named ``Node2D`` 400 pixels to the right and
 300 pixels down, use the following code:
 
@@ -73,7 +73,7 @@ corner of the screen, so to place a 2D node named ``Node2D`` 400 pixels to the r
     var node2D = GetNode<Node2D>("Node2D");
     node2D.Position = new Vector2(400, 300);
 
-Godot supports both :ref:`Vector2 <class_Vector2>` and
+Rebel Engine supports both :ref:`Vector2 <class_Vector2>` and
 :ref:`Vector3 <class_Vector3>` for 2D and 3D usage, respectively. The same
 mathematical rules discussed in this article apply to both types.
 
@@ -221,7 +221,7 @@ wall or other object:
 The surface normal has a value of ``(0, -1)`` because this is a horizontal
 surface. When the ball collides, we take its remaining motion (the amount
 left over when it hits the surface) and reflect it using the normal. In
-Godot, the :ref:`Vector2 <class_Vector2>` class has a ``bounce()`` method
+Rebel Engine, the :ref:`Vector2 <class_Vector2>` class has a ``bounce()`` method
 to handle this. Here is a GDScript example of the diagram above using a
 :ref:`KinematicBody2D <class_KinematicBody2D>`:
 
@@ -298,7 +298,7 @@ zombies ``A`` and ``B``. Assuming a zombie's field of view is **180°**, can the
 The green arrows ``fA`` and ``fB`` are **unit vectors** representing the
 zombies' facing directions and the blue semicircle represents its field of
 view. For zombie ``A``, we find the direction vector ``AP`` pointing to
-the player using ``P - A`` and normalize it, however, Godot has a helper
+the player using ``P - A`` and normalize it, however, Rebel Engine has a helper
 method to do this called ``direction_to``. If the angle between this
 vector and the facing vector is less than 90°, then the zombie can see
 the player.
@@ -351,7 +351,7 @@ The cross product is calculated like this:
 
 
 
-With Godot, you can use the built-in method:
+With Rebel Engine, you can use the built-in method:
 
 .. tabs::
  .. code-tab:: gdscript GDScript
@@ -410,7 +410,7 @@ rotation.
 More information
 ~~~~~~~~~~~~~~~~
 
-For more information on using vector math in Godot, see the following articles:
+For more information on using vector math in Rebel Engine, see the following articles:
 
 - :ref:`doc_vectors_advanced`
 - :ref:`doc_matrices_and_transforms`

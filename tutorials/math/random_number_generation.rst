@@ -5,7 +5,7 @@ Random number generation
 
 Many games rely on randomness to implement core game mechanics. This page
 guides you through common types of randomness and how to implement them in
-Godot.
+Rebel Engine.
 
 After giving you a brief overview of useful functions that generate random
 numbers, you will learn how to get random elements from arrays, dictionaries,
@@ -20,7 +20,7 @@ and how to use a noise generator in GDScript.
 Global scope versus RandomNumberGenerator class
 -----------------------------------------------
 
-Godot exposes two ways to generate random numbers: via *global scope* methods or
+Rebel Engine exposes two ways to generate random numbers: via *global scope* methods or
 using the :ref:`class_RandomNumberGenerator` class.
 
 Global scope methods are easier to set up, but they don't offer as much control.
@@ -95,7 +95,7 @@ Getting a random number
 -----------------------
 
 Let's look at some of the most commonly used functions and methods to generate
-random numbers in Godot.
+random numbers in Rebel Engine.
 
 The function :ref:`randi() <class_@GDScript_method_randi>` returns a random
 number between 0 and 2^32-1. Since the maximum value is huge, you most likely
@@ -442,7 +442,7 @@ time, or anything else.
 
 To achieve this, you can use random *noise* functions. Noise functions are
 especially popular in procedural generation to generate realistic-looking
-terrain. Godot provides :ref:`class_opensimplexnoise` for this, which supports
+terrain. Rebel Engine provides :ref:`class_opensimplexnoise` for this, which supports
 1D, 2D, 3D, and 4D noise. Here's an example with 1D noise:
 
 .. tabs::
