@@ -6,7 +6,7 @@ Optimization
 Introduction
 ------------
 
-Godot follows a balanced performance philosophy. In the performance world,
+Rebel Engine follows a balanced performance philosophy. In the performance world,
 there are always trade-offs, which consist of trading speed for usability
 and flexibility. Some practical examples of this are:
 
@@ -31,12 +31,12 @@ general-purpose in nature. Balanced algorithms are always favored over
 algorithms that might be fast in some situations and slow in others, or
 algorithms that are fast but are more difficult to use.
 
-Godot is not an exception to this. While it is designed to have backends
+Rebel Engine is not an exception to this. While it is designed to have backends
 swappable for different algorithms, the default backends prioritize balance and
 flexibility over performance.
 
 With this clear, the aim of this tutorial section is to explain how to get the
-maximum performance out of Godot. While the tutorials can be read in any order,
+maximum performance out of Rebel Engine. While the tutorials can be read in any order,
 it is a good idea to start from :ref:`doc_general_optimization`.
 
 Common

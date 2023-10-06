@@ -7,7 +7,7 @@ This tutorial explores a technique used in the game `ABZU <https://www.gdcvault.
 for rendering and animating thousands of fish using vertex animation and
 static mesh instancing.
 
-In Godot, this can be accomplished with a custom :ref:`Shader <class_Shader>` and
+In Rebel Engine, this can be accomplished with a custom :ref:`Shader <class_Shader>` and
 a :ref:`MultiMeshInstance <class_MultiMeshInstance>`. Using the following technique you
 can render thousands of animated objects, even on low end hardware.
 
@@ -181,7 +181,7 @@ find that you can create a wide variety of swim styles using these four motions.
 Making a school of fish
 -----------------------
 
-Godot makes it easy to render thousands of the same object using a MultiMeshInstance node.
+Rebel Engine makes it easy to render thousands of the same object using a MultiMeshInstance node.
 
 A MultiMeshInstance node is created and used the same way you would make a MeshInstance node.
 For this tutorial, we will name the MultiMeshInstance node ``School``, because it will contain

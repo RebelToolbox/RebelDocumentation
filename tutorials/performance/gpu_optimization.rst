@@ -8,7 +8,7 @@ Introduction
 
 The demand for new graphics features and progress almost guarantees that you
 will encounter graphics bottlenecks. Some of these can be on the CPU side, for
-instance in calculations inside the Godot engine to prepare objects for
+instance in calculations inside the Rebel Engine to prepare objects for
 rendering. Bottlenecks can also occur on the CPU in the graphics driver, which
 sorts instructions to pass to the GPU, and in the transfer of these
 instructions. And finally, bottlenecks also occur on the GPU itself.
@@ -28,7 +28,7 @@ Draw calls, state changes, and APIs
 .. note:: The following section is not relevant to end-users, but is useful to
           provide background information that is relevant in later sections.
 
-Godot sends instructions to the GPU via a graphics API (OpenGL, OpenGL ES or
+Rebel Engine sends instructions to the GPU via a graphics API (OpenGL, OpenGL ES or
 Vulkan). The communication and driver activity involved can be quite costly,
 especially in OpenGL and OpenGL ES. If we can provide these instructions in a
 way that is preferred by the driver and GPU, we can greatly increase
@@ -62,7 +62,7 @@ meshes tend to comprise hundreds or thousands of triangles, and combining large
 meshes in real-time is prohibitively expensive. The costs of joining them quickly
 exceeds any benefits as the number of triangles grows per mesh. A much better
 alternative is to **join meshes ahead of time** (static meshes in relation to each
-other). This can either be done by artists, or programmatically within Godot.
+other). This can either be done by artists, or programmatically within Rebel Engine.
 
 There is also a cost to batching together objects in 3D. Several objects
 rendered as one cannot be individually culled. An entire city that is off-screen
@@ -78,11 +78,11 @@ For more information on 3D specific optimizations, see
 Reuse Shaders and Materials
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Godot renderer is a little different to what is out there. It's designed to
+The Rebel Renderer is a little different to what is out there. It's designed to
 minimize GPU state changes as much as possible. :ref:`SpatialMaterial
 <class_SpatialMaterial>` does a good job at reusing materials that need similar
 shaders. If custom shaders are used, make sure to reuse them as much as
-possible. Godot's priorities are:
+possible. Rebel Engine's priorities are:
 
 -  **Reusing Materials:** The fewer different materials in the
    scene, the faster the rendering will be. If a scene has a huge amount
@@ -197,7 +197,7 @@ algorithms that require as few texture reads as possible.**
 Texture compression
 ~~~~~~~~~~~~~~~~~~~
 
-By default, Godot compresses textures of 3D models when imported using video RAM
+By default, Rebel Editor compresses textures of 3D models when imported using video RAM
 (VRAM) compression. Video RAM compression isn't as efficient in size as PNG or
 JPG when stored, but increases performance enormously when drawing large enough
 textures.
