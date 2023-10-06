@@ -102,8 +102,7 @@ in Xcode when you want to run it on a device.
 Plugins for iOS
 ---------------
 
-Special iOS plugins can be used in Rebel Engine. Check out the
-:ref:`doc_plugins_for_ios` page.
+Special iOS plugins can be used in Rebel Engine.
 
 Troubleshooting rendering issues
 --------------------------------
