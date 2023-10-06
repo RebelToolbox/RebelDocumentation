@@ -6,14 +6,14 @@ Using KinematicBody2D
 Introduction
 ------------
 
-Godot offers several collision objects to provide both collision detection
+Rebel Engine offers several collision objects to provide both collision detection
 and response. Trying to decide which one to use for your project can be confusing.
 You can avoid problems and simplify development if you understand how each of them
 works and what their pros and cons are. In this tutorial, we'll look at the
 :ref:`KinematicBody2D <class_KinematicBody2D>` node and show some examples
 of how to use it.
 
-.. note:: This document assumes you're familiar with Godot's various physics
+.. note:: This document assumes you're familiar with Rebel Physics various
           bodies. Please read :ref:`doc_physics_introduction` first.
 
 What is a kinematic body?
@@ -155,7 +155,7 @@ collision data is returned.
 Which movement method to use?
 -----------------------------
 
-A common question from new Godot users is: "How do you decide which movement
+A common question from new Rebel users is: "How do you decide which movement
 function to use?" Often, the response is to use ``move_and_slide()`` because
 it's "simpler," but this is not necessarily the case. One way to think of it
 is that ``move_and_slide()`` is a special case, and ``move_and_collide()``
@@ -209,7 +209,7 @@ Examples
 --------
 
 To see these examples in action, download the sample project:
-:download:`using_kinematic2d.zip <files/using_kinematic2d.zip>`.
+:download:`Using Kinematic 2D <files/using-kinematic-2d.zip>`.
 
 Movement and walls
 ~~~~~~~~~~~~~~~~~~
@@ -217,7 +217,7 @@ Movement and walls
 If you've downloaded the sample project, this example is in "BasicMovement.tscn".
 
 For this example, add a ``KinematicBody2D`` with two children: a ``Sprite`` and a
-``CollisionShape2D``. Use the Godot "icon.png" as the Sprite's texture (drag it
+``CollisionShape2D``. Use the Rebel "icon.png" as the Sprite's texture (drag it
 from the Filesystem dock to the *Texture* property of the ``Sprite``). In the
 ``CollisionShape2D``'s *Shape* property, select "New RectangleShape2D" and
 size the rectangle to fit over the sprite image.

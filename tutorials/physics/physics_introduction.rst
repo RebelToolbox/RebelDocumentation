@@ -8,14 +8,14 @@ intersect or come into contact. This is known as **collision detection**.
 When a collision is detected, you typically want something to happen. This
 is known as **collision response**.
 
-Godot offers a number of collision objects in 2D and 3D to provide both collision detection
+Rebel Engine offers a number of collision objects in 2D and 3D to provide both collision detection
 and response. Trying to decide which one to use for your project can be confusing.
 You can avoid problems and simplify development if you understand how each works
 and what their pros and cons are.
 
 In this guide, you will learn:
 
--   Godot's four collision object types
+-   Rebel Engine's four collision object types
 -   How each collision object works
 -   When and why to choose one type over another
 
@@ -26,7 +26,7 @@ In this guide, you will learn:
 Collision objects
 -----------------
 
-Godot offers four kinds of physics bodies, extending :ref:`CollisionObject2D <class_CollisionObject2D>`:
+Rebel Engine offers four kinds of physics bodies, extending :ref:`CollisionObject2D <class_CollisionObject2D>`:
 
 - :ref:`Area2D <class_Area2D>`
     ``Area2D`` nodes provide **detection** and **influence**. They can detect when

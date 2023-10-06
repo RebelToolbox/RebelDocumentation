@@ -10,7 +10,7 @@ Yes, the name sounds strange. "Kinematic Character". What is that?
 The reason for the name is that, when physics engines came out, they were called
 "Dynamics" engines (because they dealt mainly with collision
 responses). Many attempts were made to create a character controller
-using the dynamics engines, but it wasn't as easy as it seemed. Godot
+using the dynamics engines, but it wasn't as easy as it seemed. Rebel Engine
 has one of the best implementations of dynamic character controller
 you can find (as it can be seen in the 2d/platformer demo), but using
 it requires a considerable level of skill and understanding of
@@ -78,9 +78,10 @@ or lose precision if the frame rate is too high or too low.
 Scene setup
 ~~~~~~~~~~~
 
-To have something to test, here's the scene (from the tilemap tutorial):
-:download:`kbscene.zip <files/kbscene.zip>`. We'll be creating a new scene
-for the character. Use the robot sprite and create a scene like this:
+To have something to test, here is a simple starting project:
+:download:`Kinematic Body <files/kinematic-body.zip>`.
+We'll be creating a new scene for the character.
+Use the robot sprite and create a scene like this:
 
 .. image:: img/kbscene.png
 
@@ -209,7 +210,7 @@ This adds simple walking support by pressing left and right:
         # We don't need to multiply velocity by delta because "move_and_slide" already takes delta time into account.
 
         # The second parameter of "move_and_slide" is the normal pointing up.
-        # In the case of a 2D platformer, in Godot, upward is negative y, which translates to -1 as a normal.
+        # In the case of a 2D platformer, in Rebel Engine, upward is negative y, which translates to -1 as a normal.
         move_and_slide(velocity, Vector2(0, -1))
 
  .. code-tab:: csharp
@@ -244,13 +245,12 @@ This adds simple walking support by pressing left and right:
             // We don't need to multiply velocity by delta because "MoveAndSlide" already takes delta time into account.
 
             // The second parameter of "MoveAndSlide" is the normal pointing up.
-            // In the case of a 2D platformer, in Godot, upward is negative y, which translates to -1 as a normal.
+            // In the case of a 2D platformer, in Rebel Engine, upward is negative y, which translates to -1 as a normal.
             MoveAndSlide(velocity, new Vector2(0, -1));
         }
     }
 
 And give it a try.
 
-This is a good starting point for a platformer. A more complete demo can be found in the demo zip distributed with the
-engine, or in the
-https://github.com/godotengine/godot-demo-projects/tree/master/2d/kinematic_character.
+This is a good starting point for a platformer. For a more complete demo download:
+:download:`Kinematic Character <files/kinematic-character.zip>`
