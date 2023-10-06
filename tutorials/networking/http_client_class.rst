@@ -21,11 +21,11 @@ class. It's just a script, so it can be run by executing:
 
  .. code-tab:: console GDScript
 
-    c:\godot> godot -s http_test.gd
+    c:\RebelEngine> rebel -s http_test.gd
 
  .. code-tab:: console C#
 
-    c:\godot> godot -s HTTPTest.cs
+    c:\RebelEngine> rebel -s HTTPTest.cs
 
 It will connect and fetch a website.
 
@@ -58,7 +58,7 @@ It will connect and fetch a website.
 
         # Some headers
         var headers = [
-            "User-Agent: Pirulo/1.0 (Godot)",
+            "User-Agent: Pirulo/1.0 (Rebel)",
             "Accept: */*"
         ]
 
@@ -147,7 +147,7 @@ It will connect and fetch a website.
             Debug.Assert(http.GetStatus() == HTTPClient.Status.Connected); // Check if the connection was made successfully.
 
             // Some headers.
-            string[] headers = { "User-Agent: Pirulo/1.0 (Godot)", "Accept: */*" };
+            string[] headers = { "User-Agent: Pirulo/1.0 (Rebel)", "Accept: */*" };
 
             err = http.Request(HTTPClient.Method.Get, "/ChangeLog-5.php", headers); // Request a page from the site.
             Debug.Assert(err == Error.Ok); // Make sure all is OK.
