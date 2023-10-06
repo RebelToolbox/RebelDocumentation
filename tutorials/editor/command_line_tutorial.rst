@@ -5,7 +5,7 @@ Command line tutorial
 
 .. highlight:: shell
 
-Some developers like using the command line extensively. Godot is
+Some developers like using the command line extensively. Rebel Engine is
 designed to be friendly to them, so here are the steps for working
 entirely from the command line. Given the engine relies on almost no
 external libraries, initialization times are pretty fast, making it
@@ -13,15 +13,15 @@ suitable for this workflow.
 
 .. note::
 
-    On Windows and Linux, you can run a Godot binary in a terminal by specifying
+    On Windows and Linux, you can run a Rebel Engine binary in a terminal by specifying
     its relative or absolute path.
 
-    On macOS, the process is different due to Godot being contained within an
-    ``.app`` bundle (which is a *folder*, not a file). To run a Godot binary
-    from a terminal on macOS, you have to ``cd`` to the folder where the Godot
-    application bundle is located, then run ``Godot.app/Contents/MacOS/Godot``
+    On macOS, the process is different due to Rebel Engine being contained within an
+    ``.app`` bundle (which is a *folder*, not a file). To run a Rebel Engine binary
+    from a terminal on macOS, you have to ``cd`` to the folder where the Rebel Engine
+    application bundle is located, then run ``Rebel.app/Contents/MacOS/Rebel``
     followed by any command line arguments. If you've renamed the application
-    bundle from ``Godot`` to another name, make sure to edit this command line
+    bundle from ``Rebel`` to another name, make sure to edit this command line
     accordingly.
 
 Command line reference
@@ -54,9 +54,9 @@ Command line reference
 +------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``-l <locale>``, ``--language <locale>`` | Use a specific locale (<locale> being a two-letter code). See :ref:`doc_locales` for more details.                                                           |
 +------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``--path <directory>``                   | Path to a project (<directory> must contain a 'project.godot' file).                                                                                         |
+| ``--path <directory>``                   | Path to a project (<directory> must contain a 'project.rebel' file).                                                                                         |
 +------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``-u``, ``--upwards``                    | Scan folders upwards for 'project.godot' file.                                                                                                               |
+| ``-u``, ``--upwards``                    | Scan folders upwards for 'project.rebel' file.                                                                                                               |
 +------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``--main-pack <file>``                   | Path to a pack (.pck) file to load.                                                                                                                          |
 +------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -146,7 +146,7 @@ Command line reference
 +----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``--build-solutions``                  | Build the scripting solutions (e.g. for C# projects, :ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled).                                                    |
 +----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``--gdnative-generate-json-api``       | Generate JSON dump of the Godot API for GDNative bindings (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled).                                              |
+| ``--gdnative-generate-json-api``       | Generate JSON dump of the Rebel Engine API for GDNative bindings (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled).                                       |
 +----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``--test <test>``                      | Run a unit test. Use ``--help`` first to display the list of tests. (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled).                                    |
 +----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -157,77 +157,77 @@ Command line reference
 Path
 ----
 
-It is recommended that your Godot binary be in your PATH environment
+It is recommended that your Rebel Engine binary be in your PATH environment
 variable, so it can be executed easily from any place by typing
-``godot``. You can do so on Linux by placing the Godot binary in
-``/usr/local/bin`` and making sure it is called ``godot``.
+``rebel``. You can do so on Linux by placing the Rebel Engine binary in
+``/usr/local/bin`` and making sure it is called ``rebel``.
 
 Setting the project path
 ------------------------
 
-Depending on where your Godot binary is located and what your current
+Depending on where your Rebel Engine binary is located and what your current
 working directory is, you may need to set the path to your project
 for any of the following commands to work correctly.
 
-This can be done by giving the path to the ``project.godot`` file
+This can be done by giving the path to the ``project.rebel`` file
 of your project as either the first argument, like this:
 
 ::
 
-    godot path_to_your_project/project.godot [other] [commands] [and] [args]
+    rebel path_to_your_project/project.rebel [other] [commands] [and] [args]
 
 Or by using the ``--path`` argument:
 
 ::
 
-    godot --path path_to_your_project [other] [commands] [and] [args]
+    rebel --path path_to_your_project [other] [commands] [and] [args]
 
 For example, the full command for exporting your game (as explained below) might look like this:
 
 ::
 
-    godot --path path_to_your_project --export my_export_preset_name game.exe
+    rebel --path path_to_your_project --export my_export_preset_name game.exe
 
 Creating a project
 ------------------
 
 
 Creating a project from the command line can be done by navigating the
-shell to the desired place and making a project.godot file.
+shell to the desired place and making a project.rebel file.
 
 
 ::
 
     mkdir newgame
     cd newgame
-    touch project.godot
+    touch project.rebel
 
 
-The project can now be opened with Godot.
+The project can now be opened with Rebel Editor.
 
 
 Running the editor
 ------------------
 
-Running the editor is done by executing Godot with the ``-e`` flag. This
+Running the editor is done by executing the Rebel binary with the ``-e`` flag. This
 must be done from within the project directory or a subdirectory,
 otherwise the command is ignored and the project manager appears.
 
 ::
 
-    godot -e
+    rebel -e
 
 If a scene has been created and saved, it can be edited later by running
 the same code with that scene as argument.
 
 ::
 
-    godot -e scene.tscn
+    rebel -e scene.tscn
 
 Erasing a scene
 ---------------
 
-Godot is friends with your filesystem and will not create extra
+Rebel is friends with your filesystem and will not create extra
 metadata files. Use ``rm`` to erase a scene file. Make sure nothing
 references that scene or else an error will be thrown upon opening.
 
@@ -238,19 +238,19 @@ references that scene or else an error will be thrown upon opening.
 Running the game
 ----------------
 
-To run the game, simply execute Godot within the project directory or
+To run the game, simply execute Rebel Engine within the project directory or
 subdirectory.
 
 ::
 
-    godot
+    rebel
 
 When a specific scene needs to be tested, pass that scene to the command
 line.
 
 ::
 
-    godot scene.tscn
+    rebel scene.tscn
 
 Debugging
 ---------
@@ -261,11 +261,11 @@ just fly by. For this, a command line debugger is provided by adding
 
 ::
 
-    godot -d
+    rebel -d
 
 ::
 
-    godot -d scene.tscn
+    rebel -d scene.tscn
 
 .. _doc_command_line_tutorial_exporting:
 
@@ -273,13 +273,13 @@ Exporting
 ---------
 
 Exporting the project from the command line is also supported. This is
-especially useful for continuous integration setups. The version of Godot
+especially useful for continuous integration setups. The version of Rebel Engine
 that is headless (server build, no video) is ideal for this.
 
 ::
 
-    godot --export "Linux/X11" /var/builds/project
-    godot --export Android /var/builds/project.apk
+    rebel --export "Linux/X11" /var/builds/project
+    rebel --export Android /var/builds/project.apk
 
 The preset name must match the name of an export preset defined in the
 project's ``export_presets.cfg`` file. If the preset name contains spaces or
@@ -296,7 +296,7 @@ The output path extension determines the package's format, either PCK or ZIP.
 
     When specifying a relative path as the path for `--export`, `--export-debug`
     or `--export-pack`, the path will be relative to the directory containing
-    the ``project.godot`` file, **not** relative to the current working directory.
+    the ``project.rebel`` file, **not** relative to the current working directory.
 
 Running a script
 ----------------
@@ -311,7 +311,7 @@ Here is a simple ``sayhello.gd`` example of how it works:
 
 .. code-block:: python
 
-    #!/usr/bin/env -S godot -s
+    #!/usr/bin/env -S rebel -s
     extends SceneTree
 
     func _init():
@@ -323,13 +323,13 @@ And how to run it:
 ::
 
     # Prints "Hello!" to standard output.
-    godot -s sayhello.gd
+    rebel -s sayhello.gd
 
-If no ``project.godot`` exists at the path, current path is assumed to be the
+If no ``project.rebel`` exists at the path, current path is assumed to be the
 current working directory (unless ``--path`` is specified).
 
 The first line of ``sayhello.gd`` above is commonly referred to as
-a *shebang*. If the Godot binary is in your ``PATH`` as ``godot``,
+a *shebang*. If the Rebel binary is in your ``PATH`` as ``rebel``,
 it allows you to run the script as follows in modern Linux
 distributions, as well as macOS:
 
@@ -341,8 +341,8 @@ distributions, as well as macOS:
     ./sayhello.gd
 
 If the above doesn't work in your current version of Linux or macOS, you can
-always have the shebang run Godot straight from where it is located as follows:
+always have the shebang run Rebel straight from where it is located as follows:
 
 ::
 
-    #!/usr/bin/godot -s
+    #!/usr/bin/rebel -s
