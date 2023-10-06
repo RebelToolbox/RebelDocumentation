@@ -99,7 +99,7 @@ Here is how a ``_process()`` function might look for you:
 Try it out
 -----------
 
-Add a ``Sprite`` node to your scene and set the texture to Godot icon. Attach and open a script, and change it to this:
+Add a ``Sprite`` node to your scene and set the texture to Rebel icon. Attach and open a script, and change it to this:
 
 .. tabs::
  .. code-tab:: gdscript GDScript
