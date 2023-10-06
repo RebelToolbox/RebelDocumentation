@@ -6,14 +6,14 @@ Input examples
 Introduction
 ------------
 
-In this tutorial, you'll learn how to use Godot's :ref:`InputEvent <class_InputEvent>`
+In this tutorial, you'll learn how to use Rebel Engine's :ref:`InputEvent <class_InputEvent>`
 system to capture player input. There are many different types of input your
 game may use - keyboard, gamepad, mouse, etc. - and many different ways to
 turn those inputs into actions in your game. This document will show you some
 of the most common scenarios, which you can use as starting points for your
 own projects.
 
-.. note:: For a detailed overview of how Godot's input event system works,
+.. note:: For a detailed overview of how Rebel Engine's input event system works,
           see :ref:`doc_inputevent`.
 
 Events versus polling
@@ -23,7 +23,7 @@ Sometimes you want your game to respond to a certain input event - pressing
 the "jump" button, for example. For other situations, you might want something
 to happen as long as a key is pressed, such as movement. In the first case,
 you can use the ``_input()`` function, which will be called whenever an input
-event occurs. In the second case, Godot provides the :ref:`Input <class_Input>`
+event occurs. In the second case, Rebel Engine provides the :ref:`Input <class_Input>`
 singleton, which you can use to query the state of an input.
 
 Examples:
@@ -151,7 +151,7 @@ InputMap
 The :ref:`InputMap <class_InputMap>` is the most flexible way to handle a
 variety of inputs. You use this by creating named input *actions*, to which
 you can assign any number of input events, such as keypresses or mouse clicks.
-A new Godot project includes a number of default actions already defined. To
+A new Rebel project includes a number of default actions already defined. To
 see them, and to add your own, open Project -> Project Settings and select
 the InputMap tab:
 

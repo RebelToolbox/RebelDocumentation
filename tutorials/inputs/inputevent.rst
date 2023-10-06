@@ -63,7 +63,7 @@ Every input event is originated from the user/player (though it's
 possible to generate an InputEvent and feed them back to the engine,
 which is useful for gestures). The OS object for each platform will read
 events from the device, then feed them to MainLoop. As :ref:`SceneTree <class_SceneTree>`
-is the default MainLoop implementation, events are fed to it. Godot
+is the default MainLoop implementation, events are fed to it. Rebel Engine
 provides a function to get the current SceneTree object :
 **get_tree()**.
 
@@ -112,7 +112,7 @@ the bottom of the scene tree, and ending at the root node:
 GUI events also travel up the scene tree but, since these events target
 specific Controls, only direct ancestors of the targeted Control node receive the event.
 
-In accordance with Godot's node-based design, this enables
+In accordance with Rebel Engine's node-based design, this enables
 specialized child nodes to handle and consume particular events, while
 their ancestors, and ultimately the scene root, can provide more
 generalized behavior if needed.
@@ -206,5 +206,5 @@ Customizing and re-mapping input from code is often desired. If your
 whole workflow depends on actions, the :ref:`InputMap <class_InputMap>` singleton is
 ideal for reassigning or creating different actions at run-time. This
 singleton is not saved (must be modified manually) and its state is run
-from the project settings (project.godot). So any dynamic system of this
+from the project settings (project.rebel). So any dynamic system of this
 type needs to store settings in the way the programmer best sees fit.
