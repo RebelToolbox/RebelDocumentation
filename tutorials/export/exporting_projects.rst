@@ -5,22 +5,11 @@ Exporting projects
 
 .. highlight:: none
 
-Why export?
------------
-
-Originally, Godot did not have any means to export projects. The
-developers would compile the proper binaries and build the packages for
-each platform manually.
-
-When more developers (and even non-programmers) started using it, and
-when our company started taking more projects at the same time, it
-became evident that this was a bottleneck.
-
 On PC
 ~~~~~
 
-Distributing a game project on PC with Godot is rather easy. Drop
-the Godot binary in the same directory as the ``project.godot`` file,
+Distributing a game project on PC with Rebel Editor is rather easy. Drop
+the Rebel binary in the same directory as the ``project.rebel`` file,
 then compress the project directory and you are done.
 
 It sounds simple, but there are probably a few reasons why the developer
@@ -31,7 +20,7 @@ Another reason is that the developer might prefer a specially-compiled
 binary, which is smaller in size, more optimized and does not include
 tools like the editor and debugger.
 
-Finally, Godot has a simple but efficient system for
+Finally, Rebel Editor has a simple but efficient system for
 :ref:`creating DLCs as extra package files <doc_exporting_pcks>`.
 
 On mobile
@@ -78,7 +67,7 @@ to choose from for an export preset.
 
 The default options are often enough to export, so tweaking them is
 usually not necessary. However, many platforms require additional
-tools (SDKs) to be installed to be able to export. Additionally, Godot
+tools (SDKs) to be installed to be able to export. Additionally, Rebel Editor
 needs export templates installed to create packages. The export menu
 will complain when something is missing and will not allow the user to
 export for that platform until they resolve it:
@@ -92,12 +81,10 @@ Export templates
 ~~~~~~~~~~~~~~~~
 
 Apart from setting up the platform, the export templates must be
-installed to be able to export projects. They can be obtained as a
-TPZ file (which is a renamed ZIP archive) from the
-`download page of the website <https://www.godotengine.org/download>`_.
+installed to be able to export projects.
 
 Once downloaded, they can be installed using the **Install Export Templates**
-option in the editor:
+option in Rebel Editor:
 
 .. image:: img/exptemp.png
 
@@ -106,7 +93,7 @@ option in the editor:
 Resource options
 ~~~~~~~~~~~~~~~~
 
-When exporting, Godot makes a list of all the files to export and then
+When exporting, Rebel Editor makes a list of all the files to export and then
 creates the package. There are 3 different modes for exporting:
 
 -  Export all resources in the project
@@ -136,14 +123,14 @@ type without manually deselecting every one. For example, ``.png`` files.
 Exporting from the command line
 -------------------------------
 
-In production, it is useful to automate builds, and Godot supports this
+In production, it is useful to automate builds, and Rebel Editor supports this
 with the ``--export`` and ``--export-debug`` command line parameters.
 Exporting from the command line still requires an export preset to define
 the export parameters. A basic invocation of the command would be:
 
 .. code-block:: shell
 
-    godot --export "Windows Desktop" some_name.exe
+    rebel --export "Windows Desktop" some_name.exe
 
 This will export to ``some_name.exe``, assuming there is a preset
 called "Windows Desktop" and the template can be found. (The export preset name
@@ -151,7 +138,7 @@ must be written within quotes if it contains spaces or special characters.)
 The output path is *relative to the project path* or *absolute*;
 **it does not respect the directory the command was invoked from**.
 
-The output file extension should match the one used by the Godot export process:
+The output file extension should match the one used by the Rebel Editor export process:
 
 - Windows: ``.exe``
 - macOS: ``.zip`` (from all platforms) or ``.dmg`` (only when exporting *from* macOS).
@@ -162,12 +149,12 @@ The output file extension should match the one used by the Godot export process:
 - iOS: ``.zip``
 
 You can also configure it to export *only* the PCK or ZIP file, allowing
-a single exported main pack file to be used with multiple Godot executables.
+a single exported main pack file to be used with multiple Rebel executables.
 When doing so, the export preset name must still be specified on the command line:
 
 .. code-block:: shell
 
-    godot --export-pack "Windows Desktop" some_name.pck
+    rebel --export-pack "Windows Desktop" some_name.pck
 
 It is often useful to combine the ``--export`` flag with the ``--path``
 flag, so that you do not need to ``cd`` to the project folder before running
@@ -175,11 +162,11 @@ the command:
 
 .. code-block:: shell
 
-    godot --path /path/to/project --export "Windows Desktop" some_name.exe
+    rebel --path /path/to/project --export "Windows Desktop" some_name.exe
 
 .. seealso::
 
-    See :ref:`doc_command_line_tutorial` for more information about using Godot
+    See :ref:`doc_command_line_tutorial` for more information about using Rebel Editor
     from the command line.
 
 PCK versus ZIP pack file formats
@@ -193,9 +180,7 @@ depending on your needs.
 
 - Uncompressed format. Larger file size, but faster to read/write.
 - Not readable and writable using tools normally present on the user's
-  operating system, even though there are
-  `third-party tools <https://github.com/hhyyrylainen/GodotPckTool>`__
-  to extract and create PCK files.
+  operating system.
 
 **ZIP format:**
 

@@ -3,9 +3,9 @@
 Custom builds for Android
 =========================
 
-Godot provides the option to use custom build Android templates. Instead of
-using the already pre-built template that ships with Godot, an actual Android
-Java project gets installed into your project folder. Godot will then build it
+Rebel provides the option to use custom build Android templates. Instead of
+using the already pre-built template that ships with Rebel Editor, an actual Android
+Java project gets installed into your project folder. Rebel Editor will then build it
 and use it as an export template every time you export the project.
 
 There are some reasons why you may want to do this:
@@ -15,7 +15,7 @@ There are some reasons why you may want to do this:
 
 Configuring the custom build is a fairly straightforward process. But first
 you need to follow the steps in :ref:`exporting for android<doc_exporting_for_android>`
-up to **Setting it up in Godot**. After doing that, follow the steps below.
+up to **Setting it up in Rebel Editor**. After doing that, follow the steps below.
 
 Set up the custom build environment
 -----------------------------------
