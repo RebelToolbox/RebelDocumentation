@@ -171,7 +171,7 @@ Example:
 String
 ------
 
-Use ``System.String`` (``string``). Most of Godot's String methods are
+Use ``System.String`` (``string``). Most of Rebel Engine's String methods are
 provided by the ``StringExtensions`` class as extension methods.
 
 Example:

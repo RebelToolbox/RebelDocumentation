@@ -3,10 +3,10 @@
 C# style guide
 ==============
 
-Having well-defined and consistent coding conventions is important for every project, and Godot
-is no exception to this rule.
+Having well-defined and consistent coding conventions is important for every project, and Rebel Projects
+are no exception to this rule.
 
-This page contains a coding style guide, which is followed by developers of and contributors to Godot
+This page contains a coding style guide, which is followed by developers of and contributors to Rebel Engine
 itself. As such, it is mainly intended for those who want to contribute to the project, but since
 the conventions and guidelines mentioned in this article are those most widely adopted by the users
 of the language, we encourage you to do the same, especially if you do not have such a guide yet.
@@ -20,7 +20,7 @@ of the language, we encourage you to do the same, especially if you do not have 
 Language specification
 ----------------------
 
-Godot currently uses **C# version 7.0** in its engine and example source code. So, before we move to
+Rebel Engine currently uses **C# version 7.0** in its engine and example source code. So, before we move to
 a newer version, care must be taken to avoid mixing language features only available in C# 7.1 or
 later.
 
@@ -305,7 +305,7 @@ Consider using implicitly typing (``var``) for declaration of a local variable, 
     var velocity = direction * 1.5;
 
     // It's generally a better idea to use explicit typing for numeric values, especially with
-    // the existence of the `real_t` alias in Godot, which can either be double or float
+    // the existence of the `real_t` alias in Rebel Engine, which can either be double or float
     // depending on the build configuration.
 
     var value = 1.5;

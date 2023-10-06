@@ -15,14 +15,10 @@ or write code like you always did!
 Static types can be used on variables, constants, functions, parameters,
 and return types.
 
-.. note::
-
-    Typed GDScript is available since Godot 3.1.
-
 A brief look at static typing
 -----------------------------
 
-With typed GDScript, Godot can detect even more errors as you write
+With typed GDScript, Rebel Editor can detect even more errors as you write
 code! It gives you and your teammates more information as you're
 working, as the arguments' types show up when you call a method.
 
@@ -47,7 +43,7 @@ who work with your code should always pass an ``Item`` to the
         item.amount += amount
 
 Another significant advantage of typed GDScript is the new **warning
-system**. From version 3.1, Godot gives you warnings about your code as
+system**. Rebel Editor gives you warnings about your code as
 you write it: the engine identifies sections of your code that may lead
 to issues at runtime, but lets you decide whether or not you want to
 leave the code as it is. More on that in a moment.
@@ -62,7 +58,7 @@ be left with no autocomplete suggestions:
 .. figure:: img/typed_gdscript_code_completion_dynamic.png
    :alt: code completion options for dynamic
 
-This is due to dynamic code. Godot cannot know what node or value type
+This is due to dynamic code. Rebel Editor cannot know what node or value type
 you're passing to the function. If you write the type explicitly
 however, you will get all public methods and variables from the node:
 
@@ -93,7 +89,7 @@ forces the variable's type to always stay the same:
     var damage: float = 10.5
     const MOVE_SPEED: float = 50.0
 
-Godot will try to infer types if you write a colon, but you omit the
+Rebel Editor will try to infer types if you write a colon, but you omit the
 type:
 
 ::
@@ -112,7 +108,7 @@ Currently you can use three types of… types:
 
 .. note::
 
-    You don't need to write type hints for constants, as Godot sets it automatically from the assigned value. But you can still do so to make the intent of your code clearer.
+    You don't need to write type hints for constants, as Rebel Engine sets it automatically from the assigned value. But you can still do so to make the intent of your code clearer.
 
 Custom variable types
 ~~~~~~~~~~~~~~~~~~~~~
@@ -134,7 +130,7 @@ For the example above, your Rifle.gd would look like this:
     extends Node2D
     class_name Rifle
 
-If you use ``class_name``, Godot registers the Rifle type globally in
+If you use ``class_name``, Rebel Engine registers the Rifle type globally in
 the editor, and you can use it anywhere, without having to preload it
 into a constant:
 
@@ -176,17 +172,16 @@ get full autocompletion on the player variable thanks to that cast.
 
 .. note::
 
-    If you try to cast with a built-in type and it fails, Godot will throw an error.
+    If you try to cast with a built-in type and it fails, Rebel Engine will throw an error.
 
 .. _doc_gdscript_static_typing_safe_lines:
 
 Safe lines
 ^^^^^^^^^^
 
-You can also use casting to ensure safe lines. Safe lines are a new
-tool in Godot 3.1 to tell you when ambiguous lines of code are
+You can also use casting to ensure safe lines. Safe lines tell you when ambiguous lines of code are
 type-safe. As you can mix and match typed and dynamic code, at times,
-Godot doesn't have enough information to know if an instruction will trigger
+Rebel Editor doesn't have enough information to know if an instruction will trigger
 an error or not at runtime.
 
 This happens when you get a child node. Let's take a timer for example:
@@ -197,9 +192,9 @@ so even if your timer is of type ``Timer``, it is also a ``Node`` and an
 don't care about the node's type as long as it has the methods you need
 to call.
 
-You can use casting to tell Godot the type you expect when you get a
+You can use casting to tell Rebel Engine the type you expect when you get a
 node: ``($Timer as Timer)``, ``($Player as KinematicBody2D)``, etc.
-Godot will ensure the type works and if so, the line number will turn
+Rebel Editor will ensure the type works and if so, the line number will turn
 green at the left of the script editor.
 
 .. figure:: img/typed_gdscript_safe_unsafe_line.png
@@ -380,7 +375,7 @@ Two scripts can't depend on each other in a cyclic fashion:
 Summary
 -------
 
-Typed GDScript is a powerful tool. Available as of version 3.1 of Godot, it
-helps you write more structured code, avoid common errors, and
+Typed GDScript is a powerful tool.
+It helps you write more structured code, avoid common errors, and
 create scalable systems. In the future, static types will also bring you
 a nice performance boost thanks to upcoming compiler optimizations.

@@ -21,4 +21,4 @@ The most common use cases are as follows:
 * Artists and Game Designers who have no experience in programming and want to create quick prototypes or simple games.
 * Programmers working in a team that want to make part of the game logic available to Artists or Game Designers in order to offload some of their work.
 
-These scenarios are far more common than one might think, so this is why Godot has added this feature.
+These scenarios are far more common than one might think.

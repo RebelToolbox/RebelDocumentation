@@ -14,7 +14,7 @@ working.
 
 Implementing a fine-grained control for what can be paused (and what can
 not) is a lot of work, so a simple framework for pausing is provided in
-Godot.
+Rebel Engine.
 
 How pausing works
 -----------------

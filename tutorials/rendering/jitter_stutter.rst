@@ -32,19 +32,10 @@ Jitter
 There can be many causes of jitter, the most typical one happens when the game *physics frequency* (usually 60 Hz) runs
 at a different resolution than the monitor refresh rate. Check whether your monitor refresh rate is different from 60 Hz.
 
-This is generally not a problem, given that most monitors are 60 Hz, and
-starting with Godot 3.1, a frame timer was introduced that tries to synchronize with refresh as well as possible.
+This is generally not a problem, given that most monitors are 60 Hz, and Rebel Engine uses a frame timer that tries to synchronize with refresh as well as possible.
 
 Sometimes only some objects appear to jitter (character or background). This happens when they are processed in different
-time sources (one is processed in the physics step while another is processed in the idle step). Godot 3.1 does some
-improvements to this, from allowing kinematic bodies to be animated in the regular _process loop, to further fixes in the
-frame timer.
-
-.. note::
-
-    You can use physics interpolation to mitigate physics-related jittering.
-    See `lawnjelly's smoothing-addon <https://github.com/lawnjelly/smoothing-addon>`__
-    for an add-on that can be dropped into any project to enable physics interpolation.
+time sources (one is processed in the physics step while another is processed in the idle step). Rebel Engine allows kinematic bodies to be animated in the regular _process loop to improve this.
 
 Stutter
 -------
@@ -60,7 +51,7 @@ Windows
 
 Windows is known to cause stutter in windowed games. This mostly depends on the hardware installed, drivers version and
 processes running in parallel (e.g. having many browser tabs open may cause stutter in a running game). To avoid this,
-starting with 3.1, Godot raises the game priority to "Above Normal". This helps considerably but may not completely eliminate
+Rebel Engine raises the game priority to "Above Normal". This helps considerably but may not completely eliminate
 stutter.
 
 Eliminating this completely requires giving your game full privileges to become "time critical", which is not advised.

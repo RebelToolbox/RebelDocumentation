@@ -14,7 +14,7 @@ When referring to *Node* here, it will be implied that a *Visual Script Node* is
 Node properties
 ---------------
 
-Like in most visual scripting implementations, each node has editable properties. In Godot, though, we try to avoid
+Like in most visual scripting implementations, each node has editable properties. In Rebel Engine, though, we try to avoid
 bloating the nodes with editable controls for the sake of readability.
 
 Nodes still display the required information as text, but editing is done via the *Inspector*. To edit them,
@@ -24,13 +24,13 @@ select any node and edit its properties in the *Inspector*.
 Ports and connections
 ---------------------
 
-Programming in Godot Visual Scripting is done via *Nodes* and *Port Connections* inside each function.
+Programming in Rebel Visual Scripting is done via *Nodes* and *Port Connections* inside each function.
 
 
 Ports
 ~~~~~
 
-Nodes in Godot Visual Scripting have *Ports*. These are endpoints that appear to the
+Nodes in Rebel Visual Scripting have *Ports*. These are endpoints that appear to the
 left and right of nodes and which can be used to make *Connections*:
 There are two types of *Ports*: *Sequence* and *Data*.
 
@@ -43,7 +43,7 @@ If nothing is connected, the function may end, or another output *Sequence Port*
 Thanks to this, you can follow the logic flow within a function by following the white lines.
 Not every *Node* has *Sequence Ports*. In fact, most do not.
 
-*Data Ports* ports contain typed values. Types can be any regular Godot types,
+*Data Ports* ports contain typed values. Types can be any regular Rebel Engine types,
 such as a boolean, an integer, a string, a Vector3, an array, any Object or Scene Node, etc.
 A *Data Port* on the right side of a node is considered an output, while,
 a port on the left side is an input. Connecting them allows information to flow to the next node.
@@ -218,7 +218,7 @@ Most of the time they are integer or float.
 
 The first one is "Constant", which allows you to select any value of any type as constant, from an integer (42) to a String ("Hello!"). In general, this node is not used that often because of default input values in *Data Ports*, but it's good to know it exists.
 
-The second is the GlobalConstant node, which contains a long list of constants for global types in Godot. In there
+The second is the GlobalConstant node, which contains a long list of constants for global types in Rebel Engine. In there
 you can find some useful constants to refer to key names, joystick or mouse buttons, etc.
 
 The third one is MathConstant, which provides typical mathematical constants, such as PI, E, etc.
@@ -227,7 +227,7 @@ The third one is MathConstant, which provides typical mathematical constants, su
 Data
 ~~~~
 
-Data nodes deal with all sorts of access to information. Any information in Godot is accessed via these nodes, so
+Data nodes deal with all sorts of access to information. Any information in Rebel Engine is accessed via these nodes, so
 they are some of the most important ones to use and pretty diverse.
 
 .. image:: img/visual_script37.png
@@ -338,7 +338,7 @@ ports disconnected is fine if not all of them are used.
 Iterator
 ^^^^^^^^
 
-Some data types in Godot (ie, arrays, dictionaries) are iterable. This means that a bit of code can run
+Some data types in Rebel Engine (ie, arrays, dictionaries) are iterable. This means that a bit of code can run
 for each element that it has.
 
 The Iterator node goes through all elements and, for each of them, it goes via the "each" sequence port,
@@ -350,7 +350,7 @@ When done, it goes via the "exit" sequence port.
 Return
 ^^^^^^
 
-Some functions can return values. In general for virtual ones, Godot will add the Return node for you.
+Some functions can return values. In general for virtual ones, Rebel Editor will add the Return node for you.
 A return node forces the function to end.
 
 
@@ -416,7 +416,7 @@ This is the generic calling node. It is rarely used directly but by dragging to 
 Constructors
 ^^^^^^^^^^^^
 
-These are all the functions needed to create Godot basic datatypes. For example, If you need to create a Vector3 out of 3 floats, a constructor must be used.
+These are all the functions needed to create Rebel Engine basic datatypes. For example, If you need to create a Vector3 out of 3 floats, a constructor must be used.
 
 .. image:: img/visual_script44.png
 

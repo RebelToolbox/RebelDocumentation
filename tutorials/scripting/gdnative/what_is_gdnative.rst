@@ -6,7 +6,7 @@ What is GDNative?
 Introduction
 ------------
 
-**GDNative** is a Godot-specific technology that lets the engine interact with
+**GDNative** lets the engine interact with
 native `shared libraries <https://en.wikipedia.org/wiki/Library_(computing)#Shared_libraries>`__
 at run-time. You can use it to run native code without compiling it with the engine.
 
@@ -17,9 +17,9 @@ Differences between GDNative and C++ modules
 --------------------------------------------
 
 You can use both GDNative and :ref:`C++ modules <doc_custom_modules_in_c++>` to
-run C or C++ code in a Godot project.
+run C or C++ code in a Rebel Project.
 
-They also both allow you to integrate third-party libraries into Godot. The one
+They also both allow you to integrate third-party libraries into Rebel Engine. The one
 you should choose depends on your needs.
 
 Advantages of GDNative
@@ -63,7 +63,7 @@ GDNative isn't enough:
 Supported languages
 -------------------
 
-The Godot developers officially support the following language bindings for
+The Rebel developers officially support the following language bindings for
 GDNative:
 
 - C++ :ref:`(tutorial) <doc_gdnative_cpp_example>`
@@ -77,30 +77,11 @@ GDNative:
 
 .. _doc_what_is_gdnative_third_party_bindings:
 
-The bindings below are developed and maintained by the community:
-
-.. Binding developers: Feel free to open a pull request to add your binding if it's well-developed enough to be used in a project.
-.. Please keep languages sorted in alphabetical order.
-
-- `D <https://github.com/godot-d/godot-d>`__
-- `Kotlin <https://github.com/utopia-rise/godot-kotlin-jvm>`__
-- `Nim <https://github.com/pragmagic/godot-nim>`__
-- `Python <https://github.com/touilleMan/godot-python>`__
-- `Rust <https://github.com/godot-rust/godot-rust>`__
-
-.. note::
-
-    Not all bindings mentioned here may be production-ready. Make sure to
-    research options thoroughly before starting a project with one of those.
-    Also, double-check whether the binding is compatible with the Godot version
-    you're using.
-
 Version compatibility
 ---------------------
 
-:ref:`Unlike Godot itself <doc_release_policy>`, GDNative has stricter version
+:ref:`Unlike Rebel Engine <doc_release_policy>`, GDNative has stricter version
 compatibility requirements as it relies on low-level *ptrcalls* to function.
 
-GDNative add-ons compiled for a given Godot version are only guaranteed to work
-with the same minor release series. For example, a GDNative add-on compiled for
-Godot 3.4 will only work with Godot 3.4, 3.4.1, 3.4.2… but not Godot 3.3 or 3.5.
+GDNative add-ons compiled for a given Rebel Engine version are only guaranteed to work
+with the same minor release series.

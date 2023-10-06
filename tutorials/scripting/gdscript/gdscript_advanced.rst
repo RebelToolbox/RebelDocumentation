@@ -40,7 +40,7 @@ While the main disadvantages are:
 -  Less flexibility for code-completion (some variable types are only
    known at run-time).
 
-This, translated to reality, means that Godot+GDScript are a combination
+This, translated to reality, means that Rebel Engine+GDScript are a combination
 designed to create games quickly and efficiently. For games that are very
 computationally intensive and can't benefit from the engine built-in
 tools (such as the Vector types, Physics Engine, Math library, etc), the
@@ -181,13 +181,13 @@ if inheriting manually from :ref:`class_Object`.
 
         func _ready():
             # Create a String (passed by value and immutable).
-            var example = "Godot"
+            var example = "Rebel"
 
             # Pass example as a parameter to `greet()`,
             # which modifies the parameter and does not return any value.
             greet(example)
 
-            print(example)  #  Godot
+            print(example)  #  Rebel
 
     A value is **passed by reference** when it is *not* copied every time it's
     specified as a function parameter. This allows modifying a function
@@ -202,18 +202,18 @@ if inheriting manually from :ref:`class_Object`.
         func _ready():
             # Create an Array (passed by reference and mutable) containing a String,
             # instead of a String (passed by value and immutable).
-            var example = ["Godot"]
+            var example = ["Rebel"]
 
             # Pass example as a parameter to `greet()`,
             # which modifies the parameter and does not return any value.
             greet(example)
 
-            print(example)  #  [Hello, Godot] (Array with 2 String elements)
+            print(example)  #  [Hello, Rebel] (Array with 2 String elements)
 
     Compared to passing by value, passing by reference can perform better when
     using large objects since copying large objects in memory can be slow.
 
-    Additionally, in Godot, base types such as String are **immutable**. This
+    Additionally, in Rebel Engine, base types such as String are **immutable**. This
     means that modifying them will *always* return a copy of the original value,
     rather than modifying the value in-place.
 
