@@ -1,16 +1,16 @@
 .. _doc_shading_language:
 
-Shading language
-================
+Rebel Shading Language
+======================
 
 Introduction
 ------------
 
-Godot uses a shading language similar to GLSL ES 3.0. Most datatypes and functions are supported,
+Rebel Shading Language is similar to GLSL ES 3.0. Most datatypes and functions are supported,
 and the few remaining ones will likely be added over time.
 
-If you are already familiar with GLSL, the :ref:`Godot Shader Migration Guide<doc_converting_glsl_to_godot_shaders>`
-is a resource that will help you transition from regular GLSL to Godot's shading language.
+If you are already familiar with GLSL, the :ref:`doc_converting_glsl_to_rebel_shaders`
+is a resource that will help you transition from regular GLSL to Rebel Shading Language.
 
 Data types
 ----------
@@ -196,7 +196,6 @@ Arrays
 ------
 
 Arrays are containers for multiple variables of a similar type.
-Note: As of Godot 3.2, only local and varying arrays have been implemented.
 
 Local arrays
 ~~~~~~~~~~~~
@@ -296,7 +295,7 @@ Global constants are useful when you want to have access to a value throughout y
 Operators
 ---------
 
-Godot shading language supports the same set of operators as GLSL ES 3.0. Below is the list of them in precedence order:
+Rebel Shading Language supports the same set of operators as GLSL ES 3.0. Below is the list of them in precedence order:
 
 +-------------+------------------------+------------------+
 | Precedence  | Class                  | Operator         |
@@ -329,7 +328,7 @@ Godot shading language supports the same set of operators as GLSL ES 3.0. Below 
 Flow control
 ------------
 
-Godot Shading language supports the most common types of flow control:
+Rebel Shading Language supports the most common types of flow control:
 
 .. code-block:: glsl
 
@@ -370,7 +369,7 @@ Godot Shading language supports the most common types of flow control:
     } while(true);
 
 Keep in mind that, in modern GPUs, an infinite loop can exist and can freeze your application (including editor).
-Godot can't protect you from this, so be careful not to make this mistake!
+Rebel Engine can't protect you from this, so be careful not to make this mistake!
 
 .. warning::
 
@@ -385,7 +384,7 @@ Fragment and light functions can use the **discard** keyword. If used, the fragm
 Functions
 ---------
 
-It is possible to define functions in a Godot shader. They use the following syntax:
+It is possible to define functions in a Rebel Shader. They use the following syntax:
 
 .. code-block:: glsl
 
@@ -550,7 +549,7 @@ You can set uniforms in the editor in the material. Or you can set them through 
 .. note:: The first argument to ``set_shader_param`` is the name of the uniform in the shader. It
           must match *exactly* to the name of the uniform in the shader or else it will not be recognized.
 
-Any GLSL type except for *void* can be a uniform. Additionally, Godot provides
+Any GLSL type except for *void* can be a uniform. Additionally, Rebel Shading Language provides
 optional shader hints to make the compiler understand for what the uniform is
 used, and how the editor should allow users to modify it.
 
@@ -562,7 +561,7 @@ used, and how the editor should allow users to modify it.
     uniform float amount : hint_range(0, 1);
     uniform vec4 other_color : hint_color = vec4(1.0);
 
-It's important to understand that textures that are supplied as color require hints for proper sRGB->linear conversion (i.e. ``hint_albedo``), as Godot's 3D engine renders in linear color space.
+It's important to understand that textures that are supplied as color require hints for proper sRGB->linear conversion (i.e. ``hint_albedo``), as Rebel Engine renders 3D in linear color space.
 
 Full list of hints below:
 
@@ -587,7 +586,7 @@ Full list of hints below:
 +----------------+------------------------------+------------------------------------------------------+
 
 GDScript uses different variable types than GLSL does, so when passing variables from GDScript
-to shaders, Godot converts the type automatically. Below is a table of the corresponding types:
+to shaders, Rebel Engine converts the type automatically. Below is a table of the corresponding types:
 
 +-----------------+-----------+
 | GDScript type   | GLSL type |

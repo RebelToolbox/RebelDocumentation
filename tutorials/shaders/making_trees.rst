@@ -5,7 +5,7 @@ Making trees
 
 This is a short tutorial on how to make trees and other types of vegetation from scratch.
 
-The aim is to not focus on the modelling techniques (there are plenty of tutorials about that), but how to make them look good in Godot.
+The aim is to not focus on the modelling techniques (there are plenty of tutorials about that), but how to make them look good in your Rebel Game.
 
 .. image:: img/tree_sway.gif
 

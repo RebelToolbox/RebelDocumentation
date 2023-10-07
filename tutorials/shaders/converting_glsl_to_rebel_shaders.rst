@@ -1,31 +1,31 @@
-.. _doc_converting_glsl_to_godot_shaders:
+.. _doc_converting_glsl_to_rebel_shaders:
 
-Converting GLSL to Godot shaders
+Converting GLSL to Rebel Shaders
 ================================
 
-This document explains the differences between Godot's shading language and GLSL
+This document explains the differences between Rebel Shading Language and GLSL
 and gives practical advice on how to migrate shaders from other sources, such as
-Shadertoy and The Book of Shaders, into Godot shaders.
+Shadertoy and The Book of Shaders, into Rebel Shaders.
 
-For detailed information on Godot's shading language, please refer to the
-:ref:`Shading Language <doc_shading_language>` reference.
+For detailed information on Rebel Shading Language, please refer to the
+:ref:`doc_shading_language` reference.
 
 GLSL
 ----
 
-Godot uses a shading language based on GLSL with the addition of a few
+Rebel Shading Language is based on GLSL with the addition of a few
 quality-of-life features. Accordingly, most features available in GLSL are
-available in Godot's shading language.
+available in Rebel Shading Language.
 
 Shader programs
 ^^^^^^^^^^^^^^^
 
 In GLSL, each shader uses a separate program. You have one program for the
-vertex shader and one for the fragment shader. In Godot, you have a single
+vertex shader and one for the fragment shader. In Rebel Engine, you have a single
 shader that contains a ``vertex`` and/or a ``fragment`` function. If you only
-choose to write one, Godot will supply the other.
+choose to write one, Rebel Engine will supply the other.
 
-Godot allows uniform variables and functions to be shared by defining the
+Rebel Shading Language allows uniform variables and functions to be shared by defining the
 fragment and vertex shaders in one file. In GLSL, the vertex and fragment
 programs cannot share variables except when varyings are used.
 
@@ -33,7 +33,7 @@ Vertex attributes
 ^^^^^^^^^^^^^^^^^
 
 In GLSL, you can pass in per-vertex information using attributes and have the
-flexibility to pass in as much or as little as you want. In Godot, you have a
+flexibility to pass in as much or as little as you want. In Rebel Shading Language, you have a
 set number of input attributes, including ``VERTEX`` (position), ``COLOR``,
 ``UV``, ``UV2``, ``NORMAL``. For a complete list, see the :ref:`Shading language
 reference <doc_shading_language>`.
@@ -46,8 +46,8 @@ shader. It is specified by the user in clip space. Typically, in GLSL, the model
 space vertex position is passed in using a vertex attribute called ``position``
 and you handle the conversion from model space to clip space manually.
 
-In Godot, ``VERTEX`` specifies the vertex position in model space at the
-beginning of the ``vertex`` function. Godot also handles the final conversion to
+In Rebel Shading Language, ``VERTEX`` specifies the vertex position in model space at the
+beginning of the ``vertex`` function. Rebel Engine also handles the final conversion to
 clip space after the user-defined ``vertex`` function is run. If you want to
 skip the conversion from model to view space, you can set the ``render_mode`` to
 ``skip_vertex_transform``. If you want to skip all transforms, set
@@ -74,7 +74,7 @@ rename ``main`` to ``fragment``.
 Constants
 ^^^^^^^^^
 
-Global array constants are not supported in Godot 3.x. You can fake the functionality by using a uniform
+Global array constants are not supported in Rebel Shading Language. You can fake the functionality by using a uniform
 initialized to the value, but you will not benefit from the increased speed from using a constant.
 
 Macros
@@ -82,7 +82,7 @@ Macros
 
 In keeping with its similarity to C, GLSL lets you use macros. Commonly
 ``#define`` is used to define constants or small functions. There is no
-straightforward way to translate defines to Godot's shading language. If it is a
+straightforward way to translate defines to Rebel Shading Language. If it is a
 function that is defined, then replace with a function, and if it is a constant,
 then replace with a uniform. For other macros (``#if``, ``#ifdef``, etc.), there
 is no equivalent because they run during the pre-processing stage of
@@ -115,15 +115,15 @@ uniforms, so they are not editable from the main program.
 Coordinates
 ^^^^^^^^^^^
 
-``gl_FragCoord`` in GLSL and ``FRAGCOORD`` in the Godot shading language use the
-same coordinate system. If using UV in Godot, the y-coordinate will be flipped
+``gl_FragCoord`` in GLSL and ``FRAGCOORD`` in the Rebel Shading Language use the
+same coordinate system. If using UV in Rebel Shading Language, the y-coordinate will be flipped
 upside down.
 
 Precision
 ^^^^^^^^^
 
 In GLSL, you can define the precision of a given type (float or int) at the top
-of the shader with the ``precision`` keyword. In Godot, you can set the
+of the shader with the ``precision`` keyword. In Rebel Shading Language, you can set the
 precision of individual variables as you need by placing precision qualifiers
 ``lowp``, ``mediump``, and ``highp`` before the type when defining the variable.
 For more information, see the :ref:`Shading Language <doc_shading_language>`
@@ -150,19 +150,19 @@ mainImage
 
 The main point of entry to a Shadertoy shader is the ``mainImage`` function.
 ``mainImage`` has two parameters, ``fragColor`` and ``fragCoord``, which
-correspond to ``COLOR`` and ``FRAGCOORD`` in Godot, respectively. These
-parameters are handled automatically in Godot, so you do not need to include
+correspond to ``COLOR`` and ``FRAGCOORD`` in Rebel Shading Language, respectively. These
+parameters are handled automatically in Rebel Engine, so you do not need to include
 them as parameters yourself. Anything in the ``mainImage`` function should be
-copied into the ``fragment`` function when porting to Godot.
+copied into the ``fragment`` function when porting to Rebel Shading Language.
 
 Variables
 ^^^^^^^^^
 
 In order to make writing fragment shaders straightforward and easy, Shadertoy
 handles passing a lot of helpful information from the main program into the
-fragment shader for you. A few of these have no equivalents in Godot because
-Godot has chosen not to make them available by default. This is okay because
-Godot gives you the ability to make your own uniforms. For variables whose
+fragment shader for you. A few of these have no equivalents in Rebel Shading Language because
+Rebel has chosen not to make them available by default. This is okay because
+Rebel Shading Language gives you the ability to make your own uniforms. For variables whose
 equivalents are listed as "Provide with Uniform", users are responsible for
 creating that uniform themselves. The description gives the reader a hint about
 what they can pass in as a substitute.
@@ -190,14 +190,14 @@ what they can pass in as a substitute.
 +---------------------+---------+------------------------+-----------------------------------------------------+
 |iChannelResolution[4]|vec3     |1.0 / TEXTURE_PIXEL_SIZE|Resolution of particular texture.                    |
 +---------------------+---------+------------------------+-----------------------------------------------------+
-|iChanneli            |Sampler2D|TEXTURE                 |Godot provides only one built-in; user can make more.|
+|iChanneli            |Sampler2D|TEXTURE                 |One built-in; the game developer can make more.      |
 +---------------------+---------+------------------------+-----------------------------------------------------+
 
 Coordinates
 ^^^^^^^^^^^
 
 ``fragCoord`` behaves the same as ``gl_FragCoord`` in :ref:`GLSL
-<glsl_coordinates>` and ``FRAGCOORD`` in Godot.
+<glsl_coordinates>` and ``FRAGCOORD`` in Rebel Shading Language.
 
 
 The Book of Shaders
@@ -224,7 +224,7 @@ Main
 
 The entry point for a Book of Shaders fragment shader is ``main``, just like in
 GLSL. Everything written in a Book of Shaders ``main`` function should be copied
-into Godot's ``fragment`` function.
+into Rebel Shading Language's ``fragment`` function.
 
 Variables
 ^^^^^^^^^

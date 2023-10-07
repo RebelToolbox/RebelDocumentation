@@ -6,7 +6,7 @@ Shader materials
 Introduction
 ------------
 
-For the most common cases, Godot provides ready to use materials for
+For the most common cases, Rebel Engine provides ready to use materials for
 most types of shaders, such as :ref:`SpatialMaterial <class_SpatialMaterial>`,
 :ref:`CanvasItemMaterial <class_CanvasItemMaterial>` and :ref:`ParticlesMaterial <class_ParticlesMaterial>`.
 They are flexible implementations that cover most use cases.
@@ -23,8 +23,8 @@ Examples of this are:
 -  Create custom particle code.
 -  And much more!
 
-Godot provides built in functionality to make frequent operations
-easier. Additionally, Godot's shader editor will detect errors as you
+Rebel Engine provides built in functionality to make frequent operations
+easier. Additionally, Rebel Editor will detect errors as you
 type, so you can see your edited shaders in real-time. It is also
 possible to edit shaders using a visual, node-based graph editor.
 
