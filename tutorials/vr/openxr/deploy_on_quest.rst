@@ -14,8 +14,7 @@ Note that many Android based devices are very constrained performance-wise. Ther
 
 .. seealso::
 
-    As with any other Android device, please follow 
-    `the instructions in the official Godot documentation for deploying to Android <https://docs.godotengine.org/en/stable/getting_started/workflow/export/exporting_for_android.html#doc-exporting-for-android>`__.
+    As with any other Android device, please follow the instructions for :ref:`doc_exporting_for_android`.
 
 Enable developer mode on the Quest
 ----------------------------------
@@ -27,7 +26,7 @@ Please `follow the instructions on the Oculus developer site <https://developer.
 Setting up the export template
 ------------------------------
 
-The instruction in the official Godot documentation already has you configuring an export template in Godot. However, a few extra settings are needed for XR deployment.
+The :ref:`doc_exporting_for_android` documentation describes how to creat an Android export template for Rebel Engine. However, a few extra settings are needed for XR deployment.
 
 Open the export settings again by opening the **Project > Export...** menu and select the Android export template you created. 
 If you haven't created it yet, do so now by pressing **Add...** and selecting **Android**.

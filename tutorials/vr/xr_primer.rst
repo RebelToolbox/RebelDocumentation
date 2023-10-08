@@ -3,9 +3,9 @@
 AR/VR primer
 ============
 
-This tutorial gives you a springboard into the world of AR and VR in the Godot game engine.
+This tutorial gives you a springboard into the world of AR and VR in the Rebel Engine.
 
-A new architecture was introduced in Godot 3 called the AR/VR Server. On top of this
+Rebel Engine has a AR/VR Server. On top of this
 architecture, specific implementations are available as interfaces, most of which are plugins
 based on GDNative. This tutorial focuses purely on the core elements abstracted by the core
 architecture. This architecture has enough features for you to create an entire VR experience
@@ -16,7 +16,7 @@ interfaces and fall outside of the scope of this primer.
 AR/VR server
 ------------
 
-When Godot starts, each available interface will make itself known to the AR/VR server.
+When Rebel Engine starts, each available interface will make itself known to the AR/VR server.
 GDNative interfaces are setup as singletons; as long as they are added to the list of
 GDNative singletons in your project, they will make themselves known to the server.
 
@@ -24,7 +24,7 @@ You can use the function :ref:`get_interfaces() <class_ARVRServer_method_get_int
 to return a list of available interfaces, but for this tutorial, we're going to use the
 :ref:`native mobile VR interface <class_MobileVRInterface>` in our examples. This interface
 is a straightforward implementation that uses the 3DOF sensors on your phone for orientation
-and outputs a stereoscopic image to the screen. It is also available in the Godot core and
+and outputs a stereoscopic image to the screen. It is also available in the Rebel Engine core and
 outputs to screen on desktop, which makes it ideal for prototyping or a tutorial such as
 this one.
 
@@ -62,10 +62,10 @@ the viewport or set :ref:`arvr<class_Viewport_property_arvr>` to ``false`` on th
 scenarios though, you wouldn't disable the headset once you're in VR, this can be disconcerting to
 the gamer.
 
-New AR/VR nodes
+AR/VR nodes
 ---------------
 
-Three new node types have been added for supporting AR and VR in Godot and one additional
+Rebel Engine has three node types for supporting AR and VR, and one additional
 node type especially for AR. These are:
 
 * :ref:`ARVROrigin <class_ARVROrigin>` - our origin point in the world
@@ -93,7 +93,7 @@ you implement a teleport system, it is the position of the origin point which yo
 have to adjust.
 
 :ref:`ARVRCamera <class_ARVRCamera>` is the second node that must always be a part of your
-scene and it must always be a child node of your origin node. It is a subclass of Godot's
+scene and it must always be a child node of your origin node. It is a subclass of Rebel Engine's
 normal camera. However, its position is automatically updated each frame based on the physical
 orientation and position of the HMD. Also due to the precision required for rendering to an
 HMD or rendering an AR overlay over a real world camera, most of the standard camera properties
@@ -115,43 +115,23 @@ export the game to your phone of choice, pop it into a viewer and away you go.
 Official plugins and resources
 ------------------------------
 
-As mentioned earlier, Godot does not support the various VR and AR SDKs out of the box, you
-need a plugin for the specific SDK you want to use. There are several official plugins available
+As mentioned earlier, Rebel Engine does not support the various VR and AR SDKs out of the box, you
+need a plugin for the specific SDK you want to use. There are several plugins available
 in the `GodotVR Repository <https://github.com/GodotVR>`__.
 
-* `Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_: This is the **official XR plugin**
-  starting with Godot **3.4**. It supports OpenXR, an open standard for designing and building
+* `Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_: It supports OpenXR, an open standard for designing and building
   cross-platform VR and AR software.
   Tested with SteamVR, Monada and Oculus OpenXR (desktop and mobile) runtimes.
 
     * See :ref:`doc_openxr_introduction`.
 
-* `Godot Oculus Mobile <https://github.com/GodotVR/godot_oculus_mobile>`_ provides :ref:`support for
-  the Meta Quest <doc_developing_for_oculus_quest>`.
-
-    * **Note**: This plugin has been deprecated starting with Godot 3.4.
-      We recommend migrating to the `Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_ plugin instead.
-
 * `Godot OpenVR <https://github.com/GodotVR/godot_openvr>`_ (not to be confused with OpenXR)
   supports the OpenVR SDK used by Steam.
-* `Godot Oculus <https://github.com/GodotVR/godot_oculus>`__ supports the Oculus SDK
-  (desktop headsets only).
-
-    * **Note**: This plugin has been deprecated starting with Godot 3.4.
-      We recommend migrating to the `Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_ plugin instead.
 
 * `Godot OpenHMD <https://github.com/GodotVR/godot_openhmd>`_ supports OpenHMD, an open source
   API and drivers for headsets.
 
-These plugins can be downloaded from GitHub or the Godot Asset Library.
-
-In addition to the plugins, there are several official demos.
-
-* `Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`__.
-* `Godot OpenVR FPS <https://github.com/GodotVR/godot_openvr_fps>`__ (the tutorial for this project
-  is :ref:`doc_vr_starter_tutorial_part_one`).
-* `Godot XR tools <https://github.com/GodotVR/godot-xr-tools>`__, which shows implementations for VR
-  features such as movement and picking up objects.
+These plugins can be downloaded from GitHub.
 
 Other things to consider
 ------------------------
