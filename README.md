@@ -120,3 +120,5 @@ Then do `make html` like above.
 With the exception of the `classes/` folder, all the content in this repository is licensed under the Creative Commons Attribution 4.0 International Public License ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)). Attribution should be made to the Rebel Documentation Contributors and/or the specific author.
 
 The files in the `classes/` folder are derived from [Rebel Engine](https://github.com/RebelToolbox/RebelEngine) and are distributed under the MIT license.
+
+[![Documentation Status](https://readthedocs.org/projects/rebel-documentation/badge/?version=latest)](https://docs.rebeltoolbox.com/en/latest/?badge=latest)
