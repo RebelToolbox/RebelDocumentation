@@ -2,8 +2,7 @@ Rooms and Portals example
 =========================
 
 Download this tutorial project:
-`Simple Portals Example <https://github.com/lawnjelly/godot-demo-projects/tree/portals_simple_demo/3d/portals/room_and_portals_simple_example>`_
-.
+:download:`Rooms and Portals <files/rooms-and-portals.zip>`
 
 Introduction
 ~~~~~~~~~~~~
@@ -13,7 +12,7 @@ This tutorial will introduce you to building a "Hello World" room system with tw
 Step 1
 ~~~~~~
 
-.. image:: tutorial_simple/img/tutorial_simple_1.png
+.. image:: img/rooms_and_portals_1.png
 
 - Create a new project.
 - Add a :ref:`Spatial<class_Spatial>` as the scene root (on the screenshot, it's called "Root").
@@ -28,7 +27,7 @@ Step 1
 Step 2
 ~~~~~~
 
-.. image:: tutorial_simple/img/tutorial_simple_2.png
+.. image:: img/rooms_and_portals_2.png
 
 - Now we need to create the other room.
 - You can do this simply by duplicating the first room (select the ``Kitchen`` node, right click and choose **Duplicate**).
@@ -38,7 +37,7 @@ Step 2
 Step 3
 ~~~~~~
 
-.. image:: tutorial_simple/img/tutorial_simple_3.png
+.. image:: img/rooms_and_portals_3.png
 
 - Next, we will add a portal between the two rooms.
 - Create a new :ref:`Portal<class_Portal>` in the kitchen.
@@ -48,7 +47,7 @@ Step 3
 Step 4
 ~~~~~~
 
-.. image:: tutorial_simple/img/tutorial_simple_4.png
+.. image:: img/rooms_and_portals_4.png
 
 - To make things more exciting, we want to add a few more boxes to the rooms.
 - Placing these boxes as children or grandchildren of the room nodes explicitly tells the system which room the objects should be in. However, we can also create these objects *outside* the rooms. Provided they are in the RoomList branch, the system will attempt to automatically place them in the correct room at runtime.
@@ -59,7 +58,7 @@ Step 4
 Step 5
 ~~~~~~
 
-.. image:: tutorial_simple/img/tutorial_simple_5.png
+.. image:: img/rooms_and_portals_5.png
 
 - Next comes a crucial stage. We must let the RoomManager know where the rooms are!
 - Select the RoomManager and look in the Inspector window in the **Paths** section.
@@ -68,7 +67,7 @@ Step 5
 Step 6
 ~~~~~~
 
-.. image:: tutorial_simple/img/tutorial_simple_6.png
+.. image:: img/rooms_and_portals_6.png
 
 - Make sure you have saved your project before this next step. It is always a good idea to save and make a backup before converting.
 - Select the RoomManager, and you will see a button in the toolbar at the top of the 3d editor viewport called **Convert Rooms**. Press this button.

@@ -6,11 +6,11 @@ Exporting for Android
 
 .. seealso::
 
-    This page describes how to export a Godot project to Android.
+    This page describes how to export a Rebel project to Android.
     If you're looking to compile export template binaries from source instead,
     read :ref:`doc_compiling_for_android`.
 
-Exporting for Android has fewer requirements than compiling Godot for Android.
+Exporting for Android has fewer requirements than compiling Rebel Engine for Android.
 The following steps detail what is needed to set up the Android SDK and the engine.
 
 Install OpenJDK 11
@@ -62,10 +62,10 @@ the JDK can be used for this purpose::
 
     keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999 -deststoretype pkcs12
 
-This will create a ``debug.keystore`` file in your current directory. You should move it to a memorable location such as ``%USERPROFILE%\.android\``, because you will need its location in a later step. For more information on ``keytool`` usage, see `this Q&A article <https://godotengine.org/qa/21349/jdk-android-file-missing>`__.
+This will create a ``debug.keystore`` file in your current directory. You should move it to a memorable location such as ``%USERPROFILE%\.android\``, because you will need its location in a later step.
 
-Setting it up in Godot
-----------------------
+Setting it up in Rebel Editor
+-----------------------------
 
 Enter the Editor Settings screen. This screen contains the editor
 settings for the user account in the computer (it's independent of the
@@ -101,9 +101,9 @@ Once that is configured, everything is ready to export to Android!
 Providing launcher icons
 ------------------------
 
-Launcher icons are used by Android launcher apps to represent your application to users. Godot only requires high-resolution icons (for ``xxxhdpi`` density screens) and will automatically generate lower-resolution variants.
+Launcher icons are used by Android launcher apps to represent your application to users. Rebel Editor only requires high-resolution icons (for ``xxxhdpi`` density screens) and will automatically generate lower-resolution variants.
 
-There are two types of icons required by Godot:
+There are two types of icons required by Rebel Android projects:
 
 - **Main Icon:** The "classic" icon. This will be used on all Android versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px.
 - **Adaptive Icons:** Starting from Android 8 (inclusive), `Adaptive Icons <https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive>`_ were introduced. Applications will need to include separate background and foreground icons to have a native look. The user's launcher application will control the icon's animation and masking. Must be at least 432×432 px.
@@ -112,11 +112,11 @@ There are two types of icons required by Godot:
 
 .. caution:: The most important adaptive icon design rule is to have your icon critical elements inside the safe zone: a centered circle with a diameter of 66dp (264 pixels on ``xxxhdpi``) to avoid being clipped by the launcher.
 
-If you don't provide some of the requested icons, Godot will replace them using a fallback chain, trying the next in line when the current one fails:
+If you don't provide some of the requested icons, Rebel Editor will replace them using a fallback chain, trying the next in line when the current one fails:
 
-- **Main Icon:** Provided main icon -> Project icon -> Default Godot main icon.
-- **Adaptive Icon Foreground:** Provided foreground icon -> Provided main icon -> Project icon -> Default Godot foreground icon.
-- **Adaptive Icon Background:** Provided background icon -> Default Godot background icon.
+- **Main Icon:** Provided main icon -> Project icon -> Default Rebel icon.
+- **Adaptive Icon Foreground:** Provided foreground icon -> Provided main icon -> Project icon -> Default Rebel foreground icon.
+- **Adaptive Icon Background:** Provided background icon -> Default Rebel background icon.
 
 It's highly recommended to provide all the requested icons with their specified resolutions.
 This way, your application will look great on all Android devices and versions.
@@ -174,7 +174,7 @@ information.
 Troubleshooting rendering issues
 --------------------------------
 
-To improve out-of-the-box performance on mobile devices, Godot automatically
+To improve out-of-the-box performance on mobile devices, Rebel Engine automatically
 uses low-end-friendly settings by default on both Android and iOS.
 
 This can cause rendering issues that do not occur when running the project on a

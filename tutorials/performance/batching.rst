@@ -33,13 +33,13 @@ draw a number of similar primitives all in one draw call, which we will call a
 It turns out that they don't just work a bit faster when used in this manner;
 they work a *lot* faster.
 
-As Godot is designed to be a general-purpose engine, the primitives coming into
-the Godot renderer can be in any order, sometimes similar, and sometimes
-dissimilar. To match Godot's general-purpose nature with the batching
-preferences of GPUs, Godot features an intermediate layer which can
+As Rebel Engine is designed to be a general-purpose engine, the primitives coming into
+the Rebel Renderer can be in any order, sometimes similar, and sometimes
+dissimilar. To match Rebel Engine's general-purpose nature with the batching
+preferences of GPUs, Rebel Engine features an intermediate layer which can
 automatically group together primitives wherever possible and send these batches
 on to the GPU. This can give an increase in rendering performance while
-requiring few (if any) changes to your Godot project.
+requiring few (if any) changes to your Rebel project.
 
 How it works
 ~~~~~~~~~~~~
@@ -81,14 +81,14 @@ The question arises, if only similar items can be drawn together in a batch, why
 don't we look through all the items in a scene, group together all the similar
 items, and draw them together?
 
-In 3D, this is often exactly how engines work. However, in Godot's 2D renderer,
+In 3D, this is often exactly how engines work. However, in Rebel Engine's 2D renderer,
 items are drawn in "painter's order", from back to front. This ensures that
 items at the front are drawn on top of earlier items when they overlap.
 
 This also means that if we try and draw objects on a per-texture basis, then
 this painter's order may break and objects will be drawn in the wrong order.
 
-In Godot, this back-to-front order is determined by:
+In Rebel Engine, this back-to-front order is determined by:
 
 - The order of objects in the scene tree.
 - The Z index of objects.
@@ -313,7 +313,7 @@ rendering/batching/options
 
 - :ref:`use_batching_in_editor
   <class_ProjectSettings_property_rendering/batching/options/use_batching_in_editor>`
-  Turns batching on or off in the Godot editor.
+  Turns batching on or off in the Rebel Editor.
   This setting doesn't affect the running project in any way.
 
 - :ref:`single_rect_fallback
@@ -378,7 +378,7 @@ rendering/batching/debug
 - :ref:`diagnose_frame
   <class_ProjectSettings_property_rendering/batching/debug/diagnose_frame>` -
   This will periodically print a diagnostic batching log to
-  the Godot IDE / console.
+  the Rebel Editor and console.
 
 rendering/batching/precision
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -442,7 +442,7 @@ This is a typical diagnostic.
   Whether items can be joined will be determined by their contents and
   compatibility with the previous item.
 - **batch R:** A batch containing rectangles. The second number is the number of
-  rects. The second number in square brackets is the Godot texture ID, and the
+  rects. The second number in square brackets is the Rebel Engine texture ID, and the
   numbers in curly braces is the color. If the batch contains more than one rect,
   ``MULTI`` is added to the line to make it easy to identify.
   Seeing ``MULTI`` is good as it indicates successful batching.

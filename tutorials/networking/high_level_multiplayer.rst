@@ -6,10 +6,10 @@ High-level multiplayer
 High-level vs low-level API
 ---------------------------
 
-The following explains the differences of high- and low-level networking in Godot as well as some fundamentals. If you want to jump in head-first and add networking to your first nodes, skip to `Initializing the network`_ below. But make sure to read the rest later on!
+The following explains the differences of high- and low-level networking in Rebel Engine as well as some fundamentals. If you want to jump in head-first and add networking to your first nodes, skip to `Initializing the network`_ below. But make sure to read the rest later on!
 
-Godot always supported standard low-level networking via UDP, TCP and some higher level protocols such as SSL and HTTP.
-These protocols are flexible and can be used for almost anything. However, using them to synchronize game state manually can be a large amount of work. Sometimes that work can't be avoided or is worth it, for example when working with a custom server implementation on the backend. But in most cases, it's worthwhile to consider Godot's high-level networking API, which sacrifices some of the fine-grained control of low-level networking for greater ease of use.
+Rebel Engine always supported standard low-level networking via UDP, TCP and some higher level protocols such as SSL and HTTP.
+These protocols are flexible and can be used for almost anything. However, using them to synchronize game state manually can be a large amount of work. Sometimes that work can't be avoided or is worth it, for example when working with a custom server implementation on the backend. But in most cases, it's worthwhile to consider Rebel Engine's high-level networking API, which sacrifices some of the fine-grained control of low-level networking for greater ease of use.
 
 This is due to the inherent limitations of the low-level protocols:
 
@@ -21,11 +21,11 @@ This is due to the inherent limitations of the low-level protocols:
   larger packets means splitting them, reorganizing them and retrying if a part fails.
 
 In general, TCP can be thought of as reliable, ordered, and slow; UDP as unreliable, unordered and fast.
-Because of the large difference in performance, it often makes sense to re-build the parts of TCP wanted for games (optional reliability and packet order), while avoiding the unwanted parts (congestion/traffic control features, Nagle's algorithm, etc). Due to this, most game engines come with such an implementation, and Godot is no exception.
+Because of the large difference in performance, it often makes sense to re-build the parts of TCP wanted for games (optional reliability and packet order), while avoiding the unwanted parts (congestion/traffic control features, Nagle's algorithm, etc). Due to this, most game engines come with such an implementation, and Rebel Engine is no exception.
 
 In summary, you can use the low-level networking API for maximum control and implement everything on top of bare network protocols or use the high-level API based on :ref:`SceneTree <class_SceneTree>` that does most of the heavy lifting behind the scenes in a generally optimized way.
 
-.. note:: Most of Godot's supported platforms offer all or most of the mentioned high- and low-level networking
+.. note:: Most of Rebel Engine's supported platforms offer all or most of the mentioned high- and low-level networking
           features. As networking is always largely hardware and operating system dependent, however,
           some features may change or not be available on some target platforms. Most notably,
           the HTML5 platform currently offers WebSockets and WebRTC support but lacks some of the higher-level features, as
@@ -38,7 +38,7 @@ In summary, you can use the low-level networking API for maximum control and imp
           (`here <https://gafferongames.com/categories/game-networking/>`__), including the comprehensive
           `introduction to networking models in games <https://gafferongames.com/post/what_every_programmer_needs_to_know_about_game_networking/>`__.
 
-          If you want to use your low-level networking library of choice instead of Godot's built-in networking,
+          If you want to use your low-level networking library of choice instead of Rebel Engine's built-in networking,
           see here for an example:
           https://github.com/PerduGames/gdnet3
 
@@ -47,7 +47,7 @@ In summary, you can use the low-level networking API for maximum control and imp
              It may even allow an attacker to compromise the machines your application runs on
              and use your servers to send spam, attack others or steal your users data if they play your game.
 
-             This is always the case when networking is involved and has nothing to do with Godot.
+             This is always the case when networking is involved and has nothing to do with Rebel Engine.
              You can of course experiment, but when you release a networked application,
              always take care of any possible security concerns.
 
@@ -56,24 +56,24 @@ Mid level abstraction
 
 Before going into how we would like to synchronize a game across the network, it can be helpful to understand how the base network API for synchronization works.
 
-Godot uses a mid-level object :ref:`NetworkedMultiplayerPeer <class_NetworkedMultiplayerPeer>`.
+Rebel Engine uses a mid-level object :ref:`NetworkedMultiplayerPeer <class_NetworkedMultiplayerPeer>`.
 This object is not meant to be created directly, but is designed so that several C++ implementations can provide it.
 
 This object extends from :ref:`PacketPeer <class_PacketPeer>`, so it inherits all the useful methods for serializing, sending and receiving data. On top of that, it adds methods to set a peer, transfer mode, etc. It also includes signals that will let you know when peers connect or disconnect.
 
-This class interface can abstract most types of network layers, topologies and libraries. By default, Godot
+This class interface can abstract most types of network layers, topologies and libraries. By default, Rebel Engine
 provides an implementation based on ENet (:ref:`NetworkedMultiplayerEnet <class_NetworkedMultiplayerENet>`),
 one based on WebRTC (:ref:`WebRTCMultiplayer <class_WebRTCMultiplayer>`), and one based on WebSocket
 (:ref:`WebSocketMultiplayerPeer <class_WebSocketMultiplayerPeer>`), but this could be used to implement
 mobile APIs (for ad hoc WiFi, Bluetooth) or custom device/console-specific networking APIs.
 
-For most common cases, using this object directly is discouraged, as Godot provides even higher level networking facilities.
+For most common cases, using this object directly is discouraged, as Rebel Engine provides even higher level networking facilities.
 Yet it is made available in case a game has specific needs for a lower level API.
 
 Initializing the network
 ------------------------
 
-The object that controls networking in Godot is the same one that controls everything tree-related: :ref:`SceneTree <class_SceneTree>`.
+The object that controls networking in Rebel Engine is the same one that controls everything tree-related: :ref:`SceneTree <class_SceneTree>`.
 
 To initialize high-level networking, the SceneTree must be provided a NetworkedMultiplayerPeer object.
 
@@ -125,8 +125,8 @@ Terminating the networking feature:
 Managing connections
 --------------------
 
-Some games accept connections at any time, others during the lobby phase. Godot can be requested to no longer accept
-connections at any point (see ``set_refuse_new_network_connections(bool)`` and related methods on :ref:`SceneTree <class_SceneTree>`). To manage who connects, Godot provides the following signals in SceneTree:
+Some games accept connections at any time, others during the lobby phase. Rebel Engine can be requested to no longer accept
+connections at any point (see ``set_refuse_new_network_connections(bool)`` and related methods on :ref:`SceneTree <class_SceneTree>`). To manage who connects, Rebel Engine provides the following signals in SceneTree:
 
 Server and Clients:
 
@@ -246,7 +246,7 @@ This keyword is one of many that allow a function to be called by a remote proce
 
 Each of them designate who can call the rpc, and optionally ``sync`` if the RPC can be called locally.
 
-.. note:: If no rpc keywords are added, Godot will block any attempts to call functions remotely.
+.. note:: If no rpc keywords are added, Rebel Engine will block any attempts to call functions remotely.
           This makes security work a lot easier (so a client can't call a function to delete a file on another client's system).
 
 The ``remote`` keyword can be called by any peer, including the server and all clients.
@@ -280,7 +280,7 @@ Player scenes
 In most games, each player will likely have its own scene. Remember that this is a multiplayer game, so in every peer
 you need to instance **one scene for each player connected to it**. For a 4 player game, each peer needs to instance 4 player nodes.
 
-So, how to name such nodes? In Godot, nodes need to have a unique name. It must also be relatively easy for a player to tell which
+So, how to name such nodes? In Rebel Engine, nodes need to have a unique name. It must also be relatively easy for a player to tell which
 node represents each player ID.
 
 The solution is to simply name the *root nodes of the instanced player scenes as their network ID*. This way, they will be the same in
@@ -357,7 +357,7 @@ Synchronizing the game
 ----------------------
 
 In most games, the goal of multiplayer networking is that the game runs synchronized on all the peers playing it.
-Besides supplying an RPC and remote member variable set implementation, Godot adds the concept of network masters.
+Besides supplying an RPC and remote member variable set implementation, Rebel Engine adds the concept of network masters.
 
 Network master
 ^^^^^^^^^^^^^^
@@ -393,8 +393,8 @@ If you have paid attention to the previous example, it's possible you noticed th
 
 Each time this piece of code is executed on each peer, the peer makes itself master on the node it controls, and all other nodes remain as puppets with the server being their network master.
 
-To clarify, here is an example of how this looks in the
-`bomber demo <https://github.com/godotengine/godot-demo-projects/tree/master/networking/multiplayer_bomber>`_:
+To clarify, download the multiplayer bomber demo to see how it works:
+:download:`Multiplayer Bomber <files/multiplayer-bomber.zip>`
 
 .. image:: img/nmms.png
 

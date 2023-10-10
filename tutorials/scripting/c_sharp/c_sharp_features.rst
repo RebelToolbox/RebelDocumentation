@@ -3,7 +3,7 @@
 C# features
 ===========
 
-This page provides an overview of the commonly used features of both C# and Godot
+This page provides an overview of the commonly used features of both C# and Rebel Engine
 and how they are used together.
 
 .. _doc_c_sharp_features_type_conversion_and_casting:
@@ -128,7 +128,7 @@ Emitting signals is done with the ``EmitSignal`` method.
 
 Notice that you can always reference a signal name with the ``nameof`` keyword (applied on the delegate itself).
 
-It is possible to bind values when establishing a connection by passing a Godot array.
+It is possible to bind values when establishing a connection by passing a Rebel Array.
 
 .. code-block:: csharp
 
@@ -173,12 +173,8 @@ Finally, signals can be created by calling ``AddUserSignal``, but be aware that 
 Preprocessor defines
 --------------------
 
-Godot has a set of defines that allow you to change your C# code
+Rebel Engine has a set of defines that allow you to change your C# code
 depending on the environment you are compiling to.
-
-.. note:: If you created your project before Godot 3.2, you have to modify
-          or regenerate your `csproj` file to use this feature
-          (compare ``<DefineConstants>`` with a new 3.2+ project).
 
 Examples
 ~~~~~~~~
@@ -211,14 +207,14 @@ Or you can detect which engine your code is in, useful for making cross-engine l
     #elif UNITY_5_3_OR_NEWER
             print("This is Unity.");
     #else
-            throw new InvalidWorkflowException("Only Godot and Unity are supported.");
+            throw new InvalidWorkflowException("Only Rebel Engine, Godot and Unity are supported.");
     #endif
         }
 
 Full list of defines
 ~~~~~~~~~~~~~~~~~~~~
 
-* ``GODOT`` is always defined for Godot projects.
+* ``GODOT`` is always defined for Rebel Projects.
 
 * One of ``GODOT_64`` or ``GODOT_32`` is defined depending on if the architecture is 64-bit or 32-bit.
 
@@ -241,5 +237,5 @@ When **exporting**, the following may also be defined depending on the export fe
 
 * Any custom features added in the export menu will be capitalized and prefixed: ``foo`` -> ``GODOT_FOO``.
 
-To see an example project, see the OS testing demo:
-https://github.com/godotengine/godot-demo-projects/tree/master/misc/os_test
+To see an example project, download the OS Test demo here:
+:download:`OS Test <files/os-test.zip>`

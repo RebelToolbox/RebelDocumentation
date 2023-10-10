@@ -3,7 +3,7 @@
 Occluder Nodes
 ==============
 
-In addition to occlusion via :ref:`doc_rooms_and_portals`, Godot also has the ability to provide basic occlusion using simple geometric ``Occluder`` nodes. These are geometric shapes that are shown in the editor using gizmos, but are invisible at runtime.
+In addition to occlusion via :ref:`doc_rooms_and_portals`, Rebel Engine also has the ability to provide basic occlusion using simple geometric ``Occluder`` nodes. These are geometric shapes that are shown in the editor using gizmos, but are invisible at runtime.
 
 Any object that is fully occluded by the shape (behind or in some cases inside) will be culled at runtime. They are designed to be simple to use and inexpensive at runtime, but the trade off is they may not be as effective at culling as :ref:`doc_rooms_and_portals`. Nevertheless they can still significantly boost performance in some situations.
 

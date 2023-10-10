@@ -11,14 +11,14 @@ Generally speaking, end users will have a preferred runtime due to not having a 
 to switch runtimes when playing games that support OpenXR. However, developers may wish to
 test multiple runtimes to see if their game behaves.
 
-To make this easy, Godot provides a dropdown in the top-right corner which can
-switch the runtime Godot will use when testing:
+To make this easy, Rebel Editor provides a dropdown in the top-right corner which can
+switch the runtime Rebel Engine will use when testing:
 
 .. image:: img/switch_runtime.png
 
 The OpenXR plugin will **not** work with the Microsoft MR runtime.
 That runtime only supports OpenXR applications that use DirectX,
-but Godot uses OpenGL ES 3.0 or 2.0.
+but Rebel Engine uses OpenGL ES 3.0 or 2.0.
 
 .. note::
 
@@ -28,7 +28,7 @@ but Godot uses OpenGL ES 3.0 or 2.0.
     Also, if you are deploying to an external device, this setting has no effect.
 
 As OpenXR doesn't have a mechanism for registering runtimes that we can query,
-Godot will check common locations for runtime configuration files.
+Rebel Engine will check common locations for runtime configuration files.
 The locations that are checked are stored in the ``addons/godot_openxr/runtimes.json`` file.
 If you've installed a runtime in a nonstandard location or a runtime not currently present in this file, you can add it manually using a text editor.
 

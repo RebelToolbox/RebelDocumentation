@@ -13,7 +13,7 @@ Introduction
 ------------
 
 Due to their focus on performance, real-time rendering engines have many
-limitations. Godot's renderer is no exception. To work effectively with those
+limitations. The Rebel Renderer is no exception. To work effectively with those
 limitations, you need to understand them.
 
 Texture size limits
@@ -32,7 +32,7 @@ to repeat.
 Color banding
 -------------
 
-When using the GLES3 or Vulkan renderers, Godot's 3D engine renders internally
+When using the GLES3 or Vulkan renderers, the Rebel 3D engine renders internally
 in HDR. However, the rendering output will be tonemapped to a low dynamic range
 so it can be displayed on the screen. This can result in visible banding,
 especially when using untextured materials. This can also be seen in 2D projects
@@ -45,9 +45,7 @@ There are two main ways to alleviate banding:
   Fullscreen debanding is only supported when using the GLES3 or Vulkan renderers.
   It also requires HDR to be enabled in the Project Settings (which is the default).
 - Alternatively, bake some noise into your textures. This is mainly effective in 2D,
-  e.g. for vignetting effects. In 3D, you can also use a
-  `custom debanding shader <https://github.com/fractilegames/godot-gles2-debanding-material>`__
-  to be applied on your *materials*. This technique works even if your project is
+  e.g. for vignetting effects. This technique works even if your project is
   rendered in LDR, which means it will work when using the GLES2 renderer.
 
 .. seealso::
@@ -87,7 +85,7 @@ player.
 Transparency sorting
 --------------------
 
-In Godot, transparent materials are drawn after opaque materials. Transparent
+In Rebel Engine, transparent materials are drawn after opaque materials. Transparent
 objects are sorted back to front before being drawn based on the Spatial's
 position, not the vertex position in world space. Due to this, overlapping
 objects may often be sorted out of order. To fix improperly sorted objects, tweak
@@ -96,7 +94,7 @@ property. This will force specific materials to appear in front or behind of
 other transparent materials. Even then, this may not always be sufficient.
 
 Some rendering engines feature *order-independent transparency* techniques to
-alleviate this, but this is costly on the GPU. Godot currently doesn't provide
+alleviate this, but this is costly on the GPU. Rebel Engine currently doesn't provide
 this feature. There are still several ways to avoid this problem:
 
 - Only make materials transparent if you actually need it. If a material only

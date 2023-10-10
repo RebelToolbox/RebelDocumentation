@@ -80,7 +80,7 @@ while 1.0 means pure diffuse capture).
 Blending
 --------
 
-Multiple reflection probes can be used, and Godot will blend them where they overlap using a smart algorithm:
+Multiple reflection probes can be used, and Rebel Engine will blend them where they overlap using a smart algorithm:
 
 .. image:: img/refprobe_blending.png
 

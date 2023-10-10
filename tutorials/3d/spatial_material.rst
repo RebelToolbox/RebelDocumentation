@@ -36,7 +36,7 @@ Spatial materials have many flags determining the general usage of a material.
 Transparent
 ~~~~~~~~~~~
 
-In Godot, materials are not transparent unless specifically configured to be.
+In Rebel Engine, materials are not transparent unless specifically configured to be.
 The main reason behind this is that transparent materials are rendered
 using a different technique (sorted from back to front and rendered in order).
 
@@ -44,7 +44,7 @@ This technique is less efficient (many state changes happen) and makes
 the materials unusable with many mid- and post-processing effects
 (such as SSAO, SSR, etc.) that require perfectly opaque geometry.
 
-For this reason, materials in Godot are assumed opaque unless
+For this reason, materials in Rebel Engine are assumed opaque unless
 specified otherwise. The main settings that enable transparency are:
 
 * Transparent flag (this one)
@@ -71,7 +71,7 @@ pure, unlit color.
 Vertex Lighting
 ~~~~~~~~~~~~~~~
 
-Godot has a more or less uniform cost per pixel thanks to depth pre-pass. All
+Rebel Engine has a more or less uniform cost per pixel thanks to depth pre-pass. All
 lighting calculations are made by running the lighting shader on every pixel.
 
 As these calculations are costly, performance can be brought down considerably
@@ -227,7 +227,7 @@ Determines which side of the object is not drawn when backfaces are rendered:
 
     By default, Blender has backface culling disabled on materials and will
     export materials to match how they render in Blender. This means that
-    materials in Godot will have their cull mode set to **Disabled**. This can
+    materials in Rebel Engine will have their cull mode set to **Disabled**. This can
     decrease performance since backfaces will be rendered, even when they are
     being culled by other faces. To resolve this, enable **Backface Culling** in
     Blender's Materials tab, then export the scene to glTF again.
@@ -308,16 +308,16 @@ Material colors, maps and channels
 ----------------------------------
 
 Besides the parameters, what defines materials themselves are the colors,
-textures, and channels. Godot supports an extensive list of them. They are
+textures, and channels. Rebel Engine supports an extensive list of them. They are
 described in detail below:
 
 Albedo
 ~~~~~~
 
 *Albedo* is the base color for the material, on which all the other settings
-operate. When set to *Unshaded*, this is the only color that is visible. In
-previous versions of Godot, this channel was named *Diffuse*. The change
-of name mainly happened because, in PBR (Physically Based Rendering), this color affects many
+operate. When set to *Unshaded*, this is the only color that is visible.
+Sometimes this channel is named *Diffuse*.
+Albedo is used, because in PBR (Physically Based Rendering), this color affects many
 more calculations than just the diffuse lighting path.
 
 Albedo color and texture can be used together as they are multiplied.
@@ -329,7 +329,7 @@ make sure to either enable transparency or *alpha scissoring* for it to work.
 Metallic
 ~~~~~~~~
 
-Godot uses a metallic model over competing models due to its simplicity.
+Rebel Engine uses a metallic model over competing models due to its simplicity.
 This parameter defines how reflective the material is. The more reflective, the
 less diffuse/ambient light affects the material and the more light is reflected.
 This model is called "energy-conserving".
@@ -367,7 +367,7 @@ Normal map
 ~~~~~~~~~~
 
 Normal mapping allows you to set a texture that represents finer shape detail.
-This does not modify geometry, only the incident angle for light. In Godot,
+This does not modify geometry, only the incident angle for light. In Rebel Engine,
 only the red and green channels of normal maps are used for better compression
 and wider compatibility.
 
@@ -375,7 +375,7 @@ and wider compatibility.
 
 .. note::
 
-  Godot requires the normal map to use the X+, Y+ and Z+ coordinates, this is
+  Rebel Engine requires the normal map to use the X+, Y+ and Z+ coordinates, this is
   known as OpenGL style. If you've imported a material made to be used with
   another engine it may be DirectX style, in which case the normal map needs to
   be converted so its Y axis is flipped.
@@ -387,7 +387,7 @@ and wider compatibility.
 Rim
 ~~~
 
-Some fabrics have small micro-fur that causes light to scatter around it. Godot
+Some fabrics have small micro-fur that causes light to scatter around it. Rebel Engine
 emulates this with the *Rim* parameter. Unlike other rim lighting implementations,
 which just use the emission channel, this one actually takes light into account
 (no light means no rim). This makes the effect considerably more believable.
@@ -468,7 +468,7 @@ Refraction
 
 *This feature is only available when using the GLES3 backend.*
 
-When refraction is enabled, it supersedes alpha blending, and Godot attempts to
+When refraction is enabled, it supersedes alpha blending, and Rebel Engine attempts to
 fetch information from behind the object being rendered instead. This allows
 distorting the transparency in a way similar to refraction in real life.
 
@@ -477,7 +477,7 @@ distorting the transparency in a way similar to refraction in real life.
 Detail
 ~~~~~~
 
-Godot allows using secondary albedo and normal maps to generate a detail
+Rebel Engine allows using secondary albedo and normal maps to generate a detail
 texture, which can be blended in many ways. By combining this with secondary
 UV or triplanar modes, many interesting textures can be achieved.
 
@@ -518,7 +518,7 @@ even if the material does not have normal map enabled.
 UV1 and UV2
 ~~~~~~~~~~~~
 
-Godot supports two UV channels per material. Secondary UV is often useful for
+Rebel Engine supports two UV channels per material. Secondary UV is often useful for
 ambient occlusion or emission (baked light). UVs can be scaled and offset,
 which is useful when using repeating textures.
 
@@ -538,7 +538,7 @@ world triplanar, so the brick texture continues smoothly between them.
 Proximity and distance fade
 ----------------------------
 
-Godot allows materials to fade by proximity to each other as well as depending
+Rebel Engine allows materials to fade by proximity to each other as well as depending
 on the distance from the viewer. Proximity fade is useful for effects such as
 soft particles or a mass of water with a smooth blending to the shores. Distance
 fade is useful for light shafts or indicators that are only present after a

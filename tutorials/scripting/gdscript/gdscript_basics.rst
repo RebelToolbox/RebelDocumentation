@@ -10,7 +10,7 @@ Introduction
 create content. It uses a syntax similar to
 `Python <https://en.wikipedia.org/wiki/Python_%28programming_language%29>`_
 (blocks are indent-based and many keywords are similar). Its goal is
-to be optimized for and tightly integrated with Godot Engine, allowing great
+to be optimized for and tightly integrated with Rebel Engine, allowing great
 flexibility for content creation and integration.
 
 History
@@ -134,7 +134,7 @@ keywords are reserved words (tokens), they can't be used as identifiers.
 Operators (like ``in``, ``not``, ``and`` or ``or``) and names of built-in types
 as listed in the following sections are also reserved.
 
-Keywords are defined in the `GDScript tokenizer <https://github.com/godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_
+Keywords are defined in the `GDScript tokenizer <https://github.com/RebelToolbox/RebelEngine/blob/main/modules/gdscript/gdscript_tokenizer.cpp>`_
 in case you want to take a look under the hood.
 
 +------------+---------------------------------------------------------------------------------------------------------------+
@@ -551,7 +551,7 @@ assign to it::
     var d = {} # Create an empty Dictionary.
     d.waiting = 14 # Add String "waiting" as a key and assign the value 14 to it.
     d[4] = "hello" # Add integer 4 as a key and assign the String "hello" as its value.
-    d["Godot"] = 3.01 # Add String "Godot" as a key and assign the value 3.01 to it.
+    d["Rebel"] = 3.01 # Add String "Rebel" as a key and assign the value 3.01 to it.
 
     var test = 4
     # Prints "hello" by indexing the dictionary with a dynamic key.
@@ -697,7 +697,7 @@ want to assign consecutive integers to some constant.
 If you pass a name to the enum, it will put all the keys inside a constant
 dictionary of that name.
 
-.. important:: In Godot 3.1 and later, keys in a named enum are not registered
+.. important:: Keys in a named enum are not registered
                as global constants. They should be accessed prefixed by the
                enum's name (``Name.KEY``); see an example below.
 
@@ -1033,7 +1033,7 @@ There are 6 pattern types:
                 print("Dennis is ", age, " years old.")
             {"name", "age"}:
                 print("Has a name and an age, but it's not Dennis :(")
-            {"key": "godotisawesome", ..}:
+            {"key": "rebelisawesome", ..}:
                 print("I only checked for one entry and ignored the rest")
 
 - Multiple patterns
@@ -1068,8 +1068,8 @@ path. For example, if you name a script file ``character.gd``::
 Registering named classes
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can give your class a name to register it as a new type in Godot's
-editor. For that, you use the ``class_name`` keyword. You can optionally add
+You can give your class a name to register it as a new type in Rebel Editor.
+For that, you use the ``class_name`` keyword. You can optionally add
 a comma followed by a path to an image, to use it as an icon. Your
 class will then appear with its new icon in the editor::
 
@@ -1109,7 +1109,7 @@ Here's a class file example:
         print(Character)
 
 
-.. note:: Godot's class syntax is compact: it can only contain member variables or
+.. note:: Rebel Engine's class syntax is compact: it can only contain member variables or
           functions. You can use static functions, but not static member variables. In the
           same way, the engine initializes variables every time you create an instance,
           and this includes arrays and dictionaries. This is in the spirit of thread
@@ -1503,7 +1503,7 @@ definition::
     # Defining a signal that forwards two arguments.
     signal health_changed(old_value, new_value)
 
-These arguments show up in the editor's node dock, and Godot can use them to
+These arguments show up in the editor's node dock, and Rebel Engine can use them to
 generate callback functions for you. However, you can still emit any number of
 arguments when you emit signals; it's up to you to emit the correct values.
 

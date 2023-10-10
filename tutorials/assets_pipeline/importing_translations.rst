@@ -29,7 +29,7 @@ each string. This allows you to revise the text while it is being
 translated to other languages. The unique ID can be a number, a string,
 or a string with a number (it's just a unique string anyway).
 
-.. note:: If you need a more powerful file format, Godot also supports
+.. note:: If you need a more powerful file format, Rebel Editor also supports
           loading translations written in the gettext ``.po`` format. See
           :ref:`doc_localization_using_gettext` for details.
 
@@ -37,7 +37,7 @@ Translation format
 ------------------
 
 To complete the picture and allow efficient support for translations,
-Godot has a special importer that can read CSV files. Most spreadsheet
+Rebel Editor has a special importer that can read CSV files. Most spreadsheet
 editors can export to this format, so the only requirement is that the files
 have a special arrangement. The CSV files **must** be saved with UTF-8 encoding
 without a `byte order mark <https://en.wikipedia.org/wiki/Byte_order_mark>`__.
@@ -105,12 +105,12 @@ comma in the import options.
 CSV importer
 ------------
 
-Godot will treat CSV files as translations by default. It will import them
+Rebel Editor will treat CSV files as translations by default. It will import them
 and generate one or more compressed translation resource files next to it.
 
 Importing will also add the translation to the list of
-translations to load when the game runs, specified in project.godot (or the
-project settings). Godot allows loading and removing translations at
+translations to load when the game runs, specified in project.rebel (or the
+project settings). Rebel Engine allows loading and removing translations at
 runtime as well.
 
 Select the ``.csv`` file and access the **Import** dock to define import

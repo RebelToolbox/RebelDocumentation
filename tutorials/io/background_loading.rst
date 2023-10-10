@@ -303,5 +303,4 @@ Example:
     queue.cancel_resource("res://zone_2.tscn")
 
 **Note**: this code, in its current form, is not tested in real world
-scenarios. If you run into any issues, ask for help in one of
-`Godot's community channels <https://godotengine.org/community>`__.
+scenarios.

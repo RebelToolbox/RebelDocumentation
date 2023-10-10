@@ -6,15 +6,15 @@ Exporting 3D scenes
 Overview
 --------
 
-In Godot it is possible to export 3D scenes as a glTF 2.0 file. You can
+In Rebel Editor it is possible to export 3D scenes as a glTF 2.0 file. You can
 export as a glTF binary (``.glb`` file) or glTF embedded with textures
-(``gltf`` + ``.bin`` + textures). This allows you to create scenes in Godot,
+(``gltf`` + ``.bin`` + textures). This allows you to create scenes in the Rebel Editor,
 such as a CSG mesh blockout for a level, export it to clean it up in a
-program such as Blender, and then bring it back into Godot.
+program such as Blender, and then bring it back into the Rebel Editor.
 
 .. note:: 
 
-    Only Blender 2.83 and newer can import glTF files exported by Godot.
+    Only Blender 2.83 and newer can import glTF files exported by Rebel Engine.
 
 To export a scene in the editor go to **Project > Tools > Export GLTF...**
 

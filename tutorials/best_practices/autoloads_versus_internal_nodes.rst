@@ -3,7 +3,7 @@
 Autoloads versus regular nodes
 ==============================
 
-Godot offers a feature to automatically load nodes at the root of your project,
+Rebel Engine offers a feature to automatically load nodes at the root of your project,
 allowing you to access them globally, that can fulfill the role of a Singleton:
 :ref:`doc_singletons_autoload`. These auto-loaded nodes are not freed when you
 change the scene from code with :ref:`SceneTree.change_scene <class_SceneTree_method_change_scene>`.
@@ -15,7 +15,7 @@ The cutting audio issue
 -----------------------
 
 Other engines can encourage the use of creating manager classes, singletons that
-organize a lot of functionality into a globally accessible object. Godot offers
+organize a lot of functionality into a globally accessible object. Rebel Engine offers
 many ways to avoid global state thanks to the node tree and signals.
 
 For example, let's say we are building a platformer and want to collect coins
@@ -84,7 +84,7 @@ Auto-loaded nodes can simplify your code in some cases:
 
 - **Static Data**: if you need data that is exclusive to one class, like a
   database, then an autoload can be a good tool. There is no scripting API in
-  Godot to create and manage static data otherwise.
+  Rebel Engine to create and manage static data otherwise.
 
 - **Static functions**: creating a library of functions that only return values.
 
@@ -93,7 +93,7 @@ Auto-loaded nodes can simplify your code in some cases:
   create systems that handle broad-scoped tasks. For example, a quest or a
   dialogue system.
 
-Until Godot 3.1, another use was just for convenience: autoloads have a global
+Another use is just for convenience: autoloads have a global
 variable for their name generated in GDScript, allowing you to call them from
 any script file in your project. But now, you can use the ``class_name`` keyword
 instead to get auto-completion for a type in your entire project.

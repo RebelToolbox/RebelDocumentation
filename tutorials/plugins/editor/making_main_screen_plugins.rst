@@ -170,10 +170,5 @@ Activate the plugin in the Project Settings. You'll observe a new button next
 to 2D, 3D, Script above the main viewport. Clicking it will take you to your
 new main screen plugin, and the button in the middle will print text.
 
-If you would like to try a finished version of this plugin,
-check out the plugin demos here:
-https://github.com/godotengine/godot-demo-projects/tree/master/plugins
-
-If you would like to see a more complete example of what main screen plugins
-are capable of, check out the 2.5D demo projects here:
-https://github.com/godotengine/godot-demo-projects/tree/master/misc/2.5d
+If you would like to try a finished version of this plugins it's included with three other plugins here:
+:download:`Plugin Demos <files/plugin-demos.zip>`

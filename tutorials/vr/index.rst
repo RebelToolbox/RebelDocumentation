@@ -7,5 +7,4 @@ XR (AR/VR)
 
    xr_primer
    openxr/index
-   oculus_mobile/index
    openvr/index

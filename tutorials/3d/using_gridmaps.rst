@@ -19,7 +19,7 @@ Example project
 ---------------
 
 To learn how GridMaps work, start by downloading the sample project:
-:download:`gridmap_demo.zip <files/gridmap_demo.zip>`.
+:download:`Gridmap <files/gridmap.zip>`.
 
 Unzip this project and add it to the Project Manager using the "Import"
 button.

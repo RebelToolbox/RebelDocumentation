@@ -53,9 +53,3 @@ or you can instance it in code as shown below:
 
         The Viewport's **Transparent Bg** property must be enabled prior to starting passthrough.
         The plugin will log a warning message if it detects an incorrect configuration. 
-
-.. seealso::
-
-    A fix for a bug related to turning transparent background on/off
-    is scheduled for the Godot 3.4.3 release. If you wish to toggle passthrough
-    in your game, you will need to be on that version or newer.

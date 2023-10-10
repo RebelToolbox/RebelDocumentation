@@ -3,7 +3,7 @@
 Common engine methods and macros
 ================================
 
-Godot's C++ codebase makes use of dozens of custom methods and macros which are
+Rebel Engine's C++ codebase makes use of dozens of custom methods and macros which are
 used in almost every file. This page is geared towards beginner contributors,
 but it can also be useful for those writing custom C++ modules.
 
@@ -67,7 +67,7 @@ This is mainly useful when printing numbers directly.
 Internationalize a string
 -------------------------
 
-There are two types of internationalization in Godot's codebase:
+There are two types of internationalization in Rebel Engine's codebase:
 
 - ``TTR()``: **Editor ("tools") translations** will only be processed in the
   editor. If a user uses the same text in one of their projects, it won't be
@@ -102,7 +102,7 @@ To insert placeholders in localizable strings, wrap the localization macro in a
 Clamp a value
 -------------
 
-Godot provides macros for clamping a value with a lower bound (``MAX``), an
+Rebel Engine provides macros for clamping a value with a lower bound (``MAX``), an
 upper bound (``MIN``) or both (``CLAMP``):
 
 .. code-block:: cpp
@@ -173,7 +173,7 @@ use ``GLOBAL_GET``/``EDITOR_GET`` in all other places where it's referenced.
 Error macros
 ------------
 
-Godot features many error macros to make error reporting more convenient.
+Rebel Engine features many error macros to make error reporting more convenient.
 
 .. warning::
 
@@ -230,17 +230,17 @@ Godot features many error macros to make error reporting more convenient.
     }
 
     // Crashes the engine. This should generally never be used
-    // except for testing crash handling code. Godot's philosophy
+    // except for testing crash handling code. Rebel Engine's philosophy
     // is to never crash, both in the editor and in exported projects.
     CRASH_NOW_MSG("Can't predict the future! Aborting.");
 
 
 .. seealso::
 
-    See `core/error_macros.h <https://github.com/godotengine/godot/blob/3.x/core/error_macros.h>`__
-    in Godot's codebase for more information about each error macro.
+    See `core/error_macros.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/error_macros.h>`__
+    in Rebel Engine's codebase for more information about each error macro.
 
     Some functions return an error code (materialized by a return type of
     ``Error``). This value can be returned directly from an error macro.
     See the list of available error codes in
-    `core/error_list.h <https://github.com/godotengine/godot/blob/3.x/core/error_list.h>`__.
+    `core/error_list.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/error_list.h>`__.

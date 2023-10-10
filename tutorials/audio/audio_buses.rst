@@ -6,10 +6,10 @@ Audio buses
 Introduction
 ------------
 
-Godot's audio processing code has been written with games in mind, with the aim
+Rebel Engine's audio processing code has been written with games in mind, with the aim
 of achieving an optimal balance between performance and sound quality.
 
-Godot's audio engine allows any number of audio buses to be created and any
+The Rebel audio engine allows any number of audio buses to be created and any
 number of effect processors can be added to each bus. Only the hardware of the
 device running your game will limit the number of buses and effects that can be
 used before performance starts to suffer.
@@ -17,7 +17,7 @@ used before performance starts to suffer.
 Decibel scale
 -------------
 
-Godot's sound interface is designed to meet the expectations of sound design
+Rebel Engine's sound interface is designed to meet the expectations of sound design
 professionals. To this end, it primarily uses the decibel scale.
 
 For those unfamiliar with it, it can be explained with a few facts:
@@ -47,7 +47,7 @@ and will allow you to communicate better with audio professionals.
 Audio buses
 -----------
 
-Audio buses can be found in the bottom panel of the Godot editor:
+Audio buses can be found in the bottom panel of the Rebel Editor:
 
 .. image:: img/audio_buses1.png
 
@@ -165,7 +165,7 @@ are far apart.
 Distortion
 ~~~~~~~~~~
 
-Makes the sound distorted. Godot offers several types of distortion: *overdrive*,
+Makes the sound distorted. Rebel Engine offers several types of distortion: *overdrive*,
 *tan* and *bit crushing*. Distortion can be used to simulate sound coming through
 a low-quality speaker or device.
 
@@ -178,7 +178,7 @@ scripts to create an equalizer with a custom number of bands.
 EQ6, EQ10, EQ21
 ~~~~~~~~~~~~~~~
 
-Godot provides three equalizers with different numbers of bands. An equalizer on
+Rebel Engine provides three equalizers with different numbers of bands. An equalizer on
 the Master bus can be useful to cut frequencies that the device's speakers can't
 reproduce well (e.g. a mobile phone's speakers won't reproduce bass content
 well). The equalizer effect can be disabled when headphones are plugged in.
@@ -266,8 +266,7 @@ SpectrumAnalyzer
 ~~~~~~~~~~~~~~~~
 
 This effect doesn't alter audio, instead, you add this effect to buses you want
-a spectrum analysis of. This would typically be used for audio visualization. A
-demo project using this can be found `here <https://github.com/godotengine/godot-demo-projects/tree/master/audio/spectrum>`__.
+a spectrum analysis of. This would typically be used for audio visualization.
 
 StereoEnhance
 ~~~~~~~~~~~~~
@@ -277,7 +276,7 @@ This effect uses a few algorithms to enhance a signal's stereo spectrum.
 Automatic bus disabling
 -----------------------
 
-There is no need to disable buses manually when not in use. Godot detects
+There is no need to disable buses manually when not in use. Rebel Engine detects
 that the bus has been silent for a few seconds and disables it (including
 all effects).
 

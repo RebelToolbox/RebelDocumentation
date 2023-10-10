@@ -12,15 +12,15 @@ Understanding the contents of this tutorial will help you in understanding all
 that is to come after this.
 
 Before we begin, you can download the source code to the example object we
-describe below in the `GDNative-demos repository
-<https://github.com/godotengine/gdnative-demos/tree/master/c/simple>`_.
+describe below here:
+:download:`Simple <files/simple.zip>`
 
 This example project also contains a SConstruct file that makes compiling a
 little easier, but in this tutorial we'll be doing things by hand to
 understand the process.
 
 :ref:`GDNative <class_GDNative>` can be used to create several types of
-additions to Godot, using interfaces such as
+additions to Rebel Engine, using interfaces such as
 :ref:`PluginScript <class_PluginScript>` or
 :ref:`ARVRInterfaceGDNative <class_ARVRInterfaceGDNative>`. In this tutorial we
 are going to look at creating a :ref:`NativeScript <class_NativeScript>`
@@ -48,59 +48,22 @@ Prerequisites
 
 Before we start you'll need a few things:
 
-1) A Godot executable for your target version.
+1) A Rebel Engine executable for your target version.
 2) A C compiler. On Linux, install ``gcc`` or ``clang`` from your package
    manager. On macOS, you can install Xcode from the Mac App Store. On Windows,
    you can use Visual Studio 2015 or later, or MinGW-w64.
-3) A Git clone of the `godot-headers
-   repository <https://github.com/godotengine/godot-headers.git>`_: these are
-   the C headers for Godot's public API exposed to GDNative.
-
-For the latter, we suggest that you create a dedicated folder for this GDNative
-example project, open a terminal in that folder and execute:
-
-.. code-block:: none
-
-    git clone https://github.com/godotengine/godot-headers.git
-
-This will download the required files into that folder.
-
-.. tip::
-
-    If you plan to use Git for your GDNative project, you can also add
-    ``godot-headers`` as a Git submodule.
+3) A copy of the GDNative include headers:
+   `GDNative include <https://github.com/RebelToolbox/RebelEngine/tree/main/modules/gdnative/include>`_
+   These are the C headers for Rebel Engine's public API exposed to GDNative.
 
 .. note::
 
-    The ``godot-headers`` repository has different branches. As Godot evolves,
+    As Rebel Engine evolves,
     so does GDNative. While we try to preserve compatibility between version,
     you should always build your GDNative module against headers matching the
-    Godot stable branch (e.g. ``3.1``) and ideally actual release (e.g.
-    ``3.1.1-stable``) that you use.
-    GDNative modules built against older versions of the Godot headers *may*
-    work with newer versions of the engine, but not the other way around.
-
-The ``master`` branch of the ``godot-headers`` repository is kept in line with
-the ``master`` branch of Godot and thus contains the GDNative class and
-structure definitions that will work with the latest development builds.
-
-If you want to write a GDNative module for a stable version of Godot, look at
-the available Git tags (with ``git tags``) for the one matching your engine
-version. In the ``godot-headers`` repository, such tags are prefixed with
-``godot-``, so you can e.g. checkout the ``godot-3.1.1-stable`` tag for use with
-Godot 3.1.1. In your cloned repository, you can do:
-
-.. code-block:: none
-
-    git checkout godot-3.1.1-stable
-
-If a tag matching your stable release is missing for any reason, you can fall
-back to the matching stable branch (e.g. ``3.1``), which you would also check
-out with ``git checkout 3.1``.
-
-If you are building Godot from source with your own changes that impact
-GDNative, you can find the updated class and structure definition in
-``<godotsource>/modules/gdnative/include``
+    Rebel Engine version that you use.
+    GDNative modules built against older versions of the GDNative headers *may*
+    work with newer versions of Rebel Engine, but not the other way around.
 
 Our C source
 ------------
@@ -111,22 +74,22 @@ structure that looks along those lines:
 .. code-block:: none
 
     + <your development folder>
-      + godot-headers
-        - <lots of files here>
+      + include
+        - <The GDNative include headers>
       + simple
         + bin
           - libsimple.dll/so/dylib
           - libsimple.gdnlib
           - simple.gdns
         main.tscn
-        project.godot
+        project.rebel
       + src
         - simple.c
 
-Open up Godot and create a new project called "simple" alongside your
-``godot-headers`` Git clone. This will create the ``simple`` folder and
-``project.godot`` file. Then manually create a ``src`` folder alongside the
-``simple`` folder, and a ``bin`` subfolder in the ``simple`` folder.
+Open up Rebel Editor and create a new project called "Simple".
+Copy the GDNative include headers alongside your project folder.
+Create a ``src`` folder alongside the project folder,
+and a ``bin`` subfolder in the ``Simple`` project folder.
 
 We're going to start by having a look at what our ``simple.c`` file contains.
 Now, for our example here we're making a single C source file without a header
@@ -149,7 +112,7 @@ be put together into one big file. Each section will be explained as we add it.
 The above code includes the GDNative API struct header and a standard header
 that we will use further down for string operations.
 It then defines two pointers to two different structs. GDNative supports a large
-collection of functions for calling back into the main Godot executable. In
+collection of functions for calling back into the main Rebel Engine executable. In
 order for your module to have access to these functions, GDNative provides your
 application with a struct containing pointers to all these functions.
 
@@ -160,7 +123,7 @@ have their own "GDNative structs" that are accessible through extensions.
 In our example, we access one of these extension to gain access to the functions
 specifically needed for NativeScript.
 
-A NativeScript behaves like any other script in Godot. Because the NativeScript
+A NativeScript behaves like any other script in Rebel Engine. Because the NativeScript
 API is rather low level, it requires the library to specify many things more
 verbosely than other scripting systems, such as GDScript. When a NativeScript
 instance gets created, a library-given constructor gets called. When that
@@ -177,10 +140,10 @@ These are forward declarations for the functions we'll be implementing for our
 object. A constructor and destructor is needed. Additionally, the object will
 have a single method called ``get_data``.
 
-Next up is the first of the entry points Godot will call when our dynamic
+Next up is the first of the entry points Rebel Engine will call when our dynamic
 library is loaded. These methods are all prefixed with ``godot_`` (you can
 change this later on) followed by their name. ``gdnative_init`` is a function
-that initializes our dynamic library. Godot will give it a pointer to a
+that initializes our dynamic library. Rebel Engine will give it a pointer to a
 structure that contains various bits of information we may find useful among
 which the pointers to our API structures.
 
@@ -204,7 +167,7 @@ and check the type of extension.
     }
 
 Next up is ``gdnative_terminate`` which is called before the library is
-unloaded. Godot will unload the library when no object uses it anymore. Here,
+unloaded. Rebel Engine will unload the library when no object uses it anymore. Here,
 you can do any cleanup you may need to do. For our example, we're simply going
 to clear our API pointers.
 
@@ -216,7 +179,7 @@ to clear our API pointers.
     }
 
 Finally, we have ``nativescript_init`` which is the most important function we'll
-need today. This function will be called by Godot as part of loading a GDNative
+need today. This function will be called by Rebel Engine as part of loading a GDNative
 library and communicates back to the engine what objects we make available.
 
 .. code-block:: C
@@ -243,11 +206,11 @@ library and communicates back to the engine what objects we make available.
 We first tell the engine which classes are implemented by calling
 ``nativescript_register_class``. The first parameter here is the handle pointer
 given to us. The second is the name of our object class. The third is the type
-of object in Godot that we 'inherit' from; this is not true inheritance but it's
+of object in Rebel Engine that we 'inherit' from; this is not true inheritance but it's
 close enough. Finally, our fourth and fifth parameters are descriptions for our
 constructor and destructor.
 
-We then tell Godot about our methods (well our one method in this case), by
+We then tell Rebel Engine about our methods (well our one method in this case), by
 calling ``nativescript_register_method`` for each method of our class. In our
 case, that is just ``get_data``. Our first parameter is yet again our handle
 pointer. The second is again the name of the object class we're registering. The
@@ -278,7 +241,7 @@ class.
     } user_data_struct;
 
 And then, we define our constructor. All we do in our constructor is allocate
-memory for our structure and fill it with some data. Note that we use Godot's
+memory for our structure and fill it with some data. Note that we use Rebel Engine's
 memory functions so the memory gets tracked and then return the pointer to our
 new structure. This pointer will act as our instance identifier in case multiple
 objects are instantiated.
@@ -296,7 +259,7 @@ and to access its member data.
         return user_data;
     }
 
-Our destructor is called when Godot is done with our object and we free our
+Our destructor is called when Rebel Engine is done with our object and we free our
 instances' member data.
 
 .. code-block:: C
@@ -307,7 +270,7 @@ instances' member data.
 
 And finally, we implement our ``get_data`` function. Data is always sent and
 returned as variants so in order to return our data, which is a string, we first
-need to convert our C string to a Godot string object, and then copy that string
+need to convert our C string to a Rebel String object, and then copy that string
 object into the variant we are returning.
 
 .. code-block:: C
@@ -326,12 +289,12 @@ object into the variant we are returning.
         return ret;
     }
 
-Strings are heap-allocated in Godot, so they have a destructor which frees the
+Strings are heap-allocated in Rebel Engine, so they have a destructor which frees the
 memory. Destructors are named ``godot_TYPENAME_destroy``. When a Variant gets
 created with a String, it references the String. That means that the original
 String can be "destroyed" to decrease the ref-count. If that does not happen the
 String memory will leak since the ref-count will never be zero and the memory
-never deallocated. The returned variant gets automatically destroyed by Godot.
+never deallocated. The returned variant gets automatically destroyed by Rebel Engine.
 
 .. note::
 
@@ -341,7 +304,7 @@ never deallocated. The returned variant gets automatically destroyed by Godot.
     The String destructor would be called in C++ after the Variant was created,
     so the same is necessary in C.
 
-The variant we return is destroyed automatically by Godot.
+The variant we return is destroyed automatically by Rebel Engine.
 
 And that is the whole source code of our module.
 
@@ -360,21 +323,21 @@ On Linux:
 
 .. code-block:: none
 
-    gcc -std=c11 -fPIC -c -I../godot-headers simple.c -o simple.o
+    gcc -std=c11 -fPIC -c -I../include simple.c -o simple.o
     gcc -rdynamic -shared simple.o -o ../simple/bin/libsimple.so
 
 On macOS:
 
 .. code-block:: none
 
-    clang -std=c11 -fPIC -c -I../godot-headers simple.c -o simple.os
+    clang -std=c11 -fPIC -c -I../include simple.c -o simple.os
     clang -dynamiclib simple.os -o ../simple/bin/libsimple.dylib
 
 On Windows:
 
 .. code-block:: none
 
-    cl /Fosimple.obj /c simple.c /nologo -EHsc -DNDEBUG /MD /I. /I..\godot-headers
+    cl /Fosimple.obj /c simple.c /nologo -EHsc -DNDEBUG /MD /I. /I..\include
     link /nologo /dll /out:..\simple\bin\libsimple.dll /implib:..\simple\bin\libsimple.lib simple.obj
 
 .. note::
@@ -389,11 +352,11 @@ Creating the GDNativeLibrary (``.gdnlib``) file
 
 With our module compiled, we now need to create a corresponding
 :ref:`GDNativeLibrary <class_GDNativeLibrary>` resource with ``.gdnlib``
-extension which we place alongside our dynamic libraries. This file tells Godot
+extension which we place alongside our dynamic libraries. This file tells Rebel Engine
 what dynamic libraries are part of our module and need to be loaded per
 platform.
 
-We can use Godot to generate this file, so open the "simple" project in the
+We can use Rebel Engine to generate this file, so open the Simple project in the
 editor.
 
 Start by clicking the create resource button in the Inspector:
@@ -446,7 +409,7 @@ each platform and feature combination which dynamic library has to be loaded.
 This also informs the exporter which files need to be exported when exporting to
 a specific platform.
 
-The *Dependencies* column (also ``dependencies`` section) tells Godot what other
+The *Dependencies* column (also ``dependencies`` section) tells Rebel Engine what other
 files need to be exported for each platform in order for our library to work.
 Say that your GDNative module uses another DLL to implement functionality from a
 3rd party library, this is where you list that DLL.
@@ -494,7 +457,7 @@ this:
 Creating the NativeScript (``.gdns``) file
 ------------------------------------------
 
-With our ``.gdnlib`` file we've told Godot how to load our library, now we need
+With our ``.gdnlib`` file we've told Rebel Engine how to load our library, now we need
 to tell it about our "SIMPLE" object class. We do this by creating a
 :ref:`NativeScript <class_NativeScript>` resource file with ``.gdns`` extension.
 
@@ -548,7 +511,7 @@ Now we can implement our ``main.gd`` code:
     func _on_Button_pressed():
         $Label.text = "Data = " + data.get_data()
 
-After all that, our project should work. The first time you run it Godot will
+After all that, our project should work. The first time you run it Rebel Engine will
 ask you what your main scene is and you select your ``main.tscn`` file and
 presto:
 

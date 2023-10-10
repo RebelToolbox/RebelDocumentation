@@ -5,13 +5,13 @@ Import plugins
 
 .. note:: This tutorial assumes you already know how to make generic plugins. If
           in doubt, refer to the :ref:`doc_making_plugins` page. This also
-          assumes you are acquainted with Godot's import system.
+          assumes you are acquainted with Rebel Editor's import system.
 
 Introduction
 ------------
 
 An import plugin is a special type of editor tool that allows custom resources
-to be imported by Godot and be treated as first-class resources. The editor
+to be imported by Rebel Editor and be treated as first-class resources. The editor
 itself comes bundled with a lot of import plugins to handle the common resources
 like PNG images, Collada and glTF models, Ogg Vorbis sounds, and many more.
 
@@ -82,7 +82,7 @@ The EditorImportPlugin class
 
 The main character of the show is the
 :ref:`EditorImportPlugin class <class_EditorImportPlugin>`. It is responsible for
-implementing the methods that are called by Godot when it needs to know how to deal
+implementing the methods that are called by Rebel Editor when it needs to know how to deal
 with files.
 
 Let's begin to code our plugin, one method at time:
@@ -99,7 +99,7 @@ Let's begin to code our plugin, one method at time:
 
 The first method is the
 :ref:`get_importer_name()<class_EditorImportPlugin_method_get_importer_name>`. This is a
-unique name for your plugin that is used by Godot to know which import was used
+unique name for your plugin that is used by Rebel Editor to know which import was used
 in a certain file. When the files needs to be reimported, the editor will know
 which plugin to call.
 
@@ -121,7 +121,7 @@ descriptive name for your plugin.
     func get_recognized_extensions():
         return ["mtxt"]
 
-Godot's import system detects file types by their extension. In the
+Rebel Editor's import system detects file types by their extension. In the
 :ref:`get_recognized_extensions()<class_EditorImportPlugin_method_get_recognized_extensions>`
 method you return an array of strings to represent each extension that this
 plugin can understand. If an extension is recognized by more than one plugin,
@@ -139,7 +139,7 @@ the user can select which one to use when importing the files.
 
 The imported files are saved in the ``.import`` folder at the project's root.
 Their extension should match the type of resource you are importing, but since
-Godot can't tell what you'll use (because there might be multiple valid
+Rebel Editor can't tell what you'll use (because there might be multiple valid
 extensions for the same resource), you need to declare what will be used in
 the import.
 
@@ -218,7 +218,7 @@ use short and clear names.
 
 We can use the ``match`` statement here to make the code more structured. This
 way it's easy to add new presets in the future. We use the catch all pattern to
-return something too. Although Godot won't ask for presets beyond the preset
+return something too. Although Rebel Editor won't ask for presets beyond the preset
 count you defined, it's always better to be on the safe side.
 
 If you have only one preset you could simply return its name directly, but if
@@ -423,5 +423,5 @@ showing the red color instead.
 
 And that's it! Your first import plugin is done! Now get creative and make
 plugins for your own beloved formats. This can be quite useful to write your
-data in a custom format and then use it in Godot as if they were native
+data in a custom format and then use it in Rebel Editor as if they were native
 resources. This shows how the import system is powerful and extendable.

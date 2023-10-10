@@ -46,7 +46,7 @@ As an example, Steam shows that the most common *primary display resolution* is
 1920×1080, so a sensible approach is to develop a game for this resolution, then
 handle scaling for different sizes and aspect ratios.
 
-Godot provides several useful tools to do this easily.
+Rebel Engine provides several useful tools to do this easily.
 
 Base size
 ---------
@@ -63,13 +63,13 @@ with in the editor. This setting corresponds directly to the size of the
 blue rectangle in the 2D editor.
 
 There is often a need to support devices with screen and window sizes
-that are different from this base size. Godot offers many ways to
+that are different from this base size. Rebel Engine offers many ways to
 control how the viewport will be resized and stretched to different
 screen sizes.
 
 .. note::
 
-   Godot follows a modern approach to multiple resolutions. The engine will
+   Rebel Engine follows a modern approach to multiple resolutions. The engine will
    never change the monitor's resolution on its own. While changing the
    monitor's resolution is the most efficient approach, it's also the least
    reliable approach as it can leave the monitor stuck on a low resolution if
@@ -89,7 +89,7 @@ Resizing
 
 There are several types of devices, with several types of screens, which
 in turn have different pixel density and resolutions. Handling all of
-them can be a lot of work, so Godot tries to make the developer's life a
+them can be a lot of work, so Rebel Engine tries to make the developer's life a
 little easier. The :ref:`Viewport <class_Viewport>`
 node has several functions to handle resizing, and the root node of the
 scene tree is always a viewport (scenes loaded are instanced as a child
@@ -98,7 +98,7 @@ of it, and it can always be accessed by calling
 
 In any case, while changing the root Viewport params is probably the
 most flexible way to deal with the problem, it can be a lot of work,
-code and guessing, so Godot provides a simple set of parameters in the
+code and guessing, so Rebel Engine provides a simple set of parameters in the
 project settings to handle multiple resolutions.
 
 Stretch settings
@@ -122,9 +122,6 @@ demonstrate the effect of different stretch modes. A single sprite, also
 :ref:`Line2D <class_Line2D>` is added on top of it:
 
 .. image:: img/stretch_demo_scene.png
-
-.. Animated GIFs are generated from:
-.. https://github.com/ttencate/godot_scaling_mode
 
 -  **Stretch Mode = Disabled** (default): No stretching happens. One
    unit in the scene corresponds to one pixel on the screen. In this
@@ -299,15 +296,14 @@ Desktop game
     viewport, you should use the ``2d`` stretch mode instead of the ``viewport``
     stretch mode.
 
-    Godot currently doesn't have a way to enforce integer scaling when using the
+    Rebel Engine currently doesn't have a way to enforce integer scaling when using the
     ``2d`` or ``viewport`` stretch mode, which means pixel art may look bad if the
     final window size is not a multiple of the base window size.
-    To fix this, use an add-on such as the `Integer Resolution Handler <https://github.com/Yukitty/godot-addon-integer_resolution_handler>`__.
 
 Mobile game in landscape mode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Godot is configured to use landscape mode by default. This means you don't need
+Rebel Engine is configured to use landscape mode by default. This means you don't need
 to change the display orientation project setting.
 
 - Set the base window width to ``1280`` and window height to ``720``.
@@ -358,7 +354,7 @@ Non-game application
 
 .. note::
 
-    Godot doesn't support manually overriding the 2D scale factor yet, so it is
+    Rebel Engine doesn't support manually overriding the 2D scale factor yet, so it is
     not possible to have hiDPI support in non-game applications. Due to this, it
     is recommended to leave **Allow Hidpi** disabled in non-game applications to
     allow for the OS to use its low-DPI fallback.
@@ -366,7 +362,7 @@ Non-game application
 hiDPI support
 -------------
 
-By default, Godot projects aren't considered DPI-aware by the operating system.
+By default, Rebel projects aren't considered DPI-aware by the operating system.
 This is done to improve performance on low-end systems, since the operating
 system's DPI fallback scaling will be faster than letting the application scale
 itself (even when using the ``viewport`` stretch mode).
@@ -381,7 +377,7 @@ other platforms.
 
 .. note::
 
-    The Godot editor itself is always marked as DPI-aware. Running the project
+    The Rebel Editor itself is always marked as DPI-aware. Running the project
     from the editor will only be DPI-aware if **Allow Hidpi** is enabled in the
     Project Settings.
 
@@ -438,6 +434,4 @@ in the final project. One upside of using TextureRect over ViewportContainer is
 that it allows enable linear filtering. This makes scaled 3D viewports look
 better in many cases.
 
-See the
-`3D viewport scaling demo <https://github.com/godotengine/godot-demo-projects/tree/master/viewport/3d_scaling>`__
-for examples.
+See the :download:`3D viewport scaling demo <files/3d-scaling.zip>` for examples.

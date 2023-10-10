@@ -5,7 +5,7 @@
 Nodes and Scenes
 ================
 
-In :ref:`doc_key_concepts_overview`, we saw that a Godot game is a tree of
+In :ref:`doc_key_concepts_overview`, we saw that a Rebel game is a tree of
 scenes and that each scene is a tree of nodes. In this lesson, we explain a bit
 more about them. You will also create your first scene.
 
@@ -48,10 +48,10 @@ that runs and jumps, a life bar, a chest with which you can interact, and more.
 
 .. image:: img/nodes_and_scenes_3d_scene_example.png
 
-The Godot editor essentially is a **scene editor**. It has plenty of tools for
-editing 2D and 3D scenes, as well as user interfaces. A Godot project can
+The Rebel Editor essentially is a **scene editor**. It has plenty of tools for
+editing 2D and 3D scenes, as well as user interfaces. A Rebel project can
 contain as many of these scenes as you need. The engine only requires one as
-your application's **main scene**. This is the scene Godot will first load when
+your application's **main scene**. This is the scene Rebel Engine will first load when
 you or a player runs the game.
 
 On top of acting like nodes, scenes have the following attributes:
@@ -147,7 +147,7 @@ button to save it as "Label.tscn".
           allows you to save files inside the project. The ``res://`` path at
           the top of the window represents the project's root directory and
           stands for "resource path". For more information about file paths in
-          Godot, see :ref:`doc_filesystem`.
+          Rebel Engine, see :ref:`doc_filesystem`.
 
 The application should open in a new window and display the text "Hello World".
 
@@ -179,13 +179,13 @@ Label.tscn.
 
 .. image:: img/nodes_and_scenes_15_select_main_scene.png
 
-The demo should run again. Moving forward, every time you run the project, Godot
+The demo should run again. Moving forward, every time you run the project, Rebel Engine
 will use this scene as a starting point.
 
-.. note:: The editor saves the main scene's path in a project.godot file in your
+.. note:: The editor saves the main scene's path in a project.rebel file in your
           project's directory. While you can edit this text file directly to
           change project settings, you can also use the "Project -> Project
           Settings" window to do so.
 
-In the next part, we will discuss another key concept in games and in Godot:
+In the next part, we will discuss another key concept in games and in Rebel Engine:
 creating instances of a scene.

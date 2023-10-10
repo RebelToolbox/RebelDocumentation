@@ -7,7 +7,7 @@
 Learning new features
 =====================
 
-Godot is a feature-rich game engine. There is a lot to learn about it. This page
+Rebel Engine is a feature-rich game engine. There is a lot to learn about it. This page
 explains how you can use the online manual, built-in code reference, and join
 online communities to learn new features and techniques.
 
@@ -23,12 +23,12 @@ content.
 
 .. image:: img/manual_search.png
 
-The manual has a companion class reference that explains each Godot class's
+The manual has a companion class reference that explains each Rebel Engine class's
 available functions and properties when programming. While the manual covers
 general features, concepts, and how to use the editor, the reference is all
-about using Godot's scripting API (Application Programming Interface). You can
+about using Rebel Engine's scripting API (Application Programming Interface). You can
 access it both online and offline. We recommend browsing the reference offline,
-from within the Godot editor. To do so, go to Help -> Search or press
+from within the Rebel Editor. To do so, go to Help -> Search or press
 :kbd:`F1`.
 
 .. image:: img/manual_class_reference_search.png
@@ -52,8 +52,8 @@ A class reference's page tells you:
 4. Links to manual pages further detailing the class.
 
 .. note:: If the manual or class reference is missing or has insufficient
-          information, please open an Issue in the official `godot-docs
-          <https://github.com/godotengine/godot-docs/issues>`_ GitHub repository
+          information, please open an Issue in the official `Rebel Documentation
+          <https://github.com/RebelToolbox/RebelDocumentation>`_ GitHub repository
           to report it.
 
 You can Ctrl-click any underlined text like the name of a class, property,
@@ -63,7 +63,7 @@ Learning to think like a programmer
 -----------------------------------
 
 Teaching programming foundations and how to think like a game developer is
-beyond the scope of Godot's documentation. If you're new to programming, we
+beyond the scope of the Rebel Documentation. If you're new to programming, we
 recommend two excellent free resources to get you started:
 
 1. Harvard university offers a free courseware to learn to program, `CS50
@@ -79,18 +79,7 @@ recommend two excellent free resources to get you started:
 Learning with the community
 ---------------------------
 
-Godot has a growing community of users. If you're stuck on a problem or need
-help to better understand how to achieve something, you can ask other users for
-help on one of the many `active
-communities <https://godotengine.org/community>`_.
-
-The best place to ask for questions and find already answered ones is the
-official `Questions & Answers <https://godotengine.org/qa/>`_ site. These
-responses show up in search engine results and get saved, allowing other users
-to benefit from discussions on the platform. Once you asked a question there,
-you can share its link on other social platforms. Before asking a question, be
-sure to look for existing answers that might solve your problem on this website
-or using your preferred search engine.
+Rebel Toolbox has a growing community of users.
 
 Asking questions well and providing details will help others answer you faster
 and better. When asking questions, we recommend including the following
@@ -134,18 +123,9 @@ information:
    You can then use a service like `streamable <https://streamable.com/>`_ or a
    cloud provider to upload and share your videos for free.
 
-6. If you're not using the stable version of Godot, please mention the version
+6. If you're not using the stable version of Rebel Engine, please mention the version
    you're using. The answer can be different as available features and the
    interface evolve rapidly.
 
 Following these guidelines will maximize your chances of getting the answer
 you're looking for. They will save time both to you and the persons helping you.
-
-Community tutorials
--------------------
-
-This manual aims to provide a comprehensive reference of Godot's features. Aside
-from the 2D and 3D getting started series, it does not contain tutorials to
-implement specific game genres. If you're looking for a tutorial about creating
-a role-playing game, a platformer, or other, please see
-:ref:`doc_community_tutorials`, which lists content made by the Godot community.

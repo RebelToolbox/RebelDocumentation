@@ -3,7 +3,7 @@
 Playing videos
 ==============
 
-Godot supports video playback with the :ref:`class_VideoPlayer` node.
+Rebel Engine supports video playback with the :ref:`class_VideoPlayer` node.
 
 Supported playback formats
 --------------------------
@@ -12,14 +12,12 @@ The only supported format in core is **Ogg Theora** (not to be confused with Ogg
 Vorbis audio). It's possible for extensions to bring support for additional
 formats, but no such extensions exist yet as of July 2022.
 
-H.264 and H.265 cannot be supported in core Godot, as they are both encumbered
+H.264 and H.265 cannot be supported in Rebel Engine, as they are both encumbered
 by software patents. AV1 is royalty-free, but it remains slow to decode on the
 CPU and hardware decoding support isn't readily available on all GPUs in use
 yet.
 
-WebM is supported in core in Godot 3.x, but support for it will be removed in 4.0
-as it proved to be too buggy and difficult to maintain.
-Therefore, **using WebM is not recommended**.
+WebM is supported in Rebel Engine. However, **using WebM is not recommended**.
 
 .. note::
 
@@ -27,7 +25,7 @@ Therefore, **using WebM is not recommended**.
     extensions for data within an Ogg container.
 
     Renaming these file extensions to ``.ogv`` *may* allow the videos to be
-    imported in Godot. However, not all files with ``.ogg`` or ``.ogx``
+    imported. However, not all files with ``.ogg`` or ``.ogx``
     extensions are videos - some of them may only contain audio.
 
 Setting up VideoPlayer
@@ -47,10 +45,6 @@ Setting up VideoPlayer
 
 Handling resizing and different aspect ratios
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-By default in Godot 4.0, the VideoPlayer will automatically be resized to match
-the video's resolution. You can make it follow usual :ref:`class_Control` sizing
-by enabling **Expand** on the VideoPlayer node.
 
 To adjust how the VideoPlayer node resizes depending on window size,
 adjust the anchors using the **Layout** menu at the top of the 2D editor
@@ -112,9 +106,7 @@ This can be done with the following steps:
 8. If the billboard is supposed to emit its own light, enable
    **Flags > Unshaded** to improve rendering performance.
 
-See :ref:`doc_viewports` and the
-`GUI in 3D demo <https://github.com/godotengine/godot-demo-projects/tree/master/viewport/gui_in_3d>`__
-for more information on setting this up.
+See :ref:`doc_viewports` for more information on setting this up.
 
 Video decoding conditions and recommended resolutions
 -----------------------------------------------------
@@ -138,7 +130,7 @@ To ensure your videos decode smoothly on varied hardware:
 Playback limitations
 --------------------
 
-There are several limitations with the current implementation of video playback in Godot:
+There are several limitations with the current implementation of video playback in Rebel Engine:
 
 - Seeking a video to a certain point is not supported.
 - Changing playback speed is not supported. VideoPlayer also won't follow

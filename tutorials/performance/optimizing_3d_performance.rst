@@ -9,7 +9,7 @@ Optimizing 3D performance
 Culling
 =======
 
-Godot will automatically perform view frustum culling in order to prevent
+Rebel Engine will automatically perform view frustum culling in order to prevent
 rendering objects that are outside the viewport. This works well for games that
 take place in a small area, however things can quickly become problematic in
 larger levels.
@@ -27,7 +27,7 @@ than what is visible.
 
 Things aren't quite as bad as they seem, because the Z-buffer usually allows the
 GPU to only fully shade the objects that are at the front. This is called *depth
-prepass* and is enabled by default in Godot when using the GLES3 renderer.
+prepass* and is enabled by default in Rebel Engine when using the GLES3 renderer.
 However, unneeded objects are still reducing performance.
 
 One way we can potentially reduce the amount to be rendered is to take advantage
@@ -37,7 +37,7 @@ For instance, in our city street scenario, you may be able to work out in advanc
 that you can only see two other streets, ``B`` and ``C``, from street ``A``.
 Streets ``D`` to ``Z`` are hidden. In order to take advantage of occlusion, all
 you have to do is work out when your viewer is in street ``A`` (perhaps using
-Godot Areas), then you can hide the other streets.
+Rebel Areas), then you can hide the other streets.
 
 This example is a manual version of what is known as a *potentially visible set*.
 It is a very powerful technique for speeding up rendering. You can also use it to
@@ -47,7 +47,7 @@ rendering.
 Portal Rendering
 ~~~~~~~~~~~~~~~~
 
-However, there is a much easier way to take advantage of occlusion. Godot features
+However, there is a much easier way to take advantage of occlusion. Rebel Engine features
 an advanced portal rendering system, which can perform occlusion culling from cameras and
 lights. See :ref:`doc_rooms_and_portals`.
 
@@ -66,12 +66,12 @@ Other occlusion techniques
 
 As well as the portal system and manual methods, there are various other occlusion
 techniques such as raster-based occlusion culling. Some of these may be available
-through add-ons or may be available in core Godot in the future.
+through add-ons or may be available in Rebel Engine in the future.
 
 Transparent objects
 ~~~~~~~~~~~~~~~~~~~
 
-Godot sorts objects by :ref:`Material <class_Material>` and :ref:`Shader
+Rebel Engine sorts objects by :ref:`Material <class_Material>` and :ref:`Shader
 <class_Shader>` to improve performance. This, however, can not be done with
 transparent objects. Transparent objects are rendered from back to front to make
 blending with what is behind work. As a result,

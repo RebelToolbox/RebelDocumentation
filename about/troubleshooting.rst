@@ -3,12 +3,7 @@
 Troubleshooting
 ===============
 
-This page lists common issues encountered when using Godot and possible solutions.
-
-.. seealso::
-
-    See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 version
-    of the Godot editor.
+This page lists common issues encountered when using Rebel Engine and possible solutions.
 
 Everything I do in the editor or project manager appears delayed by one frame.
 ------------------------------------------------------------------------------
@@ -31,7 +26,7 @@ The only workaround, for now, is to switch to the GLES2 renderer. You can switch
 the renderer in the top-right corner of the editor or the Project Settings.
 
 If you use a computer allowing you to switch your graphics card, like NVIDIA
-Optimus, you can use the dedicated graphics card to run Godot.
+Optimus, you can use the dedicated graphics card to run Rebel Engine.
 
 The editor or project takes a very long time to start.
 ------------------------------------------------------
@@ -48,15 +43,15 @@ Editor tooltips in the Inspector and Node docks blink when they're displayed.
 
 This is a `known issue <https://github.com/godotengine/godot/issues/32990>`__
 caused by the third-party Stardock Fences application on Windows.
-The only known workaround is to disable Stardock Fences while using Godot.
+The only known workaround is to disable Stardock Fences while using Rebel Engine.
 
-The Godot editor appears frozen after clicking the system console.
-------------------------------------------------------------------
+The Rebel Engine editor appears frozen after clicking the system console.
+-------------------------------------------------------------------------
 
-When running Godot on Windows with the system console enabled, you can
+When running Rebel Engine on Windows with the system console enabled, you can
 accidentally enable *selection mode* by clicking inside the command window. This
 Windows-specific behavior pauses the application to let you select text inside
-the system console. Godot cannot override this system-specific behavior.
+the system console. Rebel Engine cannot override this system-specific behavior.
 
 To solve this, select the system console window and press Enter to leave
 selection mode.
@@ -95,7 +90,7 @@ The project works when run from the editor, but fails to load some files when ru
 ------------------------------------------------------------------------------------------------------------
 
 This is usually caused by forgetting to specify a filter for non-resource files
-in the Export dialog. By default, Godot will only include actual *resources*
+in the Export dialog. By default, Rebel Engine will only include actual *resources*
 into the PCK file. Some files commonly used, such as JSON files, are not
 considered resources. For example, if you load ``test.json`` in the exported
 project, you need to specify ``*.json`` in the non-resource export filter. See

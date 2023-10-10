@@ -3,24 +3,24 @@
 OpenXR plugin
 =============
 
-Welcome to the Godot OpenXR documentation!
+Welcome to the Rebel OpenXR documentation!
 
 Introduction
 ------------
 
 This is the documentation for the `Godot OpenXR plugin <https://github.com/GodotVR/godot_openxr>`__.
 
-The plugin is supported on Godot 3.4 and later. However, it does **not** support the upcoming Godot 4.0 release.
+The plugin is supported on Rebel Engine.
 
 Getting started
 ---------------
 
-To start a new project that supports OpenXR, start by opening up the Godot editor and creating a new project.
+To start a new project that supports OpenXR, start by opening up the Rebel Editor and creating a new project.
 
 Copy the plugin into this new project in the subfolder ``addons/godot_openxr/`` using your operating system's file manager.
 It is important that the plugin is placed in this **exact** location in your project folder.
 
-Back in Godot, create a new 3D scene and press the **Instance Child Scene** button
+Back in Rebel Editor, create a new 3D scene and press the **Instance Child Scene** button
 (represented by a chain link icon) in the scene tree dock.
 Select the ``addons/godot_openxr/scenes/first_person_controller_vr.tscn`` subscene
 and add it to your scene.
@@ -54,9 +54,6 @@ However, the following resources are a good place to continue:
 - `Godot XR tools <https://github.com/GodotVR/godot-xr-tools>`__ is a plugin
   that contains a set of handy sub scene to quickly
   implement locomotion, object interaction and UI elements in your XR experience.
-
-Please check the `Godot Engine community page <https://godotengine.org/community>`__ to find help from other Godot developers.
-The ``#xr`` channel on the Godot Discord has become a vibrant Godot XR community.
 
 Plugin features
 ---------------

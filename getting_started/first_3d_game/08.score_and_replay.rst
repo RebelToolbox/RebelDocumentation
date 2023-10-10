@@ -163,7 +163,7 @@ There, we increment the score and update the displayed text.
     }
 
 The second line uses the value of the ``score`` variable to replace the
-placeholder ``%s``. When using this feature, Godot automatically converts values
+placeholder ``%s``. When using this feature, Rebel Engine automatically converts values
 to text, which is convenient to output text in labels or using the ``print()``
 function.
 
@@ -308,14 +308,14 @@ Adding music
 ------------
 
 To add music that plays continuously in the background, we're going to use
-another feature in Godot: :ref:`autoloads <doc_singletons_autoload>`.
+another feature in Rebel Engine: :ref:`autoloads <doc_singletons_autoload>`.
 
 To play audio, all you need to do is add an *AudioStreamPlayer* node to your
 scene and attach an audio file to it. When you start the scene, it can play
 automatically. However, when you reload the scene, like we do to play again, the
 audio nodes are also reset, and the music starts back from the beginning.
 
-You can use the autoload feature to have Godot load a node or a scene
+You can use the autoload feature to have Rebel Engine load a node or a scene
 automatically at the start of the game, outside the current scene. You can also
 use it to create globally accessible objects.
 
@@ -328,7 +328,7 @@ Click the *Other Node* button to create an *AudioStreamPlayer* and rename it to
 
 |image19|
 
-We included a music soundtrack in the ``art/`` directory, ``House In a Forest
+We included a music soundtrack in the ``audio/`` directory, ``House In a Forest
 Loop.ogg``. Click and drag it onto the *Stream* property in the *Inspector*.
 Also, turn on *Autoplay* so the music plays automatically at the start of the
 game.

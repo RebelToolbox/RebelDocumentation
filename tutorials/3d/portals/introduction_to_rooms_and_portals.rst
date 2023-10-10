@@ -3,7 +3,7 @@
 Introduction to Rooms and Portals
 =================================
 
-The rooms and portals system is an optional component of Godot that allows you to partition your 3D game levels into a series of :ref:`Room<class_Room>` s (*aka cells*), and :ref:`Portal<class_Portal>` s. Portals are openings between the rooms that the :ref:`Camera<class_Camera>` (and lights) can see through.
+The rooms and portals system is an optional component of Rebel Engine that allows you to partition your 3D game levels into a series of :ref:`Room<class_Room>` s (*aka cells*), and :ref:`Portal<class_Portal>` s. Portals are openings between the rooms that the :ref:`Camera<class_Camera>` (and lights) can see through.
  
 This allows several features:
 
@@ -13,7 +13,7 @@ This allows several features:
 
 The trade off for these features is that we have to manually partition our level into rooms, and add portals between them.
 
-.. note:: Godot portals should not be confused with those in the `game of the same name <https://en.wikipedia.org/wiki/Portal_(video_game)>`__. They do not warp space, they simply represent a window that the camera (or lights) can see through.
+.. note:: Rebel Engine portals should not be confused with those in the `game of the same name <https://en.wikipedia.org/wiki/Portal_(video_game)>`__. They do not warp space, they simply represent a window that the camera (or lights) can see through.
 
 Minimizing manual labour
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -31,6 +31,6 @@ In general, when it comes to medium and large-sized levels, it is better to do a
 Some caveats
 ^^^^^^^^^^^^
 
-.. note:: The portal system should be considered an **advanced feature** of Godot. You should not attempt to use rooms and portals until you are familiar with the Godot editor, and have successfully made at least a couple of test games.
+.. note:: The portal system should be considered an **advanced feature** of Rebel Engine. You should not attempt to use rooms and portals until you are familiar with the Rebel Editor, and have successfully made at least a couple of test games.
 
 It gives you great power as a game designer, but the trade off is that it requires a very technical approach to level design. It is aimed at producing professional-grade results, and assumes the user is prepared to put in the work for this. It is not intended to be used for all 3D games. Not all games will significantly benefit from portals, and it may require more time than a short game jam allows.

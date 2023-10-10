@@ -73,7 +73,7 @@ These scenes are `scenes/left_hand_mesh.tscn` and `scenes/right_hand_mesh.tscn` 
 Below is an overview of the steps needed to implement your own version.
 
 .. note::
-    The best way to implement this logic is to ask an artist to model a hand in 3D software using real hands dimensions and create an armature for the hand that follows the bone structure exactly as the OpenXR specification dictates in the image at the top of this article. When skinning special care needs to be taken keeping in mind that if full hand tracking is available, the distance between joints will be determined by the actual size of the players hand and may thus be different to the 3D model. After importing the model into Godot you can add the required scripts to make everything work.
+    The best way to implement this logic is to ask an artist to model a hand in 3D software using real hands dimensions and create an armature for the hand that follows the bone structure exactly as the OpenXR specification dictates in the image at the top of this article. When skinning special care needs to be taken keeping in mind that if full hand tracking is available, the distance between joints will be determined by the actual size of the players hand and may thus be different to the 3D model. After importing the model into Rebel Editor you can add the required scripts to make everything work.
 
 To place the hand mesh in space a node needs to be added as a child to the :ref:`ARVROrigin <class_ARVROrigin>` node, this node needs to have the `config/OpenXRPose.gdns` script attached. When importing a 3D file you can add this script to the root node of the imported model.
 
@@ -118,4 +118,4 @@ Note that the bone names are standardised, the list of bone names is presented b
 * Little_Distal
 * Little_Tip
 
-Finally, and this is standard Godot functionality, a common addition to hand tracking is to track the location of the tip of a finger for physics interaction. This can be accomplished with the :ref:`BoneAttachment <class_BoneAttachment>` node. Simply add this as a child node to the :ref:`Skeleton <class_Skeleton>` node and select the bone you want to track. Now you can add the desired physics object as a child to this node. 
+Finally, and this is standard Rebel Engine functionality, a common addition to hand tracking is to track the location of the tip of a finger for physics interaction. This can be accomplished with the :ref:`BoneAttachment <class_BoneAttachment>` node. Simply add this as a child node to the :ref:`Skeleton <class_Skeleton>` node and select the bone you want to track. Now you can add the desired physics object as a child to this node. 

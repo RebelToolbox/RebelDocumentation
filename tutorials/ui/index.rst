@@ -14,7 +14,7 @@ User Interface (UI)
 GUI skinning and themes
 -----------------------
 
-Godot features an in-depth skinning/theming system for control nodes. The pages in this section
+Rebel Editor features an in-depth skinning/theming system for control nodes. The pages in this section
 explain the benefits of that system and how to set it up in your projects.
 
 .. toctree::

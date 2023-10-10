@@ -11,7 +11,7 @@ Shaders
    shader_materials
    visual_shaders
    screen-reading_shaders
-   converting_glsl_to_godot_shaders
+   converting_glsl_to_rebel_shaders
    shaders_style_guide
    advanced_postprocessing
    using_viewport_as_texture

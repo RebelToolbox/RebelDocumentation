@@ -1,10 +1,10 @@
 Configuring an IDE
 ==================
 
-We assume that you have already `cloned <https://github.com/godotengine/godot>`_
-and :ref:`compiled <toc-devel-compiling>` Godot.
+We assume that you have already `cloned <https://github.com/RebelToolbox/RebelEngine>`_
+and :ref:`compiled <toc-devel-compiling>` Rebel Engine.
 
-You can easily develop Godot with any text editor and by invoking ``scons``
+You can easily develop Rebel Engine with any text editor and by invoking ``scons``
 on the command line, but if you want to work with an IDE (Integrated
 Development Environment), here are setup instructions for some popular ones:
 

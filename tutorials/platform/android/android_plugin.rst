@@ -6,7 +6,7 @@ Creating Android plugins
 Introduction
 ------------
 
-Android plugins are powerful tools to extend the capabilities of the Godot engine
+Android plugins are powerful tools to extend the capabilities of the Rebel Engine
 by tapping into the functionality provided by the Android platform and ecosystem.
 
 Mobile gaming monetization is one such example since it requires features
@@ -32,18 +32,12 @@ and capabilities that don't belong to the core feature set of a game engine:
 Android plugin
 --------------
 
-While introduced in Godot 3.2, the Android plugin system got a significant architecture update starting with Godot 3.2.2.
-The new plugin system is backward-incompatible with the previous one, but both systems are kept functional in future releases of the 3.2.x branch.
-Since we previously did not version the Android plugin systems, the new one is now labelled ``v1`` and is the starting point for the modern Godot Android ecosystem.
-
-**Note:** In Godot 4.0, the previous system will be fully deprecated and removed.
-
 As a prerequisite, make sure you understand how to set up a :ref:`custom build environment<doc_android_custom_build>` for Android.
 
-At its core, a Godot Android plugin is a `Android archive library <https://developer.android.com/studio/projects/android-library#aar-contents>`_ (*aar* archive file)
+At its core, a Rebel Android plugin is a `Android archive library <https://developer.android.com/studio/projects/android-library#aar-contents>`_ (*aar* archive file)
 with the following caveats:
 
-- The library must have a dependency on the Godot engine library (``godot-lib.<version>.<status>.aar``). A stable version is made available for each Godot release on the `Godot download page <https://godotengine.org/download>`_.
+- The library must have a dependency on the Rebel Engine Android library (``rebel-lib.<version>.<status>.aar``). A stable version is made available for each Rebel release.
 - The library must include a specifically configured ``<meta-data>`` tag in its manifest file.
 
 Building an Android plugin
@@ -54,15 +48,15 @@ The instructions below assumes that you're using Android Studio.
 
 1. Follow `these instructions <https://developer.android.com/studio/projects/android-library>`__ to create an Android library module for your plugin.
 
-2. Add the Godot engine library as a dependency to your plugin module:
+2. Add the Rebel Engine Android library as a dependency to your plugin module:
 
-  - Download the Godot engine library (``godot-lib.<version>.<status>.aar``) from the `Godot download page <https://godotengine.org/download>`_ (e.g.: ``godot-lib.3.4.2.stable.release.aar``). 
+  - Download the Rebel Engine Android library (``rebel-lib.<version>.<status>.aar``).
   - Follow `these instructions <https://developer.android.com/studio/projects/android-library#AddDependency>`__ to add
-    the Godot engine library as a dependency for your plugin.
-  - In the plugin module's ``build.gradle`` file, replace ``implementation`` with ``compileOnly`` for the dependency line for the Godot engine library.
+    the Rebel Engine Android library as a dependency for your plugin.
+  - In the plugin module's ``build.gradle`` file, replace ``implementation`` with ``compileOnly`` for the dependency line for the Rebel Engine Android library.
 
-3. Create a new class in the plugin module and make sure it extends ``org.godotengine.godot.plugin.GodotPlugin``.
-   At runtime, it will be used to instantiate a singleton object that will be used by the Godot engine to load, initialize and run the plugin.
+3. Create a new class in the plugin module and make sure it extends ``com.rebeltoobox.plugin.RebelPlugin``.
+   At runtime, it will be used to instantiate a singleton object that will be used by the Rebel Engine to load, initialize and run the plugin.
 
 4. Update the plugin ``AndroidManifest.xml`` file:
 
@@ -71,7 +65,7 @@ The instructions below assumes that you're using Android Studio.
   - In the ``<application>`` tag, add a ``<meta-data>`` tag setup as follow::
 
         <meta-data
-            android:name="org.godotengine.plugin.v1.[PluginName]"
+            android:name="com.rebeltoolbox.plugin.v1.[PluginName]"
             android:value="[plugin.init.ClassFullName]" />
 
     Where ``PluginName`` is the name of the plugin, and ``plugin.init.ClassFullName`` is the full name (package + class name) of the plugin loading class.
@@ -80,9 +74,9 @@ The instructions below assumes that you're using Android Studio.
    The build will likely generate both a ``debug`` and ``release`` ``aar`` files.
    Depending on your need, pick only one version (usually the ``release`` one) which to provide your users with.
 
-   It's recommended that the ``aar`` filename matches the following pattern: ``[PluginName]*.aar`` where ``PluginName`` is the name of the plugin in PascalCase (e.g.: ``GodotPayment.release.aar``).
+   It's recommended that the ``aar`` filename matches the following pattern: ``[PluginName]*.aar`` where ``PluginName`` is the name of the plugin in PascalCase (e.g.: ``MyRebelPlugin.release.aar``).
 
-6. Create a Godot Android Plugin configuration file to help the system detect and load your plugin:
+6. Create a Rebel Android Plugin configuration file to help the system detect and load your plugin:
 
   - The configuration file extension must be ``gdap`` (e.g.: ``MyPlugin.gdap``).
   - The configuration file format is as follow::
@@ -110,7 +104,7 @@ The instructions below assumes that you're using Android Studio.
         - The filepath can be relative (e.g.: ``MyPlugin.aar``) in which case it's relative to the ``res://android/plugins`` directory.
         - The filepath can be absolute: ``res://some_path/MyPlugin.aar``.
 
-      - If **binary_type** is ``remote``, then this should be a declaration for a `remote gradle binary <https://developer.android.com/studio/build/dependencies#dependency-types>`_ (e.g.: ``org.godot.example:my-plugin:0.0.0``).
+      - If **binary_type** is ``remote``, then this should be a declaration for a `remote gradle binary <https://developer.android.com/studio/build/dependencies#dependency-types>`_ (e.g.: ``com.example:my-plugin:0.0.0``).
 
     The ``dependencies`` section and fields are optional and defined as follow:
 
@@ -121,9 +115,9 @@ The instructions below assumes that you're using Android Studio.
 Loading and using an Android plugin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Move the plugin configuration file (e.g.: ``MyPlugin.gdap``) and, if any, its local binary (e.g.: ``MyPlugin.aar``) and dependencies to the Godot project's ``res://android/plugins`` directory.
+Move the plugin configuration file (e.g.: ``MyPlugin.gdap``) and, if any, its local binary (e.g.: ``MyPlugin.aar``) and dependencies to the Rebel project's ``res://android/plugins`` directory.
 
-The Godot editor will automatically parse all ``.gdap`` files in the ``res://android/plugins`` directory and show a list of detected and toggleable plugins in the Android export presets window under the **Plugins** section.
+The Rebel Editor will automatically parse all ``.gdap`` files in the ``res://android/plugins`` directory and show a list of detected and toggleable plugins in the Android export presets window under the **Plugins** section.
 
 .. image:: img/android_export_preset_plugins_section.png
 
@@ -143,28 +137,20 @@ An Android plugin can define and provide C/C++ GDNative resources, either to pro
 The GDNative resources can be bundled within the plugin ``aar`` file which simplifies the distribution and deployment process:
 
 - The shared libraries (``.so``) for the defined GDNative libraries will be automatically bundled by the ``aar`` build system.
-- Godot ``*.gdnlib`` and ``*.gdns`` resource files must be manually defined in the plugin ``assets`` directory.
-  The recommended path for these resources relative to the ``assets`` directory should be: ``godot/plugin/v1/[PluginName]/``.
+- Rebel Engine ``*.gdnlib`` and ``*.gdns`` resource files must be manually defined in the plugin ``assets`` directory.
+  The recommended path for these resources relative to the ``assets`` directory should be: ``rebel/plugin/v1/[PluginName]/``.
 
-For GDNative libraries, the plugin singleton object must override the ``org.godotengine.godot.plugin.GodotPlugin::getPluginGDNativeLibrariesPaths()`` method,
+For GDNative libraries, the plugin singleton object must override the ``com.rebeltoolbox.plugin.RebelPlugin::getPluginGDNativeLibrariesPaths()`` method,
 and return the paths to the bundled GDNative libraries config files (``*.gdnlib``). The paths must be relative to the ``assets`` directory.
-At runtime, the plugin will provide these paths to Godot core which will use them to load and initialize the bundled GDNative libraries.
-
-Reference implementations
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-- `Godot Oculus Mobile plugin <https://github.com/GodotVR/godot_oculus_mobile>`_
-  - `Bundled gdnative resources <https://github.com/GodotVR/godot_oculus_mobile/tree/master/plugin/src/main/assets/addons/godot_ovrmobile>`_
-- `Godot Google Play Billing plugin <https://github.com/godotengine/godot-google-play-billing>`_
-
+At runtime, the plugin will provide these paths to Rebel Engine core which will use them to load and initialize the bundled GDNative libraries.
 
 Troubleshooting
 ---------------
 
-Godot crashes upon load
+Rebel crashes upon load
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Check ``adb logcat`` for possible problems, then:
 
-- Check that the methods exposed by the plugin used the following Java types: ``void``, ``boolean``, ``int``, ``float``, ``java.lang.String``, ``org.godotengine.godot.Dictionary``, ``int[]``, ``byte[]``, ``float[]``, ``java.lang.String[]``.
+- Check that the methods exposed by the plugin used the following Java types: ``void``, ``boolean``, ``int``, ``float``, ``java.lang.String``, ``com.rebeltoolbox.Dictionary``, ``int[]``, ``byte[]``, ``float[]``, ``java.lang.String[]``.
 - More complex datatypes are not supported for now.

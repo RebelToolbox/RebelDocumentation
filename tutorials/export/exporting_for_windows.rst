@@ -5,15 +5,15 @@ Exporting for Windows
 
 .. seealso::
 
-    This page describes how to export a Godot project to Windows.
+    This page describes how to export a Rebel project to Windows.
     If you're looking to compile editor or export template binaries from source instead,
     read :ref:`doc_compiling_for_windows`.
 
 The simplest way to distribute a game for PC is to copy the executable
-(``godot.exe``), compress the folder and send it to someone else. However, this
+(``rebel.exe``), compress the folder and send it to someone else. However, this
 is often not desired.
 
-Godot offers a more elegant approach for PC distribution when using the export
+Rebel Editor offers a more elegant approach for PC distribution when using the export
 system. When exporting for Windows, the exporter takes all the project files and
 creates a ``data.pck`` file. This file is bundled with a specially optimized
 binary that is smaller, faster and does not contain the editor and debugger.
@@ -22,7 +22,7 @@ Requirements
 ------------
 
 -  To enable code signing, you must have the ``Windows 10 SDK`` (on Windows) or `osslsigncode <https://github.com/mtrojnar/osslsigncode>`__ (on any other OS) installed.
--  Download the Godot export templates. Use the Godot menu: ``Editor > Manage Export Templates``.
+-  Download the Rebel export templates. Use the Rebel Editor menu: ``Editor > Manage Export Templates``.
 
 .. warning::
 

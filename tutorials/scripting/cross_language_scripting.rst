@@ -3,7 +3,7 @@
 Cross-language scripting
 ========================
 
-Godot allows you to mix and match scripting languages to suit your needs.
+Rebel Engine allows you to mix and match scripting languages to suit your needs.
 This means a single project can define nodes in both C# and GDScript.
 This page will go through the possible interactions between two nodes written
 in different languages.
@@ -84,7 +84,7 @@ with :ref:`new() <class_CSharpScript_method_new>`.
 .. warning::
 
     When creating ``.cs`` scripts, you should always keep in mind that the class
-    Godot will use is the one named like the ``.cs`` file itself. If that class
+    Rebel Engine will use is the one named like the ``.cs`` file itself. If that class
     does not exist in the file, you'll see the following error:
     ``Invalid call. Nonexistent function `new` in base``.
 

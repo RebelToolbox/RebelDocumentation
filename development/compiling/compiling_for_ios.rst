@@ -18,10 +18,10 @@ Requirements
    to run ``scons`` in a terminal when installed).
 -  Xcode 10.0 (or later) with the iOS (10.0) SDK and the command line tools.
 
-.. seealso:: To get the Godot source code for compiling, see
+.. seealso:: To get the Rebel Engine source code for compiling, see
              :ref:`doc_getting_source`.
 
-             For a general overview of SCons usage for Godot, see
+             For a general overview of SCons usage for Rebel Engine, see
              :ref:`doc_introduction_to_the_buildsystem`.
 
 Compiling
@@ -60,9 +60,9 @@ All those steps can be performed with following commands:
 
     $ scons p=iphone tools=no target=release arch=arm
     $ scons p=iphone tools=no target=release arch=arm64
-    $ lipo -create bin/libgodot.iphone.opt.arm.a bin/libgodot.iphone.opt.arm64.a -output bin/libgodot.iphone.release.fat.a
-    $ lipo -create bin/libgodot_camera_module.iphone.opt.arm.a bin/libgodot_camera_module.iphone.opt.arm64.a -output bin/libgodot_camera_module.iphone.release.fat.a
-    $ lipo -create bin/libgodot_arkit_module.iphone.opt.arm.a bin/libgodot_arkit_module.iphone.opt.arm64.a -output bin/libgodot_arkit_module.iphone.release.fat.a
+    $ lipo -create bin/librebel.iphone.opt.arm.a bin/librebel.iphone.opt.arm64.a -output bin/librebel.iphone.release.fat.a
+    $ lipo -create bin/librebel_camera_module.iphone.opt.arm.a bin/librebel_camera_module.iphone.opt.arm64.a -output bin/librebel_camera_module.iphone.release.fat.a
+    $ lipo -create bin/librebel_arkit_module.iphone.opt.arm.a bin/librebel_arkit_module.iphone.opt.arm64.a -output bin/librebel_arkit_module.iphone.release.fat.a
 
 If you also want to provide a simulator build (reduces the chance of any linker errors with dependencies), you'll need to build and lipo the ``x86_64`` architecture as well.
 
@@ -71,9 +71,9 @@ If you also want to provide a simulator build (reduces the chance of any linker 
     $ scons p=iphone tools=no target=release arch=arm
     $ scons p=iphone tools=no target=release arch=arm64
     $ scons p=iphone tools=no target=release arch=x86_64
-    $ lipo -create bin/libgodot.iphone.opt.arm.a bin/libgodot.iphone.opt.arm64.a bin/libgodot.iphone.opt.x86_64.a -output bin/libgodot.iphone.release.fat.a
-    $ lipo -create bin/libgodot_camera_module.iphone.opt.arm.a bin/libgodot_camera_module.iphone.opt.arm64.a bin/libgodot_camera_module.iphone.opt.x86_64.a -output bin/libgodot_camera_module.iphone.release.fat.a
-    $ lipo -create bin/libgodot_arkit_module.iphone.opt.arm.a bin/libgodot_arkit_module.iphone.opt.arm64.a bin/libgodot_arkit_module.iphone.opt.x86_64.a -output bin/libgodot_arkit_module.iphone.release.fat.a
+    $ lipo -create bin/librebel.iphone.opt.arm.a bin/librebel.iphone.opt.arm64.a bin/librebel.iphone.opt.x86_64.a -output bin/librebel.iphone.release.fat.a
+    $ lipo -create bin/librebel_camera_module.iphone.opt.arm.a bin/librebel_camera_module.iphone.opt.arm64.a bin/librebel_camera_module.iphone.opt.x86_64.a -output bin/librebel_camera_module.iphone.release.fat.a
+    $ lipo -create bin/librebel_arkit_module.iphone.opt.arm.a bin/librebel_arkit_module.iphone.opt.arm64.a bin/librebel_arkit_module.iphone.opt.x86_64.a -output bin/librebel_arkit_module.iphone.release.fat.a
 
 Run
 ---

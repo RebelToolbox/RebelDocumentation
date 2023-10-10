@@ -6,7 +6,7 @@ Advanced post-processing
 Introduction
 ------------
 
-This tutorial describes an advanced method for post-processing in Godot.
+This tutorial describes an advanced method for post-processing in Rebel Engine.
 In particular, it will explain how to write a post-processing shader that
 uses the depth buffer. You should already be familiar with post-processing
 generally and, in particular, with the methods outlined in the :ref:`custom post-processing tutorial <doc_custom_postprocessing>`.
@@ -44,8 +44,8 @@ as if they were already in clip space.
 The vertex shader expects coordinates to be output in clip space, which are coordinates
 ranging from ``-1`` at the left and bottom of the screen to ``1`` at the top and right
 of the screen. This is why the QuadMesh needs to have height and width of ``2``.
-Godot handles the transform from model to view space to clip space behind the scenes,
-so we need to nullify the effects of Godot's transformations. We do this by setting the
+Rebel Engine handles the transform from model to view space to clip space behind the scenes,
+so we need to nullify the effects of Rebel Engine's transformations. We do this by setting the
 ``POSITION`` built-in to our desired position. ``POSITION`` bypasses the built-in transformations
 and sets the vertex position directly.
 
@@ -62,7 +62,7 @@ culling, which is done on the CPU. Frustum culling uses the camera matrix and th
 AABBs of Meshes to determine if the Mesh will be visible *before* passing it to the GPU.
 The CPU has no knowledge of what we are doing with the vertices, so it assumes the
 coordinates specified refer to world positions, not clip space positions, which results
-in Godot culling the quad when we turn away from the center of the scene. In
+in Rebel Engine culling the quad when we turn away from the center of the scene. In
 order to keep the quad from being culled, there are a few options:
 
 1. Add the QuadMesh as a child to the camera, so the camera is always pointed at it
@@ -93,7 +93,7 @@ to the camera using more bits than those further, so most of the detail in depth
 buffer is found close to the camera. In order to make the depth value align with world or
 model coordinates, we need to linearize the value. When we apply the projection matrix to the
 vertex position, the z value is made nonlinear, so to linearize it, we multiply it by the
-inverse of the projection matrix, which in Godot, is accessible with the variable
+inverse of the projection matrix, which in Rebel Engine, is accessible with the variable
 ``INV_PROJECTION_MATRIX``.
 
 Firstly, take the screen space coordinates and transform them into normalized device

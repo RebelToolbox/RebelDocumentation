@@ -261,7 +261,7 @@ We can prevent that if we *normalize* the velocity, which means we set its
 diagonal movement.
 
 .. tip:: If you've never used vector math before, or need a refresher, you can
-         see an explanation of vector usage in Godot at :ref:`doc_vector_math`.
+         see an explanation of vector usage in Rebel Engine at :ref:`doc_vector_math`.
          It's good to know but won't be necessary for the rest of this tutorial.
 
 We also check whether the player is moving so we can call ``play()`` or
@@ -422,7 +422,7 @@ Preparing for collisions
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 We want ``Player`` to detect when it's hit by an enemy, but we haven't made any
-enemies yet! That's OK, because we're going to use Godot's *signal*
+enemies yet! That's OK, because we're going to use Rebel Engine's *signal*
 functionality to make it work.
 
 Add the following at the top of the script, after ``extends Area2D``:
@@ -465,7 +465,7 @@ Notice our custom "hit" signal is there as well! Since our enemies are going to
 be ``RigidBody2D`` nodes, we want the ``body_entered(body: Node)`` signal. This
 signal will be emitted when a body contacts the player. Click "Connect.." and
 the "Connect a Signal" window appears. We don't need to change any of these
-settings so click "Connect" again. Godot will automatically create a function in
+settings so click "Connect" again. Rebel Editor will automatically create a function in
 your player's script.
 
 .. image:: img/player_signal_connection.png
@@ -508,7 +508,7 @@ more than once.
 
 .. Note:: Disabling the area's collision shape can cause an error if it happens
           in the middle of the engine's collision processing. Using
-          ``set_deferred()`` tells Godot to wait to disable the shape until it's
+          ``set_deferred()`` tells Rebel Engine to wait to disable the shape until it's
           safe to do so.
 
 The last piece is to add a function we can call to reset the player when

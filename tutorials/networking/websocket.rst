@@ -13,12 +13,12 @@ The protocol is quite simple, message based, and a very powerful tool to send pu
 
 Due to its simplicity, its wide compatibility, and being easier to use than a raw TCP connection, WebSocket soon started to spread outside the browsers, in native applications as a mean to communicate with network servers.
 
-Godot supports WebSocket in both native and HTML5 exports.
+Rebel Engine supports WebSocket in both native and HTML5 exports.
 
-Using WebSocket in Godot
-------------------------
+Using WebSocket in Rebel Engine
+-------------------------------
 
-WebSocket is implemented in Godot via three main classes :ref:`WebSocketClient <class_WebSocketClient>`, :ref:`WebSocketServer <class_WebSocketServer>`, and :ref:`WebSocketPeer <class_WebSocketPeer>`. The WebSocket implementation is compatible with the High Level Multiplayer. See section on :ref:`high-level multiplayer <doc_high_level_multiplayer>` for more details.
+WebSocket is implemented in Rebel Engine via three main classes :ref:`WebSocketClient <class_WebSocketClient>`, :ref:`WebSocketServer <class_WebSocketServer>`, and :ref:`WebSocketPeer <class_WebSocketPeer>`. The WebSocket implementation is compatible with the High Level Multiplayer. See section on :ref:`high-level multiplayer <doc_high_level_multiplayer>` for more details.
 
 .. warning::
 
@@ -159,4 +159,5 @@ This will print (when a client connects) something similar to this:
 Advanced chat demo
 ^^^^^^^^^^^^^^^^^^
 
-A more advanced chat demo which optionally uses the multiplayer mid-level abstraction and a high level multiplayer demo are available in the `godot demo projects <https://github.com/godotengine/godot-demo-projects>`_ under `networking/websocket_chat` and `networking/websocket_multiplayer`.
+A more advanced chat demo which optionally uses the multiplayer mid-level abstraction and a high level multiplayer demo can be downloaded here:
+:download:`Websocket Chat <files/websocket-chat.zip>`

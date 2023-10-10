@@ -24,9 +24,9 @@ Step by step
 
    ::
 
-       openssl rand -hex 32 > godot.gdkey
+       openssl rand -hex 32 > rebel.gdkey
 
-   The output in ``godot.gdkey`` should be similar to:
+   The output in ``rebel.gdkey`` should be similar to:
 
    ::
 
@@ -36,7 +36,7 @@ Step by step
    that way you can minimize the risk of exposing the key.
 
 2. Set this key as environment variable in the console that you will use to
-   compile Godot, like this:
+   compile Rebel Engine, like this:
 
    .. tabs::
     .. code-tab:: bash Linux/macOS
@@ -51,7 +51,7 @@ Step by step
 
        $env:SCRIPT_AES256_ENCRYPTION_KEY="your_generated_key"
 
-3. Compile Godot export templates and set them as custom export templates
+3. Compile Rebel export templates and set them as custom export templates
    in the export preset options.
 
 4. Set the encryption key in the ``Script`` tab of the export preset:
@@ -64,7 +64,7 @@ Possible Errors
 ---------------
 
 If you get an error like below, it means the key wasn't properly included in
-your Godot build. Godot is encrypting the scripts during export, but can't read
+your Rebel Engine build. Rebel Engine is encrypting the scripts during export, but can't read
 them at runtime.
 
 ::

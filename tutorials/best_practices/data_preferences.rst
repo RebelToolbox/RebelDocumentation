@@ -39,13 +39,12 @@ Y or Z? This article covers a variety of topics related to these dilemmas.
 Array vs. Dictionary vs. Object
 -------------------------------
 
-Godot stores all variables in the scripting API in the
-`Variant <https://docs.godotengine.org/en/latest/development/cpp/variant_class.html>`_
-class. Variants can store Variant-compatible data structures such as
+Rebel Engine stores all variables in the scripting API in the :ref:`doc_variant_class`.
+Variants can store Variant-compatible data structures such as
 :ref:`Array <class_Array>` and :ref:`Dictionary <class_Dictionary>` as well as
 :ref:`Object <class_Object>` s.
 
-Godot implements Array as a ``Vector<Variant>``. The engine stores the Array
+Rebel Engine implements Array as a ``Vector<Variant>``. The engine stores the Array
 contents in a contiguous section of memory, i.e. they are in a row adjacent
 to each other.
 
@@ -102,7 +101,7 @@ Contiguous memory stores imply the following operation performance:
       though. Done by re-sorting the Array after every edit and writing an
       ordered-aware search algorithm.
 
-Godot implements Dictionary as an ``OrderedHashMap<Variant, Variant>``. The engine
+Rebel Engine implements Dictionary as an ``OrderedHashMap<Variant, Variant>``. The engine
 stores a small array (initialized to 2^3 or 8 records) of key-value pairs. When
 one attempts to access a value, they provide it a key. It then *hashes* the
 key, i.e. converts it into a number. The "hash" is used to calculate the index
@@ -161,15 +160,15 @@ do not. An overview of their operational details is as follows:
     - Op: Must iterate through records and compare the value until a match is
       found.
 
-    - Note that Godot does not provide this feature out-of-the-box (because
+    - Note that Rebel Engine does not provide this feature out-of-the-box (because
       they aren't meant for this task).
 
-Godot implements Objects as stupid, but dynamic containers of data content.
+Rebel Engine implements Objects as stupid, but dynamic containers of data content.
 Objects query data sources when posed questions. For example, to answer
 the question, "do you have a property called, 'position'?", it might ask
 its :ref:`script <class_Script>` or the :ref:`ClassDB <class_ClassDB>`.
 One can find more information about what objects are and how they work in
-the :ref:`doc_what_are_godot_classes` article.
+the :ref:`doc_applying_object_oriented_principles` article.
 
 The important detail here is the complexity of the Object's task. Every time
 it performs one of these multi-source queries, it runs through *several*
@@ -285,7 +284,7 @@ the enum values (the latter only when using the ``export`` keyword in GDScript).
 The question then arises, "which should one use?"
 
 The short answer is, "whichever you are more comfortable with." This
-is a feature specific to GDScript and not Godot scripting in general;
+is a feature specific to GDScript and not Rebel scripting in general;
 The languages prioritizes usability over performance.
 
 On a technical level, integer comparisons (constant-time) will happen
@@ -306,8 +305,8 @@ unnecessary.
 AnimatedTexture vs. AnimatedSprite vs. AnimationPlayer vs. AnimationTree
 ------------------------------------------------------------------------
 
-Under what circumstances should one use each of Godot's animation classes?
-The answer may not be immediately clear to new Godot users.
+Under what circumstances should one use each of Rebel's animation classes?
+The answer may not be immediately clear to new Rebel users.
 
 :ref:`AnimatedTexture <class_AnimatedTexture>` is a texture that
 the engine draws as an animated loop rather than a static image.
@@ -317,7 +316,7 @@ Users can manipulate...
 
 2. the number of regions contained within the texture (frames).
 
-Godot's :ref:`VisualServer <class_VisualServer>` then draws
+Rebel Engine's :ref:`VisualServer <class_VisualServer>` then draws
 the regions in sequence at the prescribed rate. The good news is that this
 involves no extra logic on the part of the engine. The bad news is
 that users have very little control.

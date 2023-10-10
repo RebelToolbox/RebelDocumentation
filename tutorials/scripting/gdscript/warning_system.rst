@@ -26,7 +26,7 @@ script editor's status bar. The example below has 3 warnings:
 
 To ignore specific warnings in one file, insert a special comment of the
 form ``# warning-ignore:warning-id``, or click on the ignore link to the
-right of the warning's description. Godot will add a comment above the
+right of the warning's description. Rebel Editor will add a comment above the
 corresponding line and the code won't trigger the corresponding warning
 anymore:
 

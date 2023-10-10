@@ -3,7 +3,7 @@
 Creating script templates
 =========================
 
-Godot provides a way to use script templates as seen in the
+Rebel Editor provides a way to use script templates as seen in the
 ``Script Create Dialog`` while creating a new script:
 
 .. image:: img/script_create_dialog_templates.png
@@ -22,11 +22,11 @@ Editor-defined templates
 These are available globally throughout any project. The location of these
 templates are determined per each OS:
 
--  Windows: ``%APPDATA%\Godot\script_templates\``
--  Linux: ``$HOME/.config/godot/script_templates/``
--  macOS: ``$HOME/Library/Application Support/Godot/script_templates/``
+-  Windows: ``%APPDATA%\Rebel\script_templates\``
+-  Linux: ``$HOME/.config/rebel/script_templates/``
+-  macOS: ``$HOME/Library/Application Support/Rebel/script_templates/``
 
-If no ``script_templates`` is detected, Godot will create a default set of
+If no ``script_templates`` is detected, Rebel Editor will create a default set of
 built-in templates automatically, so this logic can be used to reset the default
 templates in case you've accidentally overwritten them.
 

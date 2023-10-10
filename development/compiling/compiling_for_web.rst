@@ -19,10 +19,10 @@ To compile export templates for the Web, the following is required:
 -  `Python 3.5+ <https://www.python.org/>`__.
 -  `SCons 3.0+ <https://www.scons.org>`__ build system.
 
-.. seealso:: To get the Godot source code for compiling, see
+.. seealso:: To get the Rebel Engine source code for compiling, see
              :ref:`doc_getting_source`.
 
-             For a general overview of SCons usage for Godot, see
+             For a general overview of SCons usage for Rebel Engine, see
              :ref:`doc_introduction_to_the_buildsystem`.
 
 Building export templates
@@ -49,17 +49,17 @@ enabled. Since ``eval()`` calls can be a security concern, the
 
 The engine will now be compiled to WebAssembly by Emscripten. Once finished,
 the resulting file will be placed in the ``bin`` subdirectory. Its name is
-``godot.javascript.opt.zip`` for release or ``godot.javascript.opt.debug.zip``
+``rebel.javascript.opt.zip`` for release or ``rebel.javascript.opt.debug.zip``
 for debug.
 
 Finally, rename the zip archive to ``webassembly_release.zip`` for the
 release template::
 
-    mv bin/godot.javascript.opt.zip bin/webassembly_release.zip
+    mv bin/rebel.javascript.opt.zip bin/webassembly_release.zip
 
 And ``webassembly_debug.zip`` for the debug template::
 
-    mv bin/godot.javascript.opt.debug.zip bin/webassembly_debug.zip
+    mv bin/rebel.javascript.opt.debug.zip bin/webassembly_debug.zip
 
 Threads and GDNative
 --------------------
@@ -83,26 +83,26 @@ Its name will have either the ``.threads`` or ``.gdnative`` suffix.
 Finally, rename the zip archives to ``webassembly_release_threads.zip`` and
 ``webassembly_release_gdnative.zip`` for the release template::
 
-    mv bin/godot.javascript.opt.threads.zip bin/webassembly_threads_release.zip
-    mv bin/godot.javascript.opt.gdnative.zip bin/webassembly_gdnative_release.zip
+    mv bin/rebel.javascript.opt.threads.zip bin/webassembly_threads_release.zip
+    mv bin/rebel.javascript.opt.gdnative.zip bin/webassembly_gdnative_release.zip
 
 And ``webassembly_debug_threads.zip`` and ``webassembly_debug_gdnative.zip`` for
 the debug template::
 
-    mv bin/godot.javascript.opt.debug.threads.zip bin/webassembly_threads_debug.zip
-    mv bin/godot.javascript.opt.debug.gdnative.zip bin/webassembly_gdnative_debug.zip
+    mv bin/rebel.javascript.opt.debug.threads.zip bin/webassembly_threads_debug.zip
+    mv bin/rebel.javascript.opt.debug.gdnative.zip bin/webassembly_gdnative_debug.zip
 
 Building the Editor
 -------------------
 
-It is also possible to build a version of the Godot editor that can run in the
+It is also possible to build a version of the Rebel Editor that can run in the
 browser. The editor version requires threads support and is not recommended
 over the native build. You can build the editor with::
 
     scons platform=javascript tools=yes threads_enabled=yes target=release_debug
 
 Once finished, the resulting file will be placed in the ``bin`` subdirectory.
-Its name will be ``godot.javascript.opt.tools.threads.zip``. You can upload the
+Its name will be ``rebel.javascript.opt.tools.threads.zip``. You can upload the
 zip content to your web server and visit it with your browser to use the editor.
 
 Refer to the :ref:`export page <doc_javascript_export_options>` for the web

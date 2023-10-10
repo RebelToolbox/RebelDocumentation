@@ -3,18 +3,13 @@
 Import process
 ==============
 
-Importing assets in Godot 3.0+
-------------------------------
+Importing assets in Rebel Editor
+--------------------------------
 
-Previously, importing assets in Godot 2.x required manual maintenance
-of a separate directory with source assets. Without doing this, it was
-impossible to specify how to convert and change import flags for
-textures, audio files, scenes, etc.
-
-In Godot 3.0+, we use a more modern approach to importing: Simply drop
+In Rebel Editor, we use a more modern approach to importing: Simply drop
 your assets (image files, scenes, audio files, fonts, etc) directly in the
 project folder (copy them manually with your OS file explorer).
-Godot will automatically import these files internally
+Rebel Editor will automatically import these files internally
 and keep the imported resources hidden in a ``res://.import`` folder.
 
 This means that when trying to access imported assets through code you
@@ -29,8 +24,8 @@ non imported files, only the :ref:`File <class_File>` class can.
 Changing import parameters
 --------------------------
 
-To change the import parameters of an asset in Godot (again, keep in mind
-import parameters are only present in non-native Godot resource types)
+To change the import parameters of an asset in Rebel Editor (again, keep in mind
+import parameters are only present in non-native Rebel resource types)
 select the relevant resource in the filesystem dock:
 
 .. image:: img/asset_workflow1.png
@@ -61,7 +56,7 @@ parameters changed.
 Automatic reimport
 ------------------
 
-When the MD5 checksum of the source asset changes, Godot will perform an
+When the MD5 checksum of the source asset changes, Rebel Editor will perform an
 automatic reimport of it, applying the preset configured for that specific
 asset.
 

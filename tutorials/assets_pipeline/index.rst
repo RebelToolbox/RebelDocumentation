@@ -11,4 +11,3 @@ Assets pipeline
    importing_translations
    importing_scenes
    exporting_3d_scenes
-   escn_exporter/index

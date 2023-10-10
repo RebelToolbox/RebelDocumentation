@@ -11,12 +11,12 @@ control and more.
 Importing the project
 ---------------------
 
-Visual Studio requires a solution file to work on a project. While Godot does not come
+Visual Studio requires a solution file to work on a project. While Rebel Engine does not come
 with the solution file, it can be generated using SCons.
 
-- Navigate to the Godot root folder and open a Command Prompt or PowerShell window.
+- Navigate to the Rebel Engine root folder and open a Command Prompt or PowerShell window.
 - Run ``scons platform=windows vsproj=yes`` to generate the solution.
-- You can now open the project by double-clicking on the ``godot.sln`` in the project root
+- You can now open the project by double-clicking on the ``rebel.sln`` in the project root
   or by using the **Open a project or solution** option inside of the Visual Studio.
 - Use the **Build** top menu to build the project.
 
@@ -29,13 +29,13 @@ with the solution file, it can be generated using SCons.
 Debugging the project
 ---------------------
 
-Visual Studio features a powerful debugger. This allows the user to examine Godot's
+Visual Studio features a powerful debugger. This allows the user to examine Rebel Engine's
 source code, stop at specific points in the code, inspect the current execution context,
 and make live changes to the codebase.
 
 You can launch the project with the debugger attached using the **Debug > Start Debugging**
 option from the top menu. However, unless you want to debug the project manager specifically,
-you'd need to configure debugging options first. This is due to the fact that when the Godot 
+you'd need to configure debugging options first. This is due to the fact that when the Rebel
 project manager opens a project, the initial process is terminated and the debugger gets detached.
 
 - To configure the launch options to use with the debugger use **Project > Properties**
@@ -47,7 +47,7 @@ project manager opens a project, the initial process is terminated and the debug
 - Open the **Debugging** section and under **Command Arguments** add two new arguments: 
   the ``-e`` flag opens the editor instead of the project manager, and the ``--path`` argument
   tells the executable to open the specified project (must be provided as an *absolute* path 
-  to the project root, not the ``project.godot`` file).
+  to the project root, not the ``project.rebel`` file).
 
 .. figure:: img/vs_3_debug_command_line.png
    :align: center
@@ -63,6 +63,3 @@ start debugging.
 
 .. figure:: img/vs_4_debugging_main.png
    :align: center
-
-If you run into any issues, ask for help in one of
-`Godot's community channels <https://godotengine.org/community>`__.

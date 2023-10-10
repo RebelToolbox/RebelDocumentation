@@ -21,7 +21,7 @@ Putting all the ideas together, here is an example scene tree:
 Creating room systems in Blender (or other modeling tools)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Although you can create your room system entirely within the editor, you can also build rooms and portals within your modeling tool. There is one small snag - modeling tools such as Blender have no knowledge of Room, RoomGroup and Portal nodes. In order to work around this we use a series of naming conventions. The first time Godot encounters these specially named nodes, it will convert them into Rooms, RoomGroups and Portals.
+Although you can create your room system entirely within the editor, you can also build rooms and portals within your modeling tool. There is one small snag - modeling tools such as Blender have no knowledge of Room, RoomGroup and Portal nodes. In order to work around this we use a series of naming conventions. The first time Rebel Engine encounters these specially named nodes, it will convert them into Rooms, RoomGroups and Portals.
 
 Postfix convention
 ^^^^^^^^^^^^^^^^^^
@@ -31,7 +31,7 @@ Postfix convention
 - ``-portal`` becomes a :ref:`Portal<class_Portal>`.
 - ``-bound`` becomes a manual bound.
 
-Rooms and RoomGroups should be created as Empties within Blender. Any mesh children of the ``-room`` Empty will thus be placed in the Room during conversion in Godot.
+Rooms and RoomGroups should be created as Empties within Blender. Any mesh children of the ``-room`` Empty will thus be placed in the Room during conversion in Rebel Engine.
 
 For example:
 
@@ -44,16 +44,16 @@ Portals
 
 Portals are different from Rooms. In Portals, we need to specify the geometry of the Portal in our modelling tool, in addition to just the name. To do this your "portal-to-be" should be created as a Mesh.
 
-Portal meshes have some restrictions to work properly. They must be convex, and the polygon points should be in the same plane. The accuracy to the plane does not have to be exact, as Godot will automatically average the direction of the portal plane. Once converted to a :ref:`Portal<class_Portal>` node, the snapping to the portal plane is enforced, and the vertices are specified (and editable) as 2D coordinates in the inspector, rather than 3D points.
+Portal meshes have some restrictions to work properly. They must be convex, and the polygon points should be in the same plane. The accuracy to the plane does not have to be exact, as Rebel Engine will automatically average the direction of the portal plane. Once converted to a :ref:`Portal<class_Portal>` node, the snapping to the portal plane is enforced, and the vertices are specified (and editable) as 2D coordinates in the inspector, rather than 3D points.
 
-The portal's naming is quite important. You can either name the portal ``-portal`` which will attempt to autolink the Portal in Godot, or you can use the name of the Room you wish to link the Portal to as a prefix.
+The portal's naming is quite important. You can either name the portal ``-portal`` which will attempt to autolink the Portal in Rebel Engine, or you can use the name of the Room you wish to link the Portal to as a prefix.
 
 Wildcard
 ^^^^^^^^
 
-In most cases, this can be done using a name such as ``kitchen-portal``. However, there is one problem. Blender and Godot do not deal well when you have multiple objects with the same name. What happens when we want more than one Portal to lead to the kitchen?
+In most cases, this can be done using a name such as ``kitchen-portal``. However, there is one problem. Blender and Rebel Engine do not deal well when you have multiple objects with the same name. What happens when we want more than one Portal to lead to the kitchen?
 
-The workaround is the use of a *wildcard* character, ``*``. When Godot reads the wildcard, it will ignore anything placed after it in the name.
+The workaround is the use of a *wildcard* character, ``*``. When Rebel Engine reads the wildcard, it will ignore anything placed after it in the name.
 
 This means we can use the following portal names:
 
@@ -66,7 +66,7 @@ Wildcards work on all of the nodes which use these naming conventions.
 Manual bounds
 ^^^^^^^^^^^^^
 
-Manual bounds are a way of explicitly setting the convex hull for a room, and are used if they are present as children of a room in the scene tree. Aside from the postfix, the naming is unimportant. They should be meshes (i.e. MeshInstance in Godot). Bear in mind they will be converted to convex hulls during the conversion process, so they don't have to be perfect.
+Manual bounds are a way of explicitly setting the convex hull for a room, and are used if they are present as children of a room in the scene tree. Aside from the postfix, the naming is unimportant. They should be meshes (i.e. MeshInstance in Rebel Engine). Bear in mind they will be converted to convex hulls during the conversion process, so they don't have to be perfect.
 
 .. tip:: Once used during conversion, they will be converted to the ``IGNORE`` **Portal Mode** and won't be shown. You can alternatively use **Generate Points** within the editor to convert these to a set of points stored in the room, and delete the original ``-bound`` MeshInstance.
 

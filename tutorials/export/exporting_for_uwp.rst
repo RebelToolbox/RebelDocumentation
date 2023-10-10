@@ -5,7 +5,7 @@ Exporting for Universal Windows Platform
 
 .. seealso::
 
-    This page describes how to export a Godot project to UWP.
+    This page describes how to export a Rebe; project to UWP.
     If you're looking to compile export template binaries from source instead,
     read :ref:`doc_compiling_for_uwp`.
 
@@ -14,7 +14,7 @@ installed as a Windows App or submitted to the Windows Store. Exporting UWP
 packages also works from any platform, not only from Windows.
 
 However, if you want to install and run the app, you need to sign it with a
-trusted signature. Godot supports automatic signing of packages with
+trusted signature. Rebel Editor supports automatic signing of packages with
 external tools.
 
 Also, make sure the Publisher Name you set when exporting the package matches

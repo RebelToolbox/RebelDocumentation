@@ -5,13 +5,13 @@ Object class
 
 .. seealso::
 
-    This page describes the C++ implementation of objects in Godot.
+    This page describes the C++ implementation of objects in Rebel Engine.
     Looking for the Object class reference? :ref:`Have a look here. <class_Object>`
 
 General definition
 ------------------
 
-:ref:`Object <class_object>` is the base class for almost everything. Most classes in Godot
+:ref:`Object <class_object>` is the base class for almost everything. Most classes in Rebel Engine
 inherit directly or indirectly from it. Objects provide reflection and
 editable properties, and declaring them is a matter of using a single
 macro like this.
@@ -35,7 +35,7 @@ This makes Objects gain a lot of functionality, like for example
 References:
 ~~~~~~~~~~~
 
--  `core/object.h <https://github.com/godotengine/godot/blob/3.x/core/object.h>`__
+-  `core/object.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/object.h>`__
 
 Registering an Object
 ---------------------
@@ -93,7 +93,7 @@ string passing the name can be passed for brevity.
 References:
 ~~~~~~~~~~~
 
--  `core/class_db.h <https://github.com/godotengine/godot/blob/3.x/core/class_db.h>`__
+-  `core/class_db.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/class_db.h>`__
 
 Constants
 ---------
@@ -200,7 +200,7 @@ compared against the desired names in serial order.
 Dynamic casting
 ---------------
 
-Godot provides dynamic casting between Object-derived classes, for
+Rebel Engine provides dynamic casting between Object-derived classes, for
 example:
 
 .. code-block:: cpp
@@ -240,9 +240,9 @@ Adding signals to a class is done in ``_bind_methods``, using the
 Notifications
 -------------
 
-All objects in Godot have a :ref:`_notification <class_Object_method__notification>`
+All objects in Rebel Engine have a :ref:`_notification <class_Object_method__notification>`
 method that allows it to respond to engine level callbacks that may relate to it.
-More information can be found on the :ref:`doc_godot_notifications` page.
+More information can be found on the :ref:`doc_notifications` page.
 
 References
 ----------
@@ -265,7 +265,7 @@ templates point to it.
 References:
 ~~~~~~~~~~~
 
--  `core/reference.h <https://github.com/godotengine/godot/blob/3.x/core/reference.h>`__
+-  `core/reference.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/reference.h>`__
 
 Resources:
 ----------
@@ -281,7 +281,7 @@ Resources without a path are fine too.
 References:
 ~~~~~~~~~~~
 
--  `core/resource.h <https://github.com/godotengine/godot/blob/3.x/core/resource.h>`__
+-  `core/resource.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/resource.h>`__
 
 Resource loading
 ----------------
@@ -302,7 +302,7 @@ the same time.
 References:
 ~~~~~~~~~~~
 
--  `core/io/resource_loader.h <https://github.com/godotengine/godot/blob/3.x/core/io/resource_loader.h>`__
+-  `core/io/resource_loader.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/io/resource_loader.h>`__
 
 Resource saving
 ---------------
@@ -321,4 +321,4 @@ be bundled with the saved resource and assigned sub-IDs, like
 References:
 ~~~~~~~~~~~
 
--  `core/io/resource_saver.h <https://github.com/godotengine/godot/blob/3.x/core/io/resource_saver.h>`__
+-  `core/io/resource_saver.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/io/resource_saver.h>`__

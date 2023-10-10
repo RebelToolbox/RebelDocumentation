@@ -12,7 +12,7 @@ go wrong at many levels (platform may not be configured correctly, SDK may be
 incorrectly installed, device may be improperly configured, etc.), it's good to
 let the user know that it exists.
 
-After adding an Android export preset marked as Runnable, Godot can detect when
+After adding an Android export preset marked as Runnable, Rebel Editor can detect when
 a USB device is connected to the computer and offer the user to automatically
 export, install and run the project (in debug mode) on the device. This feature
 is called *one-click deploy*.
@@ -34,7 +34,7 @@ Supported platforms
    - Make sure to follow the steps described in :ref:`doc_exporting_for_android`.
      Otherwise, the one-click deploy button won't appear.
 
-   - If you have more than one device connected, Godot will ask you which device
+   - If you have more than one device connected, Rebel Editor will ask you which device
      the project should be exported to.
 
 - **HTML5:** Starts a local web server and runs the exported project by opening
@@ -66,7 +66,7 @@ Android
 ^^^^^^^
 
 If you can't see the device in the list of devices when running the
-``adb devices`` command in a terminal, it will not be visible by Godot either.
+``adb devices`` command in a terminal, it will not be visible by Rebel Editor either.
 To resolve this:
 
 - Check if USB debugging is enabled *and authorized on the device*.

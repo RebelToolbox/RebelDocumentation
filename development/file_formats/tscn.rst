@@ -4,19 +4,19 @@ TSCN file format
 ================
 
 The TSCN (text scene) file format represents a single scene tree inside
-Godot. Unlike binary SCN files, TSCN files have the advantage of being mostly
+a Rebel project. Unlike binary SCN files, TSCN files have the advantage of being mostly
 human-readable and easy for version control systems to manage.
 
 The ESCN (exported scene) file format is identical to the TSCN file format, but
-is used to indicate to Godot that the file has been exported from another
-program and should not be edited by the user from within Godot.
+is used to indicate to Rebel Engine that the file has been exported from another
+program and should not be edited by the user from within Rebel Editor.
 Unlike SCN and TSCN files, during import, ESCN files are compiled to binary
 SCN files stored inside the ``.import/`` folder.
 This reduces the data size and speeds up loading, as binary formats are faster
 to load compared to text-based formats.
 
-For those looking for a complete description, the parsing is handled in the file
-`resource_format_text.cpp <https://github.com/godotengine/godot/blob/master/scene/resources/resource_format_text.cpp>`_
+For those looking for a complete description, the parsing is handled in the
+`scene/resources/resource_format_text.h <https://github.com/RebelToolbox/RebelEngine/blob/main/scene/resources/resource_format_text.h>`_
 in the ``ResourceFormatLoaderText`` class.
 
 File structure
@@ -43,7 +43,7 @@ the items in the section. For example, the heading of all external resources
 should start with ``[ext_resource .....]``.
 
 A TSCN file may contain single-line comments starting with a semicolon (``;``).
-However, comments will be discarded when saving the file using the Godot editor.
+However, comments will be discarded when saving the file using the Rebel Editor.
 
 Entries inside the file
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -84,7 +84,7 @@ Other valid keywords include:
 
 The first node in the file, which is also the scene root, must not have a
 ``parent=Path/To/Node`` entry in its heading. All scene files should have
-exactly *one* scene root. If it doesn't, Godot will fail to import the file.
+exactly *one* scene root. If it doesn't, Rebel Engine will fail to import the file.
 The parent path of other nodes should be absolute, but shouldn't contain
 the scene root's name. If the node is a direct child of the scene root,
 the path should be ``"."``. Here is an example scene tree
@@ -139,7 +139,7 @@ save a file with that node in it. Some example nodes are:
 NodePath
 ~~~~~~~~
 
-A tree structure is not enough to represent the whole scene. Godot uses a
+A tree structure is not enough to represent the whole scene. Rebel Engine uses a
 ``NodePath(Path/To/Node)`` structure to refer to another node or attribute of
 the node anywhere in the scene tree. For instance, MeshInstance uses
 ``NodePath()`` to point to its skeleton. Likewise, Animation tracks use
@@ -281,7 +281,7 @@ External resources
 External resources are links to resources not contained within the TSCN file
 itself. An external resource consists of a path, a type and an ID.
 
-Godot always generates absolute paths relative to the resource directory and
+Rebel Engine always generates absolute paths relative to the resource directory and
 thus prefixed with ``res://``, but paths relative to the TSCN file's location
 are also valid.
 
@@ -295,7 +295,7 @@ Some example external resources are:
 
 Like TSCN files, a TRES file may contain single-line comments starting with a
 semicolon (``;``). However, comments will be discarded when saving the resource
-using the Godot editor.
+using the Rebel Editor.
 
 Internal resources
 ~~~~~~~~~~~~~~~~~~
@@ -321,7 +321,7 @@ internal resources section.
 
 Unfortunately, documentation on the formats for these subresources isn't
 complete. Some examples can be found by inspecting saved resource files, but
-others can only be found by looking through Godot's source.
+others can only be found by looking through Rebel Engine's source.
 
 ArrayMesh
 ~~~~~~~~~

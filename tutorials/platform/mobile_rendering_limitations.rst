@@ -7,7 +7,7 @@ Mobile rendering limitations
 
     The general :ref:`doc_3d_rendering_limitations` also apply to mobile platforms.
 
-To improve out-of-the-box performance on mobile devices, Godot automatically uses
+To improve out-of-the-box performance on mobile devices, Rebel Engine automatically uses
 low-end-friendly settings by default on both Android and iOS. These are configured
 by project settings with a ``.mobile`` :ref:`feature tag <doc_feature_tags>` suffix.
 

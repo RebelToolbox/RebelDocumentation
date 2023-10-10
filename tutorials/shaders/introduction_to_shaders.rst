@@ -4,7 +4,7 @@ Introduction to shaders
 =======================
 
 This page explains what shaders are and will give you an overview of how they
-work in Godot. For a detailed reference of the engine's shading language, see
+work in Rebel Engine. For a detailed reference of the Rebel Shading Language, see
 :ref:`doc_shading_language`.
 
 Shaders are a special kind of program that runs on Graphics Processing Units
@@ -12,7 +12,7 @@ Shaders are a special kind of program that runs on Graphics Processing Units
 more. You can use them to control how the engine draws geometry and pixels on
 the screen, allowing you to achieve all sorts of effects.
 
-Modern rendering engines like Godot draw everything with shaders: graphics cards
+Modern rendering engines like Rebel Engine draw everything with shaders: graphics cards
 can run thousands of instructions in parallel, leading to incredible rendering
 speed.
 
@@ -42,14 +42,14 @@ look like this.
 
    The graphics card calls the ``fragment()`` function once or more for each pixel it has to draw. More on that below.
 
-Shaders in Godot
-----------------
+Shaders in Rebel Engine
+-----------------------
 
-Godot provides a shading language based on the popular OpenGL Shading Language
+Rebel Shading Language is based on the popular OpenGL Shading Language
 (GLSL) but simplified. The engine handles some of the lower-level initialization
 work for you, making it easier to write complex shaders.
 
-In Godot, shaders are made up of three main functions: ``vertex()``,
+In Rebel Shading Language, shaders are made up of three main functions: ``vertex()``,
 ``fragment()``, and ``light()``.
 
 1. The ``vertex()`` function runs over all the vertices in the mesh and sets
@@ -76,7 +76,7 @@ Instead of supplying a general-purpose configuration for all uses (2D, 3D,
 particles), you must specify the type of shader you're writing. Different types
 support different render modes, built-in variables, and processing functions.
 
-In Godot, all shaders need to specify their type in the first line, like so:
+In Rebel Shading Language, all shaders need to specify their type in the first line, like so:
 
 .. code-block:: glsl
 
@@ -99,7 +99,7 @@ shader type, like so:
     shader_type spatial;
     render_mode unshaded, cull_disabled;
 
-Render modes alter the way Godot applies the shader. For example, the
+Render modes alter the way Rebel Engine applies the shader. For example, the
 ``unshaded`` mode makes the engine skip the built-in light processor function.
 
 Each shader type has different render modes. See the reference for each shader
@@ -124,7 +124,7 @@ Each vertex in your world's geometry has properties like a position and color.
 The function modifies those values and passes them to the fragment function. You
 can also use it to send extra data to the fragment function using varyings.
 
-By default, Godot transforms your vertex information for you, which is necessary
+By default, Rebel Engine transforms your vertex information for you, which is necessary
 to project geometry onto the screen. You can use render modes to transform the
 data yourself; see the :ref:`Spatial shader doc <doc_spatial_shader>` for an
 example.
@@ -132,7 +132,7 @@ example.
 Fragment processor
 ^^^^^^^^^^^^^^^^^^
 
-The ``fragment()`` processing function is used to set up the Godot material
+The ``fragment()`` processing function is used to set up the Rebel Material
 parameters per pixel. This code runs on every visible pixel the object or
 primitive draws. It is only available in ``spatial`` and ``canvas_item`` shaders.
 
@@ -142,9 +142,9 @@ to calculate lighting. For example, you would set values for ``ROUGHNESS``,
 respond to that fragment. This makes it possible to control a complex shading
 pipeline without the user having to write much code. If you don't need this
 built-in functionality, you can ignore it and write your own light processing
-function, and Godot will optimize it away. For example, if you do not write a
-value to ``RIM``, Godot will not calculate rim lighting. During compilation,
-Godot checks to see if ``RIM`` is used; if not, it cuts all the corresponding
+function, and Rebel Engine will optimize it away. For example, if you do not write a
+value to ``RIM``, Rebel Engine will not calculate rim lighting. During compilation,
+Rebel Engine checks to see if ``RIM`` is used; if not, it cuts all the corresponding
 code out. Therefore, you will not waste calculations on the effects that you do
 not use.
 

@@ -45,12 +45,12 @@ the input.
 
 .. image:: img/input.png
 
-For more information on how Godot handles input, please read the :ref:`Input Event Tutorial<doc_inputevent>`.
+For more information on how Rebel Engine handles input, please read the :ref:`Input Event Tutorial<doc_inputevent>`.
 
 Listener
 --------
 
-Godot supports 3D sound (in both 2D and 3D nodes); more on this can be
+Rebel Engine supports 3D sound (in both 2D and 3D nodes); more on this can be
 found in the :ref:`Audio Streams Tutorial<doc_audio_streams>`. For this type of sound to be
 audible, the :ref:`Viewport <class_Viewport>` needs to be enabled as a listener (for 2D or 3D).
 If you are using a custom :ref:`Viewport <class_Viewport>` to display your :ref:`World <class_World>`, don't forget
@@ -127,7 +127,7 @@ For 2D, each :ref:`Viewport <class_Viewport>` always contains its own :ref:`Worl
 This suffices in most cases, but in case sharing them may be desired, it
 is possible to do so by setting the :ref:`Viewport's <class_Viewport>` :ref:`World2D <class_World2D>` manually.
 
-For an example of how this works, see the demo projects `3D in 2D <https://github.com/godotengine/godot-demo-projects/tree/master/viewport/3d_in_2d>`_ and `2D in 3D <https://github.com/godotengine/godot-demo-projects/tree/master/viewport/2d_in_3d>`_ respectively.
+For an example of how this works, download the :download:`3D In 2D <files/3d-in-2d.zip>` and :download:`2D in 3D <files/2d-in-3d.zip>` projects.
 
 Capture
 -------
@@ -178,7 +178,7 @@ rendering properties that can be different from the project settings. The first 
 choose to use a different level of MSAA for each :ref:`Viewport <class_Viewport>`; the default behavior is DISABLED.
 You can also set the :ref:`Viewport <class_Viewport>` to use HDR, HDR is very useful for when you want to store values in the texture that are outside the range 0.0 - 1.0.
 
-If you know how the :ref:`Viewport <class_Viewport>` is going to be used, you can set its Usage to either 3D or 2D. Godot will then
+If you know how the :ref:`Viewport <class_Viewport>` is going to be used, you can set its Usage to either 3D or 2D. Rebel Engine will then
 restrict how the :ref:`Viewport <class_Viewport>` is drawn to in accordance with your choice; default is 3D.
 The 2D usage mode is slightly faster and uses less memory compared to the 3D one. It's a good idea to set the :ref:`Viewport <class_Viewport>`'s Usage property to 2D if your viewport doesn't render anything in 3D.
 
@@ -187,7 +187,7 @@ The 2D usage mode is slightly faster and uses less memory compared to the 3D one
     If you need to render 3D shadows in the viewport, make sure to set the viewport's *Shadow Atlas Size* property to a value higher than 0.
     Otherwise, shadows won't be rendered. For reference, the Project Settings define it to 4096 by default.
 
-Godot also provides a way of customizing how everything is drawn inside :ref:`Viewports <class_Viewport>` using “Debug Draw”.
+Rebel Engine also provides a way of customizing how everything is drawn inside :ref:`Viewports <class_Viewport>` using “Debug Draw”.
 Debug Draw allows you to specify one of four options for how the :ref:`Viewport <class_Viewport>` will display things drawn
 inside it. Debug Draw is disabled by default.
 
@@ -247,8 +247,3 @@ rendered; otherwise, it will not. This behavior can be changed to manual
 rendering (once), or always render, no matter if visible or not. This flexibility
 allows users to render an image once and then use the texture without
 incurring the cost of rendering every frame.
-
-
-Make sure to check the Viewport demos! Viewport folder in the demos
-archive available to download, or
-https://github.com/godotengine/godot-demo-projects/tree/master/viewport

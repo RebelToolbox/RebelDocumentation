@@ -3,13 +3,11 @@
 List of features
 ================
 
-This page aims to list all features currently supported by Godot.
+This page aims to list all features currently supported by Rebel Engine.
 
 .. note::
 
-    This page lists features supported by the current stable version of
-    Godot (3.4). `More features <https://docs.godotengine.org/en/latest/about/list_of_features.html>`__
-    are available in the latest development version (4.0).
+    This page lists features supported by Rebel Engine.
 
 Features
 --------
@@ -36,7 +34,7 @@ Platforms
 - :ref:`Consoles <doc_consoles>`.
 - :ref:`Headless Linux and macOS servers <doc_exporting_for_dedicated_servers>`.
 
-Godot aims to be as platform-independent as possible and can be ported to new
+Rebel Engine aims to be as platform-independent as possible and can be ported to new
 platforms with relative ease.
 
 Editor
@@ -69,12 +67,8 @@ Editor
 
 **Plugins:**
 
-- Editor plugins can be downloaded from the
-  :ref:`asset library <doc_what_is_assetlib>` to extend editor functionality.
-- :ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new
-  features or speed up your workflow.
-- :ref:`Download projects from the asset library <doc_using_assetlib_editor>`
-  in the project manager and import them directly.
+Editor plugins are used to extend editor functionality.
+:ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new features or speed up your workflow.
 
 2D graphics
 ^^^^^^^^^^^
@@ -283,7 +277,7 @@ Editor
 .. note::
 
     Most of the effects listed above can be adjusted for better performance or
-    to further improve quality. This can be helpful when using Godot for
+    to further improve quality. This can be helpful when using Rebel Engine for
     offline rendering.
 
 3D tools
@@ -365,6 +359,9 @@ Scripting
 - Works best when used for specific purposes (such as level-specific logic)
   rather than as a language to create entire projects.
 
+While Rebel Engine will keep VisualScript supported, we recommend
+:ref:`trying out GDScript <toc-learn-scripting-gdscript>` instead.
+
 **GDNative (C, C++, Rust, D, ...):**
 
 - When you need it, link to native libraries for higher performance and third-party integrations.
@@ -375,18 +372,6 @@ Scripting
 - Official bindings for C and C++.
 
    - Use any build system and language features you wish.
-
-- Maintained D, Kotlin, Python, Nim, and Rust bindings provided by the community.
-
-.. warning::
-
-    `Godot 4.0 will remove VisualScript from core entirely. <https://godotengine.org/article/godot-4-will-discontinue-visual-scripting>`__
-    As a result, creating new projects using visual scripting in Godot is not recommended.
-    Future Godot 4.x releases may have VisualScript reimplemented as an extension.
-
-    While Godot 3.x will keep VisualScript supported, we recommend
-    :ref:`trying out GDScript <toc-learn-scripting-gdscript>` instead,
-    especially if you intend to migrate your project to Godot 4.
 
 Audio
 ^^^^^
@@ -429,8 +414,6 @@ Import
 - *3D scenes:*
 
    - glTF 2.0 *(recommended)*.
-   - `ESCN <https://github.com/godotengine/godot-blender-exporter>`__
-     (direct export from Blender).
    - FBX (experimental, static meshes only).
    - Collada (.dae).
    - Wavefront OBJ (static scenes only, can be loaded directly as a mesh).
@@ -465,9 +448,6 @@ Navigation
 
 - A* algorithm in 2D and 3D.
 - Navigation meshes.
-
-   - Support for dynamic obstacle avoidance planned in Godot 4.0.
-
 - Generate navigation meshes from the editor.
 
 Networking
@@ -498,7 +478,6 @@ Internationalization
   or :ref:`gettext <doc_localization_using_gettext>`.
 - Use localized strings in your project automatically in GUI elements or by
   using the ``tr()`` function.
-- Support for right-to-left typesetting and text shaping planned in Godot 4.0.
 
 Windowing and OS integration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -543,7 +522,7 @@ XR support (AR and VR)
 GUI system
 ^^^^^^^^^^
 
-Godot's GUI is built using the same Control nodes used to make games in Godot.
+Rebel Engine's GUI is built using the same Control nodes used to make games in Rebel Engine.
 The editor UI can easily be extended in many ways using add-ons.
 
 **Nodes:**
@@ -586,7 +565,7 @@ The editor UI can easily be extended in many ways using add-ons.
 
 - Texture-based theming using :ref:`class_StyleBoxTexture`.
 
-Godot's small distribution size can make it a suitable alternative to frameworks
+Rebel Engine's small distribution size can make it a suitable alternative to frameworks
 like Electron or Qt.
 
 Animation
@@ -614,7 +593,7 @@ File formats
 - Read and write :ref:`class_JSON` files.
 - Read and write INI-style configuration files using :ref:`class_ConfigFile`.
 
-   - Can (de)serialize any Godot datatype, including Vector2/3, Color, ...
+   - Can (de)serialize any Rebel Engine datatype, including Vector2/3, Color, ...
 
 - Read XML files using :ref:`class_XMLParser`.
 - Pack game data into a PCK file (custom format optimized for fast seeking),
@@ -630,7 +609,7 @@ Miscellaneous
 - :ref:`Command line interface <doc_command_line_tutorial>` for automation.
 
    - Export and deploy projects using continuous integration platforms.
-   - `Shell completion scripts <https://github.com/godotengine/godot/tree/master/misc/dist/shell>`__
+   - `Shell completion scripts <https://github.com/RebelToolbox/RebelEngine/tree/main/misc/dist/shell>`__
      are available for Bash, zsh and fish.
 
 - Support for :ref:`C++ modules <doc_custom_modules_in_c++>` statically linked
@@ -640,16 +619,9 @@ Miscellaneous
    - Can be :ref:`compiled <doc_introduction_to_the_buildsystem>` using GCC,
      Clang and MSVC. MinGW is also supported.
    - Friendly towards packagers. In most cases, system libraries can be used
-     instead of the ones provided by Godot. The build system doesn't download anything.
+     instead of the ones provided by Rebel Engine. The build system doesn't download anything.
      Builds can be fully reproducible.
-   - Godot 4.0 will be written in C++17.
 
 - Licensed under the permissive MIT license.
 
    - Open developement process with :ref:`contributions welcome <doc_ways_to_contribute>`.
-
-.. seealso::
-
-    The `Godot proposals repository <https://github.com/godotengine/godot-proposals>`__
-    lists features that have been requested by the community and may be implemented
-    in future Godot releases.

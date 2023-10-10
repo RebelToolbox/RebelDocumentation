@@ -14,7 +14,7 @@ Importing the project
   Alternatively, `clangd <https://open-vsx.org/extension/llvm-vs-code-extensions/vscode-clangd>`_
   can be used instead.
 - When using the clangd extension, run ``scons compiledb=yes``.
-- From the Visual Studio Code's main screen open the Godot root folder with
+- From the Visual Studio Code's main screen open the Rebel Engine root folder with
   **File > Open Folder...**.
 - Press :kbd:`Ctrl + Shift + P` to open the command prompt window and enter *Configure Task*.
 
@@ -94,11 +94,11 @@ To run and debug the project you need to create a new configuration in the ``lau
       "name": "Launch Project",
       "type": "lldb",
       "request": "launch",
-      // Change to godot.x11.tools.64.llvm for llvm-based builds.
-      "program": "${workspaceFolder}/bin/godot.x11.tools.64",
+      // Change to rebel.x11.tools.64.llvm for llvm-based builds.
+      "program": "${workspaceFolder}/bin/rebel.x11.tools.64",
       // Change the arguments below for the project you want to test with.
       // To run the project instead of editing it, remove the "--editor" argument.
-      "args": [ "--editor", "--path", "path-to-your-godot-project-folder" ],
+      "args": [ "--editor", "--path", "path-to-your-rebel-project-folder" ],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
@@ -111,11 +111,11 @@ To run and debug the project you need to create a new configuration in the ``lau
       "name": "Launch Project",
       "type": "cppdbg",
       "request": "launch",
-      // Change to godot.x11.tools.64.llvm for llvm-based builds.
-      "program": "${workspaceFolder}/bin/godot.x11.tools.64",
+      // Change to rebel.x11.tools.64.llvm for llvm-based builds.
+      "program": "${workspaceFolder}/bin/rebel.x11.tools.64",
       // Change the arguments below for the project you want to test with.
       // To run the project instead of editing it, remove the "--editor" argument.
-      "args": [ "--editor", "--path", "path-to-your-godot-project-folder" ],
+      "args": [ "--editor", "--path", "path-to-your-rebel-project-folder" ],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
@@ -137,15 +137,15 @@ To run and debug the project you need to create a new configuration in the ``lau
       "name": "Launch Project",
       "type": "cppvsdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/bin/godot.windows.tools.64.exe",
+      "program": "${workspaceFolder}/bin/rebel.windows.tools.64.exe",
       // Change the arguments below for the project you want to test with.
       // To run the project instead of editing it, remove the "--editor" argument.
-      "args": [ "--editor", "--path", "path-to-your-godot-project-folder" ],
+      "args": [ "--editor", "--path", "path-to-your-rebel-project-folder" ],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
       "console": "internalConsole",
-      "visualizerFile": "${workspaceFolder}/platform/windows/godot.natvis",
+      "visualizerFile": "${workspaceFolder}/platform/windows/rebel.natvis",
       "preLaunchTask": "build"
     }
 
@@ -167,7 +167,4 @@ To run and debug the project you need to create a new configuration in the ``lau
     Do note that lldb may work better with llvm-based builds. See :ref:`doc_compiling_for_x11` for further information.
 
 The name under ``program`` depends on your build configuration,
-e.g. ``godot.x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled.
-
-If you run into any issues, ask for help in one of
-`Godot's community channels <https://godotengine.org/community>`__.
+e.g. ``rebel.x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled.

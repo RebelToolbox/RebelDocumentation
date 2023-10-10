@@ -118,7 +118,7 @@ the sphere in a nice way? One solution is to use a function that repeats on the 
 .. image:: img/planet_sincos.png
 
 Not too bad. If you look around, you can see that the seam has now disappeared, but in its place, we
-have pinching at the poles. This pinching is due to the way Godot maps textures to spheres in its
+have pinching at the poles. This pinching is due to the way Rebel Engine maps textures to spheres in its
 :ref:`SpatialMaterial <class_SpatialMaterial>`. It uses a projection technique called equirectangular
 projection, which translates a spherical map onto a 2D plane.
 

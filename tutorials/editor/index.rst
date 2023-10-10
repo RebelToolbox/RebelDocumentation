@@ -1,7 +1,7 @@
 Editor manual
 =============
 
-In this section, we cover the Godot editor in general, from its interface to
+In this section, we cover the Rebel Editor in general, from its interface to
 using it with the command line. We cover some specific editors' interface in
 other sections where appropriate. For example, the :ref:`animation editor
 <doc_introduction_animation>`.
@@ -13,5 +13,4 @@ other sections where appropriate. For example, the :ref:`animation editor
    command_line_tutorial
    external_editor
    default_key_mapping
-   using_the_web_editor
    managing_editor_features

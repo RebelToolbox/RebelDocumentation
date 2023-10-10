@@ -20,7 +20,7 @@ parameters and then adding randomness to them.
 Particle nodes
 ~~~~~~~~~~~~~~
 
-Godot provides two different nodes for 2D particles, :ref:`class_Particles2D` and
+Rebel Engine provides two different nodes for 2D particles, :ref:`class_Particles2D` and
 :ref:`class_CPUParticles2D`.
 Particles2D is more advanced and uses the GPU to process particle effects, but that limits
 it to higher end graphics API, and in our case to the GLES3 renderer. For projects using
@@ -150,7 +150,7 @@ The rectangle's ``W`` and ``H`` properties respectively control its Width and it
 The ``X`` and ``Y`` properties control the position of the upper-left
 corner of the rectangle, relative to the particle emitter.
 
-You can have Godot generate a Visibility Rect automatically using the toolbar above the 2d view. To do so, select the Particles2D node and Click ``Particles > Generate Visibility Rect``. Godot will simulate the Particles2D node emitting particles for a few seconds and set the rectangle to fit the surface the particles take.
+You can have Rebel Engine generate a Visibility Rect automatically using the toolbar above the 2d view. To do so, select the Particles2D node and Click ``Particles > Generate Visibility Rect``. Rebel Engine will simulate the Particles2D node emitting particles for a few seconds and set the rectangle to fit the surface the particles take.
 
 You can control the emit duration with the ``Generation Time (sec)`` option. The maximum value is 25 seconds. If you need more time for your particles to move around, you can temporarily change the ``preprocess`` duration on the Particles2D node.
 

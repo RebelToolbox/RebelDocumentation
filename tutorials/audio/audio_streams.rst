@@ -69,7 +69,7 @@ Unlike for 2D, the 3D version of AudioStreamPlayer has a few more advanced optio
 Reverb buses
 ~~~~~~~~~~~~
 
-Godot allows for 3D audio streams that enter a specific Area node to send dry
+Rebel Engine allows for 3D audio streams that enter a specific Area node to send dry
 and wet audio to separate buses. This is useful when you have several reverb
 configurations for different types of rooms. This is done by enabling this type
 of reverb in the **Reverb Bus** section of the Area's properties:
@@ -93,7 +93,7 @@ Doppler
 
 When the relative velocity between an emitter and listener changes, this is
 perceived as an increase or decrease in the pitch of the emitted sound.
-Godot can track velocity changes in the AudioStreamPlayer3D and Camera nodes.
+Rebel Engine can track velocity changes in the AudioStreamPlayer3D and Camera nodes.
 Both nodes have this property, which must be enabled manually:
 
 .. image:: img/audio_stream_doppler.png

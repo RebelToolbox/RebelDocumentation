@@ -3,12 +3,11 @@
 Recording with microphone
 =========================
 
-Godot supports in-game audio recording for Windows, macOS, Linux, Android and
+Rebel Engine supports in-game audio recording for Windows, macOS, Linux, Android and
 iOS.
 
-A simple demo is included in the official demo projects and will be used as
-support for this tutorial:
-`<https://github.com/godotengine/godot-demo-projects/tree/master/audio/mic_record>`_.
+A simple demo that will be used for this tutorial can be downloaded here:
+:download:`Audio Record <files/audio-record.zip>`
 
 You will need to enable audio input in the project settings, or you'll just get empty audio files.
 

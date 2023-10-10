@@ -177,7 +177,7 @@ Instance Methods
 Engine configuration
 --------------------
 
-An object used to configure the Engine instance based on godot export options, and to override those in custom HTML
+An object used to configure the Engine instance based on Rebel Editor export options, and to override those in custom HTML
 templates if needed.
 
 Properties
@@ -215,7 +215,7 @@ Properties
 
    The Engine configuration object. This is just a typedef, create it like a regular object, e.g.:
 
-   ``const MyConfig = { executable: 'godot', unloadAfterInit: false }``
+   ``const MyConfig = { executable: 'rebel', unloadAfterInit: false }``
 
    **Property Descriptions**
 
@@ -239,7 +239,7 @@ Properties
 
    .. js:attribute:: executable
 
-      The name of the WASM file without the extension. (Set by Godot Editor export process).
+      The name of the WASM file without the extension. (Set by Rebel Editor export process).
 
       :type: string
 
@@ -266,14 +266,14 @@ Properties
 
    .. js:attribute:: canvasResizePolicy
 
-      The canvas resize policy determines how the canvas should be resized by Godot.
+      The canvas resize policy determines how the canvas should be resized by Rebel Engine.
 
-      ``0`` means Godot won't do any resizing. This is useful if you want to control the canvas size from
+      ``0`` means Rebel Engine won't do any resizing. This is useful if you want to control the canvas size from
       javascript code in your template.
 
-      ``1`` means Godot will resize the canvas on start, and when changing window size via engine functions.
+      ``1`` means Rebel Engine will resize the canvas on start, and when changing window size via engine functions.
 
-      ``2`` means Godot will adapt the canvas size to match the whole browser window.
+      ``2`` means Rebel Engine will adapt the canvas size to match the whole browser window.
 
       :type: number
 
@@ -293,24 +293,24 @@ Properties
 
    .. js:function:: onExecute( path, args )
 
-      A callback function for handling Godot's ``OS.execute`` calls.
+      A callback function for handling Rebel Engine's ``OS.execute`` calls.
 
       This is for example used in the Web Editor template to switch between project manager and editor, and for running the game.
 
       :param string path:
-         The path that Godot's wants executed.
+         The path that Rebel wants executed.
 
       :param Array.<string> args:
          The arguments of the "command" to execute.
 
    .. js:function:: onExit( status_code )
 
-      A callback function for being notified when the Godot instance quits.
+      A callback function for being notified when the Rebel instance quits.
 
       **Note**: This function will not be called if the engine crashes or become unresponsive.
 
       :param number status_code:
-         The status code returned by Godot on exit.
+         The status code returned by Rebel Engine on exit.
 
    .. js:function:: onProgress( current, total )
 

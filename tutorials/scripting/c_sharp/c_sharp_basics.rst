@@ -6,22 +6,22 @@ C# basics
 Introduction
 ------------
 
-.. warning:: C# support is a new feature available since Godot 3.0.
+.. warning:: C# support is a new feature.
              As such, you may still run into some issues, or find spots
              where the documentation could be improved.
-             Please report issues with C# in Godot on the
-             `engine GitHub page <https://github.com/godotengine/godot/issues>`_,
+             Please report issues with C# in Rebel Engine on the
+             `engine GitHub page <https://github.com/RebelToolbox/RebelEngine/issues>`_,
              and any documentation issues on the
-             `documentation GitHub page <https://github.com/godotengine/godot-docs/issues>`_.
+             `documentation GitHub page <https://github.com/RebelToolbox/RebelDocumentation/issues>`_.
 
 This page provides a brief introduction to C#, both what it is and
-how to use it in Godot. Afterwards, you may want to look at
+how to use it in Rebel Engine. Afterwards, you may want to look at
 :ref:`how to use specific features <doc_c_sharp_features>`, read about the
 :ref:`differences between the C# and the GDScript API <doc_c_sharp_differences>`
 and (re)visit the :ref:`Scripting section <doc_scripting>` of the
 step-by-step tutorial.
 
-C# is a high-level programming language developed by Microsoft. In Godot,
+C# is a high-level programming language developed by Microsoft. In Rebel Engine,
 it is implemented with the Mono 6.x .NET framework, including full support
 for C# 8.0. Mono is an open source implementation of Microsoft's .NET Framework
 based on the ECMA standards for C# and the Common Language Runtime.
@@ -37,8 +37,8 @@ page in the Mono documentation.
 
 .. _doc_c_sharp_setup:
 
-Setting up C# for Godot
------------------------
+Setting up C# for Rebel Engine
+------------------------------
 
 Prerequisites
 ~~~~~~~~~~~~~
@@ -47,24 +47,24 @@ Install the latest stable version of the
 `.NET SDK <https://dotnet.microsoft.com/download>`__, previously known as the
 .NET Core SDK.
 
-From Godot 3.2.3 onwards, installing Mono SDK is not a requirement anymore,
+Installing Mono SDK is not a requirement anymore,
 except it is required if you are building the engine from source.
 
-Godot bundles the parts of Mono needed to run already compiled games.
-However, Godot does not bundle the tools required to build and compile
+Rebel Engine bundles the parts of Mono needed to run already compiled games.
+However, Rebel Engine does not bundle the tools required to build and compile
 games, such as MSBuild and the C# compiler. These are
 included in the .NET SDK, which needs to be installed separately.
 
 In summary, you must have installed the .NET SDK
-**and** the Mono-enabled version of Godot.
+**and** the Mono-enabled version of Rebel Engine.
 
 Additional notes
 ~~~~~~~~~~~~~~~~
 
 Be sure to install the 64-bit version of the SDK(s)
-if you are using the 64-bit version of Godot.
+if you are using the 64-bit version of Rebel Engine.
 
-If you are building Godot from source, install the latest stable version of
+If you are building Rebel Engine from source, install the latest stable version of
 `Mono <https://www.mono-project.com/download/stable/>`__, and make sure to
 follow the steps to enable Mono support in your build as outlined in the
 :ref:`doc_compiling_with_mono` page.
@@ -72,13 +72,13 @@ follow the steps to enable Mono support in your build as outlined in the
 Configuring an external editor
 ------------------------------
 
-C# support in Godot's built-in script editor is minimal. Consider using an
+C# support in Rebel Editor's built-in script editor is minimal. Consider using an
 external IDE or editor, such as  `Visual Studio Code <https://code.visualstudio.com/>`__
 or MonoDevelop. These provide autocompletion, debugging, and other
-useful features for C#. To select an external editor in Godot,
+useful features for C#. To select an external editor in Rebel Editor,
 click on **Editor → Editor Settings** and scroll down to
 **Mono**. Under **Mono**, click on **Editor**, and select your
-external editor of choice. Godot currently supports the following
+external editor of choice. Rebel Editor currently supports the following
 external editors:
 
 - Visual Studio 2019
@@ -95,7 +95,7 @@ JetBrains Rider
 After reading the "Prerequisites" section, you can download and install
 `JetBrains Rider <https://www.jetbrains.com/rider/download>`__.
 
-In Godot's **Editor → Editor Settings** menu:
+In Rebel Editor's **Editor → Editor Settings** menu:
 
 - Set **Mono** -> **Editor** -> **External Editor** to **JetBrains Rider**.
 - Set **Mono** -> **Builds** -> **Build Tool** to **dotnet CLI**.
@@ -103,7 +103,7 @@ In Godot's **Editor → Editor Settings** menu:
 In Rider:
 
 - Set **MSBuild version** to **.NET Core**.
-- Install the **Godot support** plugin.
+- Install the **Rebel support** plugin.
 
 Visual Studio Code
 ~~~~~~~~~~~~~~~~~~
@@ -111,7 +111,7 @@ Visual Studio Code
 After reading the "Prerequisites" section, you can download and install
 `Visual Studio Code <https://code.visualstudio.com/download>`__ (aka VS Code).
 
-In Godot's **Editor → Editor Settings** menu:
+In Rebel Editor's **Editor → Editor Settings** menu:
 
 - Set **Mono** -> **Editor** -> **External Editor** to **Visual Studio Code**.
 - Set **Mono** -> **Builds** -> **Build Tool** to **dotnet CLI**.
@@ -126,12 +126,12 @@ In Visual Studio Code:
           `Mono SDK <https://www.mono-project.com/download/stable/#download-lin>`__
           for the C# tools plugin to work.
 
-To configure a project for debugging open the Godot project folder in VS Code.
+To configure a project for debugging open the Rebel project folder in VS Code.
 Go to the Run tab and click on **Add Configuration...**. Select **C# Godot**
 from the dropdown menu. Open the ``tasks.json`` and ``launch.json`` files that
 were created. Change the executable setting in ``launch.json`` and  command
-settings in ``tasks.json`` to your Godot executable path. Now, when you start
-the debugger in VS Code, your Godot project will run.
+settings in ``tasks.json`` to your Rebel Editor executable path. Now, when you start
+the debugger in VS Code, your Rebel project will run.
 
 Visual Studio (Windows only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -147,7 +147,7 @@ While installing Visual Studio, select these workloads:
 - Mobile development with .NET
 - .NET Core cross-platform development
 
-In Godot's **Editor → Editor Settings** menu:
+In Rebel Editor's **Editor → Editor Settings** menu:
 
 - Set **Mono** -> **Editor** -> **External Editor** to **Visual Studio**.
 - Set **Mono** -> **Builds** -> **Build Tool** to **dotnet CLI**.
@@ -167,19 +167,19 @@ Double click on the downloaded file and follow the installation process.
 
           A simple way to fix the NuGet configuration file is to regenerate it.
           In a file explorer window, go to ``%AppData%\NuGet``. Rename or delete
-          the ``NuGet.Config`` file. When you build your Godot project again,
+          the ``NuGet.Config`` file. When you build your Rebel project again,
           the file will be automatically created with default values.
 
 Creating a C# script
 --------------------
 
-After you successfully set up C# for Godot, you should see the following option
+After you successfully set up C# for Rebel Editor, you should see the following option
 when selecting **Attach Script** in the context menu of a node in your scene:
 
 .. image:: img/attachcsharpscript.png
 
 Note that while some specifics change, most concepts work the same
-when using C# for scripting. If you're new to Godot, you may want to follow
+when using C# for scripting. If you're new to Rebel, you may want to follow
 the tutorials on :ref:`doc_scripting` at this point.
 While some places in the documentation still lack C# examples, most concepts
 can be transferred easily from GDScript.
@@ -187,8 +187,8 @@ can be transferred easily from GDScript.
 Project setup and workflow
 --------------------------
 
-When you create the first C# script, Godot initializes the C# project files
-for your Godot project. This includes generating a C# solution (``.sln``)
+When you create the first C# script, Rebel Editor initializes the C# project files
+for your Rebel project. This includes generating a C# solution (``.sln``)
 and a project file (``.csproj``), as well as some utility files and folders
 (``.mono`` and ``Properties/AssemblyInfo.cs``).
 All of these but ``.mono`` are important and should be committed to your
@@ -216,7 +216,7 @@ Here's a blank C# script with some comments to demonstrate how it works.
         {
             // Called every time the node is added to the scene.
             // Initialization here.
-            GD.Print("Hello from C# to Godot :)");
+            GD.Print("Hello from C# to Rebel :)");
         }
 
         public override void _Process(float delta)
@@ -226,7 +226,7 @@ Here's a blank C# script with some comments to demonstrate how it works.
         }
     }
 
-As you can see, functions normally in global scope in GDScript like Godot's
+As you can see, functions normally in global scope in GDScript like Rebel Engine's
 ``print`` function are available in the ``GD`` class which is part of
 the ``Godot`` namespace. For a list of methods in the ``GD`` class, see the
 class reference pages for
@@ -243,7 +243,7 @@ General differences between C# and GDScript
 
 The C# API uses ``PascalCase`` instead of ``snake_case`` in GDScript/C++.
 Where possible, fields and getters/setters have been converted to properties.
-In general, the C# Godot API strives to be as idiomatic as is reasonably possible.
+In general, the C# Rebel Engine API strives to be as idiomatic as is reasonably possible.
 
 For more information, see the :ref:`doc_c_sharp_differences` page.
 
@@ -261,11 +261,9 @@ For more information, see the :ref:`doc_c_sharp_differences` page.
 Current gotchas and known issues
 --------------------------------
 
-As C# support is quite new in Godot, there are some growing pains and things
+As C# support is quite new in Rebel Engine, there are some growing pains and things
 that need to be ironed out. Below is a list of the most important issues
-you should be aware of when diving into C# in Godot, but if in doubt, also
-take a look over the official
-`issue tracker for Mono issues <https://github.com/godotengine/godot/labels/topic%3Amono>`_.
+you should be aware of when diving into C# in Rebel Engine:
 
 - Writing editor plugins is possible, but it is currently quite convoluted.
 - State is currently not saved and restored when hot-reloading,
@@ -273,7 +271,7 @@ take a look over the official
 - Attached C# scripts should refer to a class that has a class name
   that matches the file name.
 - There are some methods such as ``Get()``/``Set()``, ``Call()``/``CallDeferred()``
-  and signal connection method ``Connect()`` that rely on Godot's ``snake_case`` API
+  and signal connection method ``Connect()`` that rely on Rebel Engine's ``snake_case`` API
   naming conventions.
   So when using e.g. ``CallDeferred("AddChild")``, ``AddChild`` will not work because
   the API is expecting the original ``snake_case`` version ``add_child``. However, you
@@ -283,20 +281,20 @@ take a look over the official
 Exporting Mono projects is supported for desktop platforms (Linux, Windows and
 macOS), Android, HTML5, and iOS. The only platform not supported yet is UWP.
 
-Performance of C# in Godot
---------------------------
+Performance of C# in Rebel Engine
+---------------------------------
 
 According to some preliminary `benchmarks <https://github.com/cart/godot3-bunnymark>`_,
-the performance of C# in Godot — while generally in the same order of magnitude
+the performance of C# in Rebel Engine — while generally in the same order of magnitude
 — is roughly **~4×** that of GDScript in some naive cases. C++ is still
 a little faster; the specifics are going to vary according to your use case.
 GDScript is likely fast enough for most general scripting workloads.
-C# is faster, but requires some expensive marshalling when talking to Godot.
+C# is faster, but requires some expensive marshalling when talking to Rebel Engine.
 
-Using NuGet packages in Godot
------------------------------
+Using NuGet packages in Rebel Engine
+------------------------------------
 
-`NuGet <https://www.nuget.org/>`_ packages can be installed and used with Godot,
+`NuGet <https://www.nuget.org/>`_ packages can be installed and used with Rebel Engine,
 as with any C# project. Many IDEs are able to add packages directly.
 They can also be added manually by adding the package reference in
 the ``.csproj`` file located in the project root:
@@ -310,7 +308,7 @@ the ``.csproj`` file located in the project root:
         ...
     </Project>
 
-As of Godot 3.2.3, Godot automatically downloads and sets up newly added NuGet
+Rebel Editor automatically downloads and sets up newly added NuGet
 packages the next time it builds the project.
 
 Profiling your C# code

@@ -6,7 +6,7 @@ Custom drawing in 2D
 Introduction
 ------------
 
-Godot has nodes to draw sprites, polygons, particles, and all sorts of
+Rebel Engine has nodes to draw sprites, polygons, particles, and all sorts of
 stuff. For most cases, this is enough; but not always. Before crying in fear,
 angst, and rage because a node to draw that specific *something* does not exist...
 it would be good to know that it is possible to easily make any 2D node (be it
@@ -141,8 +141,8 @@ call ``update()`` from the ``_process()`` callback, like this:
 An example: drawing circular arcs
 ----------------------------------
 
-We will now use the custom drawing functionality of the Godot Engine to draw
-something that Godot doesn't provide functions for. As an example, Godot provides
+We will now use the custom drawing functionality of the Rebel Engine to draw
+something that Rebel Engine doesn't provide functions for. As an example, Rebel Engine provides
 a ``draw_circle()`` function that draws a whole circle. However, what about drawing a
 portion of a circle? You will have to code a function to perform this and draw it yourself.
 
@@ -339,8 +339,8 @@ We also increment our angle_from and angle_to values here. However, we must not
 forget to ``wrap()`` the resulting values between 0 and 360°! That is, if the angle
 is 361°, then it is actually 1°. If you don't wrap these values, the script will
 work correctly, but the angle values will grow bigger and bigger over time until
-they reach the maximum integer value Godot can manage (``2^31 - 1``).
-When this happens, Godot may crash or produce unexpected behavior.
+they reach the maximum integer value Rebel Engine can manage (``2^31 - 1``).
+When this happens, Rebel Engine may crash or produce unexpected behavior.
 
 Finally, we must not forget to call the ``update()`` function, which automatically
 calls ``_draw()``. This way, you can control when you want to refresh the frame.
@@ -449,7 +449,7 @@ Let's run again! This time, the rotation displays fine!
 Antialiased drawing
 ^^^^^^^^^^^^^^^^^^^
 
-Godot offers method parameters in :ref:`draw_line<class_CanvasItem_method_draw_line>`
+Rebel Engine offers method parameters in :ref:`draw_line<class_CanvasItem_method_draw_line>`
 to enable antialiasing, but it doesn't work reliably in all situations
 (for instance, on mobile/web platforms, or when HDR is enabled).
 There is also no ``antialiased`` parameter available in

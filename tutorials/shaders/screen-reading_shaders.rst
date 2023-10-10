@@ -14,13 +14,13 @@ problems. As a result, not even the most modern hardware supports this
 properly.
 
 The workaround is to make a copy of the screen, or a part of the screen,
-to a back-buffer and then read from it while drawing. Godot provides a
+to a back-buffer and then read from it while drawing. Rebel Engine provides a
 few tools that make this process easy.
 
 SCREEN_TEXTURE built-in texture
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Godot :ref:`doc_shading_language` has a special texture, ``SCREEN_TEXTURE`` (and ``DEPTH_TEXTURE`` for depth, in the case of 3D).
+:ref:`doc_shading_language` has a special texture, ``SCREEN_TEXTURE`` (and ``DEPTH_TEXTURE`` for depth, in the case of 3D).
 It takes as argument the UV of the screen and returns a vec3 RGB with the color. A
 special built-in varying: SCREEN_UV can be used to obtain the UV for
 the current fragment. As a result, this simple canvas_item fragment shader:
@@ -33,7 +33,7 @@ the current fragment. As a result, this simple canvas_item fragment shader:
 
 results in an invisible object, because it just shows what lies behind.
 
-The reason why textureLod must be used is because, when Godot copies back
+The reason why textureLod must be used is because, when Rebel Engine copies back
 a chunk of the screen, it also does an efficient separatable gaussian blur to its mipmaps.
 
 This allows for not only reading from the screen, but reading from it with different amounts
@@ -121,7 +121,7 @@ Back-buffer logic
 ~~~~~~~~~~~~~~~~~
 
 So, to make it clearer, here's how the backbuffer copying logic works in
-Godot:
+Rebel Engine:
 
 -  If a node uses the ``SCREEN_TEXTURE``, the entire screen is copied to the
    back buffer before drawing that node. This only happens the first

@@ -30,9 +30,8 @@ Play the scene to view the simulation.
 Cloak simulation
 ~~~~~~~~~~~~~~~~
 
-Let's make a cloak in the Platformer3D demo.
-
-.. note:: You can download the Platformer3D demo on `GitHub <https://github.com/godotengine/godot-demo-projects/tree/master/3d/platformer>`_ or `the Asset Library <https://godotengine.org/asset-library/asset/125>`_.
+Let's make a cloak in the 3D Platformer demo:
+:download:`3D Plaformer <files/3d-platformer.zip>`
 
 Open the ``Player`` scene, add a ``SoftBody`` node and assign a ``PlaneMesh`` to it.
 
