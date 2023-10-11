@@ -18,7 +18,7 @@ Pull Requests should be made against the `main` branch by default. Only make Pul
 
 To edit an existing page, locate its `.rst` source file and open it in your favorite text editor. You can then commit the changes, push them to your fork and make a pull request.
 
-Pages in the `classes/` folder should not be edited here. They are automatically generated from Rebel Engine's [XML class references](https://github.com/RebelToolbox/RebelEngine/tree/main/doc/classes). See [Contribute to the Class Reference](https://docs.rebeltoolbox.com/en/latest/community/contributing/updating_the_class_reference.html) for details.
+Pages in the `classes/` folder should not be edited here. They are automatically generated from Rebel Engine's [XML class references](https://github.com/RebelToolbox/RebelEngine/tree/main/doc/classes). See [Contribute to the Class Reference](https://docs.rebeltoolbox.com/en/latest/contributing/updating_the_class_reference.html) for details.
 
 ### Adding new pages
 
