@@ -1,124 +1,107 @@
-# Rebel Documentation
+<p align="center">
+  <img src="rebel-documentation.png" alt="Rebel Documentation"/>
+</p>
 
-This repository contains the [Rebel Engine](https://github.com/RebelToolbox/RebelEngine) documentation.
+[![Documentation Status](https://readthedocs.org/projects/rebel-documentation/badge/?version=latest)](https://docs.rebeltoolbox.com/en/latest/?badge=latest)
 
-The documentation uses the [reStructuredText](https://docutils.sourceforge.io/rst.html) (reST) format. The reST files are parsed with the [Sphinx](https://www.sphinx-doc.org/) documentation builder to build the HTML documentation on the Rebel Toolbox website: https://docs.rebeltoolbox.com.
+This repository contains the source documents for the [Rebel Toolbox](https://rebeltoolbox.com) and [Rebel Engine](https://github.com/RebelToolbox/RebelEngine) user documentation: https://docs.rebeltoolbox.com.
 
-## Style
-
-The Rebel documentation uses the default ``sphinx_rtd_theme`` with additional [customizations](_static/). It will automatically switch between the light and dark theme depending on your browser/OS' theme preference.
+The documentation uses the [reStructuredText](https://docutils.sourceforge.io/rst.html) (reST) file format.
+The Rebel Documentation website is generated using [Sphinx](https://www.sphinx-doc.org/),
+which uses [Docutils](https://docutils.sourceforge.io/) to convert the reST files to html.
 
 ## Contributing changes
 
-Though arguably less convenient to edit than a wiki, using a Git repository provides authors with direct access to the documentation files in a revision control system. This enables everyone to discuss, add to and improve the documentation in an open collaborative way that helps ensure the on-going quality of the documentation.
+Updates to the documentation can be made here, directly on Github.
+Contributions are submitted via [Pull Requests](https://docs.github.com/en/pull-requests).
+To learn more about making Pull Requests, please refer to the [Github documentation](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
+If you plan on making significant contributions to Rebel Documentation,
+you will want to learn how to use Git.
+For good tutorials on using Git, try the [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials).
 
-Pull Requests should be made against the `main` branch by default. Only make Pull Requests against other branches if the changes only apply to that specific version of Rebel Engine.
+The Rebel Engine API documentation files are included under the `classes` folder.
+They are automatically generated from Rebel Engine's [XML class references](https://github.com/RebelToolbox/RebelEngine/tree/main/doc/classes).
+These are maintained in [Rebel Engine](https://github.com/RebelToolbox/RebelEngine) under the `doc` folder.
+Please make updates and Pull Requests to the API documenation there.
+See the [Contributing to the Class Reference](https://docs.rebeltoolbox.com/en/latest/contributing/updating_the_class_reference.html) documentation for more information.
 
-### Editing existing pages
+To edit an existing page, simply locate and edit its `.rst` file.
+The file can be edited directly here on Github or you can edit it in your favorite text editor.
+For an introduction to the `.rst` file format, refer to the Sphinx [reStructuredText Primer](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html).
+For more information on how Sphinx extends reStructuredText, refer to the [Using Sphinx documentation](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html).
+For more information on reStructuredText, refer to the Docutils' [reStructuredText documentation](https://docutils.sourceforge.io/rst.html).
 
-To edit an existing page, locate its `.rst` source file and open it in your favorite text editor. You can then commit the changes, push them to your fork and make a pull request.
+To add a new page, create a `.rst` file with a meaningful name in the section you want to add the documentation e.g. `tutorials/3d/light_baking.rst`.
+The documentation is divided into sections defined by the folder structure.
+Add the new page to the section's table of contents file e.g. `tutorials/3d/index.rst`.
+Under the `.. toctree::` directive, include the filename without the extension.
 
-Pages in the `classes/` folder should not be edited here. They are automatically generated from Rebel Engine's [XML class references](https://github.com/RebelToolbox/RebelEngine/tree/main/doc/classes). See [Contribute to the Class Reference](https://docs.rebeltoolbox.com/en/latest/contributing/updating_the_class_reference.html) for details.
-
-### Adding new pages
-
-To add a new page, create a `.rst` file with a meaningful name in the section you want to add a file to, e.g. `tutorials/3d/light_baking.rst`. Use your favorite text editor to create the content.
-
-Add a reference name for Sphinx at the beginning of the file. Check other files for the syntax, which should be based on the file name with a `_doc_` prefix (e.g. `.. _doc_light_baking:`).
-
-Add your page to the relevant table of contents file e.g. `tutorials/3d/index.rst`. By convention, the files used to define the various levels of table of contents are prefixed with an underscore. So, in the above example, the file should be referenced in `tutorials/3d/_3d_graphics.rst`. Add your new filename to the list on a new line, using a relative path and no extension, e.g. `light_baking`.
-
-### Sphinx and reStructuredText syntax
-
-Check Sphinx's [reST Primer](https://www.sphinx-doc.org/en/stable/rest.html) and the [official reference](http://docutils.sourceforge.net/rst.html) for details on the syntax.
-
-Sphinx uses specific reST comments to do specific operations, like defining the table of contents (`:toctree:`) or cross-referencing pages. Check the [official Sphinx documentation](https://www.sphinx-doc.org/en/stable/index.html) for more details, or see how things are done in existing pages and adapt it to your needs.
-
-### Adding images and attachments
-
-To add images, please put them in an `img/` folder next to the .rst file with a meaningful name and include them in your page with:
+To add an image to a page, place the image in the `img` folder in the folder that contains the page.
+Use a meaningful name, and reference the image in the page with:
 ```rst
-.. image:: img/image_name.png
+.. image:: img/light_baking_result.png
 ```
 
-Similarly, you can include attachments (like assets as support material for a tutorial) by placing them into a `files/` folder next to the .rst file, and using this inline markup:
+To add a downloadable file to a page, place the file in the `files` folder in the folder that contains the page.
+Use a meaningful name, and reference the file in the page with:
 ```rst
-:download:`myfilename.zip <files/myfilename.zip>`
+:download:`Light Baking Project <files/light-backing-project.zip>`
 ```
 
-## Building with Sphinx
+## Building the documentation with Sphinx
 
-To build the HTML website (or any other format supported by Sphinx, like PDF, EPUB or LaTeX), you need to install [Sphinx](https://www.sphinx-doc.org/) >= 1.3 as well as (for the HTML) the [readthedocs.org theme](https://github.com/snide/sphinx_rtd_theme). You also need to install the Sphinx extensions defined in `requirements.txt`.
+To test significant changes before creating a Pull Request, you can build a local copy of the Rebel Documentation website.
+To do this, you will need a local copy of the Rebel Documentation.
 
-Those tools are best installed using [pip](https://pip.pypa.io), Python's module installer. The Python 3 version might be provided (on Linux distros) as `pip3` or `python3-pip`. You can then run:
+Building the documentation requires Python.
+For more information on installing Python, refer to the [Python documentation](https://www.python.org/downloads/). 
 
+It is recommended that you build the documentation inside a virtual Python environment.
+Keep your Python virtual environments separate from your local copy of the Rebel Documentation.
+Create a virtual environment called `env` in your separate virtual environments folder,
+and activate it.
+
+On Linux or Mac run:
+```sh
+virtualenv env
+source env/bin/activate
+```
+On Windows run:
+```sh
+virtualenv env
+.\env\Scripts\activate
+```
+For more information on installing and using `virtualenv`, refer to the [virtualenv documentation](https://virtualenv.pypa.io/en/latest/index.html).
+
+Install the required software.
+From a command prompt inside the folder containing your local copy of the Rebel Documentation, run:
 ```sh
 pip install -r requirements.txt
 ```
 
-You can then build the HTML documentation from the root folder of this repository with:
+Build the html documentation.
 
+On Linux or Mac run:
 ```sh
 make html
 ```
-
-or:
-
+On Windows run:
 ```sh
-make SPHINXBUILD=~/.local/bin/sphinx-build html
+.\make.bat html
 ```
 
-Building the documentation requires at least 8 GB of RAM to be done without swapping. If you have at least 16 GB of RAM, you can speed up compilation by using:
+You can view your changes by opening `_build/html/index.html` in your favorite browser.
 
-```bash
-make html SPHINXOPTS=-j2
-```
+The compilation can be slow and might take a long time.
+It might even fail with a `MemoryError` or an `EOFError` error.
+The Rebel Engine API in the `classes` folder contains a lot of files.
+To fix or speed up the build, remove the `classes` folder and run `make html` again.
+**Note:** If you have created your local copy of the Rebel Documentation using `git clone`,
+don't use `git add .`, because it will delete the Rebel Engine API documentation.
 
-The compilation might take some time as the `classes/` folder contains many files to parse.
-
-In case of a `MemoryError` or `EOFError`, you can remove the `classes/` folder and run `make` again. This will drop the class references from the final HTML documentation but will keep the rest intact. Make sure to avoid using `git add .` in this case when working on a pull request, or the whole `classes/` folder will be removed when you make a commit.
-
-You can then test the changes live by opening `_build/html/index.html` in your favorite browser.
-
-### Building with Sphinx on Windows
-
-On Windows, you need to:
-* Download the Python installer [here](https://www.python.org/downloads/).
-* Install Python. Don't forget to check the "Add Python to PATH" box.
-* Use the above `pip` commands.
-
-Building is still done at the root folder of this repository using the provided `make.bat`:
-```sh
-make.bat html
-```
-
-Alternatively, you can build with this command instead:
-```sh
-sphinx-build -b html ./ _build
-```
-
-Note that during the first build, various installation prompts may appear and ask to install LaTeX plugins.
-Make sure you don't miss them, especially if they open behind other windows, else the build may appear to hang until you confirm these prompts.
-
-You could also install a normal `make` toolchain (for example via MinGW) and build the docs using the normal `make html`.
-
-### Building with Sphinx and virtualenv
-
-If you want your Sphinx installation scoped to the project, you can install it using virtualenv.
-Execute this from the root folder of this repository:
-
-```sh
-virtualenv --system-site-packages env/
-. env/bin/activate
-pip install -r requirements.txt
-```
-
-Then do `make html` like above.
 
 ## License
 
-With the exception of the `classes/` folder, all the content in this repository is licensed under the Creative Commons Attribution 4.0 International Public License ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)). Attribution should be made to the Rebel Documentation Contributors and/or the specific author.
+With the exception of the `classes` folder, all the content in this repository is licensed under the Creative Commons Attribution 4.0 International Public License ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)). Attribution should be made to the Rebel Documentation Contributors and/or the specific author.
 
-The files in the `classes/` folder are derived from [Rebel Engine](https://github.com/RebelToolbox/RebelEngine) and are distributed under the MIT license.
-
-[![Documentation Status](https://readthedocs.org/projects/rebel-documentation/badge/?version=latest)](https://docs.rebeltoolbox.com/en/latest/?badge=latest)
+The files in the `classes` folder are derived from [Rebel Engine](https://github.com/RebelToolbox/RebelEngine) and are distributed under the MIT license.
