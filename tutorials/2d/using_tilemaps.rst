@@ -247,7 +247,7 @@ arrangement that this mode can test for.
 
 This template can be used for sideways or fully top-down perspectives.
 All templates below are designed for a TileMap cell size of 64x64, but you may
-have to use different subtile sizes for top-down templates as described below.
+have to use different sub-tile sizes for top-down templates as described below.
 
 Key:
 
@@ -289,7 +289,7 @@ Key (applies to the four templates below):
 
 **Template - Top-down wall in 3/4 perspective (thick walls):**
 
-When using this template, set the TileSet subtile size to ``Vector2(64, 88)``.
+When using this template, set the TileSet sub-tile size to ``Vector2(64, 88)``.
 
 .. image:: img/autotile_template_3x3_minimal_topdown_walls_thick.png
 
