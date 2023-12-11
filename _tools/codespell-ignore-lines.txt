@@ -1,3 +1,2 @@
-| ro           | Romanian                           |
 | te           | Telugu                             |
 .. image:: img/expres.png

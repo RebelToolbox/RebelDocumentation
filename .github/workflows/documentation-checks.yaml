@@ -1,0 +1,70 @@
+name: Documentation Checks
+on:
+  push:
+  pull_request:
+
+jobs:
+  check-documentation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          #Install dependencies
+          sudo apt-get update
+          sudo apt-get install -y \
+          recode                  \
+          dos2unix                \
+          codespell
+
+      - name: File formatting checks (file-format.sh)
+        run: |
+          bash _tools/file-format.sh
+
+      - name: Spelling checks (codespell)
+        run: |
+          codespell                                                           \
+          -I _tools/codespell-ignore-words.txt                                \
+          -x _tools/codespell-ignore-lines.txt                                \
+          {about,contributing,development,getting_started,tutorials}/**/*.rst
+
+      - name: Create patch file
+        if: failure()
+        run: |
+          git diff > documentation.patch
+
+      - name: Upload patch file
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: documentation-patch
+          path: |
+            documentation.patch
+
+  build-documentation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          #Install dependencies
+          sudo apt-get update
+          sudo apt-get install -y \
+          python3-virtualenv
+
+      - name: Configure Sphinx environment
+        run: |
+          #Configure Sphinx environment
+          virtualenv env
+          source env/bin/activate
+          pip install -r requirements.txt
+
+      - name: Sphinx dummy build
+        run: |
+          #Build dummy documentation
+          source env/bin/activate
+          make dummy
