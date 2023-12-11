@@ -100,7 +100,7 @@ creates the package. There are 3 different modes for exporting:
 -  Export selected scenes (and dependencies)
 -  Export selected resources (and dependencies)
 
-.. image:: img/expres.png
+.. image:: img/export-resources.png
 
 **Export all resources in the project** will export every resource in the
 project. **Export selected scenes** and **Export selected resources** gives
