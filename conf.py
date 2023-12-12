@@ -14,9 +14,10 @@
 #   8.2 Sphinx not found page extension
 #   8.3 Sphinx opengraph extension
 
+import logging
+import os
 import sphinx_rtd_theme
 import sys
-import os
 
 
 # 1. Project information
@@ -193,7 +194,12 @@ notfound_context = {
     """,
 }
 
+
 # 8.3 Sphinx opengraph extension
 # https://github.com/wpilibsuite/sphinxext-opengraph
 
-ogp_site_name = "Rebel Toolbox Documentation"
+# Disable matplotlib's font manager logging.
+# Prevents `findfont: Font family 'Roboto' not found.` messages.
+# https://github.com/wpilibsuite/sphinxext-opengraph/issues/115
+logging.getLogger("matplotlib.font_manager").disabled = True
+ogp_site_url = "https://docs.rebeltoolbox.com"
