@@ -9,7 +9,7 @@ rm -f tmp-unused-images-history
 # Exceptions are ignored, and for .svg files we also look for potential .png
 # files with the same base name, as they might be sources.
 
-exceptions="rebel-logo.png tween_cheatsheet.png"
+exceptions="rebel-documentation-logo.png tween_cheatsheet.png"
 
 files=$(find -name "_build" -prune -o \( -name "*.png" -o -name "*.jpg" -o -name "*.svg" -o -name "*.gif" \) -print | sort)
 

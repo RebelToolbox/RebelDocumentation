@@ -120,7 +120,8 @@ html_context = {
     "title_prefix": "",
 }
 
-html_logo = "img/rebel-logo.png"
+html_logo = "_static/rebel-documentation-logo.png"
+html_favicon = "_static/favicon.ico"
 
 html_css_files = [
     "css/custom.css",
