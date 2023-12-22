@@ -25,8 +25,9 @@ These are maintained in [Rebel Engine](https://github.com/RebelToolbox/RebelEngi
 Please make updates and Pull Requests to the API documenation there.
 See the [Contributing to the Class Reference](https://docs.rebeltoolbox.com/en/latest/contributing/updating_the_class_reference.html) documentation for more information.
 
-To edit an existing page, simply locate and edit its `.rst` file.
-The file can be edited directly here on Github or you can edit it in your favorite text editor.
+To edit an existing page, simply click on the "Edit on GitHub" link in the top, right-hand corner of the page.
+There, the file can be edited directly on Github.
+Alternatively, if you've Git cloned the documentation, you can locate the `.rst` document in the folder structure and edit it in your favorite text editor.
 For an introduction to the `.rst` file format, refer to the Sphinx [reStructuredText Primer](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html).
 For more information on how Sphinx extends reStructuredText, refer to the [Using Sphinx documentation](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html).
 For more information on reStructuredText, refer to the Docutils' [reStructuredText documentation](https://docutils.sourceforge.io/rst.html).
@@ -91,14 +92,6 @@ On Windows run:
 ```
 
 You can view your changes by opening `_build/html/index.html` in your favorite browser.
-
-The compilation can be slow and might take a long time.
-It might even fail with a `MemoryError` or an `EOFError` error.
-The Rebel Engine API in the `classes` folder contains a lot of files.
-To fix or speed up the build, remove the `classes` folder and run `make html` again.
-**Note:** If you have created your local copy of the Rebel Documentation using `git clone`,
-don't use `git add .`, because it will delete the Rebel Engine API documentation.
-
 
 ## License
 
