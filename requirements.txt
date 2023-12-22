@@ -1,16 +1,23 @@
-# Base dependencies
+# Rebel Documentation Sphinx build requirements
 
-# Sync with readthedocs:
-# https://github.com/readthedocs/readthedocs.org/blob/master/requirements/pip.txt
-# https://github.com/readthedocs/readthedocs.org/blob/master/requirements/docs.txt
-sphinx==4.4.0
-sphinx_rtd_theme==1.0.0
+sphinx==7.2.6
 
-# Code tabs extension for GDScript/C#
-sphinx-tabs==3.3.1
+# Sphinx Read the Docs Theme
+# https://pypi.org/project/sphinx-rtd-theme/
+sphinx_rtd_theme==2.0.0
 
-# Custom 404 error page (more useful than the default)
-sphinx-notfound-page==0.8.3
+# Sphinx tabs
+# https://pypi.org/project/sphinx-tabs/
+sphinx-tabs==3.4.4
 
-# Adds Open Graph tags in the HTML `<head>` tag
-sphinxext-opengraph==0.6.3
+# Sphinx not found page extension
+# https://pypi.org/project/sphinx-notfound-page/
+sphinx-notfound-page==1.0.0
+
+# Sphinx opengraph extension
+# https://pypi.org/project/sphinxext-opengraph/
+sphinxext-opengraph==0.9.0
+
+# Matplotlib
+# https://pypi.org/project/matplotlib/
+matplotlib==3.8.2
