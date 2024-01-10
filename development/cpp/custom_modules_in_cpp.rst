@@ -432,31 +432,21 @@ kind to your future self!
 
 There are several steps in order to setup custom docs for the module:
 
-1. Make a new directory in the root of the module. The directory name can be
-   anything, but we'll be using the ``doc_classes`` name throughout this section.
+1. Create a ``docs`` folder in the root of the module.
 
 2. Now, we need to edit ``config.py``, add the following snippet:
 
    .. code-block:: python
 
-        def get_doc_path():
-            return "doc_classes"
-
-        def get_doc_classes():
+        def get_classes():
             return [
                 "Summator",
             ]
 
-The ``get_doc_path()`` function is used by the build system to determine
-the location of the docs. In this case, they will be located in the
-``modules/summator/doc_classes`` directory. If you don't define this,
-the doc path for your module will fall back to the main ``doc/classes``
-directory.
-
-The ``get_doc_classes()`` method is necessary for the build system to
+The ``get_classes()`` method is necessary for the build system to
 know which registered classes belong to the module. You need to list all of your
 classes here. The classes that you don't list will end up in the
-main ``doc/classes`` directory.
+main ``docs`` directory.
 
 .. tip::
 
@@ -470,32 +460,29 @@ main ``doc/classes`` directory.
         Untracked files:
             (use "git add <file>..." to include in what will be committed)
 
-            doc/classes/MyClass2D.xml
-            doc/classes/MyClass4D.xml
-            doc/classes/MyClass5D.xml
-            doc/classes/MyClass6D.xml
+            docs/MyClass2D.xml
+            docs/MyClass4D.xml
+            docs/MyClass5D.xml
+            docs/MyClass6D.xml
             ...
 
 
 3. Now we can generate the documentation:
 
-We can do this via running Rebel Engine's doctool i.e. ``rebel* --doctool <path>``,
-which will dump the engine API reference to the given ``<path>`` in XML format.
-
-In our case we'll point it to the root of the cloned repository. You can point it
-to an another folder, and just copy over the files that you need.
+We can do this via running Rebel Engine with the --generate-docs option,
+which will generate the Rebel Engine API reference in XML format.
 
 Run command:
 
    ::
 
-      user@host:~/RebelEngine/bin$ ./bin/<rebel_binary> --doctool .
+      user@host:~/RebelEngine/bin$ ./bin/<rebel_binary> --generate-docs .
 
-Now if you go to the ``RebelEngine/modules/summator/doc_classes`` folder, you will see
-that it contains a ``Summator.xml`` file, or any other classes, that you referenced
-in your ``get_doc_classes`` function.
+Now if you go to the ``RebelEngine/modules/summator/docs`` folder, you will see
+that it contains a ``Summator.xml`` file, or any other classes that you referenced
+in your ``get_classes`` function.
 
-Edit the file(s) following :ref:`doc_updating_the_class_reference` and recompile the engine.
+Edit the file(s) following :ref:`doc_updating_the_api_documentation` and recompile the engine.
 
 Once the compilation process is finished, the docs will become accessible within
 the engine's built-in documentation system.
@@ -507,15 +494,6 @@ If you change your module's API, you can also re-extract the docs, they will con
 the things that you previously added. Of course if you point it to your Rebel Engine
 folder, make sure you don't lose work by extracting older docs from an older engine build
 on top of the newer ones.
-
-Note that if you don't have write access rights to your supplied ``<path>``,
-you might encounter an error similar to the following:
-
-.. code-block:: console
-
-    ERROR: Can't write doc file: docs/doc/classes/@GDScript.xml
-       At: editor/doc/doc_data.cpp:956
-
 
 .. _doc_custom_module_icons:
 
@@ -530,21 +508,12 @@ please refer to :ref:`doc_editor_icons` first.
 
 Once you've created your icon(s), proceed with the following steps:
 
-1. Make a new directory in the root of the module named ``icons``. This is the
-   default path for the engine to look for module's editor icons.
+1. Create an ``icons`` folder in the root of the module.
 
 2. Move your newly created ``svg`` icons (optimized or not) into that folder.
 
 3. Recompile the engine and run the editor. Now the icon(s) will appear in
    editor's interface where appropriate.
-
-If you'd like to store your icons somewhere else within your module,
-add the following code snippet to ``config.py`` to override the default path:
-
-   .. code-block:: python
-
-       def get_icons_path():
-           return "path/to/icons"
 
 Summing up
 ----------

@@ -203,6 +203,6 @@ Expression class, even if no base instance is bound to the expression.
 The same parameters and return types are available.
 
 However, unlike GDScript, parameters are **always required** even if they're
-specified as being optional in the class reference. In contrast, this
+specified as being optional in the API documentation. In contrast, this
 restriction on arguments doesn't apply to user-made functions when you bind a
 base instance to the expression.

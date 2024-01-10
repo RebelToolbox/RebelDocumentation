@@ -1,7 +1,7 @@
-.. _doc_html5_shell_classref:
+.. _doc_html5_shell_api:
 
-HTML5 shell class reference
-===========================
+HTML5 shell API
+===============
 
 Projects exported for the Web expose the :js:class:`Engine` class to the JavaScript environment, that allows
 fine control over the engine's start-up process.

@@ -1,7 +1,7 @@
-.. _doc_updating_the_class_reference:
+.. _doc_updating_the_api_documentation:
 
-Contributing to the class reference
-===================================
+Contributing to the API Documentation
+=====================================
 
 .. highlight:: shell
 
@@ -14,7 +14,7 @@ the entire reference on their own. Rebel Toolbox needs you, and all of us, to
 contribute.
 
 **Important:** If you plan to make large changes, you should create an issue on
-the `Rebel Documenation repository <https://github.com/RebelToolbox/RebelDocumentation>`_
+the `Rebel Documentation repository <https://github.com/RebelToolbox/RebelDocumentation>`_
 or comment on an existing issue. Doing so lets others know you're already
 taking care of a given class.
 

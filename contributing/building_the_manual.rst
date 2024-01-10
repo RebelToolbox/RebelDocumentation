@@ -9,11 +9,11 @@ documentation as a PDF, EPUB, or LaTeX file, for example.
 
 To get started, you need to:
 
-1. Clone the `Rebel Documenation repository <https://github.com/RebelToolbox/RebelDocumentation>`__.
+1. Clone the `Rebel Documentation repository <https://github.com/RebelToolbox/RebelDocumentation>`__.
 2. Install `Sphinx <https://www.sphinx-doc.org/>`__
 3. To build the docs as HTML files, install the `readthedocs.org theme
    <https://github.com/snide/sphinx_rtd_theme>`__.
-4. Install the Sphinx extensions defined in the `Rebel Documenation repository
+4. Install the Sphinx extensions defined in the `Rebel Documentation repository
    <https://github.com/RebelToolbox/RebelDocumentation>`__ ``requirements.txt`` file.
 
 We recommend using `pip <https://pip.pypa.io>`__, Python’s package manager to
@@ -59,18 +59,18 @@ up compilation by running:
     # On Windows
     set SPHINXOPTS=-j2 && make html
 
-The compilation will take some time as the ``classes/`` folder contains hundreds
+The compilation will take some time as the ``api/`` folder contains hundreds
 of files.
 
 You can then browse the documentation by opening ``_build/html/index.html`` in
 your web browser.
 
 In case you of a ``MemoryError`` or ``EOFError``, you can remove the
-``classes/`` folder and run ``make`` again. This will drop the class references
+``api/`` folder and run ``make`` again. This will drop the API documentation
 from the final HTML documentation but will keep the rest intact.
 
-.. note:: If you delete the ``classes/`` folder, do not use ``git add .`` when
-          working on a pull request or the whole ``classes/`` folder will be
+.. note:: If you delete the ``api/`` folder, do not use ``git add .`` when
+          working on a pull request or the whole ``api/`` folder will be
           removed when you commit.
 
 Alternatively, you can build the documentation by running the sphinx-build
@@ -84,7 +84,7 @@ You can also specify a list of files to build, which can greatly speed up compil
 
 .. code:: sh
 
-  sphinx-build -b html ./ _build classes/class_node.rst classes/class_resource.rst
+  sphinx-build -b html ./ _build api/class_node.rst api/class_resource.rst
 
 Building with Sphinx and virtualenv
 -----------------------------------

@@ -27,7 +27,7 @@ You can get answers below.
 Writing documentation
 ---------------------
 
-We always need help to improve the documentation, be it the class reference or the manual.
+We always need help to improve the documentation, be it the API documentation or the manual.
 Below, you can find our content and writing guidelines and concrete guides to make changes to the documentation.
 
 Guidelines
@@ -53,20 +53,20 @@ Writing the manual
    contributing_to_the_documentation
    building_the_manual
 
-Class reference guides
-~~~~~~~~~~~~~~~~~~~~~~
+API Documentation
+~~~~~~~~~~~~~~~~~
 
-The pages below focus on the class reference.
+The pages below focus on the API documentation.
 
 As the reference is included in the Rebel Engine editor, its source files are part of the `Rebel Engine repository <https://github.com/RebelToolbox/RebelEngine>`_.
-We use XML files to write it, so the process to contribute to the class reference differs from writing the online manual.
+We use XML files to write it, so the process to contribute to the API documentation differs from writing the online manual.
 
 .. toctree::
    :maxdepth: 1
-   :name: toc-class-reference
+   :name: toc-api-documentation
 
-   updating_the_class_reference
-   class_reference_writing_guidelines
+   updating_the_api_documentation
+   api_writing_guidelines
 
 .. _doc_contributing_to_the_engine:
 

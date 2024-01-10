@@ -6,7 +6,7 @@ Docs writing guidelines
 The Rebel Toolbox community is rich and international. Users come from all
 around the world. Some of them are young, and many aren't native English
 speakers. That's why we must all write using a clear and a common
-language. For the class reference, the goal is to make it easy to read
+language. For the API documentation, the goal is to make it easy to read
 for everyone and precise.
 
 In summary, always try to:
@@ -447,7 +447,7 @@ Also, surround boolean values, variable names and methods with ``[code][/code]``
 Use ``[code]`` around arguments
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the class reference, always surround arguments with ``[code][/code]``. In the
+In the API documentation, always surround arguments with ``[code][/code]``. In the
 documentation and in Rebel Engine, it will display like ``this``. When you edit XML
 files in the Rebel Engine repository, replace existing arguments written like 'this' or
 \`this\` with ``[code]this[/code]``.

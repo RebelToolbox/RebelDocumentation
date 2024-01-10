@@ -94,7 +94,7 @@ item in a type ``LineEdit``.
 The default Rebel Theme comes with multiple theme types already defined,
 one for every built-in control node that uses UI skinning. The example above
 contains actual theme items present in the default theme. You can refer to the
-**Theme Properties** section in the class reference for each control to see
+**Theme Properties** section in the API documentation for each control to see
 which items are available to it and its child classes.
 
 .. note::

@@ -6,7 +6,7 @@ Object class
 .. seealso::
 
     This page describes the C++ implementation of objects in Rebel Engine.
-    Looking for the Object class reference? :ref:`Have a look here. <class_Object>`
+    Looking for the class' API documentation? :ref:`Have a look here. <class_Object>`
 
 General definition
 ------------------

@@ -913,7 +913,7 @@ kbd.compound > .kbd,
 
 .wy-menu-vertical li.current a {
     /* Make long words always display on a single line, keep wrapping for multiple words */
-    /* This fixes the class reference titles' display with very long class names */
+    /* This fixes the display of very long class names in the API documentation */
     display: flex;
 }
 

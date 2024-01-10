@@ -31,7 +31,7 @@ positive to the engine, regardless of their skill set:
 -  **Get involved in the engine's development.** This can be by contributing
    code via pull requests, testing the development snapshots or directly the
    git *master* branch, report bugs or suggest enhancements on the issue
-   tracker, improve the official documentation (both the class reference and
+   tracker, improve the official documentation (both the API documentation and
    tutorials) and its translations.
    The following sections will cover each of those "direct" ways
    of contributing to the engine.
@@ -180,17 +180,17 @@ Contributing to the documentation
 
 There are two separate resources referred to as "documentation" in Rebel Documentation:
 
-- **The class reference.** This is the documentation for the complete Rebel Engine API
+- **The API documentation.** This is the documentation for the complete Rebel Engine API
   as exposed to GDScript and the other scripting languages. It can be consulted
-  offline, directly in Rebel Engine's code editor, or online at :ref:`Rebel Engine API <toc-class-ref>`.
-  To contribute to the class reference, you have to edit the
+  offline, directly in Rebel Engine's code editor, or online at :ref:`Rebel Engine API <toc-api>`.
+  To contribute to the API documentation, you have to edit the
   XML file corresponding to the class and make a pull request.
-  See :ref:`doc_updating_the_class_reference` and
-  :ref:`doc_class_reference_writing_guidelines` for more details.
+  See :ref:`doc_updating_the_api_documentation` and
+  :ref:`doc_api_writing_guidelines` for more details.
 
 - **The tutorials and engine documentation and its translations.**
   This is the part you are reading now, which is distributed in the HTML format.
   Its contents are generated from plain text files in the reStructured Text
   (rst) format, to which you can contribute via pull requests on the
-  `Rebel Documenation <https://github.com/RebelToolbox/RebelDocumentation>`_ GitHub repository.
+  `Rebel Documentation <https://github.com/RebelToolbox/RebelDocumentation>`_ GitHub repository.
   See :ref:`doc_contributing_to_the_documentation` for more details.

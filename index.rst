@@ -14,7 +14,7 @@ in the top left corner.
 
 .. note:: Rebel Engine is an open source project developed by a community of
           volunteers. The documentation team can always use your
-          feedback and help to improve the tutorials and class reference. If
+          feedback and help to improve the tutorials and API documentation. If
           you don't understand something, or cannot find what you
           are looking for in the docs, help us make the documentation better
           by letting us know!
@@ -95,10 +95,10 @@ The main documentation for the site is organized into the following sections:
 
 .. toctree::
    :maxdepth: 1
-   :caption: Class reference
-   :name: sec-class-ref
+   :caption: API Documentation
+   :name: sec-api
 
-   classes/index
+   api/index
 
 
 .. Indices and tables
