@@ -103,7 +103,7 @@ This can be used to control the amount of logging, especially the room conversio
 Debug Sprawl
 ^^^^^^^^^^^^
 
-This mode will only display meshes that are sprawling through portals from the current camera room. Large statics that cross portals are usually the ones you want to sprawl. Typical examples might be terrain mesh areas, or large floor or ceiling meshes. You usually don't want things like door frames to sprawl to the adjacent room - that is what fine tuning the **Portal Margin** is for.
+This mode will only display meshes that are sprawling through portals from the current camera room. Large static meshes that cross portals are usually the ones you want to sprawl. Typical examples might be terrain mesh areas, or large floor or ceiling meshes. You usually don't want things like door frames to sprawl to the adjacent room - that is what fine tuning the **Portal Margin** is for.
 
 Merge Meshes
 ^^^^^^^^^^^^

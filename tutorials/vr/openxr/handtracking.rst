@@ -26,7 +26,7 @@ Image courtesy of Khronos OpenXR specification.
 
 The hand tracking API is independent of the action system and doesn't make use of it's poses. Hand tracking data is provided internally in global space (relative to the tracking volumes origin point) and the hand tracking nodes should thus have the :ref:`ARVROrigin <class_ARVROrigin>` node as their parent, not a :ref:`ARVRController <class_ARVRController>` node.
 
-The plugin exposes the hand tracking API as two seperate systems. One that updates positions of a tree of nodes and one that updates bones of a :ref:`Skeleton <class_Skeleton>` so mesh deformation can be used.
+The plugin exposes the hand tracking API as two separate systems. One that updates positions of a tree of nodes and one that updates bones of a :ref:`Skeleton <class_Skeleton>` so mesh deformation can be used.
 
 Node based hand tracking
 ------------------------
@@ -42,7 +42,7 @@ At the root of this scene is a :ref:`Spatial <class_Spatial>` node that has `con
 There are two properties here:
 
 * `Hand` identifies whether we are tracking the position of the left or right hand. 
-* `Motion Range` is only available on SteamVR and limits how far the hand can close, this is only used in conjunction with infered hand tracking based on controller input.
+* `Motion Range` is only available on SteamVR and limits how far the hand can close, this is only used in conjunction with inferred hand tracking based on controller input.
 
 Our spatial node needs a number of child nodes with hardcoded names that will be updated by our hand tracking system. The type of nodes is not important, our example script uses :ref:`MeshInstance <class_MeshInstance>` nodes to also visualise the bones. 
 

@@ -182,7 +182,7 @@ shader, this value can be used as desired.
 
 .. note::
 
-    ``MODELVIEW_MATRIX`` combines both the ``WORLD_MATRIX`` and ``INV_CAMERA_MATRIX`` and is better suited when floating point issues may arise. For example, if the object is very far away from the world origin, you may run into floating point issues when using the seperated ``WORLD_MATRIX`` and ``INV_CAMERA_MATRIX``.
+    ``MODELVIEW_MATRIX`` combines both the ``WORLD_MATRIX`` and ``INV_CAMERA_MATRIX`` and is better suited when floating point issues may arise. For example, if the object is very far away from the world origin, you may run into floating point issues when using the separated ``WORLD_MATRIX`` and ``INV_CAMERA_MATRIX``.
 
 Fragment built-ins
 ^^^^^^^^^^^^^^^^^^
