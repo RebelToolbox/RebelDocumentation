@@ -1,1 +1,2 @@
 | te           | Telugu                             |
+- :ref:`int<class_int>` **findn** **(** :ref:`String<class_String>` what, :ref:`int<class_int>` from=0 **)**
