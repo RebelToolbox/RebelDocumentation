@@ -110,7 +110,7 @@ There are several ways to handle "controller" input:
 
 - Using the :ref:`select<class_WebXRInterface_signal_select>`, :ref:`squeeze<class_WebXRInterface_signal_squeeze>` and related signals. This method will work for both advanced VR controllers, and non-traditional "controllers" like a tap on the screen, a spoken voice command or a button press on the device itself. The ``controller_id`` passed to these signals is the same id as used in :ref:`ARVRController.controller_id<class_ARVRController_property_controller_id>`.
 
-You can use one or all of these methods to allow your game or app to support a wider or narrower set of devices and input methods, or to allow more advanced interations with more advanced devices.
+You can use one or all of these methods to allow your game or app to support a wider or narrower set of devices and input methods, or to allow more advanced interactions with more advanced devices.
 
 Properties
 ----------

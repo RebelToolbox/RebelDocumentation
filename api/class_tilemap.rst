@@ -536,7 +536,7 @@ Returns the tile index of the given cell. If no tile exists in the cell, returns
 
 - :ref:`Vector2<class_Vector2>` **get_cell_autotile_coord** **(** :ref:`int<class_int>` x, :ref:`int<class_int>` y **)** |const|
 
-Returns the coordinate (subtile column and row) of the autotile variation in the tileset. Returns a zero vector if the cell doesn't have autotiling.
+Returns the coordinate (sub-tile column and row) of the autotile variation in the tileset. Returns a zero vector if the cell doesn't have autotiling.
 
 ----
 
@@ -637,7 +637,7 @@ Sets the tile index for the given cell.
 
 An index of ``-1`` clears the cell.
 
-Optionally, the tile can also be flipped, transposed, or given autotile coordinates. The autotile coordinate refers to the column and row of the subtile.
+Optionally, the tile can also be flipped, transposed, or given autotile coordinates. The autotile coordinate refers to the column and row of the sub-tile.
 
 **Note:** Data such as navigation polygons and collision shapes are not immediately updated for performance reasons.
 
@@ -662,7 +662,7 @@ Sets the tile index for the cell given by a Vector2.
 
 An index of ``-1`` clears the cell.
 
-Optionally, the tile can also be flipped, transposed, or given autotile coordinates. The autotile coordinate refers to the column and row of the subtile.
+Optionally, the tile can also be flipped, transposed, or given autotile coordinates. The autotile coordinate refers to the column and row of the sub-tile.
 
 **Note:** Data such as navigation polygons and collision shapes are not immediately updated for performance reasons.
 
