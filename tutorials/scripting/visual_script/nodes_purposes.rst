@@ -203,7 +203,7 @@ from the Inspector sets the context to the node being edited automatically), the
 .. image:: img/visual_script34.png
 
 
-Remember that you can check the class reference for what each node does, as they are documented there. That mentioned,
+Remember that you can check the API documentation for what each node does, as they are documented there. That mentioned,
 a brief overview of node types follows:
 
 

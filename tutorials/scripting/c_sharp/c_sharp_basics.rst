@@ -229,7 +229,7 @@ Here's a blank C# script with some comments to demonstrate how it works.
 As you can see, functions normally in global scope in GDScript like Rebel Engine's
 ``print`` function are available in the ``GD`` class which is part of
 the ``Godot`` namespace. For a list of methods in the ``GD`` class, see the
-class reference pages for
+API documentation pages for
 :ref:`@GDScript <class_@gdscript>` and :ref:`@GlobalScope <class_@globalscope>`.
 
 .. note::

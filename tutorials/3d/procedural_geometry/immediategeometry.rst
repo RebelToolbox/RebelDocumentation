@@ -17,7 +17,7 @@ not call ``clear()``.
 To begin generating geometry you must call ``begin()``. ``begin()`` takes a ``PrimitiveType`` as an argument.
 ``PrimitiveType`` is an OpenGL concept that instructs the GPU how to arrange the primitive based on the
 vertices given whether it is triangles, lines, points, etc. A complete list can be found under
-the :ref:`Mesh <class_mesh>` class reference page.
+the :ref:`Mesh <class_mesh>` API documentation page.
 
 Once you have called ``begin()`` you are ready to start adding vertices. You add vertices one at a time.
 First you add vertex specific attributes such as normals or UVs using ``set_****()`` (e.g. ``set_normal()``).

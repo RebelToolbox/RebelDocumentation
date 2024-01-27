@@ -51,7 +51,7 @@ derived node, like :ref:`Control <class_Control>` or
     }
 
 Draw commands are described in the :ref:`CanvasItem <class_CanvasItem>`
-class reference. There are plenty of them.
+API documentation. There are plenty of them.
 
 Updating
 --------

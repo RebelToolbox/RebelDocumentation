@@ -254,7 +254,7 @@ Surround functions and class definitions with two blank lines:
 
 Use one blank line inside functions to separate logical sections.
 
-.. note:: We use a single line between classes and function definitions in the class reference and
+.. note:: We use a single line between classes and function definitions in the API documentation and
           in short code snippets in this documentation.
 
 Line length

@@ -117,10 +117,10 @@ auto-completion, and built-in code reference.
 
 .. image:: img/editor_intro_workspace_script.png
 
-Integrated class reference
---------------------------
+Integrated API documentation
+----------------------------
 
-Rebel Engine comes with a built-in class reference.
+Rebel Engine comes with a built-in API documentation.
 
 You can search for information about a class, method, property, constant, or
 signal by any one of the following methods:

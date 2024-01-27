@@ -83,10 +83,10 @@ relatively intuitive:
 - The :ref:`sec-contributing` section gives information related to contributing to
   engine development, how to report bugs,
   help with the documentation, etc.
-- Finally, the :ref:`sec-class-ref` is the documentation of the Rebel Engine API,
+- Finally, the :ref:`sec-api` is the documentation of the Rebel Engine API,
   which is also available directly within the engine's script editor. It is
   generated automatically from a file in the main source repository, therefore
   the generated files of the documentation are not meant to be modified. See
-  :ref:`doc_updating_the_class_reference` for details.
+  :ref:`doc_updating_the_api_documentation` for details.
 
 Have fun reading and making games with Rebel Engine!

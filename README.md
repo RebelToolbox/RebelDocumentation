@@ -19,11 +19,11 @@ If you plan on making significant contributions to Rebel Documentation,
 you will want to learn how to use Git.
 For good tutorials on using Git, try the [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials).
 
-The Rebel Engine API documentation files are included under the `classes` folder.
-They are automatically generated from Rebel Engine's [XML class references](https://github.com/RebelToolbox/RebelEngine/tree/main/doc/classes).
+The Rebel Engine API documentation files are included under the `api` folder.
+They are automatically generated from Rebel Engine's [XML docs](https://github.com/RebelToolbox/RebelEngine/tree/main/docs).
 These are maintained in [Rebel Engine](https://github.com/RebelToolbox/RebelEngine) under the `doc` folder.
-Please make updates and Pull Requests to the API documenation there.
-See the [Contributing to the Class Reference](https://docs.rebeltoolbox.com/en/latest/contributing/updating_the_class_reference.html) documentation for more information.
+Please make updates and Pull Requests to the API documentation there.
+See the [Contributing to the API Documentation](https://docs.rebeltoolbox.com/en/latest/contributing/updating_the_api_documentation.html) for more information.
 
 To edit an existing page, simply click on the "Edit on GitHub" link in the top, right-hand corner of the page.
 There, the file can be edited directly on Github.
@@ -95,6 +95,6 @@ You can view your changes by opening `_build/html/index.html` in your favorite b
 
 ## License
 
-With the exception of the `classes` folder, all the content in this repository is licensed under the Creative Commons Attribution 4.0 International Public License ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)). Attribution should be made to the Rebel Documentation Contributors and/or the specific author.
+With the exception of the `api` folder, all the content in this repository is licensed under the Creative Commons Attribution 4.0 International Public License ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)). Attribution should be made to the Rebel Documentation Contributors and/or the specific author.
 
-The files in the `classes` folder are derived from [Rebel Engine](https://github.com/RebelToolbox/RebelEngine) and are distributed under the MIT license.
+The files in the `api` folder are derived from [Rebel Engine](https://github.com/RebelToolbox/RebelEngine) and are distributed under the MIT license.

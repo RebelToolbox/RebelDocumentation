@@ -23,7 +23,7 @@ content.
 
 .. image:: img/manual_search.png
 
-The manual has a companion class reference that explains each Rebel Engine class's
+The manual has a companion API documentation that explains each Rebel Engine class's
 available functions and properties when programming. While the manual covers
 general features, concepts, and how to use the editor, the reference is all
 about using Rebel Engine's scripting API (Application Programming Interface). You can
@@ -33,10 +33,10 @@ from within the Rebel Editor. To do so, go to Help -> Search or press
 
 .. image:: img/manual_class_reference_search.png
 
-To browse it online, head to the manual's :ref:`Class Reference <toc-class-ref>`
+To browse it online, head to the manual's :ref:`Rebel Engine API <toc-api>`
 section.
 
-A class reference's page tells you:
+A class's API documentation page tells you:
 
 1. Where the class exists in the inheritance hierarchy. You can click the top
    links to jump to parent classes and see the properties and methods a type
@@ -51,7 +51,7 @@ A class reference's page tells you:
 
 4. Links to manual pages further detailing the class.
 
-.. note:: If the manual or class reference is missing or has insufficient
+.. note:: If the manual or API documentation is missing or has insufficient
           information, please open an Issue in the official `Rebel Documentation
           <https://github.com/RebelToolbox/RebelDocumentation>`_ GitHub repository
           to report it.

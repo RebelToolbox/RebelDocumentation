@@ -23,18 +23,18 @@ documentation.
 .. seealso:: For details on Git usage and the pull request workflow, please
              refer to the :ref:`doc_pr_workflow` page.
 
-.. warning:: The class reference's source files are in the `Rebel Engine repository
+.. warning:: The API documentation's source files are in the `Rebel Engine repository
              <https://github.com/RebelToolbox/RebelEngine>`_. We generate the :ref:`Rebel API
-             <toc-class-ref>` section of this documentation from them. If you want to update the
+             <toc-api>` section of this documentation from them. If you want to update the
              description of a class, its methods, or properties, read
-             :ref:`doc_updating_the_class_reference`.
+             :ref:`doc_updating_the_api_documentation`.
 
-.. warning:: If you want to edit the **API reference**, please note that it
-             should *not* be done in the Rebel Documenation repository. Instead, you
-             should edit the ``doc/classes/*`` XML files of Rebel Engine's
+.. warning:: If you want to edit the **Rebel Engine API**, please note that it
+             should *not* be done in the Rebel Documentation repository. Instead, you
+             should edit the XML files in the ``docs/`` folder of Rebel Engine's
              repository. These files are then later used to generate the
              in-editor documentation as well as the API reference of the
-             online docs. Read more here: :ref:`doc_updating_the_class_reference`.
+             online docs. Read more here: :ref:`doc_updating_the_api_documentation`.
 
 The 'Edit on GitHub' link
 -------------------------

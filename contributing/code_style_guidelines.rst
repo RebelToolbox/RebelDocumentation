@@ -342,7 +342,7 @@ Don't repeat what the code says in a comment. Explain the *why* rather than *how
 You can use Javadoc-style comments above function or macro definitions. It's
 recommended to use Javadoc-style comments *only* for methods which are not
 exposed to scripting. This is because exposed methods should be documented in
-the :ref:`class reference XML <doc_updating_the_class_reference>`
+the :ref:`API Documentation <doc_updating_the_api_documentation>`
 instead.
 
 **Example:**

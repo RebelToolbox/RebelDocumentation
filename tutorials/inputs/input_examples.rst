@@ -120,7 +120,7 @@ It inherits from the following classes:
 - :ref:`InputEventMouse <class_InputEventMouse>` - adds mouse event properties, such as ``position``
 - :ref:`InputEventMouseButton <class_InputEventMouseButton>` - contains the index of the button that was pressed, whether it was a double-click, etc.
 
-.. tip:: It's a good idea to keep the class reference open while you're working
+.. tip:: It's a good idea to keep the API documentation open while you're working
         with events so you can check the event type's available properties and
         methods.
 

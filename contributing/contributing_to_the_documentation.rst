@@ -16,12 +16,12 @@ Modifying those pages in a pull request triggers a rebuild of the online documen
 .. seealso:: For details on Git usage and the pull request workflow, please
              refer to the :ref:`doc_pr_workflow` page.
 
-.. warning:: The class reference's source files are in the `Rebel Engine
+.. warning:: The API documentation source files are in the `Rebel Engine
              repository <https://github.com/RebelToolbox/RebelEngine>`_. We generate
-             the :ref:`Rebel API <toc-class-ref>` section of this documentation
+             the :ref:`Rebel API <toc-api>` section of this documentation
              from them. If you want to update the description of a class, its
              methods, or properties, read
-             :ref:`doc_updating_the_class_reference`.
+             :ref:`doc_updating_the_api_documentation`.
 
 What is the Rebel Documentation
 -------------------------------
@@ -53,10 +53,10 @@ Editing existing pages
 
 To edit an existing page, locate its ``.rst`` source file and open it in your
 favorite text editor. You can then commit the changes, push them to your fork,
-and make a pull request. **Note that the pages in** ``classes/`` **should not be
+and make a pull request. **Note that the pages in** ``api/`` **should not be
 edited here.** They are automatically generated from Rebel Engine's `XML class
-reference <https://github.com/RebelToolbox/RebelEngine/tree/main/doc/classes>`__.
-See :ref:`doc_updating_the_class_reference` for details.
+reference <https://github.com/RebelToolbox/RebelEngine/tree/main/docs>`__.
+See :ref:`doc_updating_the_api_documentation` for details.
 
 .. seealso:: To build the manual and test changes on your computer, see
              :ref:`doc_building_the_manual`.
