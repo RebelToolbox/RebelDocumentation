@@ -26,7 +26,7 @@ Please `follow the instructions on the Oculus developer site <https://developer.
 Setting up the export template
 ------------------------------
 
-The :ref:`doc_exporting_for_android` documentation describes how to creat an Android export template for Rebel Engine. However, a few extra settings are needed for XR deployment.
+The :ref:`doc_exporting_for_android` documentation describes how to create an Android export template for Rebel Engine. However, a few extra settings are needed for XR deployment.
 
 Open the export settings again by opening the **Project > Export...** menu and select the Android export template you created. 
 If you haven't created it yet, do so now by pressing **Add...** and selecting **Android**.

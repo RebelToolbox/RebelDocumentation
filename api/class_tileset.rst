@@ -282,9 +282,9 @@ Clears all bitmask information of the autotile.
 
 - :ref:`int<class_int>` **autotile_get_bitmask** **(** :ref:`int<class_int>` id, :ref:`Vector2<class_Vector2>` coord **)**
 
-Returns the bitmask of the subtile from an autotile given its coordinates.
+Returns the bitmask of the sub-tile from an autotile given its coordinates.
 
-The value is the sum of the values in :ref:`AutotileBindings<enum_TileSet_AutotileBindings>` present in the subtile (e.g. a value of 5 means the bitmask has bindings in both the top left and top right).
+The value is the sum of the values in :ref:`AutotileBindings<enum_TileSet_AutotileBindings>` present in the sub-tile (e.g. a value of 5 means the bitmask has bindings in both the top left and top right).
 
 ----
 
@@ -300,9 +300,9 @@ Returns the :ref:`BitmaskMode<enum_TileSet_BitmaskMode>` of the autotile.
 
 - :ref:`Vector2<class_Vector2>` **autotile_get_icon_coordinate** **(** :ref:`int<class_int>` id **)** |const|
 
-Returns the subtile that's being used as an icon in an atlas/autotile given its coordinates.
+Returns the sub-tile that's being used as an icon in an atlas/autotile given its coordinates.
 
-The subtile defined as the icon will be used as a fallback when the atlas/autotile's bitmask information is incomplete. It will also be used to represent it in the TileSet editor.
+The sub-tile defined as the icon will be used as a fallback when the atlas/autotile's bitmask information is incomplete. It will also be used to represent it in the TileSet editor.
 
 ----
 
@@ -310,7 +310,7 @@ The subtile defined as the icon will be used as a fallback when the atlas/autoti
 
 - :ref:`OccluderPolygon2D<class_OccluderPolygon2D>` **autotile_get_light_occluder** **(** :ref:`int<class_int>` id, :ref:`Vector2<class_Vector2>` coord **)** |const|
 
-Returns the light occluder of the subtile from an atlas/autotile given its coordinates.
+Returns the light occluder of the sub-tile from an atlas/autotile given its coordinates.
 
 ----
 
@@ -318,7 +318,7 @@ Returns the light occluder of the subtile from an atlas/autotile given its coord
 
 - :ref:`NavigationPolygon<class_NavigationPolygon>` **autotile_get_navigation_polygon** **(** :ref:`int<class_int>` id, :ref:`Vector2<class_Vector2>` coord **)** |const|
 
-Returns the navigation polygon of the subtile from an atlas/autotile given its coordinates.
+Returns the navigation polygon of the sub-tile from an atlas/autotile given its coordinates.
 
 ----
 
@@ -326,7 +326,7 @@ Returns the navigation polygon of the subtile from an atlas/autotile given its c
 
 - :ref:`Vector2<class_Vector2>` **autotile_get_size** **(** :ref:`int<class_int>` id **)** |const|
 
-Returns the size of the subtiles in an atlas/autotile.
+Returns the size of the sub-tiles in an atlas/autotile.
 
 ----
 
@@ -334,7 +334,7 @@ Returns the size of the subtiles in an atlas/autotile.
 
 - :ref:`int<class_int>` **autotile_get_spacing** **(** :ref:`int<class_int>` id **)** |const|
 
-Returns the spacing between subtiles of the atlas/autotile.
+Returns the spacing between sub-tiles of the atlas/autotile.
 
 ----
 
@@ -342,9 +342,9 @@ Returns the spacing between subtiles of the atlas/autotile.
 
 - :ref:`int<class_int>` **autotile_get_subtile_priority** **(** :ref:`int<class_int>` id, :ref:`Vector2<class_Vector2>` coord **)**
 
-Returns the priority of the subtile from an autotile given its coordinates.
+Returns the priority of the sub-tile from an autotile given its coordinates.
 
-When more than one subtile has the same bitmask value, one of them will be picked randomly for drawing. Its priority will define how often it will be picked.
+When more than one sub-tile has the same bitmask value, one of them will be picked randomly for drawing. Its priority will define how often it will be picked.
 
 ----
 
@@ -352,7 +352,7 @@ When more than one subtile has the same bitmask value, one of them will be picke
 
 - :ref:`int<class_int>` **autotile_get_z_index** **(** :ref:`int<class_int>` id, :ref:`Vector2<class_Vector2>` coord **)**
 
-Returns the drawing index of the subtile from an atlas/autotile given its coordinates.
+Returns the drawing index of the sub-tile from an atlas/autotile given its coordinates.
 
 ----
 
@@ -360,9 +360,9 @@ Returns the drawing index of the subtile from an atlas/autotile given its coordi
 
 - void **autotile_set_bitmask** **(** :ref:`int<class_int>` id, :ref:`Vector2<class_Vector2>` bitmask, :ref:`int<class_int>` flag **)**
 
-Sets the bitmask of the subtile from an autotile given its coordinates.
+Sets the bitmask of the sub-tile from an autotile given its coordinates.
 
-The value is the sum of the values in :ref:`AutotileBindings<enum_TileSet_AutotileBindings>` present in the subtile (e.g. a value of 5 means the bitmask has bindings in both the top left and top right).
+The value is the sum of the values in :ref:`AutotileBindings<enum_TileSet_AutotileBindings>` present in the sub-tile (e.g. a value of 5 means the bitmask has bindings in both the top left and top right).
 
 ----
 
@@ -378,9 +378,9 @@ Sets the :ref:`BitmaskMode<enum_TileSet_BitmaskMode>` of the autotile.
 
 - void **autotile_set_icon_coordinate** **(** :ref:`int<class_int>` id, :ref:`Vector2<class_Vector2>` coord **)**
 
-Sets the subtile that will be used as an icon in an atlas/autotile given its coordinates.
+Sets the sub-tile that will be used as an icon in an atlas/autotile given its coordinates.
 
-The subtile defined as the icon will be used as a fallback when the atlas/autotile's bitmask information is incomplete. It will also be used to represent it in the TileSet editor.
+The sub-tile defined as the icon will be used as a fallback when the atlas/autotile's bitmask information is incomplete. It will also be used to represent it in the TileSet editor.
 
 ----
 
@@ -388,7 +388,7 @@ The subtile defined as the icon will be used as a fallback when the atlas/autoti
 
 - void **autotile_set_light_occluder** **(** :ref:`int<class_int>` id, :ref:`OccluderPolygon2D<class_OccluderPolygon2D>` light_occluder, :ref:`Vector2<class_Vector2>` coord **)**
 
-Sets the light occluder of the subtile from an atlas/autotile given its coordinates.
+Sets the light occluder of the sub-tile from an atlas/autotile given its coordinates.
 
 ----
 
@@ -396,7 +396,7 @@ Sets the light occluder of the subtile from an atlas/autotile given its coordina
 
 - void **autotile_set_navigation_polygon** **(** :ref:`int<class_int>` id, :ref:`NavigationPolygon<class_NavigationPolygon>` navigation_polygon, :ref:`Vector2<class_Vector2>` coord **)**
 
-Sets the navigation polygon of the subtile from an atlas/autotile given its coordinates.
+Sets the navigation polygon of the sub-tile from an atlas/autotile given its coordinates.
 
 ----
 
@@ -404,7 +404,7 @@ Sets the navigation polygon of the subtile from an atlas/autotile given its coor
 
 - void **autotile_set_size** **(** :ref:`int<class_int>` id, :ref:`Vector2<class_Vector2>` size **)**
 
-Sets the size of the subtiles in an atlas/autotile.
+Sets the size of the sub-tiles in an atlas/autotile.
 
 ----
 
@@ -412,7 +412,7 @@ Sets the size of the subtiles in an atlas/autotile.
 
 - void **autotile_set_spacing** **(** :ref:`int<class_int>` id, :ref:`int<class_int>` spacing **)**
 
-Sets the spacing between subtiles of the atlas/autotile.
+Sets the spacing between sub-tiles of the atlas/autotile.
 
 ----
 
@@ -420,9 +420,9 @@ Sets the spacing between subtiles of the atlas/autotile.
 
 - void **autotile_set_subtile_priority** **(** :ref:`int<class_int>` id, :ref:`Vector2<class_Vector2>` coord, :ref:`int<class_int>` priority **)**
 
-Sets the priority of the subtile from an autotile given its coordinates.
+Sets the priority of the sub-tile from an autotile given its coordinates.
 
-When more than one subtile has the same bitmask value, one of them will be picked randomly for drawing. Its priority will define how often it will be picked.
+When more than one sub-tile has the same bitmask value, one of them will be picked randomly for drawing. Its priority will define how often it will be picked.
 
 ----
 
@@ -430,7 +430,7 @@ When more than one subtile has the same bitmask value, one of them will be picke
 
 - void **autotile_set_z_index** **(** :ref:`int<class_int>` id, :ref:`Vector2<class_Vector2>` coord, :ref:`int<class_int>` z_index **)**
 
-Sets the drawing index of the subtile from an atlas/autotile given its coordinates.
+Sets the drawing index of the sub-tile from an atlas/autotile given its coordinates.
 
 ----
 

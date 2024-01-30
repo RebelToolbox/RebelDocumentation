@@ -13,7 +13,7 @@ In this part of the VR starter tutorial series, we will be adding a number of sp
 This continues from where we left on in the last tutorial part, where we just finished getting the VR controllers working and defined a custom
 class called ``VR_Interactable_Rigidbody``.
 
-.. tip:: The finished project for this tutorial series can be donwloaded here:
+.. tip:: The finished project for this tutorial series can be downloaded here:
    :download:`OpenVR FPS <files/openvr-fps.zip>`
 
 Adding destroyable targets
@@ -1032,5 +1032,5 @@ Now you have a fully working VR project with multiple different types of special
 help serve as an introduction to making fully-featured VR games in Rebel Editor! The code and concepts detailed in this tutorial can be expanded on to make puzzle games, action games,
 story-based games, and more!
 
-The finished project for this tutorial series can be donwloaded here:
+The finished project for this tutorial series can be downloaded here:
 :download:`OpenVR FPS <files/openvr-fps.zip>`

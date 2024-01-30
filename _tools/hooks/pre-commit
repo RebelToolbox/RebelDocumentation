@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Git pre-commit hook that checks the documentation spelling.
+
+# Set exit on error.
+set -e
+
+echo "Checking spelling..."
+if ! codespell                           \
+    -I _tools/codespell-ignore-words.txt \
+    -x _tools/codespell-ignore-lines.txt \
+    --skip="_*","env"
+then
+    echo "Spelling errors found."
+    echo "Please fix the spelling errors and try again."
+    exit 1
+else
+    echo "No spelling mistakes found."
+fi

@@ -1123,5 +1123,5 @@ Final notes
 Now you have fully working VR controllers that can move around the environment and interact with :ref:`RigidBody <class_RigidBody>`-based objects.
 In the next part of this tutorial series, we will be creating some special :ref:`RigidBody <class_RigidBody>`-based objects for the player to use!
 
-The finished project for this tutorial series can be donwloaded here:
+The finished project for this tutorial series can be downloaded here:
 :download:`OpenVR FPS <files/openvr-fps.zip>`

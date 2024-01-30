@@ -21,14 +21,14 @@ jobs:
 
       - name: File formatting checks (file-format.sh)
         run: |
-          bash _tools/file-format.sh
+          bash _tools/scripts/file-format.sh
 
       - name: Spelling checks (codespell)
         run: |
-          codespell                                                           \
-          -I _tools/codespell-ignore-words.txt                                \
-          -x _tools/codespell-ignore-lines.txt                                \
-          {about,contributing,development,getting_started,tutorials}/**/*.rst
+          codespell                            \
+          -I _tools/codespell-ignore-words.txt \
+          -x _tools/codespell-ignore-lines.txt \
+          --skip="_*","env"
 
       - name: Create patch file
         if: failure()
