@@ -7,6 +7,7 @@ on:
 
 jobs:
   update-rebel-engine-api:
+    name: Update Rebel Engine API
     # Don't run on forks.
     if: github.repository == 'RebelToolbox/RebelDocumentation'
     runs-on: ubuntu-latest
