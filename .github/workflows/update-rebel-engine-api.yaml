@@ -1,0 +1,117 @@
+name: Update Rebel Engine API
+on:
+  workflow_dispatch:
+  schedule:
+    # Check for Rebel Engine API documentation updates every day at midnight.
+    - cron: '0 0 * * *'
+
+jobs:
+  update-rebel-engine-api:
+    # Don't run on forks.
+    if: github.repository == 'RebelToolbox/RebelDocumentation'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Rebel Documentation
+        uses: actions/checkout@v4
+
+      - name: Checkout Rebel Engine
+        uses: actions/checkout@v4
+        with:
+          repository: RebelToolbox/RebelEngine
+          ref: main
+          path: RebelEngine
+
+      - name: Create branch
+        run: |
+          #Create branch
+          git fetch origin
+          echo "::group::git switch main"
+          if ! git switch main 2>/dev/null ; then
+            git switch -c main origin/main
+          fi
+          echo "::endgroup::"
+          echo "::group::git switch -c update-rebel-engine-api"
+          if git ls-remote --exit-code                        \
+            --heads origin refs/heads/update-rebel-engine-api \
+            >/dev/null
+          then
+            echo "Use existing branch"
+            git switch -c update-rebel-engine-api origin/update-rebel-engine-api
+            echo "existing_branch=yes" >> "$GITHUB_ENV"
+          else
+            echo "Create new branch"
+            git switch -c update-rebel-engine-api
+          fi
+          echo "::endgroup::"
+
+      - name: Update existing branch
+        if: env.existing_branch == 'yes'
+        run: |
+          #Update existing branch
+          echo "::group::git rebase main"
+          if ! git rebase main >/dev/null ; then
+            git rebase --abort
+            echo "Rebase merge conflict!"
+            echo "Previous changes need to be overwritten."
+            echo "recreate_branch=yes" >> "$GITHUB_ENV"
+          else
+            git push -f
+          fi
+          echo "::endgroup::"
+
+      - name: Recreate branch
+        if: env.recreate_branch == 'yes'
+        run: |
+          git switch main
+          git branch -D update-rebel-engine-api
+          git switch -c update-rebel-engine-api
+          git push -u -f origin update-rebel-engine-api
+
+      - name: Update ReST files
+        run: |
+          #RebelEngine/tools/scripts/rst_from_xml.py
+          rm api/class_*
+          RebelEngine/tools/scripts/rst_from_xml.py \
+            --output api                            \
+            RebelEngine/docs                        \
+            RebelEngine/modules
+          if git diff --exit-code ; then
+            echo "No files have changed."
+          else
+            echo "ReST files have changed."
+            echo "has_changes=yes" >> "$GITHUB_ENV"
+          fi
+
+      - name: Create commit
+        if: env.has_changes == 'yes'
+        run: |
+          #Create commit
+          git config user.name "Rebel Documentation"
+          git config user.email "158277139+RebelDocumentation@users.noreply.github.com"
+          echo "Adding files"
+          git add api/*
+          echo "Creating commit"
+          git commit -m "Update Rebel Engine API"
+          echo "Pushing changes"
+          git push -u origin update-rebel-engine-api
+
+      - name: Create Pull Request
+        if: env.has_changes == 'yes'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          #Create Pull Request
+          if gh pr list --state open --head update-rebel-engine-api \
+            --json state | grep state
+          then
+            echo "Existing Pull Request updated"
+            echo "Please merge the Pull Request"
+          else
+            gh pr create                                                                   \
+              --base main                                                                  \
+              --head update-rebel-engine-api                                               \
+              --title "Update Rebel Engine API"                                            \
+              --body "Updates the Rebel Engine API documentation with the latest changes."
+            echo "New Pull Request created"
+          fi
