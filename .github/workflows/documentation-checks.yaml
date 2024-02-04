@@ -5,6 +5,7 @@ on:
 
 jobs:
   check-documentation:
+    name: Check Documentation
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -44,6 +45,7 @@ jobs:
             documentation.patch
 
   build-documentation:
+    name: Build Documentation
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
