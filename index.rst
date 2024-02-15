@@ -1,28 +1,48 @@
-Rebel Toolbox Documentation
-===========================
+Rebel Toolbox - Better tools for better games
+=============================================
 
-Welcome to the official documentation of `Rebel Toolbox <https://rebeltoolbox.com>`__
-and Rebel Engine.
-The free and open source community-driven 2D and 3D game engine! If you are new
-to this documentation, we recommend that you read the
-:ref:`introduction page <doc_about_intro>` to get an overview of what this
-documentation has to offer.
+Rebel is the community working on `Rebel Toolbox <https://rebeltoolbox.com>`_;
+a collection of open source, community-driven, user-focused tools for creating video games.
 
-The table of contents below and in the sidebar should let you easily access the
-documentation for your topic of interest. You can also use the search function
-in the top left corner.
+The main tool is Rebel Engine - our 2D and 3D game engine.
+Rebel Engine is available from our `Rebel Engine GitHub repository <https://github.com/RebelToolbox/RebelEngine/>`_.
 
-.. note:: Rebel Engine is an open source project developed by a community of
-          volunteers. The documentation team can always use your
-          feedback and help to improve the tutorials and API documentation. If
-          you don't understand something, or cannot find what you
-          are looking for in the docs, help us make the documentation better
-          by letting us know!
+This documentation is another open source, community-driven, user-focused tool.
+Rebel Documentation is maintained via our `Rebel Documentation GitHub repository <https://github.com/RebelToolbox/RebelDocumentation/>`_.
+If something is confusing, out-dated, or missing in this documentation,
+please help us make the documentation better by letting us know.
+`Submit an issue <https://github.com/RebelToolbox/RebelDocumentation/issues>`_ on GitHub,
+or, better yet, submit an update or an addition.
+Read :ref:`doc_contributing_to_the_documentation` for information of how to contribute to the documentation.
 
-          Submit an issue or pull request on the `GitHub repository
-          <https://github.com/RebelToolbox/RebelDocumentation/issues>`_.
+For a list of all the other tools, visit our `Rebel Toolbox GitHub <https://github.com/RebelToolbox/>`_ page.
 
-The main documentation for the site is organized into the following sections:
+Getting started
+---------------
+
+For an introduction to using Rebel Editor to create games with Rebel Engine,
+start with our :ref:`introduction series <doc_introduction>`.
+
+Detailed documentation
+----------------------
+
+Rebel Engine is an extremely powerful and customizable tool for creating amazing games.
+To learn how to use a specific Rebel Engine component, see our tutorials.
+For more detailed information on how to interact with those components through scripts,
+the :ref:`doc_rebel_engine_api` contains a comprehensive view of every class, every method and every property.
+
+Contributing
+------------
+
+There are lots of ways to contribute to Rebel Toolbox.
+You don't need to be a coder to contribute.
+Start by using Rebel Editor to create games with Rebel Engine, and
+tell everyone you know about your experience.
+See the :ref:`doc_contributing` section to learn about other ways to contribute.
+
+
+Table of Contents
+=================
 
 .. toctree::
    :maxdepth: 1
