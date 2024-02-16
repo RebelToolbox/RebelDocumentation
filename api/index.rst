@@ -1,5 +1,7 @@
 :github_url: hide
 
+.. _doc_rebel_engine_api:
+
 Rebel Engine API
 ================
 

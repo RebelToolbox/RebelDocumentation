@@ -1,9 +1,16 @@
-.. Intention: provide the necessary information to make the most of the getting
-   started series, answering questions like "do I want to learn Rebel?", "how
-   does it look and feel?", "how does it work?", and "how do I best learn it?".
+.. _doc_introduction:
 
 Introduction
 ============
+
+.. Intention
+   Provide the necessary information to make the most of the getting started series.
+   Should answer questions like:
+   - What is Rebel Toolbox, Rebel Engine and Rebel Editor?
+   - Do I want to use Rebel Editor, Rebel Engine and other Rebel Toolbox tools?
+   - How does Rebel Editor look and feel?
+   - How do Rebel Engine and Rebel Editor work and what do they offer?
+   - What is the best way to learn?
 
 This series will introduce you to Rebel Toolbox and give you an overview of its
 features.
