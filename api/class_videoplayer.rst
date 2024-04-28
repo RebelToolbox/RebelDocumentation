@@ -18,7 +18,7 @@ Description
 
 Control node for playing video streams using :ref:`VideoStream<class_VideoStream>` resources.
 
-Supported video formats are `WebM <https://www.webmproject.org/>`__ (``.webm``, :ref:`VideoStreamWebm<class_VideoStreamWebm>`), `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, :ref:`VideoStreamTheora<class_VideoStreamTheora>`), and any format exposed via a GDNative plugin using :ref:`VideoStreamGDNative<class_VideoStreamGDNative>`.
+Supported video formats are `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, :ref:`VideoStreamTheora<class_VideoStreamTheora>`), and any format exposed via a GDNative plugin using :ref:`VideoStreamGDNative<class_VideoStreamGDNative>`.
 
 **Note:** Due to a bug, VideoPlayer does not support localization remapping yet.
 
