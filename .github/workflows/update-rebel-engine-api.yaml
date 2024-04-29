@@ -91,7 +91,7 @@ jobs:
           git config user.name "Rebel Documentation"
           git config user.email "158277139+RebelDocumentation@users.noreply.github.com"
           echo "Adding files"
-          git add api/*
+          git add api/
           echo "Creating commit"
           git commit -m "Update Rebel Engine API"
           echo "Pushing changes"
