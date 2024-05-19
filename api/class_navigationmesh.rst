@@ -304,7 +304,7 @@ The maximum distance the detail mesh surface should deviate from heightfield, in
 | *Getter*  | get_edge_max_error()      |
 +-----------+---------------------------+
 
-The maximum distance a simplfied contour's border edges should deviate the original raw contour.
+The maximum distance a simplified contour's border edges should deviate from the original raw contour.
 
 ----
 
