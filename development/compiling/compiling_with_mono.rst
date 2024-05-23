@@ -244,7 +244,7 @@ to the Gradle project.
 
 Once you've built Mono, you can proceed to build Rebel Engine with the instructions
 described in this page and the
-:ref:`Compiling for Android<doc_compiling_for_android>` page.
+:ref:`Compiling for Android<doc_build_for_android>` page.
 Make sure to let SCons know about the location of the Mono runtime you've just built, e.g.:
 ``scons [...] mono_prefix="$HOME/mono-installs/android-armeabi-v7a-release"``
 (This path may be different on your system).
