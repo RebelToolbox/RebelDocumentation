@@ -9,7 +9,7 @@ echo "Checking spelling..."
 if ! codespell                           \
     -I _tools/codespell-ignore-words.txt \
     -x _tools/codespell-ignore-lines.txt \
-    --skip="_*","env"
+    --skip=".git","_*","env"
 then
     echo "Spelling errors found."
     echo "Please fix the spelling errors and try again."
