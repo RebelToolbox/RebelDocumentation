@@ -53,7 +53,7 @@ Writing the manual
    :name: toc-documentation
 
    contributing_to_the_documentation
-   building_the_manual
+   building_the_documentation
 
 API Documentation
 ~~~~~~~~~~~~~~~~~

@@ -59,7 +59,7 @@ reference <https://github.com/RebelToolbox/RebelEngine/tree/main/docs>`__.
 See :ref:`doc_updating_the_api_documentation` for details.
 
 .. seealso:: To build the manual and test changes on your computer, see
-             :ref:`doc_building_the_manual`.
+             :ref:`doc_building_the_documentation`.
 
 Editing pages online
 --------------------
