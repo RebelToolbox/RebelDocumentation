@@ -11,12 +11,12 @@ JavaScript
 
 **Inherits:** :ref:`Object<class_Object>`
 
-Singleton that connects the engine with the browser's JavaScript context in HTML5 export.
+Singleton that connects the engine with the browser's JavaScript context in Web exports.
 
 Description
 -----------
 
-The JavaScript singleton is implemented only in the HTML5 export. It's used to access the browser's JavaScript context. This allows interaction with embedding pages or calling third-party JavaScript APIs.
+The JavaScript singleton is implemented only in the Web export. It's used to access the browser's JavaScript context. This allows interaction with embedding pages or calling third-party JavaScript APIs.
 
 **Note:** This singleton can be disabled at build-time to improve security. By default, the JavaScript singleton is enabled. Official export templates also have the JavaScript singleton enabled. See `Compiling for the Web <https://docs.rebeltoolbox.com/en/latest/development/compiling/compiling_for_web.html>`__ in the documentation for more information.
 

@@ -20,7 +20,7 @@ The CryptoKey class represents a cryptographic key. Keys can be loaded and saved
 
 They can be used to generate a self-signed :ref:`X509Certificate<class_X509Certificate>` via :ref:`Crypto.generate_self_signed_certificate<class_Crypto_method_generate_self_signed_certificate>` and as private key in :ref:`StreamPeerSSL.accept_stream<class_StreamPeerSSL_method_accept_stream>` along with the appropriate certificate.
 
-**Note:** Not available in HTML5 exports.
+**Note:** Not available in Web exports.
 
 Methods
 -------

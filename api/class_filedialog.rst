@@ -168,7 +168,7 @@ Property Descriptions
 
 The file system access scope. See enum ``Access`` constants.
 
-**Warning:** Currently, in sandboxed environments such as HTML5 builds or sandboxed macOS apps, FileDialog cannot access the host file system.
+**Warning:** Currently, in sandboxed environments such as web builds or sandboxed macOS apps, FileDialog cannot access the host file system.
 
 ----
 

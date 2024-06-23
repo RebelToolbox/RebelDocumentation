@@ -2373,7 +2373,7 @@ The :ref:`JavaClassWrapper<class_JavaClassWrapper>` singleton.
 
 The :ref:`JavaScript<class_JavaScript>` singleton.
 
-**Note:** Only implemented on HTML5.
+**Note:** Only implemented on the Web platform.
 
 ----
 

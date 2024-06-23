@@ -858,7 +858,7 @@ Use ``get_tree().get_root().set_transparent_background(true)`` to disable main v
 
 **Note:** This property has no effect if :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` setting is disabled.
 
-**Note:** This property is implemented on HTML5, Linux, macOS, Windows, and Android. It can't be changed at runtime for Android. Use :ref:`ProjectSettings.display/window/per_pixel_transparency/enabled<class_ProjectSettings_property_display/window/per_pixel_transparency/enabled>` to set it at startup instead.
+**Note:** This property is implemented on the Linux, macOS, Windows, Android and Web platforms. It can't be changed at runtime for Android. Use :ref:`ProjectSettings.display/window/per_pixel_transparency/enabled<class_ProjectSettings_property_display/window/per_pixel_transparency/enabled>` to set it at startup instead.
 
 ----
 
@@ -1286,7 +1286,7 @@ Returns the model name of the current device.
 
 - :ref:`String<class_String>` **get_name** **(** **)** |const|
 
-Returns the name of the host OS. Possible values are: ``"Android"``, ``"iOS"``, ``"HTML5"``, ``"OSX"``, ``"Server"``, ``"Windows"``, ``"UWP"``, ``"X11"``.
+Returns the name of the host OS. Possible values are: ``"Android"``, ``"iOS"``, ``"Linux"``, ``"macOS"``, ``"Server"``, ``"UWP"``, ``"Web"`` or ``"Windows"``.
 
 ----
 
@@ -1559,7 +1559,7 @@ Returns a string that is unique to the device.
 
 **Note:** This string may change without notice if the user reinstalls/upgrades their operating system or changes their hardware. This means it should generally not be used to encrypt persistent data as the data saved before an unexpected ID change would become inaccessible. The returned string may also be falsified using external programs, so do not rely on the string returned by :ref:`get_unique_id<class_OS_method_get_unique_id>` for security purposes.
 
-**Note:** Returns an empty string on HTML5 and UWP, as this method isn't implemented on those platforms yet.
+**Note:** Returns an empty string on Web and UWP, as this method isn't implemented on those platforms yet.
 
 ----
 
@@ -1761,7 +1761,7 @@ Returns ``true`` if the engine was executed with ``-v`` (verbose stdout).
 
 - :ref:`bool<class_bool>` **is_userfs_persistent** **(** **)** |const|
 
-If ``true``, the ``user://`` file system is persistent, so that its state is the same after a player quits and starts the game again. Relevant to the HTML5 platform, where this persistence may be unavailable.
+If ``true``, the ``user://`` file system is persistent, so that its state is the same after a player quits and starts the game again. Relevant to the Web platform, where this persistence may be unavailable.
 
 ----
 
@@ -1951,7 +1951,7 @@ Shows all resources currently used by the game.
 
 - void **request_attention** **(** **)**
 
-Request the user attention to the window. It'll flash the taskbar button on Windows or bounce the dock icon on OSX.
+Request the user attention to the window. It'll flash the taskbar button on Windows or bounce the dock icon on macOS.
 
 **Note:** This method is implemented on Linux, macOS and Windows.
 
@@ -1993,7 +1993,7 @@ Sets the game's icon using an :ref:`Image<class_Image>` resource.
 
 The same image is used for window caption, taskbar/dock and window selection dialog. Image is scaled as needed.
 
-**Note:** This method is implemented on HTML5, Linux, macOS and Windows.
+**Note:** This method is implemented on the Linux, macOS, Windows and Web platforms.
 
 ----
 
@@ -2094,7 +2094,7 @@ Sets the window title to the specified string.
 
 **Note:** This should be used sporadically. Don't set this every frame, as that will negatively affect performance on some window managers.
 
-**Note:** This method is implemented on HTML5, Linux, macOS and Windows.
+**Note:** This method is implemented on the Linux, macOS, Windows and Web platforms.
 
 ----
 
@@ -2112,7 +2112,7 @@ Requests the OS to open a resource with the most appropriate program. For exampl
 
 Use :ref:`ProjectSettings.globalize_path<class_ProjectSettings_method_globalize_path>` to convert a ``res://`` or ``user://`` path into a system path for use with this method.
 
-**Note:** This method is implemented on Android, iOS, HTML5, Linux, macOS and Windows.
+**Note:** This method is implemented on the Linux, macOS, Windows, Android, iOS and Web platforms.
 
 ----
 
