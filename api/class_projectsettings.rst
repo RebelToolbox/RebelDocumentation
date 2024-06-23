@@ -1939,7 +1939,7 @@ Position offset for tooltips, relative to the mouse cursor's hotspot.
 | *Default* | ``false`` |
 +-----------+-----------+
 
-If ``true``, allows HiDPI display on Windows, macOS, and the HTML5 platform. This setting has no effect on desktop Linux, as DPI-awareness fallbacks are not supported there.
+If ``true``, allows HiDPI display on the Windows, macOS and Web platforms. This setting has no effect on desktop Linux, as DPI-awareness fallbacks are not supported there.
 
 ----
 
@@ -1993,7 +1993,7 @@ If ``true``, allows per-pixel transparency for the window background. This affec
 
 See :ref:`OS.window_per_pixel_transparency_enabled<class_OS_property_window_per_pixel_transparency_enabled>` for more details.
 
-**Note:** This feature is implemented on HTML5, Linux, macOS, Windows, and Android.
+**Note:** This feature is implemented on Linux, macOS, Windows Android and Web platforms.
 
 ----
 
@@ -2009,7 +2009,7 @@ Sets the window background to transparent when it starts.
 
 See :ref:`OS.window_per_pixel_transparency_enabled<class_OS_property_window_per_pixel_transparency_enabled>` for more details.
 
-**Note:** This feature is implemented on HTML5, Linux, macOS, Windows, and Android.
+**Note:** This feature is implemented on the Linux, macOS, Windows, Android and Web platforms.
 
 ----
 
@@ -2023,7 +2023,7 @@ See :ref:`OS.window_per_pixel_transparency_enabled<class_OS_property_window_per_
 
 Forces the main window to be always on top.
 
-**Note:** This setting is ignored on iOS, Android, and HTML5.
+**Note:** This setting is ignored on the iOS, Android and Web platforms.
 
 ----
 
@@ -2037,7 +2037,7 @@ Forces the main window to be always on top.
 
 Forces the main window to be borderless.
 
-**Note:** This setting is ignored on iOS, Android, and HTML5.
+**Note:** This setting is ignored on the iOS, Android and Web platforms.
 
 ----
 
@@ -2053,7 +2053,7 @@ Sets the main window to full screen when the project starts. Note that this is n
 
 Regardless of the platform, enabling fullscreen will change the window size to match the monitor's size. Therefore, make sure your project supports `multiple resolutions <https://docs.rebeltoolbox.com/en/latest/tutorials/rendering/multiple_resolutions.html>`__ when enabling fullscreen mode.
 
-**Note:** This setting is ignored on iOS, Android, and HTML5.
+**Note:** This setting is ignored on the iOS, Android and Web platforms.
 
 ----
 
@@ -2135,7 +2135,7 @@ Specifies the tablet driver to use. If left empty, the default driver will be us
 | *Default* | ``true`` |
 +-----------+----------+
 
-If ``true``, enables vertical synchronization. This eliminates tearing that may appear in moving scenes, at the cost of higher input latency and stuttering at lower framerates. If ``false``, vertical synchronization will be disabled, however, many platforms will enforce it regardless (such as mobile platforms and HTML5).
+If ``true``, enables vertical synchronization. This eliminates tearing that may appear in moving scenes, at the cost of higher input latency and stuttering at lower framerates. If ``false``, vertical synchronization will be disabled, however, many platforms will enforce it regardless (such as the mobile and Web platforms).
 
 ----
 
@@ -5217,7 +5217,7 @@ Maximum anisotropic filter level used for textures with anisotropy enabled. High
 
 Sets the number of MSAA samples to use. MSAA is used to reduce aliasing around the edges of polygons. A higher MSAA value results in smoother edges but can be significantly slower on some hardware.
 
-**Note:** MSAA is not available on HTML5 export using the GLES2 backend.
+**Note:** MSAA is not available on the Web export using the GLES2 backend.
 
 ----
 

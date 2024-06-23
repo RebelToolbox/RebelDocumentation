@@ -49,7 +49,7 @@ For now, this includes generating cryptographically secure random bytes, RSA key
         assert(verified)
         assert(data.to_utf8() == decrypted)
 
-**Note:** Not available in HTML5 exports.
+**Note:** Not available in Web exports.
 
 Methods
 -------

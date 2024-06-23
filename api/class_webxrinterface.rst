@@ -18,7 +18,7 @@ Description
 
 WebXR is an open standard that allows creating VR and AR applications that run in the web browser.
 
-As such, this interface is only available when running in an HTML5 export.
+As such, this interface is only available in Web exports.
 
 WebXR supports a wide range of devices, from the very capable (like Valve Index, HTC Vive, Oculus Rift and Quest) down to the much less capable (like Google Cardboard, Oculus Go, GearVR, or plain smartphones).
 

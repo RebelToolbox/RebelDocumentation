@@ -22,7 +22,7 @@ Supported video formats are `Ogg Theora <https://www.theora.org/>`__ (``.ogv``, 
 
 **Note:** Due to a bug, VideoPlayer does not support localization remapping yet.
 
-**Warning:** On HTML5, video playback *will* perform poorly due to missing architecture-specific assembly optimizations, especially for VP8/VP9.
+**Warning:** On the Web platform, video playback *will* perform poorly due to missing architecture-specific assembly optimizations, especially for VP8/VP9.
 
 Properties
 ----------

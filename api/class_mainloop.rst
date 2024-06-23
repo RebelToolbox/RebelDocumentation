@@ -207,7 +207,7 @@ Called before the program exits.
 
 - void **_global_menu_action** **(** :ref:`Variant<class_Variant>` id, :ref:`Variant<class_Variant>` meta **)** |virtual|
 
-Called when the user performs an action in the system global menu (e.g. the Mac OS menu bar).
+Called when the user performs an action in the system global menu (e.g. the macOS menu bar).
 
 ----
 
