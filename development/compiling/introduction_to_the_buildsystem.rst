@@ -39,7 +39,7 @@ if you are planning to build Rebel Engine yourself.
 Setup
 -----
 
-Please refer to the documentation for :ref:`doc_compiling_for_android`,
+Please refer to the documentation for :ref:`doc_build_for_android`,
 :ref:`doc_compiling_for_ios`, :ref:`doc_compiling_for_osx`,
 :ref:`doc_compiling_for_uwp`, :ref:`doc_compiling_for_web`,
 :ref:`doc_compiling_for_windows` and :ref:`doc_compiling_for_x11`.
