@@ -8,7 +8,7 @@ Exporting for Android
 
     This page describes how to export a Rebel project to Android.
     If you're looking to compile export template binaries from source instead,
-    read :ref:`doc_compiling_for_android`.
+    read :ref:`doc_build_for_android`.
 
 Exporting for Android has fewer requirements than compiling Rebel Engine for Android.
 The following steps detail what is needed to set up the Android SDK and the engine.
