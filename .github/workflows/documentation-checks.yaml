@@ -69,4 +69,4 @@ jobs:
         run: |
           #Build dummy documentation
           source env/bin/activate
-          make dummy
+          make dummy SPHINXOPTS="-W --keep-going"
