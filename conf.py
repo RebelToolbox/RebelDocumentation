@@ -166,8 +166,6 @@ raw_enabled = False
 # https://sphinx-tabs.readthedocs.io
 # Required by Read the Docs
 
-sphinx_tabs_nowarn = True
-
 
 # 8.2 Sphinx not found extension
 # https://sphinx-notfound-page.readthedocs.io
