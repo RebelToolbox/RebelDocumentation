@@ -1,6 +1,6 @@
 # Rebel Documentation Sphinx build requirements
 
-sphinx==7.2.6
+sphinx==7.3.7
 
 # Sphinx Read the Docs Theme
 # https://pypi.org/project/sphinx-rtd-theme/
@@ -8,16 +8,16 @@ sphinx_rtd_theme==2.0.0
 
 # Sphinx tabs
 # https://pypi.org/project/sphinx-tabs/
-sphinx-tabs==3.4.4
+sphinx-tabs==3.4.5
 
 # Sphinx not found page extension
 # https://pypi.org/project/sphinx-notfound-page/
-sphinx-notfound-page==1.0.0
+sphinx-notfound-page==1.0.2
 
 # Sphinx opengraph extension
 # https://pypi.org/project/sphinxext-opengraph/
-sphinxext-opengraph==0.9.0
+sphinxext-opengraph==0.9.1
 
 # Matplotlib
 # https://pypi.org/project/matplotlib/
-matplotlib==3.8.2
+matplotlib==3.9.0
