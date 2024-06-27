@@ -61,7 +61,7 @@ The next step is to change the build options. Right-click on the new project and
    :figclass: figure-w480
    :align: center
 
-Select the **"Make" commands** tab and remove all the existing commands for all the build targets. For each build target enter the **SCons** command for creating the desired build in the **Build project/target** field. The minimum is ``scons``. For details on the **SCons** build options, see :ref:`doc_introduction_to_the_buildsystem`. It's also useful to add the ``scons --clean`` command in the **Clean project/target** field to the project's default commands.
+Select the **"Make" commands** tab and remove all the existing commands for all the build targets. For each build target enter the **SCons** command for creating the desired build in the **Build project/target** field. The minimum is ``scons``. For details on the **SCons** build options, see :doc:`/development/compiling/introduction_to_the_buildsystem`. It's also useful to add the ``scons --clean`` command in the **Clean project/target** field to the project's default commands.
 
 If you're using Windows, all the commands need to be preceded with ``cmd /c`` to initialize the command interpreter.
 
@@ -114,7 +114,7 @@ It should automatically select the project folder; so simply click **Open**. By 
 Code style configuration
 ------------------------
 
-Before editing any files, remember that all code needs to comply with the :ref:`doc_code_style_guidelines`. One important difference with Rebel Engine is the use of tabs for indents. Therefore, the key default editor setting that needs to be changed in Code::Blocks is to enable tabs for indents. This setting can be found by selecting **Settings > Editor**.
+Before editing any files, remember that all code needs to comply with the :doc:`/contributing/code_style_guidelines`. One important difference with Rebel Engine is the use of tabs for indents. Therefore, the key default editor setting that needs to be changed in Code::Blocks is to enable tabs for indents. This setting can be found by selecting **Settings > Editor**.
 
 .. figure:: img/code_blocks_update_editor_settings.png
    :figclass: figure-w480

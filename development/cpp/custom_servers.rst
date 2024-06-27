@@ -13,7 +13,7 @@ engine and other modules. In addition, the server claims ownership for
 its RID allocations.
 
 This guide assumes the reader knows how to create C++ modules and Rebel Engine
-data types. If not, refer to :ref:`doc_custom_modules_in_c++`.
+data types. If not, refer to :doc:`custom_modules_in_cpp`.
 
 .. seealso::
 

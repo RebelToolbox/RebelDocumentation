@@ -18,7 +18,7 @@ Localization is usually done by specific studios hired for the job and,
 despite the huge amount of software and file formats available for this,
 the most common way to do localization to this day is still with
 spreadsheets. The process of creating the spreadsheets and importing
-them is already covered in the :ref:`doc_importing_translations` tutorial,
+them is already covered in the :doc:`/tutorials/assets_pipeline/importing_translations` tutorial,
 so this one could be seen more like a follow-up to that one.
 
 Download the localization example here:
@@ -92,7 +92,7 @@ Making controls resizable
 --------------------------
 
 The same text in different languages can vary greatly in length. For
-this, make sure to read the tutorial on :ref:`doc_size_and_anchors`, as
+this, make sure to read the tutorial on :doc:`/tutorials/ui/size_and_anchors`, as
 dynamically adjusting control sizes may help.
 :ref:`Container <class_Container>` can be useful, as well as the text wrapping
 options available in :ref:`Label <class_Label>`.
@@ -142,4 +142,4 @@ For instance, for Spanish, this would be ``application/name_es``:
 .. image:: img/localized_name.png
 
 If you are unsure about the language code to use, refer to the
-:ref:`list of locale codes <doc_locales>`.
+:doc:`list of locale codes </tutorials/i18n/locales>`.

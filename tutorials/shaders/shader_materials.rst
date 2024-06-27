@@ -64,7 +64,7 @@ your visual shader to a text shader.
 
 .. note::
 
-   To learn more about visual shaders, read :ref:`doc_visual_shaders`.
+   To learn more about visual shaders, read :doc:`visual_shaders`.
 
 Converting to ShaderMaterial
 ----------------------------

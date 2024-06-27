@@ -7,7 +7,7 @@ Introduction
 ------------
 
 :ref:`Gridmaps <class_GridMap>` are a tool for creating 3D
-game levels, similar to the way :ref:`TileMap <doc_using_tilemaps>`
+game levels, similar to the way :doc:`TileMap </tutorials/2d/using_tilemaps>`
 works in 2D. You start with a predefined collection of 3D meshes (a
 :ref:`class_MeshLibrary`) that can be placed on a grid,
 as if you were building a level with an unlimited amount of Lego blocks.

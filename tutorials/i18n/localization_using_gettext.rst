@@ -3,7 +3,7 @@
 Localization using gettext
 ==========================
 
-In addition to :ref:`doc_importing_translations` in CSV format, Rebel Engine
+In addition to :doc:`/tutorials/assets_pipeline/importing_translations` in CSV format, Rebel Engine
 also supports loading translation files written in the GNU gettext
 (``.po``) format.
 
@@ -118,7 +118,7 @@ In **Translations**, click **Add…** then choose the ``.po`` file
 in the file dialog. The locale will be inferred from the
 ``"Language: <code>\n"`` property in the messages file.
 
-.. note:: See :ref:`doc_internationalizing_games` for more information on
+.. note:: See :doc:`internationalizing_games` for more information on
           importing and testing translations in Rebel Editor.
 
 Updating message files to follow the PO template

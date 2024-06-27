@@ -357,7 +357,7 @@ Emission
 ~~~~~~~~
 
 *Emission* specifies how much light is emitted by the material (keep in mind this
-does not include light surrounding geometry unless :ref:`doc_gi_probes` are used).
+does not include light surrounding geometry unless :doc:`gi_probes` are used).
 This value is added to the resulting final image and is not affected by other
 lighting in the scene.
 

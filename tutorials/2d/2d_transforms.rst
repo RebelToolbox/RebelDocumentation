@@ -13,7 +13,7 @@ the screen. This overview discusses very low level details of the engine.
 Canvas transform
 ----------------
 
-As mentioned in the previous tutorial, :ref:`doc_canvas_layers`, every
+As mentioned in the previous tutorial, :doc:`canvas_layers`, every
 CanvasItem node (remember that Node2D and Control based nodes use
 CanvasItem as their common root) will reside in a *Canvas Layer*. Every
 canvas layer has a transform (translation, rotation, scale, etc.) that
@@ -37,7 +37,7 @@ Stretch transform
 
 Finally, viewports have a *Stretch Transform*, which is used when
 resizing or stretching the screen. This transform is used internally (as
-described in :ref:`doc_multiple_resolutions`), but can also be manually set
+described in :doc:`/tutorials/rendering/multiple_resolutions`), but can also be manually set
 on each viewport.
 
 Input events received in the :ref:`MainLoop._input_event() <class_MainLoop_method__input_event>`

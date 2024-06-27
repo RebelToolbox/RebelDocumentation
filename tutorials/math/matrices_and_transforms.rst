@@ -7,7 +7,7 @@ Introduction
 ------------
 
 Before reading this tutorial, we recommend that you thoroughly read
-and understand the :ref:`doc_vector_math` tutorial, as this tutorial
+and understand the :doc:`vector_math` tutorial, as this tutorial
 requires a knowledge of vectors.
 
 This tutorial is about *transformations* and how we represent them

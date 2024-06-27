@@ -11,7 +11,7 @@ Importing the project
 
 CLion requires a ``CMakeLists.txt`` file as a project file, which is problematic
 for Rebel Engine because it uses the SCons buildsystem instead of CMake. However,
-there is a ``CMakeLists.txt`` configuration for :ref:`Android Studio <doc_configuring_an_ide_android_studio>`
+there is a ``CMakeLists.txt`` configuration for :doc:`Android Studio </development/cpp/configuring_an_ide/android_studio>`
 which can also be used by CLion.
 
 - From the CLion's welcome window choose the option to import an existing

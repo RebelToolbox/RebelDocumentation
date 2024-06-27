@@ -26,9 +26,9 @@ The equivalent C# code has been included in another tab for convenience.
 .. image:: img/scripting_first_script_rotating_godot.gif
 
 .. seealso:: To learn more about GDScript, its keywords, and its syntax, head to
-             the :ref:`GDScript reference<doc_gdscript>`.
+             the :doc:`GDScript reference</tutorials/scripting/gdscript/gdscript_basics>`.
 
-.. seealso:: To learn more about C#, head to the :ref:`C# basics <doc_c_sharp>` page.
+.. seealso:: To learn more about C#, head to the :doc:`C# basics </tutorials/scripting/c_sharp/c_sharp_basics>` page.
 
 Project setup
 -------------
@@ -300,11 +300,11 @@ Run the scene to see the Rebel icon run in circles.
 .. image:: img/scripting_first_script_rotating_godot.gif
 
 .. note:: Moving a node like that does not take into account colliding with
-          walls or the floor. In :ref:`doc_your_first_2d_game`, you will learn
+          walls or the floor. In :doc:`/getting_started/first_2d_game/index`, you will learn
           another approach to moving objects while detecting collisions.
 
 Our node currently moves by itself. In the next part
-:ref:`doc_scripting_player_input`, we'll use player input to control it.
+:doc:`scripting_player_input`, we'll use player input to control it.
 
 Complete script
 ---------------

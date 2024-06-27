@@ -8,7 +8,7 @@ lesson, we'll make the player die when a monster hits them on the ground.
 
 First, we have to change a few settings related to physics interactions. Enter
 the world of :ref:`physics layers
-<doc_physics_introduction_collision_layers_and_masks>`.
+<tutorials/physics/physics_introduction:collision layers and masks>`.
 
 Controlling physics interactions
 --------------------------------
@@ -177,8 +177,8 @@ Let's add the squash mechanic next. We're going to make the character bounce
 over monsters and kill them at the same time.
 
 We need to detect collisions with a monster and to differentiate them from
-collisions with the floor. To do so, we can use Rebel Engine's :ref:`group
-<doc_groups>` tagging feature.
+collisions with the floor. To do so, we can use Rebel Engine's :doc:`group
+</tutorials/scripting/groups>` tagging feature.
 
 Open the scene ``Mob.tscn`` again and select the *Mob* node. Go to the *Node*
 dock on the right to see a list of signals. The *Node* dock has two tabs:

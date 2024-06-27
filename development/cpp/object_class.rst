@@ -174,8 +174,8 @@ This creates the property using the setter and the getter.
 
 .. _doc_binding_properties_using_set_get_property_list:
 
-Binding properties using ``_set``/``_get``/``_get_property_list``
------------------------------------------------------------------
+Binding properties
+------------------
 
 An additional method of creating properties exists when more flexibility
 is desired (i.e. adding or removing properties on context).
@@ -240,7 +240,7 @@ Notifications
 
 All objects in Rebel Engine have a :ref:`_notification <class_Object_method__notification>`
 method that allows it to respond to engine level callbacks that may relate to it.
-More information can be found on the :ref:`doc_notifications` page.
+More information can be found on the :doc:`/tutorials/best_practices/notifications` page.
 
 References
 ----------

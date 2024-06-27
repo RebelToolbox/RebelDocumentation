@@ -72,7 +72,7 @@ Instantiating C# nodes from GDScript
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Using C# from GDScript doesn't need much work. Once loaded
-(see :ref:`doc_gdscript_classes_as_resources`), the script can be instantiated
+(see :ref:`tutorials/scripting/gdscript/gdscript_basics:classes as resources`), the script can be instantiated
 with :ref:`new() <class_CSharpScript_method_new>`.
 
 ::
@@ -105,7 +105,7 @@ be instantiated with :ref:`GDScript.New() <class_GDScript_method_new>`.
     Object myGDScriptNode = (Godot.Object) MyGDScript.New(); // This is a Godot.Object
 
 Here we are using an :ref:`class_Object`, but you can use type conversion like
-explained in :ref:`doc_c_sharp_features_type_conversion_and_casting`.
+explained in :ref:`tutorials/scripting/c_sharp/c_sharp_features:type conversion and casting`.
 
 Accessing fields
 ----------------
@@ -147,7 +147,7 @@ and :ref:`Object.Set() <class_Object_method_set>`. The first argument is the nam
 
 Keep in mind that when setting a field value you should only use types the
 GDScript side knows about.
-Essentially, you want to work with built-in types as described in :ref:`doc_gdscript` or classes extending :ref:`class_Object`.
+Essentially, you want to work with built-in types as described in :doc:`/tutorials/scripting/gdscript/gdscript_basics` or classes extending :ref:`class_Object`.
 
 Calling methods
 ---------------

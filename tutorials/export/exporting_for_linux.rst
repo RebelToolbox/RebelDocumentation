@@ -7,7 +7,7 @@ Exporting for Linux
 
     This page describes how to export a Rebel project to Linux.
     If you're looking to compile editor or export template binaries from source instead,
-    read :ref:`doc_compiling_for_x11`.
+    read :doc:`/development/compiling/compiling_for_x11`.
 
 The simplest way to distribute a game for PC is to copy the executable
 (``rebel``), compress the folder and send it to someone else. However, this is

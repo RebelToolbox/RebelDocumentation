@@ -16,7 +16,7 @@ Rebel Engine supports threads and provides many handy functions to use them.
 
 .. warning::
 
-    Before using a built-in class in a thread, read :ref:`doc_thread_safe_apis`
+    Before using a built-in class in a thread, read :doc:`thread_safe_apis`
     first to check whether it can be safely used in a thread.
 
 Creating a Thread
@@ -58,7 +58,7 @@ Mutexes
 
 Accessing objects or data from multiple threads is not always supported (if you
 do it, it will cause unexpected behaviors or crashes). Read the
-:ref:`doc_thread_safe_apis` documentation to understand which engine APIs
+:doc:`thread_safe_apis` documentation to understand which engine APIs
 support multiple thread access.
 
 When processing your own data or calling your own functions, as a rule, try to

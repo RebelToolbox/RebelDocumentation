@@ -36,7 +36,7 @@ Setting up VideoPlayer
    and load an ``.ogv`` file in the Stream property.
 
    - If you don't have your video in Ogg Theora format yet, jump to
-     :ref:`doc_playing_videos_recommended_theora_encoding_settings`.
+     `Recommended Theora encoding settings`_.
 
 3. If you want the video to play as soon as the scene is loaded, check
    **Autoplay** in the inspector. If not, leave **Autoplay** disabled and call
@@ -75,7 +75,7 @@ to fit the whole screen while avoiding distortion.
 
 .. seealso::
 
-    See :ref:`doc_multiple_resolutions` for more tips on supporting multiple
+    See :doc:`/tutorials/rendering/multiple_resolutions` for more tips on supporting multiple
     aspect ratios in your project.
 
 Displaying a video on a 3D surface
@@ -106,7 +106,7 @@ This can be done with the following steps:
 8. If the billboard is supposed to emit its own light, enable
    **Flags > Unshaded** to improve rendering performance.
 
-See :ref:`doc_viewports` for more information on setting this up.
+See :doc:`/tutorials/rendering/viewports` for more information on setting this up.
 
 Video decoding conditions and recommended resolutions
 -----------------------------------------------------

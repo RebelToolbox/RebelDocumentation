@@ -61,7 +61,7 @@ By default, a theme only has one property, the *Default Font*.
 
     You can add more properties to the theme resource to design complex user
     interfaces, but that is beyond the scope of this series. To learn more about
-    creating and editing themes, see :ref:`doc_gui_skinning`.
+    creating and editing themes, see :doc:`/tutorials/ui/gui_skinning`.
 
 Click the *Default Font* property and create a new *DynamicFont*.
 
@@ -169,7 +169,7 @@ function.
 
 .. seealso::
 
-    You can learn more about string formatting here: :ref:`doc_gdscript_printf`.
+    You can learn more about string formatting here: :doc:`/tutorials/scripting/gdscript/gdscript_format_string`.
 
 You can now play the game and squash a few enemies to see the score
 increase.
@@ -308,7 +308,7 @@ Adding music
 ------------
 
 To add music that plays continuously in the background, we're going to use
-another feature in Rebel Engine: :ref:`autoloads <doc_singletons_autoload>`.
+another feature in Rebel Engine: :doc:`autoloads </tutorials/scripting/singletons_autoload>`.
 
 To play audio, all you need to do is add an *AudioStreamPlayer* node to your
 scene and attach an audio file to it. When you start the scene, it can play

@@ -297,7 +297,7 @@ Below are examples of common variables calculated using the built-ins:
 
     Shaders going through the transparent pipeline when ``ALPHA`` is written to
     may exhibit transparency sorting issues. Read the
-    :ref:`transparency sorting section in the 3D rendering limitations page <doc_3d_rendering_limitations_transparency_sorting>`
+    :ref:`transparency sorting section in the 3D rendering limitations page <tutorials/3d/3d_rendering_limitations:Transparency sorting>`
     for more information and ways to avoid issues.
 
 Light built-ins
@@ -388,5 +388,5 @@ If you want the lights to add together, add the light contribution to ``DIFFUSE_
 
     Shaders going through the transparent pipeline when ``ALPHA`` is written to
     may exhibit transparency sorting issues. Read the
-    :ref:`transparency sorting section in the 3D rendering limitations page <doc_3d_rendering_limitations_transparency_sorting>`
+    :ref:`transparency sorting section in the 3D rendering limitations page <tutorials/3d/3d_rendering_limitations:Transparency sorting>`
     for more information and ways to avoid issues.

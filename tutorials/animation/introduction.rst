@@ -323,7 +323,7 @@ Advanced: Call Method tracks
 
 The Rebel animation engine doesn't stop here. If you're already
 comfortable with Rebel Engine's scripting language
-:ref:`doc_gdscript` and :doc:`/api/index` you
+:doc:`/tutorials/scripting/gdscript/gdscript_basics` and :doc:`/api/index` you
 know that each node type is a class and has a bunch of callable
 methods.
 

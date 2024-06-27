@@ -14,7 +14,7 @@ Engine
 
 The ``Engine`` class provides methods for loading and starting exported projects on the Web. For default export
 settings, this is already part of the exported HTML page. To understand practical use of the ``Engine`` class,
-see :ref:`Custom HTML page for Web export <doc_customizing_html5_shell>`.
+see :doc:`Custom HTML page for Web export </tutorials/platform/customizing_html5_shell>`.
 
 Static Methods
 ^^^^^^^^^^^^^^
@@ -258,7 +258,7 @@ Properties
       Specify a language code to select the proper localization for the game.
 
       The browser locale will be used if none is specified. See complete list of
-      :ref:`supported locales <doc_locales>`.
+      :doc:`supported locales </tutorials/i18n/locales>`.
 
       :type: string
 
@@ -283,7 +283,7 @@ Properties
 
       The arguments to be passed as command line arguments on startup.
 
-      See :ref:`command line tutorial <doc_command_line_tutorial>`.
+      See :doc:`command line tutorial </tutorials/editor/command_line_tutorial>`.
 
       **Note**: :js:meth:`startGame <Engine.prototype.startGame>` will always add the ``--main-pack`` argument.
 

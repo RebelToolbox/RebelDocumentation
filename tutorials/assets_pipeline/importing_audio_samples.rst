@@ -49,7 +49,7 @@ for music, speech, and long sound effects.
 Best practices
 --------------
 
-Rebel Engine has an :ref:`extensive bus system <doc_audio_buses>` with built-in effects.
+Rebel Engine has an :doc:`extensive bus system </tutorials/audio/audio_buses>` with built-in effects.
 This saves SFX artists the need to add reverb to the sound effects,
 reducing their size greatly and ensuring correct trimming. Say no to SFX
 with baked reverb!

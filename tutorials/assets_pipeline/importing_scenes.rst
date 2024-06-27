@@ -78,7 +78,7 @@ separately. Rebel Engine uses PBR (physically based rendering) for its materials
 textures, they can work in Rebel Engine. This includes the `Substance suite <https://www.substance3d.com/>`__,
 `ArmorPaint (open source) <https://armorpaint.org/>`__, and `Material Maker (open source) <https://github.com/RodZill4/material-maker>`__.
 
-.. note:: For more information on Rebel Engine's materials, see :ref:`doc_spatial_material`.
+.. note:: For more information on Rebel Engine's materials, see :doc:`/tutorials/3d/spatial_material`.
 
 Exporting considerations
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -266,7 +266,7 @@ Whether or not the mesh is used in baked lightmaps.
 - **Enable:** The mesh is used in baked lightmaps.
 - **Gen Lightmaps:** The mesh is used in baked lightmaps, and unwraps a second UV layer for lightmaps.
 
-.. note:: For more information on light baking see :ref:`doc_baked_lightmaps`.
+.. note:: For more information on light baking see :doc:`/tutorials/3d/baked_lightmaps`.
 
 External Files
 ~~~~~~~~~~~~~~
@@ -461,7 +461,7 @@ reliability.
 
 .. seealso::
 
-    See :ref:`doc_collision_shapes_3d` for a comprehensive overview of collision
+    See :doc:`/tutorials/physics/collision_shapes_3d` for a comprehensive overview of collision
     shapes.
 
 Create navigation (-navmesh)

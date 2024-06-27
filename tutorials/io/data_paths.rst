@@ -54,7 +54,7 @@ On desktop platforms, the actual directory paths for ``user://`` are:
 +-------------------------------+------------------------------------------------------------------------------+
 
 ``[project_name]`` is based on the application name defined in the Project Settings, but
-you can override it on a per-platform basis using :ref:`feature tags <doc_feature_tags>`.
+you can override it on a per-platform basis using :doc:`feature tags </tutorials/export/feature_tags>`.
 
 On mobile platforms, this path is unique to the project and is not accessible
 by other applications for security reasons.

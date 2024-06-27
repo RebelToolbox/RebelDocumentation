@@ -18,7 +18,7 @@ Debugger Panel
 --------------
 
 Many of Rebel Editor's debugging tools are part of the Debugger panel, which you can
-find information about in :ref:`doc_debugger_panel`.
+find information about in :doc:`debugger_panel`.
 
 Debug menu options
 ------------------
@@ -93,7 +93,7 @@ debug your game with an external editor.
 .. warning::
 
     Breakpoints won't break on code if it's
-    :ref:`running in a thread <doc_using_multiple_threads>`.
+    :doc:`running in a thread </tutorials/performance/threads/using_multiple_threads>`.
     This is a current limitation of the GDScript debugger.
 
 Debug project settings

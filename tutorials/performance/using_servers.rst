@@ -4,7 +4,7 @@ Optimization using Servers
 ==========================
 
 Engines like Rebel Engine provide increased ease of use thanks to their high level constructs and features.
-Most of them are accessed and used via the :ref:`Scene System<doc_scene_tree>`. Using nodes and
+Most of them are accessed and used via the :doc:`Scene System</tutorials/scripting/scene_tree>`. Using nodes and
 resources simplifies project organization and asset management in complex games.
 
 There are, of course, always drawbacks:

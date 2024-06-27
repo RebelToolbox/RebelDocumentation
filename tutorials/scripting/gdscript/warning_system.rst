@@ -3,7 +3,7 @@
 GDScript warning system
 =======================
 
-The GDScript warning system complements :ref:`static typing <doc_gdscript_static_typing>`
+The GDScript warning system complements :doc:`static typing </tutorials/scripting/gdscript/static_typing>`
 (but it can work without static typing too). It's here to help you avoid
 mistakes that are hard to spot during development, and that may lead
 to runtime errors.

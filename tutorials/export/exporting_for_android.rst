@@ -8,7 +8,7 @@ Exporting for Android
 
     This page describes how to export a Rebel project to Android.
     If you're looking to compile export template binaries from source instead,
-    read :ref:`doc_build_for_android`.
+    read :doc:`/development/compiling/build_for_android`.
 
 Exporting for Android has fewer requirements than compiling Rebel Engine for Android.
 The following steps detail what is needed to set up the Android SDK and the engine.
@@ -168,7 +168,7 @@ Each APK should target a single architecture; creating an APK for ARMv7
 and ARMv8 is usually sufficient to cover most devices in use today.
 
 You can optimize the size further by compiling an Android export template with
-only the features you need. See :ref:`doc_optimizing_for_size` for more
+only the features you need. See :doc:`/development/compiling/optimizing_for_size` for more
 information.
 
 Troubleshooting rendering issues
@@ -178,4 +178,4 @@ To improve out-of-the-box performance on mobile devices, Rebel Engine automatica
 uses low-end-friendly settings by default on both Android and iOS.
 
 This can cause rendering issues that do not occur when running the project on a
-desktop platform. See :ref:`doc_mobile_rendering_limitations` for more information.
+desktop platform. See :doc:`/tutorials/platform/mobile_rendering_limitations` for more information.

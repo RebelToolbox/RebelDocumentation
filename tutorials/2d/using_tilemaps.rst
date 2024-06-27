@@ -31,7 +31,7 @@ Create a new project and place the above image in the project folder.
 When using a tileset, it's important that adjacent tiles match up. Rebel Engine's default
 is to import 2D images using an interpolated "filter" mode, which will result in
 ugly borders between the tiles. Select the image and click the Import tab. Turn
-off ``Filter`` and click "Reimport". See :ref:`doc_import_images` for details.
+off ``Filter`` and click "Reimport". See :doc:`/tutorials/assets_pipeline/importing_images` for details.
 
 TileMap node
 ------------

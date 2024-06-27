@@ -51,7 +51,7 @@ via a single draw call, rather than making a separate draw call for each item.
 In addition, this means state changes, material and texture changes can be kept
 to a minimum.
 
-For more information on 2D batching, see :ref:`doc_batching`.
+For more information on 2D batching, see :doc:`batching`.
 
 3D batching
 ~~~~~~~~~~~
@@ -73,7 +73,7 @@ joining static objects often outweigh other considerations, especially for large
 numbers of distant or low-poly objects.
 
 For more information on 3D specific optimizations, see
-:ref:`doc_optimizing_3d_performance`.
+:doc:`optimizing_3d_performance`.
 
 Reuse Shaders and Materials
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

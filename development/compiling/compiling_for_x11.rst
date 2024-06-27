@@ -8,7 +8,7 @@ Compiling for X11 (Linux, \*BSD)
 .. seealso::
 
     This page describes how to compile Linux editor and export template binaries from source.
-    If you're looking to export your project to Linux instead, read :ref:`doc_exporting_for_linux`.
+    If you're looking to export your project to Linux instead, read :doc:`/tutorials/export/exporting_for_linux`.
 
 Requirements
 ------------
@@ -32,10 +32,10 @@ required:
 -  *Optional* - yasm (for WebM SIMD optimizations).
 
 .. seealso:: To get the Rebel Engine source code for compiling, see
-             :ref:`doc_getting_source`.
+             :doc:`getting_source`.
 
              For a general overview of SCons usage for Rebel Engine, see
-             :ref:`doc_introduction_to_the_buildsystem`.
+             :doc:`introduction_to_the_buildsystem`.
 
 Distro-specific one-liners
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -139,7 +139,7 @@ manager.
 
 .. note:: If you want to use separate editor settings for your own Rebel Engine builds
           and official releases, you can enable
-          :ref:`doc_data_paths_self_contained_mode` by creating a file called
+          :ref:`tutorials/io/data_paths:self-contained mode` by creating a file called
           ``._sc_`` or ``_sc_`` in the ``bin/`` folder.
 
 Compiling a headless/server build
@@ -151,7 +151,7 @@ projects in an automated manner, use::
     scons -j8 platform=server tools=yes target=release_debug
 
 To compile a debug *server* build which can be used with
-:ref:`remote debugging tools <doc_command_line_tutorial>`, use::
+:doc:`remote debugging tools </tutorials/editor/command_line_tutorial>`, use::
 
     scons -j8 platform=server tools=no target=release_debug
 

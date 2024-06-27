@@ -262,7 +262,7 @@ If ``sync`` is included, the call can also be made locally. For example, to allo
 
 .. tip:: You can also use :ref:`SceneTree.get_rpc_sender_id() <class_SceneTree_method_get_rpc_sender_id>` to have more advanced rules on how an rpc can be called.
 
-These keywords are further explained in :ref:`Synchronizing the game <doc_high_level_multiplayer_synchronizing>`.
+These keywords are further explained in `Synchronizing the game`_.
 
 With this, lobby management should be more or less explained. Once you have your game going, you will most likely want to add some
 extra security to make sure clients don't do anything funny (just validate the info they send from time to time, or before
@@ -474,7 +474,7 @@ Exporting for dedicated servers
 
 Once you've made a multiplayer game, you may want to export it to run it on
 a dedicated server with no GPU available. See
-:ref:`doc_exporting_for_dedicated_servers` for more information.
+:doc:`/tutorials/export/exporting_for_dedicated_servers` for more information.
 
 .. note::
 

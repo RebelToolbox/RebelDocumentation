@@ -11,12 +11,12 @@ native `shared libraries <https://en.wikipedia.org/wiki/Library_(computing)#Shar
 at run-time. You can use it to run native code without compiling it with the engine.
 
 .. note:: GDNative is *not* a scripting language and has no relation to
-          :ref:`GDScript <doc_gdscript>`.
+          :doc:`GDScript </tutorials/scripting/gdscript/gdscript_basics>`.
 
 Differences between GDNative and C++ modules
 --------------------------------------------
 
-You can use both GDNative and :ref:`C++ modules <doc_custom_modules_in_c++>` to
+You can use both GDNative and :doc:`C++ modules </development/cpp/custom_modules_in_cpp>` to
 run C or C++ code in a Rebel Project.
 
 They also both allow you to integrate third-party libraries into Rebel Engine. The one
@@ -34,7 +34,7 @@ to distribute as an add-on.
 Also:
 
 - GDNative is not limited to C and C++. Thanks to :ref:`third-party bindings
-  <doc_what_is_gdnative_third_party_bindings>`, you can use it with many other
+  <tutorials/scripting/gdnative/what_is_gdnative:version compatibility>`, you can use it with many other
   languages.
 - You can use the same compiled GDNative library in the editor and exported
   project. With C++ modules, you have to recompile all the export templates you
@@ -47,7 +47,7 @@ Also:
 Advantages of C++ modules
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We recommend :ref:`C++ modules <doc_custom_modules_in_c++>` in cases where
+We recommend :doc:`C++ modules </development/cpp/custom_modules_in_cpp>` in cases where
 GDNative isn't enough:
 
 - C++ modules provide deeper integration into the engine. GDNative's access is
@@ -66,8 +66,8 @@ Supported languages
 The Rebel developers officially support the following language bindings for
 GDNative:
 
-- C++ :ref:`(tutorial) <doc_gdnative_cpp_example>`
-- C :ref:`(tutorial) <doc_gdnative_c_example>`
+- C++ :doc:`(tutorial) </tutorials/scripting/gdnative/gdnative_cpp_example>`
+- C :doc:`(tutorial) </tutorials/scripting/gdnative/gdnative_c_example>`
 
 .. note::
 
@@ -80,7 +80,7 @@ GDNative:
 Version compatibility
 ---------------------
 
-:ref:`Unlike Rebel Engine <doc_release_policy>`, GDNative has stricter version
+:doc:`Unlike Rebel Engine </about/release_policy>`, GDNative has stricter version
 compatibility requirements as it relies on low-level *ptrcalls* to function.
 
 GDNative add-ons compiled for a given Rebel Engine version are only guaranteed to work

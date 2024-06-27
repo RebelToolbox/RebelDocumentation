@@ -83,7 +83,7 @@ For more advanced type checking, you can look into `Pattern Matching <https://do
 C# signals
 ----------
 
-For a complete C# example, see the **Handling a signal** section in the step by step :ref:`doc_scripting` tutorial.
+For a complete C# example, see the **Handling a signal** section in the step by step :doc:`/getting_started/step_by_step/scripting_languages` tutorial.
 
 Declaring a signal in C# is done with the ``[Signal]`` attribute on a delegate.
 

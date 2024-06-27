@@ -12,7 +12,7 @@ path again, the previous loaded Resource will be referenced. Naturally,
 loaded resources must be stateless.
 
 This guide assumes the reader knows how to create C++ modules and Rebel Engine
-data types. If not, refer to this guide :ref:`doc_custom_modules_in_c++`.
+data types. If not, refer to this guide :doc:`custom_modules_in_cpp`.
 
 .. seealso::
 
@@ -155,7 +155,7 @@ If you'd like to be able to edit and save a resource, you can implement a
 Creating custom data types
 --------------------------
 
-Rebel Engine may not have a proper substitute within its :ref:`doc_core_types`
+Rebel Engine may not have a proper substitute within its :doc:`core_types`
 or managed resources. Rebel Engine needs a new registered data type to
 understand additional binary formats such as machine learning models.
 

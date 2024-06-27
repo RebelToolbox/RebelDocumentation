@@ -46,7 +46,7 @@ process taking a lot more time than others. This is your primary bottleneck, and
 you can usually increase speed by optimizing this area.
 
 For more info about using Rebel Editor's built-in profiler, see
-:ref:`doc_debugger_panel`.
+:doc:`/tutorials/scripting/debug/debugger_panel`.
 
 External profilers
 ~~~~~~~~~~~~~~~~~~
@@ -192,7 +192,7 @@ Rebel Engine is written in C++. Using C++ will usually result in the fastest cod
 However, on a practical level, it is the most difficult to deploy to end users'
 machines on different platforms. Options for using C++ include
 :ref:`GDNative <toc-tutorials-gdnative>` and
-:ref:`custom modules <doc_custom_modules_in_c++>`.
+:doc:`custom modules </development/cpp/custom_modules_in_cpp>`.
 
 Threads
 =======
@@ -211,7 +211,7 @@ you understand the dangers and how to try and prevent these race conditions.
 Threads can also make debugging considerably more difficult. The GDScript
 debugger doesn't support setting up breakpoints in threads yet.
 
-For more information on threads, see :ref:`doc_using_multiple_threads`.
+For more information on threads, see :doc:`/tutorials/performance/threads/using_multiple_threads`.
 
 SceneTree
 =========
@@ -233,7 +233,7 @@ it later using :ref:`Node.add_child(node) <class_Node_method_add_child>`.
 This can be very useful for adding and removing areas from a game, for example.
 
 You can avoid the SceneTree altogether by using Server APIs. For more
-information, see :ref:`doc_using_servers`.
+information, see :doc:`using_servers`.
 
 Physics
 =======

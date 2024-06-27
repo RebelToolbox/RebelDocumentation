@@ -3,9 +3,9 @@
 Occluder Nodes
 ==============
 
-In addition to occlusion via :ref:`doc_rooms_and_portals`, Rebel Engine also has the ability to provide basic occlusion using simple geometric ``Occluder`` nodes. These are geometric shapes that are shown in the editor using gizmos, but are invisible at runtime.
+In addition to occlusion via :doc:`/tutorials/3d/portals/index`, Rebel Engine also has the ability to provide basic occlusion using simple geometric ``Occluder`` nodes. These are geometric shapes that are shown in the editor using gizmos, but are invisible at runtime.
 
-Any object that is fully occluded by the shape (behind or in some cases inside) will be culled at runtime. They are designed to be simple to use and inexpensive at runtime, but the trade off is they may not be as effective at culling as :ref:`doc_rooms_and_portals`. Nevertheless they can still significantly boost performance in some situations.
+Any object that is fully occluded by the shape (behind or in some cases inside) will be culled at runtime. They are designed to be simple to use and inexpensive at runtime, but the trade off is they may not be as effective at culling as :doc:`/tutorials/3d/portals/index`. Nevertheless they can still significantly boost performance in some situations.
 
 .. note:: It is important to understand that geometric occluders work by testing the axis aligned bounding box (``AABB``) of the occludee against the occluder. The AABB must be *fully occluded* to be culled. The consequence of this is that smaller objects are more likely to be effectively culled than larger objects.
 

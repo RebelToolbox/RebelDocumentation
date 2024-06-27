@@ -77,7 +77,7 @@ Writing to disk is still needed for tasks such as saving game state or
 downloading content packs. To this end, the engine ensures that there is a
 special path ``user://`` that is always writable. This path resolves 
 differently depending on the OS the project is running on. Local path 
-resolution is further explained in :ref:`doc_data_paths`.
+resolution is further explained in :doc:`/tutorials/io/data_paths`.
 
 Host file system
 ----------------

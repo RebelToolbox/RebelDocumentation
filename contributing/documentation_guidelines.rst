@@ -21,20 +21,20 @@ in a pull request and getting it merged will trigger a rebuild of the online
 documentation.
 
 .. seealso:: For details on Git usage and the pull request workflow, please
-             refer to the :ref:`doc_pr_workflow` page.
+             refer to the :doc:`pr_workflow` page.
 
 .. warning:: The API documentation's source files are in the `Rebel Engine repository
              <https://github.com/RebelToolbox/RebelEngine>`_. We generate the :ref:`Rebel API
              <toc-api>` section of this documentation from them. If you want to update the
              description of a class, its methods, or properties, read
-             :ref:`doc_updating_the_api_documentation`.
+             :doc:`updating_the_api_documentation`.
 
 .. warning:: If you want to edit the **Rebel Engine API**, please note that it
              should *not* be done in the Rebel Documentation repository. Instead, you
              should edit the XML files in the ``docs/`` folder of Rebel Engine's
              repository. These files are then later used to generate the
              in-editor documentation as well as the API reference of the
-             online docs. Read more here: :ref:`doc_updating_the_api_documentation`.
+             online docs. Read more here: :doc:`updating_the_api_documentation`.
 
 The 'Edit on GitHub' link
 -------------------------
@@ -68,7 +68,7 @@ What makes good documentation?
 
 Documentation should be well written in plain English, using well-formed
 sentences and various levels of sections and subsections. It should be clear
-and objective. Also, have a look at the :ref:`doc_docs_writing_guidelines`.
+and objective. Also, have a look at the :doc:`docs_writing_guidelines`.
 
 We differentiate tutorial pages from other documentation pages by these
 definitions:
@@ -97,7 +97,7 @@ Always begin pages with their title and a Sphinx reference name:
     ======================
 
 The reference allows linking to this page using the ``:ref:`` format, e.g.
-``:ref:`doc_insert_your_title_here``` would link to the above example page
+``:doc:`insert_your_title_here``` would link to the above example page
 (note the lack of leading underscore in the reference).
 
 Also, avoid American CamelCase titles: title's first word should begin

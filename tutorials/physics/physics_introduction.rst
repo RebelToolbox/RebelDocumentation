@@ -45,7 +45,7 @@ The other three bodies extend :ref:`PhysicsBody2D <class_PhysicsBody2D>`:
 - :ref:`RigidBody2D <class_RigidBody2D>`
     This is the node that implements simulated 2D physics. You do not control a
     ``RigidBody2D`` directly, but instead you apply forces to it (gravity, impulses,
-    etc.) and the physics engine calculates the resulting movement. :ref:`Read more about using rigid bodies. <doc_rigid_body>`
+    etc.) and the physics engine calculates the resulting movement. :doc:`Read more about using rigid bodies. </tutorials/physics/rigid_body>`
 
 - :ref:`KinematicBody2D <class_KinematicBody2D>`
     A body that provides collision detection, but no physics. All movement and
@@ -498,5 +498,5 @@ the ground (including slopes) and jump when standing on the ground:
     }
 
 
-See :ref:`doc_kinematic_character_2d` for more details on using ``move_and_slide()``,
+See :doc:`kinematic_character_2d` for more details on using ``move_and_slide()``,
 including a demo project with detailed code.

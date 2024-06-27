@@ -34,7 +34,7 @@ There are 3 rules to describe classes:
 
 .. seealso::
 
-    See the :ref:`content guidelines <doc_content_guidelines>` for information
+    See the :doc:`content guidelines </contributing/content_guidelines>` for information
     on the types of documentation you can write in the official documentation.
 
 7 rules for clear English

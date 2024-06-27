@@ -9,12 +9,12 @@ On this page, you will learn:
 - How to work efficiently on the Rebel Editor's C++ code.
 
 This guide is aimed at current or future engine contributors.
-To create editor plugins in GDScript, see :ref:`doc_making_plugins` instead.
+To create editor plugins in GDScript, see :doc:`/tutorials/plugins/editor/making_plugins` instead.
 
 .. seealso::
 
     If you are new to Rebel, we recommended you to read
-    :ref:`doc_design_philosophy` before continuing. Since the Rebel Editor
+    :doc:`/getting_started/introduction/design_philosophy` before continuing. Since the Rebel Editor
     is a Rebel project written in C++, much of the engine's philosophy applies
     to the editor.
 
@@ -37,7 +37,7 @@ The editor's code is fully self-contained in the
 of the Rebel Engine source repository.
 
 Some editor functionality is also implemented via
-:ref:`modules <doc_custom_modules_in_c++>`. Some of these are only enabled in
+:doc:`modules </development/cpp/custom_modules_in_cpp>`. Some of these are only enabled in
 editor builds to decrease the binary size of export templates. See the
 `modules/ <https://github.com/RebelToolbox/RebelEngine/tree/main/modules>`__ folder
 in the Rebel Engine source repository.
@@ -82,6 +82,6 @@ Development tips
 ----------------
 
 To iterate quickly on the editor, we recommend to set up a test project and
-:ref:`open it from the command line <doc_command_line_tutorial>` after compiling
+:doc:`open it from the command line </tutorials/editor/command_line_tutorial>` after compiling
 the editor. This way, you don't have to go through the project manager every
 time you start Rebel Editor.

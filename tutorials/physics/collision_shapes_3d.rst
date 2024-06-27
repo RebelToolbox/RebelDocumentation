@@ -121,7 +121,7 @@ editor exposes two options:
 .. seealso::
 
     Rebel Engine can generate collision shapes for your imported 3D scenes
-    automatically. See :ref:`doc_importing_scenes_import_hints` in the
+    automatically. See :doc:`/tutorials/assets_pipeline/importing_scenes` in the
     documentation for more information.
 
 Performance caveats

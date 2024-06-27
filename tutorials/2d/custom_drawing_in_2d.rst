@@ -465,4 +465,4 @@ Tools
 
 Drawing your own nodes might also be desired while running them in the
 editor. This can be used as a preview or visualization of some feature or
-behavior. See :ref:`doc_running_code_in_the_editor` for more information.
+behavior. See :doc:`/tutorials/plugins/running_code_in_the_editor` for more information.

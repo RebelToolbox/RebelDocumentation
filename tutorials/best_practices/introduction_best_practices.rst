@@ -17,7 +17,7 @@ That is why each article starts from a real-world problem. We will break down
 each problem in fundamental questions, suggest solutions, analyze the pros and
 cons of each option, and highlight the best course of action for the problem at hand.
 
-You should start by reading :ref:`doc_applying_object_oriented_principles`. It explains how
+You should start by reading :doc:`applying_object_oriented_principles`. It explains how
 Rebel Engine's nodes and scenes relate to classes and objects in other
 Object-Oriented programming languages. It will help you make sense of the rest of the series.
 

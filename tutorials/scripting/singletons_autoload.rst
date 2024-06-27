@@ -110,7 +110,7 @@ Custom scene switcher
 This tutorial will demonstrate building a scene switcher using autoloads.
 For basic scene switching, you can use the
 :ref:`SceneTree.change_scene() <class_SceneTree_method_change_scene>`
-method (see :ref:`doc_scene_tree` for details). However, if you need more
+method (see :doc:`scene_tree` for details). However, if you need more
 complex behavior when changing scenes, this method provides more functionality.
 
 To begin, download the template from here:
@@ -291,7 +291,7 @@ the button.
 
     When scenes are small, the transition is instantaneous. However, if your
     scenes are more complex, they may take a noticeable amount of time to appear.
-    To learn how to handle this, see the next tutorial: :ref:`doc_background_loading`.
+    To learn how to handle this, see the next tutorial: :doc:`/tutorials/io/background_loading`.
 
     Alternatively, if the loading time is relatively short (less than 3 seconds or so),
     you can display a "loading plaque" by showing some kind of 2D element just before

@@ -8,7 +8,7 @@ and gives practical advice on how to migrate shaders from other sources, such as
 Shadertoy and The Book of Shaders, into Rebel Shaders.
 
 For detailed information on Rebel Shading Language, please refer to the
-:ref:`doc_shading_language` reference.
+:doc:`/tutorials/shaders/shader_reference/shading_language` reference.
 
 GLSL
 ----
@@ -35,8 +35,8 @@ Vertex attributes
 In GLSL, you can pass in per-vertex information using attributes and have the
 flexibility to pass in as much or as little as you want. In Rebel Shading Language, you have a
 set number of input attributes, including ``VERTEX`` (position), ``COLOR``,
-``UV``, ``UV2``, ``NORMAL``. For a complete list, see the :ref:`Shading language
-reference <doc_shading_language>`.
+``UV``, ``UV2``, ``NORMAL``. For a complete list, see the :doc:`Shading language
+reference </tutorials/shaders/shader_reference/shading_language>`.
 
 gl_Position
 ^^^^^^^^^^^
@@ -126,7 +126,7 @@ In GLSL, you can define the precision of a given type (float or int) at the top
 of the shader with the ``precision`` keyword. In Rebel Shading Language, you can set the
 precision of individual variables as you need by placing precision qualifiers
 ``lowp``, ``mediump``, and ``highp`` before the type when defining the variable.
-For more information, see the :ref:`Shading Language <doc_shading_language>`
+For more information, see the :doc:`Shading Language </tutorials/shaders/shader_reference/shading_language>`
 reference.
 
 Shadertoy

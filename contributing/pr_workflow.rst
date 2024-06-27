@@ -236,7 +236,7 @@ You will then be back to the original state of your branch before calling
 If you have already created a merge commit without using ``rebase``, or
 have made any other changes that have resulted in undesired history, the best option
 is to use an *interactive rebase* on the upstream branch. See the :ref:`dedicated
-section <doc_pr_workflow_rebase>` for instructions.
+section <contributing/pr_workflow:The interactive rebase>` for instructions.
 
 .. tip:: If at any time you want to *reset* a local branch to a given commit or branch,
          you can do so with ``git reset --hard <commit ID>`` or

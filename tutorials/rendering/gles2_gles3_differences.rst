@@ -93,7 +93,7 @@ GIProbes
 --------
 
 :ref:`GIProbes <class_GIProbe>` do not work in GLES2. Instead use :ref:`Baked Lightmaps <class_BakedLightmap>`.
-For a description of how baked lightmaps work see the :ref:`Baked Lightmaps tutorial <doc_baked_lightmaps>`.
+For a description of how baked lightmaps work see the :doc:`Baked Lightmaps tutorial </tutorials/3d/baked_lightmaps>`.
 
 Contact shadows
 ---------------
@@ -135,7 +135,7 @@ Shading language
 GLES3 provides many built-in functions that GLES2 does not. Below is a list of functions
 that are not available or are have limited support in GLES2.
 
-For a complete list of built-in GLSL functions see the :ref:`Shading Language doc <doc_shading_language>`.
+For a complete list of built-in GLSL functions see the :doc:`Shading Language doc </tutorials/shaders/shader_reference/shading_language>`.
 
 +---------------------------------------------------------------------------------------------+--------------------------------------------------+
 | Function                                                                                    |                                                  |

@@ -30,7 +30,7 @@ Instead of hardcoding keys or controller buttons in your scripts, you should
 create *input actions* in the Project Settings which will then refer to
 specified key and controller inputs.
 
-Input actions are explained in detail on the :ref:`doc_inputevent` page.
+Input actions are explained in detail on the :doc:`inputevent` page.
 
 .. note::
 

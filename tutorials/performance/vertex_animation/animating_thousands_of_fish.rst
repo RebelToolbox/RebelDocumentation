@@ -212,7 +212,7 @@ Now, set ``instance_count`` to the number of fish you want to have.
 Next we need to set the per-instance transforms.
 
 There are two ways to set per-instance transforms for MultiMeshes. The first is entirely in editor
-and is described in the :ref:`MultiMeshInstance tutorial <doc_using_multi_mesh_instance>`.
+and is described in the :doc:`MultiMeshInstance tutorial </tutorials/3d/using_multi_mesh_instance>`.
 
 The second is to loop over all the instances and set their transforms in code. Below, we use GDScript
 to loop over all the instances and set their transform to a random position.

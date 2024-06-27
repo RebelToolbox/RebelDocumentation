@@ -8,7 +8,7 @@ This is a (incomplete) list of API differences between C# and GDScript.
 General differences
 -------------------
 
-As explained in the :ref:`doc_c_sharp`, C# generally uses ``PascalCase`` instead
+As explained in the :doc:`/tutorials/scripting/c_sharp/c_sharp_basics`, C# generally uses ``PascalCase`` instead
 of the ``snake_case`` used in GDScript and C++.
 
 Global scope
@@ -121,13 +121,13 @@ This attribute should be used on a `delegate`, whose name signature will be used
     [Signal]
     delegate void MySignal(string willSendsAString);
 
-See also: :ref:`doc_c_sharp_signals`.
+See also: :ref:`tutorials/scripting/c_sharp/c_sharp_features:c# signals`.
 
 `onready` keyword
 -----------------
 
 GDScript has the ability to defer the initialization of a member variable until the ready function
-is called with `onready` (cf. :ref:`doc_gdscript_onready_keyword`).
+is called with `onready` (cf. :ref:`tutorials/scripting/gdscript/gdscript_basics:onready keyword`).
 For example:
 
 .. code-block:: gdscript
@@ -322,7 +322,7 @@ Variant
 Communicating with other scripting languages
 --------------------------------------------
 
-This is explained extensively in :ref:`doc_cross_language_scripting`.
+This is explained extensively in :doc:`/tutorials/scripting/cross_language_scripting`.
 
 Yield
 -----

@@ -28,7 +28,7 @@ Throughout the course of this tutorial, we will cover:
 - How to create some special :ref:`RigidBody <class_RigidBody>`-based objects that can destroy the targets.
 
 .. tip:: While this tutorial can be completed by beginners, it is highly
-          advised to complete :ref:`doc_your_first_2d_game`,
+          advised to complete :doc:`/getting_started/first_2d_game/index`,
           if you are new to Rebel Engine and/or game development.
 
           **Some experience with making 3D games is required** before going through this tutorial series.
@@ -59,7 +59,7 @@ node to the albedo texture of the material of the :ref:`MeshInstance <class_Mesh
 at the script, ``GUI.gd``, if you want. We will not be going over how to to use :ref:`Viewport <class_Viewport>` nodes for displaying UI on :ref:`MeshInstance <class_MeshInstance>`
 nodes in this tutorial .
 
-If you are interested in how to use :ref:`Viewport <class_Viewport>` nodes for displaying UI on :ref:`MeshInstance <class_MeshInstance>` nodes, see the :ref:`doc_viewport_as_texture`
+If you are interested in how to use :ref:`Viewport <class_Viewport>` nodes for displaying UI on :ref:`MeshInstance <class_MeshInstance>` nodes, see the :doc:`/tutorials/shaders/using_viewport_as_texture`
 tutorial. It covers how to use a :ref:`Viewport <class_Viewport>` as a render texture, along with how to apply that texture onto a :ref:`MeshInstance <class_MeshInstance>` node.
 
 _________________

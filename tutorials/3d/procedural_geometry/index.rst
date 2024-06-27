@@ -84,7 +84,7 @@ ArrayMesh
 The ArrayMesh resource extends Mesh to add a few different quality of life functions and, most
 importantly, the ability to construct a Mesh surface through scripting.
 
-For more information about the ArrayMesh, please see the :ref:`ArrayMesh tutorial <doc_arraymesh>`.
+For more information about the ArrayMesh, please see the :doc:`ArrayMesh tutorial </tutorials/3d/procedural_geometry/arraymesh>`.
 
 MeshDataTool
 ^^^^^^^^^^^^
@@ -92,14 +92,14 @@ MeshDataTool
 The MeshDataTool is a resource that converts Mesh data into arrays of vertices, faces, and edges that can
 be modified at runtime.
 
-For more information about the MeshDataTool, please see the :ref:`MeshDataTool tutorial <doc_meshdatatool>`.
+For more information about the MeshDataTool, please see the :doc:`MeshDataTool tutorial </tutorials/3d/procedural_geometry/meshdatatool>`.
 
 SurfaceTool
 ^^^^^^^^^^^
 
 The SurfaceTool allows the creation of Meshes using an OpenGL 1.x immediate mode style interface.
 
-For more information about the SurfaceTool, please see the :ref:`SurfaceTool tutorial <doc_surfacetool>`.
+For more information about the SurfaceTool, please see the :doc:`SurfaceTool tutorial </tutorials/3d/procedural_geometry/surfacetool>`.
 
 ImmediateGeometry
 ^^^^^^^^^^^^^^^^^
@@ -113,7 +113,7 @@ ImmediateGeometry is useful for prototyping because of its straightforward API, 
 is rebuilt every frame. It is most useful for adding simple geometry for visual debugging (e.g. by drawing lines to
 visualize physics raycasts etc.).
 
-For more information about ImmediateGeometry, please see the :ref:`ImmediateGeometry tutorial <doc_immediategeometry>`.
+For more information about ImmediateGeometry, please see the :doc:`ImmediateGeometry tutorial </tutorials/3d/procedural_geometry/immediategeometry>`.
 
 Which one should I use?
 -----------------------

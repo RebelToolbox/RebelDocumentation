@@ -8,13 +8,13 @@ Compiling for Universal Windows Platform
 .. seealso::
 
     This page describes how to compile UWP export template binaries from source.
-    If you're looking to export your project to UWP instead, read :ref:`doc_exporting_for_uwp`.
+    If you're looking to export your project to UWP instead, read :doc:`/tutorials/export/exporting_for_uwp`.
 
 Requirements
 ------------
 
--  SCons 3.0+ (see :ref:`doc_compiling_for_windows` for more details).
--  Visual Studio 2017 or later. See :ref:`doc_compiling_for_windows` about the
+-  SCons 3.0+ (see :doc:`compiling_for_windows` for more details).
+-  Visual Studio 2017 or later. See :doc:`compiling_for_windows` about the
    caveats of installing it and the various prompts.
 -  Windows 10 SDK (can be selected in Visual Studio installation).
 -  `ANGLE source <https://github.com/Microsoft/angle>`__. Use the
@@ -32,16 +32,16 @@ Requirements
           the new build instructions.
 
 .. seealso:: To get the Rebel Engine source code for compiling, see
-             :ref:`doc_getting_source`.
+             :doc:`getting_source`.
 
              For a general overview of SCons usage for Rebel Engine, see
-             :ref:`doc_introduction_to_the_buildsystem`.
+             :doc:`introduction_to_the_buildsystem`.
 
 Compiling
 ---------
 
 You need to open a proper Visual Studio prompt for the target architecture
-you want to build. Check :ref:`doc_compiling_for_windows` to see how these
+you want to build. Check :doc:`compiling_for_windows` to see how these
 prompts work.
 
 There are three target architectures for UWP: x86 (32-bits), x64 (64-bits)

@@ -10,7 +10,7 @@ built-in node types.
 .. seealso::
 
     To learn to submit your changes to the Rebel Engine project using the Git version
-    control system, see :ref:`doc_updating_the_api_documentation`.
+    control system, see :doc:`updating_the_api_documentation`.
 
 The reference for each class is contained in an XML file like the one below:
 
@@ -78,8 +78,8 @@ their documentation by completing or improving the text in these tags:
 - `<signal>` (in its `<description>` tag; arguments don't take separate documentation strings)
 - `<constant>`
 
-Write in a clear and simple language. Always follow the :ref:`writing guidelines
-<doc_docs_writing_guidelines>` to keep your descriptions short and easy to read.
+Write in a clear and simple language. Always follow the :doc:`writing guidelines
+</contributing/docs_writing_guidelines>` to keep your descriptions short and easy to read.
 **Do not leave empty lines** in the descriptions: each line in the XML file will
 result in a new paragraph, even if it is empty.
 

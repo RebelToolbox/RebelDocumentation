@@ -33,7 +33,7 @@ Peers connect to a signaling server (for example a WebSocket server) and send th
 Using WebRTC in Rebel Engine
 ----------------------------
 
-WebRTC is implemented in Rebel Engine via two main classes :ref:`WebRTCPeerConnection <class_WebRTCPeerConnection>` and :ref:`WebRTCDataChannel <class_WebRTCDataChannel>`, plus the multiplayer API implementation :ref:`WebRTCMultiplayer <class_WebRTCMultiplayer>`. See section on :ref:`high-level multiplayer <doc_high_level_multiplayer>` for more details.
+WebRTC is implemented in Rebel Engine via two main classes :ref:`WebRTCPeerConnection <class_WebRTCPeerConnection>` and :ref:`WebRTCDataChannel <class_WebRTCDataChannel>`, plus the multiplayer API implementation :ref:`WebRTCMultiplayer <class_WebRTCMultiplayer>`. See section on :doc:`high-level multiplayer </tutorials/networking/high_level_multiplayer>` for more details.
 
 .. warning::
 
@@ -103,7 +103,7 @@ This will print:
 Local signaling example
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-This example expands on the previous one, separating the peers in two different scenes, and using a :ref:`singleton <doc_singletons_autoload>` as a signaling server.
+This example expands on the previous one, separating the peers in two different scenes, and using a :doc:`singleton </tutorials/scripting/singletons_autoload>` as a signaling server.
 
 ::
 
@@ -145,7 +145,7 @@ This example expands on the previous one, separating the peers in two different 
 
 And now for the local signaling server:
 
-.. note:: This local signaling server is supposed to be used as a :ref:`singleton <doc_singletons_autoload>` to connect two peers in the same scene.
+.. note:: This local signaling server is supposed to be used as a :doc:`singleton </tutorials/scripting/singletons_autoload>` to connect two peers in the same scene.
 
 ::
 

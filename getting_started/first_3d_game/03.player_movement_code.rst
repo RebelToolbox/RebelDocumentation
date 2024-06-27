@@ -113,7 +113,7 @@ kinematic or rigid body.
 .. seealso::
 
     To learn more about the difference between ``_process()`` and
-    ``_physics_process()``, see :ref:`doc_idle_and_physics_processing`.
+    ``_physics_process()``, see :doc:`/tutorials/scripting/idle_and_physics_processing`.
 
 We start by initializing a ``direction`` variable to ``Vector3.ZERO``. Then, we
 check if the player is pressing one or more of the ``move_*`` inputs and update

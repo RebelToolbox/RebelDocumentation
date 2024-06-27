@@ -1,11 +1,11 @@
-.. The goal of this page is to explain more than doc_key_concepts_overview about nodes and scenes, get the user to create their first concrete scene.
+.. The goal of this page is to explain more than /getting_started/introduction/key_concepts_overview about nodes and scenes, get the user to create their first concrete scene.
 
 .. _doc_nodes_and_scenes:
 
 Nodes and Scenes
 ================
 
-In :ref:`doc_key_concepts_overview`, we saw that a Rebel game is a tree of
+In :doc:`/getting_started/introduction/key_concepts_overview`, we saw that a Rebel game is a tree of
 scenes and that each scene is a tree of nodes. In this lesson, we explain a bit
 more about them. You will also create your first scene.
 
@@ -147,7 +147,7 @@ button to save it as "Label.tscn".
           allows you to save files inside the project. The ``res://`` path at
           the top of the window represents the project's root directory and
           stands for "resource path". For more information about file paths in
-          Rebel Engine, see :ref:`doc_filesystem`.
+          Rebel Engine, see :doc:`/tutorials/scripting/filesystem`.
 
 The application should open in a new window and display the text "Hello World".
 

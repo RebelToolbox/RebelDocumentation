@@ -21,7 +21,7 @@ click "Create":
 .. image:: img/attach_node_window.png
 
 .. note:: If this is your first time encountering GDScript, please read
-          :ref:`doc_scripting` before continuing.
+          :doc:`/getting_started/step_by_step/scripting_languages` before continuing.
 
 Start by declaring the member variables this object will need:
 
@@ -261,7 +261,7 @@ We can prevent that if we *normalize* the velocity, which means we set its
 diagonal movement.
 
 .. tip:: If you've never used vector math before, or need a refresher, you can
-         see an explanation of vector usage in Rebel Engine at :ref:`doc_vector_math`.
+         see an explanation of vector usage in Rebel Engine at :doc:`/tutorials/math/vector_math`.
          It's good to know but won't be necessary for the rest of this tutorial.
 
 We also check whether the player is moving so we can call ``play()`` or

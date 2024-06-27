@@ -5,7 +5,7 @@ Using the theme editor
 
 This articles explains how to create and manage UI themes using the Rebel
 Editor and its theme editor tool. We recommend getting familiar with the
-basics behind GUI skinning/theming by reading :ref:`doc_gui_skinning` before starting.
+basics behind GUI skinning/theming by reading :doc:`gui_skinning` before starting.
 
 The theme editor is a bottom panel tool that activates automatically, when
 a :ref:`Theme <class_Theme>` resource is selected for editing. It contains

@@ -6,8 +6,8 @@ Build Rebel Engine for Android
 .. note::
 
     This page describes how to build Rebel Engine for Android.
-    If you want to export your game for Android, see :ref:`doc_exporting_for_android`.
-    If you want to create a custom build for Android, also see :ref:`doc_exporting_for_android`.
+    If you want to export your game for Android, see :doc:`/tutorials/export/exporting_for_android`.
+    If you want to create a custom build for Android, also see :doc:`/tutorials/export/exporting_for_android`.
     If you want to contribute to Rebel Engine's Android platform, keep reading.
 
 To build Rebel Engine for Android, you will need to:
@@ -42,9 +42,9 @@ To build Rebel Engine for Android, the following software is required:
 Configure the build environment
 --------------------------------
 
-See :ref:`doc_getting_source` to get a copy of the Rebel Engine source code.
+See :doc:`getting_source` to get a copy of the Rebel Engine source code.
 
-For a general overview of SCons usage for Rebel Engine, see :ref:`doc_introduction_to_the_buildsystem`.
+For a general overview of SCons usage for Rebel Engine, see :doc:`introduction_to_the_buildsystem`.
 
 Set the environment variable ``ANDROID_SDK_ROOT`` to point to the folder where the Android command-line tools are installed.
 
@@ -66,7 +66,7 @@ To compile Rebel Engine for Android, from the command line run:
 By default, the build system will target the debug arm64-v8a (`AArch64 <https://en.wikipedia.org/wiki/AArch64>`__) version of Rebel Engine.
 To create the release and debug `Android build variants <https://developer.android.com/build/build-variants>`__ of the Rebel Engine Android templates,
 the target option should be set to ``release_debug`` and ``release`` respectively.
-See :ref:`doc_introduction_to_the_buildsystem` for more information on Rebel Engine targets.
+See :doc:`introduction_to_the_buildsystem` for more information on Rebel Engine targets.
 For example, to compile Rebel Engine for Android targeting the ``release`` (arm64-v8a) build variant run:
 
 .. code:: sh
@@ -257,7 +257,7 @@ copy the ``android_release.apk``, ``android_debug.apk`` and ``android_template.z
 .. note:
 
     For custom builds, existing games will need their Android project template reinstalled.
-    See :ref:`doc_exporting_for_android` for details.
+    See :doc:`exporting_for_android` for details.
 
 Apply Rebel Engine Android templates to a single game
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -47,7 +47,7 @@ To build an iOS plugin:
 
     - Download the Rebel Engine source from `Github <https://github.com/RebelToolbox/RebelEngine>`_.
 
-    - Run SCons to generate headers. You can learn the process by reading :ref:`doc_compiling_for_ios`. You don't have to wait for compilation to complete to move forward as headers are generated before the engine starts to compile.
+    - Run SCons to generate headers. You can learn the process by reading :doc:`/development/compiling/compiling_for_ios`. You don't have to wait for compilation to complete to move forward as headers are generated before the engine starts to compile.
 
     - You should use the same header files for iOS plugins and for the iOS export template.
 

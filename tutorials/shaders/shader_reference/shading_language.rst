@@ -9,7 +9,7 @@ Introduction
 Rebel Shading Language is similar to GLSL ES 3.0. Most datatypes and functions are supported,
 and the few remaining ones will likely be added over time.
 
-If you are already familiar with GLSL, the :ref:`doc_converting_glsl_to_rebel_shaders`
+If you are already familiar with GLSL, the :doc:`/tutorials/shaders/converting_glsl_to_rebel_shaders`
 is a resource that will help you transition from regular GLSL to Rebel Shading Language.
 
 Data types
@@ -626,9 +626,9 @@ Built-in variables
 A large number of built-in variables are available, like ``UV``, ``COLOR`` and ``VERTEX``. What variables are available depends on the type of shader (``spatial``, ``canvas_item`` or ``particle``) and the function used (``vertex``, ``fragment`` or ``light``).
 For a list of the built-in variables that are available, please see the corresponding pages:
 
-- :ref:`Spatial shaders <doc_spatial_shader>`
-- :ref:`Canvas item shaders <doc_canvas_item_shader>`
-- :ref:`Particle shaders <doc_particle_shader>`
+- :doc:`Spatial shaders </tutorials/shaders/shader_reference/spatial_shader>`
+- :doc:`Canvas item shaders </tutorials/shaders/shader_reference/canvas_item_shader>`
+- :doc:`Particle shaders </tutorials/shaders/shader_reference/particle_shader>`
 
 Built-in functions
 ------------------
@@ -637,7 +637,7 @@ A large number of built-in functions are supported, conforming to GLSL ES 3.0.
 When vec_type (float), vec_int_type, vec_uint_type, vec_bool_type nomenclature is used, it can be scalar or vector.
 
 .. note:: For a list of the functions that are not available in the GLES2 backend, please see the
-          :ref:`Differences between GLES2 and GLES3 doc <doc_gles2_gles3_differences>`.
+          :doc:`Differences between GLES2 and GLES3 doc </tutorials/rendering/gles2_gles3_differences>`.
 
 +------------------------------------------------------------------------+---------------------------------------------------------------+
 | Function                                                               | Description                                                   |

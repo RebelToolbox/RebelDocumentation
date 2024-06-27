@@ -24,7 +24,7 @@ the jump and squash mechanics.
 .. seealso::
 
     To learn more about the different physics node types, see the
-    :ref:`doc_physics_introduction`.
+    :doc:`/tutorials/physics/physics_introduction`.
 
 For now, we're going to create a basic rig for our character's 3D model. This
 will allow us to rotate the model later via code while it plays an animation.

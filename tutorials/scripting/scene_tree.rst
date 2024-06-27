@@ -176,4 +176,4 @@ that the game will stall until the new scene is loaded and running. At
 some point in the development of your game, it may be preferable to create proper loading
 screens with progress bar, animated indicators or thread (background)
 loading. This must be done manually using autoloads (see next chapter)
-and :ref:`doc_background_loading`.
+and :doc:`/tutorials/io/background_loading`.

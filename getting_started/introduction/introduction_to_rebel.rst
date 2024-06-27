@@ -24,7 +24,7 @@ programming skills or a developer to port the game for you.
 .. note:: The Rebel Toolbox team can't provide an open-source console export due to the
           licensing terms imposed by console manufacturers. Regardless of the
           engine you use, though, releasing games on consoles is always a lot of
-          work. You can read more on that here: :ref:`doc_consoles`.
+          work. You can read more on that here: :doc:`/tutorials/platform/consoles`.
 
 How does it work and look?
 --------------------------
@@ -69,7 +69,7 @@ completely free and open-source.
 .. seealso:: These are the five officially supported programming languages. The
              community maintains support for many more. For more information,
              see :ref:`GDNative third-party bindings
-             <doc_what_is_gdnative_third_party_bindings>`.
+             <tutorials/scripting/gdnative/what_is_gdnative:version compatibility>`.
 
 What do I need to know to use Rebel Engine?
 -------------------------------------------
@@ -92,7 +92,7 @@ countless hours and hurdles learning any game engine afterward.
           skills you learn with one language transfer well to others.
 
 We will provide you with more Rebel-specific learning resources in
-:ref:`doc_learning_new_features`.
+:doc:`learning_new_features`.
 
 In the next part, you will get an overview of the engine's essential concepts.
 

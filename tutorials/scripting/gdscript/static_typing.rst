@@ -100,10 +100,10 @@ type:
 
 Currently you can use three types of… types:
 
-1. :ref:`Built-in <doc_gdscript_builtin_types>`
+1. :ref:`Built-in <tutorials/scripting/gdscript/gdscript_basics:built-in types>`
 2. Core classes and nodes (``Object``, ``Node``, ``Area2D``,
    ``Camera2D``, etc.)
-3. Your own custom classes. Look at the new :ref:`class_name <doc_gdscript_basics_class_name>`
+3. Your own custom classes. Look at the new :ref:`class_name <tutorials/scripting/gdscript/gdscript_basics:registering named classes>`
    feature to register types in the editor.
 
 .. note::
@@ -318,7 +318,7 @@ Warning system
 .. note::
 
     Documentation about the GDScript warning system has been moved to
-    :ref:`doc_gdscript_warning_system`.
+    :doc:`/tutorials/scripting/gdscript/warning_system`.
 
 Cases where you can't specify types
 -----------------------------------

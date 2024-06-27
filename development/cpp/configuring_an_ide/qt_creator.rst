@@ -55,11 +55,11 @@ Importing the project
 - Click **Add Build Step > Custom Process Step** to add a new build step 
   with the following settings:
 
-  +-----------+------------------------------------------------------------------------------+
-  | Command   | **scons**                                                                    |
-  +-----------+------------------------------------------------------------------------------+
-  | Arguments | See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments. |
-  +-----------+------------------------------------------------------------------------------+
+  +-----------+-------------------------------------------------------------------------------------------------+
+  | Command   | **scons**                                                                                       |
+  +-----------+-------------------------------------------------------------------------------------------------+
+  | Arguments | See :doc:`/development/compiling/introduction_to_the_buildsystem` for a full list of arguments. |
+  +-----------+-------------------------------------------------------------------------------------------------+
 
 .. figure:: img/qtcreator-set-scons-command.png
    :figclass: figure-w480
@@ -85,12 +85,12 @@ Debugging the project
    :align: center
 
 To learn more about command line arguments, refer to the
-:ref:`command line tutorial <doc_command_line_tutorial>`.
+:doc:`command line tutorial </tutorials/editor/command_line_tutorial>`.
 
 Code style configuration
 ------------------------
 
-Developers must follow the project's :ref:`code style <doc_code_style_guidelines>`
+Developers must follow the project's :doc:`code style </contributing/code_style_guidelines>`
 and the IDE should help them follow it. By default, Qt Creator uses spaces
 for indentation which doesn't match the Rebel Engine code style guidelines. You can
 change this behavior by changing the **Code Style** in **Tools > Options > C++**.

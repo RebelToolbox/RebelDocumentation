@@ -30,7 +30,7 @@ the bar to reflect the change. To do so, in Rebel Engine, you would use signals.
           https://gameprogrammingpatterns.com/observer.html
 
 We will now use a signal to make our Rebel icon from the previous lesson
-(:ref:`doc_scripting_player_input`) move and stop by pressing a button.
+(:doc:`scripting_player_input`) move and stop by pressing a button.
 
 .. Example
 
@@ -386,5 +386,5 @@ For example, an :ref:`Area2D <class_Area2D>` representing a coin emits a
 ``body_entered`` signal whenever the player's physics body enters its collision
 shape, allowing you to know when the player collected it.
 
-In the next section, :ref:`doc_your_first_2d_game`, you'll create a complete 2D
+In the next section, :doc:`/getting_started/first_2d_game/index`, you'll create a complete 2D
 game and put everything you learned so far into practice.

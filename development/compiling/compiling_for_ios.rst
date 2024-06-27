@@ -8,7 +8,7 @@ Compiling for iOS
 .. seealso::
 
     This page describes how to compile iOS export template binaries from source.
-    If you're looking to export your project to iOS instead, read :ref:`doc_exporting_for_ios`.
+    If you're looking to export your project to iOS instead, read :doc:`/tutorials/export/exporting_for_ios`.
 
 Requirements
 ------------
@@ -19,10 +19,10 @@ Requirements
 -  Xcode 10.0 (or later) with the iOS (10.0) SDK and the command line tools.
 
 .. seealso:: To get the Rebel Engine source code for compiling, see
-             :ref:`doc_getting_source`.
+             :doc:`getting_source`.
 
              For a general overview of SCons usage for Rebel Engine, see
-             :ref:`doc_introduction_to_the_buildsystem`.
+             :doc:`introduction_to_the_buildsystem`.
 
 Compiling
 ---------
@@ -79,7 +79,7 @@ Run
 ---
 
 To run on a device or simulator, follow these instructions:
-:ref:`doc_exporting_for_ios`.
+:doc:`/tutorials/export/exporting_for_ios`.
 
 Replace or add your executable to the Xcode project, and change the
 "executable name" property on Info.plist accordingly if you use an

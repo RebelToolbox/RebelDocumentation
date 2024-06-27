@@ -12,7 +12,7 @@ the 3D platformer tutorial, or the 3D kinematic character tutorials,
 which are almost identical to their 2D counterparts.
 
 In 3D, math is a little more complex than in 2D, so also checking the
-:ref:`doc_vector_math` entry in the wiki (which was especially created for game
+:doc:`/tutorials/math/vector_math` entry in the wiki (which was especially created for game
 developers, not mathematicians or engineers) will help pave the way for you
 to develop 3D games efficiently.
 
@@ -48,7 +48,7 @@ DCC-created models
 ------------------
 
 There are two pipelines to import 3D models in the Rebel Editor. The first and most
-common one is by :ref:`doc_importing_3d_scenes`, which allows you to import
+common one is by :doc:`/tutorials/assets_pipeline/importing_scenes`, which allows you to import
 entire scenes (just as they look in the DCC), including animation,
 skeletal rigs, blend shapes, etc.
 

@@ -109,7 +109,7 @@ options related to the 3D view.
 
 .. image:: img/editor_intro_3d_viewport_perspective.png
 
-.. note:: Read :ref:`doc_introduction_to_3d` for more detail about the **3D
+.. note:: Read :doc:`/tutorials/3d/introduction_to_3d` for more detail about the **3D
           main screen**.
 
 The **Script screen** is a complete code editor with a debugger, rich

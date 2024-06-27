@@ -4,7 +4,7 @@ Visual Studio Code
 ==================
 
 `Visual Studio Code <https://code.visualstudio.com>`_ is a free cross-platform code editor
-by `Microsoft <https://microsoft.com>`_ (not to be confused with :ref:`doc_configuring_an_ide_vs`).
+by `Microsoft <https://microsoft.com>`_ (not to be confused with :doc:`visual_studio`).
 
 Importing the project
 ---------------------
@@ -70,7 +70,7 @@ Importing the project
    An example of a filled out ``tasks.json``.
 
 Arguments can be different based on your own setup and needs. See
-:ref:`doc_introduction_to_the_buildsystem` for a full list of arguments.
+:doc:`/development/compiling/introduction_to_the_buildsystem` for a full list of arguments.
 
 Debugging the project
 ---------------------
@@ -164,7 +164,7 @@ To run and debug the project you need to create a new configuration in the ``lau
 
     If you encounter issues with lldb, you may consider using gdb (see the X11_gdb configuration).
 
-    Do note that lldb may work better with llvm-based builds. See :ref:`doc_compiling_for_x11` for further information.
+    Do note that lldb may work better with llvm-based builds. See :doc:`/development/compiling/compiling_for_x11` for further information.
 
 The name under ``program`` depends on your build configuration,
 e.g. ``rebel.x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled.

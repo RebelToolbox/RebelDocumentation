@@ -123,7 +123,7 @@ in the `GodotVR Repository <https://github.com/GodotVR>`__.
   cross-platform VR and AR software.
   Tested with SteamVR, Monada and Oculus OpenXR (desktop and mobile) runtimes.
 
-    * See :ref:`doc_openxr_introduction`.
+    * See :doc:`/tutorials/vr/openxr/index`.
 
 * `Godot OpenVR <https://github.com/GodotVR/godot_openvr>`_ (not to be confused with OpenXR)
   supports the OpenVR SDK used by Steam.

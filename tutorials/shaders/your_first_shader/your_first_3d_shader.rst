@@ -10,7 +10,7 @@ needs. Either way, you have decided to write your own and now you need to figure
 out where to start.
 
 This tutorial will explain how to write a Spatial shader and will cover more
-topics than the :ref:`CanvasItem <doc_your_first_canvasitem_shader>` tutorial.
+topics than the :doc:`CanvasItem </tutorials/shaders/your_first_shader/your_first_2d_shader>` tutorial.
 
 Spatial shaders have more built-in functionality than CanvasItem shaders. The
 expectation with spatial shaders is that Rebel Engine has already provided the
@@ -20,7 +20,7 @@ rendering) workflow.
 
 This is a two-part tutorial. In this first part we are going to go through how
 to make a simple terrain using vertex displacement from a heightmap in the
-vertex function. In the :ref:`second part <doc_your_second_spatial_shader>` we
+vertex function. In the :doc:`second part </tutorials/shaders/your_first_shader/your_second_3d_shader>` we
 are going to take the concepts from this tutorial and walk through how to set up
 custom materials in a fragment shader by writing an ocean water shader.
 

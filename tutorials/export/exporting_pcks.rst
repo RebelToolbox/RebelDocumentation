@@ -60,7 +60,7 @@ an export template selected while doing so.
 
 .. image:: img/export_pck.png
 
-Another method would be to :ref:`export from the command line <doc_command_line_tutorial_exporting>`.
+Another method would be to :ref:`export from the command line <tutorials/editor/command_line_tutorial:exporting>`.
 If the output file ends with a PCK or ZIP file extension, then the export
 process will build that type of file for the chosen platform.
 

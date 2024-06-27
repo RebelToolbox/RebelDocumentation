@@ -20,7 +20,7 @@ Shooting example
 
 Consider a player character that can rotate and shoot towards the mouse. Every
 time the mouse button is clicked, we create an instance of the bullet at the
-player's location. See :ref:`doc_instancing` for details.
+player's location. See :doc:`/getting_started/step_by_step/instancing` for details.
 
 We'll use an ``Area2D`` for the bullet, which moves in a straight line at a
 given velocity:

@@ -7,7 +7,7 @@ Introduction
 ------------
 
 This tutorial builds on top of the information given in the
-:ref:`GDNative C example <doc_gdnative_c_example>`, so we highly recommend you
+:doc:`GDNative C example </tutorials/scripting/gdnative/gdnative_c_example>`, so we highly recommend you
 read that first.
 
 The C++ bindings for GDNative are built on top of the NativeScript GDNative API

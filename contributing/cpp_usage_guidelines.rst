@@ -26,11 +26,11 @@ modules or GDNative scripts.
 
     The guidelines below don't apply to third-party dependencies, although we
     generally favor small libraries instead of larger solutions. See also
-    :ref:`doc_best_practices_for_engine_contributors`.
+    :doc:`best_practices_for_engine_contributors`.
 
 .. seealso::
 
-    See :ref:`doc_code_style_guidelines` for formatting guidelines.
+    See :doc:`code_style_guidelines` for formatting guidelines.
 
 Disallowed features
 -------------------
@@ -45,7 +45,7 @@ Standard Template Library
 
 We don't allow using the `STL <https://en.wikipedia.org/wiki/Standard_Template_Library>`__
 as Rebel Engine provides its own data types (among other things).
-See :ref:`doc_faq_why_not_stl` for more information.
+See :ref:`about/faq:why does rebel engine not use stl (standard template library)?` for more information.
 
 This means that pull requests should **not** use ``std::string``,
 ``std::vector`` and the like. Instead, use Rebel Engine's datatypes as described below:
@@ -97,5 +97,5 @@ guards instead of ``#pragma once`` in new files.
 
 .. seealso::
 
-    See :ref:`doc_code_style_guidelines_header_includes` for guidelines on sorting
+    See :ref:`contributing/code_style_guidelines:header includes` for guidelines on sorting
     includes in C++ and Objective-C files.

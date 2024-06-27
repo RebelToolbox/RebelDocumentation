@@ -244,7 +244,7 @@ The output will be ``60``.
 
 .. seealso:: The previous Summator example is great for small, custom modules,
   but what if you want to use a larger, external library? Refer to
-  :ref:`doc_binding_to_external_libraries` for details about binding to
+  :doc:`binding_to_external_libraries` for details about binding to
   external libraries.
 
 .. warning:: If your module is meant to be accessed from the running project
@@ -304,7 +304,7 @@ and compile them accordingly, including our "summator" module.
 
 .. seealso::
 
-    :ref:`Introduction to the buildsystem - Custom modules build option <doc_buildsystem_custom_modules>`.
+    :ref:`Introduction to the buildsystem - Custom modules build option <development/compiling/introduction_to_the_buildsystem:custom modules>`.
 
 Improving the build system for development
 ------------------------------------------
@@ -313,7 +313,7 @@ Improving the build system for development
 
     This shared library support is not designed to support distributing a module
     to other users without recompiling the engine. For that purpose, use
-    :ref:`GDNative <doc_what_is_gdnative>` instead.
+    :doc:`GDNative </tutorials/scripting/gdnative/what_is_gdnative>` instead.
 
 So far, we defined a clean SCsub that allows us to add the sources
 of our new module as part of the Rebel Engine binary.
@@ -482,7 +482,7 @@ Now if you go to the ``RebelEngine/modules/summator/docs`` folder, you will see
 that it contains a ``Summator.xml`` file, or any other classes that you referenced
 in your ``get_classes`` function.
 
-Edit the file(s) following :ref:`doc_updating_the_api_documentation` and recompile the engine.
+Edit the file(s) following :doc:`/contributing/updating_the_api_documentation` and recompile the engine.
 
 Once the compilation process is finished, the docs will become accessible within
 the engine's built-in documentation system.
@@ -504,7 +504,7 @@ Similarly to how you can write self-contained documentation within a module,
 you can also create your own custom icons for classes to appear in the editor.
 
 For the actual process of creating editor icons to be integrated within the engine,
-please refer to :ref:`doc_editor_icons` first.
+please refer to :doc:`/development/editor/creating_icons` first.
 
 Once you've created your icon(s), proceed with the following steps:
 

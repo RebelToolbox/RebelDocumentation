@@ -8,7 +8,7 @@ Compiling for macOS
 .. note::
 
     This page describes how to compile macOS editor and export template binaries from source.
-    If you're looking to export your project to macOS instead, read :ref:`doc_exporting_for_macos`.
+    If you're looking to export your project to macOS instead, read :doc:`/tutorials/export/exporting_for_macos`.
 
 Requirements
 ------------
@@ -36,10 +36,10 @@ For compiling under macOS, the following is required:
               sudo port install scons yasm
 
 .. seealso:: To get the Rebel Engine source code for compiling, see
-             :ref:`doc_getting_source`.
+             :doc:`getting_source`.
 
              For a general overview of SCons usage for Rebel Engine, see
-             :ref:`doc_introduction_to_the_buildsystem`.
+             :doc:`introduction_to_the_buildsystem`.
 
 Compiling
 ---------
@@ -65,7 +65,7 @@ manager.
 
 .. note:: If you want to use separate editor settings for your own Rebel Engine builds
           and official releases, you can enable
-          :ref:`doc_data_paths_self_contained_mode` by creating a file called
+          :ref:`tutorials/io/data_paths:self-contained mode` by creating a file called
           ``._sc_`` or ``_sc_`` in the ``bin/`` folder.
 
 To create an ``.app`` bundle like in the official builds, you need to use the
@@ -86,7 +86,7 @@ projects in an automated manner, use::
     scons platform=server tools=yes target=release_debug --jobs=$(sysctl -n hw.logicalcpu)
 
 To compile a debug *server* build which can be used with
-:ref:`remote debugging tools <doc_command_line_tutorial>`, use::
+:doc:`remote debugging tools </tutorials/editor/command_line_tutorial>`, use::
 
     scons platform=server tools=no target=release_debug --jobs=$(sysctl -n hw.logicalcpu)
 
