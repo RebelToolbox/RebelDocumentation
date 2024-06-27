@@ -1,0 +1,30 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "sunday"
+      time: "0:00"
+    labels:
+      - "PR Type: Technical"
+    pull-request-branch-name:
+      separator: "-"
+
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "sunday"
+      time: "1:00"
+    labels:
+      - "PR Type: Technical"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      version-updates:
+          patterns:
+             - "*"
+          update-types:
+            - "minor"
+            - "patch"
