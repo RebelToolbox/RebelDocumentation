@@ -97,7 +97,6 @@ If icons don't appear in the editor, make sure that:
 2. ``modules/svg`` is enabled (it should be enabled by default). Without it,
    icons won't appear in the editor at all.
 
-References
-~~~~~~~~~~
+.. seealso::
 
--  `editor/icons <https://github.com/RebelToolbox/RebelEngine/tree/main/editor/icons>`__
+  - `editor/icons <https://github.com/RebelToolbox/RebelEngine/tree/main/editor/icons>`__

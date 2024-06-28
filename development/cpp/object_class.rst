@@ -32,10 +32,9 @@ This makes Objects gain a lot of functionality, like for example
 
     obj2 = Object::cast_to<OtherClass>(obj); // converting between classes, this also works without RTTI enabled.
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
--  `core/object.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/object.h>`__
+  -  `core/object.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/object.h>`__
 
 Registering an Object
 ---------------------
@@ -90,10 +89,9 @@ If just adding modules and functionality that is not expected to be
 documented as thoroughly, the ``D_METHOD()`` macro can safely be ignored and a
 string passing the name can be passed for brevity.
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
--  `core/class_db.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/class_db.h>`__
+  - `core/class_db.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/class_db.h>`__
 
 Constants
 ---------
@@ -262,10 +260,9 @@ Declaring them must be done using Ref<> template. For example:
 ``myref`` is reference counted. It will be freed when no more Ref<>
 templates point to it.
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
--  `core/reference.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/reference.h>`__
+  - `core/reference.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/reference.h>`__
 
 Resources:
 ----------
@@ -278,10 +275,9 @@ resources can have the same path, attempt to do so will result in an error.
 
 Resources without a path are fine too.
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
--  `core/resource.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/resource.h>`__
+  - `core/resource.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/resource.h>`__
 
 Resource loading
 ----------------
@@ -299,10 +295,9 @@ the same time.
 
 -  resourceinteractiveloader (TODO)
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
--  `core/io/resource_loader.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/io/resource_loader.h>`__
+  - `core/io/resource_loader.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/io/resource_loader.h>`__
 
 Resource saving
 ---------------
@@ -318,7 +313,6 @@ saved as a reference to that resource. Sub resources without a path will
 be bundled with the saved resource and assigned sub-IDs, like
 ``res://someresource.res::1``. This also helps to cache them when loaded.
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
--  `core/io/resource_saver.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/io/resource_saver.h>`__
+  - `core/io/resource_saver.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/io/resource_saver.h>`__
