@@ -197,8 +197,4 @@ notfound_context = {
 # 8.3 Sphinx opengraph extension
 # https://github.com/wpilibsuite/sphinxext-opengraph
 
-# Disable matplotlib's font manager logging.
-# Prevents `findfont: Font family 'Roboto' not found.` messages.
-# https://github.com/wpilibsuite/sphinxext-opengraph/issues/115
-logging.getLogger("matplotlib.font_manager").disabled = True
 ogp_site_url = "https://docs.rebeltoolbox.com"
