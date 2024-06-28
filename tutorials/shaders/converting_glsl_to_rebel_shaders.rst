@@ -139,14 +139,14 @@ create `pure magic <https://www.shadertoy.com/view/4tjGRh>`_.
 Shadertoy does not give the user full control over the shader. It handles all
 the input and uniforms and only lets the user write the fragment shader.
 
-Types
-^^^^^
+Shadertoy types
+^^^^^^^^^^^^^^^
 
 Shadertoy uses the webgl spec, so it runs a slightly different version of GLSL.
 However, it still has the regular types, including constants and macros.
 
-mainImage
-^^^^^^^^^
+Shadertoy entry point
+^^^^^^^^^^^^^^^^^^^^^
 
 The main point of entry to a Shadertoy shader is the ``mainImage`` function.
 ``mainImage`` has two parameters, ``fragColor`` and ``fragCoord``, which
@@ -155,8 +155,8 @@ parameters are handled automatically in Rebel Engine, so you do not need to incl
 them as parameters yourself. Anything in the ``mainImage`` function should be
 copied into the ``fragment`` function when porting to Rebel Shading Language.
 
-Variables
-^^^^^^^^^
+Shadertoy variables
+^^^^^^^^^^^^^^^^^^^
 
 In order to make writing fragment shaders straightforward and easy, Shadertoy
 handles passing a lot of helpful information from the main program into the
@@ -193,8 +193,8 @@ what they can pass in as a substitute.
 |iChanneli            |Sampler2D|TEXTURE                 |One built-in; the game developer can make more.      |
 +---------------------+---------+------------------------+-----------------------------------------------------+
 
-Coordinates
-^^^^^^^^^^^
+Shadertoy coordinates
+^^^^^^^^^^^^^^^^^^^^^
 
 ``fragCoord`` behaves the same as ``gl_FragCoord`` in :ref:`GLSL
 <glsl_coordinates>` and ``FRAGCOORD`` in Rebel Shading Language.
@@ -212,22 +212,22 @@ For further help on porting shaders to various frameworks generally, The Book of
 Shaders provides a `page <https://thebookofshaders.com/04>`_ on running shaders
 in various frameworks.
 
-Types
-^^^^^
+The Book of Shaders types
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Book of Shaders uses the webgl spec, so it runs a slightly different version
 of GLSL. However, it still has the regular types, including constants and
 macros.
 
-Main
-^^^^
+The Book of Shaders entry point
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The entry point for a Book of Shaders fragment shader is ``main``, just like in
 GLSL. Everything written in a Book of Shaders ``main`` function should be copied
 into Rebel Shading Language's ``fragment`` function.
 
-Variables
-^^^^^^^^^
+The Book of Shaders variables
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Book of Shaders sticks closer to plain GLSL than Shadertoy does. It also
 implements fewer uniforms than Shadertoy.
@@ -246,8 +246,8 @@ implements fewer uniforms than Shadertoy.
 |u_mouse              |vec2     |Provide with Uniform    |Mouse position in pixel coordinates.                 |
 +---------------------+---------+------------------------+-----------------------------------------------------+
 
-Coordinates
-^^^^^^^^^^^
+The Book of Shaders coordinates
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Book of Shaders uses the same coordinate system as
 :ref:`GLSL <glsl_coordinates>`.

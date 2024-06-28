@@ -44,8 +44,8 @@ For those unfamiliar with it, it can be explained with a few facts:
 This can take a bit getting used to, but it's friendlier in the end
 and will allow you to communicate better with audio professionals.
 
-Audio buses
------------
+Managing audio buses
+--------------------
 
 Audio buses can be found in the bottom panel of the Rebel Editor:
 

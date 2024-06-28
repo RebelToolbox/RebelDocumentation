@@ -58,8 +58,8 @@ Using clang-format locally
 
 First of all, you will need to install clang-format.
 
-Installation
-^^^^^^^^^^^^
+Installing clang-format
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Here's how to install clang-format:
 
@@ -75,8 +75,8 @@ Here's how to install clang-format:
 
 You then have different possibilities to apply clang-format to your changes:
 
-Manual usage
-^^^^^^^^^^^^
+Running clang-format
+^^^^^^^^^^^^^^^^^^^^
 
 You can apply clang-format manually one or more files with the following
 command:
@@ -92,14 +92,14 @@ command:
   you don't run clang-format on compiled objects (.o and .a files) that are
   in Rebel Engine's tree. So better use ``core/*.{cpp,h}`` than ``core/*``.
 
-Pre-commit hook
-^^^^^^^^^^^^^^^
+Pre-commit clang-format hook
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For ease of use, we provide a pre-commit hook for Git that will run
 clang-format automatically on all your commits to check them, and let you apply
 its changes in the final commit.
 
-This "hook" is a script which can be found in ``misc/hooks``, refer to that
+This "hook" is a script which can be found in ``tools/hooks``, refer to that
 folder's README.md for installation instructions.
 
 If your clang-format is not in the ``PATH``, you may have to edit the
@@ -263,8 +263,8 @@ Using black locally
 First of all, you will need to install black. Black requires Python 3.6.0+
 to run.
 
-Installation
-^^^^^^^^^^^^
+Installing black
+^^^^^^^^^^^^^^^^
 
 Here's how to install black:
 
@@ -275,8 +275,8 @@ Here's how to install black:
 
 You then have different possibilities to apply black to your changes:
 
-Manual usage
-^^^^^^^^^^^^
+Running black
+^^^^^^^^^^^^^
 
 You can apply ``black`` manually to one or more files with the following
 command:
@@ -290,14 +290,14 @@ command:
 - The path can point to several files, either one after the other or using
   wildcards like in a typical Unix shell.
 
-Pre-commit hook
-^^^^^^^^^^^^^^^
+Pre-commit black hook
+^^^^^^^^^^^^^^^^^^^^^
 
 For ease of use, we provide a pre-commit hook for Git that will run
 black automatically on all your commits to check them, and let you apply
 its changes in the final commit.
 
-This "hook" is a script which can be found in ``misc/hooks``. Refer to that
+This "hook" is a script which can be found in ``tools/hooks``. Refer to that
 folder's ``README.md`` for installation instructions.
 
 

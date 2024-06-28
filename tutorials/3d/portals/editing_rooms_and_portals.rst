@@ -39,8 +39,8 @@ For example:
 - ``outside-roomgroup`` - create a RoomGroup called "outside".
 - ``kitchen-portal`` - create a Portal leading to the "kitchen" Room.
 
-Portals
-^^^^^^^
+Creating Portals
+^^^^^^^^^^^^^^^^
 
 Portals are different from Rooms. In Portals, we need to specify the geometry of the Portal in our modelling tool, in addition to just the name. To do this your "portal-to-be" should be created as a Mesh.
 

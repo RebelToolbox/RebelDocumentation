@@ -164,8 +164,8 @@ The ``post_import`` function takes the imported scene as argument (the
 parameter is actually the root node of the scene). The scene that
 will finally be used must be returned. It can be a different one.
 
-Storage
-^^^^^^^
+Storing Nodes
+^^^^^^^^^^^^^
 
 By default, Rebel Editor imports a single scene. This option allows specifying
 that nodes below the root will each be a separate scene and instanced
@@ -183,8 +183,8 @@ Location
 Rebel Engine supports materials in meshes or nodes. By default, materials will be put
 on each node.
 
-Storage
-^^^^^^^
+Storing Materials
+^^^^^^^^^^^^^^^^^
 
 Materials can be stored within the scene or in external files. By default,
 they are stored in external files so editing them is possible. This is because
@@ -248,8 +248,8 @@ This option ensures that these are generated if not present in the source scene.
 Rebel Engine uses `Mikktspace <http://www.mikktspace.com/>`__ for this,
 but it's always better to have them generated in the exporter.
 
-Storage
-^^^^^^^
+Storing Meshes
+^^^^^^^^^^^^^^
 
 Meshes can be stored in separate files (resources) instead of built-in. This does
 not have much practical use unless one wants to build objects with them directly.
@@ -346,8 +346,8 @@ as ``"Skeleton:Head"`` or ``"Skeleton:Arm_Left_Control"`` would be retained.
 
 Any track filter lines that do not begin with a ``+`` or ``-`` are ignored.
 
-Storage
-~~~~~~~
+Storing Animations
+~~~~~~~~~~~~~~~~~~
 
 By default, animations are saved as built-in. It is possible to save them to a file instead. This
 allows adding custom tracks to the animations and keeping them after a reimport.
