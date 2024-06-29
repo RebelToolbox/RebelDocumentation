@@ -85,18 +85,10 @@ respect the following rules (and the ones on the repo).
 Titles
 ------
 
-Always begin pages with their title and a Sphinx reference name:
-
-::
-
-    .. _doc_insert_your_title_here:
+Always begin pages with their title::
 
     Insert your title here
     ======================
-
-The reference allows linking to this page using the ``:ref:`` format, e.g.
-``:doc:`insert_your_title_here``` would link to the above example page
-(note the lack of leading underscore in the reference).
 
 Also, avoid American CamelCase titles: title's first word should begin
 with a capitalized letter, and every following word should not. Thus,

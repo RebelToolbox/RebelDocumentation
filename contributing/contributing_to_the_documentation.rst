@@ -108,20 +108,10 @@ line, using a relative path and no extension, e.g. here ``light_baking``.
 Titles
 ~~~~~~
 
-Always begin pages with their title and a Sphinx reference name:
-
-::
-
-    .. _doc_insert_your_title_here:
+Always begin pages with their title::
 
     Insert your title here
     ======================
-
-The reference ``_doc_insert_your_title_here`` and the title should match.
-
-The reference allows linking to this page using the ``:ref:`` format, e.g.
-``:doc:`insert_your_title_here``` would link to the above example page (note
-the lack of leading underscore in the reference).
 
 Write your titles like plain sentences, without capitalizing each word:
 
