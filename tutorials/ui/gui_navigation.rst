@@ -1,5 +1,3 @@
-.. _doc_gui_navigation:
-
 Keyboard/Controller Navigation and Focus
 ========================================
 

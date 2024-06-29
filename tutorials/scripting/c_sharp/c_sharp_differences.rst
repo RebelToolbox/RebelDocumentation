@@ -1,5 +1,3 @@
-.. _doc_c_sharp_differences:
-
 C# API differences to GDScript
 ==============================
 

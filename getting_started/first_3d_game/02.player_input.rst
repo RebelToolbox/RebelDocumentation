@@ -1,5 +1,3 @@
-.. _doc_first_3d_game_player_scene_and_input:
-
 Player scene and input actions
 ==============================
 

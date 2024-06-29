@@ -1,5 +1,3 @@
-.. _doc_random_number_generation:
-
 Random number generation
 ========================
 
@@ -323,8 +321,6 @@ We can apply similar logic from arrays to dictionaries as well:
         # The same metal may be selected multiple times in succession.
         return random_metal
 
-.. _doc_random_number_generation_weighted_random_probability:
-
 Weighted random probability
 ---------------------------
 
@@ -387,8 +383,6 @@ floating-point number between 0.0 and 1.0. We can use this to create a
             return "Rare";
         }
     }
-
-.. _doc_random_number_generation_shuffle_bags:
 
 "Better" randomness using shuffle bags
 --------------------------------------

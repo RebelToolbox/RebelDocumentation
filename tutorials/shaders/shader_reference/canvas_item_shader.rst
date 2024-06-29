@@ -1,5 +1,3 @@
-.. _doc_canvas_item_shader:
-
 CanvasItem shaders
 ==================
 

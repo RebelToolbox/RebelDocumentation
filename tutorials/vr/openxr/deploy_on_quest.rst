@@ -1,5 +1,3 @@
-.. _doc_deploy_on_quest:
-
 Deploying on Quest
 ==================
 

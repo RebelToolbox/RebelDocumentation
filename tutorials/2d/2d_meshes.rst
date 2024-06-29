@@ -1,5 +1,3 @@
-.. _doc_2d_meshes:
-
 2D meshes
 =========
 

@@ -1,5 +1,3 @@
-.. _doc_compiling_for_uwp:
-
 Compiling for Universal Windows Platform
 ========================================
 

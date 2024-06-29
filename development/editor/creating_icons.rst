@@ -1,5 +1,3 @@
-.. _doc_editor_icons:
-
 Editor icons
 ============
 

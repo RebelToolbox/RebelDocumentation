@@ -1,5 +1,3 @@
-.. _doc_compiling_with_mono:
-
 Compiling with Mono
 ===================
 

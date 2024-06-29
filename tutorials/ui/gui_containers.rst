@@ -1,5 +1,3 @@
-.. _doc_gui_containers:
-
 Using Containers
 ================
 

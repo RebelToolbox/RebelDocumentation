@@ -1,5 +1,3 @@
-.. _doc_optimizing_for_size:
-
 Optimizing a build for size
 ===========================
 

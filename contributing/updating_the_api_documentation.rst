@@ -1,5 +1,3 @@
-.. _doc_updating_the_api_documentation:
-
 Contributing to the Rebel Engine API Documentation
 ==================================================
 

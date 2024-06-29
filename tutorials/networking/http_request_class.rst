@@ -1,5 +1,3 @@
-.. _doc_http_request_class:
-
 Making HTTP requests
 ====================
 

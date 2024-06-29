@@ -1,5 +1,3 @@
-.. _doc_compiling_for_x11:
-
 Compiling for X11 (Linux, \*BSD)
 ================================
 

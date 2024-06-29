@@ -1,5 +1,3 @@
-.. _doc_complying_with_licenses:
-
 Complying with licenses
 =======================
 

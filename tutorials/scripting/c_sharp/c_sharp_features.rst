@@ -1,12 +1,8 @@
-.. _doc_c_sharp_features:
-
 C# features
 ===========
 
 This page provides an overview of the commonly used features of both C# and Rebel Engine
 and how they are used together.
-
-.. _doc_c_sharp_features_type_conversion_and_casting:
 
 Type conversion and casting
 ---------------------------
@@ -77,8 +73,6 @@ otherwise it returns true.
     }
 
 For more advanced type checking, you can look into `Pattern Matching <https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_.
-
-.. _doc_c_sharp_signals:
 
 C# signals
 ----------

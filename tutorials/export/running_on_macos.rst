@@ -1,5 +1,3 @@
-.. _doc_running_on_macos:
-
 Running Rebel apps on macOS
 ===========================
 

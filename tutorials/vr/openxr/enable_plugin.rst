@@ -1,5 +1,3 @@
-.. _doc_enable_plugin:
-
 Enabling the OpenXR plugin
 ==========================
 

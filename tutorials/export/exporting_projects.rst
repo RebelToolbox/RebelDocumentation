@@ -1,5 +1,3 @@
-.. _doc_exporting_projects:
-
 Exporting projects
 ==================
 
@@ -87,8 +85,6 @@ Once downloaded, they can be installed using the **Install Export Templates**
 option in Rebel Editor:
 
 .. image:: img/exptemp.png
-
-.. _doc_exporting_projects_export_mode:
 
 Resource options
 ~~~~~~~~~~~~~~~~

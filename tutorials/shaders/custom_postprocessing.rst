@@ -1,5 +1,3 @@
-.. _doc_custom_postprocessing:
-
 Custom post-processing
 ======================
 

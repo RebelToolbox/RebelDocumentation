@@ -1,5 +1,3 @@
-.. _doc_background_loading:
-
 Background loading
 ==================
 

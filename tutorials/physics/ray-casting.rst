@@ -1,5 +1,3 @@
-.. _doc_ray-casting:
-
 Ray-casting
 ===========
 

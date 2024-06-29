@@ -1,5 +1,3 @@
-.. _doc_android_custom_build:
-
 Custom builds for Android
 =========================
 

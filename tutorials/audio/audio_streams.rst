@@ -1,5 +1,3 @@
-.. _doc_audio_streams:
-
 Audio streams
 =============
 
@@ -63,8 +61,6 @@ Similar to AudioStreamPlayer2D, an Area can divert the sound to an audio bus.
 .. image:: img/audio_stream_3d_area.png
 
 Unlike for 2D, the 3D version of AudioStreamPlayer has a few more advanced options:
-
-.. _doc_audio_streams_reverb_buses:
 
 Reverb buses
 ~~~~~~~~~~~~

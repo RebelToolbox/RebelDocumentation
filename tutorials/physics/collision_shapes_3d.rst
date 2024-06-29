@@ -1,5 +1,3 @@
-.. _doc_collision_shapes_3d:
-
 Collision shapes (3D)
 =====================
 

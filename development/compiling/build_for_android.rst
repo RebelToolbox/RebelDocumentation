@@ -1,5 +1,3 @@
-.. _doc_build_for_android:
-
 Build Rebel Engine for Android
 ==============================
 

@@ -1,5 +1,3 @@
-.. _doc_exporting_for_windows:
-
 Exporting for Windows
 =====================
 

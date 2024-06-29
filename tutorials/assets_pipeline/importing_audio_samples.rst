@@ -1,5 +1,3 @@
-.. _doc_importing_audio_samples:
-
 Importing audio samples
 =======================
 

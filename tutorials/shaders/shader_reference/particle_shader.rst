@@ -1,5 +1,3 @@
-.. _doc_particle_shader:
-
 Particle shaders
 ================
 

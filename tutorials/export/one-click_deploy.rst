@@ -1,5 +1,3 @@
-.. _doc_one-click_deploy:
-
 One-click deploy
 ================
 

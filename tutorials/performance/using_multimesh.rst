@@ -1,5 +1,3 @@
-.. _doc_using_multimesh:
-
 Optimization using MultiMeshes
 ==============================
 

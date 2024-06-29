@@ -1,5 +1,3 @@
-.. _doc_custom_modules_in_c++:
-
 Custom modules in C++
 =====================
 
@@ -494,8 +492,6 @@ If you change your module's API, you can also re-extract the docs, they will con
 the things that you previously added. Of course if you point it to your Rebel Engine
 folder, make sure you don't lose work by extracting older docs from an older engine build
 on top of the newer ones.
-
-.. _doc_custom_module_icons:
 
 Adding custom editor icons
 --------------------------

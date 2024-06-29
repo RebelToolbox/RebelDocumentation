@@ -1,5 +1,3 @@
-.. _doc_viewport_and_canvas_transforms:
-
 Viewport and canvas transforms
 ==============================
 

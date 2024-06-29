@@ -1,5 +1,3 @@
-.. _doc_using_gridmaps:
-
 Using GridMaps
 ~~~~~~~~~~~~~~
 

@@ -1,5 +1,3 @@
-.. _doc_c_sharp:
-
 C# basics
 =========
 
@@ -34,8 +32,6 @@ page in the Mono documentation.
         see the
         `Microsoft C# guide <https://docs.microsoft.com/en-us/dotnet/csharp/index>`_
         or look for a suitable introduction elsewhere.
-
-.. _doc_c_sharp_setup:
 
 Setting up C# for Rebel Engine
 ------------------------------

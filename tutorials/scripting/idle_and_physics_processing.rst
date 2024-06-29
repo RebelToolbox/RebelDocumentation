@@ -1,5 +1,3 @@
-.. _doc_idle_and_physics_processing:
-
 Idle and Physics Processing
 ===========================
 

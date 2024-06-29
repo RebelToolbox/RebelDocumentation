@@ -1,5 +1,3 @@
-.. _doc_gui_using_theme_editor:
-
 Using the theme editor
 ======================
 

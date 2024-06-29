@@ -1,5 +1,3 @@
-.. _doc_xr_primer:
-
 AR/VR primer
 ============
 

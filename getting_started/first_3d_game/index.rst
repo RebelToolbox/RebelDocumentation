@@ -1,5 +1,3 @@
-.. _doc_your_first_3d_game:
-
 Your first 3D game
 ==================
 

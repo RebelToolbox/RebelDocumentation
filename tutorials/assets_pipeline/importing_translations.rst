@@ -1,5 +1,3 @@
-.. _doc_importing_translations:
-
 Importing translations
 ======================
 

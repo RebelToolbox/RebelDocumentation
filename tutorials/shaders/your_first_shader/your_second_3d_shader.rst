@@ -1,5 +1,3 @@
-.. _doc_your_second_spatial_shader:
-
 Your second 3D shader
 =====================
 

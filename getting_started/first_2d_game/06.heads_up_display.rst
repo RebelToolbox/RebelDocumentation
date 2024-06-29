@@ -1,5 +1,3 @@
-.. _doc_your_first_2d_game_heads_up_display:
-
 Heads up display
 ================
 

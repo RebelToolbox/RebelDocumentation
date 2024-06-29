@@ -1,5 +1,3 @@
-.. _doc_mobile_rendering_limitations:
-
 Mobile rendering limitations
 ============================
 

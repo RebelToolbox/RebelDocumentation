@@ -1,5 +1,3 @@
-.. _doc_visual_shaders:
-
 Using VisualShaders
 ===================
 

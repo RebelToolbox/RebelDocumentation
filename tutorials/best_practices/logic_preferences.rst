@@ -1,5 +1,3 @@
-.. _doc_logic_preferences:
-
 Logic preferences
 =================
 

@@ -1,5 +1,3 @@
-.. _doc_reflection_probes:
-
 Reflection probes
 =================
 

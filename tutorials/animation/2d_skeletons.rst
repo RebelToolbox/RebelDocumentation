@@ -1,5 +1,3 @@
-.. _doc_2d_skeletons:
-
 2D skeletons
 ============
 

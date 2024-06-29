@@ -1,5 +1,3 @@
-.. _doc_cpu_optimization:
-
 CPU optimization
 ================
 

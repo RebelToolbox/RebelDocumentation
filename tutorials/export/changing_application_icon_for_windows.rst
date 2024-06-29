@@ -1,5 +1,3 @@
-.. _doc_changing_application_icon_for_windows:
-
 Changing application icon for Windows
 =====================================
 

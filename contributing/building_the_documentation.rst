@@ -1,5 +1,3 @@
-.. _doc_building_the_documentation:
-
 Building Rebel Documentation with Sphinx
 ========================================
 

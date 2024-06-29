@@ -1,5 +1,3 @@
-.. _doc_custom_servers:
-
 Custom Servers
 ==============
 

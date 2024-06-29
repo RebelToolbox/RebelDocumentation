@@ -1,5 +1,3 @@
-.. _doc_inspector_plugins:
-
 Inspector plugins
 =================
 

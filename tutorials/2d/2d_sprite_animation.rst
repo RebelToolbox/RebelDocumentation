@@ -1,5 +1,3 @@
-.. _doc_2d_sprite_animation:
-
 2D Sprite animation
 ===================
 

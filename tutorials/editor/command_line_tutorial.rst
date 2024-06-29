@@ -1,5 +1,3 @@
-.. _doc_command_line_tutorial:
-
 Command line tutorial
 =====================
 
@@ -266,8 +264,6 @@ just fly by. For this, a command line debugger is provided by adding
 ::
 
     rebel -d scene.tscn
-
-.. _doc_command_line_tutorial_exporting:
 
 Exporting
 ---------

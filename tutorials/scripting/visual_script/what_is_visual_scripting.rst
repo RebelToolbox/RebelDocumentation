@@ -1,5 +1,3 @@
-.. _doc_what_is_visual_script:
-
 What is Visual Scripting
 ========================
 

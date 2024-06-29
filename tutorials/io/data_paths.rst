@@ -1,5 +1,3 @@
-.. _doc_data_paths:
-
 File paths in Rebel projects
 ============================
 
@@ -99,8 +97,6 @@ Rebel Engine complies with the `XDG Base Directory Specification
 <https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html>`__
 on all platforms. You can override environment variables following the
 specification to change the editor and project data paths.
-
-.. _doc_data_paths_self_contained_mode:
 
 Self-contained mode
 ~~~~~~~~~~~~~~~~~~~

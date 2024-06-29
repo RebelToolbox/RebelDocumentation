@@ -1,5 +1,3 @@
-.. _doc_2d_movement:
-
 2D movement overview
 ====================
 
@@ -12,8 +10,6 @@ the movement in most 2D games is based on a small number of designs.
 
 We'll use :ref:`KinematicBody2D <class_KinematicBody2D>` for these examples,
 but the principles will apply to other node types (Area2D, RigidBody2D) as well.
-
-.. _doc_2d_movement_setup:
 
 Setup
 -----

@@ -1,5 +1,3 @@
-.. _doc_gi_probes:
-
 Using GIProbe
 =============
 

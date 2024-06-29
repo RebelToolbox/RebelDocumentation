@@ -1,5 +1,3 @@
-.. _doc_real_time_navigation_3d:
-
 Real Time Navigation (3D)
 =========================
 

@@ -1,5 +1,3 @@
-.. _doc_internationalizing_games:
-
 Internationalizing games
 ========================
 

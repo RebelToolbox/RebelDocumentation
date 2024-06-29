@@ -1,5 +1,3 @@
-.. _doc_introduction_to_editor_development:
-
 Introduction to editor development
 ==================================
 

@@ -1,5 +1,3 @@
-.. _doc_gpu_optimization:
-
 GPU optimization
 ================
 

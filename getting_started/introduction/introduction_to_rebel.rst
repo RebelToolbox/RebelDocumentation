@@ -1,5 +1,3 @@
-.. _doc_introduction_to_rebel:
-
 Introduction to Rebel
 =====================
 

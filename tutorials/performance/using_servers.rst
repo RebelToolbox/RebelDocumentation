@@ -1,5 +1,3 @@
-.. _doc_using_servers:
-
 Optimization using Servers
 ==========================
 

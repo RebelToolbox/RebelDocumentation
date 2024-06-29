@@ -1,5 +1,3 @@
-.. _doc_your_first_2d_game_player_scene:
-
 Creating the player scene
 =========================
 

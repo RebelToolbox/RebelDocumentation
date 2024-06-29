@@ -2,8 +2,6 @@
    load. Readers will then be reminded of the concepts further in the getting
    started series, reinforcing their learning.
 
-.. _doc_key_concepts_overview:
-
 Overview of Rebel Engine's key concepts
 =======================================
 

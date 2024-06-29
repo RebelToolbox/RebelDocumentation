@@ -1,5 +1,3 @@
-.. _doc_using_cpp_profilers:
-
 Using C++ profilers
 ===================
 

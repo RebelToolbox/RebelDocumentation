@@ -1,5 +1,3 @@
-.. _doc_what_is_gdnative:
-
 What is GDNative?
 =================
 
@@ -74,8 +72,6 @@ GDNative:
     There are no plans to support additional languages with GDNative officially.
     That said, the community offers several bindings for other languages (see
     below).
-
-.. _doc_what_is_gdnative_third_party_bindings:
 
 Version compatibility
 ---------------------

@@ -1,5 +1,3 @@
-.. _doc_compiling_for_windows:
-
 Compiling for Windows
 =====================
 
@@ -71,8 +69,6 @@ to add Python to the ``PATH``.
 If SCons cannot detect your Visual Studio installation, it might be that your
 SCons version is too old. Update it to the latest version with
 ``python -m pip install --upgrade scons``.
-
-.. _doc_compiling_for_windows_install_vs:
 
 Installing Visual Studio caveats
 --------------------------------

@@ -1,5 +1,3 @@
-.. _doc_compiling_for_osx:
-
 Compiling for macOS
 ===================
 

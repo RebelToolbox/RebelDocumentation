@@ -1,5 +1,3 @@
-.. _doc_feature_tags:
-
 Feature tags
 ============
 

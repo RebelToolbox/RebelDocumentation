@@ -1,5 +1,3 @@
-.. _doc_runtime_selection:
-
 Switching runtimes
 ==================
 

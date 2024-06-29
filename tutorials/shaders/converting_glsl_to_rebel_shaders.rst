@@ -1,5 +1,3 @@
-.. _doc_converting_glsl_to_rebel_shaders:
-
 Converting GLSL to Rebel Shaders
 ================================
 

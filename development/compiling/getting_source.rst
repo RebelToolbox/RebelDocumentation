@@ -1,5 +1,3 @@
-.. _doc_getting_source:
-
 Getting the source
 ==================
 

@@ -1,5 +1,3 @@
-.. _doc_high_level_multiplayer:
-
 High-level multiplayer
 ======================
 
@@ -350,8 +348,6 @@ When the server gets the OK from all the peers, it can tell them to start, as fo
         if 1 == get_tree().get_rpc_sender_id():
             get_tree().set_pause(false)
             # Game starts now!
-
-.. _doc_high_level_multiplayer_synchronizing:
 
 Synchronizing the game
 ----------------------

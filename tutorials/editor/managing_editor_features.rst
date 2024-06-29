@@ -1,5 +1,3 @@
-.. _doc_managing_editor_features:
-
 Managing editor features
 ========================
 

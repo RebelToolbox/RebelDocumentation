@@ -1,5 +1,3 @@
-.. _doc_using_kinematic_body_2d:
-
 Using KinematicBody2D
 =====================
 

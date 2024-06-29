@@ -1,5 +1,3 @@
-.. _doc_gles2_gles3_differences:
-
 Differences between GLES2 and GLES3
 ===================================
 

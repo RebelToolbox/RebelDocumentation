@@ -1,5 +1,3 @@
-.. _doc_configuring_an_ide_clion:
-
 CLion
 =====
 

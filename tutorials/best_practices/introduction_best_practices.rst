@@ -1,5 +1,3 @@
-.. _doc_introduction_best_practices:
-
 Introduction
 ============
 

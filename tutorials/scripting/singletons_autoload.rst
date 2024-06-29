@@ -1,5 +1,3 @@
-.. _doc_singletons_autoload:
-
 Singletons (AutoLoad)
 =====================
 

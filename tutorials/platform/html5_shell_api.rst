@@ -1,5 +1,3 @@
-.. _doc_html5_shell_api:
-
 HTML5 shell API
 ===============
 

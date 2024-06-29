@@ -1,5 +1,3 @@
-.. _doc_sync_with_audio:
-
 Sync the gameplay with audio and music
 =======================================
 

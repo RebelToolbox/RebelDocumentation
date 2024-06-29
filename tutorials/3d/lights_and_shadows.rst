@@ -1,5 +1,3 @@
-.. _doc_lights_and_shadows:
-
 3D lights and shadows
 =====================
 

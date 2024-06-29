@@ -1,5 +1,3 @@
-.. _doc_import_plugins:
-
 Import plugins
 ==============
 

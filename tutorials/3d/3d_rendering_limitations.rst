@@ -1,5 +1,3 @@
-.. _doc_3d_rendering_limitations:
-
 3D rendering limitations
 ========================
 
@@ -79,8 +77,6 @@ airplane.
 Depending on the scene and viewing conditions, you may also be able to move the
 Z-fighting objects further apart without the difference being visible to the
 player.
-
-.. _doc_3d_rendering_limitations_transparency_sorting:
 
 Transparency sorting
 --------------------

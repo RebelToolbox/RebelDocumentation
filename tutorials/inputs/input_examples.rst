@@ -1,5 +1,3 @@
-.. _doc_input_examples:
-
 Input examples
 ==============
 

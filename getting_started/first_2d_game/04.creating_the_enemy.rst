@@ -1,5 +1,3 @@
-.. _doc_your_first_2d_game_creating_the_enemy:
-
 Creating the enemy
 ==================
 

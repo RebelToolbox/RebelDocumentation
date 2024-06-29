@@ -1,5 +1,3 @@
-.. _doc_making_plugins:
-
 Making plugins
 ==============
 

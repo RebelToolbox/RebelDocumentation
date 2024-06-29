@@ -1,5 +1,3 @@
-.. _doc_gdscript_static_typing:
-
 Static typing in GDScript
 =========================
 
@@ -173,8 +171,6 @@ get full autocompletion on the player variable thanks to that cast.
 .. note::
 
     If you try to cast with a built-in type and it fails, Rebel Engine will throw an error.
-
-.. _doc_gdscript_static_typing_safe_lines:
 
 Safe lines
 ^^^^^^^^^^

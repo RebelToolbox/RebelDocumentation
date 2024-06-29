@@ -1,5 +1,3 @@
-.. _doc_playing_videos:
-
 Playing videos
 ==============
 
@@ -143,8 +141,6 @@ There are several limitations with the current implementation of video playback 
   frame and displaying a TextureRect with a screenshot of the first frame of the
   video until the video is restarted.
 - Streaming a video from a URL is not supported.
-
-.. _doc_playing_videos_recommended_theora_encoding_settings:
 
 Recommended Theora encoding settings
 ------------------------------------

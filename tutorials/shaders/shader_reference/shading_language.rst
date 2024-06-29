@@ -1,5 +1,3 @@
-.. _doc_shading_language:
-
 Rebel Shading Language
 ======================
 

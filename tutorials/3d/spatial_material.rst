@@ -1,5 +1,3 @@
-.. _doc_spatial_material:
-
 Spatial Material
 ================
 

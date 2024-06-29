@@ -1,5 +1,3 @@
-.. _doc_using_tilemaps:
-
 Using TileMaps
 ==============
 

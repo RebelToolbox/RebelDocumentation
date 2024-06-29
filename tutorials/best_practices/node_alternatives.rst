@@ -1,5 +1,3 @@
-.. _doc_node_alternatives:
-
 When and how to avoid using nodes for everything
 ================================================
 

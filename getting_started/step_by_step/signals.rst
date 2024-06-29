@@ -6,8 +6,6 @@
 .. meta::
     :keywords: Signal
 
-.. _doc_signals:
-
 Using signals
 =============
 

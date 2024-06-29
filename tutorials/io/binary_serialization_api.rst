@@ -1,5 +1,3 @@
-.. _doc_binary_serialization_api:
-
 Binary serialization API
 ========================
 

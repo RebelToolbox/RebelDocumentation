@@ -1,5 +1,3 @@
-.. _doc_gdnative_cpp_example:
-
 GDNative C++ example
 ====================
 

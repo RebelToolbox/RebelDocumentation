@@ -1,5 +1,3 @@
-.. _doc_bug_triage_guidelines:
-
 Bug triage guidelines
 =====================
 

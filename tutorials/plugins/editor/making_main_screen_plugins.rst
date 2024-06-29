@@ -1,5 +1,3 @@
-.. _doc_making_main_screen_plugins:
-
 Making main screen plugins
 ==========================
 

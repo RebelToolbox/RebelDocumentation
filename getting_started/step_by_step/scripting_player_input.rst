@@ -2,8 +2,6 @@
    Inputs section of the docs should provide more guides comparing the various
    tools you have to manage the complexity of user input.
 
-.. _doc_scripting_player_input:
-
 Listening to player input
 =========================
 

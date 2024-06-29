@@ -1,5 +1,3 @@
-.. _doc_csg_tools:
-
 Prototyping levels with CSG
 ===========================
 

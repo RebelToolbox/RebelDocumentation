@@ -1,5 +1,3 @@
-.. _doc_exporting_for_web:
-
 Exporting for the Web
 =====================
 
@@ -41,8 +39,6 @@ Additionally, while most browsers support WebGL 2.0, this is not yet the case
 for **Safari**. WebGL 2.0 support is coming in Safari 15 for macOS, and is not
 available yet for any **iOS** browser (all WebKit-based like Safari).
 See `Can I use WebGL 2.0 <https://caniuse.com/webgl2>`__ for details.
-
-.. _doc_javascript_export_options:
 
 Export options
 --------------
@@ -90,8 +86,6 @@ Limitations
 For security and privacy reasons, many features that work effortlessly on
 native platforms are more complicated on the web platform. Following is a list
 of limitations you should be aware of when porting a Rebel game to the web.
-
-.. _doc_javascript_secure_contexts:
 
 Secure contexts
 ~~~~~~~~~~~~~~~
@@ -271,8 +265,6 @@ of its original size with gzip compression.
 
 **Hosts that don't provide on-the-fly compression:** itch.io, GitLab Pages
 (`supports manual gzip precompression <https://webd97.de/post/gitlab-pages-compression/>`__)
-
-.. _doc_javascript_eval:
 
 Calling JavaScript from script
 ------------------------------

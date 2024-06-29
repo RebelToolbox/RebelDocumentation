@@ -1,5 +1,3 @@
-.. _doc_documentation_guidelines:
-
 Documentation guidelines
 ========================
 

@@ -1,5 +1,3 @@
-.. _doc_core_types:
-
 Core types
 ==========
 

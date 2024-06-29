@@ -1,5 +1,3 @@
-.. _doc_advanced_postprocessing:
-
 Advanced post-processing
 ========================
 

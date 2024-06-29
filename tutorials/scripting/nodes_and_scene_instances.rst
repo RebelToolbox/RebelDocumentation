@@ -1,5 +1,3 @@
-.. _doc_nodes_and_scene_instances:
-
 Nodes and scene instances
 =========================
 

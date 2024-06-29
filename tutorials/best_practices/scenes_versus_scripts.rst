@@ -1,5 +1,3 @@
-.. _doc_scenes_versus_scripts:
-
 When to use scenes versus scripts
 =================================
 

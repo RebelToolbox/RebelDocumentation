@@ -1,5 +1,3 @@
-.. _doc_pr_workflow:
-
 Pull request workflow
 =====================
 
@@ -419,8 +417,6 @@ fixes. The above example would then become:
 .. Kept for compatibility with the previous title, linked in many PRs.
 
 .. _mastering-the-pr-workflow-the-rebase:
-
-.. _doc_pr_workflow_rebase:
 
 The interactive rebase
 ----------------------

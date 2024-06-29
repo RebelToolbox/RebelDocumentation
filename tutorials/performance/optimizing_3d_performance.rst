@@ -1,8 +1,6 @@
 .. meta::
     :keywords: optimization
 
-.. _doc_optimizing_3d_performance:
-
 Optimizing 3D performance
 =========================
 

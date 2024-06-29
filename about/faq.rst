@@ -1,8 +1,6 @@
 .. meta::
     :keywords: FAQ
 
-.. _doc_faq:
-
 Frequently asked questions
 ==========================
 
@@ -78,8 +76,6 @@ ready to tackle new problems as they arise, but since this is an open-source pro
 we recommend that you first do some due diligence yourself. Searching through
 discussions on `open issues <https://github.com/RebelToolbox/RebelEngine/issues>`_ is a
 great way to start your troubleshooting.
-
-.. _doc_faq_what_is_gdscript:
 
 What is GDScript and why should I use it?
 -----------------------------------------
@@ -399,8 +395,6 @@ developer experiences as a whole.
 Bonus points for bringing screenshots, concrete numbers, test cases, or example
 projects (if applicable).
 
-.. _doc_faq_non_game_applications:
-
 Is it possible to use Rebel Engine to create non-game applications?
 -------------------------------------------------------------------
 
@@ -413,8 +407,6 @@ in the Project Settings to decrease CPU and GPU usage.
 
 That said, we wouldn't recommend using Rebel Engine to create a *mobile* application
 since low-processor mode isn't supported on mobile platforms yet.
-
-.. _doc_faq_use_rebel_engine_as_library:
 
 Is it possible to use Rebel Engine as a library?
 ------------------------------------------------
@@ -448,8 +440,6 @@ the most complex users of Rebel Engine's UI system.
 This custom UI toolkit :ref:`can't be used as a library <about/faq:Is it possible to use Rebel Engine as a library?>`,
 but you can still
 :ref:`use Rebel Engine to create non-game applications by using the editor <about/faq:Is it possible to use Rebel Engine to create non-game applications?>`.
-
-.. _doc_faq_why_not_stl:
 
 Why does Rebel Engine not use STL (Standard Template Library)?
 --------------------------------------------------------------

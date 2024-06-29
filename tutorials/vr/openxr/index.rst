@@ -1,5 +1,3 @@
-.. _doc_openxr_introduction:
-
 OpenXR plugin
 =============
 
