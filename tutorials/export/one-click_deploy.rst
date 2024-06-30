@@ -1,5 +1,3 @@
-.. _doc_one-click_deploy:
-
 One-click deploy
 ================
 
@@ -31,7 +29,7 @@ Supported platforms
 - **Android:** Exports the project with debugging enabled and runs it on the
   connected device.
 
-   - Make sure to follow the steps described in :ref:`doc_exporting_for_android`.
+   - Make sure to follow the steps described in :doc:`exporting_for_android`.
      Otherwise, the one-click deploy button won't appear.
 
    - If you have more than one device connected, Rebel Editor will ask you which device

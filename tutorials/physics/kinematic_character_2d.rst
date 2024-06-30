@@ -1,5 +1,3 @@
-.. _doc_kinematic_character_2d:
-
 Kinematic character (2D)
 ========================
 

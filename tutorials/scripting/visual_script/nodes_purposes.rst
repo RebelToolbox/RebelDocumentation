@@ -1,5 +1,3 @@
-.. _doc_nodes_purposes_visual_script:
-
 Nodes and terminology
 =====================
 

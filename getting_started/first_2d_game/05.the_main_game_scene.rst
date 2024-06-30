@@ -1,5 +1,3 @@
-.. _doc_your_first_2d_game_the_main_game_scene:
-
 The main game scene
 ===================
 

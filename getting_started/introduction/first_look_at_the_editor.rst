@@ -4,8 +4,6 @@
    to the animation section. General pages, for instance, about the project
    manager, should go in the editor manual.
 
-.. _doc_intro_to_the_editor_interface:
-
 First look at the Rebel Editor
 ==============================
 
@@ -109,7 +107,7 @@ options related to the 3D view.
 
 .. image:: img/editor_intro_3d_viewport_perspective.png
 
-.. note:: Read :ref:`doc_introduction_to_3d` for more detail about the **3D
+.. note:: Read :doc:`/tutorials/3d/introduction_to_3d` for more detail about the **3D
           main screen**.
 
 The **Script screen** is a complete code editor with a debugger, rich

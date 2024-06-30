@@ -1,5 +1,3 @@
-.. _doc_3d_rendering_limitations:
-
 3D rendering limitations
 ========================
 
@@ -7,7 +5,7 @@
 
     In addition to the limitations below, mobile platforms have even more
     limitations on 3D rendering compared to desktop platforms.
-    See :ref:`doc_mobile_rendering_limitations` for more information.
+    See :doc:`/tutorials/platform/mobile_rendering_limitations` for more information.
 
 Introduction
 ------------
@@ -79,8 +77,6 @@ airplane.
 Depending on the scene and viewing conditions, you may also be able to move the
 Z-fighting objects further apart without the difference being visible to the
 player.
-
-.. _doc_3d_rendering_limitations_transparency_sorting:
 
 Transparency sorting
 --------------------

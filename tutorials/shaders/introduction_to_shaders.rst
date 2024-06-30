@@ -1,11 +1,9 @@
-.. _doc_introduction_to_shaders:
-
 Introduction to shaders
 =======================
 
 This page explains what shaders are and will give you an overview of how they
 work in Rebel Engine. For a detailed reference of the Rebel Shading Language, see
-:ref:`doc_shading_language`.
+:doc:`/tutorials/shaders/shader_reference/shading_language`.
 
 Shaders are a special kind of program that runs on Graphics Processing Units
 (GPUs). They were initially used to shade 3D scenes but can nowadays do much
@@ -84,9 +82,9 @@ In Rebel Shading Language, all shaders need to specify their type in the first l
 
 Here are the available types:
 
-* :ref:`spatial <doc_spatial_shader>` for 3D rendering.
-* :ref:`canvas_item <doc_canvas_item_shader>` for 2D rendering.
-* :ref:`particles <doc_particle_shader>` for particle systems.
+* :doc:`spatial </tutorials/shaders/shader_reference/spatial_shader>` for 3D rendering.
+* :doc:`canvas_item </tutorials/shaders/shader_reference/canvas_item_shader>` for 2D rendering.
+* :doc:`particles </tutorials/shaders/shader_reference/particle_shader>` for particle systems.
 
 Render modes
 ------------
@@ -126,7 +124,7 @@ can also use it to send extra data to the fragment function using varyings.
 
 By default, Rebel Engine transforms your vertex information for you, which is necessary
 to project geometry onto the screen. You can use render modes to transform the
-data yourself; see the :ref:`Spatial shader doc <doc_spatial_shader>` for an
+data yourself; see the :doc:`Spatial shader doc </tutorials/shaders/shader_reference/spatial_shader>` for an
 example.
 
 Fragment processor
@@ -157,6 +155,6 @@ exists as a function called inside the ``fragment()`` processor and typically
 operates on the material properties setup inside the ``fragment()`` function.
 
 The ``light()`` processor works differently in 2D than it does in 3D; for a
-description of how it works in each, see their documentation, :ref:`CanvasItem
-shaders <doc_canvas_item_shader>` and :ref:`Spatial shaders
-<doc_spatial_shader>`, respectively.
+description of how it works in each, see their documentation, :doc:`CanvasItem
+shaders </tutorials/shaders/shader_reference/canvas_item_shader>` and :doc:`Spatial shaders
+</tutorials/shaders/shader_reference/spatial_shader>`, respectively.

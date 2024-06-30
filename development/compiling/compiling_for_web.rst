@@ -1,12 +1,10 @@
-.. _doc_compiling_for_web:
-
 Compiling for the Web
 =====================
 
 .. seealso::
 
     This page describes how to compile HTML5 editor and export template binaries from source.
-    If you're looking to export your project to HTML5 instead, read :ref:`doc_exporting_for_web`.
+    If you're looking to export your project to HTML5 instead, read :doc:`/tutorials/export/exporting_for_web`.
 
 .. highlight:: shell
 
@@ -20,10 +18,10 @@ To compile export templates for the Web, the following is required:
 -  `SCons 3.0+ <https://www.scons.org>`__ build system.
 
 .. seealso:: To get the Rebel Engine source code for compiling, see
-             :ref:`doc_getting_source`.
+             :doc:`getting_source`.
 
              For a general overview of SCons usage for Rebel Engine, see
-             :ref:`doc_introduction_to_the_buildsystem`.
+             :doc:`introduction_to_the_buildsystem`.
 
 Building export templates
 -------------------------
@@ -39,7 +37,7 @@ either ``release`` for a release build or ``release_debug`` for a debug build::
     scons platform=javascript tools=no target=release
     scons platform=javascript tools=no target=release_debug
 
-By default, the :ref:`JavaScript singleton <doc_javascript_eval>` will be built
+By default, the :ref:`JavaScript singleton <tutorials/export/exporting_for_web:Calling JavaScript from script>` will be built
 into the engine. Official export templates also have the JavaScript singleton
 enabled. Since ``eval()`` calls can be a security concern, the
 ``javascript_eval`` option can be used to build without the singleton::
@@ -66,7 +64,7 @@ Threads and GDNative
 
 The default export templates do not include threads and GDNative support for
 performance and compatibility reasons. See the
-:ref:`export page <doc_javascript_export_options>` for more info.
+:ref:`export page <tutorials/export/exporting_for_web:Export options>` for more info.
 
 You can build the export templates using the option ``threads_enabled=yes`` or
 ``gdnative_enabled=yes`` to enable threads or GDNative support::
@@ -105,5 +103,5 @@ Once finished, the resulting file will be placed in the ``bin`` subdirectory.
 Its name will be ``rebel.javascript.opt.tools.threads.zip``. You can upload the
 zip content to your web server and visit it with your browser to use the editor.
 
-Refer to the :ref:`export page <doc_javascript_export_options>` for the web
+Refer to the :ref:`export page <tutorials/export/exporting_for_web:Export options>` for the web
 server requirements.

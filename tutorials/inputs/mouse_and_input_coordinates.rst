@@ -1,5 +1,3 @@
-.. _doc_mouse_and_input_coordinates:
-
 Mouse and input coordinates
 ===========================
 
@@ -21,7 +19,7 @@ Viewport display coordinates
 ----------------------------
 
 Rebel Engine uses viewports to display content, and viewports can be scaled by
-several options (see :ref:`doc_multiple_resolutions` tutorial). Use, then, the
+several options (see :doc:`/tutorials/rendering/multiple_resolutions` tutorial). Use, then, the
 functions in nodes to obtain the mouse coordinates and viewport size,
 for example:
 

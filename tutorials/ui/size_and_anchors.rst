@@ -1,5 +1,3 @@
-.. _doc_size_and_anchors:
-
 Size and anchors
 ================
 

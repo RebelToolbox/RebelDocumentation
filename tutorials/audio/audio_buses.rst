@@ -1,5 +1,3 @@
-.. _doc_audio_buses:
-
 Audio buses
 ===========
 
@@ -44,8 +42,8 @@ For those unfamiliar with it, it can be explained with a few facts:
 This can take a bit getting used to, but it's friendlier in the end
 and will allow you to communicate better with audio professionals.
 
-Audio buses
------------
+Managing audio buses
+--------------------
 
 Audio buses can be found in the bottom panel of the Rebel Editor:
 
@@ -81,7 +79,7 @@ Finally, toggle the **Playing** property to **On** and sound will flow.
 
 .. seealso::
 
-    You may also be interested in reading about :ref:`doc_audio_streams` now.
+    You may also be interested in reading about :doc:`audio_streams` now.
 
 Adding effects
 --------------
@@ -151,7 +149,7 @@ The compressor has many uses. For example:
 
     If your goal is to prevent a signal from exceeding a given amplitude
     altogether, rather than to reduce the dynamic range of the signal,
-    a :ref:`limiter <doc_audio_buses_limiter>` is likely a better choice
+    a :ref:`limiter <tutorials/audio/audio_buses:Limiter>` is likely a better choice
     than a compressor.
 
 
@@ -199,8 +197,6 @@ HighShelfFilter
 ~~~~~~~~~~~~~~~
 
 Reduces all frequencies above a specific *Cutoff* frequency.
-
-.. _doc_audio_buses_limiter:
 
 Limiter
 ~~~~~~~
@@ -259,7 +255,7 @@ Reverb
 Reverb simulates rooms of different sizes. It has adjustable parameters that can
 be tweaked to obtain the sound of a specific room. Reverb is commonly outputted
 from :ref:`Areas <class_Area>`
-(see :ref:`Reverb buses <doc_audio_streams_reverb_buses>`), or to apply
+(see :ref:`Reverb buses <tutorials/audio/audio_streams:Reverb buses>`), or to apply
 a "chamber" feel to all sounds.
 
 SpectrumAnalyzer

@@ -1,5 +1,3 @@
-.. _doc_immediategeometry:
-
 Using ImmediateGeometry
 =======================
 

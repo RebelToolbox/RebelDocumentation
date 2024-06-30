@@ -1,5 +1,3 @@
-.. _doc_your_first_2d_game:
-
 Your first 2D game
 ==================
 
@@ -14,7 +12,7 @@ a 2D game.
 
 .. note:: This project is an introduction to the Rebel Editor. It assumes that
           you have some programming experience already. If you're new to
-          programming entirely, you should start here: :ref:`doc_scripting`.
+          programming entirely, you should start here: :doc:`/getting_started/step_by_step/scripting_languages`.
 
 The game is called "Dodge the Creeps!". Your character must move and avoid the
 enemies for as long as possible. 

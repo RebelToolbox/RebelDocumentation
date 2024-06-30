@@ -1,5 +1,3 @@
-.. _doc_animation_tree:
-
 Using AnimationTree
 ===================
 

@@ -1,8 +1,6 @@
 .. meta::
     :keywords: cheatsheet, cheat sheet, shortcut
 
-.. _doc_default_key_mapping:
-
 Default editor shortcuts
 ========================
 Many of Rebel Editor functions can be executed with keyboard shortcuts. This page

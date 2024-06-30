@@ -1,5 +1,3 @@
-.. _doc_core_types:
-
 Core types
 ==========
 
@@ -31,10 +29,9 @@ many architectures have 4 bytes long wchar_t, where 2 bytes might be
 desired. However, by default, this has not been forced and CharType maps
 directly to wchar_t.
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
--  `core/typedefs.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/typedefs.h>`__
+  - `core/typedefs.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/typedefs.h>`__
 
 Memory model
 ------------
@@ -128,11 +125,10 @@ locked until they go out of scope. However, PoolVectors should be used
 for small, dynamic memory operations, as read() and write() are too slow for a
 large amount of accesses.
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
--  `core/os/memory.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/os/memory.h>`__
--  `core/pool_vector.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/pool_vector.h>`__
+  - `core/os/memory.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/os/memory.h>`__
+  - `core/pool_vector.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/pool_vector.h>`__
 
 Containers
 ----------
@@ -162,13 +158,12 @@ The Vector<> class also has a few nice features:
 -  It supports multi-threading, by using atomic operations on the
    reference counter.
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
--  `core/vector.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/vector.h>`__
--  `core/list.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/list.h>`__
--  `core/set.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/set.h>`__
--  `core/map.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/map.h>`__
+  - `core/vector.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/vector.h>`__
+  - `core/list.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/list.h>`__
+  - `core/set.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/set.h>`__
+  - `core/map.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/map.h>`__
 
 String
 ------
@@ -178,10 +173,9 @@ features, full Unicode support in all the functions (like case
 operations) and utf8 parsing/extracting, as well as helpers for
 conversion and visualization.
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
--  `core/ustring.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/ustring.h>`__
+  - `core/ustring.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/ustring.h>`__
 
 StringName
 ----------
@@ -194,10 +188,9 @@ identifier, as comparing them is basically comparing a pointer.
 Creation of a StringName (especially a new one) is slow, but comparison
 is fast.
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
--  `core/string_name.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/string_name.h>`__
+  - `core/string_name.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/string_name.h>`__
 
 Math types
 ----------
@@ -205,10 +198,9 @@ Math types
 There are several linear math types available in the core/math
 directory.
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
--  `core/math <https://github.com/RebelToolbox/RebelEngine/tree/main/core/math>`__
+  - `core/math <https://github.com/RebelToolbox/RebelEngine/tree/main/core/math>`__
 
 NodePath
 --------
@@ -216,10 +208,9 @@ NodePath
 This is a special datatype used for storing paths in a scene tree and
 referencing them fast.
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
--  `core/node_path.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/node_path.h>`__
+  - `core/node_path.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/node_path.h>`__
 
 RID
 ---
@@ -229,7 +220,6 @@ them. RIDs are opaque, meaning that the data they reference can't be
 accessed directly. RIDs are unique, even for different types of
 referenced data.
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
--  `core/rid.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/rid.h>`__
+  - `core/rid.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/rid.h>`__

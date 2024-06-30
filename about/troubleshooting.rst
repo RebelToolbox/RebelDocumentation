@@ -1,5 +1,3 @@
-.. _doc_troubleshooting:
-
 Troubleshooting
 ===============
 
@@ -76,7 +74,7 @@ done to improve performance, especially on integrated graphics, where rendering
 
 To resolve this, open **Project > Project Settings** and enable **Display >
 Window > Dpi > Allow Hidpi**. On top of that, make sure your project is
-configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`.
+configured to support :doc:`multiple resolutions </tutorials/rendering/multiple_resolutions>`.
 
 The project window doesn't appear centered when I run the project.
 ------------------------------------------------------------------
@@ -84,7 +82,7 @@ The project window doesn't appear centered when I run the project.
 This is a `known bug <https://github.com/godotengine/godot/issues/13017>`__. To
 resolve this, open **Project > Project Settings** and enable **Display > Window
 > Dpi > Allow Hidpi**. On top of that, make sure your project is configured to
-support :ref:`multiple resolutions <doc_multiple_resolutions>`.
+support :doc:`multiple resolutions </tutorials/rendering/multiple_resolutions>`.
 
 The project works when run from the editor, but fails to load some files when running from an exported copy.
 ------------------------------------------------------------------------------------------------------------
@@ -94,10 +92,10 @@ in the Export dialog. By default, Rebel Engine will only include actual *resourc
 into the PCK file. Some files commonly used, such as JSON files, are not
 considered resources. For example, if you load ``test.json`` in the exported
 project, you need to specify ``*.json`` in the non-resource export filter. See
-:ref:`doc_exporting_projects_export_mode` for more information.
+:ref:`tutorials/export/exporting_projects:resource options` for more information.
 
 On Windows, this can also be due to :ref:`case sensitivity
-<doc_project_organization_case_sensitivity>` issues. If you reference a resource
+<tutorials/best_practices/project_organization:Case sensitivity>` issues. If you reference a resource
 in your script with a different case than on the filesystem, loading will fail
 once you export the project. This is because the virtual PCK filesystem is
 case-sensitive, while Windows's filesystem is case-insensitive by default.

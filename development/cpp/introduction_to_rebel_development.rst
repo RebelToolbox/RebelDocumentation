@@ -1,5 +1,3 @@
-.. _doc_introduction_to_rebel_development:
-
 Introduction to Rebel Engine development
 ========================================
 

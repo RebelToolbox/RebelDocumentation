@@ -1,5 +1,3 @@
-.. _doc_applying_object_oriented_principles:
-
 Applying object-oriented principles
 ===================================
 

@@ -1,5 +1,3 @@
-.. _doc_saving_games:
-
 Saving games
 ============
 
@@ -123,7 +121,7 @@ loading.
 Saving and reading data
 -----------------------
 
-As covered in the :ref:`doc_filesystem` tutorial, we'll need to open a file
+As covered in the :doc:`/tutorials/scripting/filesystem` tutorial, we'll need to open a file
 so we can write to it or read from it. Now that we have a way to
 call our groups and get their relevant data, let's use :ref:`to_json()
 <class_@GDScript_method_to_json>` to

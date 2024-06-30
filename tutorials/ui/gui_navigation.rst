@@ -1,5 +1,3 @@
-.. _doc_gui_navigation:
-
 Keyboard/Controller Navigation and Focus
 ========================================
 
@@ -7,7 +5,7 @@ It is a common requirement for a user interface to have full keyboard
 and controller support for navigation and interaction. There are two main
 reasons why this is beneficial for projects: improved accessibility (not everyone
 can use mouse or touch controls for interactions), and getting your project
-ready for :ref:`consoles <doc_consoles>` (or just for people who prefer
+ready for :doc:`consoles </tutorials/platform/consoles>` (or just for people who prefer
 to game with a controller on PC).
 
 Navigating between UI elements with keyboard or controller is done by

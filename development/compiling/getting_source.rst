@@ -1,5 +1,3 @@
-.. _doc_getting_source:
-
 Getting the source
 ==================
 
@@ -8,7 +6,7 @@ Getting the source
 Downloading the Rebel Engine source code
 ----------------------------------------
 
-Before :ref:`getting into the SCons build system <doc_introduction_to_the_buildsystem>`
+Before :doc:`getting into the SCons build system </development/compiling/introduction_to_the_buildsystem>`
 and compiling Rebel Engine, you need to actually download the Rebel Engine source code.
 
 The source code is available on `GitHub <https://github.com/RebelToolbox/RebelEngine>`__
@@ -16,7 +14,7 @@ and while you can manually download it via the website, in general you want to
 do it via the ``git`` version control system.
 
 If you are compiling in order to make contributions or pull requests, you should
-follow the instructions from the :ref:`Pull Request workflow <doc_pr_workflow>`.
+follow the instructions from the :doc:`Pull Request workflow </contributing/pr_workflow>`.
 
 If you don't know much about ``git`` yet, there are a great number of
 `tutorials <https://git-scm.com/book>`__ available on various websites.
@@ -43,4 +41,4 @@ With ``git``, you can also clone a stable release by specifying its branch or ta
 after the ``--branch`` (or just ``-b``) argument.
 
 After downloading the Rebel Engine source code,
-you can :ref:`continue to compiling Rebel Engine <doc_introduction_to_the_buildsystem>`.
+you can :doc:`continue to compiling Rebel Engine </development/compiling/introduction_to_the_buildsystem>`.

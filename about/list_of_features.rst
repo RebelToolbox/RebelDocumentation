@@ -1,5 +1,3 @@
-.. _doc_list_of_features:
-
 List of features
 ================
 
@@ -31,8 +29,8 @@ Platforms
 
 - Android 4.4 and later.
 - iOS 10.0 and later.
-- :ref:`Consoles <doc_consoles>`.
-- :ref:`Headless Linux and macOS servers <doc_exporting_for_dedicated_servers>`.
+- :doc:`Consoles </tutorials/platform/consoles>`.
+- :doc:`Headless Linux and macOS servers </tutorials/export/exporting_for_dedicated_servers>`.
 
 Rebel Engine aims to be as platform-independent as possible and can be ported to new
 platforms with relative ease.
@@ -44,9 +42,9 @@ Editor
 
 - Scene tree editor.
 - Built-in script editor.
-- Support for :ref:`external script editors <doc_external_editor>` such as
+- Support for :doc:`external script editors </tutorials/editor/external_editor>` such as
   Visual Studio Code or Vim.
-- GDScript :ref:`debugger <doc_debugger_panel>`.
+- GDScript :doc:`debugger </tutorials/scripting/debug/debugger_panel>`.
 
    - No support for debugging in threads yet.
 - Performance monitoring tools.
@@ -68,7 +66,7 @@ Editor
 **Plugins:**
 
 Editor plugins are used to extend editor functionality.
-:ref:`Create your own plugins <doc_making_plugins>` using GDScript to add new features or speed up your workflow.
+:doc:`Create your own plugins </tutorials/plugins/editor/making_plugins>` using GDScript to add new features or speed up your workflow.
 
 2D graphics
 ^^^^^^^^^^^
@@ -268,7 +266,7 @@ Editor plugins are used to extend editor functionality.
 
 **Performance:**
 
-- Occlusion culling with :ref:`rooms and portals <doc_rooms_and_portals>`.
+- Occlusion culling with :doc:`rooms and portals </tutorials/3d/portals/index>`.
   Supports gameplay notifications with primary and secondary visibility to
   disable AI/physics processing for nodes that don't need it.
 - Real-time occluder spheres. Not as effective as rooms and portals
@@ -284,8 +282,8 @@ Editor plugins are used to extend editor functionality.
 ^^^^^^^^
 
 - Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad.
-- Tools for :ref:`procedural geometry generation <doc_procedural_geometry>`.
-- :ref:`Constructive solid geometry <doc_csg_tools>` (intended for prototyping).
+- Tools for :doc:`procedural geometry generation </tutorials/3d/procedural_geometry/index>`.
+- :doc:`Constructive solid geometry </tutorials/3d/csg_tools>` (intended for prototyping).
 - Path3D node to represent a path in 3D space.
 
    - Can be drawn in the editor or generated procedurally.
@@ -319,7 +317,7 @@ Shaders
 
 - *2D:* Custom vertex, fragment, and light shaders.
 - *3D:* Custom vertex, fragment, light, and sky shaders.
-- Text-based shaders using a :ref:`shader language inspired by GLSL <doc_shading_language>`.
+- Text-based shaders using a :doc:`shader language inspired by GLSL </tutorials/shaders/shader_reference/shading_language>`.
 - Visual shader editor.
 
    - Support for visual shader plugins.
@@ -331,16 +329,16 @@ Scripting
 
 - Object-oriented design pattern with scripts extending nodes.
 - Signals and groups for communicating between scripts.
-- Support for :ref:`cross-language scripting <doc_cross_language_scripting>`.
+- Support for :doc:`cross-language scripting </tutorials/scripting/cross_language_scripting>`.
 - Many 2D and 3D linear algebra data types such as vectors and transforms.
 
 :ref:`GDScript: <toc-learn-scripting-gdscript>`
 
-- :ref:`High-level interpreted language <doc_gdscript>` with
-  :ref:`optional static typing <doc_gdscript_static_typing>`.
+- :doc:`High-level interpreted language </tutorials/scripting/gdscript/gdscript_basics>` with
+  :doc:`optional static typing </tutorials/scripting/gdscript/static_typing>`.
 - Syntax inspired by Python.
 - Syntax highlighting is provided on GitHub.
-- :ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous actions
+- :doc:`Use threads </tutorials/performance/threads/using_multiple_threads>` to perform asynchronous actions
   or make use of multiple processor cores.
 
 :ref:`C#: <toc-learn-scripting-C#>`
@@ -355,7 +353,7 @@ Scripting
 
 :ref:`VisualScript: <toc-learn-scripting-visual_script>`
 
-- :ref:`Graph-based visual scripting language <doc_what_is_visual_script>`.
+- :doc:`Graph-based visual scripting language </tutorials/scripting/visual_script/what_is_visual_scripting>`.
 - Works best when used for specific purposes (such as level-specific logic)
   rather than as a language to create entire projects.
 
@@ -383,7 +381,7 @@ Audio
 
    - Optional Doppler effect in 2D and 3D.
 
-- Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects
+- Support for re-routable :doc:`audio buses </tutorials/audio/audio_buses>` and effects
   with dozens of effects included.
 - Listener2D and Listener3D nodes to listen from a position different than the camera.
 - Audio input to record microphones with real-time access using the AudioEffectCapture class.
@@ -400,11 +398,11 @@ Audio
 Import
 ^^^^^^
 
-- Support for :ref:`custom import plugins <doc_import_plugins>`.
+- Support for :doc:`custom import plugins </tutorials/plugins/editor/import_plugins>`.
 
 **Formats:**
 
-- *Images:* See :ref:`doc_import_images`.
+- *Images:* See :doc:`/tutorials/assets_pipeline/importing_images`.
 - *Audio:*
 
    - WAV with optional IMA-ADPCM compression.
@@ -474,8 +472,8 @@ Internationalization
 ^^^^^^^^^^^^^^^^^^^^
 
 - Full support for Unicode including emoji.
-- Store localization strings using :ref:`CSV <doc_internationalizing_games>`
-  or :ref:`gettext <doc_localization_using_gettext>`.
+- Store localization strings using :doc:`CSV </tutorials/i18n/internationalizing_games>`
+  or :doc:`gettext </tutorials/i18n/localization_using_gettext>`.
 - Use localized strings in your project automatically in GUI elements or by
   using the ``tr()`` function.
 
@@ -497,10 +495,10 @@ Windowing and OS integration
 - Execute commands in a blocking or non-blocking manner.
 - Open file paths and URLs using default or custom protocol handlers (if registered on the system).
 - Parse custom command line arguments.
-- :ref:`Headless/server binaries <doc_exporting_for_dedicated_servers>` can be
-  downloaded for Linux and :ref:`compiled for macOS <doc_compiling_for_osx>`.
+- :doc:`Headless/server binaries </tutorials/export/exporting_for_dedicated_servers>` can be
+  downloaded for Linux and :doc:`compiled for macOS </development/compiling/compiling_for_osx>`.
   Any binary can be used without a window using the ``--no-window``
-  :ref:`command line argument <doc_command_line_tutorial>`.
+  :doc:`command line argument </tutorials/editor/command_line_tutorial>`.
 
 Mobile
 ^^^^^^
@@ -533,7 +531,7 @@ The editor UI can easily be extended in many ways using add-ons.
 - Dropdown menus using PopupMenu and OptionButton.
 - Scrollbars.
 - Labels.
-- RichTextLabel for :ref:`text formatted using BBCode <doc_bbcode_in_richtextlabel>`.
+- RichTextLabel for :doc:`text formatted using BBCode </tutorials/ui/bbcode_in_richtextlabel>`.
 - Trees (can also be used to represent tables).
 - Color picker with RGB and HSV modes.
 - Containers (horizontal, vertical, grid, flow, center, margin, aspect ratio, draggable splitter, ...).
@@ -581,7 +579,7 @@ Animation
 File formats
 ^^^^^^^^^^^^
 
-- Scenes and resources can be saved in :ref:`text-based <doc_tscn_file_format>` or binary formats.
+- Scenes and resources can be saved in :doc:`text-based </development/file_formats/tscn>` or binary formats.
 
    - Text-based formats are human-readable and more friendly to version control.
    - Binary formats are faster to save/load for large scenes/resources.
@@ -598,25 +596,25 @@ File formats
 - Read XML files using :ref:`class_XMLParser`.
 - Pack game data into a PCK file (custom format optimized for fast seeking),
   into a ZIP archive, or directly into the executable for single-file distribution.
-- :ref:`Export additional PCK files<doc_exporting_pcks>` that can be read
+- :doc:`Export additional PCK files</tutorials/export/exporting_pcks>` that can be read
   by the engine to support mods and DLCs.
 
 Miscellaneous
 ^^^^^^^^^^^^^
 
-- :ref:`Low-level access to servers <doc_using_servers>` which allows bypassing
+- :doc:`Low-level access to servers </tutorials/performance/using_servers>` which allows bypassing
   the scene tree's overhead when needed.
-- :ref:`Command line interface <doc_command_line_tutorial>` for automation.
+- :doc:`Command line interface </tutorials/editor/command_line_tutorial>` for automation.
 
    - Export and deploy projects using continuous integration platforms.
    - `Shell completion scripts <https://github.com/RebelToolbox/RebelEngine/tree/main/misc/dist/shell>`__
      are available for Bash, zsh and fish.
 
-- Support for :ref:`C++ modules <doc_custom_modules_in_c++>` statically linked
+- Support for :doc:`C++ modules </development/cpp/custom_modules_in_cpp>` statically linked
   into the engine binary.
 - Engine and editor written in C++03.
 
-   - Can be :ref:`compiled <doc_introduction_to_the_buildsystem>` using GCC,
+   - Can be :doc:`compiled </development/compiling/introduction_to_the_buildsystem>` using GCC,
      Clang and MSVC. MinGW is also supported.
    - Friendly towards packagers. In most cases, system libraries can be used
      instead of the ones provided by Rebel Engine. The build system doesn't download anything.
@@ -624,4 +622,4 @@ Miscellaneous
 
 - Licensed under the permissive MIT license.
 
-   - Open development process with :ref:`contributions welcome <doc_ways_to_contribute>`.
+   - Open development process with :doc:`contributions welcome </contributing/ways_to_contribute>`.

@@ -1,5 +1,3 @@
-.. _doc_2d_lights_and_shadows:
-
 2D lights and shadows
 =====================
 
@@ -126,7 +124,7 @@ which is why we want the blob to be centered on its parent :ref:`Light <class_Li
 
 .. image:: img/light_shadow_all_lights.png
 
-.. note:: The animations in the demo will not be covered here. See :ref:`doc_introduction_animation`
+.. note:: The animations in the demo will not be covered here. See :doc:`/tutorials/animation/introduction`
           for information on creating animations.
 
 Right now the scene should look too bright. This is because all three lights are adding color to the scene.

@@ -1,5 +1,3 @@
-.. _doc_android_plugin:
-
 Creating Android plugins
 ========================
 
@@ -32,7 +30,7 @@ and capabilities that don't belong to the core feature set of a game engine:
 Android plugin
 --------------
 
-As a prerequisite, make sure you understand how to set up a :ref:`custom build environment<doc_android_custom_build>` for Android.
+As a prerequisite, make sure you understand how to set up a :doc:`custom build environment</tutorials/export/android_custom_build>` for Android.
 
 At its core, a Rebel Android plugin is a `Android archive library <https://developer.android.com/studio/projects/android-library#aar-contents>`_ (*aar* archive file)
 with the following caveats:

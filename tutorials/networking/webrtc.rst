@@ -1,5 +1,3 @@
-.. _doc_webrtc:
-
 WebRTC
 ======
 
@@ -10,15 +8,15 @@ One of Rebel Engine's great features is its ability to export to the HTML5/WebAs
 
 This is a great opportunity for both demos and full games, but used to come with some limitations. In the area of networking, browsers used to support only HTTPRequests until recently, when first WebSocket and then WebRTC were proposed as standards.
 
-WebSocket
-^^^^^^^^^
+WebSocket protocol
+^^^^^^^^^^^^^^^^^^
 
 When the WebSocket protocol was standardized in December 2011, it allowed browsers to create stable and bidirectional connections to a WebSocket server. The protocol is quite simple, but a very powerful tool to send push notifications to browsers, and has been used to implement chats, turn-based games, etc.
 
 WebSockets, though, still use a TCP connection, which is good for reliability but not for latency, so not good for real-time applications like VoIP and fast-paced games.
 
-WebRTC
-^^^^^^
+WebRTC protocol
+^^^^^^^^^^^^^^^
 
 For this reason, since 2010, Google started working on a new technology called WebRTC, which later on, in 2017, became a W3C candidate recommendation. WebRTC is a much more complex set of specifications, and relies on many other technologies behind the scenes (ICE, DTLS, SDP) to provide fast, real-time, and secure communication between two peers.
 
@@ -33,7 +31,7 @@ Peers connect to a signaling server (for example a WebSocket server) and send th
 Using WebRTC in Rebel Engine
 ----------------------------
 
-WebRTC is implemented in Rebel Engine via two main classes :ref:`WebRTCPeerConnection <class_WebRTCPeerConnection>` and :ref:`WebRTCDataChannel <class_WebRTCDataChannel>`, plus the multiplayer API implementation :ref:`WebRTCMultiplayer <class_WebRTCMultiplayer>`. See section on :ref:`high-level multiplayer <doc_high_level_multiplayer>` for more details.
+WebRTC is implemented in Rebel Engine via two main classes :ref:`WebRTCPeerConnection <class_WebRTCPeerConnection>` and :ref:`WebRTCDataChannel <class_WebRTCDataChannel>`, plus the multiplayer API implementation :ref:`WebRTCMultiplayer <class_WebRTCMultiplayer>`. See section on :doc:`high-level multiplayer </tutorials/networking/high_level_multiplayer>` for more details.
 
 .. warning::
 
@@ -103,7 +101,7 @@ This will print:
 Local signaling example
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-This example expands on the previous one, separating the peers in two different scenes, and using a :ref:`singleton <doc_singletons_autoload>` as a signaling server.
+This example expands on the previous one, separating the peers in two different scenes, and using a :doc:`singleton </tutorials/scripting/singletons_autoload>` as a signaling server.
 
 ::
 
@@ -145,7 +143,7 @@ This example expands on the previous one, separating the peers in two different 
 
 And now for the local signaling server:
 
-.. note:: This local signaling server is supposed to be used as a :ref:`singleton <doc_singletons_autoload>` to connect two peers in the same scene.
+.. note:: This local signaling server is supposed to be used as a :doc:`singleton </tutorials/scripting/singletons_autoload>` to connect two peers in the same scene.
 
 ::
 

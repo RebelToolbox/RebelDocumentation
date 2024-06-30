@@ -1,5 +1,3 @@
-.. _doc_exporting_basics:
-
 Exporting
 =========
 
@@ -17,7 +15,7 @@ variety of platforms. First, however, we need to make some changes to the
 way the game works.
 
 .. note:: If you haven't made "Dodge the Creeps" yourself yet, please read
-          :ref:`doc_your_first_2d_game` before continuing with this tutorial.
+          :doc:`/getting_started/first_2d_game/index` before continuing with this tutorial.
 
 Preparing the project
 ---------------------
@@ -313,7 +311,7 @@ Click **Save** and the engine will build the export files.
 
     On Windows, if you want your exported executable to have a different icon
     than the default one, you need to change it manually. See
-    :ref:`doc_changing_application_icon_for_windows`.
+    :doc:`changing_application_icon_for_windows`.
 
 Android
 ~~~~~~~

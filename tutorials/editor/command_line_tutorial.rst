@@ -1,5 +1,3 @@
-.. _doc_command_line_tutorial:
-
 Command line tutorial
 =====================
 
@@ -46,13 +44,13 @@ Command line reference
 +------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Command                                  | Description                                                                                                                                                  |
 +------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``-e``, ``--editor``                     | Start the editor instead of running the scene (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled).                                    |
+| ``-e``, ``--editor``                     | Start the editor instead of running the scene (:ref:`tools <development/compiling/introduction_to_the_buildsystem:tools>` must be enabled).                  |
 +------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``-p``, ``--project-manager``            | Start the project manager, even if a project is auto-detected (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled).                    |
+| ``-p``, ``--project-manager``            | Start the project manager, even if a project is auto-detected (:ref:`tools <development/compiling/introduction_to_the_buildsystem:tools>` must be enabled).  |
 +------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``-q``, ``--quit``                       | Quit after the first iteration.                                                                                                                              |
 +------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``-l <locale>``, ``--language <locale>`` | Use a specific locale (<locale> being a two-letter code). See :ref:`doc_locales` for more details.                                                           |
+| ``-l <locale>``, ``--language <locale>`` | Use a specific locale (<locale> being a two-letter code). See :doc:`/tutorials/i18n/locales` for more details.                                               |
 +------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``--path <directory>``                   | Path to a project (<directory> must contain a 'project.rebel' file).                                                                                         |
 +------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -97,7 +95,7 @@ Command line reference
 
     Debug options are only available in the editor and debug export templates
     (they require ``debug`` or ``release_debug`` build targets, see
-    :ref:`doc_introduction_to_the_buildsystem_target` for more details).
+    :ref:`development/compiling/introduction_to_the_buildsystem:target` for more details).
 
 +------------------------------+---------------------------------------------------------------------------------------------+
 | Command                      | Description                                                                                 |
@@ -129,30 +127,30 @@ Command line reference
 
 **Standalone tools**
 
-+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Command                                | Description                                                                                                                                                                        |
-+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``-s <script>``, ``--script <script>`` | Run a script.                                                                                                                                                                      |
-+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``--check-only``                       | Only parse for errors and quit (use with ``--script``).                                                                                                                            |
-+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``--export <target>``                  | Export the project using the given export target. Export only main pack if path ends with .pck or .zip (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled). |
-+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``--export-debug <target>``            | Like ``--export``, but use debug template (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled).                                                              |
-+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``--doctool <path>``                   | Dump the engine API reference to the given <path> in XML format, merging if existing files are found (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled).   |
-+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``--no-docbase``                       | Disallow dumping the base types (used with ``--doctool``, :ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled).                                               |
-+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``--build-solutions``                  | Build the scripting solutions (e.g. for C# projects, :ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled).                                                    |
-+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``--gdnative-generate-json-api``       | Generate JSON dump of the Rebel Engine API for GDNative bindings (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled).                                       |
-+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``--test <test>``                      | Run a unit test. Use ``--help`` first to display the list of tests. (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled).                                    |
-+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``--export-pack <preset> <path>``      | Like ``--export``, but only export the game pack for the given preset. The <path> extension determines whether it will be in PCK or ZIP format.                                    |
-|                                        | (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled).                                                                                                        |
-+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Command                                | Description                                                                                                                                                                                          |
++----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``-s <script>``, ``--script <script>`` | Run a script.                                                                                                                                                                                        |
++----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``--check-only``                       | Only parse for errors and quit (use with ``--script``).                                                                                                                                              |
++----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``--export <target>``                  | Export the project using the given export target. Export only main pack if path ends with .pck or .zip (:ref:`tools <development/compiling/introduction_to_the_buildsystem:tools>` must be enabled). |
++----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``--export-debug <target>``            | Like ``--export``, but use debug template (:ref:`tools <development/compiling/introduction_to_the_buildsystem:tools>` must be enabled).                                                              |
++----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``--doctool <path>``                   | Dump the engine API reference to the given <path> in XML format, merging if existing files are found (:ref:`tools <development/compiling/introduction_to_the_buildsystem:tools>` must be enabled).   |
++----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``--no-docbase``                       | Disallow dumping the base types (used with ``--doctool``, :ref:`tools <development/compiling/introduction_to_the_buildsystem:tools>` must be enabled).                                               |
++----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``--build-solutions``                  | Build the scripting solutions (e.g. for C# projects, :ref:`tools <development/compiling/introduction_to_the_buildsystem:tools>` must be enabled).                                                    |
++----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``--gdnative-generate-json-api``       | Generate JSON dump of the Rebel Engine API for GDNative bindings (:ref:`tools <development/compiling/introduction_to_the_buildsystem:tools>` must be enabled).                                       |
++----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``--test <test>``                      | Run a unit test. Use ``--help`` first to display the list of tests. (:ref:`tools <development/compiling/introduction_to_the_buildsystem:tools>` must be enabled).                                    |
++----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``--export-pack <preset> <path>``      | Like ``--export``, but only export the game pack for the given preset. The <path> extension determines whether it will be in PCK or ZIP format.                                                      |
+|                                        | (:ref:`tools <development/compiling/introduction_to_the_buildsystem:tools>` must be enabled).                                                                                                        |
++----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Path
 ----
@@ -266,8 +264,6 @@ just fly by. For this, a command line debugger is provided by adding
 ::
 
     rebel -d scene.tscn
-
-.. _doc_command_line_tutorial_exporting:
 
 Exporting
 ---------

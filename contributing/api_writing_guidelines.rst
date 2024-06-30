@@ -1,5 +1,3 @@
-.. _doc_api_writing_guidelines:
-
 API writing guidelines
 ======================
 
@@ -10,7 +8,7 @@ built-in node types.
 .. seealso::
 
     To learn to submit your changes to the Rebel Engine project using the Git version
-    control system, see :ref:`doc_updating_the_api_documentation`.
+    control system, see :doc:`updating_the_api_documentation`.
 
 The reference for each class is contained in an XML file like the one below:
 
@@ -78,12 +76,10 @@ their documentation by completing or improving the text in these tags:
 - `<signal>` (in its `<description>` tag; arguments don't take separate documentation strings)
 - `<constant>`
 
-Write in a clear and simple language. Always follow the :ref:`writing guidelines
-<doc_docs_writing_guidelines>` to keep your descriptions short and easy to read.
+Write in a clear and simple language. Always follow the :doc:`writing guidelines
+</contributing/docs_writing_guidelines>` to keep your descriptions short and easy to read.
 **Do not leave empty lines** in the descriptions: each line in the XML file will
 result in a new paragraph, even if it is empty.
-
-.. _doc_api_writing_guidelines_editing_xml:
 
 How to edit class XML
 ---------------------
@@ -112,8 +108,6 @@ guide <toc-devel-compiling>`.
 We recommend using a code editor that supports XML files like Vim, Atom, Visual Studio Code,
 Notepad++, or another to comfortably edit the file. You can also use their
 search feature to find classes and properties quickly.
-
-.. _doc_api_writing_guidelines_bbcode:
 
 Improve formatting with BBCode style tags
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

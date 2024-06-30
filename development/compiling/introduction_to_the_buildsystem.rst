@@ -1,5 +1,3 @@
-.. _doc_introduction_to_the_buildsystem:
-
 Introduction to the buildsystem
 ===============================
 
@@ -39,10 +37,10 @@ if you are planning to build Rebel Engine yourself.
 Setup
 -----
 
-Please refer to the documentation for :ref:`doc_build_for_android`,
-:ref:`doc_compiling_for_ios`, :ref:`doc_compiling_for_osx`,
-:ref:`doc_compiling_for_uwp`, :ref:`doc_compiling_for_web`,
-:ref:`doc_compiling_for_windows` and :ref:`doc_compiling_for_x11`.
+Please refer to the documentation for :doc:`build_for_android`,
+:doc:`compiling_for_ios`, :doc:`compiling_for_osx`,
+:doc:`compiling_for_uwp`, :doc:`compiling_for_web`,
+:doc:`compiling_for_windows` and :doc:`compiling_for_x11`.
 
 Note that for **Windows/Visual Studio**, you need to use ``x86_x64 Cross Tools
 Command Prompt for VS 2017`` or similar, depending on your install, instead of
@@ -124,8 +122,6 @@ you can build them yourself).
 Aside from that, there are a few standard options that can be set in all
 build targets, and which will be explained below.
 
-.. _doc_introduction_to_the_buildsystem_tools:
-
 Tools
 -----
 
@@ -137,8 +133,6 @@ manager.
 ::
 
     scons platform=<platform> tools=yes/no
-
-.. _doc_introduction_to_the_buildsystem_target:
 
 Target
 ------
@@ -182,8 +176,6 @@ This flag appends ``.32`` or ``.64`` suffixes to resulting binaries when
 relevant. If ``bits=default`` is used, the suffix will match the detected
 architecture.
 
-.. _doc_buildsystem_custom_modules:
-
 Custom modules
 --------------
 
@@ -210,7 +202,7 @@ directory paths containing such modules:
 
 .. seealso::
 
-    :ref:`doc_custom_modules_in_c++`
+    :doc:`/development/cpp/custom_modules_in_cpp`
 
 Cleaning generated files
 ------------------------
@@ -234,8 +226,6 @@ features to include/disable.
 Check the output of ``scons --help`` for details about each option for
 the version you are willing to compile.
 
-.. _doc_overriding_build_options:
-
 Overriding the build options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -255,7 +245,7 @@ source to initialize any SCons build options passed via the command line:
     extra_suffix = "game_title"
 
 You can also disable some of the builtin modules before compiling, saving some
-time it takes to build the engine. See :ref:`doc_optimizing_for_size` page for more details.
+time it takes to build the engine. See :doc:`/development/compiling/optimizing_for_size` page for more details.
 
 Another custom file can be specified explicitly with the ``profile`` command
 line option, both overriding the default build configuration:

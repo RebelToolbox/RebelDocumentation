@@ -1,5 +1,3 @@
-.. _doc_scenes_versus_scripts:
-
 When to use scenes versus scripts
 =================================
 
@@ -95,7 +93,7 @@ name.
 
 There are two systems for registering types...
 
-- :ref:`Custom Types <doc_making_plugins>`
+- :doc:`Custom Types </tutorials/plugins/editor/making_plugins>`
 
    - Editor-only. Typenames are not accessible at runtime.
 
@@ -112,7 +110,7 @@ There are two systems for registering types...
 
    - Set up using :ref:`EditorPlugin.add_custom_type <class_EditorPlugin_method_add_custom_type>`.
 
-- :ref:`Script Classes <doc_gdscript_basics_class_name>`
+- :ref:`Script Classes <tutorials/scripting/gdscript/gdscript_basics:registering named classes>`
 
    - Editor and runtime accessible.
 

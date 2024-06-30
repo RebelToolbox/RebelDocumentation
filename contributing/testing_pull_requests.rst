@@ -1,5 +1,3 @@
-.. _doc_testing_pull_requests:
-
 Testing pull requests
 =====================
 
@@ -23,7 +21,7 @@ depending on whether you have a GitHub account or not.
     Due to a GitHub Actions limitation, builds are only available for 90 days
     after the pull request was last updated. If you still wish to try a
     pull request locally, you can
-    :ref:`compile the pull request branch from source <doc_testing_pull_requests_compile>`
+    :ref:`compile the pull request branch from source <contributing/testing_pull_requests:Compiling a pull request branch from source>`
     instead.
 
 If you have a GitHub account
@@ -81,8 +79,6 @@ to generate a universal download link.
   This means you may have to bypass a security warning before you can run the executable.
   If you frequently test pull request builds, it may be better to disable
   Windows SmartScreen or `disable macOS Gatekeeper <https://disable-gatekeeper.github.io/>`__ permanently.
-
-.. _doc_testing_pull_requests_compile:
 
 Compiling a pull request branch from source
 -------------------------------------------

@@ -1,5 +1,3 @@
-.. _doc_compiling_for_windows:
-
 Compiling for Windows
 =====================
 
@@ -8,7 +6,7 @@ Compiling for Windows
 .. seealso::
 
     This page describes how to compile Windows editor and export template binaries from source.
-    If you're looking to export your project to Windows instead, read :ref:`doc_exporting_for_windows`.
+    If you're looking to export your project to Windows instead, read :doc:`/tutorials/export/exporting_for_windows`.
 
 Requirements
 ------------
@@ -41,10 +39,10 @@ For compiling under Windows, the following is required:
           `pip3 install scons` in its shell.
 
 .. seealso:: To get the Rebel Engine source code for compiling, see
-             :ref:`doc_getting_source`.
+             :doc:`getting_source`.
 
              For a general overview of SCons usage for Rebel Engine, see
-             :ref:`doc_introduction_to_the_buildsystem`.
+             :doc:`introduction_to_the_buildsystem`.
 
 Setting up SCons
 ----------------
@@ -72,8 +70,6 @@ If SCons cannot detect your Visual Studio installation, it might be that your
 SCons version is too old. Update it to the latest version with
 ``python -m pip install --upgrade scons``.
 
-.. _doc_compiling_for_windows_install_vs:
-
 Installing Visual Studio caveats
 --------------------------------
 
@@ -91,7 +87,7 @@ a **Repair** option, which won't let you install C++ tools.
 Downloading Rebel Engine's source
 ---------------------------------
 
-Refer to :ref:`doc_getting_source` for detailed instructions.
+Refer to :doc:`getting_source` for detailed instructions.
 
 The tutorial will assume from now on that you placed the source code in
 ``C:\RebelEngine``.
@@ -165,7 +161,7 @@ dependencies. Running it will bring up the Project Manager.
 
 .. note:: If you want to use separate editor settings for your own Rebel Engine builds
           and official releases, you can enable
-          :ref:`doc_data_paths_self_contained_mode` by creating a file called
+          :ref:`tutorials/io/data_paths:self-contained mode` by creating a file called
           ``._sc_`` or ``_sc_`` in the ``bin/`` folder.
 
 Development in Visual Studio or other IDEs

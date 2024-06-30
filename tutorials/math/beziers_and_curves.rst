@@ -1,5 +1,3 @@
-.. _doc_beziers_and_curves:
-
 Beziers, curves and paths
 =========================
 
@@ -10,7 +8,7 @@ high level of flexibility.
 Unlike more abstract mathematical concepts, Bezier curves were created for
 industrial design. They are a popular tool in the graphics software industry.
 
-They rely on :ref:`interpolation<doc_interpolation>`, which we saw in the
+They rely on :doc:`interpolation</tutorials/math/interpolation>`, which we saw in the
 previous article, combining multiple steps to create smooth curves. To better
 understand how Bezier curves work, let's start from its simplest form: Quadratic
 Bezier.

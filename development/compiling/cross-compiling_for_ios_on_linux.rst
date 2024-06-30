@@ -1,5 +1,3 @@
-.. _doc_cross-compiling_for_ios_on_linux:
-
 Cross-compiling for iOS on Linux
 ================================
 

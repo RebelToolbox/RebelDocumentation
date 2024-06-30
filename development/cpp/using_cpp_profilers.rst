@@ -1,5 +1,3 @@
-.. _doc_using_cpp_profilers:
-
 Using C++ profilers
 ===================
 
@@ -57,7 +55,7 @@ The ``--quit`` option works with ``--editor``, ``--project-manager`` or
 
 .. seealso::
 
-    See :ref:`doc_command_line_tutorial` for more command line arguments
+    See :doc:`/tutorials/editor/command_line_tutorial` for more command line arguments
     supported by Rebel Engine.
 
 Profiler-specific instructions

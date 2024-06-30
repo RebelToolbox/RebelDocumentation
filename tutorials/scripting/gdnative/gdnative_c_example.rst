@@ -1,5 +1,3 @@
-.. _doc_gdnative_c_example:
-
 GDNative C example
 ==================
 

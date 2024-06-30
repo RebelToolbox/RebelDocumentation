@@ -1,5 +1,3 @@
-.. _doc_overridable_functions:
-
 Overridable functions
 =====================
 
@@ -10,7 +8,7 @@ This document presents the ones you'll use most often.
 
 .. seealso:: Under the hood, these functions rely on Rebel Engine's low-level
              notifications system. To learn more about it, see
-             :ref:`doc_notifications`.
+             :doc:`/tutorials/best_practices/notifications`.
 
 Two functions allow you to initialize and get nodes, besides the class's
 constructor: ``_enter_tree()`` and ``_ready()``.
@@ -25,7 +23,7 @@ once in a node's lifetime, after ``_enter_tree()``. ``_ready()`` ensures that al
 have entered the scene tree first, so you can safely call ``get_node()`` on it.
 
 .. seealso:: To learn more about getting node references, read
-             :ref:`doc_nodes_and_scene_instances`.
+             :doc:`nodes_and_scene_instances`.
 
 Another related callback is ``_exit_tree()``, which the engine calls every time
 a node exits the scene tree. This can be when you call :ref:`Node.remove_child()
@@ -71,7 +69,7 @@ a node exits the scene tree. This can be when you call :ref:`Node.remove_child()
 The two virtual methods ``_process()`` and ``_physics_process()`` allow you to
 update the node, every frame and every physics frame respectively. For more
 information, read the dedicated documentation:
-:ref:`doc_idle_and_physics_processing`.
+:doc:`idle_and_physics_processing`.
 
 .. tabs::
  .. code-tab:: gdscript GDScript

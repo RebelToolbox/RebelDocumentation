@@ -1,5 +1,3 @@
-.. _doc_custom_visualscript_nodes:
-
 Custom VisualScript nodes
 =========================
 

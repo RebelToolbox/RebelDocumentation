@@ -1,5 +1,3 @@
-.. _doc_your_first_2d_game_player_scene:
-
 Creating the player scene
 =========================
 
@@ -42,11 +40,11 @@ or :kbd:`Cmd + S` on macOS.
 
           - **GDScript**: Classes (nodes) use PascalCase, variables and
             functions use snake_case, and constants use ALL_CAPS (See
-            :ref:`doc_gdscript_styleguide`).
+            :doc:`/tutorials/scripting/gdscript/gdscript_styleguide`).
 
           - **C#**: Classes, export variables and methods use PascalCase,
             private fields use _camelCase, local variables and parameters use
-            camelCase (See :ref:`doc_c_sharp_styleguide`). Be careful to type
+            camelCase (See :doc:`/tutorials/scripting/c_sharp/c_sharp_style_guide`). Be careful to type
             the method names precisely when connecting signals.
 
 

@@ -15,5 +15,5 @@ GDScript
 
 .. seealso::
 
-    See :ref:`doc_gdscript_grammar` if you are interested in writing a third-party
+    See :doc:`/development/file_formats/gdscript_grammar` if you are interested in writing a third-party
     tool that interacts with GDScript, such as a linter or formatter.

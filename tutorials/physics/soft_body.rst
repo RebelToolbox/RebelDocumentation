@@ -1,5 +1,3 @@
-.. _doc_soft_body:
-
 Using SoftBody
 ==============
 

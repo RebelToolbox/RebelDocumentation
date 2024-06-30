@@ -1,5 +1,3 @@
-.. _doc_contributing:
-
 Contributing
 ============
 
@@ -23,8 +21,6 @@ You can get answers below.
    :name: toc-getting-started
 
    ways_to_contribute
-
-.. _doc_writing_documentation:
 
 Writing documentation
 ---------------------
@@ -69,8 +65,6 @@ We use XML files to write it, so the process to contribute to the API documentat
 
    updating_the_api_documentation
    api_writing_guidelines
-
-.. _doc_contributing_to_the_engine:
 
 Contributing to the engine
 --------------------------

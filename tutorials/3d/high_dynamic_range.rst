@@ -1,5 +1,3 @@
-.. _doc_high_dynamic_range:
-
 High dynamic range lighting
 ===========================
 
@@ -115,4 +113,4 @@ HDR settings can be found in the :ref:`Environment <class_Environment>`
 resource. Most of the time, these are found inside a
 :ref:`WorldEnvironment <class_WorldEnvironment>`
 node or set in a Camera node. For more information, see
-:ref:`doc_environment_and_post_processing`.
+:doc:`environment_and_post_processing`.

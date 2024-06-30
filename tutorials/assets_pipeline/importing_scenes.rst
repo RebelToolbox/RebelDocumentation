@@ -1,5 +1,3 @@
-.. _doc_importing_3d_scenes:
-
 Importing 3D scenes
 ===================
 
@@ -78,7 +76,7 @@ separately. Rebel Engine uses PBR (physically based rendering) for its materials
 textures, they can work in Rebel Engine. This includes the `Substance suite <https://www.substance3d.com/>`__,
 `ArmorPaint (open source) <https://armorpaint.org/>`__, and `Material Maker (open source) <https://github.com/RodZill4/material-maker>`__.
 
-.. note:: For more information on Rebel Engine's materials, see :ref:`doc_spatial_material`.
+.. note:: For more information on Rebel Engine's materials, see :doc:`/tutorials/3d/spatial_material`.
 
 Exporting considerations
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -164,8 +162,8 @@ The ``post_import`` function takes the imported scene as argument (the
 parameter is actually the root node of the scene). The scene that
 will finally be used must be returned. It can be a different one.
 
-Storage
-^^^^^^^
+Storing Nodes
+^^^^^^^^^^^^^
 
 By default, Rebel Editor imports a single scene. This option allows specifying
 that nodes below the root will each be a separate scene and instanced
@@ -183,8 +181,8 @@ Location
 Rebel Engine supports materials in meshes or nodes. By default, materials will be put
 on each node.
 
-Storage
-^^^^^^^
+Storing Materials
+^^^^^^^^^^^^^^^^^
 
 Materials can be stored within the scene or in external files. By default,
 they are stored in external files so editing them is possible. This is because
@@ -248,8 +246,8 @@ This option ensures that these are generated if not present in the source scene.
 Rebel Engine uses `Mikktspace <http://www.mikktspace.com/>`__ for this,
 but it's always better to have them generated in the exporter.
 
-Storage
-^^^^^^^
+Storing Meshes
+^^^^^^^^^^^^^^
 
 Meshes can be stored in separate files (resources) instead of built-in. This does
 not have much practical use unless one wants to build objects with them directly.
@@ -266,7 +264,7 @@ Whether or not the mesh is used in baked lightmaps.
 - **Enable:** The mesh is used in baked lightmaps.
 - **Gen Lightmaps:** The mesh is used in baked lightmaps, and unwraps a second UV layer for lightmaps.
 
-.. note:: For more information on light baking see :ref:`doc_baked_lightmaps`.
+.. note:: For more information on light baking see :doc:`/tutorials/3d/baked_lightmaps`.
 
 External Files
 ~~~~~~~~~~~~~~
@@ -346,8 +344,8 @@ as ``"Skeleton:Head"`` or ``"Skeleton:Arm_Left_Control"`` would be retained.
 
 Any track filter lines that do not begin with a ``+`` or ``-`` are ignored.
 
-Storage
-~~~~~~~
+Storing Animations
+~~~~~~~~~~~~~~~~~~
 
 By default, animations are saved as built-in. It is possible to save them to a file instead. This
 allows adding custom tracks to the animations and keeping them after a reimport.
@@ -383,8 +381,6 @@ In inherited scenes, the only limitations for modifications are:
 * Sub-Resources can't be edited (save them externally as described above for this)
 
 Other than that, everything is allowed!
-
-.. _doc_importing_scenes_import_hints:
 
 Import hints
 ------------
@@ -461,7 +457,7 @@ reliability.
 
 .. seealso::
 
-    See :ref:`doc_collision_shapes_3d` for a comprehensive overview of collision
+    See :doc:`/tutorials/physics/collision_shapes_3d` for a comprehensive overview of collision
     shapes.
 
 Create navigation (-navmesh)

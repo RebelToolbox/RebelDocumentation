@@ -1,5 +1,3 @@
-.. _doc_multiple_resolutions:
-
 Multiple resolutions
 ====================
 
@@ -188,7 +186,7 @@ to the region outside the blue frame you see in the 2D editor.
 
    This is usually the best option for creating GUIs or HUDs that scale,
    so some controls can be anchored to the bottom
-   (:ref:`doc_size_and_anchors`).
+   (:doc:`/tutorials/ui/size_and_anchors`).
 
    .. image:: img/stretch_viewport_keep_width.gif
 
@@ -269,7 +267,7 @@ Desktop game
   visuals at the cost of higher memory usage and file sizes.
   Note that this will make non-mipmapped textures grainy on low resolution devices,
   so make sure to follow the instructions described in
-  :ref:`doc_multiple_resolutions_reducing_aliasing_on_downsampling`.
+  `Reducing aliasing on downsampling`_.
 - Set the stretch mode to ``2d``.
 - Set the stretch aspect to ``expand``. This allows for supporting multiple aspect ratios
   and makes better use of tall smartphone displays (such as 18:9 or 19:9 aspect ratios).
@@ -315,7 +313,7 @@ to change the display orientation project setting.
   barely visible given the small size of smartphone displays.
   Note that this will make non-mipmapped textures grainy on low resolution devices,
   so make sure to follow the instructions described in
-  :ref:`doc_multiple_resolutions_reducing_aliasing_on_downsampling`.
+  `Reducing aliasing on downsampling`_.
 - Set the stretch mode to ``2d``.
 - Set the stretch aspect to ``expand``. This allows for supporting multiple aspect ratios
   and makes better use of tall smartphone displays (such as 18:9 or 19:9 aspect ratios).
@@ -333,7 +331,7 @@ Mobile game in portrait mode
   barely visible given the small size of smartphone displays.
   Note that this will make non-mipmapped textures grainy on low resolution devices,
   so make sure to follow the instructions described in
-  :ref:`doc_multiple_resolutions_reducing_aliasing_on_downsampling`.
+  `Reducing aliasing on downsampling`_.
 - Set **Display > Window > Handheld > Orientation** to ``portrait``.
 - Set the stretch mode to ``2d``.
 - Set the stretch aspect to ``expand``. This allows for supporting multiple aspect ratios
@@ -381,8 +379,6 @@ other platforms.
     from the editor will only be DPI-aware if **Allow Hidpi** is enabled in the
     Project Settings.
 
-.. _doc_multiple_resolutions_reducing_aliasing_on_downsampling:
-
 Reducing aliasing on downsampling
 ---------------------------------
 
@@ -403,8 +399,8 @@ Handling aspect ratios
 
 Once scaling for different resolutions is accounted for, make sure that
 your *user interface* also scales for different aspect ratios. This can be
-done using :ref:`anchors <doc_size_and_anchors>` and/or :ref:`containers
-<doc_gui_containers>`.
+done using :doc:`anchors </tutorials/ui/size_and_anchors>` and/or :doc:`containers
+</tutorials/ui/gui_containers>`.
 
 Field of view scaling
 ---------------------

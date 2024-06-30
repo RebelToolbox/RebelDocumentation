@@ -1,5 +1,3 @@
-.. _doc_exporting_projects:
-
 Exporting projects
 ==================
 
@@ -21,7 +19,7 @@ binary, which is smaller in size, more optimized and does not include
 tools like the editor and debugger.
 
 Finally, Rebel Editor has a simple but efficient system for
-:ref:`creating DLCs as extra package files <doc_exporting_pcks>`.
+:doc:`creating DLCs as extra package files </tutorials/export/exporting_pcks>`.
 
 On mobile
 ~~~~~~~~~
@@ -87,8 +85,6 @@ Once downloaded, they can be installed using the **Install Export Templates**
 option in Rebel Editor:
 
 .. image:: img/exptemp.png
-
-.. _doc_exporting_projects_export_mode:
 
 Resource options
 ~~~~~~~~~~~~~~~~
@@ -166,7 +162,7 @@ the command:
 
 .. seealso::
 
-    See :ref:`doc_command_line_tutorial` for more information about using Rebel Editor
+    See :doc:`/tutorials/editor/command_line_tutorial` for more information about using Rebel Editor
     from the command line.
 
 PCK versus ZIP pack file formats
@@ -186,7 +182,7 @@ depending on your needs.
 
 - Compressed format. Smaller file size, but slower to read/write.
 - Readable and writable using tools normally present on the user's operating system.
-  This can be useful to make modding easier (see also :ref:`doc_exporting_pcks`).
+  This can be useful to make modding easier (see also :doc:`exporting_pcks`).
 
 .. warning::
 

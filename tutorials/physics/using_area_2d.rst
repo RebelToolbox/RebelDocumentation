@@ -1,5 +1,3 @@
-.. _doc_using_area_2d:
-
 Using Area2D
 ============
 
@@ -13,7 +11,7 @@ works and what their pros and cons are. In this tutorial, we'll look at the
 :ref:`Area2D <class_Area2D>` node and show some examples of how it can be used.
 
 .. note:: This document assumes you're familiar with Rebel Physics various
-          bodies. Please read :ref:`doc_physics_introduction` first.
+          bodies. Please read :doc:`physics_introduction` first.
 
 What is an area?
 ----------------
@@ -65,7 +63,7 @@ use ``area_entered``. However, let's assume our player is a ``KinematicBody2D``
 (and therefore a ``CollisionObject2D`` type), so we'll connect the
 ``body_entered`` signal.
 
-.. note:: If you're not familiar with using signals, see :ref:`doc_signals` for
+.. note:: If you're not familiar with using signals, see :doc:`/getting_started/step_by_step/signals` for
           an introduction.
 
 .. tabs::
@@ -95,7 +93,7 @@ Some other usage examples:
 - Use a large circular area around an enemy to define its "detect" radius. When the player is outside the area, the enemy can't "see" it.
 - "Security cameras" - In a large level with multiple cameras, attach areas to each camera and activate them when the player enters.
 
-See the :ref:`doc_your_first_2d_game` for an example of using Area2D in a game.
+See the :doc:`/getting_started/first_2d_game/index` for an example of using Area2D in a game.
 
 Area influence
 --------------

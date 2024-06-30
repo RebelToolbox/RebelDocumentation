@@ -1,5 +1,3 @@
-.. _doc_inspector_plugins:
-
 Inspector plugins
 =================
 
@@ -25,7 +23,7 @@ Setting up your plugin
 
 Create a new empty plugin to get started.
 
-.. seealso:: See :ref:`doc_making_plugins` guide to set up your new plugin.
+.. seealso:: See :doc:`making_plugins` guide to set up your new plugin.
 
 Let's assume you've called your plugin folder ``my_inspector_plugin``. If so,
 you should end up with a new ``addons/my_inspector_plugin`` folder that contains

@@ -1,5 +1,3 @@
-.. _doc_creating_script_templates:
-
 Creating script templates
 =========================
 

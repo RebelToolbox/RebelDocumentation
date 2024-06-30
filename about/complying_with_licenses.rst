@@ -1,5 +1,3 @@
-.. _doc_complying_with_licenses:
-
 Complying with licenses
 =======================
 
@@ -158,5 +156,5 @@ The Apache license needs to be complied to by including the following text:
 .. note::
 
     If you exported your project using a
-    :ref:`custom build with specific modules disabled <doc_optimizing_for_size>`,
+    :doc:`custom build with specific modules disabled </development/compiling/optimizing_for_size>`,
     you don't need to list the disabled modules' licenses in your exported project.

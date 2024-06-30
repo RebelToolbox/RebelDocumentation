@@ -1,5 +1,3 @@
-.. _doc_vector_math:
-
 Vector math
 ===========
 
@@ -412,5 +410,5 @@ More information
 
 For more information on using vector math in Rebel Engine, see the following articles:
 
-- :ref:`doc_vectors_advanced`
-- :ref:`doc_matrices_and_transforms`
+- :doc:`vectors_advanced`
+- :doc:`matrices_and_transforms`

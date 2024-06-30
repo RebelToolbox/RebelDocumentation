@@ -1,5 +1,3 @@
-.. _doc_contributing_to_the_documentation:
-
 Contributing to the documentation
 =================================
 
@@ -14,14 +12,14 @@ files in the `Rebel Documentation repository on GitHub <https://github.com/Rebel
 Modifying those pages in a pull request triggers a rebuild of the online documentation upon merging.
 
 .. seealso:: For details on Git usage and the pull request workflow, please
-             refer to the :ref:`doc_pr_workflow` page.
+             refer to the :doc:`pr_workflow` page.
 
 .. warning:: The API documentation source files are in the `Rebel Engine
              repository <https://github.com/RebelToolbox/RebelEngine>`_. We generate
              the :ref:`Rebel API <toc-api>` section of this documentation
              from them. If you want to update the description of a class, its
              methods, or properties, read
-             :ref:`doc_updating_the_api_documentation`.
+             :doc:`updating_the_api_documentation`.
 
 What is the Rebel Documentation
 -------------------------------
@@ -33,7 +31,7 @@ two game creation tutorials in the Getting Started section.
 We strive to write factual content in an accessible and well-written language. To
 contribute, you should also read:
 
-1. The :ref:`doc_docs_writing_guidelines`. There, you will find rules and
+1. The :doc:`/contributing/docs_writing_guidelines`. There, you will find rules and
    recommendations to write in a way that everyone understands.
 2. The content guidelines. They explain the principles we follow to write the
    documentation and the kind of content we accept.
@@ -56,10 +54,10 @@ favorite text editor. You can then commit the changes, push them to your fork,
 and make a pull request. **Note that the pages in** ``api/`` **should not be
 edited here.** They are automatically generated from Rebel Engine's `XML class
 reference <https://github.com/RebelToolbox/RebelEngine/tree/main/docs>`__.
-See :ref:`doc_updating_the_api_documentation` for details.
+See :doc:`updating_the_api_documentation` for details.
 
 .. seealso:: To build the manual and test changes on your computer, see
-             :ref:`doc_building_the_documentation`.
+             :doc:`building_the_documentation`.
 
 Editing pages online
 --------------------
@@ -98,7 +96,7 @@ Before adding a new page, please ensure that it fits in the documentation:
    <https://github.com/RebelToolbox/RebelEngine/issues>`_ or open a new one to see
    if the page is necessary.
 2. Ensure there isn't a page that already covers the topic.
-3. Read our :ref:`doc_content_guidelines`.
+3. Read our :doc:`content_guidelines`.
 
 To add a new page, create a ``.rst`` file with a meaningful name in the section you
 want to add a file to, e.g. ``tutorials/3d/light_baking.rst``.
@@ -110,20 +108,10 @@ line, using a relative path and no extension, e.g. here ``light_baking``.
 Titles
 ~~~~~~
 
-Always begin pages with their title and a Sphinx reference name:
-
-::
-
-    .. _doc_insert_your_title_here:
+Always begin pages with their title::
 
     Insert your title here
     ======================
-
-The reference ``_doc_insert_your_title_here`` and the title should match.
-
-The reference allows linking to this page using the ``:ref:`` format, e.g.
-``:ref:`doc_insert_your_title_here``` would link to the above example page (note
-the lack of leading underscore in the reference).
 
 Write your titles like plain sentences, without capitalizing each word:
 

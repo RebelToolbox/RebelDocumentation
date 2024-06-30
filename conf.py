@@ -10,8 +10,8 @@
 # 7. Options for Docutils
 #   7.1 restructuredText Directives
 # 8. Extensions
-#   8.1 Sphinx tabs extension
-#   8.2 Sphinx not found page extension
+#   8.1 Sphinx not found page extension
+#   8.2 Sphinx auto section label extension
 #   8.3 Sphinx opengraph extension
 
 import logging
@@ -37,9 +37,10 @@ release = version
 sys.path.append("_extensions")
 extensions = [
     "gdscript",
+    "notfound.extension",
     "sphinx_rtd_theme",
     "sphinx_tabs.tabs",
-    "notfound.extension",
+    "sphinx.ext.autosectionlabel",
     "sphinxext.opengraph",
 ]
 
@@ -162,12 +163,7 @@ raw_enabled = False
 
 # 8. Extensions
 
-# 8.1 Sphinx tabs extension
-# https://sphinx-tabs.readthedocs.io
-# Required by Read the Docs
-
-
-# 8.2 Sphinx not found extension
+# 8.1 Sphinx not found extension
 # https://sphinx-notfound-page.readthedocs.io
 
 notfound_context = {
@@ -192,6 +188,12 @@ notfound_context = {
         </p>
     """,
 }
+
+
+# 8.2 Sphinx auto section label extension
+# https://www.sphinx-doc.org/en/master/usage/extensions/autosectionlabel.html
+
+autosectionlabel_prefix_document = True
 
 
 # 8.3 Sphinx opengraph extension

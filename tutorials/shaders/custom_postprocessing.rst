@@ -1,5 +1,3 @@
-.. _doc_custom_postprocessing:
-
 Custom post-processing
 ======================
 
@@ -14,8 +12,8 @@ your scene into a :ref:`Viewport <class_Viewport>`, then render the ``Viewport``
 inside a :ref:`ViewportTexture <class_ViewportTexture>` and show it on the screen.
 
 The easiest way to implement a custom post-processing shader is to use Rebel Engine's built-in ability to read from
-the screen texture. If you're not familiar with this, you should read the :ref:`Screen Reading Shaders
-Tutorial <doc_screen-reading_shaders>` first.
+the screen texture. If you're not familiar with this, you should read the :doc:`Screen Reading Shaders
+Tutorial </tutorials/shaders/screen-reading_shaders>` first.
 
 .. note::
 
@@ -169,4 +167,4 @@ Using the above code, you should end up with a full screen blur effect like belo
 
 .. image:: img/post_blur.png
 
-For more information on how ``Viewport`` nodes work, see the :ref:`Viewports Tutorial <doc_viewports>`.
+For more information on how ``Viewport`` nodes work, see the :doc:`Viewports Tutorial </tutorials/rendering/viewports>`.

@@ -1,5 +1,3 @@
-.. _doc_variant_class:
-
 Variant class
 =============
 
@@ -34,10 +32,9 @@ Basically, thanks to the Variant class, writing Rebel Engine itself was a much,
 much easier task, as it allows for highly dynamic constructs not common
 of C++ with little effort. Become a friend of Variant today.
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
--  `core/variant.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/variant.h>`__
+  - `core/variant.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/variant.h>`__
 
 Containers: Dictionary and Array
 --------------------------------
@@ -51,8 +48,7 @@ Modifications to a container will modify all references to
 it. A Mutex should be created to lock it if multi threaded access is
 desired.
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
--  `core/dictionary.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/dictionary.h>`__
--  `core/array.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/array.h>`__
+  - `core/dictionary.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/dictionary.h>`__
+  - `core/array.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/array.h>`__

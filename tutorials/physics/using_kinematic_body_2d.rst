@@ -1,5 +1,3 @@
-.. _doc_using_kinematic_body_2d:
-
 Using KinematicBody2D
 =====================
 
@@ -14,7 +12,7 @@ works and what their pros and cons are. In this tutorial, we'll look at the
 of how to use it.
 
 .. note:: This document assumes you're familiar with Rebel Physics various
-          bodies. Please read :ref:`doc_physics_introduction` first.
+          bodies. Please read :doc:`physics_introduction` first.
 
 What is a kinematic body?
 -------------------------
@@ -222,7 +220,7 @@ from the Filesystem dock to the *Texture* property of the ``Sprite``). In the
 ``CollisionShape2D``'s *Shape* property, select "New RectangleShape2D" and
 size the rectangle to fit over the sprite image.
 
-.. note:: See :ref:`doc_2d_movement` for examples of implementing 2D movement schemes.
+.. note:: See :doc:`/tutorials/2d/2d_movement` for examples of implementing 2D movement schemes.
 
 Attach a script to the KinematicBody2D and add the following code:
 

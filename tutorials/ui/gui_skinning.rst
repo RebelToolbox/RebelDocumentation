@@ -1,5 +1,3 @@
-.. _doc_gui_skinning:
-
 Introduction to GUI skinning
 ============================
 
@@ -36,13 +34,13 @@ the built-in control nodes. This is what gives the controls their distinct look
 out of the box. A theme only describes the configuration, however, and it is still
 the job of each individual control to use that configuration in the way it requires
 to display itself. This is important to remember when implementing
-:ref:`your own custom controls <doc_custom_gui_controls>`.
+:doc:`your own custom controls </tutorials/ui/custom_gui_controls>`.
 
 .. note::
    Even the Rebel Editor itself relies on the default theme. But it doesn't look the
    same as a Rebel Project, because it applies its own heavily customized theme on top
    of the default one. In principle, this works exactly like it would in your game
-   as explained :ref:`below <doc_gui_theme_in_project>`.
+   as explained :ref:`below <tutorials/ui/gui_skinning:customizing a project>`.
 
 Theme items
 ~~~~~~~~~~~
@@ -149,8 +147,6 @@ stores its customizable margins in its theme items.
 
 Whenever a control has a local theme item override, this is the value that
 it uses. Values provided by the theme are ignored.
-
-.. _doc_gui_theme_in_project:
 
 Customizing a project
 ---------------------

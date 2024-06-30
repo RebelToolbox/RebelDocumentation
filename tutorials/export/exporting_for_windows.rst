@@ -1,5 +1,3 @@
-.. _doc_exporting_for_windows:
-
 Exporting for Windows
 =====================
 
@@ -7,7 +5,7 @@ Exporting for Windows
 
     This page describes how to export a Rebel project to Windows.
     If you're looking to compile editor or export template binaries from source instead,
-    read :ref:`doc_compiling_for_windows`.
+    read :doc:`/development/compiling/compiling_for_windows`.
 
 The simplest way to distribute a game for PC is to copy the executable
 (``rebel.exe``), compress the folder and send it to someone else. However, this

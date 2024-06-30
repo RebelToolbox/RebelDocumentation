@@ -1,5 +1,3 @@
-.. _doc_2d_skeletons:
-
 2D skeletons
 ============
 
@@ -31,7 +29,7 @@ Setup
 .. seealso::
 
    Before starting, we recommend you to go through the
-   :ref:`doc_cutout_animation` tutorial to gain a general understanding of
+   :doc:`cutout_animation` tutorial to gain a general understanding of
    animating within Rebel Engine.
 
 For this tutorial, we will be using a single image to construct our character.

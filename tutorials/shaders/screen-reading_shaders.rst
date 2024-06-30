@@ -1,5 +1,3 @@
-.. _doc_screen-reading_shaders:
-
 Screen-reading shaders
 ======================
 
@@ -20,7 +18,7 @@ few tools that make this process easy.
 SCREEN_TEXTURE built-in texture
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:ref:`doc_shading_language` has a special texture, ``SCREEN_TEXTURE`` (and ``DEPTH_TEXTURE`` for depth, in the case of 3D).
+:doc:`/tutorials/shaders/shader_reference/shading_language` has a special texture, ``SCREEN_TEXTURE`` (and ``DEPTH_TEXTURE`` for depth, in the case of 3D).
 It takes as argument the UV of the screen and returns a vec3 RGB with the color. A
 special built-in varying: SCREEN_UV can be used to obtain the UV for
 the current fragment. As a result, this simple canvas_item fragment shader:

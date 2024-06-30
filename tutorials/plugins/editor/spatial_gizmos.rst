@@ -1,5 +1,3 @@
-.. _doc_spatial_gizmo_plugins:
-
 Spatial gizmo plugins
 =====================
 
@@ -14,7 +12,7 @@ gizmos. The first option works well for simple gizmos and creates less clutter i
 your plugin structure, while the second one will let you store some per-gizmo data.
 
 .. note:: This tutorial assumes you already know how to make generic plugins. If
-          in doubt, refer to the :ref:`doc_making_plugins` page.
+          in doubt, refer to the :doc:`making_plugins` page.
 
 The EditorSpatialGizmoPlugin
 ----------------------------

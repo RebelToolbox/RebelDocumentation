@@ -1,8 +1,6 @@
 .. Intention: only introduce what a script does in general and options for
    scripting languages.
 
-.. _doc_scripting:
-
 Scripting languages
 ===================
 
@@ -25,7 +23,7 @@ Available scripting languages
 
 Rebel Engine offers **five gameplay programming languages**: GDScript, C#,
 VisualScript, and, via its GDNative technology, C and C++. There are more
-:ref:`community-supported languages <doc_what_is_gdnative_third_party_bindings>`,
+:ref:`community-supported languages <tutorials/scripting/gdnative/what_is_gdnative:version compatibility>`,
 but these are the official ones.
 
 You can use multiple languages in a single project. For instance, in a team, you
@@ -58,7 +56,7 @@ Let's look at each language's features, as well as its pros and cons.
 GDScript
 ~~~~~~~~
 
-:ref:`GDScript<doc_gdscript>` is an
+:doc:`GDScript</tutorials/scripting/gdscript/gdscript_basics>` is an
 `object-oriented <https://en.wikipedia.org/wiki/Object-oriented_programming>`_ and
 `imperative <https://en.wikipedia.org/wiki/Imperative_programming>`_
 programming language built for Rebel Engine. It's made by and for game developers
@@ -126,7 +124,7 @@ or ClojureCLR. However, C# is the only officially supported .NET option.
 VisualScript
 ~~~~~~~~~~~~
 
-:ref:`Visual Scripting<doc_what_is_visual_script>` is a graph-based visual
+:doc:`Visual Scripting</tutorials/scripting/visual_script/what_is_visual_scripting>` is a graph-based visual
 programming language where you connect blocks. It can be a great tool for
 non-programmers like game designers and artists.
 
@@ -143,7 +141,7 @@ is slow compared to using other programming languages.
 .. seealso::
 
     For more information, see
-    :ref:`Getting started with VisualScript <doc_getting_started_visual_script>`.
+    :doc:`Getting started with VisualScript </tutorials/scripting/visual_script/getting_started>`.
 
 C and C++ via GDNative
 ~~~~~~~~~~~~~~~~~~~~~~

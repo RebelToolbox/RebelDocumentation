@@ -1,5 +1,3 @@
-.. _doc_exporting_for_dedicated_servers:
-
 Exporting for dedicated servers
 ===============================
 
@@ -11,8 +9,8 @@ Platform support
 
 - **Linux:** Download an official Linux server binary.
   To compile a server binary from source, follow instructions in
-  :ref:`doc_compiling_for_x11`.
-- **macOS:** :ref:`Compile a server binary from source for macOS <doc_compiling_for_osx>`.
+  :doc:`/development/compiling/compiling_for_x11`.
+- **macOS:** :doc:`Compile a server binary from source for macOS </development/compiling/compiling_for_osx>`.
 - **Windows:** There is no dedicated server build for Windows yet. As an alternative,
   you can use the ``--no-window`` command-line argument to prevent Rebel Engine from
   spawning a window. Note that even with the ``--no-window`` command-line argument,
@@ -50,7 +48,7 @@ the bottom of the Export dialog then choose a destination path.
 The **Export With Debug** checkbox in the file dialog has no bearing on the
 final PCK file, so you can leave it as-is.
 
-See :ref:`doc_exporting_projects` for more information.
+See :doc:`exporting_projects` for more information.
 
 .. note::
 

@@ -1,5 +1,3 @@
-.. _doc_custom_audiostreams:
-
 Custom AudioStreams
 ===================
 
@@ -17,13 +15,12 @@ its own internal custom AudioStreamPlayback which translates
 AudioStream into PCM data.
 
 This guide assumes the reader knows how to create C++ modules. If not, refer to this guide
-:ref:`doc_custom_modules_in_c++`.
+:doc:`custom_modules_in_cpp`.
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
--  `servers/audio/audio_stream.h <https://github.com/RebelToolbox/RebelEngine/blob/main/servers/audio/audio_stream.h>`__
--  `audio/audio_stream_player.h <https://github.com/RebelToolbox/RebelEngine/blob/main/scene/audio/audio_stream_player.h>`__
+  - `servers/audio/audio_stream.h <https://github.com/RebelToolbox/RebelEngine/blob/main/servers/audio/audio_stream.h>`__
+  - `audio/audio_stream_player.h <https://github.com/RebelToolbox/RebelEngine/blob/main/scene/audio/audio_stream_player.h>`__
 
 What for?
 ---------
@@ -113,10 +110,9 @@ Therefore, playback state must be self-contained in AudioStreamPlayback.
 		ClassDB::bind_method(D_METHOD("get_stream_name"), &AudioStreamMyTone::get_stream_name);
 	}
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
--  `servers/audio/audio_stream.h <https://github.com/RebelToolbox/RebelEngine/blob/main/servers/audio/audio_stream.h>`__
+  - `servers/audio/audio_stream.h <https://github.com/RebelToolbox/RebelEngine/blob/main/servers/audio/audio_stream.h>`__
 
 
 Create an AudioStreamPlayback
@@ -344,8 +340,8 @@ query AudioFrames and ``get_stream_sampling_rate`` to query current mix rate.
 		return active;
 	}
 
-References:
-~~~~~~~~~~~
--  `core/math/audio_frame.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/math/audio_frame.h>`__
--  `servers/audio/audio_stream.h <https://github.com/RebelToolbox/RebelEngine/blob/main/servers/audio/audio_stream.h>`__
--  `audio/audio_stream_player.h <https://github.com/RebelToolbox/RebelEngine/blob/main/scene/audio/audio_stream_player.h>`__
+.. seealso::
+
+  - `core/math/audio_frame.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/math/audio_frame.h>`__
+  - `servers/audio/audio_stream.h <https://github.com/RebelToolbox/RebelEngine/blob/main/servers/audio/audio_stream.h>`__
+  - `audio/audio_stream_player.h <https://github.com/RebelToolbox/RebelEngine/blob/main/scene/audio/audio_stream_player.h>`__

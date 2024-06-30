@@ -1,5 +1,3 @@
-.. _doc_changing_application_icon_for_windows:
-
 Changing application icon for Windows
 =====================================
 
@@ -101,7 +99,7 @@ the **Application → Icon** field.
 .. note::
 
     If rcedit fails to change the icon, you can instead
-    :ref:`compile your own Windows export templates <doc_compiling_for_windows>`
+    :doc:`compile your own Windows export templates </development/compiling/compiling_for_windows>`
     with the icon changed. To do so, replace
     `platform/windows/rebel-icon.ico <https://github.com/RebelToolbox/RebelEngine/blob/main/platform/windows/rebel-icon.ico>`__
     with your own ICO file *before* compiling export templates.

@@ -1,5 +1,3 @@
-.. _doc_editor_icons:
-
 Editor icons
 ============
 
@@ -85,7 +83,7 @@ make a separate pull request for your icons to be available within the editor
 as they can be self-contained.
 
 For specific instructions on how to create module icons, refer to
-:ref:`Creating custom module icons<doc_custom_module_icons>`.
+:ref:`Creating custom module icons<development/cpp/custom_modules_in_cpp:adding custom editor icons>`.
 
 Troubleshooting
 ~~~~~~~~~~~~~~~
@@ -97,7 +95,6 @@ If icons don't appear in the editor, make sure that:
 2. ``modules/svg`` is enabled (it should be enabled by default). Without it,
    icons won't appear in the editor at all.
 
-References
-~~~~~~~~~~
+.. seealso::
 
--  `editor/icons <https://github.com/RebelToolbox/RebelEngine/tree/main/editor/icons>`__
+  - `editor/icons <https://github.com/RebelToolbox/RebelEngine/tree/main/editor/icons>`__

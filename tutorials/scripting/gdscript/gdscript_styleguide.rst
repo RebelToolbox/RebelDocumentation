@@ -1,5 +1,3 @@
-.. _doc_gdscript_styleguide:
-
 GDScript style guide
 ====================
 
@@ -661,7 +659,7 @@ first line of the script.
 
 Follow with the `class_name` if necessary. You can turn a GDScript file into a
 global type in your project using this feature. For more information, see
-:ref:`doc_gdscript`.
+:doc:`/tutorials/scripting/gdscript/gdscript_basics`.
 
 Then, add the `extends` keyword if the class extends a built-in type.
 
@@ -784,7 +782,7 @@ in that order.
 Static typing
 -------------
 
-GDScript supports :ref:`optional static typing<doc_gdscript_static_typing>`.
+GDScript supports :doc:`optional static typing</tutorials/scripting/gdscript/static_typing>`.
 
 Declared types
 ~~~~~~~~~~~~~~
@@ -831,7 +829,7 @@ that type will be used to infer the type of the var.
    onready var health_bar := get_node("UI/LifeBar") as ProgressBar
    # health_bar will be typed as ProgressBar
 
-This option is also considered more :ref:`type-safe<doc_gdscript_static_typing_safe_lines>` than the first.
+This option is also considered more :ref:`type-safe<tutorials/scripting/gdscript/static_typing:safe lines>` than the first.
 
 **Bad**:
 

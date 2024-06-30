@@ -1,5 +1,3 @@
-.. _doc_exporting_3d_scenes:
-
 Exporting 3D scenes
 ===================
 

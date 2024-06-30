@@ -1,5 +1,3 @@
-.. _doc_release_policy:
-
 Rebel Engine release policy
 ===========================
 

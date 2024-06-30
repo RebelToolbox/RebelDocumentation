@@ -1,12 +1,10 @@
-.. _doc_making_main_screen_plugins:
-
 Making main screen plugins
 ==========================
 
 What this tutorial covers
 -------------------------
 
-As seen in the :ref:`doc_making_plugins` page, making a basic plugin that
+As seen in the :doc:`making_plugins` page, making a basic plugin that
 extends the editor is fairly easy. Main screen plugins allow you to create
 new UIs in the central part of the editor, which appear next to the
 "2D", "3D", "Script", and "AssetLib" buttons. Such editor plugins are
@@ -85,7 +83,7 @@ Add a script to the button like this:
         print("Hello from the main screen plugin!")
 
 Then connect the "pressed" signal to itself. If you need help with signals,
-see the :ref:`doc_signals` article.
+see the :doc:`/getting_started/step_by_step/signals` article.
 
 We are done with the main screen panel. Save the scene as ``main_panel.tscn``.
 

@@ -1,5 +1,3 @@
-.. _doc_your_first_canvasitem_shader:
-
 Your first 2D shader
 ====================
 
@@ -8,8 +6,8 @@ Introduction
 
 Shaders are special programs that execute on the GPU and are used for rendering
 graphics. All modern rendering is done with shaders. For a more detailed
-description of what shaders are please see :ref:`What are shaders
-<doc_introduction_to_shaders>`.
+description of what shaders are please see :doc:`What are shaders
+</tutorials/shaders/introduction_to_shaders>`.
 
 This tutorial will focus on the practical aspects of writing shader programs by
 walking you through the process of writing a shader with both vertex and
@@ -22,13 +20,13 @@ fragment functions. This tutorial targets absolute beginners to shaders.
 Setup
 -----
 
-:ref:`CanvasItem <doc_canvas_item_shader>` shaders are used to draw all 2D
-     objects in Rebel Engine, while :ref:`Spatial <doc_spatial_shader>` shaders are
+:doc:`CanvasItem </tutorials/shaders/shader_reference/canvas_item_shader>` shaders are used to draw all 2D
+     objects in Rebel Engine, while :doc:`Spatial </tutorials/shaders/shader_reference/spatial_shader>` shaders are
      used to draw all 3D objects.
 
 In order to use a shader it must be attached inside a :ref:`Material
 <class_material>` which must be attached to an object. Materials are a type of
-:ref:`Resource <doc_resources>`. To draw multiple objects with the same
+:doc:`Resource </tutorials/scripting/resources>`. To draw multiple objects with the same
 material, the material must be attached to each object.
 
 All objects derived from a :ref:`CanvasItem <class_canvasitem>` have a material
@@ -92,7 +90,7 @@ every pixel.
 
 We do so by writing a ``vec4`` to the built-in variable ``COLOR``. ``vec4`` is
 shorthand for constructing a vector with 4 numbers. For more information about
-vectors see the :ref:`Vector math tutorial <doc_vector_math>` ``COLOR`` is both
+vectors see the :doc:`Vector math tutorial </tutorials/math/vector_math>` ``COLOR`` is both
 an input variable to the fragment function and the final output from it.
 
 .. code-block:: glsl
@@ -168,8 +166,8 @@ You can use uniforms by defining them at the top of your shader like so:
 
   uniform float size;
 
-For more information about usage see the :ref:`Shading Language doc
-<doc_shading_language>`.
+For more information about usage see the :doc:`Shading Language doc
+</tutorials/shaders/shader_reference/shading_language>`.
 
 Add a uniform to change the amount of blue in our Sprite.
 

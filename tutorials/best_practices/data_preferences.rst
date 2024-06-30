@@ -1,5 +1,3 @@
-.. _doc_data_preferences:
-
 Data preferences
 ================
 
@@ -39,7 +37,7 @@ Y or Z? This article covers a variety of topics related to these dilemmas.
 Array vs. Dictionary vs. Object
 -------------------------------
 
-Rebel Engine stores all variables in the scripting API in the :ref:`doc_variant_class`.
+Rebel Engine stores all variables in the scripting API in the :doc:`/development/cpp/variant_class`.
 Variants can store Variant-compatible data structures such as
 :ref:`Array <class_Array>` and :ref:`Dictionary <class_Dictionary>` as well as
 :ref:`Object <class_Object>` s.
@@ -168,7 +166,7 @@ Objects query data sources when posed questions. For example, to answer
 the question, "do you have a property called, 'position'?", it might ask
 its :ref:`script <class_Script>` or the :ref:`ClassDB <class_ClassDB>`.
 One can find more information about what objects are and how they work in
-the :ref:`doc_applying_object_oriented_principles` article.
+the :doc:`applying_object_oriented_principles` article.
 
 The important detail here is the complexity of the Object's task. Every time
 it performs one of these multi-source queries, it runs through *several*
@@ -359,4 +357,4 @@ for blending, i.e. enabling smooth transitions between these animations. There
 may also be a hierarchical structure between animations that one plans out for
 their object. These are the cases where the :ref:`AnimationTree <class_AnimationTree>`
 shines. One can find an in-depth guide on using the AnimationTree
-:ref:`here <doc_animation_tree>`.
+:doc:`here </tutorials/animation/animation_tree>`.

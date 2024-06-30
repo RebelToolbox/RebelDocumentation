@@ -1,5 +1,3 @@
-.. _doc_handling_quit_requests:
-
 Handling quit requests
 ======================
 
