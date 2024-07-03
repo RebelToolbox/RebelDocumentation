@@ -1,5 +1,3 @@
-.. _doc_custom_gui_controls:
-
 Custom GUI controls
 ===================
 
@@ -16,7 +14,7 @@ create these controls easily from script.
 Drawing
 -------
 
-For drawing, it is recommended to check the :ref:`doc_custom_drawing_in_2d` tutorial.
+For drawing, it is recommended to check the :doc:`/tutorials/2d/custom_drawing_in_2d` tutorial.
 The same applies. Some functions are worth mentioning due to their
 usefulness when drawing, so they will be detailed next:
 
@@ -150,7 +148,7 @@ Simply override it in your control. No processing needs to be set.
         }
     }
 
-For more information about events themselves, check the :ref:`doc_inputevent`
+For more information about events themselves, check the :doc:`/tutorials/inputs/inputevent`
 tutorial.
 
 Notifications

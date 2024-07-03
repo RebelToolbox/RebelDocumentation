@@ -1,11 +1,9 @@
-.. _doc_http_client_class:
-
 HTTP client class
 =================
 
 :ref:`HTTPClient <class_HTTPClient>` provides low-level access to HTTP communication.
 For a higher-level interface, you may want to take a look at :ref:`HTTPRequest <class_HTTPRequest>` first,
-which has a tutorial available :ref:`here <doc_http_request_class>`.
+which has a tutorial available :doc:`here </tutorials/networking/http_request_class>`.
 
 .. warning::
 

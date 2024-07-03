@@ -1,5 +1,3 @@
-.. _doc_updating_the_api_documentation:
-
 Contributing to the Rebel Engine API Documentation
 ==================================================
 
@@ -20,10 +18,10 @@ taking care of a given class.
 
 .. seealso::
 
-    You can find the writing guidelines for the Rebel Engine API :ref:`here <doc_api_writing_guidelines>`.
+    You can find the writing guidelines for the Rebel Engine API :doc:`here <api_writing_guidelines>`.
 
     For details on Git usage and the pull request workflow, please
-    refer to the :ref:`doc_pr_workflow` page.
+    refer to the :doc:`pr_workflow` page.
 
 You can find the source files for the Rebel Engine API in Rebel Engine's GitHub
 repository: `docs/
@@ -45,7 +43,7 @@ repository: `docs/
 
     Also, it doesn't allow you to test your changes in the engine or with validation
     scripts as described in
-    :ref:`doc_api_writing_guidelines_editing_xml`.
+    :ref:`contributing/api_writing_guidelines:how to edit class xml`.
 
 Updating the documentation template
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -53,7 +51,7 @@ Updating the documentation template
 When you create a new class or modify the engine's API, you need to re-generate the XML files in ``docs/``.
 
 To do so, you first need to compile Rebel Engine. See the
-:ref:`doc_introduction_to_the_buildsystem` page to learn how. Then, execute the
+:doc:`/development/compiling/introduction_to_the_buildsystem` page to learn how. Then, execute the
 compiled Rebel Engine binary from the Rebel Engine root directory with the ``--doctool`` option.
 For example, if you're on 64-bit Linux, the command is::
 

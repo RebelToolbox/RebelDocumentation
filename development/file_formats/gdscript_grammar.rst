@@ -1,5 +1,3 @@
-.. _doc_gdscript_grammar:
-
 GDScript grammar
 ================
 

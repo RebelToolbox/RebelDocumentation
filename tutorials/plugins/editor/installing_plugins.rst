@@ -1,5 +1,3 @@
-.. _doc_installing_plugins:
-
 Installing plugins
 ==================
 

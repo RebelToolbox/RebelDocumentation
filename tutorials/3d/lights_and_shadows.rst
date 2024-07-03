@@ -1,5 +1,3 @@
-.. _doc_lights_and_shadows:
-
 3D lights and shadows
 =====================
 
@@ -14,10 +12,10 @@ result. Light can come from several types of sources in a scene:
 -  Light Nodes: Directional, Omni and Spot.
 -  Ambient Light in the
    :ref:`Environment <class_Environment>`.
--  Baked Light (read :ref:`doc_baked_lightmaps`).
+-  Baked Light (read :doc:`baked_lightmaps`).
 
 The emission color is a material property. You can read more about it
-in the :ref:`doc_spatial_material` tutorial.
+in the :doc:`spatial_material` tutorial.
 
 Light nodes
 -----------
@@ -31,11 +29,11 @@ parameters for lights:
 Each one has a specific function:
 
 -  **Color**: Base color for emitted light.
--  **Energy**: Energy multiplier. This is useful for saturating lights or working with :ref:`doc_high_dynamic_range`.
+-  **Energy**: Energy multiplier. This is useful for saturating lights or working with :doc:`high_dynamic_range`.
 -  **Indirect Energy**: Secondary multiplier used with indirect light (light bounces). This works in baked light or GIProbe.
 -  **Negative**: Light becomes subtractive instead of additive. It's sometimes useful to manually compensate some dark corners.
 -  **Specular**: Affects the intensity of the specular blob in objects affected by this light. At zero, this light becomes a pure diffuse light.
--  **Bake Mode**: Sets the bake mode for the light. For more information see :ref:`doc_baked_lightmaps`
+-  **Bake Mode**: Sets the bake mode for the light. For more information see :doc:`baked_lightmaps`
 -  **Cull Mask**: Objects that are in the selected layers below will be affected by this light.
    Note that objects disabled via this cull mask will still cast shadows.
    If you don't want disabled objects to cast shadows, adjust the ``cast_shadow`` property on the

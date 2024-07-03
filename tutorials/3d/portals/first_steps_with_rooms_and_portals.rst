@@ -64,7 +64,7 @@ If you accidentally create overlapping rooms, the editor will warn you when you 
 
 The system does attempt to cope with overlapping rooms as best as possible by making the current room *"sticky"*. Each object remembers which room it was in during the previous frame and stays within it as long as it does not move outside the convex hull room bound. This can result in some hysteresis in these overlapping zones.
 
-There is one exception, however, for :ref:`internal rooms<doc_rooms_and_portals_internal_rooms>`. You do not have to worry about these to start with.
+There is one exception, however, for :ref:`internal rooms<tutorials/3d/portals/advanced_room_and_portal_usage:Internal Rooms>`. You do not have to worry about these to start with.
 
 How do I create a room?
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -77,8 +77,8 @@ How do I define the shape and position of my room convex hull?
 Because defining the room bound is the most important aspect of the system, there are THREE methods available to define the shape of a room in Rebel Engine:
 
 1. Use the geometry of the objects contained within the room to automatically create an approximate bound.
-2. Manually edit the points that define the convex hull in the room inspector or drag the points around using the editor gizmo (see :ref:`doc_room_point_editing`).
-3. Provide a manual bound. This is a MeshInstance in the room that has geometry in the shape of the desired bound, with a name with the postfix ``-bound``. This is something you might choose to do if you create your levels in Blender or similar (see :ref:`doc_rooms_and_portals_blender`).
+2. Manually edit the points that define the convex hull in the room inspector or drag the points around using the editor gizmo (see :ref:`tutorials/3d/portals/editing_rooms_and_portals:room point editing`).
+3. Provide a manual bound. This is a MeshInstance in the room that has geometry in the shape of the desired bound, with a name with the postfix ``-bound``. This is something you might choose to do if you create your levels in Blender or similar (see :ref:`tutorials/3d/portals/editing_rooms_and_portals:creating room systems in blender (or other modeling tools)`).
 
 While the first option can be all that is required, particularly with simple rooms or for pre-production, using manual bounds gives you ultimate control at the expense of a small amount of editing. You can also combine the two approaches, perhaps using automatic bounds for most rooms but manually editing problem areas.
 

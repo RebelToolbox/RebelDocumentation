@@ -13,7 +13,7 @@ If something is confusing, out-dated, or missing in this documentation,
 please help us make the documentation better by letting us know.
 `Submit an issue <https://github.com/RebelToolbox/RebelDocumentation/issues>`_ on GitHub,
 or, better yet, submit an update or an addition.
-Read :ref:`doc_contributing_to_the_documentation` for information of how to contribute to the documentation.
+Read :doc:`/contributing/contributing_to_the_documentation` for information of how to contribute to the documentation.
 
 For a list of all the other tools, visit our `Rebel Toolbox GitHub <https://github.com/RebelToolbox/>`_ page.
 
@@ -21,7 +21,7 @@ Getting started
 ---------------
 
 For an introduction to using Rebel Editor to create games with Rebel Engine,
-start with our :ref:`introduction series <doc_introduction>`.
+start with our :doc:`introduction series </getting_started/introduction/index>`.
 
 Detailed documentation
 ----------------------
@@ -29,7 +29,7 @@ Detailed documentation
 Rebel Engine is an extremely powerful and customizable tool for creating amazing games.
 To learn how to use a specific Rebel Engine component, see our tutorials.
 For more detailed information on how to interact with those components through scripts,
-the :ref:`doc_rebel_engine_api` contains a comprehensive view of every class, every method and every property.
+the :doc:`/api/index` contains a comprehensive view of every class, every method and every property.
 
 Contributing
 ------------
@@ -38,7 +38,7 @@ There are lots of ways to contribute to Rebel Toolbox.
 You don't need to be a coder to contribute.
 Start by using Rebel Editor to create games with Rebel Engine, and
 tell everyone you know about your experience.
-See the :ref:`doc_contributing` section to learn about other ways to contribute.
+See the :doc:`/contributing/index` section to learn about other ways to contribute.
 
 
 Table of Contents

@@ -1,5 +1,3 @@
-.. _doc_platform_html5:
-
 HTML5
 =====
 

@@ -1,12 +1,10 @@
-.. _doc_running_on_macos:
-
 Running Rebel apps on macOS
 ===========================
 
 .. seealso::
 
     This page covers running Rebel projects on macOS.
-    If you haven't exported your project yet, read :ref:`doc_exporting_for_macos` first.
+    If you haven't exported your project yet, read :doc:`exporting_for_macos` first.
 
 By default, macOS will run only applications that are signed and notarized.
 

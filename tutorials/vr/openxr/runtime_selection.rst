@@ -1,5 +1,3 @@
-.. _doc_runtime_selection:
-
 Switching runtimes
 ==================
 
@@ -35,4 +33,4 @@ If you've installed a runtime in a nonstandard location or a runtime not current
 .. seealso::
 
     If the dropdown isn't shown in your editor, make sure the plugin is enabled. 
-    See :ref:`doc_enable_plugin`.
+    See :doc:`enable_plugin`.

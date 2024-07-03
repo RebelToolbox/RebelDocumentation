@@ -1,5 +1,3 @@
-.. _doc_exporting_for_web:
-
 Exporting for the Web
 =====================
 
@@ -7,7 +5,7 @@ Exporting for the Web
 
     This page describes how to export a Rebel project to HTML5.
     If you're looking to compile editor or export template binaries from source instead,
-    read :ref:`doc_compiling_for_web`.
+    read :doc:`/development/compiling/compiling_for_web`.
 
 HTML5 export allows publishing games made in Rebel Editor to the browser.
 This requires support for `WebAssembly
@@ -21,7 +19,7 @@ in the user's browser.
 .. attention:: `There are significant bugs when running HTML5 projects on iOS
                <https://github.com/godotengine/godot/issues?q=is:issue+is:open+label:platform:html5+ios>`__
                (regardless of the browser). We recommend using
-               :ref:`iOS' native export functionality <doc_exporting_for_ios>`
+               :doc:`iOS' native export functionality </tutorials/export/exporting_for_ios>`
                instead, as it will also result in better performance.
 
 WebGL version
@@ -42,8 +40,6 @@ for **Safari**. WebGL 2.0 support is coming in Safari 15 for macOS, and is not
 available yet for any **iOS** browser (all WebKit-based like Safari).
 See `Can I use WebGL 2.0 <https://caniuse.com/webgl2>`__ for details.
 
-.. _doc_javascript_export_options:
-
 Export options
 --------------
 
@@ -62,13 +58,13 @@ You can choose the **Export Type** to select which features will be available:
 - *GDNative*: enables GDNative support but makes the binary bigger and slower
   to load.
 
-If you plan to use :ref:`VRAM compression <doc_import_images>` make sure that
+If you plan to use :doc:`VRAM compression </tutorials/assets_pipeline/importing_images>` make sure that
 **Vram Texture Compression** is enabled for the targeted platforms (enabling
 both **For Desktop** and **For Mobile** will result in a bigger, but more
 compatible export).
 
 If a path to a **Custom HTML shell** file is given, it will be used instead of
-the default HTML page. See :ref:`doc_customizing_html5_shell`.
+the default HTML page. See :doc:`/tutorials/platform/customizing_html5_shell`.
 
 **Head Include** is appended into the ``<head>`` element of the generated
 HTML page. This allows to, for example, load webfonts and third-party
@@ -91,7 +87,8 @@ For security and privacy reasons, many features that work effortlessly on
 native platforms are more complicated on the web platform. Following is a list
 of limitations you should be aware of when porting a Rebel game to the web.
 
-.. _doc_javascript_secure_contexts:
+Secure contexts
+~~~~~~~~~~~~~~~
 
 .. important:: Browser vendors are making more and more functionalities only
                available in `secure contexts <https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts>`_,
@@ -132,18 +129,18 @@ user's side, this can be worked around by running the project in a separate
 Threads
 ~~~~~~~
 
-As mentioned :ref:`above <doc_javascript_export_options>` multi-threading is
+As mentioned :ref:`above <tutorials/export/exporting_for_web:Export options>` multi-threading is
 only available if the appropriate **Export Type** is set and support for it
 across browsers is still limited.
 
-.. warning:: Requires a :ref:`secure context <doc_javascript_secure_contexts>`.
+.. warning:: Requires a :ref:`secure context <tutorials/export/exporting_for_web:Secure contexts>`.
              Browsers also require that the web page is served with specific
              `cross-origin isolation headers <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy>`__.
 
 GDNative
 ~~~~~~~~
 
-As mentioned :ref:`above <doc_javascript_export_options>` GDNative is only
+As mentioned :ref:`above <tutorials/export/exporting_for_web:Export options>` GDNative is only
 available if the appropriate **Export Type** is set.
 
 The export will also copy the required GDNative ``.wasm`` files to the output
@@ -161,7 +158,7 @@ input event must currently be active.
 
 For the same reason, the full screen project setting doesn't work unless the
 engine is started from within a valid input event handler. This requires
-:ref:`customization of the HTML page <doc_customizing_html5_shell>`.
+:doc:`customization of the HTML page </tutorials/platform/customizing_html5_shell>`.
 
 Audio
 ~~~~~
@@ -173,16 +170,16 @@ player to click or tap or press a key to enable audio.
              policies <https://sites.google.com/a/chromium.org/dev/audio-video/autoplay>`__.
 
 .. warning:: Access to microphone requires a
-             :ref:`secure context <doc_javascript_secure_contexts>`.
+             :ref:`secure context <tutorials/export/exporting_for_web:Secure contexts>`.
 
 Networking
 ~~~~~~~~~~
 
 Low level networking is not implemented due to lacking support in browsers.
 
-Currently, only :ref:`HTTP client <doc_http_client_class>`,
-:ref:`HTTP requests <doc_http_request_class>`,
-:ref:`WebSocket (client) <doc_websocket>` and :ref:`WebRTC <doc_webrtc>` are
+Currently, only :doc:`HTTP client </tutorials/networking/http_client_class>`,
+:doc:`HTTP requests </tutorials/networking/http_request_class>`,
+:doc:`WebSocket (client) </tutorials/networking/websocket>` and :doc:`WebRTC </tutorials/networking/webrtc>` are
 supported.
 
 The HTTP classes also have several restrictions on the HTML5 platform:
@@ -202,7 +199,7 @@ browser supporting the `Clipboard API <https://developer.mozilla.org/en-US/docs/
 additionally, due to the API asynchronous nature might not be reliable when
 accessed from GDScript.
 
-.. warning:: Requires a :ref:`secure context <doc_javascript_secure_contexts>`.
+.. warning:: Requires a :ref:`secure context <tutorials/export/exporting_for_web:Secure contexts>`.
 
 Gamepads
 ~~~~~~~~
@@ -213,13 +210,13 @@ sadly the `Gamepad API <https://developer.mozilla.org/en-US/docs/Web/API/Gamepad
 does not provide a reliable way to detect the gamepad information necessary
 to remap them based on model/vendor/OS due to privacy considerations.
 
-.. warning:: Requires a :ref:`secure context <doc_javascript_secure_contexts>`.
+.. warning:: Requires a :ref:`secure context <tutorials/export/exporting_for_web:Secure contexts>`.
 
 Boot splash is not displayed
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The default HTML page does not display the boot splash while loading. However,
-the image is exported as a PNG file, so :ref:`custom HTML pages <doc_customizing_html5_shell>`
+the image is exported as a PNG file, so :doc:`custom HTML pages </tutorials/platform/customizing_html5_shell>`
 can display it.
 
 Shader language limitations
@@ -233,7 +230,7 @@ Serving the files
 
 Exporting for the web generates several files to be served from a web server,
 including a default HTML page for presentation. A custom HTML file can be
-used, see :ref:`doc_customizing_html5_shell`.
+used, see :doc:`/tutorials/platform/customizing_html5_shell`.
 
 The generated ``.html`` file can be used as ``DirectoryIndex`` in Apache
 servers and can be renamed to e.g. ``index.html`` at any time, its name is
@@ -249,7 +246,7 @@ the engine. The ``.pck`` file is the Rebel main pack containing your game. The
 ``.js`` file contains start-up code and is used by the ``.html`` file to access
 the engine. The ``.png`` file contains the boot splash image. It is not used in
 the default HTML page, but is included for
-:ref:`custom HTML pages <doc_customizing_html5_shell>`.
+:doc:`custom HTML pages </tutorials/platform/customizing_html5_shell>`.
 
 The ``.pck`` file is binary, usually delivered with the MIME-type
 :mimetype:`application/octet-stream`. The ``.wasm`` file is delivered as
@@ -268,8 +265,6 @@ of its original size with gzip compression.
 
 **Hosts that don't provide on-the-fly compression:** itch.io, GitLab Pages
 (`supports manual gzip precompression <https://webd97.de/post/gitlab-pages-compression/>`__)
-
-.. _doc_javascript_eval:
 
 Calling JavaScript from script
 ------------------------------
@@ -302,11 +297,11 @@ returned by ``eval()`` under certain circumstances:
 
 Any other JavaScript value is returned as ``null``.
 
-HTML5 export templates may be :ref:`built <doc_compiling_for_web>` without
+HTML5 export templates may be :doc:`built </development/compiling/compiling_for_web>` without
 support for the singleton to improve security. With such templates, and on
 platforms other than HTML5, calling ``JavaScript.eval`` will also return
 ``null``. The availability of the singleton can be checked with the
-``JavaScript`` :ref:`feature tag <doc_feature_tags>`::
+``JavaScript`` :doc:`feature tag </tutorials/export/feature_tags>`::
 
     func my_func3():
         if OS.has_feature('JavaScript'):

@@ -1,5 +1,3 @@
-.. _doc_gdscript:
-
 GDScript basics
 ===============
 
@@ -19,7 +17,7 @@ History
 .. note::
 
     Documentation about GDScript's history has been moved to the
-    :ref:`Frequently Asked Questions <doc_faq_what_is_gdscript>`.
+    :ref:`Frequently Asked Questions <about/faq:what is gdscript and why should i use it?>`.
 
 Example of GDScript
 ~~~~~~~~~~~~~~~~~~~
@@ -109,7 +107,7 @@ here's a simple example of how GDScript looks.
 
 If you have previous experience with statically typed languages such as
 C, C++, or C# but never used a dynamically typed one before, it is advised you
-read this tutorial: :ref:`doc_gdscript_more_efficiently`.
+read this tutorial: :doc:`/tutorials/scripting/gdscript/gdscript_advanced`.
 
 Language
 --------
@@ -137,89 +135,89 @@ as listed in the following sections are also reserved.
 Keywords are defined in the `GDScript tokenizer <https://github.com/RebelToolbox/RebelEngine/blob/main/modules/gdscript/gdscript_tokenizer.cpp>`_
 in case you want to take a look under the hood.
 
-+------------+---------------------------------------------------------------------------------------------------------------+
-|  Keyword   | Description                                                                                                   |
-+============+===============================================================================================================+
-| if         | See `if/else/elif`_.                                                                                          |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| elif       | See `if/else/elif`_.                                                                                          |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| else       | See `if/else/elif`_.                                                                                          |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| for        | See for_.                                                                                                     |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| while      | See while_.                                                                                                   |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| match      | See match_.                                                                                                   |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| break      | Exits the execution of the current ``for`` or ``while`` loop.                                                 |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| continue   | Immediately skips to the next iteration of the ``for`` or ``while`` loop.                                     |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| pass       | Used where a statement is required syntactically but execution of code is undesired, e.g. in empty functions. |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| return     | Returns a value from a function.                                                                              |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| class      | Defines an inner class.                                                                                       |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| class_name | Defines a class name and optional icon for your script.                                                       |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| extends    | Defines what class to extend with the current class.                                                          |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| is         | Tests whether a variable extends a given class, or is of a given built-in type.                               |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| as         | Cast the value to a given type if possible.                                                                   |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| self       | Refers to current class instance.                                                                             |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| tool       | Executes the script in the editor.                                                                            |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| signal     | Defines a signal.                                                                                             |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| func       | Defines a function.                                                                                           |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| static     | Defines a static function. Static member variables are not allowed.                                           |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| const      | Defines a constant.                                                                                           |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| enum       | Defines an enum.                                                                                              |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| var        | Defines a variable.                                                                                           |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| onready    | Initializes a variable once the Node the script is attached to and its children are part of the scene tree.   |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| export     | Saves a variable along with the resource it's attached to and makes it visible and modifiable in the editor.  |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| setget     | Defines setter and getter functions for a variable.                                                           |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| breakpoint | Editor helper for debugger breakpoints.                                                                       |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| preload    | Preloads a class or variable. See `Classes as resources`_.                                                    |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| yield      | Coroutine support. See `Coroutines with yield`_.                                                              |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| assert     | Asserts a condition, logs error on failure. Ignored in non-debug builds. See `Assert keyword`_.               |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| remote     | Networking RPC annotation. See :ref:`high-level multiplayer docs <doc_high_level_multiplayer>`.               |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| master     | Networking RPC annotation. See :ref:`high-level multiplayer docs <doc_high_level_multiplayer>`.               |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| puppet     | Networking RPC annotation. See :ref:`high-level multiplayer docs <doc_high_level_multiplayer>`.               |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| remotesync | Networking RPC annotation. See :ref:`high-level multiplayer docs <doc_high_level_multiplayer>`.               |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| mastersync | Networking RPC annotation. See :ref:`high-level multiplayer docs <doc_high_level_multiplayer>`.               |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| puppetsync | Networking RPC annotation. See :ref:`high-level multiplayer docs <doc_high_level_multiplayer>`.               |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| PI         | PI constant.                                                                                                  |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| TAU        | TAU constant.                                                                                                 |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| INF        | Infinity constant. Used for comparisons.                                                                      |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| NAN        | NAN (not a number) constant. Used for comparisons.                                                            |
-+------------+---------------------------------------------------------------------------------------------------------------+
++------------+-------------------------------------------------------------------------------------------------------------------+
+|  Keyword   | Description                                                                                                       |
++============+===================================================================================================================+
+| if         | See `if/else/elif`_.                                                                                              |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| elif       | See `if/else/elif`_.                                                                                              |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| else       | See `if/else/elif`_.                                                                                              |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| for        | See for_.                                                                                                         |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| while      | See while_.                                                                                                       |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| match      | See match_.                                                                                                       |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| break      | Exits the execution of the current ``for`` or ``while`` loop.                                                     |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| continue   | Immediately skips to the next iteration of the ``for`` or ``while`` loop.                                         |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| pass       | Used where a statement is required syntactically but execution of code is undesired, e.g. in empty functions.     |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| return     | Returns a value from a function.                                                                                  |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| class      | Defines an inner class.                                                                                           |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| class_name | Defines a class name and optional icon for your script.                                                           |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| extends    | Defines what class to extend with the current class.                                                              |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| is         | Tests whether a variable extends a given class, or is of a given built-in type.                                   |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| as         | Cast the value to a given type if possible.                                                                       |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| self       | Refers to current class instance.                                                                                 |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| tool       | Executes the script in the editor.                                                                                |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| signal     | Defines a signal.                                                                                                 |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| func       | Defines a function.                                                                                               |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| static     | Defines a static function. Static member variables are not allowed.                                               |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| const      | Defines a constant.                                                                                               |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| enum       | Defines an enum.                                                                                                  |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| var        | Defines a variable.                                                                                               |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| onready    | Initializes a variable once the Node the script is attached to and its children are part of the scene tree.       |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| export     | Saves a variable along with the resource it's attached to and makes it visible and modifiable in the editor.      |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| setget     | Defines setter and getter functions for a variable.                                                               |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| breakpoint | Editor helper for debugger breakpoints.                                                                           |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| preload    | Preloads a class or variable. See `Classes as resources`_.                                                        |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| yield      | Coroutine support. See `Coroutines with yield`_.                                                                  |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| assert     | Asserts a condition, logs error on failure. Ignored in non-debug builds. See `Assert keyword`_.                   |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| remote     | Networking RPC annotation. See :doc:`high-level multiplayer docs </tutorials/networking/high_level_multiplayer>`. |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| master     | Networking RPC annotation. See :doc:`high-level multiplayer docs </tutorials/networking/high_level_multiplayer>`. |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| puppet     | Networking RPC annotation. See :doc:`high-level multiplayer docs </tutorials/networking/high_level_multiplayer>`. |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| remotesync | Networking RPC annotation. See :doc:`high-level multiplayer docs </tutorials/networking/high_level_multiplayer>`. |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| mastersync | Networking RPC annotation. See :doc:`high-level multiplayer docs </tutorials/networking/high_level_multiplayer>`. |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| puppetsync | Networking RPC annotation. See :doc:`high-level multiplayer docs </tutorials/networking/high_level_multiplayer>`. |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| PI         | PI constant.                                                                                                      |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| TAU        | TAU constant.                                                                                                     |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| INF        | Infinity constant. Used for comparisons.                                                                          |
++------------+-------------------------------------------------------------------------------------------------------------------+
+| NAN        | NAN (not a number) constant. Used for comparisons.                                                                |
++------------+-------------------------------------------------------------------------------------------------------------------+
 
 Operators
 ~~~~~~~~~
@@ -321,8 +319,6 @@ considered a comment.
 
     # This is a comment.
 
-.. _doc_gdscript_builtin_types:
-
 Built-in types
 --------------
 
@@ -395,7 +391,7 @@ Strings can contain the following escape sequences:
 |                     | (hexadecimal, case-insensitive) |
 +---------------------+---------------------------------+
 
-GDScript also supports :ref:`doc_gdscript_printf`.
+GDScript also supports :doc:`/tutorials/scripting/gdscript/gdscript_format_string`.
 
 Vector built-in types
 ~~~~~~~~~~~~~~~~~~~~~
@@ -1063,8 +1059,6 @@ path. For example, if you name a script file ``character.gd``::
    var Character = load("res://path/to/character.gd")
    var character_node = Character.new()
 
-.. _doc_gdscript_basics_class_name:
-
 Registering named classes
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1084,7 +1078,7 @@ class will then appear with its new icon in the editor::
 
     If the script is located in the ``res://addons/`` directory, ``class_name``
     will only cause the node to show up in the **Create New Node** dialog if
-    the script is part of an *enabled* editor plugin. See :ref:`doc_making_plugins`
+    the script is part of an *enabled* editor plugin. See :doc:`/tutorials/plugins/editor/making_plugins`
     for more information.
 
 Here's a class file example:
@@ -1250,8 +1244,6 @@ function.
         var c = SomeInnerClass.new()
         c.print_value_of_a()
 
-.. _doc_gdscript_classes_as_resources:
-
 Classes as resources
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -1276,7 +1268,7 @@ Exports
 
 .. note::
 
-    Documentation about exports has been moved to :ref:`doc_gdscript_exports`.
+    Documentation about exports has been moved to :doc:`gdscript_exports`.
 
 Setters/getters
 ~~~~~~~~~~~~~~~
@@ -1314,7 +1306,7 @@ Either of the *setter* or *getter* functions can be omitted::
     # Only a getter (note the comma).
     var my_var = 5 setget ,my_var_get
 
-Setters and getters are useful when :ref:`exporting variables <doc_gdscript_exports>`
+Setters and getters are useful when :doc:`exporting variables </tutorials/scripting/gdscript/gdscript_exports>`
 to the editor in tool scripts or plugins, for validating input.
 
 As said, *local* access will *not* trigger the setter and getter. Here is an
@@ -1330,8 +1322,6 @@ illustration of this:
         # Does trigger setter/getter.
         self.my_integer = 5
         print(self.my_integer)
-
-.. _doc_gdscript_tool_mode:
 
 Tool mode
 ~~~~~~~~~
@@ -1350,14 +1340,12 @@ placed at the top of the file::
         print("Hello")
 
 
-See :ref:`doc_running_code_in_the_editor` for more information.
+See :doc:`/tutorials/plugins/running_code_in_the_editor` for more information.
 
 .. warning:: Be cautious when freeing nodes with ``queue_free()`` or ``free()``
              in a tool script (especially the script's owner itself). As tool
              scripts run their code in the editor, misusing them may lead to
              crashing the editor.
-
-.. _doc_gdscript_basics_memory_management:
 
 Memory management
 ~~~~~~~~~~~~~~~~~
@@ -1387,8 +1375,6 @@ provided for creating weak references. Here is an example:
 Alternatively, when not using references, the
 ``is_instance_valid(instance)`` can be used to check if an object has been
 freed.
-
-.. _doc_gdscript_signals:
 
 Signals
 ~~~~~~~
@@ -1691,9 +1677,7 @@ regardless of whether coroutines were used internally. Note that using
 ``while`` would be redundant here as the ``completed`` signal is only emitted
 when the function didn't yield anymore.
 
-.. _doc_gdscript_onready_keyword:
-
-`onready` keyword
+onready keyword
 ~~~~~~~~~~~~~~~~~
 
 When using nodes, it's common to desire to keep references to parts

@@ -1,5 +1,3 @@
-.. _doc_ways_to_contribute:
-
 Ways to contribute
 ==================
 
@@ -84,11 +82,11 @@ enforce some rules for code contributions, for example regarding the style to
 use in the C++ code (indentation, brackets, etc.) or the Git and PR workflow.
 
 .. seealso:: Technical details about the PR workflow are outlined in a
-             specific section, :ref:`doc_pr_workflow`.
+             specific section, :doc:`pr_workflow`.
 
              Details about the code style guidelines and the ``clang-format``
              tool used to enforce them are outlined in
-             :ref:`doc_code_style_guidelines`.
+             :doc:`code_style_guidelines`.
 
 All pull requests must go through a review process before being accepted.
 Depending on the scope of the changes, it may take some time for a maintainer
@@ -185,12 +183,12 @@ There are two separate resources referred to as "documentation" in Rebel Documen
   offline, directly in Rebel Engine's code editor, or online at :ref:`Rebel Engine API <toc-api>`.
   To contribute to the API documentation, you have to edit the
   XML file corresponding to the class and make a pull request.
-  See :ref:`doc_updating_the_api_documentation` and
-  :ref:`doc_api_writing_guidelines` for more details.
+  See :doc:`updating_the_api_documentation` and
+  :doc:`api_writing_guidelines` for more details.
 
 - **The tutorials and engine documentation and its translations.**
   This is the part you are reading now, which is distributed in the HTML format.
   Its contents are generated from plain text files in the reStructured Text
   (rst) format, to which you can contribute via pull requests on the
   `Rebel Documentation <https://github.com/RebelToolbox/RebelDocumentation>`_ GitHub repository.
-  See :ref:`doc_contributing_to_the_documentation` for more details.
+  See :doc:`contributing_to_the_documentation` for more details.

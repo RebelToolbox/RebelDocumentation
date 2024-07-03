@@ -1,5 +1,3 @@
-.. _doc_input_examples:
-
 Input examples
 ==============
 
@@ -14,7 +12,7 @@ of the most common scenarios, which you can use as starting points for your
 own projects.
 
 .. note:: For a detailed overview of how Rebel Engine's input event system works,
-          see :ref:`doc_inputevent`.
+          see :doc:`inputevent`.
 
 Events versus polling
 ---------------------

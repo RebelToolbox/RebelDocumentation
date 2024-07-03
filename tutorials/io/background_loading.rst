@@ -1,5 +1,3 @@
-.. _doc_background_loading:
-
 Background loading
 ==================
 
@@ -87,7 +85,7 @@ Example
 -------
 
 This example demonstrates how to load a new scene. Consider it in the
-context of the :ref:`doc_singletons_autoload` example.
+context of the :doc:`/tutorials/scripting/singletons_autoload` example.
 
 First, we set up some variables and initialize the ``current_scene``
 with the main scene of the game:

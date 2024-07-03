@@ -1,5 +1,3 @@
-.. _doc_vr_starter_tutorial_part_two:
-
 VR starter tutorial part 2
 ==========================
 
@@ -94,23 +92,23 @@ First, let's go through all the class variables in the script:
           We'll be instancing this scene so when the target is destroyed, it looks like it broke into a bunch of pieces.
 
 
-``_ready`` function step-by-step explanation
-""""""""""""""""""""""""""""""""""""""""""""
+Sphere Target _ready function
+"""""""""""""""""""""""""""""
 
 All the ``_ready`` function does is that it stops the ``_physics_process`` from being called by calling ``set_physics_process`` and passing ``false``.
 The reason we do this is because all the code in ``_physics_process`` is for destroying this node when enough time has passed, which we only want to
 do when the target has been destroyed.
 
 
-``_physics_process`` function step-by-step explanation
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Sphere Target _physics_process function
+"""""""""""""""""""""""""""""""""""""""
 
 First this function adds time, ``delta``, to the ``destroyed_timer`` variable. It then checks to see if ``destroyed_timer`` is greater than or equal to
 ``DESTROY_WAIT_TIME``. If ``destroyed_timer`` is greater than or equal to ``DESTROY_WAIT_TIME``, then the sphere target frees/deletes itself by calling
 the ``queue_free`` function.
 
-``damage`` function step-by-step explanation
-""""""""""""""""""""""""""""""""""""""""""""
+Sphere Target damage function
+"""""""""""""""""""""""""""""
 
 The ``damage`` function will be called by the special :ref:`RigidBody <class_RigidBody>` nodes, which will pass the amount of damage done to the target, which is a function argument
 variable called ``damage``. The ``damage`` variable will hold the amount of damage the special :ref:`RigidBody <class_RigidBody>` node did to the sphere target.
@@ -137,8 +135,8 @@ Finally, the ``remove_sphere`` function is called in ``Game.gd``. To get ``Game.
 ``Game.tscn`` scene.
 
 
-Adding the ``remove_sphere`` function to ``Game.gd``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Adding the remove_sphere function to Game.gd
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You may have noticed we are calling a function in ``Game.gd``, called ``remove_sphere``, that we have not defined yet. Open up ``Game.gd`` and
 add the following additional class variables:
@@ -282,21 +280,21 @@ Next, let's look at the class variables:
 * ``COLLISION_FORCE``: A constant that defines the amount of force that is applied to :ref:`RigidBody <class_RigidBody>` nodes when the pistol's bullet collides.
 
 
-``_ready`` function step-by-step explanation
-""""""""""""""""""""""""""""""""""""""""""""
+Pistol _ready function
+""""""""""""""""""""""
 
 This function gets the nodes and assigns them to their proper variables. For the ``flash_mesh`` and ``laser_sight_mesh`` nodes, both have their ``visible`` property set to ``false``
 so they are not visible initially.
 
-``_physics_process`` function step-by-step explanation
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Pistol _physics_process function
+""""""""""""""""""""""""""""""""
 
 The ``_physics_process`` function first checks to see if the pistol's muzzle flash is visible by checking if ``flash_timer`` is more than zero. If ``flash_timer`` is more than
 zero, then we remove time, ``delta`` from it. Next we check if the ``flash_timer`` variable is zero or less now that we removed ``delta`` from it. If it is, then the pistol
 muzzle flash timer just finished and so we need to make ``flash_mesh`` invisible by setting it's ``visible`` property to ``false``.
 
-``interact`` function step-by-step explanation
-""""""""""""""""""""""""""""""""""""""""""""""
+Pistol interact function
+""""""""""""""""""""""""
 
 The interact function first checks to see if the pistol's muzzle flash is invisible by checking to see if ``flash_timer`` is less than or equal to zero. We do this so we
 can limit the rate of fire of the pistol to the length of time the muzzle flash is visible, which is a simple solution for limiting how fast the player can fire.
@@ -339,13 +337,13 @@ Finally, we check to see if the pistol is being held by a VR controller by check
 we then set the ``rumble`` property of the VR controller to ``0.25``, so there is a slight rumble when the pistol fires.
 
 
-``picked_up`` function step-by-step explanation
-"""""""""""""""""""""""""""""""""""""""""""""""
+Pistol picked_up function
+"""""""""""""""""""""""""
 
 This function simply makes the ``laser_sight_mesh`` :ref:`MeshInstance <class_MeshInstance>` visible by setting the ``visible`` property to ``true``.
 
-``dropped`` function step-by-step explanation
-"""""""""""""""""""""""""""""""""""""""""""""
+Pistol dropped function
+"""""""""""""""""""""""
 
 This function simply makes the ``laser_sight_mesh`` :ref:`MeshInstance <class_MeshInstance>` invisible by setting the ``visible`` property to ``false``.
 
@@ -469,8 +467,8 @@ There is only one new class variable:
 The new class variable replaces the ``raycast`` variable from ``Pistol.gd``, because with the shotgun we need to process multiple :ref:`Raycast <class_Raycast>` nodes
 instead of just one. All of the other class variables are the same as ``Pistol.gd`` and function the same way, some just are renamed to be non-pistol specific.
 
-``interact`` function step-by-step explanation
-""""""""""""""""""""""""""""""""""""""""""""""
+Shotgun interact function
+"""""""""""""""""""""""""
 
 The interact function first checks to see if the shotgun's muzzle flash is invisible by checking to see if ``flash_timer`` is less than or equal to zero. We do this so we
 can limit the rate of fire of the shotgun to the length of time the muzzle flash is visible, which is a simple solution for limiting how fast the player can fire.
@@ -680,8 +678,8 @@ Next, let's look at the class variables:
 * ``explosion_sound``: A variable to hold a reference to the :ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` node used for the explosion sound.
 
 
-``_ready`` function step-by-step explanation
-""""""""""""""""""""""""""""""""""""""""""""
+Bomb _ready function
+""""""""""""""""""""
 
 The ``_ready`` function first gets all of the nodes from the bomb scene and assigns them to their respective class variables for later use.
 
@@ -690,8 +688,8 @@ the fuse and exploding the bomb, which we only want to do when the user interact
 before the user has a chance to get to the bomb.
 
 
-``_physics_process`` function step-by-step explanation
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bomb _physics_process function
+""""""""""""""""""""""""""""""
 
 The ``_physics_process`` function first checks to see if ``fuse_timer`` is less than ``FUSE_TIME``. If it is, then the bomb's fuse is still burning.
 
@@ -756,8 +754,8 @@ visible by setting ``controller.hand_mesh.visible`` to ``true``. Then we check t
 
 Finally, regardless if the bomb is being held by a VR controller or not, we call ``queue_free`` so the bomb scene is freed/removed from the scene.
 
-``interact`` function step-by-step explanation
-""""""""""""""""""""""""""""""""""""""""""""""
+Bomb interact function
+""""""""""""""""""""""
 
 First the ``interact`` function calls ``set_physics_process`` and passes ``true`` so the code in ``_physics_process`` starts executing. This will start the bomb's fuse and
 eventually lead to the bomb exploding.
@@ -854,8 +852,8 @@ Next, let's look at the class variables:
 * ``sword_noise``: A variable to hold the :ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` node used to play a sound when the sword collides with something.
 
 
-``_ready`` function step-by-step explanation
-""""""""""""""""""""""""""""""""""""""""""""
+Sword _ready function
+"""""""""""""""""""""
 
 All we are doing in the ``_ready`` function is getting the ``Damage_Body`` :ref:`KinematicBody <class_KinematicBody>` node and assigning it to ``damage_body``.
 Because we do not want the sword to detect a collision with the root :ref:`RigidBody <class_RigidBody>` node of the sword, we call
@@ -864,8 +862,8 @@ Because we do not want the sword to detect a collision with the root :ref:`Rigid
 Finally, we get the :ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` node for the sword collision sound and apply it to the ``sword_noise`` variable.
 
 
-``_physics_process`` function step-by-step explanation
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Sword _physics_process function
+"""""""""""""""""""""""""""""""
 
 First we need to determine whether the sword is colliding with something or not. To do this, we use the ``move_and_collide`` function of the ``damage_body`` node.
 Unlike how ``move_and_collide`` is normally used, we are not passing a velocity and instead are passing an empty :ref:`Vector3 <class_Vector3>`. Because we do not

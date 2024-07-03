@@ -1,5 +1,3 @@
-.. _doc_2d_movement:
-
 2D movement overview
 ====================
 
@@ -13,8 +11,6 @@ the movement in most 2D games is based on a small number of designs.
 We'll use :ref:`KinematicBody2D <class_KinematicBody2D>` for these examples,
 but the principles will apply to other node types (Area2D, RigidBody2D) as well.
 
-.. _doc_2d_movement_setup:
-
 Setup
 -----
 
@@ -23,7 +19,7 @@ children: ``Sprite`` and ``CollisionShape2D``. You can use the Rebel icon ("icon
 for the Sprite's texture or use any other 2D image you have.
 
 Open ``Project -> Project Settings`` and select the "Input Map" tab. Add the following
-input actions (see :ref:`InputEvent <doc_inputevent>` for details):
+input actions (see :doc:`InputEvent </tutorials/inputs/inputevent>` for details):
 
 .. image:: img/movement_inputs.png
 
@@ -109,13 +105,13 @@ We can prevent that if we *normalize* the velocity, which means we set
 its *length* to ``1``, and multiply by the desired speed.
 
 .. tip:: If you've never used vector math before, or need a refresher,
-         you can see an explanation of vector usage in Rebel Engine at :ref:`doc_vector_math`.
+         you can see an explanation of vector usage in Rebel Engine at :doc:`/tutorials/math/vector_math`.
 
 .. note::
 
     If the code above does nothing when you press the keys, double-check that
     you've set up input actions correctly as described in the
-    :ref:`doc_2d_movement_setup` part of this tutorial.
+    `Setup`_ part of this tutorial.
 
 Rotation + movement
 -------------------

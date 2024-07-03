@@ -1,5 +1,3 @@
-.. _doc_custom_servers:
-
 Custom Servers
 ==============
 
@@ -13,13 +11,12 @@ engine and other modules. In addition, the server claims ownership for
 its RID allocations.
 
 This guide assumes the reader knows how to create C++ modules and Rebel Engine
-data types. If not, refer to :ref:`doc_custom_modules_in_c++`.
+data types. If not, refer to :doc:`custom_modules_in_cpp`.
 
-References
-~~~~~~~~~~~
+.. seealso::
 
-- `Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__
-- `Mediator pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__
+  - `Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__
+  - `Mediator pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__
 
 What for?
 ---------
@@ -309,11 +306,10 @@ object-oriented C code.
 		~InfiniteBus() {};
 	}
 
-References
-~~~~~~~~~~~
+.. seealso::
 
-- :ref:`RID<class_rid>`
-- `core/rid.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/rid.h>`__
+  - :ref:`RID<class_rid>`
+  - `core/rid.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/rid.h>`__
 
 Registering the class in GDScript
 ---------------------------------
@@ -468,10 +464,9 @@ the target object RID and use either ``push_call``, ``push_set``, or ``push_noti
 to execute the desired behavior. The queue will be flushed whenever either
 ``SceneTree::idle`` or ``SceneTree::iteration`` is executed.
 
-References:
-~~~~~~~~~~~
+.. seealso::
 
-- `core/message_queue.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/message_queue.h>`__
+  - `core/message_queue.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/message_queue.h>`__
 
 Summing it up
 -------------

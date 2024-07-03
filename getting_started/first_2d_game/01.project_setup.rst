@@ -1,5 +1,3 @@
-.. _doc_your_first_2d_game_project_setup:
-
 Setting up the project
 ======================
 
@@ -26,7 +24,7 @@ Launch Rebel Editor and create a new project.
 
     Ensure that you have the required dependencies to use C# in Rebel Editor.
     You need the .NET Core 3.1 SDK, and an editor such as VS Code.
-    See :ref:`doc_c_sharp_setup`.
+    See :ref:`tutorials/scripting/c_sharp/c_sharp_basics:setting up c# for rebel engine`.
 
  .. tab:: GDNative C++
 

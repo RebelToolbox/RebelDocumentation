@@ -1,5 +1,3 @@
-.. _doc_c_sharp:
-
 C# basics
 =========
 
@@ -16,9 +14,9 @@ Introduction
 
 This page provides a brief introduction to C#, both what it is and
 how to use it in Rebel Engine. Afterwards, you may want to look at
-:ref:`how to use specific features <doc_c_sharp_features>`, read about the
-:ref:`differences between the C# and the GDScript API <doc_c_sharp_differences>`
-and (re)visit the :ref:`Scripting section <doc_scripting>` of the
+:doc:`how to use specific features </tutorials/scripting/c_sharp/c_sharp_features>`, read about the
+:doc:`differences between the C# and the GDScript API </tutorials/scripting/c_sharp/c_sharp_differences>`
+and (re)visit the :doc:`Scripting section </getting_started/step_by_step/scripting_languages>` of the
 step-by-step tutorial.
 
 C# is a high-level programming language developed by Microsoft. In Rebel Engine,
@@ -34,8 +32,6 @@ page in the Mono documentation.
         see the
         `Microsoft C# guide <https://docs.microsoft.com/en-us/dotnet/csharp/index>`_
         or look for a suitable introduction elsewhere.
-
-.. _doc_c_sharp_setup:
 
 Setting up C# for Rebel Engine
 ------------------------------
@@ -67,7 +63,7 @@ if you are using the 64-bit version of Rebel Engine.
 If you are building Rebel Engine from source, install the latest stable version of
 `Mono <https://www.mono-project.com/download/stable/>`__, and make sure to
 follow the steps to enable Mono support in your build as outlined in the
-:ref:`doc_compiling_with_mono` page.
+:doc:`/development/compiling/compiling_with_mono` page.
 
 Configuring an external editor
 ------------------------------
@@ -180,7 +176,7 @@ when selecting **Attach Script** in the context menu of a node in your scene:
 
 Note that while some specifics change, most concepts work the same
 when using C# for scripting. If you're new to Rebel, you may want to follow
-the tutorials on :ref:`doc_scripting` at this point.
+the tutorials on :doc:`/getting_started/step_by_step/scripting_languages` at this point.
 While some places in the documentation still lack C# examples, most concepts
 can be transferred easily from GDScript.
 
@@ -245,7 +241,7 @@ The C# API uses ``PascalCase`` instead of ``snake_case`` in GDScript/C++.
 Where possible, fields and getters/setters have been converted to properties.
 In general, the C# Rebel Engine API strives to be as idiomatic as is reasonably possible.
 
-For more information, see the :ref:`doc_c_sharp_differences` page.
+For more information, see the :doc:`c_sharp_differences` page.
 
 .. warning::
 

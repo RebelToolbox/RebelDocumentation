@@ -1,5 +1,3 @@
-.. _doc_visual_shaders:
-
 Using VisualShaders
 ===================
 
@@ -16,7 +14,7 @@ necessary for specific effects.
 .. note::
 
     If you are not familiar with shaders, start by reading
-    :ref:`doc_introduction_to_shaders`.
+    :doc:`introduction_to_shaders`.
 
 Creating a VisualShader
 -----------------------

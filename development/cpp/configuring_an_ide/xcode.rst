@@ -1,5 +1,3 @@
-.. _doc_configuring_an_ide_xcode:
-
 Xcode
 =====
 
@@ -18,13 +16,13 @@ Importing the project
 - Open your build targets from the **Targets** section and select the **Info** tab.
 - Fill out the form with the following settings:
 
-  +------------+------------------------------------------------------------------------------+
-  | Build Tool | A full path to the **scons** executable, e.g. **/usr/local/bin/scons**       |
-  +------------+------------------------------------------------------------------------------+
-  | Arguments  | See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments. |
-  +------------+------------------------------------------------------------------------------+
-  | Directory  | A full path to the Rebel Engine root folder                                  |
-  +------------+------------------------------------------------------------------------------+
+  +------------+-------------------------------------------------------------------------------------------------+
+  | Build Tool | A full path to the **scons** executable, e.g. **/usr/local/bin/scons**                          |
+  +------------+-------------------------------------------------------------------------------------------------+
+  | Arguments  | See :doc:`/development/compiling/introduction_to_the_buildsystem` for a full list of arguments. |
+  +------------+-------------------------------------------------------------------------------------------------+
+  | Directory  | A full path to the Rebel Engine root folder                                                     |
+  +------------+-------------------------------------------------------------------------------------------------+
 
 .. figure:: img/xcode_2_configure_scons.png
    :figclass: figure-w480

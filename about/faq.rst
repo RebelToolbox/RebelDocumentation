@@ -1,8 +1,6 @@
 .. meta::
     :keywords: FAQ
 
-.. _doc_faq:
-
 Frequently asked questions
 ==========================
 
@@ -79,8 +77,6 @@ we recommend that you first do some due diligence yourself. Searching through
 discussions on `open issues <https://github.com/RebelToolbox/RebelEngine/issues>`_ is a
 great way to start your troubleshooting.
 
-.. _doc_faq_what_is_gdscript:
-
 What is GDScript and why should I use it?
 -----------------------------------------
 
@@ -89,7 +85,7 @@ up to maximize Rebel Engine's potential in the least amount of code, affording b
 and expert developers alike to capitalize on Rebel Engine's strengths as fast as possible.
 If you've ever written anything in a language like Python before then you'll feel
 right at home. For examples, history, and a complete overview of the power GDScript
-offers you, check out the :ref:`GDScript scripting guide <doc_gdscript>`.
+offers you, check out the :doc:`GDScript scripting guide </tutorials/scripting/gdscript/gdscript_basics>`.
 
 There are several reasons to use GDScript--especially when you are prototyping, in
 alpha/beta stages of your project, or are not creating the next AAA title--but the
@@ -113,7 +109,7 @@ once you see how powerful it is and rapid your development becomes, we think GDS
 will grow on you.
 
 More information about getting comfortable with GDScript or dynamically typed
-languages can be found in the :ref:`doc_gdscript_more_efficiently` tutorial.
+languages can be found in the :doc:`/tutorials/scripting/gdscript/gdscript_advanced` tutorial.
 
 What were the motivations behind creating GDScript?
 ---------------------------------------------------
@@ -208,7 +204,7 @@ Linux
   This is typically ``/usr/local/bin/rebel`` or ``/usr/bin/rebel``.
   Doing this requires administrator privileges,
   but this also allows you to
-  :ref:`run Rebel Engine from a terminal <doc_command_line_tutorial>` by entering ``rebel``.
+  :doc:`run Rebel Engine from a terminal </tutorials/editor/command_line_tutorial>` by entering ``rebel``.
 
   - If you cannot move the Rebel Engine binary to a protected location, you can
     keep the binary somewhere in your home directory, and modify the ``Path=``
@@ -230,10 +226,10 @@ administrator privileges.
 However, configuration files will be written to the user-wide configuration or
 data directory. This is usually a good approach, but this means configuration files
 will not carry across machines if you copy the folder containing the Rebel Engine executable.
-See :ref:`doc_data_paths` for more information.
+See :doc:`/tutorials/io/data_paths` for more information.
 
 If *true* portable operation is desired (e.g. for use on an USB stick),
-follow the steps in :ref:`doc_data_paths_self_contained_mode`.
+follow the steps in :ref:`tutorials/io/data_paths:self-contained mode`.
 
 Why does Rebel Engine use Vulkan or OpenGL instead of Direct3D?
 ---------------------------------------------------------------
@@ -292,7 +288,7 @@ functionality in Rebel Engine. This is why we are aiming to move some core
 functionality to officially supported add-ons in future versions of Rebel Engine. In
 terms of binary size, this also has the advantage of making you pay only for what
 you actually use in your project. (In the meantime, you can
-:ref:`compile custom export templates with unused features disabled <doc_optimizing_for_size>`
+:doc:`compile custom export templates with unused features disabled </development/compiling/optimizing_for_size>`
 to optimize the distribution size of your project.)
 
 How should assets be created to handle multiple resolutions and aspect ratios?
@@ -319,15 +315,15 @@ This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or YFov
    and the longer the time it will take for loading.
 
 2. Use the stretch options in Rebel Engine; 2D stretching while keeping aspect
-   ratios works best. Check the :ref:`doc_multiple_resolutions` tutorial
+   ratios works best. Check the :doc:`/tutorials/rendering/multiple_resolutions` tutorial
    on how to achieve this.
 
 3. Determine a minimum resolution and then decide if you want your game
    to stretch vertically or horizontally for different aspect ratios, or
    if there is one aspect ratio and you want black bars to appear
-   instead. This is also explained in :ref:`doc_multiple_resolutions`.
+   instead. This is also explained in :doc:`/tutorials/rendering/multiple_resolutions`.
 
-4. For user interfaces, use the :ref:`anchoring <doc_size_and_anchors>`
+4. For user interfaces, use the :doc:`anchoring </tutorials/ui/size_and_anchors>`
    to determine where controls should stay and move. If UIs are more
    complex, consider learning about Containers.
 
@@ -342,7 +338,7 @@ How can I extend Rebel Engine?
 ------------------------------
 
 For extending Rebel Engine, like creating Rebel Editor plugins or adding support
-for additional languages, take a look at :ref:`EditorPlugins <doc_making_plugins>`
+for additional languages, take a look at :doc:`EditorPlugins </tutorials/plugins/editor/making_plugins>`
 and tool scripts.
 
 You can also take a look at the GDScript implementation and other the Rebel Engine modules.
@@ -352,7 +348,7 @@ integrates with Rebel Engine.
 When is the next release of Rebel Engine out?
 ---------------------------------------------
 
-When it's ready! See :ref:`doc_release_policy` for more
+When it's ready! See :doc:`release_policy` for more
 information.
 
 I would like to contribute! How can I get started?
@@ -399,8 +395,6 @@ developer experiences as a whole.
 Bonus points for bringing screenshots, concrete numbers, test cases, or example
 projects (if applicable).
 
-.. _doc_faq_non_game_applications:
-
 Is it possible to use Rebel Engine to create non-game applications?
 -------------------------------------------------------------------
 
@@ -413,8 +407,6 @@ in the Project Settings to decrease CPU and GPU usage.
 
 That said, we wouldn't recommend using Rebel Engine to create a *mobile* application
 since low-processor mode isn't supported on mobile platforms yet.
-
-.. _doc_faq_use_rebel_engine_as_library:
 
 Is it possible to use Rebel Engine as a library?
 ------------------------------------------------
@@ -445,11 +437,9 @@ have to deal with the LGPL licensing caveats that come with GTK or Qt. Lastly,
 this means Rebel Engine is "eating its own dog food" since the editor itself is one of
 the most complex users of Rebel Engine's UI system.
 
-This custom UI toolkit :ref:`can't be used as a library <doc_faq_use_rebel_engine_as_library>`,
+This custom UI toolkit :ref:`can't be used as a library <about/faq:Is it possible to use Rebel Engine as a library?>`,
 but you can still
-:ref:`use Rebel Engine to create non-game applications by using the editor <doc_faq_non_game_applications>`.
-
-.. _doc_faq_why_not_stl:
+:ref:`use Rebel Engine to create non-game applications by using the editor <about/faq:Is it possible to use Rebel Engine to create non-game applications?>`.
 
 Why does Rebel Engine not use STL (Standard Template Library)?
 --------------------------------------------------------------
@@ -506,4 +496,4 @@ performance parts and GDScript (or C#) for the rest of the game.
 How can I support Rebel Engine development or contribute?
 ---------------------------------------------------------
 
-See :ref:`doc_ways_to_contribute`.
+See :doc:`/contributing/ways_to_contribute`.

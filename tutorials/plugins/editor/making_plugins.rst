@@ -1,5 +1,3 @@
-.. _doc_making_plugins:
-
 Making plugins
 ==============
 
@@ -85,7 +83,8 @@ A good practice is to use the virtual function
 the dialog generates these callbacks for you. Your script should look something
 like this:
 
-.. _doc_making_plugins_template_code:
+.. _template_code:
+
 .. tabs::
  .. code-tab:: gdscript GDScript
 
@@ -138,7 +137,7 @@ custom behavior.
 
   Nodes added via an EditorPlugin are "CustomType" nodes. While they work
   with any scripting language, they have fewer features than
-  :ref:`the Script Class system <doc_gdscript_basics_class_name>`. If you
+  :ref:`the Script Class system <tutorials/scripting/gdscript/gdscript_basics:registering named classes>`. If you
   are writing GDScript or NativeScript, we recommend using Script Classes instead.
 
 To create a new node type, you can use the function
@@ -288,7 +287,7 @@ add the following content to it:
     script="CustomDock.cs"
 
 Then create the script ``custom_dock.gd`` in the same folder. Fill it with the
-:ref:`template we've seen before <doc_making_plugins_template_code>` to get a
+:ref:`template we've seen before <template_code>` to get a
 good start.
 
 Since we're trying to add a new custom dock, we need to create the contents of

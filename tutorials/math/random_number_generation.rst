@@ -1,5 +1,3 @@
-.. _doc_random_number_generation:
-
 Random number generation
 ========================
 
@@ -121,7 +119,7 @@ denominator:
 
 :ref:`randf() <class_@GDScript_method_randf>` returns a random floating-point
 number between 0 and 1. This is useful to implement a
-:ref:`doc_random_number_generation_weighted_random_probability` system, among
+`Weighted random probability`_ system, among
 other things.
 
 :ref:`randfn() <class_RandomNumberGenerator_method_randfn>` returns a random
@@ -293,7 +291,7 @@ more logic to this method:
 This approach can be useful to make random number generation feel less
 repetitive. Still, it doesn't prevent results from "ping-ponging" between a
 limited set of values. To prevent this, use the :ref:`shuffle bag
-<doc_random_number_generation_shuffle_bags>` pattern instead.
+<tutorials/math/random_number_generation:"Better" randomness using shuffle bags>` pattern instead.
 
 Get a random dictionary value
 -----------------------------
@@ -322,8 +320,6 @@ We can apply similar logic from arrays to dictionaries as well:
         # Returns a random metal value dictionary every time the code runs.
         # The same metal may be selected multiple times in succession.
         return random_metal
-
-.. _doc_random_number_generation_weighted_random_probability:
 
 Weighted random probability
 ---------------------------
@@ -387,8 +383,6 @@ floating-point number between 0.0 and 1.0. We can use this to create a
             return "Rare";
         }
     }
-
-.. _doc_random_number_generation_shuffle_bags:
 
 "Better" randomness using shuffle bags
 --------------------------------------

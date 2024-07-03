@@ -1,5 +1,3 @@
-.. _doc_batching:
-
 Optimization using batching
 ===========================
 
@@ -100,7 +98,7 @@ In Rebel Engine, this back-to-front order is determined by:
     You can group similar objects together for easier batching. While doing so
     is not a requirement on your part, think of it as an optional approach that
     can improve performance in some cases. See the
-    :ref:`doc_batching_diagnostics` section to help you make this decision.
+    `Diagnostics`_ section to help you make this decision.
 
 A trick
 ^^^^^^^
@@ -248,7 +246,7 @@ to be useful.
 
 The exact relationship is probably not necessary for users to worry about, but
 is included in the appendix out of interest:
-:ref:`doc_batching_light_scissoring_threshold_calculation`
+`Light scissoring threshold calculation`_
 
 .. figure:: img/scissoring.png
    :alt: Light scissoring example diagram
@@ -396,8 +394,6 @@ rendering/batching/precision
   Hopefully, the default amount should cure artifacts on most devices,
   but this value remains adjustable just in case.
 
-.. _doc_batching_diagnostics:
-
 Diagnostics
 ~~~~~~~~~~~
 
@@ -528,9 +524,7 @@ primitive types are currently available:
 
 With non-batched primitives, you may be able to get better performance by
 drawing them manually with polys in a ``_draw()`` function.
-See :ref:`doc_custom_drawing_in_2d` for more information.
-
-.. _doc_batching_light_scissoring_threshold_calculation:
+See :doc:`/tutorials/2d/custom_drawing_in_2d` for more information.
 
 Light scissoring threshold calculation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

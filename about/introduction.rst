@@ -1,5 +1,3 @@
-.. _doc_about_intro:
-
 Introduction
 ============
 
@@ -69,7 +67,7 @@ relatively intuitive:
 
 - The :ref:`sec-general` section contains this introduction as well as
   information about the engine, its history, its licensing, authors, etc. It
-  also contains the :ref:`doc_faq`.
+  also contains the :doc:`faq`.
 - The :ref:`sec-learn` section is the primary reason for this
   documentation, as it contains all the necessary information on using the
   engine to make games. It starts with the :ref:`Step by step
@@ -87,6 +85,6 @@ relatively intuitive:
   which is also available directly within the engine's script editor. It is
   generated automatically from a file in the main source repository, therefore
   the generated files of the documentation are not meant to be modified. See
-  :ref:`doc_updating_the_api_documentation` for details.
+  :doc:`/contributing/updating_the_api_documentation` for details.
 
 Have fun reading and making games with Rebel Engine!

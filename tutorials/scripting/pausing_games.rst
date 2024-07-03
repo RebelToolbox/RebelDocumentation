@@ -1,5 +1,3 @@
-.. _doc_pausing_games:
-
 Pausing games
 =============
 

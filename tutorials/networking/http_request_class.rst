@@ -1,10 +1,8 @@
-.. _doc_http_request_class:
-
 Making HTTP requests
 ====================
 
 The :ref:`HTTPRequest <class_HTTPRequest>` node is the easiest way to make HTTP requests in Rebel Engine.
-It is backed by the more low-level :ref:`HTTPClient <class_HTTPClient>`, for which a tutorial is available :ref:`here <doc_http_client_class>`.
+It is backed by the more low-level :ref:`HTTPClient <class_HTTPClient>`, for which a tutorial is available :doc:`here </tutorials/networking/http_client_class>`.
 
 For the sake of this example, we will create a simple UI with a button, that when pressed will start the HTTP request to the specified URL.
 
@@ -89,7 +87,7 @@ For example, to set a custom user agent (the HTTP ``user-agent`` header) you cou
         HTTPRequest httpRequest = GetNode<HTTPRequest>("HTTPRequest");
         httpRequest.Request("http://www.mocky.io/v2/5185415ba171ea3a00704eed", new string[] { "user-agent: YourCustomUserAgent" });
 
-Please note that, for SSL/TLS encryption and thus HTTPS URLs to work, you may need to take some steps as described :ref:`here <doc_ssl_certificates>`.
+Please note that, for SSL/TLS encryption and thus HTTPS URLs to work, you may need to take some steps as described :doc:`here </tutorials/networking/ssl_certificates>`.
 
 Also, when calling APIs using authorization, be aware that someone might analyse and decompile your released application and thus may gain access to any embedded authorization information like tokens, usernames or passwords.
 That means it is usually not a good idea to embed things such as database access credentials inside your game. Avoid providing information useful to an attacker whenever possible.

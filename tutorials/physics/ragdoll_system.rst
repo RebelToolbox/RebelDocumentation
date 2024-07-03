@@ -1,5 +1,3 @@
-.. _doc_ragdoll_system:
-
 Ragdoll system
 ==============
 
@@ -82,4 +80,4 @@ Make sure to set up your collision layers and masks properly so the ``KinematicB
 
 .. image:: img/ragdoll_layer.png
 
-For more information, read :ref:`doc_physics_introduction_collision_layers_and_masks`.
+For more information, read :ref:`tutorials/physics/physics_introduction:collision layers and masks`.

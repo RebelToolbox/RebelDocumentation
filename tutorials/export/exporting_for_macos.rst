@@ -1,5 +1,3 @@
-.. _doc_exporting_for_macos:
-
 Exporting for macOS
 ===================
 
@@ -7,7 +5,7 @@ Exporting for macOS
 
     This page describes how to export a Rebel project to macOS.
     If you're looking to compile editor or export template binaries from source instead,
-    read :ref:`doc_compiling_for_osx`.
+    read :doc:`/development/compiling/compiling_for_osx`.
 
 macOS apps are exported as an ``.app`` bundle, a folder with a specific structure which stores the executable, libraries and all the project files.
 This bundle is packed in a ZIP archive or DMG disk image (only supported when exporting for macOS).
@@ -20,12 +18,12 @@ Requirements
 
 .. warning::
 
-    Projects exported without code signing and notarization will be blocked by Gatekeeper if they are downloaded from unknown sources, see the :ref:`Running Rebel apps on macOS <doc_running_on_macos>` page for more information.
+    Projects exported without code signing and notarization will be blocked by Gatekeeper if they are downloaded from unknown sources, see the :doc:`Running Rebel apps on macOS </tutorials/export/running_on_macos>` page for more information.
 
 Code signing and notarization
 -----------------------------
 
-By default, macOS will run only applications that are signed and notarized. If you use any other signing configuration, see :ref:`Running Rebel apps on macOS <doc_running_on_macos>` for workarounds.
+By default, macOS will run only applications that are signed and notarized. If you use any other signing configuration, see :doc:`Running Rebel apps on macOS </tutorials/export/running_on_macos>` for workarounds.
 
 To notarize an app, you **must** have a valid `Apple Developer ID Certificate <https://developer.apple.com/>`__.
 

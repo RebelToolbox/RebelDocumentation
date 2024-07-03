@@ -1,5 +1,3 @@
-.. _doc_first_3d_game_spawning_monsters:
-
 Spawning monsters
 =================
 

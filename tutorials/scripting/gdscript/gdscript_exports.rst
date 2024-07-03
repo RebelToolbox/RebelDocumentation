@@ -1,5 +1,3 @@
-.. _doc_gdscript_exports:
-
 GDScript exports
 ================
 
@@ -28,9 +26,6 @@ special export syntax is provided.
 
     Exporting properties can also be done in other languages such as C#.
     The syntax varies depending on the language.
-
-..
-   See  ref `doc_c_sharp_exports` for information on C# exports.
 
 Examples
 --------
@@ -138,7 +133,7 @@ Examples
 
 It must be noted that even if the script is not being run while in the
 editor, the exported properties are still editable. This can be used
-in conjunction with a :ref:`script in "tool" mode <doc_gdscript_tool_mode>`.
+in conjunction with a :ref:`script in "tool" mode <tutorials/scripting/gdscript/gdscript_basics:tool mode>`.
 
 Exporting bit flags
 -------------------
@@ -211,7 +206,7 @@ Setting exported variables from a tool script
 ---------------------------------------------
 
 When changing an exported variable's value from a script in
-:ref:`doc_gdscript_tool_mode`, the value in the inspector won't be updated
+:ref:`tutorials/scripting/gdscript/gdscript_basics:tool mode`, the value in the inspector won't be updated
 automatically. To update it, call
 :ref:`property_list_changed_notify() <class_Object_method_property_list_changed_notify>`
 after setting the exported variable's value.
@@ -228,10 +223,10 @@ handled and how they can be customized with
 :ref:`_set() <class_Object_method__get_property_list>`,
 :ref:`_get() <class_Object_method__get_property_list>`, and
 :ref:`_get_property_list() <class_Object_method__get_property_list>` methods as
-described in :ref:`doc_accessing_data_or_logic_from_object`.
+described in :ref:`tutorials/best_practices/interfaces:accessing data or logic from an object`.
 
 .. seealso:: For binding properties using the above methods in C++, see
-             :ref:`doc_binding_properties_using_set_get_property_list`.
+             :ref:`development/cpp/object_class:binding properties`.
 
 .. warning:: The script must operate in the ``tool`` mode so the above methods
              can work from within the editor.

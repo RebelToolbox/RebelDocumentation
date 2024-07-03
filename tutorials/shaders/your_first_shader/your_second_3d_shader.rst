@@ -1,5 +1,3 @@
-.. _doc_your_second_spatial_shader:
-
 Your second 3D shader
 =====================
 
@@ -12,8 +10,8 @@ the extra feature. This makes it easy for users to have complex PBR-correct
 shading, without writing complex shaders. Of course, Rebel Engine also allows you to
 ignore all these parameters and write a fully customized shader.
 
-For a full list of these parameters see the :ref:`spatial shader
-<doc_spatial_shader>` reference doc.
+For a full list of these parameters see the :doc:`spatial shader
+</tutorials/shaders/shader_reference/spatial_shader>` reference doc.
 
 A difference between the vertex function and a fragment function is that the
 vertex function runs per vertex and sets properties such as ``VERTEX``
@@ -48,8 +46,8 @@ specular mode to toon:
 This model of built-in functionality allows you to write complex custom shaders
 by changing only a few parameters.
 
-For a full list of render modes see the :ref:`Spatial shader reference
-<doc_spatial_shader>`.
+For a full list of render modes see the :doc:`Spatial shader reference
+</tutorials/shaders/shader_reference/spatial_shader>`.
 
 In this part of the tutorial, we will walk through how to take the bumpy terrain
 from the previous part and turn it into an ocean.
@@ -343,8 +341,8 @@ to do was add a bit of math!
 
 .. image:: img/wave3.png
 
-For more information about Spatial shaders read the :ref:`Shading Language
-<doc_shading_language>` doc and the :ref:`Spatial Shaders <doc_spatial_shader>`
+For more information about Spatial shaders read the :doc:`Shading Language
+</tutorials/shaders/shader_reference/shading_language>` doc and the :doc:`Spatial Shaders </tutorials/shaders/shader_reference/spatial_shader>`
 doc. Also look at more advanced tutorials in the :ref:`Shading section
 <toc-learn-features-shading>` and the :ref:`3D <toc-learn-features-3d>`
 sections.

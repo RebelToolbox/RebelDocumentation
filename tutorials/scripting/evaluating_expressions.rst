@@ -1,5 +1,3 @@
-.. _doc_evaluating_expressions:
-
 Evaluating expressions
 ======================
 

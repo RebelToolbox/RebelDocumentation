@@ -1,5 +1,3 @@
-.. _doc_vectors_advanced:
-
 Advanced vector math
 ====================
 
@@ -590,7 +588,7 @@ More information
 
 For more information on using vector math in Rebel Engine, see the following article:
 
-- :ref:`doc_matrices_and_transforms`
+- :doc:`matrices_and_transforms`
 
 If you would like additional explanation, you should check out
 3Blue1Brown's excellent video series "Essence of Linear Algebra":

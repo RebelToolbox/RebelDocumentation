@@ -1,5 +1,3 @@
-.. _doc_bisecting_regressions:
-
 Bisecting regressions
 =====================
 
@@ -56,7 +54,7 @@ To start bisecting, you must first determine the commit hashes (identifiers) of
 the "bad" and "good" build. "bad" refers to the build that exhibits the bug,
 whereas "good" refers to the version that doesn't exhibit the bug.
 
-:ref:`Get Rebel Engine's source code using Git <doc_getting_source>`. Once this
+:doc:`Get Rebel Engine's source code using Git </development/compiling/getting_source>`. Once this
 is done, in the terminal window, use ``cd`` to reach the Rebel Engine repository
 folder and enter the following command:
 

@@ -1,5 +1,3 @@
-.. _doc_getting_started_visual_script:
-
 Getting started with Visual Scripting
 =====================================
 

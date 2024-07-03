@@ -1,5 +1,3 @@
-.. _doc_2d_sprite_animation:
-
 2D Sprite animation
 ===================
 
@@ -40,7 +38,7 @@ with the following nodes:
           :ref:`RigidBody2D <class_RigidBody2D>`. The animation will still be
           made in the same way. Once the animation is completed, you can
           assign a shape to the CollisionShape2D. See
-          :ref:`Physics Introduction <doc_physics_introduction>` for more
+          :doc:`Physics Introduction </tutorials/physics/physics_introduction>` for more
           information.
 
 Now select the ``AnimatedSprite`` and in its *SpriteFrames* property, select
@@ -170,7 +168,7 @@ setting up your scene tree:
           :ref:`RigidBody2D <class_RigidBody2D>`. The animation will still be
           made in the same way. Once the animation is completed, you can
           assign a shape to the CollisionShape2D. See
-          :ref:`Physics Introduction <doc_physics_introduction>` for more
+          :doc:`Physics Introduction </tutorials/physics/physics_introduction>` for more
           information.
 
 Drag the spritesheet into the Sprite's *Texture* property, and you'll see the

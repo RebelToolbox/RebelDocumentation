@@ -1,5 +1,3 @@
-.. _doc_first_3d_game_designing_the_mob_scene:
-
 Designing the mob scene
 =======================
 
@@ -69,7 +67,7 @@ Rebel Engine has a node that detects when objects leave the screen,
     reason to use pools is to avoid freezes with garbage-collected languages
     like C# or Lua. GDScript uses a different technique to manage memory,
     reference counting, which doesn't have that caveat. You can learn more
-    about that here :ref:`doc_gdscript_basics_memory_management`.
+    about that here :doc:`/tutorials/scripting/gdscript/gdscript_basics`.
 
 Select the *Mob* node and add a *VisibilityNotifier* as a child of it. Another
 box, pink this time, appears. When this box completely leaves the screen, the
@@ -144,7 +142,7 @@ You may see a warning in GDScript that the return value from
 warning or, if you want to hide it entirely, add the comment
 ``# warning-ignore:return_value_discarded`` just above the
 ``move_and_slide(velocity)`` line. To read more about the GDScript warning
-system, see :ref:`doc_gdscript_warning_system`.
+system, see :doc:`/tutorials/scripting/gdscript/warning_system`.
 
 We need to define another function to calculate the start velocity. This
 function will turn the monster towards the player and randomize both its angle

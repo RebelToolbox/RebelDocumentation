@@ -1,5 +1,3 @@
-.. _doc_consoles:
-
 Console support in Rebel
 ========================
 

@@ -1,5 +1,3 @@
-.. _doc_design_philosophy:
-
 Rebel Engine's design philosophy
 ================================
 

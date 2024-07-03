@@ -1,5 +1,3 @@
-.. _doc_project_organization:
-
 Project organization
 ====================
 
@@ -85,8 +83,6 @@ automatically hide it from the FileSystem dock, which can be useful to reduce cl
 
 Note that the ``.gdignore`` file's contents are ignored, which is why the file
 should be empty. It does not support patterns like ``.gitignore`` files do.
-
-.. _doc_project_organization_case_sensitivity:
 
 Case sensitivity
 ----------------

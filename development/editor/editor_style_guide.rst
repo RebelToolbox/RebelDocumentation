@@ -1,5 +1,3 @@
-.. _doc_editor_style_guide:
-
 Editor style guide
 ==================
 
@@ -28,7 +26,7 @@ Writing style
 
 .. seealso::
 
-    Try to follow the :ref:`doc_docs_writing_guidelines` in addition to the
+    Try to follow the :doc:`/contributing/docs_writing_guidelines` in addition to the
     guidelines outlined above.
 
 Button and menu texts

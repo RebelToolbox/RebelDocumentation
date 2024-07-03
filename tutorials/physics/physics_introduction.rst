@@ -1,5 +1,3 @@
-.. _doc_physics_introduction:
-
 Physics introduction
 ====================
 
@@ -45,7 +43,7 @@ The other three bodies extend :ref:`PhysicsBody2D <class_PhysicsBody2D>`:
 - :ref:`RigidBody2D <class_RigidBody2D>`
     This is the node that implements simulated 2D physics. You do not control a
     ``RigidBody2D`` directly, but instead you apply forces to it (gravity, impulses,
-    etc.) and the physics engine calculates the resulting movement. :ref:`Read more about using rigid bodies. <doc_rigid_body>`
+    etc.) and the physics engine calculates the resulting movement. :doc:`Read more about using rigid bodies. </tutorials/physics/rigid_body>`
 
 - :ref:`KinematicBody2D <class_KinematicBody2D>`
     A body that provides collision detection, but no physics. All movement and
@@ -102,8 +100,6 @@ it will typically be equal to ``0.01666...`` (but not always, see below).
     physics calculations, so that the game behaves correctly if you change the
     physics update rate or if the player's device can't keep up.
 
-.. _doc_physics_introduction_collision_layers_and_masks:
-
 Collision layers and masks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -147,8 +143,6 @@ interact with. For example, the Player's settings would look like this:
 
 .. image:: img/player_collision_layers.png
 .. image:: img/player_collision_mask.png
-
-.. _doc_physics_introduction_collision_layer_code_example:
 
 Code example
 ^^^^^^^^^^^^
@@ -498,5 +492,5 @@ the ground (including slopes) and jump when standing on the ground:
     }
 
 
-See :ref:`doc_kinematic_character_2d` for more details on using ``move_and_slide()``,
+See :doc:`kinematic_character_2d` for more details on using ``move_and_slide()``,
 including a demo project with detailed code.

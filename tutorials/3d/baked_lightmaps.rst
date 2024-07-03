@@ -1,5 +1,3 @@
-.. _doc_baked_lightmaps:
-
 Baked lightmaps
 ===============
 
@@ -7,14 +5,14 @@ Introduction
 ------------
 
 Baked lightmaps are an alternative workflow for adding indirect (or fully baked)
-lighting to a scene. Unlike the :ref:`doc_gi_probes` approach, baked lightmaps
+lighting to a scene. Unlike the :doc:`gi_probes` approach, baked lightmaps
 work fine on low-end PCs and mobile devices, as they consume almost no resources
 at run-time. Also unlike GIProbe, baked lightmaps can optionally be used to
 store direct lighting, which provides even further performance gains.
 
 Unlike GIProbes, Baked Lightmaps are completely static. Once baked, they
 can't be modified at all. They also don't provide the scene with reflections, so
-using :ref:`doc_reflection_probes` together with it on interiors (or using a Sky
+using :doc:`reflection_probes` together with it on interiors (or using a Sky
 on exteriors) is a requirement to get good quality.
 
 As they are baked, they have fewer problems than ``GIProbe`` regarding light
@@ -26,7 +24,7 @@ bake lightmaps only when you actually need to see changes in lighting.
 
 Baking lightmaps will also reserve baked materials' UV2 slot, which means you can
 no longer use it for other purposes in materials (either in the built-in
-:ref:`doc_spatial_material` or in custom shaders).
+:doc:`spatial_material` or in custom shaders).
 
 In the end, deciding which indirect lighting approach is better depends on your
 use case. In general, GIProbe is easier to set up and works better with dynamic
@@ -333,7 +331,7 @@ Capture
 - **Quality:** The lightmap probe generation quality. Higher values result in
   more accurate lighting, but take longer to bake. This setting does not affect
   the *density* of the lightmap probes, only their quality.
-- **Propagation:** Similar to :ref:`GIProbe <doc_gi_probes>`'s Propagation property.
+- **Propagation:** Similar to :doc:`GIProbe </tutorials/3d/gi_probes>`'s Propagation property.
   Higher values result in brighter and more diffuse indirect lighting for
   dynamic objects. Adjust this value depending on your scene to make dynamic
   objects better fit with static baked lighting.

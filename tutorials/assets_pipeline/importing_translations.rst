@@ -1,5 +1,3 @@
-.. _doc_importing_translations:
-
 Importing translations
 ======================
 
@@ -31,7 +29,7 @@ or a string with a number (it's just a unique string anyway).
 
 .. note:: If you need a more powerful file format, Rebel Editor also supports
           loading translations written in the gettext ``.po`` format. See
-          :ref:`doc_localization_using_gettext` for details.
+          :doc:`/tutorials/i18n/localization_using_gettext` for details.
 
 Translation format
 ------------------
@@ -63,8 +61,8 @@ CSV files must be formatted as follows:
 | KEYN   | string   | string   | string   |
 +--------+----------+----------+----------+
 
-The "lang" tags must represent a language, which must be one of the :ref:`valid
-locales <doc_locales>` supported by the engine. The "KEY" tags must be
+The "lang" tags must represent a language, which must be one of the :doc:`valid
+locales </tutorials/i18n/locales>` supported by the engine. The "KEY" tags must be
 unique and represent a string universally (they are usually in
 uppercase, to differentiate from other strings). These keys will be replaced at
 runtime by the matching translated string. Note that the case is important,

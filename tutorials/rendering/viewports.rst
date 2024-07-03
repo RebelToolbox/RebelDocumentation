@@ -1,5 +1,3 @@
-.. _doc_viewports:
-
 Using Viewports
 ===============
 
@@ -45,13 +43,13 @@ the input.
 
 .. image:: img/input.png
 
-For more information on how Rebel Engine handles input, please read the :ref:`Input Event Tutorial<doc_inputevent>`.
+For more information on how Rebel Engine handles input, please read the :doc:`Input Event Tutorial</tutorials/inputs/inputevent>`.
 
 Listener
 --------
 
 Rebel Engine supports 3D sound (in both 2D and 3D nodes); more on this can be
-found in the :ref:`Audio Streams Tutorial<doc_audio_streams>`. For this type of sound to be
+found in the :doc:`Audio Streams Tutorial</tutorials/audio/audio_streams>`. For this type of sound to be
 audible, the :ref:`Viewport <class_Viewport>` needs to be enabled as a listener (for 2D or 3D).
 If you are using a custom :ref:`Viewport <class_Viewport>` to display your :ref:`World <class_World>`, don't forget
 to enable this!
@@ -101,7 +99,7 @@ different from the one specified in size, by calling:
     viewport.set_size_override_stretch(true) # Enable stretch for custom size.
 
 The root :ref:`Viewport <class_Viewport>` uses this for the stretch options in the project
-settings. For more information on scaling and stretching visit the :ref:`Multiple Resolutions Tutorial <doc_multiple_resolutions>`
+settings. For more information on scaling and stretching visit the :doc:`Multiple Resolutions Tutorial </tutorials/rendering/multiple_resolutions>`
 
 Worlds
 ------

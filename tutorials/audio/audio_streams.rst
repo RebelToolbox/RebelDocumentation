@@ -1,12 +1,10 @@
-.. _doc_audio_streams:
-
 Audio streams
 =============
 
 Introduction
 ------------
 
-As you might have already read in :ref:`doc_audio_buses`, sound is sent to
+As you might have already read in :doc:`audio_buses`, sound is sent to
 each bus via an AudioStreamPlayer node. There are different kinds
 of AudioStreamPlayers. Each one loads an AudioStream and plays it back.
 
@@ -16,7 +14,7 @@ AudioStream
 An audio stream is an abstract object that emits sound. The sound can come from
 many places, but is most commonly loaded from the filesystem. Audio files can be
 loaded as AudioStreams and placed inside an AudioStreamPlayer. You can find
-information on supported formats and differences in :ref:`doc_importing_audio_samples`.
+information on supported formats and differences in :doc:`/tutorials/assets_pipeline/importing_audio_samples`.
 
 There are other types of AudioStreams, such as AudioStreamRandomPitch.
 This one makes a random adjustment to the sound's pitch every time it's
@@ -63,8 +61,6 @@ Similar to AudioStreamPlayer2D, an Area can divert the sound to an audio bus.
 .. image:: img/audio_stream_3d_area.png
 
 Unlike for 2D, the 3D version of AudioStreamPlayer has a few more advanced options:
-
-.. _doc_audio_streams_reverb_buses:
 
 Reverb buses
 ~~~~~~~~~~~~

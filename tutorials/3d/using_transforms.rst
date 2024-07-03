@@ -1,5 +1,3 @@
-.. _doc_using_transforms:
-
 Using 3D transforms
 ~~~~~~~~~~~~~~~~~~~
 
@@ -137,7 +135,7 @@ The gizmo's arrows show the ``X``, ``Y``, and ``Z`` axes (in red, green, and blu
 
 .. image:: img/transforms_gizmo.png
 
-For more information on the mathematics of vectors and transforms, please read the :ref:`doc_vector_math` tutorials.
+For more information on the mathematics of vectors and transforms, please read the :doc:`/tutorials/math/vector_math` tutorials.
 
 Manipulating transforms
 =======================
@@ -248,7 +246,7 @@ Imagine you need to shoot a bullet in the direction your player is facing. Just 
     bullet.Transform = transform;
     bullet.LinearVelocity = transform.basis.z * BulletSpeed;
 
-Is the enemy looking at the player? Use the dot product for this (see the :ref:`doc_vector_math` tutorial for an explanation of the dot product):
+Is the enemy looking at the player? Use the dot product for this (see the :doc:`/tutorials/math/vector_math` tutorial for an explanation of the dot product):
 
 .. tabs::
  .. code-tab:: gdscript GDScript

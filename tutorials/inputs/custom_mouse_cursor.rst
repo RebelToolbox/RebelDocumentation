@@ -1,5 +1,3 @@
-.. _doc_custom_mouse_cursor:
-
 Customizing the mouse cursor
 ============================
 

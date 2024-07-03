@@ -1,5 +1,3 @@
-.. _doc_best_practices_for_engine_contributors:
-
 Best practices for engine contributors
 ======================================
 

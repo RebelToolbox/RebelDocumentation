@@ -1,5 +1,3 @@
-.. _doc_managing_editor_features:
-
 Managing editor features
 ========================
 
@@ -15,7 +13,7 @@ With feature profiles, major features and nodes can be hidden from the editor.
 This only hides parts of the interface and does not actually remove support for
 these features, so scenes and scripts relying on those features will still work fine.
 This also means feature profiles are not an optimization technique. For
-information on how to optimize Rebel Engine see :ref:`doc_optimization`.
+information on how to optimize Rebel Engine see :doc:`/tutorials/performance/index`.
 
 Creating a profile
 ------------------
@@ -46,4 +44,4 @@ editor's **Manage Editor Feature Profiles** window and click import, then select
 This process is potentially cumbersome however if a large amount of computers need
 custom profiles. As an alternative, you can enable self-contained mode for Rebel Editor,
 which allows putting all editor configuration in the same folder as the editor binary.
-See :ref:`doc_data_paths_self_contained_mode` for details.
+See :ref:`tutorials/io/data_paths:self-contained mode` for details.

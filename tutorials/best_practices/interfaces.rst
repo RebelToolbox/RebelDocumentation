@@ -1,5 +1,3 @@
-.. _doc_interfaces:
-
 Interfaces
 ==========
 
@@ -239,8 +237,6 @@ Nodes likewise have an alternative access point: the SceneTree.
         }
     };
 
-.. _doc_accessing_data_or_logic_from_object:
-
 Accessing data or logic from an object
 --------------------------------------
 
@@ -263,7 +259,7 @@ following checks, in order:
   the ClassDB for the "visible" property against the CanvasItem class and all
   of its inherited types. If found, it will call the bound setter or getter.
   For more information about HashMaps, see the
-  :ref:`data preferences <doc_data_preferences>` docs.
+  :doc:`data preferences </tutorials/best_practices/data_preferences>` docs.
 
 - If not found, it does an explicit check to see if the user wants to access
   the "script" or "meta" properties.

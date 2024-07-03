@@ -1,5 +1,3 @@
-.. _doc_controlling_thousands_of_fish:
-
 Controlling thousands of fish with Particles
 ============================================
 
@@ -140,5 +138,5 @@ This code gives you the following behavior:
 
 Using a ParticlesMaterial you can make the fish behavior as simple or complex as you like. In this
 tutorial we only set Velocity, but in your own Shaders you can also set ``COLOR``, rotation, scale
-(through ``TRANSFORM``). Please refer to the :ref:`Particles Shader Reference <doc_particle_shader>`
+(through ``TRANSFORM``). Please refer to the :doc:`Particles Shader Reference </tutorials/shaders/shader_reference/particle_shader>`
 for more information on particle shaders.

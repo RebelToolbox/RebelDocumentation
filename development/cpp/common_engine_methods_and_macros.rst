@@ -1,5 +1,3 @@
-.. _doc_common_engine_methods_and_macros:
-
 Common engine methods and macros
 ================================
 

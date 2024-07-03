@@ -1,11 +1,9 @@
-.. _doc_autoloads_versus_internal_nodes:
-
 Autoloads versus regular nodes
 ==============================
 
 Rebel Engine offers a feature to automatically load nodes at the root of your project,
 allowing you to access them globally, that can fulfill the role of a Singleton:
-:ref:`doc_singletons_autoload`. These auto-loaded nodes are not freed when you
+:doc:`/tutorials/scripting/singletons_autoload`. These auto-loaded nodes are not freed when you
 change the scene from code with :ref:`SceneTree.change_scene <class_SceneTree_method_change_scene>`.
 
 In this guide, you will learn when to use the Autoload feature, and techniques
@@ -68,7 +66,7 @@ or data across many scenes.
 
 In the case of functions, you can create a new type of ``Node`` that provides
 that feature for an individual scene using the :ref:`class_name
-<doc_gdscript_basics_class_name>` keyword in GDScript.
+<tutorials/scripting/gdscript/gdscript_basics:registering named classes>` keyword in GDScript.
 
 When it comes to data, you can either:
 

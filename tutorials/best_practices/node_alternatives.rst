@@ -1,5 +1,3 @@
-.. _doc_node_alternatives:
-
 When and how to avoid using nodes for everything
 ================================================
 
@@ -52,7 +50,7 @@ your project's features.
      can be save and loaded, therefore they extend from Resource.
 
    - **Advantages:** Much has
-     :ref:`already been said <doc_resources>`
+     :doc:`already been said </tutorials/scripting/resources>`
      on :ref:`Resource <class_Resource>`'s advantages over traditional data
      storage methods. In the context of using Resources over Nodes though,
      their main advantage is in Inspector-compatibility. While nearly as
