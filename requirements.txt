@@ -20,4 +20,4 @@ sphinxext-opengraph==0.9.1
 
 # Matplotlib
 # https://pypi.org/project/matplotlib/
-matplotlib==3.9.0
+matplotlib==3.9.1
