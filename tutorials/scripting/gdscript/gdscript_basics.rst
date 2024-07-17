@@ -339,16 +339,22 @@ null
 ``null`` is an empty data type that contains no information and can not
 be assigned any other value.
 
+.. _tutorials/scripting/gdscript/gdscript_basics:bool:
+
 :ref:`bool <class_bool>`
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Short for "boolean", it can only contain ``true`` or ``false``.
+
+.. _tutorials/scripting/gdscript/gdscript_basics:int:
 
 :ref:`int <class_int>`
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Short for "integer", it stores whole numbers (positive and negative).
 It is stored as a 64-bit value, equivalent to "int64_t" in C++.
+
+.. _tutorials/scripting/gdscript/gdscript_basics:float:
 
 :ref:`float <class_float>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -357,6 +363,8 @@ Stores real numbers, including decimals, using floating-point values.
 It is stored as a 64-bit value, equivalent to "double" in C++.
 Note: Currently, data structures such as Vector2, Vector3, and
 PoolRealArray store 32-bit single-precision "float" values.
+
+.. _tutorials/scripting/gdscript/gdscript_basics:string:
 
 :ref:`String <class_String>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -396,11 +404,15 @@ GDScript also supports :doc:`/tutorials/scripting/gdscript/gdscript_format_strin
 Vector built-in types
 ~~~~~~~~~~~~~~~~~~~~~
 
+.. _tutorials/scripting/gdscript/gdscript_basics:vector2:
+
 :ref:`Vector2 <class_Vector2>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 2D vector type containing ``x`` and ``y`` fields. Can also be
 accessed as an array.
+
+.. _tutorials/scripting/gdscript/gdscript_basics:rect2:
 
 :ref:`Rect2 <class_Rect2>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -408,16 +420,22 @@ accessed as an array.
 2D Rectangle type containing two vectors fields: ``position`` and ``size``.
 Also contains an ``end`` field which is ``position + size``.
 
+.. _tutorials/scripting/gdscript/gdscript_basics:vector3:
+
 :ref:`Vector3 <class_Vector3>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 3D vector type containing ``x``, ``y`` and ``z`` fields. This can also
 be accessed as an array.
 
+.. _tutorials/scripting/gdscript/gdscript_basics:transform2d:
+
 :ref:`Transform2D <class_Transform2D>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 3×2 matrix used for 2D transforms.
+
+.. _tutorials/scripting/gdscript/gdscript_basics:plane:
 
 :ref:`Plane <class_Plane>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -425,11 +443,15 @@ be accessed as an array.
 3D Plane type in normalized form that contains a ``normal`` vector field
 and a ``d`` scalar distance.
 
+.. _tutorials/scripting/gdscript/gdscript_basics:quat:
+
 :ref:`Quat <class_Quat>`
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Quaternion is a datatype used for representing a 3D rotation. It's
 useful for interpolating rotations.
+
+.. _tutorials/scripting/gdscript/gdscript_basics:aabb:
 
 :ref:`AABB <class_AABB>`
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -438,12 +460,16 @@ Axis-aligned bounding box (or 3D box) contains 2 vectors fields: ``position``
 and ``size``. Also contains an ``end`` field which is
 ``position + size``.
 
+.. _tutorials/scripting/gdscript/gdscript_basics:basis:
+
 :ref:`Basis <class_Basis>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 3x3 matrix used for 3D rotation and scale. It contains 3 vector fields
 (``x``, ``y`` and ``z``) and can also be accessed as an array of 3D
 vectors.
+
+.. _tutorials/scripting/gdscript/gdscript_basics:transform:
 
 :ref:`Transform <class_Transform>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -454,11 +480,15 @@ vectors.
 Engine built-in types
 ~~~~~~~~~~~~~~~~~~~~~
 
+.. _tutorials/scripting/gdscript/gdscript_basics:color:
+
 :ref:`Color <class_Color>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Color data type contains ``r``, ``g``, ``b``, and ``a`` fields. It can
 also be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value.
+
+.. _tutorials/scripting/gdscript/gdscript_basics:nodepath:
 
 :ref:`NodePath <class_NodePath>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -466,10 +496,14 @@ also be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value.
 Compiled path to a node used mainly in the scene system. It can be
 easily assigned to, and from, a String.
 
+.. _tutorials/scripting/gdscript/gdscript_basics:rid:
+
 :ref:`RID <class_RID>`
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Resource ID (RID). Servers use generic RIDs to reference opaque data.
+
+.. _tutorials/scripting/gdscript/gdscript_basics:object:
 
 :ref:`Object <class_Object>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -478,6 +512,8 @@ Base class for anything that is not a built-in type.
 
 Container built-in types
 ~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _tutorials/scripting/gdscript/gdscript_basics:array:
 
 :ref:`Array <class_Array>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -510,6 +546,8 @@ arrays. They are therefore only recommended to use for large data sets:
 - :ref:`PoolVector2Array <class_PoolVector2Array>`: An array of :ref:`Vector2 <class_Vector2>` objects.
 - :ref:`PoolVector3Array <class_PoolVector3Array>`: An array of :ref:`Vector3 <class_Vector3>` objects.
 - :ref:`PoolColorArray <class_PoolColorArray>`: An array of :ref:`Color <class_Color>` objects.
+
+.. _tutorials/scripting/gdscript/gdscript_basics:dictionary:
 
 :ref:`Dictionary <class_Dictionary>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
