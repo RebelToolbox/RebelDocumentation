@@ -114,6 +114,6 @@ jobs:
               --head update-rebel-engine-api                                               \
               --title "Update Rebel Engine API"                                            \
               --body "Updates the Rebel Engine API documentation with the latest changes." \
-              --label "PR Type: Enhancement"
+              --label "PR Type: Improvement"
             echo "New Pull Request created"
           fi
