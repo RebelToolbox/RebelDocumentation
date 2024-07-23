@@ -28,6 +28,7 @@ author = "Rebel Documentation Contributors"
 copyright = "2023, Rebel Documentation Contributors"
 version = os.getenv("READTHEDOCS_VERSION", "1.0")
 release = version
+html_baseurl = os.getenv("READTHEDOCS_CANONICAL_URL", "")
 
 
 # 2. General configuration
