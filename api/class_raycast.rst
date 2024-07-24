@@ -29,7 +29,7 @@ RayCast calculates intersection every physics frame (see :ref:`Node<class_Node>`
 Tutorials
 ---------
 
-- :doc:`../tutorials/physics/ray-casting`
+- :doc:`Ray-casting </tutorials/physics/ray-casting>`
 
 Properties
 ----------
@@ -146,7 +146,7 @@ If ``true``, collision with :ref:`PhysicsBody<class_PhysicsBody>`\ s will be rep
 | *Getter*  | get_collision_mask()      |
 +-----------+---------------------------+
 
-The ray's collision mask. Only objects in at least one collision layer enabled in the mask will be detected. See `Collision layers and masks <https://docs.rebeltoolbox.com/en/latest/tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
+The ray's collision mask. Only objects in at least one collision layer enabled in the mask will be detected. See :ref:`Collision layers and masks <tutorials/physics/physics_introduction:collision layers and masks>` in the documentation for more information.
 
 ----
 

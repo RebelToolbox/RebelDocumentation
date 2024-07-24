@@ -25,7 +25,7 @@ Manages the connection to network peers. Assigns unique IDs to each client conne
 Tutorials
 ---------
 
-- :doc:`../tutorials/networking/high_level_multiplayer`
+- :doc:`High-level multiplayer </tutorials/networking/high_level_multiplayer>`
 
 Properties
 ----------

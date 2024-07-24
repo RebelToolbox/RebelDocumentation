@@ -31,7 +31,7 @@ With Bullet physics (the default), the center of mass is the RigidBody3D center.
 Tutorials
 ---------
 
-- :doc:`../tutorials/physics/physics_introduction`
+- :doc:`Physics introduction </tutorials/physics/physics_introduction>`
 
 Properties
 ----------

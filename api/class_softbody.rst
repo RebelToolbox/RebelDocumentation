@@ -23,7 +23,7 @@ A deformable physics body. Used to create elastic or deformable objects such as 
 Tutorials
 ---------
 
-- :doc:`../tutorials/physics/soft_body`
+- :doc:`/tutorials/physics/soft_body`
 
 Properties
 ----------
@@ -116,7 +116,7 @@ The physics layers this SoftBody is in.
 
 Collidable objects can exist in any of 32 different layers. These layers work like a tagging system, and are not visual. A collidable can use these layers to select with which objects it can collide, using the collision_mask property.
 
-A contact is detected if object A is in any of the layers that object B scans, or object B is in any layer scanned by object A. See `Collision layers and masks <https://docs.rebeltoolbox.com/en/latest/tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
+A contact is detected if object A is in any of the layers that object B scans, or object B is in any layer scanned by object A. See :ref:`Collision layers and masks <tutorials/physics/physics_introduction:collision layers and masks>` in the documentation for more information.
 
 ----
 
@@ -132,7 +132,7 @@ A contact is detected if object A is in any of the layers that object B scans, o
 | *Getter*  | get_collision_mask()      |
 +-----------+---------------------------+
 
-The physics layers this SoftBody scans for collisions. See `Collision layers and masks <https://docs.rebeltoolbox.com/en/latest/tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
+The physics layers this SoftBody scans for collisions. See :ref:`Collision layers and masks <tutorials/physics/physics_introduction:collision layers and masks>` in the documentation for more information.
 
 ----
 

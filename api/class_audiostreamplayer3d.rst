@@ -27,7 +27,7 @@ See also :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` to play a sound non-p
 Tutorials
 ---------
 
-- :doc:`../tutorials/audio/audio_streams`
+- :doc:`/tutorials/audio/audio_streams`
 
 Properties
 ----------

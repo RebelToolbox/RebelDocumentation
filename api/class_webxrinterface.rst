@@ -294,7 +294,7 @@ If a user's browser or device doesn't support one of the given features, initial
 
 This doesn't have any effect on the interface when already initialized.
 
-Possible values come from `WebXR's XRReferenceSpaceType <https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType>`__. If you want to use a particular reference space type, it must be listed in either :ref:`required_features<class_WebXRInterface_property_required_features>` or :ref:`optional_features<class_WebXRInterface_property_optional_features>`.
+Possible values come from `WebXR's XRReferenceSpaceType <https://developer.mozilla.org/en-US/docs/Web/API/XRSession/requestReferenceSpace>`__. If you want to use a particular reference space type, it must be listed in either :ref:`required_features<class_WebXRInterface_property_required_features>` or :ref:`optional_features<class_WebXRInterface_property_optional_features>`.
 
 ----
 
@@ -308,7 +308,7 @@ Possible values come from `WebXR's XRReferenceSpaceType <https://developer.mozil
 
 The reference space type (from the list of requested types set in the :ref:`requested_reference_space_types<class_WebXRInterface_property_requested_reference_space_types>` property), that was ultimately used by :ref:`ARVRInterface.initialize<class_ARVRInterface_method_initialize>` when setting up the WebXR session.
 
-Possible values come from `WebXR's XRReferenceSpaceType <https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType>`__. If you want to use a particular reference space type, it must be listed in either :ref:`required_features<class_WebXRInterface_property_required_features>` or :ref:`optional_features<class_WebXRInterface_property_optional_features>`.
+Possible values come from `WebXR's XRReferenceSpaceType <https://developer.mozilla.org/en-US/docs/Web/API/XRSession/requestReferenceSpace>`__. If you want to use a particular reference space type, it must be listed in either :ref:`required_features<class_WebXRInterface_property_required_features>` or :ref:`optional_features<class_WebXRInterface_property_optional_features>`.
 
 ----
 
@@ -328,7 +328,7 @@ The reference space types are requested in order, and the first on supported by 
 
 This doesn't have any effect on the interface when already initialized.
 
-Possible values come from `WebXR's XRReferenceSpaceType <https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType>`__. If you want to use a particular reference space type, it must be listed in either :ref:`required_features<class_WebXRInterface_property_required_features>` or :ref:`optional_features<class_WebXRInterface_property_optional_features>`.
+Possible values come from `WebXR's XRReferenceSpaceType <https://developer.mozilla.org/en-US/docs/Web/API/XRSession/requestReferenceSpace>`__. If you want to use a particular reference space type, it must be listed in either :ref:`required_features<class_WebXRInterface_property_required_features>` or :ref:`optional_features<class_WebXRInterface_property_optional_features>`.
 
 ----
 
@@ -348,7 +348,7 @@ If a user's browser or device doesn't support one of the given features, initial
 
 This doesn't have any effect on the interface when already initialized.
 
-Possible values come from `WebXR's XRReferenceSpaceType <https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType>`__. If you want to use a particular reference space type, it must be listed in either :ref:`required_features<class_WebXRInterface_property_required_features>` or :ref:`optional_features<class_WebXRInterface_property_optional_features>`.
+Possible values come from `WebXR's XRReferenceSpaceType <https://developer.mozilla.org/en-US/docs/Web/API/XRSession/requestReferenceSpace>`__. If you want to use a particular reference space type, it must be listed in either :ref:`required_features<class_WebXRInterface_property_required_features>` or :ref:`optional_features<class_WebXRInterface_property_optional_features>`.
 
 ----
 
@@ -366,7 +366,7 @@ The session mode used by :ref:`ARVRInterface.initialize<class_ARVRInterface_meth
 
 This doesn't have any effect on the interface when already initialized.
 
-Possible values come from `WebXR's XRSessionMode <https://developer.mozilla.org/en-US/docs/Web/API/XRSessionMode>`__, including: ``"immersive-vr"``, ``"immersive-ar"``, and ``"inline"``.
+Possible values come from `WebXR's XRSessionMode <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession>`__, including: ``"immersive-vr"``, ``"immersive-ar"``, and ``"inline"``.
 
 ----
 
@@ -380,7 +380,7 @@ Possible values come from `WebXR's XRSessionMode <https://developer.mozilla.org/
 
 Indicates if the WebXR session's imagery is visible to the user.
 
-Possible values come from `WebXR's XRVisibilityState <https://developer.mozilla.org/en-US/docs/Web/API/XRVisibilityState>`__, including ``"hidden"``, ``"visible"``, and ``"visible-blurred"``.
+Possible values come from `WebXR's XRVisibilityState <https://developer.mozilla.org/en-US/docs/Web/API/XRSession/visibilityState>`__, including ``"hidden"``, ``"visible"``, and ``"visible-blurred"``.
 
 Method Descriptions
 -------------------
@@ -415,7 +415,7 @@ Use this method to get information about the controller that triggered one of th
 
 Checks if the given ``session_mode`` is supported by the user's browser.
 
-Possible values come from `WebXR's XRSessionMode <https://developer.mozilla.org/en-US/docs/Web/API/XRSessionMode>`__, including: ``"immersive-vr"``, ``"immersive-ar"``, and ``"inline"``.
+Possible values come from `WebXR's XRSessionMode <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession>`__, including: ``"immersive-vr"``, ``"immersive-ar"``, and ``"inline"``.
 
 This method returns nothing, instead it emits the :ref:`session_supported<class_WebXRInterface_signal_session_supported>` signal with the result.
 

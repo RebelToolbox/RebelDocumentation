@@ -25,7 +25,7 @@ See :ref:`AnimationTree<class_AnimationTree>` for a more full-featured replaceme
 Tutorials
 ---------
 
-- :doc:`../tutorials/animation/animation_tree`
+- :doc:`/tutorials/animation/animation_tree`
 
 Properties
 ----------

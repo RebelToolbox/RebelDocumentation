@@ -21,7 +21,7 @@ A resource to add to an :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTre
 Tutorials
 ---------
 
-- :doc:`../tutorials/animation/animation_tree`
+- :doc:`/tutorials/animation/animation_tree`
 
 Properties
 ----------

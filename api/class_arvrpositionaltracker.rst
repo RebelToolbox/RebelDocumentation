@@ -25,7 +25,7 @@ The :ref:`ARVRController<class_ARVRController>` and :ref:`ARVRAnchor<class_ARVRA
 Tutorials
 ---------
 
-- :doc:`../tutorials/vr/index`
+- :doc:`/tutorials/vr/index`
 
 Properties
 ----------

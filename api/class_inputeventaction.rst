@@ -21,7 +21,7 @@ Contains a generic action which can be targeted from several types of inputs. Ac
 Tutorials
 ---------
 
-- `#actions <../tutorials/inputs/inputevent.html#actions>`_ in :doc:`../tutorials/inputs/inputevent`
+- :ref:`InputEvent: Actions <tutorials/inputs/inputevent:actions>`
 
 Properties
 ----------

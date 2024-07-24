@@ -25,9 +25,9 @@ ENet's purpose is to provide a relatively thin, simple and robust network commun
 Tutorials
 ---------
 
-- :doc:`../tutorials/networking/high_level_multiplayer`
+- :doc:`/tutorials/networking/high_level_multiplayer`
 
-- `http://enet.bespin.org/usergroup0.html <http://enet.bespin.org/usergroup0.html>`__
+- http://enet.bespin.org/usergroup0.html
 
 Properties
 ----------

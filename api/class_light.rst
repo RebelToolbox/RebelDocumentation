@@ -23,7 +23,7 @@ Light is the *abstract* base class for light nodes. As it can't be instanced, it
 Tutorials
 ---------
 
-- :doc:`../tutorials/3d/lights_and_shadows`
+- :doc:`3D lights and shadows </tutorials/3d/lights_and_shadows>`
 
 Properties
 ----------

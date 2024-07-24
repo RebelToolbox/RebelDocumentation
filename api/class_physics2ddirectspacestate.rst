@@ -21,9 +21,9 @@ Direct access object to a space in the :ref:`Physics2DServer<class_Physics2DServ
 Tutorials
 ---------
 
-- :doc:`../tutorials/physics/physics_introduction`
+- :doc:`Physics introduction </tutorials/physics/physics_introduction>`
 
-- :doc:`../tutorials/physics/ray-casting`
+- :doc:`Ray-casting </tutorials/physics/ray-casting>`
 
 Methods
 -------

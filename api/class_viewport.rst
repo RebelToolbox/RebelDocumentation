@@ -33,9 +33,9 @@ Finally, viewports can also behave as render targets, in which case they will no
 Tutorials
 ---------
 
-- :doc:`../tutorials/2d/2d_transforms`
+- :doc:`Viewport and canvas transforms </tutorials/2d/2d_transforms>`
 
-- :doc:`../tutorials/rendering/index`
+- :doc:`Viewports tutorial index </tutorials/rendering/index>`
 
 Properties
 ----------

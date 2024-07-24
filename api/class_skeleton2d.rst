@@ -21,7 +21,7 @@ Skeleton2D parents a hierarchy of :ref:`Bone2D<class_Bone2D>` objects. It is a r
 Tutorials
 ---------
 
-- :doc:`../tutorials/animation/2d_skeletons`
+- :doc:`/tutorials/animation/2d_skeletons`
 
 Methods
 -------

@@ -23,7 +23,7 @@ For complex arrangements of shapes, it is sometimes needed to add structure to y
 Tutorials
 ---------
 
-- `Prototyping levels with CSG <$DOCS_URL/tutorials/3d/csg_tools.html>`__
+- :doc:`Prototyping levels with CSG </tutorials/3d/csg_tools>`
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`

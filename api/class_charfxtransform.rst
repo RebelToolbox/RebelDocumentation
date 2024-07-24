@@ -21,7 +21,7 @@ By setting various properties on this object, you can control how individual cha
 Tutorials
 ---------
 
-- :doc:`../tutorials/ui/bbcode_in_richtextlabel`
+- :doc:`/tutorials/ui/bbcode_in_richtextlabel`
 
 Properties
 ----------

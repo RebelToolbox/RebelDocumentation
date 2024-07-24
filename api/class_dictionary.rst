@@ -115,7 +115,7 @@ You need to first calculate the dictionary's hash with :ref:`hash<class_Dictiona
 Tutorials
 ---------
 
-- `#dictionary <../tutorials/scripting/gdscript/gdscript_basics.html#dictionary>`_ in :doc:`../tutorials/scripting/gdscript/gdscript_basics`
+- :ref:`GDScript basics: Dictionary <tutorials/scripting/gdscript/gdscript_basics:dictionary>`
 
 Methods
 -------

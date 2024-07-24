@@ -23,9 +23,9 @@ Base class of all sort of input event. See :ref:`Node._input<class_Node_method__
 Tutorials
 ---------
 
-- :doc:`../tutorials/inputs/inputevent`
+- :doc:`InputEvent </tutorials/inputs/inputevent>`
 
-- :doc:`../tutorials/2d/2d_transforms`
+- :doc:`Viewport and canvas transforms </tutorials/2d/2d_transforms>`
 
 Properties
 ----------
@@ -129,7 +129,7 @@ Returns ``true`` if the given action is being pressed (and is not an echo event 
 
 If ``exact_match`` is ``false``, it ignores the input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
 
-**Note:** Due to keyboard ghosting, :ref:`is_action_pressed<class_InputEvent_method_is_action_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <https://docs.rebeltoolbox.com/en/latest/tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+**Note:** Due to keyboard ghosting, :ref:`is_action_pressed<class_InputEvent_method_is_action_pressed>` may return ``false`` even if one of the action's keys is pressed. See :ref:`Input examples <tutorials/inputs/input_examples:keyboard events>` in the documentation for more information.
 
 ----
 
@@ -165,7 +165,7 @@ Returns ``true`` if this input event is an echo event (only for events of type :
 
 Returns ``true`` if this input event is pressed. Not relevant for events of type :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` or :ref:`InputEventScreenDrag<class_InputEventScreenDrag>`.
 
-**Note:** Due to keyboard ghosting, :ref:`is_action_pressed<class_InputEvent_method_is_action_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <https://docs.rebeltoolbox.com/en/latest/tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+**Note:** Due to keyboard ghosting, :ref:`is_action_pressed<class_InputEvent_method_is_action_pressed>` may return ``false`` even if one of the action's keys is pressed. See :ref:`Input examples <tutorials/inputs/input_examples:keyboard events>` in the documentation for more information.
 
 ----
 

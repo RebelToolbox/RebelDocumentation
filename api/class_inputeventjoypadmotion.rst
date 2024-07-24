@@ -21,7 +21,7 @@ Stores information about joystick motions. One ``InputEventJoypadMotion`` repres
 Tutorials
 ---------
 
-- :doc:`../tutorials/inputs/inputevent`
+- :doc:`/tutorials/inputs/inputevent`
 
 Properties
 ----------

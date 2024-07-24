@@ -21,9 +21,9 @@ Provides direct access to a physics body in the :ref:`Physics2DServer<class_Phys
 Tutorials
 ---------
 
-- :doc:`../tutorials/physics/physics_introduction`
+- :doc:`Physics introduction </tutorials/physics/physics_introduction>`
 
-- :doc:`../tutorials/physics/ray-casting`
+- :doc:`Ray-casting </tutorials/physics/ray-casting>`
 
 Properties
 ----------

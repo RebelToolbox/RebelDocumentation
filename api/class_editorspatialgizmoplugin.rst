@@ -23,7 +23,7 @@ To use ``EditorSpatialGizmoPlugin``, register it using the :ref:`EditorPlugin.ad
 Tutorials
 ---------
 
-- :doc:`../tutorials/plugins/editor/spatial_gizmos`
+- :doc:`/tutorials/plugins/editor/spatial_gizmos`
 
 Methods
 -------

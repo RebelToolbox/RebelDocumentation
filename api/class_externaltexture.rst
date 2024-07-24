@@ -16,7 +16,7 @@ Enable OpenGL ES external texture extension.
 Description
 -----------
 
-Enable support for the OpenGL ES external texture extension as defined by `OES_EGL_image_external <https://www.khronos.org/registry/OpenGL/extensions/OES/OES_EGL_image_external.txt>`__.
+Enable support for the OpenGL ES external texture extension as defined by `OES_EGL_image_external <https://registry.khronos.org/OpenGL/extensions/OES/OES_EGL_image_external.txt>`__.
 
 **Note:** This is only supported for Android platforms.
 

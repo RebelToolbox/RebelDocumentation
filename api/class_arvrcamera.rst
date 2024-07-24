@@ -23,7 +23,7 @@ The position and orientation of this node is automatically updated by the ARVR S
 Tutorials
 ---------
 
-- :doc:`../tutorials/vr/index`
+- :doc:`/tutorials/vr/index`
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`

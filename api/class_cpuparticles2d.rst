@@ -25,7 +25,7 @@ See also :ref:`Particles2D<class_Particles2D>`, which provides the same function
 Tutorials
 ---------
 
-- :doc:`../tutorials/2d/particle_systems_2d`
+- :doc:`/tutorials/2d/particle_systems_2d`
 
 Properties
 ----------

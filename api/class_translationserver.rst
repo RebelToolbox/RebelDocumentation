@@ -21,9 +21,9 @@ Server that manages all translations. Translations can be set to it and removed 
 Tutorials
 ---------
 
-- :doc:`../tutorials/i18n/internationalizing_games`
+- :doc:`/tutorials/i18n/internationalizing_games`
 
-- :doc:`../tutorials/i18n/locales`
+- :doc:`/tutorials/i18n/locales`
 
 Methods
 -------

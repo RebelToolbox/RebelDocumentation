@@ -28,7 +28,7 @@ Allows control of :ref:`AnimationTree<class_AnimationTree>` state machines creat
 Tutorials
 ---------
 
-- :doc:`../tutorials/animation/animation_tree`
+- :doc:`/tutorials/animation/animation_tree`
 
 Properties
 ----------

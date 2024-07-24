@@ -29,7 +29,7 @@ The ``ReflectionProbe`` is used to create high-quality reflections at a low perf
 Tutorials
 ---------
 
-- :doc:`../tutorials/3d/reflection_probes`
+- :doc:`/tutorials/3d/reflection_probes`
 
 Properties
 ----------
