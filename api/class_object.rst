@@ -45,9 +45,9 @@ Objects also receive notifications. Notifications are a simple way to notify the
 Tutorials
 ---------
 
-- :doc:`../tutorials/best_practices/node_alternatives`
+- :doc:`When and how to avoid using nodes for everything </tutorials/best_practices/node_alternatives>`
 
-- `#advanced-exports <../tutorials/scripting/gdscript/gdscript_exports.html#advanced-exports>`_ in :doc:`../tutorials/scripting/gdscript/gdscript_exports`
+- :ref:`Advanced exports using _get_property_list() <tutorials/scripting/gdscript/gdscript_exports:advanced exports>`
 
 Methods
 -------

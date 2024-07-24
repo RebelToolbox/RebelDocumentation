@@ -25,7 +25,7 @@ Contains mouse and pen motion information. Supports relative, absolute positions
 Tutorials
 ---------
 
-- :doc:`../tutorials/inputs/mouse_and_input_coordinates`
+- :doc:`Mouse and input coordinates </tutorials/inputs/mouse_and_input_coordinates>`
 
 Properties
 ----------

@@ -91,7 +91,7 @@ If ``true``, the query will take :ref:`PhysicsBody<class_PhysicsBody>`\ s into a
 | *Getter*  | get_collision_mask()      |
 +-----------+---------------------------+
 
-The physics layer(s) the query will take into account (as a bitmask). See `Collision layers and masks <https://docs.rebeltoolbox.com/en/latest/tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
+The physics layer(s) the query will take into account (as a bitmask). See :ref:`Collision layers and masks <tutorials/physics/physics_introduction:collision layers and masks>` in the documentation for more information.
 
 ----
 

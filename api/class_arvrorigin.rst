@@ -27,7 +27,7 @@ For example, if your character is driving a car, the ARVROrigin node should be a
 Tutorials
 ---------
 
-- :doc:`../tutorials/vr/index`
+- :doc:`/tutorials/vr/index`
 
 Properties
 ----------

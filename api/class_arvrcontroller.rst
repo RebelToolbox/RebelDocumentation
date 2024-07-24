@@ -25,7 +25,7 @@ The position of the controller node is automatically updated by the :ref:`ARVRSe
 Tutorials
 ---------
 
-- :doc:`../tutorials/vr/index`
+- :doc:`/tutorials/vr/index`
 
 Properties
 ----------

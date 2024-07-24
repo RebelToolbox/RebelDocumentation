@@ -27,9 +27,9 @@ Since instances may have any behavior, the AABB used for visibility must be prov
 Tutorials
 ---------
 
-- :doc:`../tutorials/performance/vertex_animation/animating_thousands_of_fish`
+- :doc:`/tutorials/performance/vertex_animation/animating_thousands_of_fish`
 
-- :doc:`../tutorials/performance/using_multimesh`
+- :doc:`/tutorials/performance/using_multimesh`
 
 Properties
 ----------

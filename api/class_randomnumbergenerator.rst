@@ -16,7 +16,7 @@ A class for generating pseudo-random numbers.
 Description
 -----------
 
-RandomNumberGenerator is a class for generating pseudo-random numbers. It currently uses `PCG32 <http://www.pcg-random.org/>`__.
+RandomNumberGenerator is a class for generating pseudo-random numbers. It currently uses `PCG32 <https://www.pcg-random.org/>`__.
 
 **Note:** The underlying algorithm is an implementation detail. As a result, it should not be depended upon for reproducible random streams across Rebel Engine versions.
 
@@ -34,7 +34,7 @@ To generate a random float number (within a given range) based on a time-dependa
 Tutorials
 ---------
 
-- :doc:`../tutorials/math/random_number_generation`
+- :doc:`Random number generation </tutorials/math/random_number_generation>`
 
 Properties
 ----------

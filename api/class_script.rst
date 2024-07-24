@@ -25,7 +25,7 @@ The ``new`` method of a script subclass creates a new instance. :ref:`Object.set
 Tutorials
 ---------
 
-- :doc:`../tutorials/scripting/index`
+- :doc:`/tutorials/scripting/index`
 
 Properties
 ----------

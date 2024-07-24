@@ -23,7 +23,7 @@ A Spotlight is a type of :ref:`Light<class_Light>` node that emits lights in a s
 Tutorials
 ---------
 
-- :doc:`../tutorials/3d/lights_and_shadows`
+- :doc:`3D lights and shadows </tutorials/3d/lights_and_shadows>`
 
 Properties
 ----------

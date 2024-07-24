@@ -23,7 +23,7 @@ Tiles are referenced by a unique integer ID.
 Tutorials
 ---------
 
-- :doc:`../tutorials/2d/using_tilemaps`
+- :doc:`Using Tilemaps </tutorials/2d/using_tilemaps>`
 
 Methods
 -------

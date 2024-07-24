@@ -25,9 +25,9 @@ Resource is the base class for all Rebel Engine specific resource types, serving
 Tutorials
 ---------
 
-- :doc:`../tutorials/scripting/resources`
+- :doc:`Resources </tutorials/scripting/resources>`
 
-- :doc:`../tutorials/best_practices/node_alternatives`
+- :doc:`When and how to avoid using nodes for everything </tutorials/best_practices/node_alternatives>`
 
 Properties
 ----------

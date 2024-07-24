@@ -43,7 +43,7 @@ Finally, when a node is freed with :ref:`Object.free<class_Object_method_free>` 
 Tutorials
 ---------
 
-- :doc:`../getting_started/step_by_step/nodes_and_scenes`
+- :doc:`Nodes and Scenes </getting_started/step_by_step/nodes_and_scenes>`
 
 Properties
 ----------
@@ -545,7 +545,7 @@ The name of the node. This name is unique among the siblings (other child nodes 
 
 The node owner. A node can have any other node as owner (as long as it is a valid parent, grandparent, etc. ascending in the tree). When saving a node (using :ref:`PackedScene<class_PackedScene>`), all the nodes it owns will be saved with it. This allows for the creation of complex :ref:`SceneTree<class_SceneTree>`\ s, with instancing and subinstancing.
 
-**Note:** If you want a child to be persisted to a :ref:`PackedScene<class_PackedScene>`, you must set :ref:`owner<class_Node_property_owner>` in addition to calling :ref:`add_child<class_Node_method_add_child>`. This is typically relevant for `tool scripts <https://docs.rebeltoolbox.com/en/latest/tutorials/misc/running_code_in_the_editor.html>`__ and `editor plugins <https://docs.rebeltoolbox.com/en/latest/tutorials/plugins/editor/index.html>`__. If :ref:`add_child<class_Node_method_add_child>` is called without setting :ref:`owner<class_Node_property_owner>`, the newly added ``Node`` will not be visible in the scene tree, though it will be visible in the 2D/3D view.
+**Note:** If you want a child to be persisted to a :ref:`PackedScene<class_PackedScene>`, you must set :ref:`owner<class_Node_property_owner>` in addition to calling :ref:`add_child<class_Node_method_add_child>`. This is typically relevant for :doc:`tool scripts </tutorials/plugins/running_code_in_the_editor>` and :doc:`editor plugins </tutorials/plugins/editor/index>`. If :ref:`add_child<class_Node_method_add_child>` is called without setting :ref:`owner<class_Node_property_owner>`, the newly added ``Node`` will not be visible in the scene tree, though it will be visible in the 2D/3D view.
 
 ----
 
@@ -720,7 +720,7 @@ If ``legible_unique_name`` is ``true``, the child node will have a human-readabl
         child_node.get_parent().remove_child(child_node)
     add_child(child_node)
 
-**Note:** If you want a child to be persisted to a :ref:`PackedScene<class_PackedScene>`, you must set :ref:`owner<class_Node_property_owner>` in addition to calling :ref:`add_child<class_Node_method_add_child>`. This is typically relevant for `tool scripts <https://docs.rebeltoolbox.com/en/latest/tutorials/misc/running_code_in_the_editor.html>`__ and `editor plugins <https://docs.rebeltoolbox.com/en/latest/tutorials/plugins/editor/index.html>`__. If :ref:`add_child<class_Node_method_add_child>` is called without setting :ref:`owner<class_Node_property_owner>`, the newly added ``Node`` will not be visible in the scene tree, though it will be visible in the 2D/3D view.
+**Note:** If you want a child to be persisted to a :ref:`PackedScene<class_PackedScene>`, you must set :ref:`owner<class_Node_property_owner>` in addition to calling :ref:`add_child<class_Node_method_add_child>`. This is typically relevant for :doc:`tool scripts </tutorials/plugins/running_code_in_the_editor>` and :doc:`editor plugins </tutorials/plugins/editor/index>`. If :ref:`add_child<class_Node_method_add_child>` is called without setting :ref:`owner<class_Node_property_owner>`, the newly added ``Node`` will not be visible in the scene tree, though it will be visible in the 2D/3D view.
 
 ----
 

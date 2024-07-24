@@ -23,7 +23,7 @@ A 2D game object, with a transform (position, rotation, and scale). All 2D nodes
 Tutorials
 ---------
 
-- :doc:`../tutorials/2d/custom_drawing_in_2d`
+- :doc:`Custom drawing in 2D </tutorials/2d/custom_drawing_in_2d>`
 
 Properties
 ----------

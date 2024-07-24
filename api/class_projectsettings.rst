@@ -20,9 +20,9 @@ Contains global variables accessible from everywhere. Use :ref:`get_setting<clas
 
 When naming a Project Settings property, use the full path to the setting including the category. For example, ``"application/config/name"`` for the project name. Category and property names can be viewed in the Project Settings dialog.
 
-**Feature tags:** Project settings can be overridden for specific platforms and configurations (debug, release, ...) using `feature tags <https://docs.rebeltoolbox.com/en/latest/tutorials/export/feature_tags.html>`__.
+**Feature tags:** Project settings can be overridden for specific platforms and configurations (debug, release, ...) using :doc:`feature tags </tutorials/export/feature_tags>`.
 
-**Overriding:** Any project setting can be overridden by creating a file named ``override.cfg`` in the project's root directory. This can also be used in exported projects by placing this file in the same directory as the project binary. Overriding will still take the base project settings' `feature tags <https://docs.rebeltoolbox.com/en/latest/tutorials/export/feature_tags.html>`__ in account. Therefore, make sure to *also* override the setting with the desired feature tags if you want them to override base project settings on all platforms and configurations.
+**Overriding:** Any project setting can be overridden by creating a file named ``override.cfg`` in the project's root directory. This can also be used in exported projects by placing this file in the same directory as the project binary. Overriding will still take the base project settings' :doc:`feature tags </tutorials/export/feature_tags>` in account. Therefore, make sure to *also* override the setting with the desired feature tags if you want them to override base project settings on all platforms and configurations.
 
 Properties
 ----------
@@ -985,7 +985,7 @@ Icon set in ``.icns`` format used on macOS to set the game's icon. This is done 
 
 The project's name. It is used both by the Project Manager and by exporters. The project name can be translated by translating its value in localization files. The window title will be set to match the project name automatically on startup.
 
-**Note:** Changing this value will also change the user data folder's path if :ref:`application/config/use_custom_user_dir<class_ProjectSettings_property_application/config/use_custom_user_dir>` is ``false``. After renaming the project, you will no longer be able to access existing data in ``user://`` unless you rename the old folder to match the new project name. See `Data paths <https://docs.rebeltoolbox.com/en/latest/tutorials/io/data_paths.html>`__ in the documentation for more information.
+**Note:** Changing this value will also change the user data folder's path if :ref:`application/config/use_custom_user_dir<class_ProjectSettings_property_application/config/use_custom_user_dir>` is ``false``. After renaming the project, you will no longer be able to access existing data in ``user://`` unless you rename the old folder to match the new project name. See :doc:`Data paths </tutorials/io/data_paths>` in the documentation for more information.
 
 ----
 
@@ -2051,7 +2051,7 @@ Forces the main window to be borderless.
 
 Sets the main window to full screen when the project starts. Note that this is not *exclusive* fullscreen. On Windows and Linux, a borderless window is used to emulate fullscreen. On macOS, a new desktop is used to display the running project.
 
-Regardless of the platform, enabling fullscreen will change the window size to match the monitor's size. Therefore, make sure your project supports `multiple resolutions <https://docs.rebeltoolbox.com/en/latest/tutorials/rendering/multiple_resolutions.html>`__ when enabling fullscreen mode.
+Regardless of the platform, enabling fullscreen will change the window size to match the monitor's size. Therefore, make sure your project supports :doc:`multiple resolutions </tutorials/rendering/multiple_resolutions>` when enabling fullscreen mode.
 
 **Note:** This setting is ignored on the iOS, Android and Web platforms.
 
@@ -4395,7 +4395,7 @@ Enables the use of bounding volume hierarchy instead of octree for 3D physics sp
 
 Sets which physics engine to use for 3D physics.
 
-"DEFAULT" is currently the `Bullet <https://bulletphysics.org>`__ physics engine. The "Rebel Physics" engine is still supported as an alternative.
+"DEFAULT" is currently the `Bullet <https://pybullet.org/wordpress/>`__ physics engine. The "Rebel Physics" engine is still supported as an alternative.
 
 ----
 
@@ -5915,7 +5915,7 @@ Returns the value of a setting.
 
 - :ref:`String<class_String>` **globalize_path** **(** :ref:`String<class_String>` path **)** |const|
 
-Returns the absolute, native OS path corresponding to the localized ``path`` (starting with ``res://`` or ``user://``). The returned path will vary depending on the operating system and user preferences. See `File paths in Rebel Engine projects <https://docs.rebeltoolbox.com/en/latest/tutorials/io/data_paths.html>`__ to see what those paths convert to. See also :ref:`localize_path<class_ProjectSettings_method_localize_path>`.
+Returns the absolute, native OS path corresponding to the localized ``path`` (starting with ``res://`` or ``user://``). The returned path will vary depending on the operating system and user preferences. See :doc:`File paths in Rebel Engine projects </tutorials/io/data_paths>` to see what those paths convert to. See also :ref:`localize_path<class_ProjectSettings_method_localize_path>`.
 
 **Note:** :ref:`globalize_path<class_ProjectSettings_method_globalize_path>` with ``res://`` will not work in an exported project. Instead, prepend the executable's base directory to the path when running from an exported project:
 

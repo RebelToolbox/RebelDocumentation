@@ -33,7 +33,7 @@ Animations are just data containers, and must be added to nodes such as an :ref:
 Tutorials
 ---------
 
-- :doc:`../tutorials/animation/index`
+- :doc:`/tutorials/animation/index`
 
 Properties
 ----------

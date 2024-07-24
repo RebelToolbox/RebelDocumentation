@@ -30,7 +30,7 @@ A custom effect for use with :ref:`RichTextLabel<class_RichTextLabel>`.
 Tutorials
 ---------
 
-- :doc:`../tutorials/ui/bbcode_in_richtextlabel`
+- :doc:`/tutorials/ui/bbcode_in_richtextlabel`
 
 Methods
 -------

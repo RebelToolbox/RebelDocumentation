@@ -23,7 +23,7 @@ Contains keys events information with modifiers support like ``Shift`` or ``Alt`
 Tutorials
 ---------
 
-- :doc:`../tutorials/inputs/inputevent`
+- :doc:`/tutorials/inputs/inputevent`
 
 Properties
 ----------

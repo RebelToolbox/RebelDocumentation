@@ -23,7 +23,7 @@ This CSG node allows you to use any mesh resource as a CSG shape, provided it is
 Tutorials
 ---------
 
-- `Prototyping levels with CSG <$DOCS_URL/tutorials/3d/csg_tools.html>`__
+- :doc:`Prototyping levels with CSG </tutorials/3d/csg_tools>`
 
 Properties
 ----------

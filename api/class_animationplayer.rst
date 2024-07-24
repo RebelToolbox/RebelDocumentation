@@ -25,9 +25,9 @@ Updating the target properties of animations occurs at process time.
 Tutorials
 ---------
 
-- :doc:`../tutorials/animation/index`
+- :doc:`Animation tutorial index </tutorials/animation/index>`
 
-- :doc:`../tutorials/2d/2d_sprite_animation`
+- :doc:`2D Sprite animation </tutorials/2d/2d_sprite_animation>`
 
 Properties
 ----------

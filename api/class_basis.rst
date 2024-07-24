@@ -25,11 +25,11 @@ For more information, read the "Matrices and transforms" documentation article.
 Tutorials
 ---------
 
-- :doc:`../tutorials/math/index`
+- :doc:`Math tutorial index </tutorials/math/index>`
 
-- :doc:`../tutorials/math/matrices_and_transforms`
+- :doc:`Matrices and transforms </tutorials/math/matrices_and_transforms>`
 
-- :doc:`../tutorials/3d/using_transforms`
+- :doc:`Using 3D transforms </tutorials/3d/using_transforms>`
 
 Properties
 ----------

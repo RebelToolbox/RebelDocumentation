@@ -21,7 +21,7 @@ Manages all :ref:`InputEventAction<class_InputEventAction>` which can be created
 Tutorials
 ---------
 
-- `#inputmap <../tutorials/inputs/inputevent.html#inputmap>`_ in :doc:`../tutorials/inputs/inputevent`
+- :ref:`tutorials/inputs/inputevent:inputmap`
 
 Methods
 -------

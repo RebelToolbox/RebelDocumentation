@@ -23,7 +23,7 @@ When doing physics queries against the tilemap, the cell coordinates are encoded
 Tutorials
 ---------
 
-- :doc:`../tutorials/2d/using_tilemaps`
+- :doc:`Using Tilemaps </tutorials/2d/using_tilemaps>`
 
 Properties
 ----------
@@ -373,7 +373,7 @@ Friction value for static body collisions (see ``collision_use_kinematic``).
 | *Getter*  | get_collision_layer()      |
 +-----------+----------------------------+
 
-The collision layer(s) for all colliders in the TileMap. See `Collision layers and masks <https://docs.rebeltoolbox.com/en/latest/tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
+The collision layer(s) for all colliders in the TileMap. See :ref:`Collision layers and masks <tutorials/physics/physics_introduction:collision layers and masks>` in the documentation for more information.
 
 ----
 
@@ -389,7 +389,7 @@ The collision layer(s) for all colliders in the TileMap. See `Collision layers a
 | *Getter*  | get_collision_mask()      |
 +-----------+---------------------------+
 
-The collision mask(s) for all colliders in the TileMap. See `Collision layers and masks <https://docs.rebeltoolbox.com/en/latest/tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
+The collision mask(s) for all colliders in the TileMap. See :ref:`Collision layers and masks <tutorials/physics/physics_introduction:collision layers and masks>` in the documentation for more information.
 
 ----
 

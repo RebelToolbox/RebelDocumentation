@@ -31,7 +31,7 @@ Having ``GIProbe``\ s in a scene can be expensive, the quality of the probe can 
 Tutorials
 ---------
 
-- :doc:`../tutorials/3d/gi_probes`
+- :doc:`GI probes </tutorials/3d/gi_probes>`
 
 Properties
 ----------

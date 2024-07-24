@@ -21,7 +21,7 @@ A singleton that deals with inputs. This includes key presses, mouse buttons and
 Tutorials
 ---------
 
-- :doc:`../tutorials/inputs/index`
+- :doc:`Inputs tutorial index </tutorials/inputs/index>`
 
 Methods
 -------
@@ -481,7 +481,7 @@ This is useful for code that needs to run only once when an action is pressed, i
 
 If ``exact`` is ``false``, it ignores the input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
 
-**Note:** Due to keyboard ghosting, :ref:`is_action_just_pressed<class_Input_method_is_action_just_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <https://docs.rebeltoolbox.com/en/latest/tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+**Note:** Due to keyboard ghosting, :ref:`is_action_just_pressed<class_Input_method_is_action_just_pressed>` may return ``false`` even if one of the action's keys is pressed. See :ref:`Input examples <tutorials/inputs/input_examples:keyboard events>` in the documentation for more information.
 
 ----
 
@@ -503,7 +503,7 @@ Returns ``true`` if you are pressing the action event. Note that if an action ha
 
 If ``exact`` is ``false``, it ignores the input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
 
-**Note:** Due to keyboard ghosting, :ref:`is_action_pressed<class_Input_method_is_action_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <https://docs.rebeltoolbox.com/en/latest/tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+**Note:** Due to keyboard ghosting, :ref:`is_action_pressed<class_Input_method_is_action_pressed>` may return ``false`` even if one of the action's keys is pressed. See :ref:`Input examples <tutorials/inputs/input_examples:keyboard events>` in the documentation for more information.
 
 ----
 
@@ -531,7 +531,7 @@ Returns ``true`` if you are pressing the key in the current keyboard layout. You
 
 :ref:`is_key_pressed<class_Input_method_is_key_pressed>` is only recommended over :ref:`is_physical_key_pressed<class_Input_method_is_physical_key_pressed>` in non-game applications. This ensures that shortcut keys behave as expected depending on the user's keyboard layout, as keyboard shortcuts are generally dependent on the keyboard layout in non-game applications. If in doubt, use :ref:`is_physical_key_pressed<class_Input_method_is_physical_key_pressed>`.
 
-**Note:** Due to keyboard ghosting, :ref:`is_key_pressed<class_Input_method_is_key_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <https://docs.rebeltoolbox.com/en/latest/tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+**Note:** Due to keyboard ghosting, :ref:`is_key_pressed<class_Input_method_is_key_pressed>` may return ``false`` even if one of the action's keys is pressed. See :ref:`Input examples <tutorials/inputs/input_examples:keyboard events>` in the documentation for more information.
 
 ----
 
@@ -551,7 +551,7 @@ Returns ``true`` if you are pressing the key in the physical location on the 101
 
 :ref:`is_physical_key_pressed<class_Input_method_is_physical_key_pressed>` is recommended over :ref:`is_key_pressed<class_Input_method_is_key_pressed>` for in-game actions, as it will make W/A/S/D layouts work regardless of the user's keyboard layout. :ref:`is_physical_key_pressed<class_Input_method_is_physical_key_pressed>` will also ensure that the top row number keys work on any keyboard layout. If in doubt, use :ref:`is_physical_key_pressed<class_Input_method_is_physical_key_pressed>`.
 
-**Note:** Due to keyboard ghosting, :ref:`is_physical_key_pressed<class_Input_method_is_physical_key_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <https://docs.rebeltoolbox.com/en/latest/tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+**Note:** Due to keyboard ghosting, :ref:`is_physical_key_pressed<class_Input_method_is_physical_key_pressed>` may return ``false`` even if one of the action's keys is pressed. See :ref:`Input examples <tutorials/inputs/input_examples:keyboard events>` in the documentation for more information.
 
 ----
 

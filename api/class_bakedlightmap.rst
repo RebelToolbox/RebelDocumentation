@@ -25,7 +25,7 @@ Baked lightmaps are an alternative workflow for adding indirect (or baked) light
 Tutorials
 ---------
 
-- :doc:`../tutorials/3d/baked_lightmaps`
+- :doc:`/tutorials/3d/baked_lightmaps`
 
 Properties
 ----------

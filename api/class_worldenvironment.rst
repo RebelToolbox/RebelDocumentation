@@ -25,7 +25,7 @@ The ``WorldEnvironment`` allows the user to specify default lighting parameters 
 Tutorials
 ---------
 
-- :doc:`../tutorials/3d/environment_and_post_processing`
+- :doc:`Environment and post-processing </tutorials/3d/environment_and_post_processing>`
 
 Properties
 ----------

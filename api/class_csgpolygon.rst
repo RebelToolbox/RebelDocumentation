@@ -23,7 +23,7 @@ An array of 2D points is extruded to quickly and easily create a variety of 3D m
 Tutorials
 ---------
 
-- `Prototyping levels with CSG <$DOCS_URL/tutorials/3d/csg_tools.html>`__
+- :doc:`Prototyping levels with CSG </tutorials/3d/csg_tools>`
 
 Properties
 ----------

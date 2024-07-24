@@ -19,7 +19,7 @@ Plane represents a normalized plane equation. Basically, "normal" is the normal 
 Tutorials
 ---------
 
-- :doc:`../tutorials/math/index`
+- :doc:`/tutorials/math/index`
 
 Properties
 ----------

@@ -22,7 +22,7 @@ Hyper-text transfer protocol client (sometimes called "User Agent"). Used to mak
 
 A ``HTTPClient`` should be reused between multiple requests or to connect to different hosts instead of creating one client per request. Supports SSL and SSL server certificate verification. HTTP status codes in the 2xx range indicate success, 3xx redirection (i.e. "try again, but over here"), 4xx something was wrong with the request, and 5xx something went wrong on the server's side.
 
-For more information on HTTP, see https://developer.mozilla.org/en-US/docs/Web/HTTP (or read RFC 2616 to get it straight from the source: https://tools.ietf.org/html/rfc2616).
+For more information on HTTP, see https://developer.mozilla.org/en-US/docs/Web/HTTP (or read RFC 2616 to get it straight from the source: https://datatracker.ietf.org/doc/html/rfc2616).
 
 **Note:** When performing HTTP requests from a project exported for the web, keep in mind the remote server may not allow requests from foreign origins due to `CORS <https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS>`__. If you host the server in question, you should modify its backend to allow requests from foreign origins by adding the ``Access-Control-Allow-Origin: *`` HTTP header.
 
@@ -33,9 +33,9 @@ For more information on HTTP, see https://developer.mozilla.org/en-US/docs/Web/H
 Tutorials
 ---------
 
-- :doc:`../tutorials/networking/http_client_class`
+- :doc:`/tutorials/networking/http_client_class`
 
-- :doc:`../tutorials/networking/ssl_certificates`
+- :doc:`/tutorials/networking/ssl_certificates`
 
 Properties
 ----------
@@ -488,7 +488,7 @@ Closes the current connection, allowing reuse of this ``HTTPClient``.
 
 Connects to a host. This needs to be done before any requests are sent.
 
-The host should not have http:// prepended but will strip the protocol identifier if provided.
+The host should not have ``http://`` prepended but will strip the protocol identifier if provided.
 
 If no ``port`` is specified (or ``-1`` is used), it is automatically set to 80 for HTTP and 443 for HTTPS (if ``use_ssl`` is enabled).
 

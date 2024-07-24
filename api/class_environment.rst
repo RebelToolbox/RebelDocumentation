@@ -39,9 +39,9 @@ Note that :ref:`ProjectSettings.rendering/quality/intended_usage/framebuffer_all
 Tutorials
 ---------
 
-- :doc:`../tutorials/3d/environment_and_post_processing`
+- :doc:`Environment and post-processing </tutorials/3d/environment_and_post_processing>`
 
-- :doc:`../tutorials/3d/high_dynamic_range`
+- :doc:`Light transport in game engines </tutorials/3d/high_dynamic_range>`
 
 Properties
 ----------

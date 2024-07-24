@@ -23,7 +23,7 @@ Stores multi-touch press/release information. Supports touch press, touch releas
 Tutorials
 ---------
 
-- :doc:`../tutorials/inputs/inputevent`
+- :doc:`/tutorials/inputs/inputevent`
 
 Properties
 ----------

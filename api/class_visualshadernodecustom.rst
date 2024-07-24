@@ -29,7 +29,7 @@ In order for the node to be registered as an editor addon, you must use the ``to
 Tutorials
 ---------
 
-- :doc:`../tutorials/plugins/editor/visual_shader_plugins`
+- :doc:`/tutorials/plugins/editor/visual_shader_plugins`
 
 Methods
 -------

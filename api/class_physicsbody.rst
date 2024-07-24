@@ -23,7 +23,7 @@ PhysicsBody is an abstract base class for implementing a physics body. All \*Bod
 Tutorials
 ---------
 
-- :doc:`../tutorials/physics/physics_introduction`
+- :doc:`/tutorials/physics/physics_introduction`
 
 Methods
 -------

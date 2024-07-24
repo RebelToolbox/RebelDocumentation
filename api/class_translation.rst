@@ -23,9 +23,9 @@ Translations are resources that can be loaded and unloaded on demand. They map a
 Tutorials
 ---------
 
-- :doc:`../tutorials/i18n/internationalizing_games`
+- :doc:`/tutorials/i18n/internationalizing_games`
 
-- :doc:`../tutorials/i18n/locales`
+- :doc:`/tutorials/i18n/locales`
 
 Properties
 ----------
