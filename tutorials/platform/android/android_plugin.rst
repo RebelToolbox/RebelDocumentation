@@ -44,12 +44,12 @@ Building an Android plugin
 **Prerequisite:** `Android Studio <https://developer.android.com/studio>`_ is strongly recommended as the IDE to use to create Android plugins.
 The instructions below assumes that you're using Android Studio.
 
-1. Follow `these instructions <https://developer.android.com/studio/projects/android-library>`__ to create an Android library module for your plugin.
+1. Follow `these instructions <https://developer.android.com/studio/projects/android-library#CreateLibrary>`__ to create an Android library module for your plugin.
 
 2. Add the Rebel Engine Android library as a dependency to your plugin module:
 
   - Download the Rebel Engine Android library (``rebel-lib.<version>.<status>.aar``).
-  - Follow `these instructions <https://developer.android.com/studio/projects/android-library#AddDependency>`__ to add
+  - Follow `these instructions <https://developer.android.com/studio/projects/android-library#psd-add-dependencies>`__ to add
     the Rebel Engine Android library as a dependency for your plugin.
   - In the plugin module's ``build.gradle`` file, replace ``implementation`` with ``compileOnly`` for the dependency line for the Rebel Engine Android library.
 
@@ -102,7 +102,7 @@ The instructions below assumes that you're using Android Studio.
         - The filepath can be relative (e.g.: ``MyPlugin.aar``) in which case it's relative to the ``res://android/plugins`` directory.
         - The filepath can be absolute: ``res://some_path/MyPlugin.aar``.
 
-      - If **binary_type** is ``remote``, then this should be a declaration for a `remote gradle binary <https://developer.android.com/studio/build/dependencies#dependency-types>`_ (e.g.: ``com.example:my-plugin:0.0.0``).
+      - If **binary_type** is ``remote``, then this should be a declaration for a `remote gradle binary <https://developer.android.com/build/dependencies>`_ (e.g.: ``com.example:my-plugin:0.0.0``).
 
     The ``dependencies`` section and fields are optional and defined as follow:
 

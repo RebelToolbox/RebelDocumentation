@@ -2,7 +2,7 @@ Visual Studio
 =============
 
 `Visual Studio Community <https://visualstudio.microsoft.com>`__ is a Windows-only IDE 
-by `Microsoft <https://microsoft.com>`_ that's free for non-commercial use.
+by `Microsoft <https://www.microsoft.com/>`_ that's free for non-commercial use.
 It has many useful features, such as memory view, performance view, source
 control and more.
 

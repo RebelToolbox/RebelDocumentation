@@ -607,7 +607,7 @@ Miscellaneous
 - :doc:`Command line interface </tutorials/editor/command_line_tutorial>` for automation.
 
    - Export and deploy projects using continuous integration platforms.
-   - `Shell completion scripts <https://github.com/RebelToolbox/RebelEngine/tree/main/misc/dist/shell>`__
+   - `Shell completion scripts <https://github.com/RebelToolbox/RebelEngine/tree/main/tools/dist/shell>`__
      are available for Bash, zsh and fish.
 
 - Support for :doc:`C++ modules </development/cpp/custom_modules_in_cpp>` statically linked

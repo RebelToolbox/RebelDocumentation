@@ -13,11 +13,11 @@ Requirements
 
 For compiling under Windows, the following is required:
 
-- `Visual Studio Community <https://www.visualstudio.com/vs/community/>`_,
+- `Visual Studio Community <https://visualstudio.microsoft.com/vs/community/>`_,
   version 2017 or later. VS 2019 is recommended.
   **Make sure to read "Installing Visual Studio caveats" below or you
   will have to run/download the installer again.**
-- `MinGW-w64 <http://mingw-w64.org/>`__ with GCC can be used as an alternative to
+- `MinGW-w64 <https://www.mingw-w64.org/>`__ with GCC can be used as an alternative to
   Visual Studio. Be sure to install/configure it to use the ``posix`` thread model.
 - `Python 3.5+ <https://www.python.org/downloads/windows/>`_.
   **Make sure to enable the option to add Python to the ``PATH`` in the installer.**
@@ -189,7 +189,7 @@ Cross-compiling for Windows from other operating systems
 --------------------------------------------------------
 
 If you are a Linux or macOS user, you need to install
-`MinGW-w64 <https://mingw-w64.org/doku.php>`__, which typically comes in 32-bit
+`MinGW-w64 <https://www.mingw-w64.org>`__, which typically comes in 32-bit
 and 64-bit variants. The package names may differ based on your distribution,
 here are some known ones:
 
@@ -215,7 +215,7 @@ here are some known ones:
 |                |           mingw32-gcc-c++ mingw32-winpthreads-static         |
 +----------------+--------------------------------------------------------------+
 
-.. _mingw-w64-gcc from the AUR: https://aur.archlinux.org/packages/mingw-w64-gcc/
+.. _mingw-w64-gcc from the AUR: https://aur.archlinux.org/packages?K=mingw-w64-gcc
 
 Before attempting the compilation, SCons will check for
 the following binaries in your ``PATH`` environment variable::

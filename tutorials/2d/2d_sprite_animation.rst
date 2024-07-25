@@ -14,8 +14,7 @@ animate a collection of individual images. Then we will animate a sprite sheet u
 with :ref:`AnimationPlayer <class_AnimationPlayer>` and the *Animation*
 property of :ref:`Sprite <class_Sprite>`.
 
-.. note:: Art for the following examples by https://opengameart.org/users/ansimuz and by
-                                           https://opengameart.org/users/tgfcoder
+.. note:: Art for the following examples by https://opengameart.org/users/ansimuz and `tgfcoder <https://opengameart.org/content/frog-player-spritesheets>`__
 
 Individual images with AnimatedSprite
 -------------------------------------

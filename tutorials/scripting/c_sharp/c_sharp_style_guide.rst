@@ -12,8 +12,8 @@ of the language, we encourage you to do the same, especially if you do not have 
 .. note:: This article is by no means an exhaustive guide on how to follow the standard coding
         conventions or best practices. If you feel unsure of an aspect which is not covered here,
         please refer to more comprehensive documentation, such as
-        `C# Coding Conventions <https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions>`_ or
-        `Framework Design Guidelines <https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/naming-guidelines>`_.
+        `C# Coding Conventions <https://learn.microsoft.com/dotnet/csharp/fundamentals/coding-style/coding-conventions>`_ or
+        `Framework Design Guidelines <https://learn.microsoft.com/dotnet/standard/design-guidelines/naming-guidelines>`_.
 
 Language specification
 ----------------------
@@ -23,7 +23,7 @@ a newer version, care must be taken to avoid mixing language features only avail
 later.
 
 For detailed information on C# features in different versions, please see
-`What's New in C# <https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/>`_.
+`What's New in C# <https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-13>`_.
 
 Formatting
 ----------
