@@ -13,7 +13,7 @@ C++ and Objective-C
 -------------------
 
 There are no written guidelines, but the code style agreed upon by the
-developers is enforced via the `clang-format <http://clang.llvm.org/docs/ClangFormat.html>`__
+developers is enforced via the `clang-format <https://clang.llvm.org/docs/ClangFormat.html>`__
 code beautifier, which takes care for you of all our conventions.
 To name a few:
 
@@ -64,10 +64,10 @@ Here's how to install clang-format:
 - Linux: It will usually be available out-of-the-box with the clang toolchain
   packaged by your distribution. If your distro version is not the required one,
   you can download a pre-compiled version from the
-  `LLVM website <http://releases.llvm.org/download.html>`__, or if you are on
-  a Debian derivative, use the `upstream repos <http://apt.llvm.org/>`__.
+  `LLVM website <https://releases.llvm.org/download.html>`__, or if you are on
+  a Debian derivative, use the `upstream repos <https://apt.llvm.org/>`__.
 - macOS and Windows: You can download precompiled binaries from the
-  `LLVM website <http://releases.llvm.org/download.html>`__. You may need to add
+  `LLVM website <https://releases.llvm.org/download.html>`__. You may need to add
   the path to the binary's folder to your system's ``PATH`` environment
   variable to be able to call ``clang-format`` out of the box.
 
@@ -113,7 +113,7 @@ clang-format automatically, for example each time you save a file.
 
 Here is a non-exhaustive list of beautifier plugins for some IDEs:
 
-- Qt Creator: `Beautifier plugin <http://doc.qt.io/qtcreator/creator-beautifier.html>`__
+- Qt Creator: `Beautifier plugin <https://doc.qt.io/qtcreator/creator-beautifier.html>`__
 - Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/items?itemName=xaver.clang-format>`__
 - Visual Studio: `ClangFormat <https://marketplace.visualstudio.com/items?itemName=LLVMExtensions.ClangFormat>`__
 - vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__
@@ -250,7 +250,7 @@ Python
 Rebel Engine's SCons buildsystem is written in Python, and various scripts included
 in the source tree are also using Python.
 
-For those, we follow the `Black style guide <https://github.com/psf/black#the-black-code-style>`__.
+For those, we follow the `Black style guide <https://black.readthedocs.io/en/stable/the_black_code_style/>`__.
 Blacken your Python changes using `Black <https://pypi.org/project/black/>`__.
 
 Using black locally
@@ -302,7 +302,7 @@ Editor integration
 
 Many IDEs or code editors have beautifier plugins that can be configured to run
 black automatically, for example each time you save a file. For details you can
-check `Black editor integration <https://github.com/psf/black#editor-integration>`__.
+check `Black editor integration <https://black.readthedocs.io/en/stable/integrations/editors.html>`__.
 
 Comment style guide
 -------------------

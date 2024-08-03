@@ -42,7 +42,7 @@ Debugging the project
 ---------------------
 
 Since CLion does not support SCons, you won't be able to compile, launch, and debug Rebel Engine from CLion in one step.
-You will first need to :doc:`/development/compiling/index` and run the binary without CLion. You will then be able to debug Rebel Engine by using the `Attach to process <https://www.jetbrains.com/help/clion/attaching-to-local-process.html>`__ feature.
+You will first need to :doc:`/development/compiling/index` and run the binary without CLion. You will then be able to debug Rebel Engine by using the `Attach to process <https://www.jetbrains.com/help/clion/attach-to-process.html>`__ feature.
 
 - Run the compilation in debug mode by entering ``scons``.
 

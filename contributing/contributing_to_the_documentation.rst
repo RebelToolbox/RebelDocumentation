@@ -124,14 +124,14 @@ first letter capitalized.
 Sphinx and reStructuredText syntax
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Check Sphinx’s `reST Primer <https://www.sphinx-doc.org/en/stable/rest.html>`__
-and the `official reference <http://docutils.sourceforge.net/rst.html>`__ for
+Check Sphinx’s `reST Primer <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`__
+and the `official reference <https://docutils.sourceforge.io/rst.html>`__ for
 details on the syntax.
 
 Sphinx uses specific reST comments to do specific operations, like defining the
 table of contents (``.. toctree::``) or cross-referencing pages. Check the
 `official Sphinx documentation
-<https://www.sphinx-doc.org/en/stable/index.html>`__ for more details. To learn
+<https://www.sphinx-doc.org>`__ for more details. To learn
 how to use Sphinx directives like ``.. note::`` or ``.. seealso::``, check out
 the `Sphinx directives documentation
 <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html>`__.

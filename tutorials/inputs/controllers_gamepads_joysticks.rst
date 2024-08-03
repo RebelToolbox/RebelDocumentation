@@ -2,7 +2,7 @@ Controllers, gamepads, and joysticks
 ====================================
 
 Rebel Engine supports hundreds of controller models thanks to the community-sourced
-`SDL game controller database <https://github.com/gabomdq/SDL_GameControllerDB>`__.
+`SDL game controller database <https://github.com/mdqinc/SDL_GameControllerDB>`__.
 
 Controllers are supported on Windows, macOS, Linux, Android, iOS, and HTML5.
 
@@ -177,14 +177,14 @@ My controller isn't recognized by Rebel Engine
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 First, check that your controller is recognized by other applications. You can
-use the `Gamepad Tester <https://gamepad-tester.com/>`__ website to confirm that
+use the `Gamepad Tester <https://hardwaretester.com/gamepad>`__ website to confirm that
 your controller is recognized.
 
 My controller has incorrectly mapped buttons or axes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If buttons are incorrectly mapped, this may be due to an erroneous mapping from
-the `SDL game controller database <https://github.com/gabomdq/SDL_GameControllerDB>`__.
+the `SDL game controller database <https://github.com/mdqinc/SDL_GameControllerDB>`__.
 You can contribute an updated mapping to be included in the next Rebel Engine version
 by opening a pull request on the linked repository.
 

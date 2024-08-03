@@ -327,7 +327,7 @@ Before you can export your project for Android, you must download the following
 software:
 
 * Android SDK: https://developer.android.com/studio/
-* Open JDK (**version 8 is required**, more recent versions won't work): https://adoptopenjdk.net/index.html
+* Open JDK (**version 8 is required**, more recent versions won't work): https://adoptium.net
 
 When you run Android Studio for the first time, click on **Configure -> SDK Manager**
 and install **Android SDK Platform Tools**. This installs the ``adb``
@@ -394,7 +394,7 @@ folders and files have been created in your selected location:
 
 You can now open the project in Xcode and build the project for iOS.
 The Xcode build procedure is beyond the scope of this tutorial.
-See https://help.apple.com/xcode/mac/current/#/devc8c2a6be1
+See `Xcode Documentation <https://developer.apple.com/documentation/xcode>`
 for more information.
 
 HTML5 (web)

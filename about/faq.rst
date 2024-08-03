@@ -7,7 +7,7 @@ Frequently asked questions
 What can I do with Rebel Toolbox? How much does it cost? What are the license terms?
 ------------------------------------------------------------------------------------
 
-Rebel Engine is `Free and Open-Source Software <https://en.wikipedia.org/wiki/Free_and_open-source_software>`_ available under the `OSI-approved <https://opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "free speech" as well as in "free beer."
+Rebel Engine is `Free and Open-Source Software <https://en.wikipedia.org/wiki/Free_and_open-source_software>`_ available under the `OSI-approved <https://opensource.org/license/MIT>`_ MIT license. This means it is free as in "free speech" as well as in "free beer."
 
 In short:
 
@@ -21,7 +21,7 @@ Logos and icons are generally under the same Creative Commons license. Note
 that some third-party libraries included with Rebel Engine's source code may have
 different licenses.
 
-For full details, look at the `COPYRIGHT.txt <https://github.com/RebelToolbox/RebelEngine/blob/main/COPYRIGHT.txt>`_ and the `LICENSE <https://github.com/RebelToolbox/RebelEngine/blob/main/LICENSE>`_ files in the Rebel Engine repository.
+For full details, look at the `COPYRIGHT.txt <https://github.com/RebelToolbox/RebelEngine/blob/main/copyright>`_ and the `LICENSE <https://github.com/RebelToolbox/RebelEngine/blob/main/LICENSE>`_ files in the Rebel Engine repository.
 
 Also, see `the license page on the Rebel Toolbox website <https://rebeltoolbox.com/license>`_.
 
@@ -211,7 +211,7 @@ Linux
     line in the ``.desktop`` file linked below to contain the full *absolute* path
     to the Rebel Engine binary.
 
-- Save `this .desktop file <https://github.com/RebelToolbox/RebelEngine/blob/main/misc/dist/linux/com.rebeltoolbox.rebelengine.desktop>`__
+- Save `this .desktop file <https://github.com/RebelToolbox/RebelEngine/blob/main/tools/dist/linux/com.rebeltoolbox.rebelengine.desktop>`__
   to ``$HOME/.local/share/applications/``. If you have administrator privileges,
   you can also save the ``.desktop`` file to ``/usr/local/share/applications``
   to make the shortcut available for all users.

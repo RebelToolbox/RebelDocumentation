@@ -4,7 +4,7 @@ Complying with licenses
 What are licenses?
 ------------------
 
-Rebel Engine is created and distributed under the `MIT License <https://opensource.org/licenses/MIT>`_.
+Rebel Engine is created and distributed under the `MIT License <https://opensource.org/license/MIT>`_.
 It doesn't have a sole owner either, as every contributor that submits code to
 the project does it under this same license and keeps ownership of the
 contribution.
@@ -94,7 +94,7 @@ Third-party licenses
 --------------------
 
 Rebel Engine contains software written by
-`third parties <https://github.com/RebelToolbox/RebelEngine/blob/main/COPYRIGHT.txt>`_.
+`third parties <https://github.com/RebelToolbox/RebelEngine/blob/main/copyright>`_.
 Most of it does not require license inclusion, but some do.
 Make sure to do it if these are compiled in your Rebel Engine export template. If
 you're using the official export templates, all libraries are enabled. This
@@ -105,7 +105,7 @@ Here's a list of libraries requiring attribution:
 FreeType
 ^^^^^^^^
 
-Rebel Engine uses `FreeType <https://www.freetype.org/>`_ to render fonts. Its license
+Rebel Engine uses `FreeType <https://freetype.org/>`_ to render fonts. Its license
 requires attribution, so the following text must be included together with the
 Rebel Toolbox license:
 
@@ -136,7 +136,7 @@ high-level multiplayer. ENet has similar licensing terms as Rebel Engine:
 mbed TLS
 ^^^^^^^^
 
-Rebel Engine uses `mbed TLS <https://tls.mbed.org>`_.
+Rebel Engine uses `mbed TLS <https://www.trustedfirmware.org/projects/mbed-tls/>`_.
 The Apache license needs to be complied to by including the following text:
 
     Copyright The Mbed TLS Contributors
@@ -145,7 +145,7 @@ The Apache license needs to be complied to by including the following text:
     not use this file except in compliance with the License.
     You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS, WITHOUT

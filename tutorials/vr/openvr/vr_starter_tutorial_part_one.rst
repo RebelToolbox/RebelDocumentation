@@ -13,7 +13,6 @@ It can take lots of practice and iterations to get this right, but there are a f
 
 - In VR, 1 unit is typically considered 1 meter. If you design your assets around that standard, you can save yourself a lot of headache.
 - In your 3D modeling program, see if there is a way to measure and use real world distances. In Blender, you can use the MeasureIt add-on; in Maya, you can use the Measure Tool.
-- You can make rough models using a tool like `Google Blocks <https://vr.google.com/blocks/>`__, and then refine in another 3D modelling program.
 - Test often, as the assets can look dramatically different in VR than on a flat screen!
 
 Throughout the course of this tutorial, we will cover:
@@ -1015,7 +1014,7 @@ Reducing motion sickness
 ------------------------
 
 .. note:: There are plenty of ways to reduce motion sickness in VR, and there is no one perfect way to reduce motion sickness. See
-          `this page on the Oculus Developer Center <https://developer.oculus.com/design/latest/concepts/bp-locomotion/>`__
+          `this page on the Oculus Developer Center <https://developer.oculus.com/resources/bp-locomotion/>`__
           for more information on how to implement locomotion and reducing motion sickness.
 
 To help reduce motion sickness while moving, we are going to add a vignette effect that will only be visible while the player moves.
@@ -1108,7 +1107,7 @@ That is the whole script! Now that we have written the code, go ahead and try mo
 then before!
 
 .. note:: As previously mentioned, there are plenty of ways to reduce motion sickness in VR. Check out
-          `this page on the Oculus Developer Center <https://developer.oculus.com/design/latest/concepts/bp-locomotion/>`__
+          `this page on the Oculus Developer Center <https://developer.oculus.com/resources/bp-locomotion/>`__
           for more information on how to implement locomotion and reducing motion sickness.
 
 

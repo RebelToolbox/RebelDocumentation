@@ -45,7 +45,7 @@ which quickly leads to PRs with an unreadable Git history (especially after peer
              the tool's philosophy and the various commands you need to
              master in your daily workflow. You can read them online on the
              `Git SCM <https://git-scm.com/book/en/v2>`_ website.
-             You can also try out `GitHub's interactive guide <https://try.github.io/>`__.
+             You can also try out `GitHub's interactive guide <https://docs.github.com/en/get-started/getting-started-with-git/set-up-git>`__.
 
 The branches on the Git repository are organized as follows:
 

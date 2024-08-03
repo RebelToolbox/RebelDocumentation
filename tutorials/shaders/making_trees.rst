@@ -14,7 +14,7 @@ I took this tree from SketchFab:
 
 .. image:: img/tree_base.png
 
-https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf
+https://sketchfab.com/3d-models/tree-ea5e6ed7f9d6445ba69589d503e8cebf
 
 and opened it in Blender.
 
@@ -88,4 +88,4 @@ Improving the shader
 There are many more resources on how to do this that you can read. Now that you know the basics, a recommended read is the chapter from GPU Gems3 about how Crysis does this
 (focus mostly on the sway code, as many other techniques shown there are obsolete):
 
-https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html
+https://developer.nvidia.com/gpugems/gpugems3/part-iii-rendering/chapter-16-vegetation-procedural-animation-and-shading-crysis

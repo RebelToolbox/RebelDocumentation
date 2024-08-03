@@ -15,10 +15,7 @@ with that same key.
 Step by step
 ------------
 
-1. Generate a 256bit AES key in HEX. You can use the aes-256-cbc variant from
-   `this service <https://asecuritysite.com/encryption/keygen>`_.
-
-   Alternatively, you can generate it yourself by using OpenSSL:
+1. Generate a 256bit AES key in HEX. You can use OpenSSL to generate a key:
 
    ::
 

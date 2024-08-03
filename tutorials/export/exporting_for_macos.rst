@@ -79,7 +79,7 @@ Notarization Options
 +--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Apple ID Name      | Apple ID account name (email address)                                                                                                                                        |
 +--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Apple ID Password  | Apple ID app-specific password. See `Using app-specific passwords <https://support.apple.com/en-us/HT204397>`__ to enable two-factor authentication and create app password. |
+| Apple ID Password  | Apple ID app-specific password. See `Using app-specific passwords <https://support.apple.com/en-us/102654>`__ to enable two-factor authentication and create app password.   |
 +--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Apple Team ID      | Team ID if your Apple ID belongs to multiple teams                                                                                                                           |
 +--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

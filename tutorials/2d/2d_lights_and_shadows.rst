@@ -188,7 +188,7 @@ section set ``Enable`` to ``on``. This turns on shadows with hard edges like in 
 .. image:: img/light_shadow_filter0_pcf0.png
 
 To give the shadows that nice, soft edge look we set the variables ``filter``, ``filter smooth``, and
-``gradient length``. Rebel Engine supports `Percentage Closer Filtering <https://developer.nvidia.com/gpugems/GPUGems/gpugems_ch11.html>`_
+``gradient length``. Rebel Engine supports `Percentage Closer Filtering <https://developer.nvidia.com/gpugems/gpugems/part-ii-lighting-and-shadows/chapter-11-shadow-map-antialiasing>`_
 (PCF), which takes multiple samples of the shadow map around a pixel and blurs them to create
 a smooth shadow effect. The higher the number of samples the smoother the shadow will
 look, but the slower it will run. That is why Rebel Engine provides 3-13 samples by default and allows you to choose.

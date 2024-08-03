@@ -167,7 +167,7 @@ Chrome restricts how websites may play audio. It may be necessary for the
 player to click or tap or press a key to enable audio.
 
 .. seealso:: Google offers additional information about their `Web Audio autoplay
-             policies <https://sites.google.com/a/chromium.org/dev/audio-video/autoplay>`__.
+             policies <https://developer.chrome.com/blog/web-audio-autoplay/>`__.
 
 .. warning:: Access to microphone requires a
              :ref:`secure context <tutorials/export/exporting_for_web:Secure contexts>`.
@@ -264,7 +264,7 @@ of its original size with gzip compression.
 **Hosts that provide on-the-fly compression:** GitHub Pages (gzip)
 
 **Hosts that don't provide on-the-fly compression:** itch.io, GitLab Pages
-(`supports manual gzip precompression <https://webd97.de/post/gitlab-pages-compression/>`__)
+(`supports manual gzip precompression <https://webd97.de/posts/gitlab-pages-compression/>`__)
 
 Calling JavaScript from script
 ------------------------------
