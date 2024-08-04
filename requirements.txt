@@ -12,7 +12,7 @@ sphinx-tabs==3.4.5
 
 # Sphinx not found page extension
 # https://pypi.org/project/sphinx-notfound-page/
-sphinx-notfound-page==1.0.2
+sphinx-notfound-page==1.0.4
 
 # Sphinx opengraph extension
 # https://pypi.org/project/sphinxext-opengraph/
