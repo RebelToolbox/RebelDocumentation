@@ -306,23 +306,23 @@ enum **Format**:
 
 - **FORMAT_ETC** = **29** --- `Ericsson Texture Compression format 1 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC1>`__, also referred to as "ETC1", and is part of the OpenGL ES graphics standard. This format cannot store an alpha channel.
 
-- **FORMAT_ETC2_R11** = **30** --- `Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (``R11_EAC`` variant), which provides one channel of unsigned data.
+- **FORMAT_ETC2_R11** = **30** --- `Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#EAC>`__ (``R11_EAC`` variant), which provides one channel of unsigned data.
 
-- **FORMAT_ETC2_R11S** = **31** --- `Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (``SIGNED_R11_EAC`` variant), which provides one channel of signed data.
+- **FORMAT_ETC2_R11S** = **31** --- `Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#EAC>`__ (``SIGNED_R11_EAC`` variant), which provides one channel of signed data.
 
-- **FORMAT_ETC2_RG11** = **32** --- `Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (``RG11_EAC`` variant), which provides two channels of unsigned data.
+- **FORMAT_ETC2_RG11** = **32** --- `Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#EAC>`__ (``RG11_EAC`` variant), which provides two channels of unsigned data.
 
-- **FORMAT_ETC2_RG11S** = **33** --- `Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (``SIGNED_RG11_EAC`` variant), which provides two channels of signed data.
+- **FORMAT_ETC2_RG11S** = **33** --- `Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#EAC>`__ (``SIGNED_RG11_EAC`` variant), which provides two channels of signed data.
 
-- **FORMAT_ETC2_RGB8** = **34** --- `Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (``RGB8`` variant), which is a follow-up of ETC1 and compresses RGB888 data.
-
-**Note:** When creating an :ref:`ImageTexture<class_ImageTexture>`, an sRGB to linear color space conversion is performed.
-
-- **FORMAT_ETC2_RGBA8** = **35** --- `Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (``RGBA8``\ variant), which compresses RGBA8888 data with full alpha support.
+- **FORMAT_ETC2_RGB8** = **34** --- `Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2>`__ (``RGB8`` variant), which is a follow-up of ETC1 and compresses RGB888 data.
 
 **Note:** When creating an :ref:`ImageTexture<class_ImageTexture>`, an sRGB to linear color space conversion is performed.
 
-- **FORMAT_ETC2_RGB8A1** = **36** --- `Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (``RGB8_PUNCHTHROUGH_ALPHA1`` variant), which compresses RGBA data to make alpha either fully transparent or fully opaque.
+- **FORMAT_ETC2_RGBA8** = **35** --- `Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2>`__ (``RGBA8``\ variant), which compresses RGBA8888 data with full alpha support.
+
+**Note:** When creating an :ref:`ImageTexture<class_ImageTexture>`, an sRGB to linear color space conversion is performed.
+
+- **FORMAT_ETC2_RGB8A1** = **36** --- `Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2>`__ (``RGB8_PUNCHTHROUGH_ALPHA1`` variant), which compresses RGBA data to make alpha either fully transparent or fully opaque.
 
 **Note:** When creating an :ref:`ImageTexture<class_ImageTexture>`, an sRGB to linear color space conversion is performed.
 
