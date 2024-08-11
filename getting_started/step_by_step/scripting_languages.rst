@@ -110,7 +110,7 @@ should be aware of its garbage collector.
 
 .. note:: You must use the Mono edition of the Rebel Editor to script in C#.
 
-Since Rebel Engine uses the `Mono <https://mono-project.com>`_ .NET runtime, in theory,
+Since Rebel Engine uses the `Mono <https://www.mono-project.com/>`_ .NET runtime, in theory,
 you can use any third-party .NET library or framework in Rebel Engine, as well as any
 Common Language Infrastructure-compliant programming language, such as F#, Boo,
 or ClojureCLR. However, C# is the only officially supported .NET option.

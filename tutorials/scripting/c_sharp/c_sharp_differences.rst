@@ -326,7 +326,7 @@ Yield
 -----
 
 Something similar to GDScript's ``yield`` with a single parameter can be achieved with
-C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/csharp/language-reference/keywords/yield>`_.
+C#'s `yield keyword <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/yield>`_.
 
 The equivalent of yield on signal can be achieved with async/await and ``Godot.Object.ToSignal``.
 

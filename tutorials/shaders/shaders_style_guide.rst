@@ -96,7 +96,7 @@ Line breaks and blank lines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For a general indentation rule, follow
-`the "1TBS Style" <https://en.wikipedia.org/wiki/Indentation_style#Variant:_1TBS_(OTBS)>`_
+`the "One True Brace Style" <https://en.wikipedia.org/wiki/Indentation_style#One_True_Brace>`_
 which recommends placing the brace associated with a control statement on the
 same line. Always use braces for statements, even if they only span one line.
 This makes them easier to refactor and avoids mistakes when adding more lines to

@@ -297,8 +297,8 @@ calls into ``std::istream``.
 
 .. seealso::
 
-  - `istream <http://www.cplusplus.com/reference/istream/istream/>`_
-  - `streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?kw=streambuf>`_
+  - `istream <https://cplusplus.com/reference/istream/istream/>`_
+  - `streambuf <https://cplusplus.com/reference/streambuf/streambuf/>`_
   - `core/os/file_access.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/os/file_access.h>`_
 
 Registering the new file format

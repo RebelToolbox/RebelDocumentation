@@ -17,7 +17,7 @@ Some use-cases where customizing the default page is useful include:
 - Passing custom command line arguments, e.g. ``-s`` to start a ``MainLoop`` script.
 
 The default HTML page is available in the Rebel Engine repository at
-`/misc/dist/html/full-size.html <https://github.com/RebelToolbox/RebelEngine/blob/main/misc/dist/html/full-size.html>`__
+`/misc/dist/html/full-size.html <https://github.com/RebelToolbox/RebelEngine/blob/main/tools/dist/html/full-size.html>`__
 but the following template can be used as a much simpler example:
 
 .. code-block:: html

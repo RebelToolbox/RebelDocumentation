@@ -2,7 +2,7 @@ Visual Studio Code
 ==================
 
 `Visual Studio Code <https://code.visualstudio.com>`_ is a free cross-platform code editor
-by `Microsoft <https://microsoft.com>`_ (not to be confused with :doc:`visual_studio`).
+by `Microsoft <https://www.microsoft.com/>`_ (not to be confused with :doc:`visual_studio`).
 
 Importing the project
 ---------------------

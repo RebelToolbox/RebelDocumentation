@@ -1,7 +1,7 @@
 KDevelop
 ========
 
-`KDevelop <https://www.kdevelop.org>`_ is a free, open source IDE for all desktop platforms.
+`KDevelop <https://kdevelop.org/>`_ is a free, open source IDE for all desktop platforms.
 
 Importing the project
 ---------------------

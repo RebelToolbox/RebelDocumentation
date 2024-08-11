@@ -21,14 +21,14 @@ the name used on the certificate.
 Limitations on Xbox One
 -----------------------
 
-As described in the `UWP documentation <https://docs.microsoft.com/en-us/windows/uwp/xbox-apps/system-resource-allocation>`__:
+As described in the `UWP documentation <https://learn.microsoft.com/en-us/windows/uwp/xbox-apps/system-resource-allocation>`__:
 
 - Submitted as an "App"
     - available memory is 1GB
     - share of 2-4 CPU cores
     - shared access of GPU power (45%)
 
-- Submitted as a "Game" (through `Xbox Live Creators Program <https://www.xbox.com/en-US/developers/creators-program>`__)
+- Submitted as a "Game" (through `Xbox Live Creators Program <https://developer.microsoft.com/en-US/games/publish>`__)
     - available memory is 5GB
     - 4 exclusive CPU cores and 2 shared CPU cores
     - exclusive access to GPU power (100%)
@@ -43,7 +43,7 @@ the Windows SDK. If you use Visual Studio, you can open one of its Developer
 Prompts, since it comes with these tools and they can be located in the path.
 
 You can get more detailed instructions from `Microsoft's documentation
-<https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85).aspx>`__.
+<https://learn.microsoft.com/en-us/windows/win32/appxpkg/how-to-create-a-package-signing-certificate>`__.
 
 First, run ``MakeCert`` to create a private key::
 

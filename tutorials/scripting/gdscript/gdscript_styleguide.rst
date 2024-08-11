@@ -7,7 +7,7 @@ discussions, and tutorials. Hopefully, this will also support the development of
 auto-formatting tools.
 
 Since GDScript is close to Python, this guide is inspired by Python's
-`PEP 8 <https://www.python.org/dev/peps/pep-0008/>`__ programming
+`PEP 8 <https://peps.python.org/pep-0008/>`__ programming
 style guide.
 
 Style guides aren't meant as hard rulebooks. At times, you may not be able to

@@ -73,7 +73,7 @@ Exporting textures separately
 
 While textures can be exported with a model in certain file formats, such as glTF 2.0, you can also export them
 separately. Rebel Engine uses PBR (physically based rendering) for its materials, so if a texturing program can export PBR
-textures, they can work in Rebel Engine. This includes the `Substance suite <https://www.substance3d.com/>`__,
+textures, they can work in Rebel Engine. This includes the `Substance suite <https://www.adobe.com/creativecloud/3d-ar.html>`__,
 `ArmorPaint (open source) <https://armorpaint.org/>`__, and `Material Maker (open source) <https://github.com/RodZill4/material-maker>`__.
 
 .. note:: For more information on Rebel Engine's materials, see :doc:`/tutorials/3d/spatial_material`.

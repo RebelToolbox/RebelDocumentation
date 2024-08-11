@@ -72,7 +72,7 @@ otherwise it returns true.
         // Yup, it's a sprite!
     }
 
-For more advanced type checking, you can look into `Pattern Matching <https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_.
+For more advanced type checking, you can look into `Pattern Matching <https://learn.microsoft.com/dotnet/csharp/fundamentals/functional/pattern-matching>`_.
 
 C# signals
 ----------
@@ -142,7 +142,7 @@ It is possible to bind values when establishing a connection by passing a Rebel 
         minusButton.Connect("pressed", this, "ModifyValue", new Godot.Collections.Array { -1 });
     }
 
-Signals support parameters and bound values of all the `built-in types <https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/built-in-types-table>`_ and Classes derived from :ref:`Godot.Object <class_Object>`.
+Signals support parameters and bound values of all the `built-in types <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types>`_ and Classes derived from :ref:`Godot.Object <class_Object>`.
 Consequently, any ``Node`` or ``Reference`` will be compatible automatically, but custom data objects will need to extend from `Godot.Object` or one of its subclasses.
 
 .. code-block:: csharp

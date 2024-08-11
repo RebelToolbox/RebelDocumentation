@@ -24,13 +24,13 @@ it is implemented with the Mono 6.x .NET framework, including full support
 for C# 8.0. Mono is an open source implementation of Microsoft's .NET Framework
 based on the ECMA standards for C# and the Common Language Runtime.
 A good starting point for checking its capabilities is the
-`Compatibility <http://www.mono-project.com/docs/about-mono/compatibility/>`_
+`Compatibility <https://www.mono-project.com/docs/about-mono/compatibility/>`_
 page in the Mono documentation.
 
 .. note:: This is **not** a full-scale tutorial on the C# language as a whole.
         If you aren't already familiar with its syntax or features,
         see the
-        `Microsoft C# guide <https://docs.microsoft.com/en-us/dotnet/csharp/index>`_
+        `Microsoft C# guide <https://learn.microsoft.com/en-us/dotnet/csharp/>`_
         or look for a suitable introduction elsewhere.
 
 Setting up C# for Rebel Engine
