@@ -596,11 +596,11 @@ Properties
 +-----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 | :ref:`float<class_float>`                     | :ref:`physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>`                                                                 | ``0.1``                                                                                                |
 +-----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-| :ref:`float<class_float>`                     | :ref:`physics/3d/godot_physics/bvh_collision_margin<class_ProjectSettings_property_physics/3d/godot_physics/bvh_collision_margin>`                                   | ``0.1``                                                                                                |
-+-----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-| :ref:`bool<class_bool>`                       | :ref:`physics/3d/godot_physics/use_bvh<class_ProjectSettings_property_physics/3d/godot_physics/use_bvh>`                                                             | ``true``                                                                                               |
-+-----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 | :ref:`String<class_String>`                   | :ref:`physics/3d/physics_engine<class_ProjectSettings_property_physics/3d/physics_engine>`                                                                           | ``"DEFAULT"``                                                                                          |
++-----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+| :ref:`float<class_float>`                     | :ref:`physics/3d/rebel_physics/bvh_collision_margin<class_ProjectSettings_property_physics/3d/rebel_physics/bvh_collision_margin>`                                   | ``0.1``                                                                                                |
++-----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+| :ref:`bool<class_bool>`                       | :ref:`physics/3d/rebel_physics/use_bvh<class_ProjectSettings_property_physics/3d/rebel_physics/use_bvh>`                                                             | ``true``                                                                                               |
 +-----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 | :ref:`bool<class_bool>`                       | :ref:`physics/common/enable_object_picking<class_ProjectSettings_property_physics/common/enable_object_picking>`                                                     | ``true``                                                                                               |
 +-----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
@@ -4357,34 +4357,6 @@ The default linear damp in 3D.
 
 ----
 
-.. _class_ProjectSettings_property_physics/3d/godot_physics/bvh_collision_margin:
-
-- :ref:`float<class_float>` **physics/3d/godot_physics/bvh_collision_margin**
-
-+-----------+---------+
-| *Default* | ``0.1`` |
-+-----------+---------+
-
-Additional expansion applied to object bounds in the 3D physics bounding volume hierarchy. This can reduce BVH processing at the cost of a slightly coarser broadphase, which can stress the physics more in some situations.
-
-The default value will work well in most situations. A value of 0.0 will turn this optimization off, and larger values may work better for larger, faster moving objects.
-
-**Note:** Used only if :ref:`physics/3d/godot_physics/use_bvh<class_ProjectSettings_property_physics/3d/godot_physics/use_bvh>` is enabled.
-
-----
-
-.. _class_ProjectSettings_property_physics/3d/godot_physics/use_bvh:
-
-- :ref:`bool<class_bool>` **physics/3d/godot_physics/use_bvh**
-
-+-----------+----------+
-| *Default* | ``true`` |
-+-----------+----------+
-
-Enables the use of bounding volume hierarchy instead of octree for 3D physics spatial partitioning. This may give better performance.
-
-----
-
 .. _class_ProjectSettings_property_physics/3d/physics_engine:
 
 - :ref:`String<class_String>` **physics/3d/physics_engine**
@@ -4396,6 +4368,34 @@ Enables the use of bounding volume hierarchy instead of octree for 3D physics sp
 Sets which physics engine to use for 3D physics.
 
 "DEFAULT" is currently the `Bullet <https://pybullet.org/wordpress/>`__ physics engine. The "Rebel Physics" engine is still supported as an alternative.
+
+----
+
+.. _class_ProjectSettings_property_physics/3d/rebel_physics/bvh_collision_margin:
+
+- :ref:`float<class_float>` **physics/3d/rebel_physics/bvh_collision_margin**
+
++-----------+---------+
+| *Default* | ``0.1`` |
++-----------+---------+
+
+Additional expansion applied to object bounds in the 3D physics bounding volume hierarchy. This can reduce BVH processing at the cost of a slightly coarser broadphase, which can stress the physics more in some situations.
+
+The default value will work well in most situations. A value of 0.0 will turn this optimization off, and larger values may work better for larger, faster moving objects.
+
+**Note:** Used only if :ref:`physics/3d/rebel_physics/use_bvh<class_ProjectSettings_property_physics/3d/rebel_physics/use_bvh>` is enabled.
+
+----
+
+.. _class_ProjectSettings_property_physics/3d/rebel_physics/use_bvh:
+
+- :ref:`bool<class_bool>` **physics/3d/rebel_physics/use_bvh**
+
++-----------+----------+
+| *Default* | ``true`` |
++-----------+----------+
+
+Enables the use of bounding volume hierarchy instead of octree for 3D physics spatial partitioning. This may give better performance.
 
 ----
 
