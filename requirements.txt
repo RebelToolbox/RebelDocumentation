@@ -8,7 +8,7 @@ sphinx_rtd_theme==2.0.0
 
 # Sphinx tabs
 # https://pypi.org/project/sphinx-tabs/
-sphinx-tabs==3.4.5
+sphinx-tabs==3.4.7
 
 # Sphinx not found page extension
 # https://pypi.org/project/sphinx-notfound-page/
