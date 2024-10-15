@@ -98,10 +98,6 @@ html_theme_options = {
     "logo_only": True,
 }
 
-html_theme_path = [
-    sphinx_rtd_theme.get_html_theme_path(),
-]
-
 html_title = supported_languages[language] % version
 
 html_context = {
