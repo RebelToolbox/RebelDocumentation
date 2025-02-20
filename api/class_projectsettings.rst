@@ -947,7 +947,7 @@ The :ref:`application/config/use_custom_user_dir<class_ProjectSettings_property_
 | *Default* | ``""`` |
 +-----------+--------+
 
-The project's description, displayed as a tooltip in the Project Manager when hovering the project.
+The project's description, displayed as a tooltip in the Projects Manager when hovering the project.
 
 ----
 
@@ -983,7 +983,7 @@ Icon set in ``.icns`` format used on macOS to set the game's icon. This is done 
 | *Default* | ``""`` |
 +-----------+--------+
 
-The project's name. It is used both by the Project Manager and by exporters. The project name can be translated by translating its value in localization files. The window title will be set to match the project name automatically on startup.
+The project's name. It is used both by the Projects Manager and by exporters. The project name can be translated by translating its value in localization files. The window title will be set to match the project name automatically on startup.
 
 **Note:** Changing this value will also change the user data folder's path if :ref:`application/config/use_custom_user_dir<class_ProjectSettings_property_application/config/use_custom_user_dir>` is ``false``. After renaming the project, you will no longer be able to access existing data in ``user://`` unless you rename the old folder to match the new project name. See :doc:`Data paths </tutorials/io/data_paths>` in the documentation for more information.
 
