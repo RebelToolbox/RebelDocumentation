@@ -1,6 +1,6 @@
 # Rebel Documentation Sphinx build requirements
 
-sphinx==8.2.1
+sphinx==8.2.3
 
 # Sphinx Read the Docs Theme
 # https://pypi.org/project/sphinx-rtd-theme/
