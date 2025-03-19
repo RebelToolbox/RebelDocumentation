@@ -44,13 +44,13 @@ See :doc:`getting_source` to get a copy of the Rebel Engine source code.
 
 For a general overview of SCons usage for Rebel Engine, see :doc:`introduction_to_the_buildsystem`.
 
-Set the environment variable ``ANDROID_SDK_ROOT`` to point to the folder where the Android command-line tools are installed.
+Set the environment variable ``ANDROID_HOME`` to point to the folder where the Android command-line tools are installed.
 
 .. note::
-    Do not set the ``ANDROID_SDK_ROOT`` to point to the command-line tools folder itself.
-    Set the ``ANDROID_SDK_ROOT`` to point to the folder that contains the command-line tools folder.
+    Do not set the ``ANDROID_HOME`` to point to the command-line tools folder itself.
+    Set the ``ANDROID_HOME`` to point to the folder that contains the command-line tools folder.
     If you installed Android Studio and used Android Studio SDK manager to install the command-line tools,
-    set ``ANDROID_SDK_ROOT`` to point to the ``Android/Sdk`` folder.
+    set ``ANDROID_HOME`` to point to the ``Android/Sdk`` folder.
 
 Compile Rebel Engine for Android
 --------------------------------
