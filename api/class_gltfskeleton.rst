@@ -30,21 +30,21 @@ Properties
 Methods
 -------
 
-+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`BoneAttachment<class_BoneAttachment>` | :ref:`get_bone_attachment<class_GLTFSkeleton_method_get_bone_attachment>` **(** :ref:`int<class_int>` idx **)**                           |
-+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`int<class_int>`                       | :ref:`get_bone_attachment_count<class_GLTFSkeleton_method_get_bone_attachment_count>` **(** **)**                                         |
-+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`Dictionary<class_Dictionary>`         | :ref:`get_godot_bone_node<class_GLTFSkeleton_method_get_godot_bone_node>` **(** **)**                                                     |
-+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`Skeleton<class_Skeleton>`             | :ref:`get_godot_skeleton<class_GLTFSkeleton_method_get_godot_skeleton>` **(** **)**                                                       |
-+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`Array<class_Array>`                   | :ref:`get_unique_names<class_GLTFSkeleton_method_get_unique_names>` **(** **)**                                                           |
-+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| void                                        | :ref:`set_godot_bone_node<class_GLTFSkeleton_method_set_godot_bone_node>` **(** :ref:`Dictionary<class_Dictionary>` godot_bone_node **)** |
-+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| void                                        | :ref:`set_unique_names<class_GLTFSkeleton_method_set_unique_names>` **(** :ref:`Array<class_Array>` unique_names **)**                    |
-+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| :ref:`BoneAttachment<class_BoneAttachment>` | :ref:`get_bone_attachment<class_GLTFSkeleton_method_get_bone_attachment>` **(** :ref:`int<class_int>` idx **)**         |
++---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| :ref:`int<class_int>`                       | :ref:`get_bone_attachment_count<class_GLTFSkeleton_method_get_bone_attachment_count>` **(** **)**                       |
++---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Dictionary<class_Dictionary>`         | :ref:`get_bone_node<class_GLTFSkeleton_method_get_bone_node>` **(** **)**                                               |
++---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Skeleton<class_Skeleton>`             | :ref:`get_skeleton<class_GLTFSkeleton_method_get_skeleton>` **(** **)**                                                 |
++---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Array<class_Array>`                   | :ref:`get_unique_names<class_GLTFSkeleton_method_get_unique_names>` **(** **)**                                         |
++---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| void                                        | :ref:`set_bone_node<class_GLTFSkeleton_method_set_bone_node>` **(** :ref:`Dictionary<class_Dictionary>` bone_node **)** |
++---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| void                                        | :ref:`set_unique_names<class_GLTFSkeleton_method_set_unique_names>` **(** :ref:`Array<class_Array>` unique_names **)**  |
++---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
 
 Property Descriptions
 ---------------------
@@ -90,15 +90,15 @@ Method Descriptions
 
 ----
 
-.. _class_GLTFSkeleton_method_get_godot_bone_node:
+.. _class_GLTFSkeleton_method_get_bone_node:
 
-- :ref:`Dictionary<class_Dictionary>` **get_godot_bone_node** **(** **)**
+- :ref:`Dictionary<class_Dictionary>` **get_bone_node** **(** **)**
 
 ----
 
-.. _class_GLTFSkeleton_method_get_godot_skeleton:
+.. _class_GLTFSkeleton_method_get_skeleton:
 
-- :ref:`Skeleton<class_Skeleton>` **get_godot_skeleton** **(** **)**
+- :ref:`Skeleton<class_Skeleton>` **get_skeleton** **(** **)**
 
 ----
 
@@ -108,9 +108,9 @@ Method Descriptions
 
 ----
 
-.. _class_GLTFSkeleton_method_set_godot_bone_node:
+.. _class_GLTFSkeleton_method_set_bone_node:
 
-- void **set_godot_bone_node** **(** :ref:`Dictionary<class_Dictionary>` godot_bone_node **)**
+- void **set_bone_node** **(** :ref:`Dictionary<class_Dictionary>` bone_node **)**
 
 ----
 

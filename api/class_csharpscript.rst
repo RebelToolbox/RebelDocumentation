@@ -18,7 +18,7 @@ Description
 
 This class represents a C# script. It is the C# equivalent of the :ref:`GDScript<class_GDScript>` class and is only available in Mono-enabled Rebel builds.
 
-See also :ref:`GodotSharp<class_GodotSharp>`.
+See also :ref:`RebelSharp<class_RebelSharp>`.
 
 Tutorials
 ---------
