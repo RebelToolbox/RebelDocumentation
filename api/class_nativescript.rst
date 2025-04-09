@@ -103,7 +103,7 @@ Method Descriptions
 
 - :ref:`String<class_String>` **get_class_documentation** **(** **)** |const|
 
-Returns the documentation string that was previously set with ``godot_nativescript_set_class_documentation``.
+Returns the documentation string that was previously set with ``rebel_nativescript_set_class_documentation``.
 
 ----
 
@@ -111,7 +111,7 @@ Returns the documentation string that was previously set with ``godot_nativescri
 
 - :ref:`String<class_String>` **get_method_documentation** **(** :ref:`String<class_String>` method **)** |const|
 
-Returns the documentation string that was previously set with ``godot_nativescript_set_method_documentation``.
+Returns the documentation string that was previously set with ``rebel_nativescript_set_method_documentation``.
 
 ----
 
@@ -119,7 +119,7 @@ Returns the documentation string that was previously set with ``godot_nativescri
 
 - :ref:`String<class_String>` **get_property_documentation** **(** :ref:`String<class_String>` path **)** |const|
 
-Returns the documentation string that was previously set with ``godot_nativescript_set_property_documentation``.
+Returns the documentation string that was previously set with ``rebel_nativescript_set_property_documentation``.
 
 ----
 
@@ -127,7 +127,7 @@ Returns the documentation string that was previously set with ``godot_nativescri
 
 - :ref:`String<class_String>` **get_signal_documentation** **(** :ref:`String<class_String>` signal_name **)** |const|
 
-Returns the documentation string that was previously set with ``godot_nativescript_set_signal_documentation``.
+Returns the documentation string that was previously set with ``rebel_nativescript_set_signal_documentation``.
 
 ----
 

@@ -17,8 +17,6 @@ Properties
 ----------
 
 +-----------------------------------------+-----------------------------------------------------------------+----------------------+
-| :ref:`Skin<class_Skin>`                 | :ref:`godot_skin<class_GLTFSkin_property_godot_skin>`           |                      |
-+-----------------------------------------+-----------------------------------------------------------------+----------------------+
 | :ref:`PoolIntArray<class_PoolIntArray>` | :ref:`joints<class_GLTFSkin_property_joints>`                   | ``PoolIntArray(  )`` |
 +-----------------------------------------+-----------------------------------------------------------------+----------------------+
 | :ref:`PoolIntArray<class_PoolIntArray>` | :ref:`joints_original<class_GLTFSkin_property_joints_original>` | ``PoolIntArray(  )`` |
@@ -28,6 +26,8 @@ Properties
 | :ref:`PoolIntArray<class_PoolIntArray>` | :ref:`roots<class_GLTFSkin_property_roots>`                     | ``PoolIntArray(  )`` |
 +-----------------------------------------+-----------------------------------------------------------------+----------------------+
 | :ref:`int<class_int>`                   | :ref:`skeleton<class_GLTFSkin_property_skeleton>`               | ``-1``               |
++-----------------------------------------+-----------------------------------------------------------------+----------------------+
+| :ref:`Skin<class_Skin>`                 | :ref:`skin<class_GLTFSkin_property_skin>`                       |                      |
 +-----------------------------------------+-----------------------------------------------------------------+----------------------+
 | :ref:`int<class_int>`                   | :ref:`skin_root<class_GLTFSkin_property_skin_root>`             | ``-1``               |
 +-----------------------------------------+-----------------------------------------------------------------+----------------------+
@@ -51,18 +51,6 @@ Methods
 
 Property Descriptions
 ---------------------
-
-.. _class_GLTFSkin_property_godot_skin:
-
-- :ref:`Skin<class_Skin>` **godot_skin**
-
-+----------+-----------------------+
-| *Setter* | set_godot_skin(value) |
-+----------+-----------------------+
-| *Getter* | get_godot_skin()      |
-+----------+-----------------------+
-
-----
 
 .. _class_GLTFSkin_property_joints:
 
@@ -131,6 +119,18 @@ Property Descriptions
 +-----------+---------------------+
 | *Getter*  | get_skeleton()      |
 +-----------+---------------------+
+
+----
+
+.. _class_GLTFSkin_property_skin:
+
+- :ref:`Skin<class_Skin>` **skin**
+
++----------+-----------------+
+| *Setter* | set_skin(value) |
++----------+-----------------+
+| *Getter* | get_skin()      |
++----------+-----------------+
 
 ----
 
