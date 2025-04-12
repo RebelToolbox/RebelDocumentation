@@ -37,7 +37,7 @@ Properties
 +-------------------------------------+--------------------------------------------------------------------+--------------+
 | :ref:`bool<class_bool>`             | :ref:`singleton<class_GDNativeLibrary_property_singleton>`         | ``false``    |
 +-------------------------------------+--------------------------------------------------------------------+--------------+
-| :ref:`String<class_String>`         | :ref:`symbol_prefix<class_GDNativeLibrary_property_symbol_prefix>` | ``"godot_"`` |
+| :ref:`String<class_String>`         | :ref:`symbol_prefix<class_GDNativeLibrary_property_symbol_prefix>` | ``"rebel_"`` |
 +-------------------------------------+--------------------------------------------------------------------+--------------+
 
 Methods
@@ -125,14 +125,14 @@ If ``true``, Rebel Engine loads the library at startup rather than the first tim
 - :ref:`String<class_String>` **symbol_prefix**
 
 +-----------+--------------------------+
-| *Default* | ``"godot_"``             |
+| *Default* | ``"rebel_"``             |
 +-----------+--------------------------+
 | *Setter*  | set_symbol_prefix(value) |
 +-----------+--------------------------+
 | *Getter*  | get_symbol_prefix()      |
 +-----------+--------------------------+
 
-The prefix this library's entry point functions begin with. For example, a GDNativeLibrary would declare its ``gdnative_init`` function as ``godot_gdnative_init`` by default.
+The prefix this library's entry point functions begin with. For example, a GDNativeLibrary would declare its ``gdnative_init`` function as ``rebel_gdnative_init`` by default.
 
 On platforms that require statically linking libraries (currently only iOS), each library must have a different ``symbol_prefix``.
 
