@@ -849,7 +849,7 @@ Methods
 +---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | :ref:`bool<class_bool>`               | :ref:`property_can_revert<class_ProjectSettings_method_property_can_revert>` **(** :ref:`String<class_String>` name **)**                                                                           |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`Variant<class_Variant>`         | :ref:`property_get_revert<class_ProjectSettings_method_property_get_revert>` **(** :ref:`String<class_String>` name **)**                                                                           |
+| :ref:`Variant<class_Variant>`         | :ref:`property_get_revert<class_ProjectSettings_method_property_get_revert>` **(** :ref:`String<class_String>` name **)** |const|                                                                   |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | :ref:`Error<enum_@GlobalScope_Error>` | :ref:`save<class_ProjectSettings_method_save>` **(** **)**                                                                                                                                          |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -5973,7 +5973,7 @@ Returns ``true`` if the specified property exists and its initial value differs 
 
 .. _class_ProjectSettings_method_property_get_revert:
 
-- :ref:`Variant<class_Variant>` **property_get_revert** **(** :ref:`String<class_String>` name **)**
+- :ref:`Variant<class_Variant>` **property_get_revert** **(** :ref:`String<class_String>` name **)** |const|
 
 Returns the specified property's initial value. Returns ``null`` if the property does not exist.
 
