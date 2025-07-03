@@ -833,8 +833,6 @@ Methods
 +---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | void                                  | :ref:`add_property_info<class_ProjectSettings_method_add_property_info>` **(** :ref:`Dictionary<class_Dictionary>` hint **)**                                                                       |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| void                                  | :ref:`clear<class_ProjectSettings_method_clear>` **(** :ref:`String<class_String>` name **)**                                                                                                       |
-+---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | :ref:`int<class_int>`                 | :ref:`get_order<class_ProjectSettings_method_get_order>` **(** :ref:`String<class_String>` name **)** |const|                                                                                       |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | :ref:`Variant<class_Variant>`         | :ref:`get_setting<class_ProjectSettings_method_get_setting>` **(** :ref:`String<class_String>` name **)** |const|                                                                                   |
@@ -5878,14 +5876,6 @@ Adds a custom property info to a property. The dictionary must contain:
     }
     
     ProjectSettings.add_property_info(property_info)
-
-----
-
-.. _class_ProjectSettings_method_clear:
-
-- void **clear** **(** :ref:`String<class_String>` name **)**
-
-Clears the whole configuration (not recommended, may break things).
 
 ----
 
