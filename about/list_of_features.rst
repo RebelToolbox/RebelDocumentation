@@ -29,7 +29,7 @@ Platforms
 
 - Android 4.4 and later.
 - iOS 10.0 and later.
-- :doc:`Consoles </tutorials/platform/consoles>`.
+- :doc:`Consoles </tutorials/platforms/consoles>`.
 - :doc:`Headless Linux and macOS servers </tutorials/export/exporting_for_dedicated_servers>`.
 
 Rebel Engine aims to be as platform-independent as possible and can be ported to new

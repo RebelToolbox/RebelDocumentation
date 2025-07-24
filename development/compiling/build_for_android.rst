@@ -127,7 +127,7 @@ Rebel Engine Android templates are created using `Gradle tasks <https://docs.gra
     Rebel Engine source files include the `Gradle wrapper <https://docs.gradle.org/current/userguide/gradle_wrapper.html>`__, so
     you do not need to install the `Gradle build software <https://gradle.org/>`__.
 
-To create the Rebel Engine Android templates, change to the ``platform/android/project`` directory and run the ``createAndroidTemplates`` Gradle task:
+To create the Rebel Engine Android templates, change to the ``platforms/android/project`` directory and run the ``createAndroidTemplates`` Gradle task:
 
 .. tabs::
 
@@ -135,21 +135,21 @@ To create the Rebel Engine Android templates, change to the ``platform/android/p
 
         .. code:: sh
 
-            cd platform/android/project
+            cd platforms/android/project
             ./gradlew createAndroidTemplates
 
     .. group-tab:: macOS
 
         .. code:: sh
 
-            cd platform/android/project
+            cd platforms/android/project
             ./gradlew createAndroidTemplates
 
     .. group-tab:: Windows
 
         .. code:: sh
 
-            cd platform\android\project
+            cd platforms\android\project
             .\gradlew.bat createAndroidTemplates
 
 The ``createAndroidTemplates`` task creates Android package (APK) templates that will be updated by Rebel Editor when exporting for Android.

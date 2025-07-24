@@ -64,7 +64,7 @@ both **For Desktop** and **For Mobile** will result in a bigger, but more
 compatible export).
 
 If a path to a **Custom HTML shell** file is given, it will be used instead of
-the default HTML page. See :doc:`/tutorials/platform/customizing_html5_shell`.
+the default HTML page. See :doc:`/tutorials/platforms/customizing_html5_shell`.
 
 **Head Include** is appended into the ``<head>`` element of the generated
 HTML page. This allows to, for example, load webfonts and third-party
@@ -158,7 +158,7 @@ input event must currently be active.
 
 For the same reason, the full screen project setting doesn't work unless the
 engine is started from within a valid input event handler. This requires
-:doc:`customization of the HTML page </tutorials/platform/customizing_html5_shell>`.
+:doc:`customization of the HTML page </tutorials/platforms/customizing_html5_shell>`.
 
 Audio
 ~~~~~
@@ -216,7 +216,7 @@ Boot splash is not displayed
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The default HTML page does not display the boot splash while loading. However,
-the image is exported as a PNG file, so :doc:`custom HTML pages </tutorials/platform/customizing_html5_shell>`
+the image is exported as a PNG file, so :doc:`custom HTML pages </tutorials/platforms/customizing_html5_shell>`
 can display it.
 
 Shader language limitations
@@ -230,7 +230,7 @@ Serving the files
 
 Exporting for the web generates several files to be served from a web server,
 including a default HTML page for presentation. A custom HTML file can be
-used, see :doc:`/tutorials/platform/customizing_html5_shell`.
+used, see :doc:`/tutorials/platforms/customizing_html5_shell`.
 
 The generated ``.html`` file can be used as ``DirectoryIndex`` in Apache
 servers and can be renamed to e.g. ``index.html`` at any time, its name is
@@ -246,7 +246,7 @@ the engine. The ``.pck`` file is the Rebel main pack containing your game. The
 ``.js`` file contains start-up code and is used by the ``.html`` file to access
 the engine. The ``.png`` file contains the boot splash image. It is not used in
 the default HTML page, but is included for
-:doc:`custom HTML pages </tutorials/platform/customizing_html5_shell>`.
+:doc:`custom HTML pages </tutorials/platforms/customizing_html5_shell>`.
 
 The ``.pck`` file is binary, usually delivered with the MIME-type
 :mimetype:`application/octet-stream`. The ``.wasm`` file is delivered as

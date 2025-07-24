@@ -109,7 +109,7 @@ the following files in the ``bin`` directory:
   the Mono runtime shared library (``monosgen-2.0``) next to the Rebel Engine
   binary in the output directory. Make sure to include this library when
   distributing Rebel Engine. When targeting Android, no extra steps are required as
-  this library is automatically copied to ``#platform/android/java/libs`` and
+  this library is automatically copied to ``#platforms/android/project/engine/src/main/jniLibs/`` and
   Gradle takes care of the rest.
 - Unlike "classical" Rebel Engine builds, when building with the Mono module enabled
   (and depending on the target platform), a data directory may be created both

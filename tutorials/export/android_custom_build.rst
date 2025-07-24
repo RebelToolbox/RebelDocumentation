@@ -27,7 +27,7 @@ download them.
 
 A Gradle-based Android project will be created under ``res://android/build``.
 Editing these files is not needed unless you want to :doc:`create
-your own add-ons</tutorials/platform/android/android_plugin>`, or you really need to modify the project.
+your own add-ons</tutorials/platforms/android/android_plugin>`, or you really need to modify the project.
 
 
 Enabling the custom build and exporting

@@ -239,7 +239,7 @@ Example:
 Java
 ----
 
-Rebel Engine's Java code (mostly in ``platform/android``) is also enforced via
+Rebel Engine's Java code (mostly in ``platforms/android``) is also enforced via
 ``clang-format``, so see the instructions above to set it up. Keep in mind that
 this style guide only applies to code written and maintained by Rebel Engine, not
 third-party code such as the ``java/src/com/google`` subfolder.

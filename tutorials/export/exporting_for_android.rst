@@ -176,4 +176,4 @@ To improve out-of-the-box performance on mobile devices, Rebel Engine automatica
 uses low-end-friendly settings by default on both Android and iOS.
 
 This can cause rendering issues that do not occur when running the project on a
-desktop platform. See :doc:`/tutorials/platform/mobile_rendering_limitations` for more information.
+desktop platform. See :doc:`/tutorials/platforms/mobile_rendering_limitations` for more information.

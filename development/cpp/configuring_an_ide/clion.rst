@@ -15,9 +15,9 @@ which can also be used by CLion.
 - From the CLion's welcome window choose the option to import an existing
   project. If you've already opened another project, choose **File > Open**
   from the top menu.
-- Navigate to ``RebelEngine/platform/android/java/nativeSrcsConfigs`` (the
-  ``CMakeLists.txt`` file is located there) and select it (but *not* the
-  ``CMakeLists.txt`` file itself), then click **OK**.
+- Select the ``platforms/android/project/engine/`` folder.
+  This is where a Rebel Engine ``CMakeLists.txt`` file that can be used is located.
+  Select the folder, and click **OK**.
 
 .. figure:: img/clion_1_open.png
    :align: center
