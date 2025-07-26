@@ -37,7 +37,7 @@ Importing the project
      core/os/
      core/math/
      drivers/
-     platform/<your_platform>/  // Replace <your_platform> with a folder 
+     platforms/<your_platform>/  // Replace <your_platform> with a folder 
                                    corresponding to your current platform
 
 .. figure:: img/kdevelop_addincludes.png

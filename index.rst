@@ -85,7 +85,7 @@ Table of Contents
    tutorials/networking/index
    tutorials/performance/index
    tutorials/physics/index
-   tutorials/platform/index
+   tutorials/platforms/index
    tutorials/plugins/index
    tutorials/rendering/index
    tutorials/scripting/index

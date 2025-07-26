@@ -78,7 +78,7 @@ To be able to start the game, you need to write a script that initializes the en
 code. This process consists of three steps, though as shown most of them can be skipped depending on
 how much customization is needed (or be left to a default behavior).
 
-See the :doc:`HTML5 shell API documentation </tutorials/platform/html5_shell_api>`, for the full list of methods and options available.
+See the :doc:`HTML5 shell API documentation </tutorials/platforms/html5_shell_api>`, for the full list of methods and options available.
 
 First, the engine must be loaded, then it needs to be initialized, and after this the project
 can finally be started. You can perform every of these steps manually and with great control.

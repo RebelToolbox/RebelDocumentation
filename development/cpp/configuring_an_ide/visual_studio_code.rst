@@ -143,7 +143,7 @@ To run and debug the project you need to create a new configuration in the ``lau
       "cwd": "${workspaceFolder}",
       "environment": [],
       "console": "internalConsole",
-      "visualizerFile": "${workspaceFolder}/platform/windows/rebel.natvis",
+      "visualizerFile": "${workspaceFolder}/platforms/windows/rebel.natvis",
       "preLaunchTask": "build"
     }
 

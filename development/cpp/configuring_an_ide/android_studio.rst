@@ -18,6 +18,6 @@ Importing the project
 
    Android Studio's welcome window.
 
-- Navigate to ``RebelEngine/platform/android/java`` and select the ``settings.gradle`` file.
+- Navigate to ``RebelEngine/platforms/android/project`` and select the ``settings.gradle`` file.
 - Android Studio will import and index the project.
 - To build the project, follow the :ref:`compiling instructions <toc-devel-compiling>`.

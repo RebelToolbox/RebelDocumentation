@@ -37,7 +37,7 @@ for a debug build, or:
 
     $ scons p=iphone target=release
 
-for a release build (check ``platform/iphone/detect.py`` for the compiler
+for a release build (check ``platforms/iphone/detect.py`` for the compiler
 flags used for each configuration).
 
 Alternatively, you can run

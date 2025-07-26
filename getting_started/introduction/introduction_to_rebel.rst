@@ -22,7 +22,7 @@ programming skills or a developer to port the game for you.
 .. note:: The Rebel Toolbox team can't provide an open-source console export due to the
           licensing terms imposed by console manufacturers. Regardless of the
           engine you use, though, releasing games on consoles is always a lot of
-          work. You can read more on that here: :doc:`/tutorials/platform/consoles`.
+          work. You can read more on that here: :doc:`/tutorials/platforms/consoles`.
 
 How does it work and look?
 --------------------------

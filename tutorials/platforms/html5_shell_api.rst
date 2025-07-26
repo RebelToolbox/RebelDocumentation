@@ -12,7 +12,7 @@ Engine
 
 The ``Engine`` class provides methods for loading and starting exported projects on the Web. For default export
 settings, this is already part of the exported HTML page. To understand practical use of the ``Engine`` class,
-see :doc:`Custom HTML page for Web export </tutorials/platform/customizing_html5_shell>`.
+see :doc:`Custom HTML page for Web export </tutorials/platforms/customizing_html5_shell>`.
 
 Static Methods
 ^^^^^^^^^^^^^^

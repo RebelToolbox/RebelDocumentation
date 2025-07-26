@@ -101,7 +101,7 @@ the **Application → Icon** field.
     If rcedit fails to change the icon, you can instead
     :doc:`compile your own Windows export templates </development/compiling/compiling_for_windows>`
     with the icon changed. To do so, replace
-    `platform/windows/rebel-icon.ico <https://github.com/RebelToolbox/RebelEngine/blob/main/platform/windows/rebel-icon.ico>`__
+    `platforms/windows/rebel-icon.ico <https://github.com/RebelToolbox/RebelEngine/blob/main/platforms/windows/rebel-icon.ico>`__
     with your own ICO file *before* compiling export templates.
 
     Once this is done, you can specify your export templates as custom export
