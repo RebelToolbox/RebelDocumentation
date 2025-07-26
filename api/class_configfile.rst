@@ -100,11 +100,11 @@ Methods
 +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`parse<class_ConfigFile_method_parse>` **(** :ref:`String<class_String>` data **)**                                                                                                 |
 +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`save<class_ConfigFile_method_save>` **(** :ref:`String<class_String>` path **)**                                                                                                   |
+| :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`save<class_ConfigFile_method_save>` **(** :ref:`String<class_String>` path **)** |const|                                                                                           |
 +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`save_encrypted<class_ConfigFile_method_save_encrypted>` **(** :ref:`String<class_String>` path, :ref:`PoolByteArray<class_PoolByteArray>` key **)**                                |
+| :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`save_encrypted<class_ConfigFile_method_save_encrypted>` **(** :ref:`String<class_String>` path, :ref:`PoolByteArray<class_PoolByteArray>` key **)** |const|                        |
 +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`save_encrypted_pass<class_ConfigFile_method_save_encrypted_pass>` **(** :ref:`String<class_String>` path, :ref:`String<class_String>` password **)**                               |
+| :ref:`Error<enum_@GlobalScope_Error>`         | :ref:`save_encrypted_pass<class_ConfigFile_method_save_encrypted_pass>` **(** :ref:`String<class_String>` path, :ref:`String<class_String>` password **)** |const|                       |
 +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | void                                          | :ref:`set_value<class_ConfigFile_method_set_value>` **(** :ref:`String<class_String>` section, :ref:`String<class_String>` key, :ref:`Variant<class_Variant>` value **)**                |
 +-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -218,7 +218,7 @@ Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (``OK`` 
 
 .. _class_ConfigFile_method_save:
 
-- :ref:`Error<enum_@GlobalScope_Error>` **save** **(** :ref:`String<class_String>` path **)**
+- :ref:`Error<enum_@GlobalScope_Error>` **save** **(** :ref:`String<class_String>` path **)** |const|
 
 Saves the contents of the ``ConfigFile`` object to the file specified as a parameter. The output file uses an INI-style structure.
 
@@ -228,7 +228,7 @@ Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (``OK`` 
 
 .. _class_ConfigFile_method_save_encrypted:
 
-- :ref:`Error<enum_@GlobalScope_Error>` **save_encrypted** **(** :ref:`String<class_String>` path, :ref:`PoolByteArray<class_PoolByteArray>` key **)**
+- :ref:`Error<enum_@GlobalScope_Error>` **save_encrypted** **(** :ref:`String<class_String>` path, :ref:`PoolByteArray<class_PoolByteArray>` key **)** |const|
 
 Saves the contents of the ``ConfigFile`` object to the AES-256 encrypted file specified as a parameter, using the provided ``key`` to encrypt it. The output file uses an INI-style structure.
 
@@ -238,7 +238,7 @@ Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (``OK`` 
 
 .. _class_ConfigFile_method_save_encrypted_pass:
 
-- :ref:`Error<enum_@GlobalScope_Error>` **save_encrypted_pass** **(** :ref:`String<class_String>` path, :ref:`String<class_String>` password **)**
+- :ref:`Error<enum_@GlobalScope_Error>` **save_encrypted_pass** **(** :ref:`String<class_String>` path, :ref:`String<class_String>` password **)** |const|
 
 Saves the contents of the ``ConfigFile`` object to the AES-256 encrypted file specified as a parameter, using the provided ``password`` to encrypt it. The output file uses an INI-style structure.
 
