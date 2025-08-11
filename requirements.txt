@@ -16,7 +16,7 @@ sphinx-notfound-page==1.1.0
 
 # Sphinx opengraph extension
 # https://pypi.org/project/sphinxext-opengraph/
-sphinxext-opengraph==0.10.0
+sphinxext-opengraph==0.12.0
 
 # Matplotlib
 # https://pypi.org/project/matplotlib/
