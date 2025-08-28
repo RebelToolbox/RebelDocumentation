@@ -1,5 +1,5 @@
-Contributing
-============
+How can I contribute
+====================
 
 Everyone is most welcome to contribute to the Rebel Toolbox.
 Here are some ways in which you can contribute to the project:
