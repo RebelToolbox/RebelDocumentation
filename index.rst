@@ -68,7 +68,7 @@ tell everyone you know about your experience.
    :caption: Development
 
    development/compiling/index
-   development/cpp/index
+   development/engine/index
    development/editor/index
    development/file_formats/index
 

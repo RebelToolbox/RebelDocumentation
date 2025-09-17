@@ -190,7 +190,7 @@ Rebel Engine is written in C++. Using C++ will usually result in the fastest cod
 However, on a practical level, it is the most difficult to deploy to end users'
 machines on different platforms. Options for using C++ include
 :ref:`GDNative <toc-tutorials-gdnative>` and
-:doc:`custom modules </development/cpp/custom_modules_in_cpp>`.
+:doc:`custom modules </development/engine/custom_modules_in_cpp>`.
 
 Threads
 =======

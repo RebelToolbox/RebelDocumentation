@@ -83,7 +83,7 @@ make a separate pull request for your icons to be available within the editor
 as they can be self-contained.
 
 For specific instructions on how to create module icons, refer to
-:ref:`Creating custom module icons<development/cpp/custom_modules_in_cpp:adding custom editor icons>`.
+:ref:`Creating custom module icons<development/engine/custom_modules_in_cpp:adding custom editor icons>`.
 
 Troubleshooting
 ~~~~~~~~~~~~~~~

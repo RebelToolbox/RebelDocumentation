@@ -610,7 +610,7 @@ Miscellaneous
    - `Shell completion scripts <https://github.com/RebelToolbox/RebelEngine/tree/main/tools/dist/shell>`__
      are available for Bash, zsh and fish.
 
-- Support for :doc:`C++ modules </development/cpp/custom_modules_in_cpp>` statically linked
+- Support for :doc:`C++ modules </development/engine/custom_modules_in_cpp>` statically linked
   into the engine binary.
 - Engine and editor written in C++03.
 

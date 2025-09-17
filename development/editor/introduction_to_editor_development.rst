@@ -35,7 +35,7 @@ The editor's code is fully self-contained in the
 of the Rebel Engine source repository.
 
 Some editor functionality is also implemented via
-:doc:`modules </development/cpp/custom_modules_in_cpp>`. Some of these are only enabled in
+:doc:`modules </development/engine/custom_modules_in_cpp>`. Some of these are only enabled in
 editor builds to decrease the binary size of export templates. See the
 `modules/ <https://github.com/RebelToolbox/RebelEngine/tree/main/modules>`__ folder
 in the Rebel Engine source repository.

@@ -14,7 +14,7 @@ at run-time. You can use it to run native code without compiling it with the eng
 Differences between GDNative and C++ modules
 --------------------------------------------
 
-You can use both GDNative and :doc:`C++ modules </development/cpp/custom_modules_in_cpp>` to
+You can use both GDNative and :doc:`C++ modules </development/engine/custom_modules_in_cpp>` to
 run C or C++ code in a Rebel Project.
 
 They also both allow you to integrate third-party libraries into Rebel Engine. The one
@@ -45,7 +45,7 @@ Also:
 Advantages of C++ modules
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We recommend :doc:`C++ modules </development/cpp/custom_modules_in_cpp>` in cases where
+We recommend :doc:`C++ modules </development/engine/custom_modules_in_cpp>` in cases where
 GDNative isn't enough:
 
 - C++ modules provide deeper integration into the engine. GDNative's access is
