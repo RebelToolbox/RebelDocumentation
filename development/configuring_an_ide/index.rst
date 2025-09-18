@@ -1,16 +1,20 @@
 Configuring an IDE
 ==================
 
-We assume that you have already `cloned <https://github.com/RebelToolbox/RebelEngine>`_
-and :ref:`compiled <toc-devel-compiling>` Rebel Engine.
+If you have not yet downloaded and compiled the Rebel Engine and Rebel Editor source code,
+please read the :doc:`/development/compiling/index` section first.
 
-You can easily develop Rebel Engine with any text editor and by invoking ``scons``
-on the command line, but if you want to work with an IDE (Integrated
-Development Environment), here are setup instructions for some popular ones:
+Although you can modify the Rebel Engine and Rebel Editor source code using a text editor,
+most people will want to use an IDE (Integrated Development Environment).
+Which IDE to use will depend on your Operating System and personal preference.
+Once you have installed your chosen IDE,
+you will need to configure your IDE to build Rebel Engine and Rebel Editor using the desired options.
+You will also need to configure your IDE to run and debug Rebel Editor or a Rebel game.
+
+We have provided detailed instructions for setting up some of the most popular IDEs:
 
 .. toctree::
    :maxdepth: 1
-   :name: toc-devel-configuring_an_ide
 
    android_studio
    clion
