@@ -68,6 +68,7 @@ tell everyone you know about your experience.
    :caption: Development
 
    development/compiling/index
+   development/configuring_an_ide/index
    development/engine/index
    development/editor/index
    development/file_formats/index

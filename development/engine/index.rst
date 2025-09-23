@@ -1,17 +1,6 @@
 Engine development
 ==================
 
-Setting up a development environment
-------------------------------------
-
-To modify Rebel Engine's source code, you need to set up a development environment. Start here.
-
-.. toctree::
-   :maxdepth: 1
-   :name: toc-devel-cpp-dev-env
-
-   configuring_an_ide/index
-
 Getting started with Rebel Engine's source code
 -----------------------------------------------
 
