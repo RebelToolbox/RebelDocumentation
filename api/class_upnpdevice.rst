@@ -30,7 +30,7 @@ Properties
 +---------------------------------------------+---------------------------------------------------------------------+--------+
 | :ref:`String<class_String>`                 | :ref:`igd_service_type<class_UPNPDevice_property_igd_service_type>` | ``""`` |
 +---------------------------------------------+---------------------------------------------------------------------+--------+
-| :ref:`IGDStatus<enum_UPNPDevice_IGDStatus>` | :ref:`igd_status<class_UPNPDevice_property_igd_status>`             | ``9``  |
+| :ref:`IGDStatus<enum_UPNPDevice_IGDStatus>` | :ref:`igd_status<class_UPNPDevice_property_igd_status>`             | ``10`` |
 +---------------------------------------------+---------------------------------------------------------------------+--------+
 | :ref:`String<class_String>`                 | :ref:`service_type<class_UPNPDevice_property_service_type>`         | ``""`` |
 +---------------------------------------------+---------------------------------------------------------------------+--------+
@@ -85,15 +85,15 @@ enum **IGDStatus**:
 
 - **IGD_STATUS_NO_IGD** = **4** --- Not a valid IGD.
 
-- **IGD_STATUS_DISCONNECTED** = **5** --- Disconnected.
+- **IGD_STATUS_DISCONNECTED** = **6** --- Disconnected.
 
-- **IGD_STATUS_UNKNOWN_DEVICE** = **6** --- Unknown device.
+- **IGD_STATUS_UNKNOWN_DEVICE** = **7** --- Unknown device.
 
-- **IGD_STATUS_INVALID_CONTROL** = **7** --- Invalid control.
+- **IGD_STATUS_INVALID_CONTROL** = **8** --- Invalid control.
 
-- **IGD_STATUS_MALLOC_ERROR** = **8** --- Memory allocation error.
+- **IGD_STATUS_MALLOC_ERROR** = **9** --- Memory allocation error.
 
-- **IGD_STATUS_UNKNOWN_ERROR** = **9** --- Unknown error.
+- **IGD_STATUS_UNKNOWN_ERROR** = **10** --- Unknown error.
 
 Property Descriptions
 ---------------------
@@ -167,7 +167,7 @@ IGD service type.
 - :ref:`IGDStatus<enum_UPNPDevice_IGDStatus>` **igd_status**
 
 +-----------+-----------------------+
-| *Default* | ``9``                 |
+| *Default* | ``10``                |
 +-----------+-----------------------+
 | *Setter*  | set_igd_status(value) |
 +-----------+-----------------------+
