@@ -4047,7 +4047,7 @@ Page size used by remote filesystem (in bytes).
 | *Default* | ``""`` |
 +-----------+--------+
 
-The CA certificates bundle to use for SSL connections. If this is set to a non-empty value, this will *override* Rebel Engine's default `Mozilla CA certificate bundle <https://github.com/RebelToolbox/RebelEngine/blob/main/thirdparty/certs/ca-bundle.crt>`__. If left empty, the default certificate bundle will be used.
+The CA certificates bundle to use for SSL connections. If this is set to a non-empty value, this will *override* Rebel Engine's default `Mozilla CA certificate bundle <https://github.com/RebelToolbox/RebelEngine/blob/main/third-party/certs/ca-bundle.crt>`__. If left empty, the default certificate bundle will be used.
 
 If in doubt, leave this setting empty.
 
