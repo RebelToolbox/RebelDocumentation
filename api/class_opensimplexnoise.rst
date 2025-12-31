@@ -85,7 +85,7 @@ Property Descriptions
 | *Getter*  | get_lacunarity()      |
 +-----------+-----------------------+
 
-Difference in period between :ref:`octaves<class_OpenSimplexNoise_property_octaves>`.
+Controls period change across octaves. ``2`` is usually a good value to address all detail levels.
 
 ----
 
@@ -101,7 +101,7 @@ Difference in period between :ref:`octaves<class_OpenSimplexNoise_property_octav
 | *Getter*  | get_octaves()      |
 +-----------+--------------------+
 
-Number of OpenSimplex noise layers that are sampled to get the fractal noise. Higher values result in more detailed noise but take more time to generate.
+The number of noise layers that are sampled to get the fractal noise. Higher values result in more detailed noise but take exponentially more time to generate.
 
 **Note:** The maximum allowed value is 9.
 
@@ -119,7 +119,7 @@ Number of OpenSimplex noise layers that are sampled to get the fractal noise. Hi
 | *Getter*  | get_period()      |
 +-----------+-------------------+
 
-Period of the base octave. A lower period results in a higher-frequency noise (more value changes across the same distance).
+The distance above which we start to see similarities. Higher values create longer "hills". Lower values result in a higher-frequency noise.
 
 ----
 
@@ -135,7 +135,7 @@ Period of the base octave. A lower period results in a higher-frequency noise (m
 | *Getter*  | get_persistence()      |
 +-----------+------------------------+
 
-Contribution factor of the different octaves. A ``persistence`` value of 1 means all the octaves have the same contribution, a value of 0.5 means each octave contributes half as much as the previous one.
+Determines the contribution of each octave. A value of 1 means all the octaves have the same contribution, a value of 0.5 means each octave contributes half as much as the previous one. Higher values increase grain, lower values increase smoothness.
 
 ----
 
