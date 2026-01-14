@@ -11,28 +11,28 @@ JSONRPC
 
 **Inherits:** :ref:`Object<class_Object>`
 
-A helper to handle dictionaries which look like JSONRPC documents.
+Creates and processes JSON-RPC objects.
 
 Description
 -----------
 
-`JSON-RPC <https://www.jsonrpc.org/>`__ is a standard which wraps a method call in a :ref:`JSON<class_JSON>` object. The object has a particular structure and identifies which method is called, the parameters to that function, and carries an ID to keep track of responses. This class implements that standard on top of :ref:`Dictionary<class_Dictionary>`; you will have to convert between a :ref:`Dictionary<class_Dictionary>` and :ref:`JSON<class_JSON>` with other functions.
+`JSON-RPC <https://www.jsonrpc.org/>`__ is a standard which wraps a method call in a :ref:`JSON<class_JSON>` object that can be sent between systems. Request, notification and response objects have a defined structure that enable methods with arguments to be called and results to be returned. This class implements that standard using a :ref:`Dictionary<class_Dictionary>`.
 
 Methods
 -------
 
 +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`Dictionary<class_Dictionary>` | :ref:`make_notification<class_JSONRPC_method_make_notification>` **(** :ref:`String<class_String>` method, :ref:`Variant<class_Variant>` params **)**                                           |
+| :ref:`Dictionary<class_Dictionary>` | :ref:`make_notification<class_JSONRPC_method_make_notification>` **(** :ref:`String<class_String>` method, :ref:`Variant<class_Variant>` params **)** |const|                                   |
 +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`Dictionary<class_Dictionary>` | :ref:`make_request<class_JSONRPC_method_make_request>` **(** :ref:`String<class_String>` method, :ref:`Variant<class_Variant>` params, :ref:`Variant<class_Variant>` id **)**                   |
+| :ref:`Dictionary<class_Dictionary>` | :ref:`make_request<class_JSONRPC_method_make_request>` **(** :ref:`String<class_String>` method, :ref:`Variant<class_Variant>` params, :ref:`Variant<class_Variant>` id **)** |const|           |
 +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`Dictionary<class_Dictionary>` | :ref:`make_response<class_JSONRPC_method_make_response>` **(** :ref:`Variant<class_Variant>` result, :ref:`Variant<class_Variant>` id **)**                                                     |
+| :ref:`Dictionary<class_Dictionary>` | :ref:`make_response<class_JSONRPC_method_make_response>` **(** :ref:`Variant<class_Variant>` result, :ref:`Variant<class_Variant>` id **)** |const|                                             |
 +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | :ref:`Dictionary<class_Dictionary>` | :ref:`make_response_error<class_JSONRPC_method_make_response_error>` **(** :ref:`int<class_int>` code, :ref:`String<class_String>` message, :ref:`Variant<class_Variant>` id=null **)** |const| |
 +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`Variant<class_Variant>`       | :ref:`process_action<class_JSONRPC_method_process_action>` **(** :ref:`Variant<class_Variant>` action, :ref:`bool<class_bool>` recurse=false **)**                                              |
+| :ref:`Variant<class_Variant>`       | :ref:`process_action<class_JSONRPC_method_process_action>` **(** :ref:`Variant<class_Variant>` request, :ref:`bool<class_bool>` unused=true **)**                                               |
 +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`String<class_String>`         | :ref:`process_string<class_JSONRPC_method_process_string>` **(** :ref:`String<class_String>` action **)**                                                                                       |
+| :ref:`String<class_String>`         | :ref:`process_string<class_JSONRPC_method_process_string>` **(** :ref:`String<class_String>` request_string **)**                                                                               |
 +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | void                                | :ref:`set_scope<class_JSONRPC_method_set_scope>` **(** :ref:`String<class_String>` scope, :ref:`Object<class_Object>` target **)**                                                              |
 +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -58,7 +58,7 @@ enum **ErrorCode**:
 
 - **INVALID_REQUEST** = **-32600**
 
-- **METHOD_NOT_FOUND** = **-32601** --- A method call was requested but no function of that name existed in the JSONRPC subclass.
+- **METHOD_NOT_FOUND** = **-32601**
 
 - **INVALID_PARAMS** = **-32602**
 
@@ -69,39 +69,33 @@ Method Descriptions
 
 .. _class_JSONRPC_method_make_notification:
 
-- :ref:`Dictionary<class_Dictionary>` **make_notification** **(** :ref:`String<class_String>` method, :ref:`Variant<class_Variant>` params **)**
+- :ref:`Dictionary<class_Dictionary>` **make_notification** **(** :ref:`String<class_String>` method, :ref:`Variant<class_Variant>` params **)** |const|
 
-Returns a dictionary in the form of a JSON-RPC notification. Notifications are one-shot messages which do not expect a response.
+Creates a JSON-RPC Notification object as a dictionary. A JSON-RPC Notification object is sent to a server to call ``method``. The method will be called with ``params`` arguments passed as an :ref:`Array<class_Array>` or :ref:`Dictionary<class_Dictionary>`.
 
-- ``method``: Name of the method being called.
+Notification objects are sent to a server when a response is not required. If a response is required, then use :ref:`make_request<class_JSONRPC_method_make_request>` to create a Request object instead.
 
-- ``params``: An array or dictionary of parameters being passed to the method.
+If scopes are used, ``method`` will be of the form "*scope/method*". See :ref:`set_scope<class_JSONRPC_method_set_scope>` for specifying the object against which the method should be called.
 
 ----
 
 .. _class_JSONRPC_method_make_request:
 
-- :ref:`Dictionary<class_Dictionary>` **make_request** **(** :ref:`String<class_String>` method, :ref:`Variant<class_Variant>` params, :ref:`Variant<class_Variant>` id **)**
+- :ref:`Dictionary<class_Dictionary>` **make_request** **(** :ref:`String<class_String>` method, :ref:`Variant<class_Variant>` params, :ref:`Variant<class_Variant>` id **)** |const|
 
-Returns a dictionary in the form of a JSON-RPC request. Requests are sent to a server with the expectation of a response. The ID field is used for the server to specify which exact request it is responding to.
+Creates a JSON-RPC Request object as a dictionary. A JSON-RPC Request object is sent to a server to call ``method``. The method will be called with ``params`` arguments passed as an :ref:`Array<class_Array>` or :ref:`Dictionary<class_Dictionary>`. The ``id`` uniquely identifies this request. The server is expected to send a response with the same ID.
 
-- ``method``: Name of the method being called.
+Request objects are sent to a server with the expectation of a response. If a response is not required, then use :ref:`make_notification<class_JSONRPC_method_make_notification>` to create a Notification object instead.
 
-- ``params``: An array or dictionary of parameters being passed to the method.
-
-- ``id``: Uniquely identifies this request. The server is expected to send a response with the same ID.
+If scopes are used, ``method`` will be of the form "*scope/method*". See :ref:`set_scope<class_JSONRPC_method_set_scope>` for specifying the object against which the method should be called.
 
 ----
 
 .. _class_JSONRPC_method_make_response:
 
-- :ref:`Dictionary<class_Dictionary>` **make_response** **(** :ref:`Variant<class_Variant>` result, :ref:`Variant<class_Variant>` id **)**
+- :ref:`Dictionary<class_Dictionary>` **make_response** **(** :ref:`Variant<class_Variant>` result, :ref:`Variant<class_Variant>` id **)** |const|
 
-When a server has received and processed a request, it is expected to send a response. If you did not want a response then you need to have sent a Notification instead.
-
-- ``result``: The return value of the function which was called.
-
-- ``id``: The ID of the request this response is targeted to.
+Creates a JSON-RPC Response object as a dictionary. A JSON-RPC Response object is sent by a server after processing a Request Object. The ``result`` is the return value of the method called. The ``id`` is the same id that was sent with the Request object.
 
 ----
 
@@ -109,37 +103,37 @@ When a server has received and processed a request, it is expected to send a res
 
 - :ref:`Dictionary<class_Dictionary>` **make_response_error** **(** :ref:`int<class_int>` code, :ref:`String<class_String>` message, :ref:`Variant<class_Variant>` id=null **)** |const|
 
-Creates a response which indicates a previous reply has failed in some way.
-
-- ``code``: The error code corresponding to what kind of error this is. See the :ref:`ErrorCode<enum_JSONRPC_ErrorCode>` constants.
-
-- ``message``: A custom message about this error.
-
-- ``id``: The request this error is a response to.
+Creates a JSON-RPC Response error object as a dictionary. A JSON-RPC Response error object is sent by a server if a Request object results in an error. The ``code`` indicates the type of error that occurred. It must be one of the :ref:`ErrorCode<enum_JSONRPC_ErrorCode>` constants. The ``message`` is a short description of the error. It should be a concise single sentence. The ``id`` is the same id that was sent with the Request object.
 
 ----
 
 .. _class_JSONRPC_method_process_action:
 
-- :ref:`Variant<class_Variant>` **process_action** **(** :ref:`Variant<class_Variant>` action, :ref:`bool<class_bool>` recurse=false **)**
+- :ref:`Variant<class_Variant>` **process_action** **(** :ref:`Variant<class_Variant>` request, :ref:`bool<class_bool>` unused=true **)**
 
-Given a Dictionary which takes the form of a JSON-RPC request: unpack the request and run it. Methods are resolved by looking at the field called "method" and looking for an equivalently named function in the JSONRPC object. If one is found that method is called.
+Processes a ``request``: a JSON-RPC Request or Notification object passed as a :ref:`Dictionary<class_Dictionary>` or an :ref:`Array<class_Array>` of JSON-RPC :ref:`Dictionary<class_Dictionary>` objects. If it received a JSON-RPC Request object, it returns a JSON-RPC Response object as a :ref:`Dictionary<class_Dictionary>` or an :ref:`Array<class_Array>` of JSON-RPC Response objects.
 
-To add new supported methods extend the JSONRPC class and call :ref:`process_action<class_JSONRPC_method_process_action>` on your subclass.
+The ``unused`` argument is not used.
 
-``action``: The action to be run, as a Dictionary in the form of a JSON-RPC request or notification.
+**Note:** Only methods of objects added using :ref:`set_scope<class_JSONRPC_method_set_scope>` or declared in the class extended from ``JSONRPC`` are processed.
 
 ----
 
 .. _class_JSONRPC_method_process_string:
 
-- :ref:`String<class_String>` **process_string** **(** :ref:`String<class_String>` action **)**
+- :ref:`String<class_String>` **process_string** **(** :ref:`String<class_String>` request_string **)**
+
+Processes a ``request_string``: a JSON-RPC Request or Notification object passed as a JSON :ref:`String<class_String>`. If it received a JSON-RPC Request object, it returns a JSON-RPC Response object as a JSON :ref:`String<class_String>`.
+
+**Note:** Only methods of objects added using :ref:`set_scope<class_JSONRPC_method_set_scope>` or declared in the class extended from ``JSONRPC`` are processed.
 
 ----
 
 .. _class_JSONRPC_method_set_scope:
 
 - void **set_scope** **(** :ref:`String<class_String>` scope, :ref:`Object<class_Object>` target **)**
+
+Adds a ``target`` object, whose methods can be called via a JSON-RPC Request object. The object is identified via the ``scope`` name. Methods are called using the form "*scope/method*".
 
 .. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
 .. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
