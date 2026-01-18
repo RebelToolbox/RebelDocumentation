@@ -1,82 +1,147 @@
 KDevelop
 ========
 
-`KDevelop <https://kdevelop.org/>`_ is a free, open source IDE for all desktop platforms.
+`KDevelop <https://kdevelop.org/>`__ is a free, open source, cross platform IDE.
 
-Importing the project
+Import Rebel Engine
+-------------------
+
+From the KDevelop's welcome screen select **Open Project**.
+
+.. figure:: img/kdevelop-welcome.png
+   :figclass: figure-w480
+   :align: center
+
+   Welcome to KDevelop
+
+Select the Rebel Engine root folder.
+
+.. figure:: img/kdevelop-open-project.png
+   :figclass: figure-w480
+   :align: center
+
+   Select ``RebelEngine`` root folder
+
+Click **Open**.
+
+Although, Rebel Engine includes a Basic `CMakeLists.txt` file, Rebel Engine does not use `CMake <https://cmake.org/>`_.
+Rebel Engine is compiled using `SCons <https://scons.org/>`_.
+
+Under Project Information, choose **Custom Build System** for the **Project manager**.
+
+.. figure:: img/kdevelop-project-information-custom-build-system.png
+   :figclass: figure-w480
+   :align: center
+
+   Select **Custom Build System**
+
+Click **Finish** and wait for KDevelop to finish importing the project.
+
+Build Rebel Engine
+------------------
+
+From the **Project** menu, select **Open Configuration...**.
+
+.. figure:: img/kdevelop-open-configuration.png
+   :figclass: figure-w480
+   :align: center
+
+   Open the Project Configuration
+
+Select **Custom Build System** and click **Add**.
+
+.. figure:: img/kdevelop-custom-build-system.png
+   :figclass: figure-w480
+   :align: center
+
+   Add Custom Build System configurations
+
+Add your build configurations.
+Rebel Engine is compiled using `SCons <https://scons.org/>`_.
+For details on compiling Rebel Engine using SCons, see :doc:`/development/compiling/introduction_to_the_buildsystem`.
+
+.. figure:: img/kdevelop-create-build-configuration.png
+   :figclass: figure-w480
+   :align: center
+
+   Create your build configurations
+
+Click **OK** to save your changes.
+
+You can now build Rebel Engine. From the **Project** menu, select **Build Selection**, or press :kbd:`F8`.
+
+.. figure:: img/kdevelop-build-rebel-engine.png
+   :figclass: figure-w480
+   :align: center
+
+   Build Rebel Engine
+
+Configure C++ support
 ---------------------
 
-- From the KDevelop's main screen select **Open Project**.
+From the **Project** menu, select **Open Configuration...** again.
+Select **Language Support**.
 
-.. figure:: img/kdevelop_newproject.png
+.. figure:: img/kdevelop-language-support.png
    :figclass: figure-w480
    :align: center
 
-   KDevelop's main screen.
+   Configure C++ Language Support
 
-- Navigate to the Rebel Engine root folder and select it.
-- On the next screen, choose **Custom Build System** for the **Project Manager**.
+Under the **Includes/Imports** tab, type ``.``, and click the :kbd:`+` button.
+This will add the project root folder, which is required for correctly parsing the includes.
 
-.. figure:: img/kdevelop_custombuild.png
+Ensure **Reparse the project** is selected.
+Click **OK** to save the changes.
+
+Run and debug Rebel Engine
+--------------------------
+
+From the **Run** menu, select **Configure Launches...**.
+
+.. figure:: img/kdevelop-configure-launches.png
    :figclass: figure-w480
    :align: center
 
-- After the project has been imported, open the project configuration by right-clicking 
-  on it in the **Projects** panel and selecting **Open Configuration..** option.
+   Open the Launch Configurations
 
-.. figure:: img/kdevelop_openconfig.png
+Select your ``RebelEngine`` project.
+
+.. figure:: img/kdevelop-configure-rebel-engine-launch.png
    :figclass: figure-w480
    :align: center
 
-- Under **Language Support** open the **Includes/Imports** tab and add the following paths:
+   Configure Rebel Engine Launch
 
-  .. code-block:: none
+Click **Add** to add a new launch configuration, and select **Compiled Binary**.
 
-     .  // A dot, to indicate the root of the Rebel Engine project
-     core/
-     core/os/
-     core/math/
-     drivers/
-     platforms/<your_platform>/  // Replace <your_platform> with a folder 
-                                   corresponding to your current platform
-
-.. figure:: img/kdevelop_addincludes.png
+.. figure:: img/kdevelop-add-compiled-binary.png
    :figclass: figure-w480
    :align: center
 
-- Apply the changes.
-- Under **Custom Build System** add a new build configuration with the following settings:
+   Add Compiled Binary to Rebel Engine launch configuration
 
-  +-----------------+-------------------------------------------------------------------------------------------------+
-  | Build Directory | *blank*                                                                                         |
-  +-----------------+-------------------------------------------------------------------------------------------------+
-  | Enable          | **True**                                                                                        |
-  +-----------------+-------------------------------------------------------------------------------------------------+
-  | Executable      | **scons**                                                                                       |
-  +-----------------+-------------------------------------------------------------------------------------------------+
-  | Arguments       | See :doc:`/development/compiling/introduction_to_the_buildsystem` for a full list of arguments. |
-  +-----------------+-------------------------------------------------------------------------------------------------+
+For **Executable:** browse to the ``bin`` folder and select the build file created.
 
-.. figure:: img/kdevelop_buildconfig.png
+.. figure:: img/kdevelop-edit-compile-binary-location.png
    :figclass: figure-w480
    :align: center
 
-- Apply the changes and close the configuration window.
+   Set **Executable** to the build file created
 
-Debugging the project
----------------------
+**Note:** To test a specific project, the **Working directory** field can be used.
+Set it to the folder containing the ``project.rebel`` file.
 
-- Select **Run > Configure Launches...** from the top menu.
+Click **OK** to save your launch configuration.
 
-.. figure:: img/kdevelop_configlaunches.png
+You can now run or debug Rebel Engine.
+From the **Run** menu, select **Execute Launch** (or click :kbd:`Shift+F9`) to run Rebel Engine.
+Select **Debug Launch** (or click :kbd:`Alt+F9`) to debug Rebel Engine.
+
+.. figure:: img/kdevelop-debug-rebel-engine.png
    :figclass: figure-w480
    :align: center
 
-- Click **Add** to create a new launch configuration.
-- Select **Executable** option and specify the path to your executable located in 
-  the ``RebelEngine/bin`` folder. The name depends on your build configuration,
-  e.g. ``rebel.x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled.
+   Debug Rebel Engine
 
-.. figure:: img/kdevelop_configlaunches2.png
-   :figclass: figure-w480
-   :align: center
+That's it! You're now ready to start contributing to Rebel Engine using KDevelop.
