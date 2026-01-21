@@ -1,106 +1,190 @@
 Qt Creator
 ==========
 
-`Qt Creator <https://doc.qt.io/qtcreator/index.html>`_ is a free, open source IDE for all desktop platforms.
+`Qt Creator <https://doc.qt.io/qtcreator/index.html>`__ is a free, open source, cross platform IDE for developing `Qt <https://en.wikipedia.org/wiki/Qt_(software)>`__ applications.
+Rebel Engine is not base on Qt, but Qt Creator can be used to develop other C++ applications like Rebel Engine.
 
-Importing the project
----------------------
+Import Rebel Engine
+-------------------
 
-- From the Qt Creator's main screen select **New Project > Import Project > Import Existing Project**.
+From the Qt Creator's welcome screen select **Create Project...**.
 
-.. figure:: img/qtcreator-new-project.png
+.. figure:: img/qt-creator-welcome.png
    :figclass: figure-w480
    :align: center
 
-- Under **Location** select the Rebel Engine root folder.
+   Welcome to Qt Creator
 
-.. figure:: img/qtcreator-set-project-path.png
+Under **Projects**, select **Import Project** and then **Import Existing Project**.
+
+.. figure:: img/qt-creator-import-existing-project.png
    :figclass: figure-w480
    :align: center
 
-- Next, you can choose which folders and files will be visible to the project.
-  While C/C++ files are added automatically, other extensions can be potentially useful:
-  ``*.glsl`` for shader files, ``*.py`` for buildsystem files,
-  ``*.java`` for Android platform development, ``*.mm`` for macOS platform development.
+   Import Existing Project
 
-.. figure:: img/qtcreator-apply-import-filter.png
+Click **Choose...**.
+
+Enter the project name and location.
+The Project name can be anything, but it makes sense to call it ``RebelEngine``.
+The Location is the root folder where you cloned RebelEngine.
+You can use the Browse... button to locate the folder.
+
+.. figure:: img/qt-creator-project-name-and-location.png
    :figclass: figure-w480
    :align: center
 
-.. note:: You can change this configuration later by right-clicking on your project
-          and selecting the **Edit Files...** option.
+   Enter project name and location
 
-          .. figure:: img/qtcreator-edit-files-menu.png
-            :figclass: figure-w480
-            :align: center
+Click **Next>** to continue.
 
+The importer includes a set of default file types to be included.
+The default file types are sufficient for most purposes.
+However, if you want to add or remove file types, you can do that here or change them later.
 
-- Finish the import.
-- Open the ``project_name.includes`` file and add a line containing ``.`` to it
-  to correctly enable the code completion.
-
-.. figure:: img/qtcreator-project-name-includes.png
+.. figure:: img/qt-creator-file-selection.png
    :figclass: figure-w480
    :align: center
 
-- From the left-side menu select **Projects** and open the **Build** tab.
-- Delete the predefined ``make`` build step.
+   File selection
 
-.. figure:: img/qtcreator-projects-build.png
+Click **Next>** to continue.
+
+On the summary page, we do not want to add the Qt Creator configuration files to Git.
+For **Add to version control:**, select **<None>**.
+
+.. figure:: img/qt-creator-import-summary.png
    :figclass: figure-w480
    :align: center
 
-- Click **Add Build Step > Custom Process Step** to add a new build step 
-  with the following settings:
+   Do not import Qt configuration files to Git
 
-  +-----------+-------------------------------------------------------------------------------------------------+
-  | Command   | **scons**                                                                                       |
-  +-----------+-------------------------------------------------------------------------------------------------+
-  | Arguments | See :doc:`/development/compiling/introduction_to_the_buildsystem` for a full list of arguments. |
-  +-----------+-------------------------------------------------------------------------------------------------+
+Click **Finish**.
+Wait for Qt Creator to import Rebel Engine.
 
-.. figure:: img/qtcreator-set-scons-command.png
+.. figure:: img/qt-creator-rebel-engine-imported.png
    :figclass: figure-w480
    :align: center
 
-.. note:: If the build fails with ``Could not start process "scons"``, it can mean that ``scons`` 
-          is not in your ``PATH`` environment variable. In this case, you'll have to specify the
-          full path to the SCons binary.
+   RebelEngine in Qt Creator
 
-Debugging the project
----------------------
+As improvements are made to Rebel Engine, files and folders are added, removed and renamed.
+Qt Creator does not automatically update the files and folders;
+unless you are personally making the changes.
+To update the project's files and folders, right-click on the RebelEngine project and select **Edit Files...**.
 
-- From the left-side menu select **Projects** and open the **Run** tab.
-- Under **Executable** specify the path to your executable located in 
-  the ``RebelEngine/bin`` folder. The name depends on your build configuration,
-  e.g. ``rebel.x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled.
-  You can use ``%{buildDir}`` to reference the project root, e.g: ``%{buildDir}/bin/rebel.x11.opt.tools.64``.
-- If you want to run a specific project, specify its root folder under **Working directory**.
-- If you want to run the editor, add ``-e`` to the **Command line arguments** field.
-
-.. figure:: img/qtcreator-run-command.png
+.. figure:: img/qt-creator-edit-files.png
    :figclass: figure-w480
    :align: center
 
-To learn more about command line arguments, refer to the
-:doc:`command line tutorial </tutorials/editor/command_line_tutorial>`.
+   Edit Files
 
-Code style configuration
-------------------------
+If you want to add or remove file types, you can do that here too.
+Useful file types to add include:
 
-Developers must follow the project's :doc:`code style </contributing/code_style_guidelines>`
-and the IDE should help them follow it. By default, Qt Creator uses spaces
-for indentation which doesn't match the Rebel Engine code style guidelines. You can
-change this behavior by changing the **Code Style** in **Tools > Options > C++**.
+- ``*.glsl``: shader files
+- ``*.py``: buildsystem files
+- ``*.java``: Android platform development
+- ``*.mm``: macOS platform development
 
-.. figure:: img/qtcreator-options-cpp.png
+.. figure:: img/qt-creator-file-selection.png
    :figclass: figure-w480
    :align: center
 
-Click on **Edit** to change the current settings, then click on
-**Copy Built-in Code Style** button to set a new code style. Set a name for it
-(e.g. Rebel) and change the Tab policy to be **Tabs Only**.
+   Update file selection
 
-.. figure:: img/qtcreator-edit-codestyle.png
+Click **OK** and the list of files and folders will be updated.
+
+Configure includes
+------------------
+
+Open the ``RebelEngine.includes`` file.
+Add a line containing ``.``.
+This is needed for Qt Creator to find includes in the same directory as the code file.
+
+.. figure:: img/qt-creator-update-includes.png
    :figclass: figure-w480
    :align: center
+
+   Add ``.`` to the list of includes.
+
+Save the file and wait for Qt Creator to update the project again.
+
+Build Rebel Engine
+------------------
+
+On the left-hand side, select the **Projects** tab to switch to Projects mode.
+
+.. figure:: img/qt-creator-projects-mode.png
+   :figclass: figure-w480
+   :align: center
+
+   Qt Creator Projects Mode
+
+Here you can add your Build settings.
+Rebel Engine is compiled using `SCons <https://scons.org/>`_.
+For details on compiling Rebel Engine using SCons, see :doc:`/development/compiling/introduction_to_the_buildsystem`.
+
+Under Build Steps, remove the default **Make** build step.
+
+.. figure:: img/qt-creator-remove-default-build-step.png
+   :figclass: figure-w480
+   :align: center
+
+   Remove the default Make build step
+
+Add a new custom process step.
+
+.. figure:: img/qt-creator-add-custom-process-step.png
+   :figclass: figure-w480
+   :align: center
+
+   Add a custom process step
+
+Under **Command:** enter ``scons``.
+Under **Arguments:** enter your desired build options.
+Do the same thing for **Clean Steps**.
+Use the same **Arguments** under **Build Steps**, but add ``--clean`` to the end.
+
+.. figure:: img/qt-creator-clean-step.png
+   :figclass: figure-w480
+   :align: center
+
+   Create the build and clean steps
+
+In the bottom left-hand corner, click the hammer icon to build Rebel Engine.
+Alternatively, from the **Build** menu, select **Build Project "RebelEngine"**, or simply :kbd:`Ctrl+B`.
+
+.. figure:: img/qt-creator-build-rebel-engine.png
+   :figclass: figure-w480
+   :align: center
+
+   Build Rebel Engine
+
+Run and debug Rebel Engine
+--------------------------
+
+Once Rebel Engine has finished building, we can configure the project run settings.
+Under **Build & Run**, select **Run**.
+You can use the **Browse** button to select the executable created in the ``bin`` folder.
+
+.. figure:: img/qt-creator-set-run-executable.png
+   :figclass: figure-w480
+   :align: center
+
+   Set Rebel Engine run executable
+
+**Note:** To test a specific project, the **Working directory** field can be used.
+Set it to the folder containing the ``project.rebel`` file.
+
+In the bottom left-hand corner, click the green arrow to run Rebel Engine.
+Click the green arrow with the bug to debug Rebel Engine.
+Alternatively, from the **Build** menu, select **Run**, or simply :kbd:`Ctrl+R` to run Rebel Engine.
+
+.. figure:: img/qt-creator-run-rebel-engine.png
+   :figclass: figure-w480
+   :align: center
+
+   Run Rebel Engine
+
+That's it! You're now ready to start contributing to Rebel Engine using Qt Creator.
