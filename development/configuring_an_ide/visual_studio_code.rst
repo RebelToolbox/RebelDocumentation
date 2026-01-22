@@ -1,168 +1,145 @@
 Visual Studio Code
 ==================
 
-`Visual Studio Code <https://code.visualstudio.com>`_ is a free cross-platform code editor
-by `Microsoft <https://www.microsoft.com/>`_ (not to be confused with :doc:`visual_studio`).
+`Visual Studio Code <https://code.visualstudio.com>`__ (also known as "VS Code"), is a cross platform IDE created by Microsoft.
+Visual Studio Code should not be confused with :doc:`visual_studio`.
+Visual Studio Code is proprietary software released under the "Microsoft Software License".
+However, it is based on the MIT licensed program named `Visual Studio Code – Open Source <https://github.com/microsoft/vscode>`__ (also known as "Code – OSS").
 
-Importing the project
----------------------
+Ensure you have configured VS Code for C++.
+For more information, see the Visual Studio Code guides for configuring VS Code for C++:
+https://code.visualstudio.com/docs/cpp/introvideos-cpp
 
-- Make sure the C/C++ extension is installed. You can find instructions in
-  the `official documentation <https://code.visualstudio.com/docs/languages/cpp>`_.
-  Alternatively, `clangd <https://open-vsx.org/extension/llvm-vs-code-extensions/vscode-clangd>`_
-  can be used instead.
-- When using the clangd extension, run ``scons compiledb=yes``.
-- From the Visual Studio Code's main screen open the Rebel Engine root folder with
-  **File > Open Folder...**.
-- Press :kbd:`Ctrl + Shift + P` to open the command prompt window and enter *Configure Task*.
+Importing Rebel Engine
+----------------------
 
-.. figure:: img/vscode_configure_task.png
-   :align: center
+From the **File** menu, select **Open Folder...**.
 
-- Select the **Create tasks.json file from template** option.
-
-.. figure:: img/vscode_create_tasksjson.png
-   :align: center
-
-- Then select **Others**.
-
-.. figure:: img/vscode_create_tasksjson_others.png
-   :align: center
-
-- Within the ``tasks.json`` file find the ``"tasks"`` array and add a new section to it:
-
-.. tabs::
-  .. code-tab:: js Linux/X11
-
-    {
-      "label": "build",
-      "group": "build",
-      "type": "shell",
-      "command": "scons",
-      "args": [
-        "-j $(nproc)"
-      ],
-      "problemMatcher": "$msCompile"
-    }
-
-  .. code-tab:: js Windows
-
-    {
-      "label": "build",
-      "group": "build",
-      "type": "shell",
-      "command": "scons",
-      "args": [
-        // Use this when your default shell is Command Prompt (cmd.exe).
-        "-j %NUMBER_OF_PROCESSORS%",
-        // Use this when your default shell is PowerShell.
-        "-j $env:NUMBER_OF_PROCESSORS"
-      ],
-      "problemMatcher": "$msCompile"
-    }
-
-.. figure:: img/vscode_3_tasks.json.png
+.. figure:: img/vs-code-open-folder.png
    :figclass: figure-w480
    :align: center
 
-   An example of a filled out ``tasks.json``.
+   File, Open folder
 
-Arguments can be different based on your own setup and needs. See
-:doc:`/development/compiling/introduction_to_the_buildsystem` for a full list of arguments.
+Browse to and open the Rebel Engine root folder.
 
-Debugging the project
----------------------
+When prompted, select **Yes, I trust the authors**.
 
-To run and debug the project you need to create a new configuration in the ``launch.json`` file.
-
-- Press :kbd:`Ctrl + Shift + D` to open the Run panel.
-- If ``launch.json`` file is missing you will be prompted to create a new one.
-
-.. figure:: img/vscode_1_create_launch.json.png
-   :align: center
-
-- Select **C++ (GDB/LLDB)**. There may be another platform specific option here. If selected,
-  adjust the configuration example provided accordingly.
-- Within the ``launch.json`` file find the ``"configurations"`` array and add a new section to it:
-
-.. tabs::
-  .. code-tab:: js X11
-
-    {
-      "name": "Launch Project",
-      "type": "lldb",
-      "request": "launch",
-      // Change to rebel.x11.tools.64.llvm for llvm-based builds.
-      "program": "${workspaceFolder}/bin/rebel.x11.tools.64",
-      // Change the arguments below for the project you want to test with.
-      // To run the project instead of editing it, remove the "--editor" argument.
-      "args": [ "--editor", "--path", "path-to-your-rebel-project-folder" ],
-      "stopAtEntry": false,
-      "cwd": "${workspaceFolder}",
-      "environment": [],
-      "externalConsole": false,
-      "preLaunchTask": "build"
-    }
-  .. code-tab:: js X11_gdb
-
-    {
-      "name": "Launch Project",
-      "type": "cppdbg",
-      "request": "launch",
-      // Change to rebel.x11.tools.64.llvm for llvm-based builds.
-      "program": "${workspaceFolder}/bin/rebel.x11.tools.64",
-      // Change the arguments below for the project you want to test with.
-      // To run the project instead of editing it, remove the "--editor" argument.
-      "args": [ "--editor", "--path", "path-to-your-rebel-project-folder" ],
-      "stopAtEntry": false,
-      "cwd": "${workspaceFolder}",
-      "environment": [],
-      "externalConsole": false,
-      "setupCommands":
-      [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ],
-      "preLaunchTask": "build"
-    }
-
-  .. code-tab:: js Windows
-
-    {
-      "name": "Launch Project",
-      "type": "cppvsdbg",
-      "request": "launch",
-      "program": "${workspaceFolder}/bin/rebel.windows.tools.64.exe",
-      // Change the arguments below for the project you want to test with.
-      // To run the project instead of editing it, remove the "--editor" argument.
-      "args": [ "--editor", "--path", "path-to-your-rebel-project-folder" ],
-      "stopAtEntry": false,
-      "cwd": "${workspaceFolder}",
-      "environment": [],
-      "console": "internalConsole",
-      "visualizerFile": "${workspaceFolder}/platforms/windows/rebel.natvis",
-      "preLaunchTask": "build"
-    }
-
-.. figure:: img/vscode_2_launch.json.png
+.. figure:: img/vs-code-trust-the-authors.png
    :figclass: figure-w480
    :align: center
 
-   An example of a filled out ``launch.json``.
+   Trust the authors
 
+Configure Build Tasks
+---------------------
 
-.. note::
+From the Visual Studio Code's main screen, press :kbd:`Ctrl+Shift+P` to open the command prompt window.
+Type ``configure task``, and select **Tasks: Configure Task**.
 
-    Due to sporadic performance issues, it is recommended to use LLDB over GDB on Unix-based systems.
-    Make sure that the `CodeLLDB extension <https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb>`_
-    is installed.
+.. figure:: img/vs-code-configure-task.png
+   :figclass: figure-w480
+   :align: center
 
-    If you encounter issues with lldb, you may consider using gdb (see the X11_gdb configuration).
+   Tasks: Configure Task
 
-    Do note that lldb may work better with llvm-based builds. See :doc:`/development/compiling/compiling_for_x11` for further information.
+Select **Create tasks.json file from template** option.
 
-The name under ``program`` depends on your build configuration,
-e.g. ``rebel.x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled.
+.. figure:: img/vs-code-create-tasks-json-from-template.png
+   :figclass: figure-w480
+   :align: center
+
+   Create tasks.json file from template
+
+Select "**Others** Example to run an arbitrary external command" task template.
+
+.. figure:: img/vs-code-others-task-template.png
+   :figclass: figure-w480
+   :align: center
+
+   Select **Others** task template
+
+Here we create our build tasks.
+For each build variant, we need to define the following:
+
+- **label**: This can be anything that helps you identify the build variant.
+- **group**: ``build``
+- **type**: ``shell``.
+- **command**: ``scons``
+- **args**: An array containing the build arguments.
+- **problemMatcher**: ``$gcc``
+
+.. figure:: img/vs-code-tasks-json.png
+   :figclass: figure-w480
+   :align: center
+
+   Create a SCons build task
+
+For more information on using `SCons <https://scons.org/>`_. and the build options used to compile Rebel Engine, see :doc:`/development/compiling/introduction_to_the_buildsystem`.
+
+For more information on the ``tasks.json`` format, see https://go.microsoft.com/fwlink/?LinkId=733558
+
+You can now build Rebel Engine.
+Press :kbd:`Ctrl+Shift+B`, and select your build task.
+
+Run and Debug Rebel Engine
+--------------------------
+
+Create a ``launch.json`` file.
+On the left-hand side, **Run and Debug** icon (the triangle with the bug) or press :kbd:`Ctrl+Shift+D`.
+
+.. figure:: img/vs-code-create-launch-json-file.png
+   :figclass: figure-w480
+   :align: center
+
+   Create a ``launch.json`` file
+
+Click **create a launch.json file**.
+
+.. figure:: img/vs-code-cpp-gdb-lldb.png
+   :figclass: figure-w480
+   :align: center
+
+   Select **C++ (GDB/LLDB)**
+
+Select the suggested **C++ (GDB/LLDB)** debugger.
+
+Add a **{} C/C++: (gdb) Launch** configuration.
+If necessary, use the **Add Configuration...** button to get the template prompt.
+
+.. figure:: img/vs-code-add-gdb-launch-configuration.png
+   :figclass: figure-w480
+   :align: center
+
+   Add **{} C/C++: (gdb) Launch** configuration
+
+By using the right template, most of the fields are completed for us.
+However, we need to specify the **program** field.
+This needs to be the name of the Rebel Engine executable in the ``bin`` folder that was created by the build task.
+For example ``${workspaceFolder}/bin/rebel.linux.tools.64``.
+
+We also want to ensure the build is updated before launching the debugger.
+Add the field **preLaunchTask**, and set it to the name of your build task.
+
+It is also useful to set the launch configuration **name**.
+Use a name that ties the launch configuration to the build task.
+
+.. figure:: img/vs-code-launch-configurations.png
+   :figclass: figure-w480
+   :align: center
+
+   Specify the launch configuration
+
+For more information on launch configurations, see https://code.visualstudio.com/docs/debugtest/debugging-configuration
+
+Save the changes.
+You can now run and debug Rebel Engine.
+Click the green, right-pointing triangle or press :kbd:`F5`.
+
+.. figure:: img/vs-code-launch-rebel-engine.png
+   :figclass: figure-w480
+   :align: center
+
+   Launch and Debug Rebel Engine
+
+That's it! You're now ready to start contributing to Rebel Engine using Visual Studio Code.
