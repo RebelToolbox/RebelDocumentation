@@ -37,7 +37,7 @@ Y or Z? This article covers a variety of topics related to these dilemmas.
 Array vs. Dictionary vs. Object
 -------------------------------
 
-Rebel Engine stores all variables in the scripting API in the :doc:`/development/cpp/variant_class`.
+Rebel Engine stores all variables in the scripting API in the :doc:`/development/engine/variant_class`.
 Variants can store Variant-compatible data structures such as
 :ref:`Array <class_Array>` and :ref:`Dictionary <class_Dictionary>` as well as
 :ref:`Object <class_Object>` s.

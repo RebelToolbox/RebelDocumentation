@@ -226,7 +226,7 @@ handled and how they can be customized with
 described in :ref:`tutorials/best_practices/interfaces:accessing data or logic from an object`.
 
 .. seealso:: For binding properties using the above methods in C++, see
-             :ref:`development/cpp/object_class:binding properties`.
+             :ref:`development/engine/object_class:binding properties`.
 
 .. warning:: The script must operate in the ``tool`` mode so the above methods
              can work from within the editor.
