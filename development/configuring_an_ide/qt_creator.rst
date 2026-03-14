@@ -2,7 +2,7 @@ Qt Creator
 ==========
 
 `Qt Creator <https://doc.qt.io/qtcreator/index.html>`__ is a free, open source, cross platform IDE for developing `Qt <https://en.wikipedia.org/wiki/Qt_(software)>`__ applications.
-Rebel Engine is not base on Qt, but Qt Creator can be used to develop other C++ applications like Rebel Engine.
+Rebel Engine is not based on Qt, but Qt Creator can be used to develop other C++ applications like Rebel Engine.
 
 Import Rebel Engine
 -------------------
