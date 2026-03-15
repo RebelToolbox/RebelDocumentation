@@ -321,25 +321,31 @@ Returns a global singleton with given ``name``. Often used for plugins on Androi
 
 Returns the current engine version information in a Dictionary.
 
-``major``    - Holds the major version number as an int
+``major``    - The build major version number as an int.
 
-``minor``    - Holds the minor version number as an int
+``minor``    - The build minor version number as an int.
 
-``patch``    - Holds the patch version number as an int
+``patch``    - The build patch version number as an int.
 
-``hex``      - Holds the full version number encoded as a hexadecimal int with one byte (2 places) per number (see example below)
+``status``   - Holds the build status (e.g. "dev", "beta", "rc1", "Release", etc.) as a String.
 
-``status``   - Holds the status (e.g. "beta", "rc1", "rc2", ... "stable") as a String
+``build``    - The build date in YYYY-MM-DD ISO date format.
 
-``build``    - Holds the build name (e.g. "custom_build") as a String
+``year``     - The year the build was created as an int.
 
-``hash``     - Holds the full Git commit hash as a String
+``month``    - The month the build was created as an int.
 
-``year``     - Holds the year the version was released in as an int
+``day``      - The day of the month the build was created as an int.
 
-``string``   - ``major`` + ``minor`` + ``patch`` + ``status`` + ``build`` in a single String
+``string``   - The full Semantic Version (e.g. 1.0-dev+2025.8.22) as a string.
 
-The ``hex`` value is encoded as follows, from left to right: one byte for the major, one byte for the minor, one byte for the patch version. For example, "3.1.12" would be ``0x03010C``. **Note:** It's still an int internally, and printing it will give you its decimal representation, which is not particularly meaningful. Use hexadecimal literals for easy version comparisons from code:
+``hash``     - If available, the full Git commit hash as a String.
+
+``hex``      - The version number encoded as a hexadecimal int.
+
+The ``hex`` value is encoded as follows, from left to right: one byte for the major, one byte for the minor, one byte for the patch version. For example, "3.1.12" would be ``0x03010C``.
+
+**Note:** It's still an int internally, and printing it will give you its decimal representation, which is not particularly meaningful. Use hexadecimal literals for easy version comparisons from code:
 
 ::
 
