@@ -84,24 +84,20 @@ result in a new paragraph, even if it is empty.
 How to edit class XML
 ---------------------
 
-Edit the file for your chosen class in ``doc/classes/`` to update the class
+Edit the file for your chosen class in ``docs/`` to update the class
 reference. The folder contains an XML file for each class. The XML lists the
 constants and methods you will find in the class reference. Rebel Engine generates and
 updates the XML automatically.
 
 .. note:: For some modules in the engine's source code, you'll find the XML
-          files in the ``modules/<module_name>/doc_classes/`` directory instead.
+          files in the ``modules/<module_name>/docs/`` directory instead.
 
 Edit it using your favorite text editor. If you use a code editor, make sure
 that it doesn't change the indent style: you should use tabs for the XML and
 four spaces inside BBCode-style blocks. More on that below.
 
 To check that the modifications you've made are correct in the generated
-documentation, navigate to the ``doc/`` folder and run the command ``make rst``.
-This will convert the XML files to the online documentation's format and output
-errors if anything's wrong.
-
-Alternatively, you can build Rebel Engine and open the modified page in the built-in
+documentation, build Rebel Engine and open the modified page in the built-in
 code reference. To learn how to compile the engine, read the :ref:`compilation
 guide <toc-devel-compiling>`.
 
