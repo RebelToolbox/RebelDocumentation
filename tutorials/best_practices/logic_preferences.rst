@@ -66,7 +66,7 @@ either? Let's see an example:
   .. code-tab:: csharp
 
     using System;
-    using Godot;
+    using Rebel;
 
     // C# and other languages have no concept of "preloading".
     public class MyBuildings : Node

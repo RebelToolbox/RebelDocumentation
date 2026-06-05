@@ -138,16 +138,16 @@ It is possible to bind values when establishing a connection by passing a Rebel 
         var plusButton = (Button)GetNode("PlusButton");
         var minusButton = (Button)GetNode("MinusButton");
 
-        plusButton.Connect("pressed", this, "ModifyValue", new Godot.Collections.Array { 1 });
-        minusButton.Connect("pressed", this, "ModifyValue", new Godot.Collections.Array { -1 });
+        plusButton.Connect("pressed", this, "ModifyValue", new Rebel.Collections.Array { 1 });
+        minusButton.Connect("pressed", this, "ModifyValue", new Rebel.Collections.Array { -1 });
     }
 
-Signals support parameters and bound values of all the `built-in types <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types>`_ and Classes derived from :ref:`Godot.Object <class_Object>`.
-Consequently, any ``Node`` or ``Reference`` will be compatible automatically, but custom data objects will need to extend from `Godot.Object` or one of its subclasses.
+Signals support parameters and bound values of all the `built-in types <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types>`_ and Classes derived from :ref:`Rebel.Object <class_Object>`.
+Consequently, any ``Node`` or ``Reference`` will be compatible automatically, but custom data objects will need to extend from `Rebel.Object` or one of its subclasses.
 
 .. code-block:: csharp
 
-    public class DataObject : Godot.Object
+    public class DataObject : Rebel.Object
     {
         public string Field1 { get; set; }
         public string Field2 { get; set; }
@@ -179,10 +179,10 @@ For example, you can change code based on the platform:
 
         public override void _Ready()
         {
-    #if GODOT_SERVER
+    #if REBEL_SERVER
             // Don't try to load meshes or anything, this is a server!
             LaunchServer();
-    #elif GODOT_32 || GODOT_MOBILE || GODOT_WEB
+    #elif REBEL_32 || REBEL_MOBILE || REBEL_WEB
             // Use simple objects when running on less powerful systems.
             SpawnSimpleObjects();
     #else
@@ -196,40 +196,40 @@ Or you can detect which engine your code is in, useful for making cross-engine l
 
         public void MyPlatformPrinter()
         {
-    #if GODOT
-            GD.Print("This is Godot.");
+    #if REBEL
+            GD.Print("This is Rebel.");
     #elif UNITY_5_3_OR_NEWER
             print("This is Unity.");
     #else
-            throw new InvalidWorkflowException("Only Rebel Engine, Godot and Unity are supported.");
+            throw new InvalidWorkflowException("Only Rebel Engine and Unity are supported.");
     #endif
         }
 
 Full list of defines
 ~~~~~~~~~~~~~~~~~~~~
 
-* ``GODOT`` is always defined for Rebel Projects.
+* ``REBEL`` is always defined for Rebel Projects.
 
-* One of ``GODOT_64`` or ``GODOT_32`` is defined depending on if the architecture is 64-bit or 32-bit.
+* One of ``REBEL_64`` or ``REBEL_32`` is defined depending on if the architecture is 64-bit or 32-bit.
 
-* One of ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``,
-  ``GODOT_ANDROID``, ``GODOT_IOS``, ``GODOT_HTML5``, or ``GODOT_SERVER``
+* One of ``REBEL_X11``, ``REBEL_WINDOWS``, ``REBEL_OSX``,
+  ``REBEL_ANDROID``, ``REBEL_IOS``, ``REBEL_HTML5``, or ``REBEL_SERVER``
   depending on the OS. These names may change in the future.
   These are created from the ``get_name()`` method of the
   :ref:`OS <class_OS>` singleton, but not every possible OS
-  the method returns is an OS that Godot with Mono runs on.
+  the method returns is an OS that Rebel with Mono runs on.
 
 When **exporting**, the following may also be defined depending on the export features:
 
-* One of ``GODOT_PC``, ``GODOT_MOBILE``, or ``GODOT_WEB`` depending on the platform type.
+* One of ``REBEL_PC``, ``REBEL_MOBILE``, or ``REBEL_WEB`` depending on the platform type.
 
-* One of ``GODOT_ARM64_V8A`` or ``GODOT_ARMEABI_V7A`` on Android only depending on the architecture.
+* One of ``REBEL_ARM64_V8A`` or ``REBEL_ARMEABI_V7A`` on Android only depending on the architecture.
 
-* One of ``GODOT_ARM64`` or ``GODOT_ARMV7`` on iOS only depending on the architecture.
+* One of ``REBEL_ARM64`` or ``REBEL_ARMV7`` on iOS only depending on the architecture.
 
-* Any of ``GODOT_S3TC``, ``GODOT_ETC``, and ``GODOT_ETC2`` depending on the texture compression type.
+* Any of ``REBEL_S3TC``, ``REBEL_ETC``, and ``REBEL_ETC2`` depending on the texture compression type.
 
-* Any custom features added in the export menu will be capitalized and prefixed: ``foo`` -> ``GODOT_FOO``.
+* Any custom features added in the export menu will be capitalized and prefixed: ``foo`` -> ``REBEL_FOO``.
 
 To see an example project, download the OS Test demo here:
 :download:`OS Test <files/os-test.zip>`

@@ -327,7 +327,7 @@ Here is the complete ``Sprite.gd`` file for reference.
 
  .. code-tab:: csharp C#
 
-    using Godot;
+    using Rebel;
 
     public class Sprite : Godot.Sprite
     {

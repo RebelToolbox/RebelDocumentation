@@ -251,7 +251,7 @@ Attach a script to the KinematicBody2D and add the following code:
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     public class KBExample : KinematicBody2D
@@ -355,7 +355,7 @@ uses the mouse pointer. Here is the code for the Player, using ``move_and_slide(
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     public class KBExample : KinematicBody2D
@@ -431,7 +431,7 @@ And the code for the Bullet:
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     public class Bullet : KinematicBody2D
@@ -528,7 +528,7 @@ Here's the code for the player body:
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     public class KBExample : KinematicBody2D

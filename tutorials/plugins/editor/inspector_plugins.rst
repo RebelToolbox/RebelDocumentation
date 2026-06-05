@@ -61,7 +61,7 @@ you should remove the instance you have added by calling
 
     // Plugin.cs
     #if TOOLS
-    using Godot;
+    using Rebel;
 
     [Tool]
     public class Plugin : EditorPlugin
@@ -137,7 +137,7 @@ specifically add :ref:`class_EditorProperty`-based controls.
 
     // MyInspectorPlugin.cs
     #if TOOLS
-    using Godot;
+    using Rebel;
 
     public class MyInspectorPlugin : EditorInspectorPlugin
     {
@@ -243,7 +243,7 @@ followed by ``set_bottom_editor()`` to position it below the name.
 
     // RandomIntEditor.cs
     #if TOOLS
-    using Godot;
+    using Rebel;
 
     public class RandomIntEditor : EditorProperty
     {

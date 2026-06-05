@@ -158,7 +158,7 @@ Double click on the downloaded file and follow the installation process.
           There is
           `a separate issue about this problem in Visual Studio 2022 <https://github.com/godotengine/godot-csharp-visualstudio/issues/28>`__.
 
-.. note:: If you see an error like "Unable to find package Godot.NET.Sdk",
+.. note:: If you see an error like "Unable to find package Rebel.NET.Sdk",
           your NuGet configuration may be incorrect and need to be fixed.
 
           A simple way to fix the NuGet configuration file is to regenerate it.
@@ -199,7 +199,7 @@ Here's a blank C# script with some comments to demonstrate how it works.
 
 .. code-block:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     public class YourCustomClass : Node
@@ -224,7 +224,7 @@ Here's a blank C# script with some comments to demonstrate how it works.
 
 As you can see, functions normally in global scope in GDScript like Rebel Engine's
 ``print`` function are available in the ``GD`` class which is part of
-the ``Godot`` namespace. For a list of methods in the ``GD`` class, see the
+the ``Rebel`` namespace. For a list of methods in the ``GD`` class, see the
 API documentation pages for
 :ref:`@GDScript <class_@gdscript>` and :ref:`@GlobalScope <class_@globalscope>`.
 

@@ -62,7 +62,7 @@ or lose precision if the frame rate is too high or too low.
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     public class PhysicsScript : KinematicBody2D
@@ -128,7 +128,7 @@ So, let's move our sprite downwards until it hits the floor:
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     public class PhysicsScript : KinematicBody2D
@@ -162,7 +162,7 @@ little more like a regular game character:
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     public class PhysicsScript : KinematicBody2D
@@ -213,7 +213,7 @@ This adds simple walking support by pressing left and right:
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     public class PhysicsScript : KinematicBody2D

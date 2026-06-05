@@ -103,7 +103,7 @@ Avoid inserting a blank line:
 .. code-block:: csharp
 
     using System;
-    using Godot;
+    using Rebel;
                                               // Blank line after `using` list.
     public class MyClass
     {                                         // No blank line after `{`.
