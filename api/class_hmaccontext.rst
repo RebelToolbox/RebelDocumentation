@@ -40,7 +40,7 @@ And in C# we can use the following.
 
 ::
 
-    using Godot;
+    using Rebel;
     using System;
     using System.Diagnostics;
     
