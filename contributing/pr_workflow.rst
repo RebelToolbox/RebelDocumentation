@@ -24,12 +24,12 @@ organization of Rebel Engine's Git repository.
 Git source repository
 ---------------------
 
-The `repository on GitHub <https://github.com/RebelToolbox/RebelEngine>`_ is a
-`Git <https://git-scm.com>`_ code repository together with an embedded
+The `repository on GitHub <https://github.com/RebelToolbox/RebelEngine>`__ is a
+`Git <https://git-scm.com>`__ code repository together with an embedded
 issue tracker and PR system.
 
 .. note:: If you are contributing to the documentation, its repository can
-          be found `here <https://github.com/RebelToolbox/RebelDocumentation>`_.
+          be found `here <https://github.com/RebelToolbox/RebelDocumentation>`__.
 
 The Git version control system is the tool used to keep track of successive
 edits to the source code - to contribute efficiently to Rebel Toolbox, learning the
@@ -44,7 +44,7 @@ which quickly leads to PRs with an unreadable Git history (especially after peer
 .. seealso:: The first sections of Git's "Book" are a good introduction to
              the tool's philosophy and the various commands you need to
              master in your daily workflow. You can read them online on the
-             `Git SCM <https://git-scm.com/book/en/v2>`_ website.
+             `Git SCM <https://git-scm.com/book/en/v2>`__ website.
              You can also try out `GitHub's interactive guide <https://docs.github.com/en/get-started/getting-started-with-git/set-up-git>`__.
 
 The branches on the Git repository are organized as follows:
@@ -68,7 +68,7 @@ The branches on the Git repository are organized as follows:
 Forking and cloning
 -------------------
 
-The first step is to *fork* the `Rebel Engine <https://github.com/RebelToolbox/RebelEngine>`_
+The first step is to *fork* the `Rebel Engine <https://github.com/RebelToolbox/RebelEngine>`__
 repository on GitHub. To do so, you will need to have a GitHub account and to
 be logged in. In the top right corner of the repository's GitHub page, you
 should see the "Fork" button as shown below:
@@ -82,7 +82,7 @@ Rebel Engine repo, with your GitHub username as namespace:
 
 You can then *clone* your fork, i.e. create a local copy of the online
 repository (in Git speak, the *origin remote*). If you haven't already,
-download Git from `its website <https://git-scm.com>`_ if you're using Windows or
+download Git from `its website <https://git-scm.com>`__ if you're using Windows or
 macOS, or install it through your package manager if you're using Linux.
 
 .. note:: If you are on Windows, open Git Bash to type commands. macOS and Linux users
@@ -465,7 +465,7 @@ upstream ``master`` branch, which you can do with:
           with this little by little).
 
 This will open a text editor (``vi`` by default, see
-`Git docs <https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_editor>`_
+`Git docs <https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_editor>`__
 to configure your favorite one) with something which may look like this:
 
 .. code-block:: text

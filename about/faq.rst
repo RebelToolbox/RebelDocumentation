@@ -7,7 +7,7 @@ Frequently asked questions
 What can I do with Rebel Toolbox? How much does it cost? What are the license terms?
 ------------------------------------------------------------------------------------
 
-Rebel Engine is `Free and Open-Source Software <https://en.wikipedia.org/wiki/Free_and_open-source_software>`_ available under the `OSI-approved <https://opensource.org/license/MIT>`_ MIT license. This means it is free as in "free speech" as well as in "free beer."
+Rebel Engine is `Free and Open-Source Software <https://en.wikipedia.org/wiki/Free_and_open-source_software>`__ available under the `OSI-approved <https://opensource.org/license/MIT>`__ MIT license. This means it is free as in "free speech" as well as in "free beer."
 
 In short:
 
@@ -15,15 +15,15 @@ In short:
 * You are free to modify, distribute, redistribute, and remix Rebel Engine to your heart's content, for any reason, both non-commercially and commercially.
 
 All the contents of this accompanying documentation are published under
-the permissive Creative Commons Attribution 4.0 (`CC-BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`_) license, with attribution to "Rebel Toolbox Contributors"
+the permissive Creative Commons Attribution 4.0 (`CC-BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`__) license, with attribution to "Rebel Toolbox Contributors"
 
 Logos and icons are generally under the same Creative Commons license. Note
 that some third-party libraries included with Rebel Engine's source code may have
 different licenses.
 
-For full details, look at the `COPYRIGHT.txt <https://github.com/RebelToolbox/RebelEngine/blob/main/copyright>`_ and the `LICENSE <https://github.com/RebelToolbox/RebelEngine/blob/main/LICENSE>`_ files in the Rebel Engine repository.
+For full details, look at the `COPYRIGHT.txt <https://github.com/RebelToolbox/RebelEngine/blob/main/copyright>`__ and the `LICENSE <https://github.com/RebelToolbox/RebelEngine/blob/main/LICENSE>`__ files in the Rebel Engine repository.
 
-Also, see `the license page on the Rebel Toolbox website <https://rebeltoolbox.com/license>`_.
+Also, see `the license page on the Rebel Toolbox website <https://rebeltoolbox.com/license>`__.
 
 Which platforms are supported by Rebel Engine?
 ----------------------------------------------
@@ -74,7 +74,7 @@ Note that C# support is still relatively new, and as such, you may encounter som
 issues along the way. Our friendly and hard-working development community is always
 ready to tackle new problems as they arise, but since this is an open-source project,
 we recommend that you first do some due diligence yourself. Searching through
-discussions on `open issues <https://github.com/RebelToolbox/RebelEngine/issues>`_ is a
+discussions on `open issues <https://github.com/RebelToolbox/RebelEngine/issues>`__ is a
 great way to start your troubleshooting.
 
 What is GDScript and why should I use it?
@@ -143,8 +143,8 @@ GDScript was designed to curtail the issues above, and more.
 What type of 3D model formats does Rebel Engine support?
 --------------------------------------------------------
 
-Rebel Engine supports Collada via the `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax).
-If you are using Blender, take a look at Godot's `Collada Exporter <https://github.com/godotengine/collada-exporter>`_.
+Rebel Engine supports Collada via the `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`__ exporter (Maya, 3DSMax).
+If you are using Blender, take a look at Godot's `Collada Exporter <https://github.com/godotengine/collada-exporter>`__.
 
 glTF is supported.
 
@@ -357,8 +357,8 @@ I would like to contribute! How can I get started?
 Awesome! As an open-source project, Rebel Engine thrives off of the innovation and
 ambition of developers like you.
 
-The first place to get started is in the `issues <https://github.com/RebelToolbox/RebelEngine/issues>`_.
-Find an issue that resonates with you, then proceed to the `How to Contribute <https://github.com/RebelToolbox/RebelEngine/blob/main/CONTRIBUTING.md>`_
+The first place to get started is in the `issues <https://github.com/RebelToolbox/RebelEngine/issues>`__.
+Find an issue that resonates with you, then proceed to the `How to Contribute <https://github.com/RebelToolbox/RebelEngine/blob/main/CONTRIBUTING.md>`__
 guide to learn how to fork, modify, and submit a Pull Request (PR) with your changes.
 
 I have a great idea for Rebel Engine. How can I share it?

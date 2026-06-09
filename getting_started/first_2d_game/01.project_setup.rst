@@ -39,7 +39,7 @@ Launch Rebel Editor and create a new project.
     You need a C++ compiler such as GCC or Clang or MSVC that supports C++14.
     On Windows you can download Visual Studio 2019 and select the C++ workload.
     You also need SCons to use the build system (the SConstruct file).
-    Then you need to `download the Godot C++ bindings <https://github.com/godotengine/godot-cpp>`_
+    Then you need to `download the Godot C++ bindings <https://github.com/godotengine/godot-cpp>`__
     and place them in your project.
 
 Your project folder should look like this.

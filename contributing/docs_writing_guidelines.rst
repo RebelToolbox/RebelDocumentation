@@ -530,7 +530,7 @@ Before you add or replace any images in the documentation, they should be run
 through a PNG compressor to save size. You can use the lossless OxiPNG
 compressor included in `Squoosh <https://squoosh.app/>`__ for this purpose. For
 heavier images, consider using a lossy compressor like `pngquant
-<https://pngquant.org/>`_. With it, almost no image quality is lost during
+<https://pngquant.org/>`__. With it, almost no image quality is lost during
 compression.
 
 .. note::

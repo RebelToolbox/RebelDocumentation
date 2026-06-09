@@ -75,7 +75,7 @@ For each build variant, we need to define the following:
 
    Create a SCons build task
 
-For more information on using `SCons <https://scons.org/>`_. and the build options used to compile Rebel Engine, see :doc:`/development/compiling/introduction_to_the_buildsystem`.
+For more information on using `SCons <https://scons.org/>`__. and the build options used to compile Rebel Engine, see :doc:`/development/compiling/introduction_to_the_buildsystem`.
 
 For more information on the ``tasks.json`` format, see https://go.microsoft.com/fwlink/?LinkId=733558
 

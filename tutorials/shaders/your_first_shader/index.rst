@@ -11,7 +11,7 @@ The "your first shader" tutorials walk you through the process of writing a shad
 step-by-step.
 
 For a more general introduction into shaders and the OpenGL Shading Language, use
-`The Book of Shaders <https://thebookofshaders.com>`_.
+`The Book of Shaders <https://thebookofshaders.com>`__.
 
 .. toctree::
    :maxdepth: 1

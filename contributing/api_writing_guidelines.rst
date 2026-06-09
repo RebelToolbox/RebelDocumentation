@@ -170,7 +170,7 @@ If you need to have different code version in GDScript and C#, use
 least one of the language-specific tags, ``[gdscript]`` and ``[csharp]``.
 
 Always write GDScript code examples first! You can use this `experimental code
-translation tool <https://github.com/HaSa1002/codetranslator>`_ to speed up your
+translation tool <https://github.com/HaSa1002/codetranslator>`__ to speed up your
 workflow.
 
 .. code-block:: none

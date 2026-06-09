@@ -130,9 +130,9 @@ reference.
 Shadertoy
 ---------
 
-`Shadertoy <https://www.shadertoy.com/results?query=&sort=popular&from=10&num=4>`_
+`Shadertoy <https://www.shadertoy.com/results?query=&sort=popular&from=10&num=4>`__
 is a website that makes it easy to write fragment shaders and
-create `pure magic <https://www.shadertoy.com/view/4tjGRh>`_.
+create `pure magic <https://www.shadertoy.com/view/4tjGRh>`__.
 
 Shadertoy does not give the user full control over the shader. It handles all
 the input and uniforms and only lets the user write the fragment shader.
@@ -201,13 +201,13 @@ Shadertoy coordinates
 The Book of Shaders
 -------------------
 
-Similar to Shadertoy, `The Book of Shaders <https://thebookofshaders.com>`_
+Similar to Shadertoy, `The Book of Shaders <https://thebookofshaders.com>`__
 provides access to a fragment shader in the web browser, with which the user may
 interact. The user is restricted to writing fragment shader code with a set list
 of uniforms passed in and with no ability to add additional uniforms.
 
 For further help on porting shaders to various frameworks generally, The Book of
-Shaders provides a `page <https://thebookofshaders.com/04>`_ on running shaders
+Shaders provides a `page <https://thebookofshaders.com/04>`__ on running shaders
 in various frameworks.
 
 The Book of Shaders types

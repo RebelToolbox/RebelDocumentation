@@ -122,7 +122,7 @@ On the left-hand side, select the **Projects** tab to switch to Projects mode.
    Qt Creator Projects Mode
 
 Here you can add your Build settings.
-Rebel Engine is compiled using `SCons <https://scons.org/>`_.
+Rebel Engine is compiled using `SCons <https://scons.org/>`__.
 For details on compiling Rebel Engine using SCons, see :doc:`/development/compiling/introduction_to_the_buildsystem`.
 
 Under Build Steps, remove the default **Make** build step.

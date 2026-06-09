@@ -117,16 +117,16 @@ As mentioned earlier, Rebel Engine does not support the various VR and AR SDKs o
 need a plugin for the specific SDK you want to use. There are several plugins available
 in the `GodotVR Repository <https://github.com/GodotVR>`__.
 
-* `Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_: It supports OpenXR, an open standard for designing and building
+* `Godot OpenXR <https://github.com/GodotVR/godot_openxr>`__: It supports OpenXR, an open standard for designing and building
   cross-platform VR and AR software.
   Tested with SteamVR, Monada and Oculus OpenXR (desktop and mobile) runtimes.
 
     * See :doc:`/tutorials/vr/openxr/index`.
 
-* `Godot OpenVR <https://github.com/GodotVR/godot_openvr>`_ (not to be confused with OpenXR)
+* `Godot OpenVR <https://github.com/GodotVR/godot_openvr>`__ (not to be confused with OpenXR)
   supports the OpenVR SDK used by Steam.
 
-* `Godot OpenHMD <https://github.com/GodotVR/godot_openhmd>`_ supports OpenHMD, an open source
+* `Godot OpenHMD <https://github.com/GodotVR/godot_openhmd>`__ supports OpenHMD, an open source
   API and drivers for headsets.
 
 These plugins can be downloaded from GitHub.

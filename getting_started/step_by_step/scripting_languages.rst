@@ -46,7 +46,7 @@ with Rebel Engine.
 .. image:: img/scripting_gdscript.png
 
 For C#, you will need an external code editor like
-`VSCode <https://code.visualstudio.com/>`_ or Visual Studio. While C# support is
+`VSCode <https://code.visualstudio.com/>`__ or Visual Studio. While C# support is
 now mature, you will find fewer learning resources for it compared to
 GDScript. That's why we recommend C# mainly to users who already have experience
 with the language.
@@ -57,8 +57,8 @@ GDScript
 ~~~~~~~~
 
 :doc:`GDScript</tutorials/scripting/gdscript/gdscript_basics>` is an
-`object-oriented <https://en.wikipedia.org/wiki/Object-oriented_programming>`_ and
-`imperative <https://en.wikipedia.org/wiki/Imperative_programming>`_
+`object-oriented <https://en.wikipedia.org/wiki/Object-oriented_programming>`__ and
+`imperative <https://en.wikipedia.org/wiki/Imperative_programming>`__
 programming language built for Rebel Engine. It's made by and for game developers
 to save you time coding games. Its features include:
 
@@ -70,11 +70,11 @@ to save you time coding games. Its features include:
   linear algebra, a must for games.
 - Supports multiple threads as efficiently as statically typed languages.
 - No `garbage collection
-  <https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)>`_, as
+  <https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)>`__, as
   this feature eventually gets in the way when creating games. The engine counts
   references and manages the memory for you in most cases by default, but you
   can also control memory if you need to.
-- `Gradual typing <https://en.wikipedia.org/wiki/Gradual_typing>`_. Variables
+- `Gradual typing <https://en.wikipedia.org/wiki/Gradual_typing>`__. Variables
   have dynamic types by default, but you also can use type hints for strong type
   checks.
 
@@ -98,7 +98,7 @@ languages, including Squirrel, Lua, and Python.
 ~~~~~~~~~
 
 As Microsoft's `C#
-<https://en.wikipedia.org/wiki/C_Sharp_(programming_language)>`_ is a favorite
+<https://en.wikipedia.org/wiki/C_Sharp_(programming_language)>`__ is a favorite
 amongst game developers, we officially support it. C# is a mature and flexible
 language with tons of libraries written for it. We could add support for it
 thanks to a generous donation from Microsoft.
@@ -110,7 +110,7 @@ should be aware of its garbage collector.
 
 .. note:: You must use the Mono edition of the Rebel Editor to script in C#.
 
-Since Rebel Engine uses the `Mono <https://www.mono-project.com/>`_ .NET runtime, in theory,
+Since Rebel Engine uses the `Mono <https://www.mono-project.com/>`__ .NET runtime, in theory,
 you can use any third-party .NET library or framework in Rebel Engine, as well as any
 Common Language Infrastructure-compliant programming language, such as F#, Boo,
 or ClojureCLR. However, C# is the only officially supported .NET option.

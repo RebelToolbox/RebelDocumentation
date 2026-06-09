@@ -24,8 +24,8 @@ Select the Rebel Engine root folder.
 
 Click **Open**.
 
-Although, Rebel Engine includes a Basic `CMakeLists.txt` file, Rebel Engine does not use `CMake <https://cmake.org/>`_.
-Rebel Engine is compiled using `SCons <https://scons.org/>`_.
+Although, Rebel Engine includes a Basic `CMakeLists.txt` file, Rebel Engine does not use `CMake <https://cmake.org/>`__.
+Rebel Engine is compiled using `SCons <https://scons.org/>`__.
 
 Under Project Information, choose **Custom Build System** for the **Project manager**.
 
@@ -57,7 +57,7 @@ Select **Custom Build System** and click **Add**.
    Add Custom Build System configurations
 
 Add your build configurations.
-Rebel Engine is compiled using `SCons <https://scons.org/>`_.
+Rebel Engine is compiled using `SCons <https://scons.org/>`__.
 For details on compiling Rebel Engine using SCons, see :doc:`/development/compiling/introduction_to_the_buildsystem`.
 
 .. figure:: img/kdevelop-create-build-configuration.png

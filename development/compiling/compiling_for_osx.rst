@@ -13,13 +13,13 @@ Requirements
 
 For compiling under macOS, the following is required:
 
-- `Python 3.5+ <https://www.python.org>`_.
-- `SCons 3.0+ <https://www.scons.org>`_ build system.
-- `Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_
+- `Python 3.5+ <https://www.python.org>`__.
+- `SCons 3.0+ <https://www.scons.org>`__ build system.
+- `Xcode <https://apps.apple.com/us/app/xcode/id497799835>`__
   (or the more lightweight Command Line Tools for Xcode).
-- *Optional* - `yasm <https://yasm.tortall.net/>`_ (for WebM SIMD optimizations).
+- *Optional* - `yasm <https://yasm.tortall.net/>`__ (for WebM SIMD optimizations).
 
-.. note:: If you have `Homebrew <https://brew.sh/>`_ installed, you can easily
+.. note:: If you have `Homebrew <https://brew.sh/>`__ installed, you can easily
           install SCons and yasm using the following command::
 
               brew install scons yasm
@@ -27,7 +27,7 @@ For compiling under macOS, the following is required:
           Installing Homebrew will also fetch the Command Line Tools
           for Xcode automatically if you don't have them already.
 
-          Similarly, if you have `MacPorts <https://www.macports.org/>`_
+          Similarly, if you have `MacPorts <https://www.macports.org/>`__
           installed, you can easily install SCons and yasm using the
           following command::
 

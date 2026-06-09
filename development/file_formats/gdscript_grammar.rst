@@ -1,7 +1,7 @@
 GDScript grammar
 ================
 
-This is the formal grammar of GDScript written in `EBNF <https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form>`_,
+This is the formal grammar of GDScript written in `EBNF <https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form>`__,
 for reference purposes.
 
 .. note:: This grammar is descriptive only, derived from the reference

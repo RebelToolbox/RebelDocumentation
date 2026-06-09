@@ -44,7 +44,7 @@ positive to the engine, regardless of their skill set:
    can work full-time on the engine. Even with a low
    monthly wage, we need a steady donation income to continue doing this, which
    has been very beneficial to the project so far. So if you want to donate
-   some money to the project, check `our website <https://rebeltoolbox.com>`_
+   some money to the project, check `our website <https://rebeltoolbox.com>`__
    for details.
 
 Contributing code
@@ -52,11 +52,11 @@ Contributing code
 
 The possibility to study, use, modify and redistribute modifications of the
 engine's source code are the fundamental rights that
-Rebel Engine's `MIT <https://www.tldrlegal.com/license/mit-license>`_ license grants you,
-making it `free and open source software <https://en.wikipedia.org/wiki/Free_and_open-source_software>`_.
+Rebel Engine's `MIT <https://www.tldrlegal.com/license/mit-license>`__ license grants you,
+making it `free and open source software <https://en.wikipedia.org/wiki/Free_and_open-source_software>`__.
 
 As such, everyone is entitled to modify
-`Rebel Engine's source code <https://github.com/RebelToolbox/RebelEngine>`_, and send those
+`Rebel Engine's source code <https://github.com/RebelToolbox/RebelEngine>`__, and send those
 modifications back to the upstream project in the form of a patch (a text file
 describing the changes in a ready-to-apply manner) or - in the modern workflow
 that we use - via a so-called "pull request" (PR), i.e. a proposal to directly
@@ -127,7 +127,7 @@ the developers.
 Filing an issue on GitHub
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Rebel Engine uses `GitHub's issue tracker <https://github.com/RebelToolbox/RebelEngine/issues>`_
+Rebel Engine uses `GitHub's issue tracker <https://github.com/RebelToolbox/RebelEngine/issues>`__
 for bug reports and enhancement suggestions. You will need a GitHub account to
 be able to open a new issue there, and click on the **New issue** button.
 
@@ -190,5 +190,5 @@ There are two separate resources referred to as "documentation" in Rebel Documen
   This is the part you are reading now, which is distributed in the HTML format.
   Its contents are generated from plain text files in the reStructured Text
   (rst) format, to which you can contribute via pull requests on the
-  `Rebel Documentation <https://github.com/RebelToolbox/RebelDocumentation>`_ GitHub repository.
+  `Rebel Documentation <https://github.com/RebelToolbox/RebelDocumentation>`__ GitHub repository.
   See :doc:`contributing_to_the_documentation` for more details.

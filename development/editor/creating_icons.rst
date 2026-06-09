@@ -10,7 +10,7 @@ Creating icons
 ~~~~~~~~~~~~~~
 
 To create new icons, you first need a vector graphics editor installed.
-For instance, you can use the open source `Inkscape <https://inkscape.org/>`_ editor.
+For instance, you can use the open source `Inkscape <https://inkscape.org/>`__ editor.
 
 Clone the ``RebelEngine`` repository containing all the editor icons:
 

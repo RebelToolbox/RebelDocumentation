@@ -26,7 +26,7 @@ it.
 
 One of the biggest things to consider in OOP is maintaining
 focused, singular-purpose classes with
-`loose coupling <https://en.wikipedia.org/wiki/Loose_coupling>`_
+`loose coupling <https://en.wikipedia.org/wiki/Loose_coupling>`__
 to other parts of the codebase. This keeps the size of objects small (for
 maintainability) and improves their reusability.
 
@@ -39,7 +39,7 @@ themselves.
 
 If a scene must interact with an external context, experienced developers
 recommend the use of
-`Dependency Injection <https://en.wikipedia.org/wiki/Dependency_injection>`_.
+`Dependency Injection <https://en.wikipedia.org/wiki/Dependency_injection>`__.
 This technique involves having a high-level API provide the dependencies of the
 low-level API. Why do this? Because classes which rely on their external
 environment can inadvertently trigger bugs and unexpected behavior.
@@ -241,10 +241,10 @@ adversely effecting other classes.
 Scripts and scenes, as extensions of engine classes, should abide
 by *all* OOP principles. Examples include...
 
-- `SOLID <https://en.wikipedia.org/wiki/SOLID>`_
-- `DRY <https://en.wikipedia.org/wiki/Don%27t_repeat_yourself>`_
-- `KISS <https://en.wikipedia.org/wiki/KISS_principle>`_
-- `YAGNI <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_
+- `SOLID <https://en.wikipedia.org/wiki/SOLID>`__
+- `DRY <https://en.wikipedia.org/wiki/Don%27t_repeat_yourself>`__
+- `KISS <https://en.wikipedia.org/wiki/KISS_principle>`__
+- `YAGNI <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`__
 
 Choosing a node tree structure
 ------------------------------

@@ -6,7 +6,7 @@ also supports loading translation files written in the GNU gettext
 (``.po``) format.
 
 .. note:: For an introduction to gettext, check out
-          `A Quick Gettext Tutorial <https://www.labri.fr/perso/fleury/posts/programming/a-quick-gettext-tutorial.html>`_.
+          `A Quick Gettext Tutorial <https://www.labri.fr/perso/fleury/posts/programming/a-quick-gettext-tutorial.html>`__.
           It's written with C projects in mind, but much of the advice
           also applies to Rebel Engine (with the exception of ``xgettext``).
 
@@ -14,9 +14,9 @@ Advantages
 ----------
 
 - gettext is a standard format, which can be edited using any text editor
-  or GUI editors such as `Poedit <https://poedit.net/>`_.
+  or GUI editors such as `Poedit <https://poedit.net/>`__.
 - gettext is supported by translation platforms such as
-  `Transifex <https://www.transifex.com/>`_ and `Weblate <https://weblate.org/>`_,
+  `Transifex <https://www.transifex.com/>`__ and `Weblate <https://weblate.org/>`__,
   which makes it easier for people to collaborate to localization.
 - Compared to CSV, gettext works better with version control systems like Git,
   as each locale has its own messages file.
@@ -48,12 +48,12 @@ such as updating message files. Therefore, it's strongly recommended to
 install them.
 
 - **Windows:** Download an installer from
-  `this page <https://mlocati.github.io/articles/gettext-iconv-windows.html>`_.
+  `this page <https://mlocati.github.io/articles/gettext-iconv-windows.html>`__.
   Any architecture and binary type (shared or static) works;
   if in doubt, choose the 64-bit static installer.
-- **macOS:** Install gettext either using `Homebrew <https://brew.sh/>`_
+- **macOS:** Install gettext either using `Homebrew <https://brew.sh/>`__
   with the ``brew install gettext`` command, or using
-  `MacPorts <https://www.macports.org/>`_ with the
+  `MacPorts <https://www.macports.org/>`__ with the
   ``sudo port install gettext`` command.
 - **Linux:** On most distributions, install the ``gettext`` package from
   your distribution's package manager.

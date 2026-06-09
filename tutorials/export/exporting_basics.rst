@@ -430,4 +430,4 @@ when you export the project.
     emerging technology and you may find some things that don't work. Make sure
     you have updated your browser to the most recent version, and report any
     bugs you find on the
-    `Rebel Engine GitHub repository <https://github.com/RebelToolbox/RebelEngine/issues>`_.
+    `Rebel Engine GitHub repository <https://github.com/RebelToolbox/RebelEngine/issues>`__.

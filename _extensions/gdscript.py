@@ -39,7 +39,7 @@ line_re = re.compile(".*?\n")
 
 class GDScriptLexer(RegexLexer):
     """
-    For `GDScript source code <https://github.com/RebelToolbox/RebelEngine>`_.
+    For `GDScript source code <https://github.com/RebelToolbox/RebelEngine>`__.
     """
 
     name = "GDScript"

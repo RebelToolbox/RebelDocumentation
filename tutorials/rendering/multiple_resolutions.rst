@@ -37,8 +37,8 @@ One size fits all
 The most common approach is to use a single *base* resolution and
 then fit it to everything else. This resolution is how most players are expected
 to play the game (given their hardware). For mobile, Google has useful `stats
-<https://developer.android.com/about/dashboards>`_ online, and for desktop,
-Steam `also does <https://store.steampowered.com/hwsurvey/>`_.
+<https://developer.android.com/about/dashboards>`__ online, and for desktop,
+Steam `also does <https://store.steampowered.com/hwsurvey/>`__.
 
 As an example, Steam shows that the most common *primary display resolution* is
 1920×1080, so a sensible approach is to develop a game for this resolution, then

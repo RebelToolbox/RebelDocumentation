@@ -196,7 +196,7 @@ another CSGCylinder and adjust the dimensions to use it as a pole.
 .. image:: img/csg_lamp_pole_stand.png
 
 We will use a CSGPolygon for the lampshade. Use the **Spin** mode for the
-CSGPolygon and draw a `trapezoid <https://en.wikipedia.org/wiki/Trapezoid>`_
+CSGPolygon and draw a `trapezoid <https://en.wikipedia.org/wiki/Trapezoid>`__
 while in **Front View** (numeric keypad 1); this shape will extrude around the
 origin and form the lampshade.
 

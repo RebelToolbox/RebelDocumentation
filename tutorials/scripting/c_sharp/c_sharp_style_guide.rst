@@ -12,8 +12,8 @@ of the language, we encourage you to do the same, especially if you do not have 
 .. note:: This article is by no means an exhaustive guide on how to follow the standard coding
         conventions or best practices. If you feel unsure of an aspect which is not covered here,
         please refer to more comprehensive documentation, such as
-        `C# Coding Conventions <https://learn.microsoft.com/dotnet/csharp/fundamentals/coding-style/coding-conventions>`_ or
-        `Framework Design Guidelines <https://learn.microsoft.com/dotnet/standard/design-guidelines/naming-guidelines>`_.
+        `C# Coding Conventions <https://learn.microsoft.com/dotnet/csharp/fundamentals/coding-style/coding-conventions>`__ or
+        `Framework Design Guidelines <https://learn.microsoft.com/dotnet/standard/design-guidelines/naming-guidelines>`__.
 
 Language specification
 ----------------------
@@ -23,7 +23,7 @@ a newer version, care must be taken to avoid mixing language features only avail
 later.
 
 For detailed information on C# features in different versions, please see
-`What's New in C# <https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-13>`_.
+`What's New in C# <https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-13>`__.
 
 Formatting
 ----------
@@ -33,7 +33,7 @@ General guidelines
 
 * Use line feed (**LF**) characters to break lines, not CRLF or CR.
 * Use one line feed character at the end of each file, except for `csproj` files.
-* Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/wiki/Byte_order_mark>`_.
+* Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/wiki/Byte_order_mark>`__.
 * Use **4 spaces** instead of tabs for indentation (which is referred to as "soft tabs").
 * Consider breaking a line into several if it's longer than 100 characters.
 
@@ -41,7 +41,7 @@ General guidelines
 Line breaks and blank lines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For a general indentation rule, follow `the "Allman Style" <https://en.wikipedia.org/wiki/Indentation_style#Allman_style>`_
+For a general indentation rule, follow `the "Allman Style" <https://en.wikipedia.org/wiki/Indentation_style#Allman_style>`__
 which recommends placing the brace associated with a control statement on the next line, indented to
 the same level:
 

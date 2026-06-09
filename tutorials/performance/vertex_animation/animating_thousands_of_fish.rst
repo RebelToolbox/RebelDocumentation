@@ -1,7 +1,7 @@
 Animating thousands of fish with MultiMeshInstance
 ==================================================
 
-This tutorial explores a technique used in the game `ABZU <https://www.gdcvault.com/play/1024409/Creating-the-Art-of-ABZ>`_
+This tutorial explores a technique used in the game `ABZU <https://www.gdcvault.com/play/1024409/Creating-the-Art-of-ABZ>`__
 for rendering and animating thousands of fish using vertex animation and
 static mesh instancing.
 
@@ -22,7 +22,7 @@ Here is the fish we will be using for the example images, you can use any fish m
 
 .. image:: img/fish.png
 
-.. note:: The fish model in this tutorial is made by `QuaterniusDev <https://quaternius.com/>`_ and is
+.. note:: The fish model in this tutorial is made by `QuaterniusDev <https://quaternius.com/>`__ and is
           shared with a creative commons license. CC0 1.0 Universal (CC0 1.0) Public Domain
           Dedication https://creativecommons.org/publicdomain/zero/1.0/
 

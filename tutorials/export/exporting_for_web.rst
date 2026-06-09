@@ -91,7 +91,7 @@ Secure contexts
 ~~~~~~~~~~~~~~~
 
 .. important:: Browser vendors are making more and more functionalities only
-               available in `secure contexts <https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts>`_,
+               available in `secure contexts <https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts>`__,
                this means that such features are only be available if the web
                page is served via a secure HTTPS connection (localhost is
                usually exempt from such requirement).
