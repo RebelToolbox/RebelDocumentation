@@ -242,5 +242,5 @@ assigning values to those variables.
 
 For inspiration, take a look at some of the more advanced shader tutorials, and
 look at other sites like `Shadertoy
-<https://www.shadertoy.com/results?query=&sort=popular&from=10&num=4>`_ and `The
-Book of Shaders <https://thebookofshaders.com>`_.
+<https://www.shadertoy.com/results?query=&sort=popular&from=10&num=4>`__ and `The
+Book of Shaders <https://thebookofshaders.com>`__.

@@ -60,5 +60,5 @@ These companies also offer publishing of your games to various consoles.
 
 If your company offers porting and/or publishing services for Rebel games,
 feel free to
-`open an issue or pull request <https://github.com/RebelToolbox/RebelDocumentation>`_
+`open an issue or pull request <https://github.com/RebelToolbox/RebelDocumentation>`__
 to add your company information here.

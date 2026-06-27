@@ -99,7 +99,7 @@ The tent is a simple room inside a terrain room (which contains the ground, the 
 
 This is perfect for improving performance in open world games. Often your buildings can be scenes (including the rooms and portals) that can be reused. When viewed from the outside, interiors will mostly be culled, and when viewing from the inside other buildings and most of the outside will be culled. The same goes for other players and objects that are inside and outside the buildings.
 
-*Scene is 'Diorama Eco scene' by Odo, with slight changes for illustration purposes.* `CC Attribution <https://creativecommons.org/licenses/by/4.0/>`_
+*Scene is 'Diorama Eco scene' by Odo, with slight changes for illustration purposes.* `CC Attribution <https://creativecommons.org/licenses/by/4.0/>`__
 
 Internal room scenes
 ^^^^^^^^^^^^^^^^^^^^

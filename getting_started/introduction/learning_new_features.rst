@@ -51,7 +51,7 @@ A class's API documentation page tells you:
 
 .. note:: If the manual or API documentation is missing or has insufficient
           information, please open an Issue in the official `Rebel Documentation
-          <https://github.com/RebelToolbox/RebelDocumentation>`_ GitHub repository
+          <https://github.com/RebelToolbox/RebelDocumentation>`__ GitHub repository
           to report it.
 
 You can Ctrl-click any underlined text like the name of a class, property,
@@ -65,14 +65,14 @@ beyond the scope of the Rebel Documentation. If you're new to programming, we
 recommend two excellent free resources to get you started:
 
 1. Harvard university offers a free courseware to learn to program, `CS50
-   <https://cs50.harvard.edu/x/>`_. It will teach you programming
+   <https://cs50.harvard.edu/x/>`__. It will teach you programming
    fundamentals, how code works, and how to think like a programmer. These
    skills are essential to become a game developer and learn any game engine
    efficiently. You can see this course as an investment that will save you time
    and trouble when you learn to create games.
 
 2. If you prefer books, check out the free ebook `Automate The Boring Stuff With
-   Python <https://automatetheboringstuff.com/>`_ by Al Sweigart.
+   Python <https://automatetheboringstuff.com/>`__ by Al Sweigart.
 
 Learning with the community
 ---------------------------
@@ -96,7 +96,7 @@ information:
 3. If there is code involved, **share a code sample**. Other users won't be able
    to help you fix a problem without seeing your code. Share the code as text
    directly. To do so, you can copy and paste a short code snippet in a chat
-   box, or use a website like `Pastebin <https://pastebin.com/>`_ to share long
+   box, or use a website like `Pastebin <https://pastebin.com/>`__ to share long
    files.
 
 4. **Share a screenshot** of your *Scene* dock along with your written code. Most of
@@ -110,15 +110,15 @@ information:
    should have a built-in tool to take screenshots with the :kbd:`PrtSc` (Print
    Screen) key.
 
-   Alternatively, you can use a program like `ShareX <https://getsharex.com/>`_
-   on Windows or `FlameShot <https://flameshot.org/>`_ on Linux.
+   Alternatively, you can use a program like `ShareX <https://getsharex.com/>`__
+   on Windows or `FlameShot <https://flameshot.org/>`__ on Linux.
 
 5. Sharing a video of your running game can also be really **useful to
    troubleshoot your game**. You can use programs like `OBS Studio
-   <https://obsproject.com/>`_ and `Screen to GIF
-   <https://www.screentogif.com/>`_ to capture your screen.
+   <https://obsproject.com/>`__ and `Screen to GIF
+   <https://www.screentogif.com/>`__ to capture your screen.
 
-   You can then use a service like `streamable <https://streamable.com/>`_ or a
+   You can then use a service like `streamable <https://streamable.com/>`__ or a
    cloud provider to upload and share your videos for free.
 
 6. If you're not using the stable version of Rebel Engine, please mention the version

@@ -29,8 +29,8 @@ browse to and select the ``RebelEngine`` root folder.
 Click **OK** to open the project.
 
 Rebel Engine includes a Basic `CMakeLists.txt` file that CLion can use.
-However, Rebel Engine does not use `CMake <https://cmake.org/>`_.
-Rebel Engine is compiled using `SCons <https://scons.org/>`_.
+However, Rebel Engine does not use `CMake <https://cmake.org/>`__.
+Rebel Engine is compiled using `SCons <https://scons.org/>`__.
 For details on compiling Rebel Engine using SCons, see :doc:`/development/compiling/introduction_to_the_buildsystem`.
 
 SCons will create a compilation database file that CLion can use.

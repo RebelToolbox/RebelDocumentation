@@ -8,9 +8,9 @@ Introduction
              As such, you may still run into some issues, or find spots
              where the documentation could be improved.
              Please report issues with C# in Rebel Engine on the
-             `engine GitHub page <https://github.com/RebelToolbox/RebelEngine/issues>`_,
+             `engine GitHub page <https://github.com/RebelToolbox/RebelEngine/issues>`__,
              and any documentation issues on the
-             `documentation GitHub page <https://github.com/RebelToolbox/RebelDocumentation/issues>`_.
+             `documentation GitHub page <https://github.com/RebelToolbox/RebelDocumentation/issues>`__.
 
 This page provides a brief introduction to C#, both what it is and
 how to use it in Rebel Engine. Afterwards, you may want to look at
@@ -24,13 +24,13 @@ it is implemented with the Mono 6.x .NET framework, including full support
 for C# 8.0. Mono is an open source implementation of Microsoft's .NET Framework
 based on the ECMA standards for C# and the Common Language Runtime.
 A good starting point for checking its capabilities is the
-`Compatibility <https://www.mono-project.com/docs/about-mono/compatibility/>`_
+`Compatibility <https://www.mono-project.com/docs/about-mono/compatibility/>`__
 page in the Mono documentation.
 
 .. note:: This is **not** a full-scale tutorial on the C# language as a whole.
         If you aren't already familiar with its syntax or features,
         see the
-        `Microsoft C# guide <https://learn.microsoft.com/en-us/dotnet/csharp/>`_
+        `Microsoft C# guide <https://learn.microsoft.com/en-us/dotnet/csharp/>`__
         or look for a suitable introduction elsewhere.
 
 Setting up C# for Rebel Engine
@@ -280,7 +280,7 @@ macOS), Android, HTML5, and iOS. The only platform not supported yet is UWP.
 Performance of C# in Rebel Engine
 ---------------------------------
 
-According to some preliminary `benchmarks <https://github.com/cart/godot3-bunnymark>`_,
+According to some preliminary `benchmarks <https://github.com/cart/godot3-bunnymark>`__,
 the performance of C# in Rebel Engine — while generally in the same order of magnitude
 — is roughly **~4×** that of GDScript in some naive cases. C++ is still
 a little faster; the specifics are going to vary according to your use case.
@@ -290,7 +290,7 @@ C# is faster, but requires some expensive marshalling when talking to Rebel Engi
 Using NuGet packages in Rebel Engine
 ------------------------------------
 
-`NuGet <https://www.nuget.org/>`_ packages can be installed and used with Rebel Engine,
+`NuGet <https://www.nuget.org/>`__ packages can be installed and used with Rebel Engine,
 as with any C# project. Many IDEs are able to add packages directly.
 They can also be added manually by adding the package reference in
 the ``.csproj`` file located in the project root:
@@ -310,5 +310,5 @@ packages the next time it builds the project.
 Profiling your C# code
 ----------------------
 
-- `Mono log profiler <https://www.mono-project.com/docs/debug+profile/profile/profiler/>`_ is available for Linux and macOS. Due to a Mono change, it does not work on Windows currently.
-- External Mono profiler like `JetBrains dotTrace <https://www.jetbrains.com/profiler/>`_ can be used as described `here <https://github.com/godotengine/godot/pull/34382>`_.
+- `Mono log profiler <https://www.mono-project.com/docs/debug+profile/profile/profiler/>`__ is available for Linux and macOS. Due to a Mono change, it does not work on Windows currently.
+- External Mono profiler like `JetBrains dotTrace <https://www.jetbrains.com/profiler/>`__ can be used as described `here <https://github.com/godotengine/godot/pull/34382>`__.

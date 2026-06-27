@@ -23,5 +23,5 @@ Object-Oriented programming languages. It will help you make sense of the rest o
 
    The best practices in Rebel Engine rely on Object-Oriented design principles. We
    use tools like the `single responsibility
-   <https://en.wikipedia.org/wiki/Single_responsibility_principle>`_ principle and
-   `encapsulation <https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)>`_.
+   <https://en.wikipedia.org/wiki/Single_responsibility_principle>`__ principle and
+   `encapsulation <https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)>`__.

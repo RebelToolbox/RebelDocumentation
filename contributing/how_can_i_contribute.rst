@@ -56,7 +56,7 @@ API Documentation
 
 The pages below focus on the API documentation.
 
-As the reference is included in the Rebel Engine editor, its source files are part of the `Rebel Engine repository <https://github.com/RebelToolbox/RebelEngine>`_.
+As the reference is included in the Rebel Engine editor, its source files are part of the `Rebel Engine repository <https://github.com/RebelToolbox/RebelEngine>`__.
 We use XML files to write it, so the process to contribute to the API documentation differs from writing the online manual.
 
 .. toctree::

@@ -14,7 +14,7 @@ This reduces the data size and speeds up loading, as binary formats are faster
 to load compared to text-based formats.
 
 For those looking for a complete description, the parsing is handled in the
-`scene/resources/resource_format_text.h <https://github.com/RebelToolbox/RebelEngine/blob/main/scene/resources/resource_format_text.h>`_
+`scene/resources/resource_format_text.h <https://github.com/RebelToolbox/RebelEngine/blob/main/scene/resources/resource_format_text.h>`__
 in the ``ResourceFormatLoaderText`` class.
 
 File structure

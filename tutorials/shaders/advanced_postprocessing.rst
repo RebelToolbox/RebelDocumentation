@@ -144,7 +144,7 @@ An optimization
 ---------------
 
 You can benefit from using a single large triangle rather than using a full
-screen quad. The reason for this is explained `here <https://michaldrobot.com/2014/04/01/gcn-execution-patterns-in-full-screen-passes>`_.
+screen quad. The reason for this is explained `here <https://michaldrobot.com/2014/04/01/gcn-execution-patterns-in-full-screen-passes>`__.
 However, the benefit is quite small and only beneficial when running especially
 complex fragment shaders.
 

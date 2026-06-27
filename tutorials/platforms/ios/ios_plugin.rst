@@ -35,7 +35,7 @@ At its core, a Rebel iOS plugin is an iOS library (*.a* archive file or *.xcfram
 
 An iOS plugin can have the same functionality as a Rebel module but provides more flexibility and doesn't require to rebuild the engine.
 
-Here are the steps to get a plugin's development started. We recommend using `Xcode <https://developer.apple.com/develop/>`_ as your development environment.
+Here are the steps to get a plugin's development started. We recommend using `Xcode <https://developer.apple.com/develop/>`__ as your development environment.
 
 To build an iOS plugin:
 
@@ -43,7 +43,7 @@ To build an iOS plugin:
 
 2. Add the Rebel Engine header files as a dependency for your plugin library in ``HEADER_SEARCH_PATHS``. You can find the setting inside the ``Build Settings`` tab:
 
-    - Download the Rebel Engine source from `Github <https://github.com/RebelToolbox/RebelEngine>`_.
+    - Download the Rebel Engine source from `Github <https://github.com/RebelToolbox/RebelEngine>`__.
 
     - Run SCons to generate headers. You can learn the process by reading :doc:`/development/compiling/compiling_for_ios`. You don't have to wait for compilation to complete to move forward as headers are generated before the engine starts to compile.
 
@@ -120,7 +120,7 @@ To build an iOS plugin:
 
                 -   **system**: contains a list of iOS system frameworks that are required for plugin.
 
-                -   **capabilities**: contains a list of iOS capabilities that is required for plugin. A list of available capabilities can be found at `Apple UIRequiredDeviceCapabilities documentation page <https://developer.apple.com/documentation/bundleresources/information_property_list/uirequireddevicecapabilities>`_.
+                -   **capabilities**: contains a list of iOS capabilities that is required for plugin. A list of available capabilities can be found at `Apple UIRequiredDeviceCapabilities documentation page <https://developer.apple.com/documentation/bundleresources/information_property_list/uirequireddevicecapabilities>`__.
 
                 -   **files**: contains a list of files that should be copied on export. This is useful for data files or images.
 

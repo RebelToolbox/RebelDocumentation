@@ -15,7 +15,7 @@ Modifying those pages in a pull request triggers a rebuild of the online documen
              refer to the :doc:`pr_workflow` page.
 
 .. warning:: The API documentation source files are in the `Rebel Engine
-             repository <https://github.com/RebelToolbox/RebelEngine>`_. We generate
+             repository <https://github.com/RebelToolbox/RebelEngine>`__. We generate
              the :ref:`Rebel API <toc-api>` section of this documentation
              from them. If you want to update the description of a class, its
              methods, or properties, read
@@ -93,7 +93,7 @@ Adding new pages
 Before adding a new page, please ensure that it fits in the documentation:
 
 1. Look for `existing issues
-   <https://github.com/RebelToolbox/RebelEngine/issues>`_ or open a new one to see
+   <https://github.com/RebelToolbox/RebelEngine/issues>`__ or open a new one to see
    if the page is necessary.
 2. Ensure there isn't a page that already covers the topic.
 3. Read our :doc:`content_guidelines`.

@@ -16,7 +16,7 @@ connect to that signal and call a function when the event occurs.
 Signals are a delegation mechanism built into Rebel Engine that allows one game object to
 react to a change in another without them referencing one another. Using signals
 limits `coupling
-<https://en.wikipedia.org/wiki/Coupling_(computer_programming)>`_ and keeps your
+<https://en.wikipedia.org/wiki/Coupling_(computer_programming)>`__ and keeps your
 code flexible.
 
 For example, you might have a life bar on the screen that represents the

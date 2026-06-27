@@ -15,7 +15,7 @@ data types. If not, refer to this guide :doc:`custom_modules_in_cpp`.
 .. seealso::
 
   - :ref:`ResourceLoader<class_resourceloader>`
-  - `core/io/resource_loader.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/io/resource_loader.h>`_
+  - `core/io/resource_loader.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/io/resource_loader.h>`__
 
 What for?
 ---------
@@ -34,7 +34,7 @@ ImageFormatLoader should be used to load images.
 
 .. seealso::
 
-  - `core/io/image_loader.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/io/image_loader.h>`_
+  - `core/io/image_loader.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/io/image_loader.h>`__
 
 
 Creating a ResourceFormatLoader
@@ -297,9 +297,9 @@ calls into ``std::istream``.
 
 .. seealso::
 
-  - `istream <https://cplusplus.com/reference/istream/istream/>`_
-  - `streambuf <https://cplusplus.com/reference/streambuf/streambuf/>`_
-  - `core/os/file_access.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/os/file_access.h>`_
+  - `istream <https://cplusplus.com/reference/istream/istream/>`__
+  - `streambuf <https://cplusplus.com/reference/streambuf/streambuf/>`__
+  - `core/os/file_access.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/os/file_access.h>`__
 
 Registering the new file format
 -------------------------------
@@ -349,7 +349,7 @@ when ``load`` is called.
 
 .. seealso::
 
-  - `core/io/resource_loader.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/io/resource_loader.h>`_
+  - `core/io/resource_loader.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/io/resource_loader.h>`__
 
 Loading it on GDScript
 ----------------------

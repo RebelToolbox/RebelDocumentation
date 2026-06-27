@@ -4,15 +4,15 @@ Documentation guidelines
 This page describes the rules to follow if you want to contribute to Rebel
 Toolbox by writing or reviewing documentation, or by translating existing
 documentation. Also, have a look at README of the
-`Rebel Documentation GitHub repository <https://github.com/RebelToolbox/RebelDocumentation>`_
-and the `docs front page <https://docs.rebeltoolbox.com>`_
+`Rebel Documentation GitHub repository <https://github.com/RebelToolbox/RebelDocumentation>`__
+and the `docs front page <https://docs.rebeltoolbox.com>`__
 on what steps to follow.
 
 How to contribute
 -----------------
 
 Creating or modifying documentation pages is mainly done via the
-`Rebel Documentation GitHub repository <https://github.com/RebelToolbox/RebelDocumentation>`_.
+`Rebel Documentation GitHub repository <https://github.com/RebelToolbox/RebelDocumentation>`__.
 The HTML (or PDF and EPUB) documentation is generated from the .rst files
 (reStructuredText markup language) in that repository. Modifying those pages
 in a pull request and getting it merged will trigger a rebuild of the online
@@ -22,7 +22,7 @@ documentation.
              refer to the :doc:`pr_workflow` page.
 
 .. warning:: The API documentation's source files are in the `Rebel Engine repository
-             <https://github.com/RebelToolbox/RebelEngine>`_. We generate the :ref:`Rebel API
+             <https://github.com/RebelToolbox/RebelEngine>`__. We generate the :ref:`Rebel API
              <toc-api>` section of this documentation from them. If you want to update the
              description of a class, its methods, or properties, read
              :doc:`updating_the_api_documentation`.
@@ -37,7 +37,7 @@ documentation.
 The 'Edit on GitHub' link
 -------------------------
 
-If you're reading documentation on `docs.rebeltoolbox.com <https://docs.rebeltoolbox.com>`_,
+If you're reading documentation on `docs.rebeltoolbox.com <https://docs.rebeltoolbox.com>`__,
 you'll see an **Edit on GitHub** hyperlink at the top right of the page.
 Once you've created a GitHub account, you can propose changes to a page you're
 reading as follows:

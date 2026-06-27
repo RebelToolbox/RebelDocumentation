@@ -51,7 +51,7 @@ Before we start you'll need a few things:
    manager. On macOS, you can install Xcode from the Mac App Store. On Windows,
    you can use Visual Studio 2015 or later, or MinGW-w64.
 3) A copy of the GDNative include headers:
-   `GDNative include <https://github.com/RebelToolbox/RebelEngine/tree/main/modules/gdnative/include>`_
+   `GDNative include <https://github.com/RebelToolbox/RebelEngine/tree/main/modules/gdnative/include>`__
    These are the C headers for Rebel Engine's public API exposed to GDNative.
 
 .. note::

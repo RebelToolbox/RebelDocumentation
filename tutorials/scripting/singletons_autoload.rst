@@ -18,7 +18,7 @@ own limitations:
    that require it, but frequently saving and loading data is cumbersome and
    may be slow.
 
-The `Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ is
+The `Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__ is
 a useful tool for solving the common use case where you need to store
 persistent information between scenes. In our case, it's possible to reuse the
 same scene or class for multiple singletons as long as they have different

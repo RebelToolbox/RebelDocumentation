@@ -19,7 +19,7 @@ Project setup
 -------------
 
 This demo will use the following tiles taken from Kenney's "Abstract Platformer"
-art pack. You can find the complete set `here <https://kenney.nl/assets/abstract-platformer>`_
+art pack. You can find the complete set `here <https://kenney.nl/assets/abstract-platformer>`__
 but for this demo we'll stick to this small set.
 
 .. image:: img/tilesheet.png

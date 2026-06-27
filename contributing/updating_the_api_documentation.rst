@@ -12,7 +12,7 @@ the entire reference on their own. Rebel Toolbox needs you, and all of us, to
 contribute.
 
 **Important:** If you plan to make large changes, you should create an issue on
-the `Rebel Documentation repository <https://github.com/RebelToolbox/RebelDocumentation>`_
+the `Rebel Documentation repository <https://github.com/RebelToolbox/RebelDocumentation>`__
 or comment on an existing issue. Doing so lets others know you're already
 taking care of a given class.
 
@@ -25,7 +25,7 @@ taking care of a given class.
 
 You can find the source files for the Rebel Engine API in Rebel Engine's GitHub
 repository: `docs/
-<https://github.com/RebelToolbox/RebelEngine/tree/main/docs>`_.
+<https://github.com/RebelToolbox/RebelEngine/tree/main/docs>`__.
 
 .. note:: For some modules in the engine's source code, you'll find the XML
           files in the ``modules/<module_name>/docs/`` directory instead.
@@ -33,7 +33,7 @@ repository: `docs/
 .. warning:: Always edit the API reference through these source XML files. Do
              not edit the generated ``.rst`` files :ref:`in the online documentation
              <toc-api>`, hosted in the `Rebel Documentation
-             <https://github.com/RebelToolbox/RebelDocumentation>`_ repository.
+             <https://github.com/RebelToolbox/RebelDocumentation>`__ repository.
 
 .. warning::
 

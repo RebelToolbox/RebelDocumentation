@@ -6,7 +6,7 @@ Introduction
 
 *GDScript* is a high-level, dynamically typed programming language used to
 create content. It uses a syntax similar to
-`Python <https://en.wikipedia.org/wiki/Python_%28programming_language%29>`_
+`Python <https://en.wikipedia.org/wiki/Python_%28programming_language%29>`__
 (blocks are indent-based and many keywords are similar). Its goal is
 to be optimized for and tightly integrated with Rebel Engine, allowing great
 flexibility for content creation and integration.
@@ -132,7 +132,7 @@ keywords are reserved words (tokens), they can't be used as identifiers.
 Operators (like ``in``, ``not``, ``and`` or ``or``) and names of built-in types
 as listed in the following sections are also reserved.
 
-Keywords are defined in the `GDScript tokenizer <https://github.com/RebelToolbox/RebelEngine/blob/main/modules/gdscript/gdscript_tokenizer.cpp>`_
+Keywords are defined in the `GDScript tokenizer <https://github.com/RebelToolbox/RebelEngine/blob/main/modules/gdscript/gdscript_tokenizer.cpp>`__
 in case you want to take a look under the hood.
 
 +------------+-------------------------------------------------------------------------------------------------------------------+
@@ -369,7 +369,7 @@ PoolRealArray store 32-bit single-precision "float" values.
 :ref:`String <class_String>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/Unicode>`_.
+A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/Unicode>`__.
 Strings can contain the following escape sequences:
 
 +---------------------+---------------------------------+
@@ -1431,10 +1431,10 @@ to. To create custom signals for a class, use the ``signal`` keyword.
 .. note::
 
    Signals are a `Callback
-   <https://en.wikipedia.org/wiki/Callback_(computer_programming)>`_
+   <https://en.wikipedia.org/wiki/Callback_(computer_programming)>`__
    mechanism. They also fill the role of Observers, a common programming
    pattern. For more information, read the `Observer tutorial
-   <https://gameprogrammingpatterns.com/observer.html>`_ in the
+   <https://gameprogrammingpatterns.com/observer.html>`__ in the
    Game Programming Patterns ebook.
 
 You can connect these signals to methods the same way you connect built-in
@@ -1571,7 +1571,7 @@ Our ``BattleLog`` node receives each element in the binds array as an extra argu
 Coroutines with yield
 ~~~~~~~~~~~~~~~~~~~~~
 
-GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/Coroutine>`_
+GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/Coroutine>`__
 via the :ref:`yield<class_@GDScript_method_yield>` built-in function. Calling ``yield()`` will
 immediately return from the current function, with the current frozen
 state of the same function as the return value. Calling ``resume()`` on

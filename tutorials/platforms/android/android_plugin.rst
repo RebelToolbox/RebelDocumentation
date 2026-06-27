@@ -32,7 +32,7 @@ Android plugin
 
 As a prerequisite, make sure you understand how to set up a :doc:`custom build environment</tutorials/export/android_custom_build>` for Android.
 
-At its core, a Rebel Android plugin is a `Android archive library <https://developer.android.com/studio/projects/android-library#aar-contents>`_ (*aar* archive file)
+At its core, a Rebel Android plugin is a `Android archive library <https://developer.android.com/studio/projects/android-library#aar-contents>`__ (*aar* archive file)
 with the following caveats:
 
 - The library must have a dependency on the Rebel Engine Android library (``rebel-lib.<version>.<status>.aar``). A stable version is made available for each Rebel release.
@@ -41,7 +41,7 @@ with the following caveats:
 Building an Android plugin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Prerequisite:** `Android Studio <https://developer.android.com/studio>`_ is strongly recommended as the IDE to use to create Android plugins.
+**Prerequisite:** `Android Studio <https://developer.android.com/studio>`__ is strongly recommended as the IDE to use to create Android plugins.
 The instructions below assumes that you're using Android Studio.
 
 1. Follow `these instructions <https://developer.android.com/studio/projects/android-library#CreateLibrary>`__ to create an Android library module for your plugin.
@@ -102,7 +102,7 @@ The instructions below assumes that you're using Android Studio.
         - The filepath can be relative (e.g.: ``MyPlugin.aar``) in which case it's relative to the ``res://android/plugins`` directory.
         - The filepath can be absolute: ``res://some_path/MyPlugin.aar``.
 
-      - If **binary_type** is ``remote``, then this should be a declaration for a `remote gradle binary <https://developer.android.com/build/dependencies>`_ (e.g.: ``com.example:my-plugin:0.0.0``).
+      - If **binary_type** is ``remote``, then this should be a declaration for a `remote gradle binary <https://developer.android.com/build/dependencies>`__ (e.g.: ``com.example:my-plugin:0.0.0``).
 
     The ``dependencies`` section and fields are optional and defined as follow:
 

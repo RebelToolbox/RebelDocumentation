@@ -35,7 +35,7 @@ These can also be installed or removed later through the Visual Studio Installer
 Create a Visual Studio project
 ------------------------------
 
-Rebel Engine is compiled using `SCons <https://scons.org/>`_.
+Rebel Engine is compiled using `SCons <https://scons.org/>`__.
 The SCons build file includes an option to create the required Visual Studio project file.
 From the command line enter::
 
@@ -115,9 +115,9 @@ Browse to and open the Rebel Engine root folder.
    Visual Studio Rebel Engine folder
 
 **Note:** Rebel Engine includes a Basic ``CMakeLists.txt`` file.
-Visual Studio will detect this file and assume that Rebel Engine is compiled using `CMake <https://cmake.org/>`_.
+Visual Studio will detect this file and assume that Rebel Engine is compiled using `CMake <https://cmake.org/>`__.
 However, Rebel Engine does not use CMake.
-Rebel Engine is compiled using `SCons <https://scons.org/>`_.
+Rebel Engine is compiled using `SCons <https://scons.org/>`__.
 Visual Studio will also detect the ``Rebel.NET.Sdk.sln`` solution file.
 We do not want to use this either.
 
@@ -194,7 +194,7 @@ For more information on the Visual Studio debugger, see https://learn.microsoft.
 
 If you used a different compiler, you need to create a custom launch debug configuration.
 For example, if you used the ``use_mingw=yes`` build option,
-Rebel Engine will be built with the `GCC Compiler <https://gcc.gnu.org/>`_,
+Rebel Engine will be built with the `GCC Compiler <https://gcc.gnu.org/>`__,
 and the executable will have the ``mingw.exe`` suffix.
 Right-click on the executable and select **Add Debug Configuration**.
 
@@ -215,9 +215,9 @@ the created executable can be debugged with the `GDB <https://www.sourceware.org
    Create Debug launch configuration
 
 **Note:** Visual Studio can also be used to cross-compile for Linux using a remote Linux environment,
-or the `Windows Subsystem for Linux <https://learn.microsoft.com/en-us/windows/wsl/>`_.
+or the `Windows Subsystem for Linux <https://learn.microsoft.com/en-us/windows/wsl/>`__.
 There are options to create debugger launch configurations for these builds too.
-For more information, see `Linux development with C++ <https://learn.microsoft.com/en-gb/cpp/linux/>`_.
+For more information, see `Linux development with C++ <https://learn.microsoft.com/en-gb/cpp/linux/>`__.
 
 Select your required debugger, and click **Select**.
 This will create a ``launch.vs.json`` file in the ``.vs`` folder.
