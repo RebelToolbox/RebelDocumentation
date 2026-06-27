@@ -14,10 +14,10 @@ jobs:
 
     steps:
       - name: Checkout Rebel Documentation
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Checkout Rebel Engine
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: RebelToolbox/RebelEngine
           ref: main
