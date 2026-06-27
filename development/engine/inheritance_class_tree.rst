@@ -26,4 +26,4 @@ Spatial
 
 .. image:: img/Spatial.png
 
-Source files: :download:`class_tree.zip <files/class-tree.zip>`.
+Source files: :download:`class-tree.zip <files/class-tree.zip>`.
