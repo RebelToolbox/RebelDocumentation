@@ -4,7 +4,7 @@ How can I contribute
 Everyone is most welcome to contribute to the Rebel Toolbox.
 Here are some ways in which you can contribute to the project:
 
-- Reporting issues
+- `Reporting issues
   <https://github.com/RebelToolbox/RebelEngine/issues>`__.
 - Writing or proofreading documentation.
   You can contribute both to this reference manual or the code reference.
