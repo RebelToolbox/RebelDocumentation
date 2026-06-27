@@ -104,7 +104,7 @@ like this:
  .. code-tab:: csharp
 
     #if TOOLS
-    using Godot;
+    using Rebel;
     using System;
 
     [Tool]
@@ -168,7 +168,7 @@ clicked. For that, we'll need a simple script that extends from
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     [Tool]
@@ -217,7 +217,7 @@ dialog. For that, change the ``custom_node.gd`` script to the following:
  .. code-tab:: csharp
 
     #if TOOLS
-    using Godot;
+    using Rebel;
     using System;
 
     [Tool]
@@ -343,7 +343,7 @@ The script could look like this:
  .. code-tab:: csharp
 
     #if TOOLS
-    using Godot;
+    using Rebel;
     using System;
 
     [Tool]

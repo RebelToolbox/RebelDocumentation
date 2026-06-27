@@ -70,7 +70,7 @@ Example:
 
 .. code-block:: csharp
 
-    using static Godot.GD;
+    using static Rebel.GD;
 
     public class Test
     {
@@ -91,7 +91,7 @@ Example:
 
 .. code-block:: csharp
 
-    using Godot;
+    using Rebel;
 
     public class MyNode : Node
     {
@@ -156,9 +156,9 @@ Example:
     Input.IsActionPressed("ui_down")
 
 However, in some very rare cases this is not enough. For example, you may want
-to access a member from the base class ``Godot.Object``, like ``Connect``.
+to access a member from the base class ``Rebel.Object``, like ``Connect``.
 For such use cases we provide a static property named ``Singleton`` that returns
-the singleton instance. The type of this instance is ``Godot.Object``.
+the singleton instance. The type of this instance is ``Rebel.Object``.
 
 Example:
 
@@ -291,7 +291,7 @@ Array
 =====================  ==============================================================
 GDScript               C#
 =====================  ==============================================================
-``Array``              ``Godot.Collections.Array``
+``Array``              ``Rebel.Collections.Array``
 ``PoolIntArray``       ``int[]``
 ``PoolByteArray``      ``byte[]``
 ``PoolFloatArray``     ``float[]``
@@ -301,16 +301,16 @@ GDScript               C#
 ``PoolVector3Array``   ``Vector3[]``
 =====================  ==============================================================
 
-``Godot.Collections.Array<T>`` is a type-safe wrapper around ``Godot.Collections.Array``.
-Use the ``Godot.Collections.Array<T>(Godot.Collections.Array)`` constructor to create one.
+``Rebel.Collections.Array<T>`` is a type-safe wrapper around ``Rebel.Collections.Array``.
+Use the ``Rebel.Collections.Array<T>(Rebel.Collections.Array)`` constructor to create one.
 
 Dictionary
 ----------
 
-Use ``Godot.Collections.Dictionary``.
+Use ``Rebel.Collections.Dictionary``.
 
-``Godot.Collections.Dictionary<T>`` is a type-safe wrapper around ``Godot.Collections.Dictionary``.
-Use the ``Godot.Collections.Dictionary<T>(Godot.Collections.Dictionary)`` constructor to create one.
+``Rebel.Collections.Dictionary<T>`` is a type-safe wrapper around ``Rebel.Collections.Dictionary``.
+Use the ``Rebel.Collections.Dictionary<T>(Rebel.Collections.Dictionary)`` constructor to create one.
 
 Variant
 -------
@@ -328,7 +328,7 @@ Yield
 Something similar to GDScript's ``yield`` with a single parameter can be achieved with
 C#'s `yield keyword <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/yield>`_.
 
-The equivalent of yield on signal can be achieved with async/await and ``Godot.Object.ToSignal``.
+The equivalent of yield on signal can be achieved with async/await and ``Rebel.Object.ToSignal``.
 
 Example:
 

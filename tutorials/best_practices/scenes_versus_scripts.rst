@@ -34,7 +34,7 @@ a change in API:
       .. code-tab:: csharp
 
         using System;
-        using Godot;
+        using Rebel;
 
         public class Game : Node
         {
@@ -172,7 +172,7 @@ with it, and finally adds it as a child of the ``Main`` node:
   .. code-tab:: csharp
 
     using System;
-    using Godot;
+    using Rebel;
 
     public class Main : Resource
     {

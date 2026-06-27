@@ -61,7 +61,7 @@ Add a script to the kinematic body and add the following code:
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     public class Movement : KinematicBody2D
@@ -152,7 +152,7 @@ while up/down moves it forward or backward in whatever direction it's facing.
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     public class Movement : KinematicBody2D
@@ -232,7 +232,7 @@ is set by the mouse position instead of the keyboard. The character will always
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     public class Movement : KinematicBody2D
@@ -306,7 +306,7 @@ on the screen will cause the player to move to the target location.
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     public class Movement : KinematicBody2D

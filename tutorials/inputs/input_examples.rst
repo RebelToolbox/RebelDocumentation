@@ -83,7 +83,7 @@ attach the following script:
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     public class Node : Godot.Node
@@ -343,7 +343,7 @@ node:
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     public class Node2D : Godot.Node2D

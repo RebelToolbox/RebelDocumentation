@@ -125,7 +125,7 @@ changed:
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     public class Player : Area2D

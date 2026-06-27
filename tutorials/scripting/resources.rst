@@ -225,7 +225,7 @@ Let's see some examples.
 
         // BotStats.cs
         using System;
-        using Godot;
+        using Rebel;
 
         namespace ExampleProject {
             public class BotStats : Resource
@@ -253,7 +253,7 @@ Let's see some examples.
 
         // Bot.cs
         using System;
-        using Godot;
+        using Rebel;
 
         namespace ExampleProject {
             public class Bot : KinematicBody
@@ -300,7 +300,7 @@ Let's see some examples.
       .. code-tab:: csharp
 
         using System;
-        using Godot;
+        using Rebel;
 
         public class BotStatsTable : Resource
         {
@@ -353,7 +353,7 @@ Let's see some examples.
       .. code-tab:: csharp
 
         using System;
-        using Godot;
+        using Rebel;
 
         public class MyNode : Node
         {

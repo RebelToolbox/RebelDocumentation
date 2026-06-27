@@ -113,7 +113,7 @@ In the ``Game.gd`` file, add the following code:
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     public class Game : Spatial

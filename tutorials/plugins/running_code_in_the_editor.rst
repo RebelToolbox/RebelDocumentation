@@ -110,7 +110,7 @@ Add a ``Sprite`` node to your scene and set the texture to Rebel icon. Attach an
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     [Tool]
@@ -181,7 +181,7 @@ Modify  ``_process()`` to include the rotation speed.
 
  .. code-tab:: csharp
 
-    using Godot;
+    using Rebel;
     using System;
 
     [Tool]
