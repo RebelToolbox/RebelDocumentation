@@ -15,7 +15,7 @@ In short:
 * You are free to modify, distribute, redistribute, and remix Rebel Engine to your heart's content, for any reason, both non-commercially and commercially.
 
 All the contents of this accompanying documentation are published under
-the permissive Creative Commons Attribution 3.0 (`CC-BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`_) license, with attribution to "Rebel Toolbox Contributors"
+the permissive Creative Commons Attribution 4.0 (`CC-BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`_) license, with attribution to "Rebel Toolbox Contributors"
 
 Logos and icons are generally under the same Creative Commons license. Note
 that some third-party libraries included with Rebel Engine's source code may have
