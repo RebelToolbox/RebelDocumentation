@@ -3,7 +3,7 @@ Exporting for Universal Windows Platform
 
 .. seealso::
 
-    This page describes how to export a Rebe; project to UWP.
+    This page describes how to export a Rebel project to UWP.
     If you're looking to compile export template binaries from source instead,
     read :doc:`/development/compiling/compiling_for_uwp`.
 
