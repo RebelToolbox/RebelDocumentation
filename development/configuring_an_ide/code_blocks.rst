@@ -145,28 +145,47 @@ Right-click on the **RebelProject** project and select **Build Options…**.
 
    Project build options…
 
-Select the **"Make" commands** tab.
-Remove all the existing commands for all the build targets.
-For each build target enter the **SCons** command for creating the desired build in the **Build project/target** field.
-The minimum is ``scons``.
-For details on the **SCons** build options,
-see :doc:`/development/compiling/introduction_to_the_buildsystem`.
-It's also useful to add the ``scons --clean`` command in the **Clean project/target** field.
+.. tabs::
 
-.. figure:: img/code-blocks-build-make.png
-   :figclass: figure-w480
-   :align: center
+   .. tab:: Linux
 
-   "Make" commands: Build: "scons", Clean: "scons --clean"
+      Select the **"Make" commands** tab.
+      Remove all the existing commands for all the build targets.
+      For each build target enter the **SCons** command for creating the desired build in the **Build project/target** field.
+      For details on the **SCons** build options,
+      see :doc:`/development/compiling/introduction_to_the_buildsystem`.
+      The minimum is ``scons``.
+      It's also useful to add the ``scons --clean`` command in the **Clean project/target** field.
 
-If you're using Windows,
-all the commands need to be preceded with ``cmd /c`` to initialize the command interpreter.
+      .. figure:: img/code-blocks-build-make.png
+         :figclass: figure-w480
+         :align: center
 
-.. figure:: img/code-blocks-windows-build-options.png
-   :figclass: figure-w480
-   :align: center
+         "Make" commands: Build: "scons", Clean: "scons --clean"
 
-   Windows "Make" commands: Build: "cmd /c scons", Clean: "cmd /c scons --clean"
+      Click **OK** to save the changes.
+
+   .. tab:: Windows
+
+      On Windows, SCons needs to run in a shell.
+      You can use either PowerShell (``powershell``) or the Command Prompt (``cmd /c``).
+      We recommend using PowerShell.
+
+      Select the **"Make" commands** tab.
+      Remove all the existing commands for all the build targets.
+      For each build target enter ``powershell`` with the **SCons** command for creating the desired build in the **Build project/target** field.
+      For details on the **SCons** build options,
+      see :doc:`/development/compiling/introduction_to_the_buildsystem`.
+      The minimum is ``powershell scons``.
+      It's also useful to add the ``powershell scons --clean`` command in the **Clean project/target** field.
+
+      .. figure:: img/code-blocks-windows-build-options.png
+         :figclass: figure-w480
+         :align: center
+
+         "Make" commands: Build: "powershell scons", Clean: "powershell scons --clean"
+
+      Click **OK** to save the changes.
 
 Code::Blocks should now be configured to build Rebel Engine.
 You can either select **Build > Build**, click the gear button, or press :kbd:`Ctrl+F9`.
