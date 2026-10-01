@@ -49,16 +49,33 @@ We will configure the SCons builds manually later.
 Click **OK** to open the project.
 
 If you chose to open the CMake project, you will be presented with the **Open Project Wizard**.
-We don't use CMake to build the project; so these settings won't be used.
-However, it's worth selecting the **Reload CMake project on editing CMakeLists.txt or other CMake configuration files** option.
 
-.. figure:: img/clion-open-project-wizard.png
-   :figclass: figure-w480
-   :align: center
+.. tabs::
 
-   Reload CMake project on editing CMakeLists.txt or other CMake configuration files
+   .. tab:: Linux
 
-Click **OK**.
+      We don't use CMake to build the project; so these settings won't be used.
+      However, it's worth selecting the **Reload CMake project on editing CMakeLists.txt or other CMake configuration files** option.
+
+      .. figure:: img/clion-open-project-wizard-linux.png
+         :figclass: figure-w480
+         :align: center
+
+         Reload CMake project on editing CMakeLists.txt or other CMake configuration files
+
+      Click **OK**.
+
+   .. tab:: Windows
+
+      We don't use CMake to build the project; so these settings won't be used.
+
+      .. figure:: img/clion-open-project-wizard-windows.png
+         :figclass: figure-w480
+         :align: center
+
+         Skip the wizard and use the defaults
+
+      Click, **Skip Wizard and Use Defaults**.
 
 .. figure:: img/clion-readme.png
    :figclass: figure-w480
@@ -132,15 +149,35 @@ Click the :kbd:`+` icon in the top-left corner to add a tool.
 Name your build tool.
 Again, it makes sense to give your tools the same name as your targets.
 
-Under **Tool Settings**, **Program**, type ``scons``.
-Under **Arguments** enter the arguments for this target.
-For more information on the arguments available, see :doc:`/development/compiling/introduction_to_the_buildsystem`.
+.. tabs::
 
-.. figure:: img/clion-create-tool.png
-   :figclass: figure-w480
-   :align: center
+   .. group-tab:: Linux
 
-   Name the Build tool the same as the Target and Configuration
+      Under **Tool Settings**, **Program**, type ``scons``.
+      Under **Arguments** enter the arguments for this target.
+      For more information on the arguments available, see :doc:`/development/compiling/introduction_to_the_buildsystem`.
+
+      .. figure:: img/clion-create-tool-linux.png
+         :figclass: figure-w480
+         :align: center
+
+         Name the Build tool the same as the Target and Configuration
+
+   .. group-tab:: Windows
+
+      On Windows, SCons needs to run in a shell.
+      You can use either PowerShell (``powershell``) or the Command Prompt (``cmd /c``).
+      We recommend using PowerShell.
+
+      Under **Tool Settings**, **Program**, type ``powershell``.
+      Under **Arguments** enter ``scons`` and the arguments for this target.
+      For more information on the arguments available, see :doc:`/development/compiling/introduction_to_the_buildsystem`.
+
+      .. figure:: img/clion-create-tool-windows.png
+         :figclass: figure-w480
+         :align: center
+
+         Name the Build tool the same as the Target and Configuration
 
 Click **OK** to save the build tool.
 
@@ -166,11 +203,23 @@ Name your clean tool.
 It makes sense to give your clean tool the same name as your build tool, but add `Clean` to the name.
 Use the same arguments for the build tool, but add the ``--clean`` argument.
 
-.. figure:: img/clion-create-clean-tool.png
-   :figclass: figure-w480
-   :align: center
+.. tabs::
 
-   Name the Clean tool the same as the Build tool with **Clean**
+   .. group-tab:: Linux
+
+      .. figure:: img/clion-create-clean-tool-linux.png
+         :figclass: figure-w480
+         :align: center
+
+         Name the Clean tool the same as the Build tool with **Clean**
+
+   .. group-tab:: Windows
+
+      .. figure:: img/clion-create-clean-tool-windows.png
+         :figclass: figure-w480
+         :align: center
+
+         Name the Clean tool the same as the Build tool with **Clean**
 
 Click **OK** to save the clean tool.
 
