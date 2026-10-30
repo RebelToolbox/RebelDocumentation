@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rebel Documentation 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/RebelToolbox/RebelDocumentation\n"
-"POT-Creation-Date: 2026-07-27 02:17+0000\n"
+"POT-Creation-Date: 2026-10-02 03:37+0000\n"
 "PO-Revision-Date: 2023-08-06 10:10+0000\n"
 "Last-Translator: Braulio León Madrid Escobar <brauliomadrid.developer@gmail."
 "com>\n"
@@ -514,6 +514,10 @@ msgstr "**Para el editor:**"
 #: development/compiling/build_for_android.rst:192
 #: development/compiling/build_for_android.rst:217
 #: development/compiling/compiling_with_mono.rst:328
+#: development/configuring_an_ide/clion.rst:68
+#: development/configuring_an_ide/clion.rst:166
+#: development/configuring_an_ide/clion.rst:216
+#: development/configuring_an_ide/code_blocks.rst:168
 #: tutorials/rendering/jitter_stutter.rst:48
 msgid "Windows"
 msgstr "Windows"
@@ -999,6 +1003,10 @@ msgstr ""
 #: development/compiling/build_for_android.rst:134
 #: development/compiling/build_for_android.rst:180
 #: development/compiling/build_for_android.rst:205
+#: development/configuring_an_ide/clion.rst:55
+#: development/configuring_an_ide/clion.rst:154
+#: development/configuring_an_ide/clion.rst:208
+#: development/configuring_an_ide/code_blocks.rst:150
 msgid "Linux"
 msgstr "Linux"
 
@@ -14851,7 +14859,7 @@ msgid "Open \"RebelEngine/platforms/android/project\" folder"
 msgstr ""
 
 #: development/configuring_an_ide/android_studio.rst:30
-#: development/configuring_an_ide/clion.rst:61
+#: development/configuring_an_ide/clion.rst:66
 msgid "Click **OK**."
 msgstr ""
 
@@ -15025,28 +15033,45 @@ msgstr ""
 #: development/configuring_an_ide/clion.rst:51
 msgid ""
 "If you chose to open the CMake project, you will be presented with the "
-"**Open Project Wizard**. We don't use CMake to build the project; so these "
-"settings won't be used. However, it's worth selecting the **Reload CMake "
-"project on editing CMakeLists.txt or other CMake configuration files** "
-"option."
+"**Open Project Wizard**."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:59
+#: development/configuring_an_ide/clion.rst:57
+msgid ""
+"We don't use CMake to build the project; so these settings won't be used. "
+"However, it's worth selecting the **Reload CMake project on editing "
+"CMakeLists.txt or other CMake configuration files** option."
+msgstr ""
+
+#: development/configuring_an_ide/clion.rst:64
 msgid ""
 "Reload CMake project on editing CMakeLists.txt or other CMake configuration "
 "files"
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:67
+#: development/configuring_an_ide/clion.rst:70
+msgid ""
+"We don't use CMake to build the project; so these settings won't be used."
+msgstr ""
+
+#: development/configuring_an_ide/clion.rst:76
+msgid "Skip the wizard and use the defaults"
+msgstr ""
+
+#: development/configuring_an_ide/clion.rst:78
+msgid "Click, **Skip Wizard and Use Defaults**."
+msgstr ""
+
+#: development/configuring_an_ide/clion.rst:84
 msgid "Rebel Engine in CLion"
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:70
+#: development/configuring_an_ide/clion.rst:87
 #, fuzzy
 msgid "Create a Build Configuration"
 msgstr "Crear una animación simple"
 
-#: development/configuring_an_ide/clion.rst:72
+#: development/configuring_an_ide/clion.rst:89
 msgid ""
 "Rebel Engine uses `SCons <https://scons.org/>`__ as the :doc:`build system </"
 "development/compiling/introduction_to_the_buildsystem>`. We need to create "
@@ -15054,112 +15079,129 @@ msgid ""
 "**Edit Configurations…**."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:80
+#: development/configuring_an_ide/clion.rst:97
 #, fuzzy
 msgid "Edit Configurations…"
 msgstr "Configuración"
 
-#: development/configuring_an_ide/clion.rst:82
+#: development/configuring_an_ide/clion.rst:99
 msgid ""
 "To add a configuration, click the :kbd:`+` icon in the top-left corner. From "
 "**Add New Configuration**, select **Custom Build Application**."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:89
+#: development/configuring_an_ide/clion.rst:106
 msgid "Add a new Custom Build Application configuration"
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:91
+#: development/configuring_an_ide/clion.rst:108
 msgid ""
 "You will probably create multiple build configurations. Name each run "
 "configuration, so you can easily identify it."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:94
+#: development/configuring_an_ide/clion.rst:111
 msgid ""
 "Each run configuration needs a build target. Select **Configure Custom Build "
 "Targets**."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:101
+#: development/configuring_an_ide/clion.rst:118
 msgid "Name Configuration and Configure Custom Build Targets"
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:103
+#: development/configuring_an_ide/clion.rst:120
 msgid "From **Add target**, select **Tool**."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:109
+#: development/configuring_an_ide/clion.rst:126
 #, fuzzy
 msgid "Add a new Target, Tool"
 msgstr "Añadir una nueva animación"
 
-#: development/configuring_an_ide/clion.rst:111
+#: development/configuring_an_ide/clion.rst:128
 msgid ""
 "Name your build target. It makes sense to give your build targets the same "
 "name as your run targets."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:114
+#: development/configuring_an_ide/clion.rst:131
 msgid ""
 "You will need to create a new build tool. To the right of the **Build** drop-"
 "down list, click the three dots: ``…``."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:122
+#: development/configuring_an_ide/clion.rst:139
 msgid "Name the Target the same as the Configuration and add a new Build tool"
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:124
+#: development/configuring_an_ide/clion.rst:141
 msgid "Click the :kbd:`+` icon in the top-left corner to add a tool."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:130
+#: development/configuring_an_ide/clion.rst:147
 #, fuzzy
 msgid "Add a new Tool"
 msgstr "Añadir una nueva animación"
 
-#: development/configuring_an_ide/clion.rst:132
+#: development/configuring_an_ide/clion.rst:149
 msgid ""
 "Name your build tool. Again, it makes sense to give your tools the same name "
 "as your targets."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:135
+#: development/configuring_an_ide/clion.rst:156
 msgid ""
 "Under **Tool Settings**, **Program**, type ``scons``. Under **Arguments** "
 "enter the arguments for this target. For more information on the arguments "
 "available, see :doc:`/development/compiling/introduction_to_the_buildsystem`."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:143
+#: development/configuring_an_ide/clion.rst:164
+#: development/configuring_an_ide/clion.rst:180
 msgid "Name the Build tool the same as the Target and Configuration"
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:145
+#: development/configuring_an_ide/clion.rst:168
+#: development/configuring_an_ide/code_blocks.rst:170
+msgid ""
+"On Windows, SCons needs to run in a shell. You can use either PowerShell "
+"(``powershell``) or the Command Prompt (``cmd /c``). We recommend using "
+"PowerShell."
+msgstr ""
+
+#: development/configuring_an_ide/clion.rst:172
+msgid ""
+"Under **Tool Settings**, **Program**, type ``powershell``. Under "
+"**Arguments** enter ``scons`` and the arguments for this target. For more "
+"information on the arguments available, see :doc:`/development/compiling/"
+"introduction_to_the_buildsystem`."
+msgstr ""
+
+#: development/configuring_an_ide/clion.rst:182
 msgid "Click **OK** to save the build tool."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:151
+#: development/configuring_an_ide/clion.rst:188
 msgid "Select your new build tool"
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:153
+#: development/configuring_an_ide/clion.rst:190
 msgid "Click **OK** to select your new build tool."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:155
+#: development/configuring_an_ide/clion.rst:192
 msgid ""
 "Now, create a new clean tool. To the right of the **Clean** drop-down list, "
 "click the three dots: ``…``."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:162
+#: development/configuring_an_ide/clion.rst:199
 #, fuzzy
 msgid "Add a new Clean tool"
 msgstr "Añadir una nueva animación"
 
-#: development/configuring_an_ide/clion.rst:164
+#: development/configuring_an_ide/clion.rst:201
 msgid ""
 "Click the :kbd:`+` icon to add another tool. Name your clean tool. It makes "
 "sense to give your clean tool the same name as your build tool, but add "
@@ -15167,101 +15209,102 @@ msgid ""
 "``--clean`` argument."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:173
+#: development/configuring_an_ide/clion.rst:214
+#: development/configuring_an_ide/clion.rst:222
 msgid "Name the Clean tool the same as the Build tool with **Clean**"
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:175
+#: development/configuring_an_ide/clion.rst:224
 msgid "Click **OK** to save the clean tool."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:181
+#: development/configuring_an_ide/clion.rst:230
 msgid "Select the new Build and Clean tools"
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:183
+#: development/configuring_an_ide/clion.rst:232
 msgid ""
 "When you have finished creating and selecting the build and clean tools, "
 "click **OK** to save the new build target."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:190
+#: development/configuring_an_ide/clion.rst:239
 #, fuzzy
 msgid "Save the new Configuration"
 msgstr "Configuración del estilo de código"
 
-#: development/configuring_an_ide/clion.rst:192
+#: development/configuring_an_ide/clion.rst:241
 msgid ""
 "You can now select your new target for your run configuration. Click **OK** "
 "to save your configuration."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:196
+#: development/configuring_an_ide/clion.rst:245
 msgid "Run and Debug Rebel Editor"
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:198
+#: development/configuring_an_ide/clion.rst:247
 msgid ""
 "Once you have created a build target, you can build your selected "
 "configuration. If you want to run and debug a Rebel Editor build on your "
 "platform, you will need to specify the executable created."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:203
+#: development/configuring_an_ide/clion.rst:252
 msgid ""
 "Although you can simply enter the location and name of the executable, it is "
 "easiest if you build Rebel Editor first. Once you have completed the build, "
 "you can add the executable by browsing to it."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:207
+#: development/configuring_an_ide/clion.rst:256
 msgid ""
 "Edit your configuration. If you try run a configuration without specifying "
 "the executable, you will be prompted to add an executable."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:215
+#: development/configuring_an_ide/clion.rst:264
 #, fuzzy
 msgid "Specify the executable"
 msgstr "Ejecutable Auxiliar"
 
-#: development/configuring_an_ide/clion.rst:217
+#: development/configuring_an_ide/clion.rst:266
 msgid ""
 "To the right of the **Executable** drop-down list, click the three dots: ``…"
 "``."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:220
+#: development/configuring_an_ide/clion.rst:269
 msgid "Browse to the `bin` folder, and select the created executable."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:227
+#: development/configuring_an_ide/clion.rst:276
 msgid "Select the created executable in the ``bin`` folder"
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:229
+#: development/configuring_an_ide/clion.rst:278
 msgid ""
 "Click **OK** to save the specified executable for your configuration. You "
 "will now be able to run and debug the Rebel Editor build."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:232
+#: development/configuring_an_ide/clion.rst:281
 msgid "There are two additional configuration fields worth noting:"
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:234
+#: development/configuring_an_ide/clion.rst:283
 msgid ""
 "The **Program arguments** field can be used to run and debug Rebel Editor "
 "with additional program arguments."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:236
+#: development/configuring_an_ide/clion.rst:285
 msgid ""
 "If required, the **Working directory** field can be used to test specific "
 "projects. Set it to the folder containing the ``project.rebel`` file."
 msgstr ""
 
-#: development/configuring_an_ide/clion.rst:238
+#: development/configuring_an_ide/clion.rst:287
 msgid ""
 "That's it! You're now ready to start contributing to Rebel Engine using the "
 "CLion IDE."
@@ -15490,6 +15533,8 @@ msgid "This is a custom Makefile"
 msgstr ""
 
 #: development/configuring_an_ide/code_blocks.rst:137
+#: development/configuring_an_ide/code_blocks.rst:166
+#: development/configuring_an_ide/code_blocks.rst:188
 #, fuzzy
 msgid "Click **OK** to save the changes."
 msgstr "Haz clic en ``Abrir`` para iniciar la aplicación."
@@ -15508,15 +15553,15 @@ msgstr ""
 msgid "Project build options…"
 msgstr "Otras opciones de compilación"
 
-#: development/configuring_an_ide/code_blocks.rst:148
+#: development/configuring_an_ide/code_blocks.rst:152
 #, fuzzy
 msgid ""
 "Select the **\"Make\" commands** tab. Remove all the existing commands for "
 "all the build targets. For each build target enter the **SCons** command for "
-"creating the desired build in the **Build project/target** field. The "
-"minimum is ``scons``. For details on the **SCons** build options, see :doc:`/"
-"development/compiling/introduction_to_the_buildsystem`. It's also useful to "
-"add the ``scons --clean`` command in the **Clean project/target** field."
+"creating the desired build in the **Build project/target** field. For "
+"details on the **SCons** build options, see :doc:`/development/compiling/"
+"introduction_to_the_buildsystem`. The minimum is ``scons``. It's also useful "
+"to add the ``scons --clean`` command in the **Clean project/target** field."
 msgstr ""
 "Selecciona la pestaña **\"Make\" commands** y elimina todos los comandos "
 "existentes para todos los objetivos de compilación. Para cada objetivo de "
@@ -15527,26 +15572,37 @@ msgstr ""
 "el comando ``scons --clean`` en el campo **Clean project/target** para los "
 "comandos predeterminados del proyecto."
 
-#: development/configuring_an_ide/code_blocks.rst:160
+#: development/configuring_an_ide/code_blocks.rst:164
 msgid "\"Make\" commands: Build: \"scons\", Clean: \"scons --clean\""
 msgstr ""
 
-#: development/configuring_an_ide/code_blocks.rst:162
+#: development/configuring_an_ide/code_blocks.rst:174
 #, fuzzy
 msgid ""
-"If you're using Windows, all the commands need to be preceded with ``cmd /"
-"c`` to initialize the command interpreter."
+"Select the **\"Make\" commands** tab. Remove all the existing commands for "
+"all the build targets. For each build target enter ``powershell`` with the "
+"**SCons** command for creating the desired build in the **Build project/"
+"target** field. For details on the **SCons** build options, see :doc:`/"
+"development/compiling/introduction_to_the_buildsystem`. The minimum is "
+"``powershell scons``. It's also useful to add the ``powershell scons --"
+"clean`` command in the **Clean project/target** field."
 msgstr ""
-"Si estás utilizando Windows, todos los comandos deben ir precedidos de "
-"``cmd /c`` para inicializar el intérprete de comandos."
+"Selecciona la pestaña **\"Make\" commands** y elimina todos los comandos "
+"existentes para todos los objetivos de compilación. Para cada objetivo de "
+"compilación, introduce el comando **SCons** para crear la compilación "
+"deseada en el campo **Build project/target**. El mínimo es ``scons``. Para "
+"obtener más detalles sobre las opciones de compilación de **SCons**, "
+"consulta :ref:`doc_introduction_to_the_buildsystem`. También es útil agregar "
+"el comando ``scons --clean`` en el campo **Clean project/target** para los "
+"comandos predeterminados del proyecto."
 
-#: development/configuring_an_ide/code_blocks.rst:169
+#: development/configuring_an_ide/code_blocks.rst:186
 msgid ""
-"Windows \"Make\" commands: Build: \"cmd /c scons\", Clean: \"cmd /c scons --"
+"\"Make\" commands: Build: \"powershell scons\", Clean: \"powershell scons --"
 "clean\""
 msgstr ""
 
-#: development/configuring_an_ide/code_blocks.rst:171
+#: development/configuring_an_ide/code_blocks.rst:190
 #, fuzzy
 msgid ""
 "Code::Blocks should now be configured to build Rebel Engine. You can either "
@@ -15556,12 +15612,12 @@ msgstr ""
 "seleccionar **Build > Build**, hacer clic en el botón de engranaje o "
 "presionar :kbd:`Ctrl + F9` para comenzar la compilación."
 
-#: development/configuring_an_ide/code_blocks.rst:175
+#: development/configuring_an_ide/code_blocks.rst:194
 #, fuzzy
 msgid "Configure the run"
 msgstr "Configurando la ejecución"
 
-#: development/configuring_an_ide/code_blocks.rst:177
+#: development/configuring_an_ide/code_blocks.rst:196
 #, fuzzy
 msgid ""
 "Once **SCons** has successfully built the desired target, reopen the project "
@@ -15573,7 +15629,7 @@ msgstr ""
 "targets**. En el campo **Output filename**, navega hasta la carpeta ``bin`` "
 "y selecciona el archivo compilado."
 
-#: development/configuring_an_ide/code_blocks.rst:182
+#: development/configuring_an_ide/code_blocks.rst:201
 msgid ""
 "Deselect the **Auto-generate filename prefix** and **Auto-generate filename "
 "extension** options."
@@ -15581,29 +15637,29 @@ msgstr ""
 "Desmarca las opciones **Auto-generate filename prefix** y **Auto-generate "
 "filename extension**."
 
-#: development/configuring_an_ide/code_blocks.rst:188
+#: development/configuring_an_ide/code_blocks.rst:207
 msgid "Output filename and don't auto-generate prefix or extension"
 msgstr ""
 
-#: development/configuring_an_ide/code_blocks.rst:190
+#: development/configuring_an_ide/code_blocks.rst:209
 #, fuzzy
 msgid "There are two additional points worth noting:"
 msgstr "Hay dos formas de hacerlo:"
 
-#: development/configuring_an_ide/code_blocks.rst:192
+#: development/configuring_an_ide/code_blocks.rst:211
 msgid ""
 "If required, the **Execution working dir** field can be used to test "
 "specific projects. Set it to the folder containing the ``project.rebel`` "
 "file."
 msgstr ""
 
-#: development/configuring_an_ide/code_blocks.rst:194
+#: development/configuring_an_ide/code_blocks.rst:213
 msgid ""
 "The **Build targets** tab can be used to add and remove build targets for "
 "working with and creating different builds."
 msgstr ""
 
-#: development/configuring_an_ide/code_blocks.rst:196
+#: development/configuring_an_ide/code_blocks.rst:215
 #, fuzzy
 msgid ""
 "Code::Blocks should now be configured to run your compiled Rebel Engine "
@@ -15614,64 +15670,64 @@ msgstr ""
 "compilado; así que selecciona **Build > Run**, haz clic en el botón de "
 "flecha verde o presiona :kbd:`Ctrl + F10`."
 
-#: development/configuring_an_ide/code_blocks.rst:200
+#: development/configuring_an_ide/code_blocks.rst:219
 #, fuzzy
 msgid "Save your settings"
 msgstr "Ajustes del editor"
 
-#: development/configuring_an_ide/code_blocks.rst:202
+#: development/configuring_an_ide/code_blocks.rst:221
 msgid ""
 "By default, Code::Blocks does not save your workspace settings. To avoid "
 "opening your project each time, you can set Code::Blocks to open the default "
 "workspace on start-up. Go to **Settings > Environment…**."
 msgstr ""
 
-#: development/configuring_an_ide/code_blocks.rst:211
+#: development/configuring_an_ide/code_blocks.rst:230
 #, fuzzy
 msgid "Environment settings…"
 msgstr "Opciones de Environment"
 
-#: development/configuring_an_ide/code_blocks.rst:213
+#: development/configuring_an_ide/code_blocks.rst:232
 msgid ""
 "Under **General settings** find the **On application start-up** section. "
 "Select the **Open default workspace** option."
 msgstr ""
 
-#: development/configuring_an_ide/code_blocks.rst:220
+#: development/configuring_an_ide/code_blocks.rst:239
 msgid "Open-default workspace"
 msgstr ""
 
-#: development/configuring_an_ide/code_blocks.rst:222
+#: development/configuring_an_ide/code_blocks.rst:241
 msgid "Click **Ok**."
 msgstr ""
 
-#: development/configuring_an_ide/code_blocks.rst:224
+#: development/configuring_an_ide/code_blocks.rst:243
 #, fuzzy
 msgid "When exiting, you will be prompted to save the workspace."
 msgstr "Si falta el archivo ``launch.json``, se te pedirá que crees uno nuevo."
 
-#: development/configuring_an_ide/code_blocks.rst:231
+#: development/configuring_an_ide/code_blocks.rst:250
 #, fuzzy
 msgid "Save the workspace"
 msgstr "Guarda la escena."
 
-#: development/configuring_an_ide/code_blocks.rst:233
+#: development/configuring_an_ide/code_blocks.rst:252
 #, fuzzy
 msgid "Then you will be prompted to save the project."
 msgstr "Se te pedirá que abras un archivo. Selecciona tu hoja de sprites."
 
-#: development/configuring_an_ide/code_blocks.rst:239
+#: development/configuring_an_ide/code_blocks.rst:258
 #, fuzzy
 msgid "Save the project"
 msgstr "Iniciando el proyecto"
 
-#: development/configuring_an_ide/code_blocks.rst:241
+#: development/configuring_an_ide/code_blocks.rst:260
 msgid ""
 "Please click **Yes**. Otherwise, you will need to recreate all of these "
 "settings again."
 msgstr ""
 
-#: development/configuring_an_ide/code_blocks.rst:244
+#: development/configuring_an_ide/code_blocks.rst:263
 msgid ""
 "That's it! You're now ready to start contributing to Rebel Engine using the "
 "Code::Blocks IDE."
