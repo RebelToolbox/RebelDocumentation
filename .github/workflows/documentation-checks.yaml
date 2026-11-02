@@ -6,7 +6,7 @@ on:
 jobs:
   check-documentation:
     name: Check Documentation
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -26,10 +26,10 @@ jobs:
 
       - name: Spelling checks (codespell)
         run: |
-          codespell                            \
-          -I _tools/codespell-ignore-words.txt \
-          -x _tools/codespell-ignore-lines.txt \
-          --skip="_*","env","locales"
+          codespell                                        \
+          --ignore-words _tools/codespell-ignore-words.txt \
+          --exclude-file _tools/codespell-ignore-lines.txt \
+          --skip="_*","env","locales","AUTHORS.md"
 
       - name: Create patch file
         if: failure()

@@ -39,7 +39,7 @@ setup clang-format locally to check and automatically fix all your commits.
              thereof), and don't want to introduce differences that would make
              syncing with upstream repositories harder.
 
-             Third-party code is usually included in the ``thirdparty/`` folder
+             Third-party code is usually included in the ``third-party/`` folder
              and can thus easily be excluded from formatting scripts. For the
              rare cases where a third-party code snippet needs to be included
              directly within a Rebel Engine file, you can use
@@ -141,7 +141,7 @@ ones, the following rules should be followed:
   includes should be done with quotes, e.g. ``#include "core/object.h"``. The
   block of Rebel Engine header includes should then be followed by an empty line for
   separation.
-- Finally, third-party headers (either from ``thirdparty`` or from the system's
+- Finally, third-party headers (either from ``third-party`` or from the system's
   include paths) come next and should be included with the < and > symbols, e.g.
   ``#include <png.h>``. The block of third-party headers should also be followed
   by an empty line for separation.
