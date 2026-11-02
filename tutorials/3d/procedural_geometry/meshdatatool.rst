@@ -12,7 +12,7 @@ for certain mesh algorithms. If you do not need this extra information then it m
 .. note:: MeshDataTool can only be used on Meshes that use the PrimitiveType ``Mesh.PRIMITIVE_TRIANGLES``.
 
 We initialize the MeshDataTool from an ArrayMesh by calling ``create_from_surface()``. If there is already data initialized in the MeshDataTool,
-calling ``create_from_surface()`` will clear it for you. Alternatively, you can call ``clear()`` yourself before re-using the MeshDataTool.
+calling ``create_from_surface()`` will clear it for you. Alternatively, you can call ``clear()`` yourself before reusing the MeshDataTool.
 
 In the examples below, assume an ArrayMesh called ``mesh`` has already been created. See :doc:`ArrayMesh tutorial </tutorials/3d/procedural_geometry/arraymesh>` for an example of mesh generation.
 
