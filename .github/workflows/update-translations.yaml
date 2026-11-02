@@ -10,7 +10,7 @@ jobs:
     name: Update Translation Files
     # Don't run on forks.
     if: github.repository == 'RebelToolbox/RebelDocumentation'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout Rebel Documentation
@@ -147,7 +147,7 @@ jobs:
     name: Update Translations from Weblate
     # Don't run on forks.
     if: github.repository == 'RebelToolbox/RebelDocumentation'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout Rebel Documentation
