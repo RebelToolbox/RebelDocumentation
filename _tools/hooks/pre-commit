@@ -6,10 +6,10 @@
 set -e
 
 echo "Checking spelling..."
-if ! codespell                           \
-    -I _tools/codespell-ignore-words.txt \
-    -x _tools/codespell-ignore-lines.txt \
-    --skip=".git","_*","env"
+if ! codespell                                       \
+    --ignore-words _tools/codespell-ignore-words.txt \
+    --exclude-file _tools/codespell-ignore-lines.txt \
+    --skip="_*","env","locales","AUTHORS.md"
 then
     echo "Spelling errors found."
     echo "Please fix the spelling errors and try again."
