@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rebel Documentation 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/RebelToolbox/RebelDocumentation\n"
-"POT-Creation-Date: 2026-10-02 03:37+0000\n"
+"POT-Creation-Date: 2026-11-14 04:29+0000\n"
 "PO-Revision-Date: 2023-09-18 08:20+0000\n"
 "Last-Translator: Houtaroy <Houtaroy@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -5461,7 +5461,7 @@ msgstr ""
 #: contributing/code_style_guidelines.rst:42
 #, fuzzy
 msgid ""
-"Third-party code is usually included in the ``thirdparty/`` folder and can "
+"Third-party code is usually included in the ``third-party/`` folder and can "
 "thus easily be excluded from formatting scripts. For the rare cases where a "
 "third-party code snippet needs to be included directly within a Rebel Engine "
 "file, you can use ``/* clang-format off */`` and ``/* clang-format on */`` "
@@ -5704,8 +5704,9 @@ msgstr ""
 "object.h\"``. 然后,Godot标头引入的块应用一个空行以进行分隔."
 
 #: contributing/code_style_guidelines.rst:144
+#, fuzzy
 msgid ""
-"Finally, third-party headers (either from ``thirdparty`` or from the "
+"Finally, third-party headers (either from ``third-party`` or from the "
 "system's include paths) come next and should be included with the < and > "
 "symbols, e.g. ``#include <png.h>``. The block of third-party headers should "
 "also be followed by an empty line for separation."
@@ -32665,9 +32666,10 @@ msgid ""
 msgstr "设置此选项的效果是场景中的所有网格都将正确生成其UV2贴图."
 
 #: tutorials/3d/baked_lightmaps.rst:76
+#, fuzzy
 msgid ""
 "When reusing a mesh within a scene, keep in mind that UVs will be generated "
-"for the first instance found. If the mesh is re-used with different scales "
+"for the first instance found. If the mesh is reused with different scales "
 "(and the scales are wildly different, more than half or twice), this will "
 "result in inefficient lightmaps. Don't reuse a source mesh at significantly "
 "different scales if you are planning to use lightmapping."
@@ -39225,11 +39227,12 @@ msgstr ""
 "MeshDataTool 只能用于使用 ``Mesh.PRIMITIVE_TRIANGLES`` PrimitiveType 的网格。"
 
 #: tutorials/3d/procedural_geometry/meshdatatool.rst:14
+#, fuzzy
 msgid ""
 "We initialize the MeshDataTool from an ArrayMesh by calling "
 "``create_from_surface()``. If there is already data initialized in the "
 "MeshDataTool, calling ``create_from_surface()`` will clear it for you. "
-"Alternatively, you can call ``clear()`` yourself before re-using the "
+"Alternatively, you can call ``clear()`` yourself before reusing the "
 "MeshDataTool."
 msgstr ""
 "我们通过调用 ``create_from_surface()`` 来使用 ArrayMesh 初始化 MeshDataTool。"
@@ -49959,14 +49962,15 @@ msgid ""
 msgstr "当 Godot 用户开始制作自己的场景时，他们经常遇到以下问题："
 
 #: tutorials/best_practices/scene_organization.rst:14
+#, fuzzy
 msgid ""
 "They create their first scene and fill it with content only to eventually "
 "end up saving branches of their scene into separate scenes as the nagging "
 "feeling that they should split things up starts to accumulate. However, they "
 "then notice that the hard references they were able to rely on before are no "
-"longer possible. Re-using the scene in multiple places creates issues "
-"because the node paths do not find their targets and signal connections "
-"established in the editor break."
+"longer possible. Reusing the scene in multiple places creates issues because "
+"the node paths do not find their targets and signal connections established "
+"in the editor break."
 msgstr ""
 "他们创建了自己的第一个场景并填满内容，但随着应该把事情分解的烦人感觉开始积"
 "累，他们最终把场景的分支保存为单独的场景。可他们接着就注意到之前能够依赖的硬"
@@ -50803,8 +50807,9 @@ msgid "In the end, the best approach is to consider the following:"
 msgstr "最后, 最好的方法是考虑以下几点:"
 
 #: tutorials/best_practices/scenes_versus_scripts.rst:205
+#, fuzzy
 msgid ""
-"If one wishes to create a basic tool that is going to be re-used in several "
+"If one wishes to create a basic tool that is going to be reused in several "
 "different projects and which people of all skill levels will likely use "
 "(including those who don't label themselves as \"programmers\"), then "
 "chances are that it should probably be a script, likely one with a custom "
