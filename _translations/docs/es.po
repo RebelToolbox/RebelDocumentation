@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Rebel Documentation 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/RebelToolbox/RebelDocumentation\n"
 "POT-Creation-Date: 2026-11-14 04:29+0000\n"
-"PO-Revision-Date: 2026-11-23 11:36+0000\n"
+"PO-Revision-Date: 2026-11-25 22:51+0000\n"
 "Last-Translator: fserrador <fserrador@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/rebel-toolbox/"
 "rebel-documentation/es/>\n"
@@ -37,7 +37,7 @@ msgid ""
 "license and keeps ownership of the contribution."
 msgstr ""
 "Rebel Engine es creado y distribuido bajo la `Licencia MIT <https://"
-"opensource.org/licenses/MIT>`__. No tiene un único propietario, ya que cada "
+"opensource.org/license/MIT>`__. No tiene un único propietario, ya que cada "
 "colaborador que envía código al proyecto lo hace bajo esta misma licencia y "
 "conserva la propiedad de la contribución."
 
@@ -267,9 +267,9 @@ msgid ""
 "attribution for all the libraries listed below."
 msgstr ""
 "Rebel Engine contiene software escrito por `terceros <https://github.com/"
-"RebelToolbox/RebelEngine/blob/main/copyright>` __. La mayor parte no "
-"requiere la inclusión de una licencia, pero algunos sí. Asegúrese de hacerlo "
-"si están compilados en su plantilla de exportación de Rebel Engine. Si está "
+"RebelToolbox/RebelEngine/blob/main/copyright>`__. La mayor parte no requiere "
+"la inclusión de una licencia, pero algunos sí. Asegúrese de hacerlo si están "
+"compilados en su plantilla de exportación de Rebel Engine. Si está "
 "utilizando las plantillas de exportación oficiales, todas las bibliotecas "
 "están habilitadas. Esto significa que debe proporcionar atribución para "
 "todas las bibliotecas que se enumeran a continuación."
@@ -288,7 +288,7 @@ msgid ""
 "license requires attribution, so the following text must be included "
 "together with the Rebel Toolbox license:"
 msgstr ""
-"Rebel Engine usa `FreeType <https://www.freetype.org/>` _ para renderizar "
+"Rebel Engine usa `FreeType <https://freetype.org/>` _ para renderizar "
 "fuentes. Su licencia requiere atribución, por lo que el siguiente texto debe "
 "incluirse junto con la licencia de Rebel Toolbox:"
 
@@ -320,7 +320,7 @@ msgid ""
 "Rebel Engine uses the `ENet <http://enet.bespin.org/>`__ library to handle "
 "high-level multiplayer. ENet has similar licensing terms as Rebel Engine:"
 msgstr ""
-"Rebel Engine incluye la biblioteca `ENet <http://enet.bespin.org/>` _ para "
+"Rebel Engine incluye la biblioteca `ENet <http://enet.bespin.org/>`__ para "
 "manejar multijugador de alto nivel. ENet tiene términos de licencia "
 "similares a los de Rebel Engine:"
 
@@ -333,15 +333,15 @@ msgid "mbed TLS"
 msgstr "mbed TLS"
 
 #: about/complying_with_licenses.rst:139
-#, fuzzy
 msgid ""
 "Rebel Engine uses `mbed TLS <https://www.trustedfirmware.org/projects/mbed-"
 "tls/>`__. The Apache license needs to be complied to by including the "
 "following text:"
 msgstr ""
 "Si el proyecto se realiza con Rebel Engine 3.1 o superior y utiliza SSL "
-"(generalmente a través de solicitudes HTTP), la licencia `MBedTLS <https://"
-"tls.mbed.org>` -Apache debe cumplirse incluyendo el siguiente texto:"
+"(generalmente a través de solicitudes HTTP), la licencia `MBed TLS <https://"
+"www.trustedfirmware.org/projects/mbed-tls/>`__. Apache debe cumplirse "
+"incluyendo el siguiente texto:"
 
 #: about/complying_with_licenses.rst:142
 msgid "Copyright The Mbed TLS Contributors"
@@ -405,7 +405,6 @@ msgstr ""
 "términos de licencia?"
 
 #: about/faq.rst:10
-#, fuzzy
 msgid ""
 "Rebel Engine is `Free and Open-Source Software <https://en.wikipedia.org/"
 "wiki/Free_and_open-source_software>`__ available under the `OSI-approved "
@@ -413,17 +412,16 @@ msgid ""
 "as in \"free speech\" as well as in \"free beer.\""
 msgstr ""
 "Rebel Engine es `Software libre y de código abierto <https://"
-"es.wikipedia.org/wiki/Software_libre_y_de_c%C3%B3digo_abierto>`_ disponible "
-"bajo la licencia MIT `aprobada por la OSI <https://opensource.org/licenses/"
-"MIT>`_ Licencia MIT. Esto significa que es gratuito en el sentido de "
-"\"libertad de expresión\" así como en \"libre acceso.\""
+"en.wikipedia.org/wiki/Free_and_open-source_software>`__ disponible bajo la "
+"licencia MIT `aprobada por la OSI <https://opensource.org/licenses/MIT>`__ "
+"Licencia MIT. Esto significa que es gratuito en el sentido de \"libertad de "
+"expresión\" así como en \"libre acceso.\""
 
 #: about/faq.rst:12
 msgid "In short:"
 msgstr "En pocas palabras:"
 
 #: about/faq.rst:14
-#, fuzzy
 msgid ""
 "You are free to download and use Rebel Engine for any purpose: personal, non-"
 "profit, commercial, or otherwise."
@@ -432,7 +430,6 @@ msgstr ""
 "personal, sin ánimo de lucro, comercial o de otro tipo."
 
 #: about/faq.rst:15
-#, fuzzy
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Rebel Engine to "
 "your heart's content, for any reason, both non-commercially and commercially."
@@ -11727,9 +11724,8 @@ msgstr ""
 "herramientas de C++."
 
 #: development/compiling/compiling_for_windows.rst:88
-#, fuzzy
 msgid "Downloading Rebel Engine's source"
-msgstr "Descargando el código fuente de Godot"
+msgstr "Descargando el código fuente de Rebel Engine"
 
 #: development/compiling/compiling_for_windows.rst:90
 #, fuzzy
@@ -11739,27 +11735,24 @@ msgstr ""
 "detalladas."
 
 #: development/compiling/compiling_for_windows.rst:92
-#, fuzzy
 msgid ""
 "The tutorial will assume from now on that you placed the source code in ``C:"
 "\\RebelEngine``."
 msgstr ""
 "El tutorial partirá de ahora bajo la suposición de que has colocado el "
-"código fuente en ``C:\\godot``."
+"código fuente en ``C:\\RebelEngine``."
 
 #: development/compiling/compiling_for_windows.rst:97
-#, fuzzy
 msgid ""
 "To prevent slowdowns caused by continuous virus scanning during compilation, "
 "add the Rebel Engine source folder to the list of exceptions in your "
 "antivirus software."
 msgstr ""
 "Para evitar ralentizaciones causadas por el escaneo continuo de virus "
-"durante la compilación, agrega la carpeta de código fuente de Godot a la "
-"lista de excepciones en tu software antivirus."
+"durante la compilación, agrega la carpeta de código fuente de Rebel Engine a "
+"la lista de excepciones en tu software antivirus."
 
 #: development/compiling/compiling_for_windows.rst:101
-#, fuzzy
 msgid ""
 "For Windows Defender, hit the :kbd:`Windows` key, type \"Windows Defender "
 "Settings\" then hit :kbd:`Enter`. Under **Virus & threat protection**, go to "
@@ -11771,7 +11764,7 @@ msgstr ""
 "sección **Protección contra virus y amenazas**, ve a **Configuración de "
 "protección contra virus y amenazas** y desplázate hacia abajo hasta "
 "**Exclusiones**. Haz clic en **Agregar o quitar exclusiones** y luego agrega "
-"la carpeta de código fuente de Godot."
+"la carpeta de código fuente de Rebel Engine."
 
 #: development/compiling/compiling_for_windows.rst:111
 msgid "Selecting a compiler"
@@ -11794,7 +11787,6 @@ msgstr ""
 "MinGW. En su lugar, utiliza ``cmd.exe`` o PowerShell."
 
 #: development/compiling/compiling_for_windows.rst:120
-#, fuzzy
 msgid ""
 "During development, using the Visual Studio compiler is usually a better "
 "idea, as it links the Rebel Engine binary much faster than MinGW. However, "
@@ -11802,10 +11794,10 @@ msgid ""
 "below), making it a better choice for production use."
 msgstr ""
 "Durante el desarrollo, usar el compilador de Visual Studio suele ser una "
-"mejor idea, ya que vincula el binario de Godot mucho más rápido que MinGW. "
-"Sin embargo, MinGW puede producir binarios más optimizados utilizando la "
-"optimización en tiempo de enlace (consultar más abajo), lo que lo convierte "
-"en una mejor opción para su uso en producción."
+"mejor idea, ya que vincula el binario de Rebel Engine mucho más rápido que "
+"MinGW. Sin embargo, MinGW puede producir binarios más optimizados utilizando "
+"la optimización en tiempo de enlace (consultar más abajo), lo que lo "
+"convierte en una mejor opción para su uso en producción."
 
 #: development/compiling/compiling_for_windows.rst:126
 msgid "Running SCons"
@@ -11839,7 +11831,6 @@ msgstr ""
 "sobre la falta de pywin32. Puedes ignorar este aviso de forma segura."
 
 #: development/compiling/compiling_for_windows.rst:144
-#, fuzzy
 msgid ""
 "If all goes well, the resulting binary executable will be placed in ``C:"
 "\\RebelEngine\\bin\\`` with the name ``rebel.windows.tools.32.exe`` or "
@@ -11847,9 +11838,9 @@ msgid ""
 "matching your CPU architecture, but this can be overridden using ``bits=64`` "
 "or ``bits=32``."
 msgstr ""
-"Si todo va bien, el ejecutable binario resultante se colocará en ``C:"
-"\\godot\\bin\\`` con el nombre ``godot.windows.tools.32.exe`` o ``godot."
-"windows.tools.64.exe``. Por defecto, SCons construirá un binario que "
+"Si todo va bien, el ejecutable binario resultante se colocará en ``C:\\R"
+"ebelEngine\\bin\\`` con el nombre ``rebel.windows.tools.32.exe`` o "
+"``rebel.windows.tools.64.exe``. Por defecto, SCons construirá un binario que "
 "coincida con la arquitectura de tu CPU, pero esto puede ser anulado usando "
 "``bits=64`` o ``bits=32``."
 
@@ -11863,26 +11854,24 @@ msgstr ""
 
 #: development/compiling/compiling_for_windows.rst:153
 #: development/compiling/compiling_for_x11.rst:129
-#, fuzzy
 msgid ""
 "If you are compiling Rebel Engine for production use, then you can make the "
 "final executable smaller and faster by adding the SCons option "
 "``target=release_debug``."
 msgstr ""
-"Si estás compilando Godot para uso en producción, puedes hacer que el "
+"Si estás compilando Rebel Engine para uso en producción, puedes hacer que el "
 "ejecutable final sea más pequeño y rápido agregando la opción de SCons "
 "``target=release_debug``."
 
 #: development/compiling/compiling_for_windows.rst:157
-#, fuzzy
 msgid ""
 "If you are compiling Rebel Engine with MinGW, you can make the binary even "
 "smaller and faster by adding the SCons option ``use_lto=yes``. As link-time "
 "optimization is a memory-intensive process, this will require about 7 GB of "
 "available RAM while compiling."
 msgstr ""
-"Si estás compilando Godot con MinGW, puedes hacer que el binario sea aún más "
-"pequeño y rápido agregando la opción de SCons ``use_lto=yes``. La "
+"Si estás compilando Rebel Engine con MinGW, puedes hacer que el binario sea "
+"aún más pequeño y rápido agregando la opción de SCons ``use_lto=yes``. La "
 "optimización en tiempo de enlace (LTO) es un proceso que consume mucha "
 "memoria, por lo que necesitarás alrededor de 7 GB de RAM disponible durante "
 "la compilación."
@@ -11908,13 +11897,13 @@ msgstr ""
 "SCons con el parámetro ``vsproj=yes``, de esta manera:"
 
 #: development/compiling/compiling_for_windows.rst:179
-#, fuzzy
 msgid ""
 "You will be able to open Rebel Engine's source in a Visual Studio solution "
 "now, and able to build Rebel Engine using Visual Studio's **Build** button."
 msgstr ""
-"Ahora podrás abrir el código fuente de Godot en una solución de Visual "
-"Studio y compilar Godot usando el botón **Build** de Visual Studio."
+"Ahora podrás abrir el código fuente de Rebel Engine en una solución de "
+"Visual Studio y compilar Rebel Engine usando el botón **Build** de Visual "
+"Studio."
 
 #: development/compiling/compiling_for_windows.rst:182
 msgid ""
@@ -12025,13 +12014,12 @@ msgid "Creating Windows export templates"
 msgstr "Para crear las plantillas de exportación para Windows"
 
 #: development/compiling/compiling_for_windows.rst:265
-#, fuzzy
 msgid ""
 "Windows export templates are created by compiling Rebel Engine without the "
 "editor, with the following flags::"
 msgstr ""
-"Las plantillas de exportación para Windows se crean compilando Godot sin el "
-"editor, utilizando las siguientes banderas::"
+"Las plantillas de exportación para Windows se crean compilando Rebel Engine "
+"sin el editor, utilizando los siguientes indicadores::"
 
 #: development/compiling/compiling_for_windows.rst:273
 #, fuzzy
@@ -12058,7 +12046,6 @@ msgstr ""
 "de exportación personalizadas aquí:"
 
 #: development/compiling/compiling_for_windows.rst:292
-#, fuzzy
 msgid ""
 "You don't need to copy them in this case, just reference the resulting files "
 "in the ``bin\\`` directory of your Rebel Engine source folder, so the next "
@@ -12066,7 +12053,7 @@ msgid ""
 msgstr ""
 "En este caso, no es necesario copiarlos; simplemente haz referencia a los "
 "archivos resultantes en el directorio ``bin\\`` de la carpeta de origen de "
-"Godot. De esta manera, la próxima vez que compiles, los tendrás "
+"Rebel Engine. De esta manera, la próxima vez que compiles, los tendrás "
 "automáticamente como plantillas personalizadas referenciadas."
 
 #: development/compiling/compiling_for_x11.rst:2
@@ -12220,18 +12207,17 @@ msgstr ""
 "fuentes no se compilarían correctamente."
 
 #: development/compiling/compiling_for_x11.rst:133
-#, fuzzy
 msgid ""
 "If you are compiling Rebel Engine with GCC, you can make the binary even "
 "smaller and faster by adding the SCons option ``use_lto=yes``. As link-time "
 "optimization is a memory-intensive process, this will require about 7 GB of "
 "available RAM while compiling."
 msgstr ""
-"Si estás compilando Godot con GCC, puedes hacer que el binario sea aún más "
-"pequeño y rápido agregando la opción ``use_lto=yes`` en SCons. Dado que la "
-"optimización en tiempo de enlace (LTO) requiere una cantidad significativa "
-"de memoria, necesitarás alrededor de 7 GB de RAM disponible durante la "
-"compilación."
+"Si estás compilando Rebel Engine con GCC, puedes hacer que el binario sea "
+"aún más pequeño y rápido agregando la opción ``use_lto=yes`` en SCons. Dado "
+"que la optimización en tiempo de enlace (LTO) requiere una cantidad "
+"significativa de memoria, necesitarás alrededor de 7 GB de RAM disponible "
+"durante la compilación."
 
 #: development/compiling/compiling_for_x11.rst:156
 msgid ""
@@ -12289,13 +12275,12 @@ msgstr ""
 "deben copiarse en:"
 
 #: development/compiling/compiling_for_x11.rst:198
-#, fuzzy
 msgid ""
 "and named like this (even for \\*BSD which is seen as \"Linux X11\" by Rebel "
 "Engine):"
 msgstr ""
 "y nombrados de la siguiente manera (incluso para \\*BSD que es reconocido "
-"como \"Linux X11\" por Godot):"
+"como \"Linux X11\" por Rebel Engine):"
 
 #: development/compiling/compiling_for_x11.rst:207
 msgid ""
@@ -12308,7 +12293,6 @@ msgstr ""
 "plantillas de exportación personalizadas aquí:"
 
 #: development/compiling/compiling_for_x11.rst:213
-#, fuzzy
 msgid ""
 "You don't even need to copy them, you can just reference the resulting files "
 "in the ``bin/`` directory of your Rebel Engine source folder, so the next "
@@ -12316,7 +12300,7 @@ msgid ""
 msgstr ""
 "Ni siquiera necesitas copiarlos, simplemente puedes hacer referencia a los "
 "archivos resultantes en el directorio ``bin/`` de la carpeta de origen de "
-"Godot, de esta manera, la próxima vez que construyas, automáticamente "
+"Rebel Engine, de esta manera, la próxima vez que construyas, automáticamente "
 "tendrás las plantillas personalizadas referenciadas."
 
 #: development/compiling/compiling_for_x11.rst:218
@@ -12324,22 +12308,20 @@ msgid "Using Clang and LLD for faster development"
 msgstr "Utilizando Clang y LLD para un desarrollo más rápido"
 
 #: development/compiling/compiling_for_x11.rst:220
-#, fuzzy
 msgid ""
 "You can also use Clang and LLD to build Rebel Engine. This has two upsides "
 "compared to the default GCC + GNU ld setup:"
 msgstr ""
-"También puedes usar Clang y LLD para compilar Godot. Esto tiene dos ventajas "
-"en comparación con la configuración predeterminada de GCC + GNU ld:"
+"También puedes usar Clang y LLD para compilar Rebel Engine. Esto tiene dos "
+"ventajas en comparación con la configuración predeterminada de GCC + GNU ld:"
 
 #: development/compiling/compiling_for_x11.rst:223
-#, fuzzy
 msgid ""
 "LLD links Rebel Engine significantly faster compared to GNU ld or gold. This "
 "leads to faster iteration times."
 msgstr ""
-"LLD enlaza Godot significativamente más rápido en comparación con GNU ld o "
-"gold. Esto lleva a tiempos de iteración más rápidos."
+"LLD enlaza Rebel Engine significativamente más rápido en comparación con GNU "
+"ld o gold. Esto lleva a tiempos de iteración más rápidos."
 
 #: development/compiling/compiling_for_x11.rst:225
 msgid "Clang tends to give more useful error messages compared to GCC."
@@ -12427,13 +12409,12 @@ msgstr ""
 "``PATH``::"
 
 #: development/compiling/compiling_for_x11.rst:256
-#, fuzzy
 msgid ""
 "Instead of running ``scons <build arguments>``, run ``pyston-scons <build "
 "arguments>`` to compile Rebel Engine."
 msgstr ""
 "En lugar de ejecutar ``scons <argumentos de compilación>``, ejecuta ``pyston-"
-"scons <argumentos de compilación>`` para compilar Godot."
+"scons <argumentos de compilación>`` para compilar Rebel Engine."
 
 #: development/compiling/compiling_for_x11.rst:259
 msgid ""
@@ -12543,7 +12524,6 @@ msgid "Generate the glue"
 msgstr "Generar el pegamento"
 
 #: development/compiling/compiling_with_mono.rst:50
-#, fuzzy
 msgid ""
 "Glue sources are the wrapper functions that will be called by managed "
 "methods. These source files must be generated before building your final "
@@ -12553,11 +12533,10 @@ msgstr ""
 "Las fuentes de \"glue\" son las funciones envolventes que serán llamadas por "
 "los métodos administrados. Estos archivos de código fuente deben generarse "
 "antes de construir tus binarios finales. Para generarlos, primero debes "
-"compilar un binario temporal de Godot con las opciones ``tools=yes`` y "
-"``mono_glue=no``:"
+"compilar un binario temporal de Rebel Engine con las opciones ``tools=yes`` "
+"y ``mono_glue=no``:"
 
 #: development/compiling/compiling_with_mono.rst:57
-#, fuzzy
 msgid ""
 "After the build finishes, you need to run the compiled executable with the "
 "parameter ``--generate-mono-glue`` followed by the path to an output "
@@ -12567,10 +12546,9 @@ msgstr ""
 "Después de que termine la compilación, debes ejecutar el ejecutable "
 "compilado con el parámetro ``--generate-mono-glue``, seguido del directorio "
 "de salida. Este directorio debe ser ``modules/mono/glue`` en el directorio "
-"de Godot:"
+"de Rebel Engine:"
 
 #: development/compiling/compiling_with_mono.rst:63
-#, fuzzy
 msgid ""
 "This command will tell Rebel Engine to generate the file ``modules/mono/glue/"
 "mono_glue.gen.cpp``, the C# solution for the Rebel Engine API at ``modules/"
@@ -12579,15 +12557,15 @@ msgid ""
 "Once these files are generated, you can build Rebel Engine for all the "
 "desired targets without having to repeat this process."
 msgstr ""
-"Este comando indicará a Godot que genere el archivo ``modules/mono/glue/"
-"mono_glue.gen.cpp``, la solución C# para la API de Godot en ``modules/mono/"
-"glue/GodotSharp/GodotSharp/Generated``, y la solución C# para las "
-"herramientas del editor en ``modules/mono/glue/GodotSharp/GodotSharpEditor/"
-"Generated``. Una vez que se generen estos archivos, puedes compilar Godot "
-"para todos los destinos deseados sin tener que repetir este proceso."
+"Este comando indicará a Rebel Engine que genere el archivo ``modules/mono/"
+"glue/mono_glue.gen.cpp``, la solución C# para el API de Rebel Engine en "
+"``modules/mono/glue/RebelSharp/RebelSharp/Generated``, y la solución C# para "
+"las herramientas del editor en ``modules/mono/glue/RebelSharp/"
+"RebelSharpEditor/Generated``. Una vez que se generen estos archivos, puedes "
+"compilar Rebel Engine para todos los destinos deseados sin tener que repetir "
+"este proceso."
 
 #: development/compiling/compiling_with_mono.rst:69
-#, fuzzy
 msgid ""
 "``<rebel_binary>`` refers to the tools binary you compiled above with the "
 "Mono module enabled. Its exact name will differ based on your system and "
@@ -12600,13 +12578,13 @@ msgid ""
 msgstr ""
 "``<godot_binary>`` se refiere al binario de herramientas que compilaste "
 "arriba con el módulo Mono habilitado. Su nombre exacto variará según tu "
-"sistema y configuración, pero debería tener la forma ``bin/godot."
-"<plataforma>.tools.<bits>.mono``, por ejemplo, ``bin/godot.x11.tools.64."
-"mono`` o ``bin/godot.windows.tools.64.mono.exe``. ¡Es especialmente "
-"importante tener en cuenta el sufijo **.mono**! Si has compilado previamente "
-"Godot sin soporte de Mono, es posible que tengas binarios con nombres "
-"similares, pero sin este sufijo. Estos binarios no se pueden utilizar para "
-"generar el glue de Mono."
+"sistema y configuración, pero debería tener la forma ``bin/rebel.<plataforma>"
+".tools.<bits>.mono``, por ejemplo, ``bin/rebel.x11.tools.64.mono`` o ``bin/"
+"rebel.windows.tools.64.mono.exe``. ¡Es especialmente importante tener en "
+"cuenta el sufijo **.mono**! Si has compilado previamente Rebel Engine sin "
+"soporte de Mono, es posible que tengas binarios con nombres similares, pero "
+"sin este sufijo. Estos binarios no se pueden utilizar para generar el glue "
+"de Mono."
 
 #: development/compiling/compiling_with_mono.rst:79
 #: development/engine/custom_servers.rst:498
@@ -12615,7 +12593,6 @@ msgid "Notes"
 msgstr "Notas"
 
 #: development/compiling/compiling_with_mono.rst:81
-#, fuzzy
 msgid ""
 "**Do not build your final binaries with** ``mono_glue=no``. This disables C# "
 "scripting. This option must be used only for the temporary binary that will "
@@ -12624,11 +12601,10 @@ msgid ""
 msgstr ""
 "**No construyas tus binarios finales con** ``mono_glue=no``. Esto "
 "deshabilita el scripting de C#. Esta opción debe usarse solo para el binario "
-"temporal que generará el glue. Godot mostrará una advertencia al iniciarse "
-"si se compiló sin las fuentes de glue."
+"temporal que generará el glue. Rebel Engine mostrará una advertencia al "
+"iniciarse si se compiló sin las fuentes de glue."
 
 #: development/compiling/compiling_with_mono.rst:85
-#, fuzzy
 msgid ""
 "The glue sources must be regenerated every time the ClassDB-registered API "
 "changes. That is, for example, when a new method is registered to the "
@@ -12636,11 +12612,11 @@ msgid ""
 "Engine will print an error at startup if there is an API mismatch between "
 "ClassDB and the glue sources."
 msgstr ""
-"Las fuentes de glue deben regenerarse cada vez que cambie la API registrada "
+"Las fuentes de glue deben regenerarse cada vez que cambie el API registrada "
 "en ClassDB. Es decir, por ejemplo, cuando se registra un nuevo método en la "
 "API de scripting o cuando uno de los parámetros de dicho método cambia. "
-"Godot mostrará un error al iniciarse si hay una discrepancia de API entre "
-"ClassDB y las fuentes de glue."
+"Rebel Engine mostrará un error al iniciarse si hay una discrepancia de API "
+"entre ClassDB y las fuentes de glue."
 
 #: development/compiling/compiling_with_mono.rst:93
 msgid "Rebuild with Mono glue"
@@ -12670,7 +12646,6 @@ msgstr ""
 "los siguientes archivos en el directorio ``bin``:"
 
 #: development/compiling/compiling_with_mono.rst:108
-#, fuzzy
 msgid ""
 "If you're not linking the Mono runtime statically, the build script will "
 "place the Mono runtime shared library (``monosgen-2.0``) next to the Rebel "
@@ -12681,14 +12656,13 @@ msgid ""
 msgstr ""
 "Si no estás enlazando el tiempo de ejecución de Mono estáticamente, el "
 "script de construcción colocará la biblioteca compartida del tiempo de "
-"ejecución de Mono (\"monosgen-2.0\") junto al ejecutable de Godot en el "
-"directorio de salida. Asegúrate de incluir esta biblioteca al distribuir "
-"Godot. Cuando apuntas a Android, no se requieren pasos adicionales, ya que "
-"esta biblioteca se copia automáticamente a \"#platform/android/java/libs\" y "
-"Gradle se encarga del resto."
+"ejecución de Mono (\"monosgen-2.0\") junto al ejecutable de Rebel Engine en "
+"el directorio de salida. Asegúrate de incluir esta biblioteca al distribuir "
+"Rebel Engine. Cuando apuntas a Android, no se requieren pasos adicionales, "
+"ya que esta biblioteca se copia automáticamente a \"#platform/android/java/"
+"libs\" y Gradle se encarga del resto."
 
 #: development/compiling/compiling_with_mono.rst:114
-#, fuzzy
 msgid ""
 "Unlike \"classical\" Rebel Engine builds, when building with the Mono module "
 "enabled (and depending on the target platform), a data directory may be "
@@ -12697,13 +12671,13 @@ msgid ""
 "Engine. More details about this directory in :ref:`Data "
 "directory<compiling_with_mono_data_directory>`."
 msgstr ""
-"A diferencia de las compilaciones \"clásicas\" de Godot, cuando se compila "
-"con el módulo Mono habilitado (y dependiendo de la plataforma de destino), "
-"se puede crear un directorio de datos tanto para el editor como para las "
-"plantillas de exportación. Este directorio es importante para el correcto "
-"funcionamiento y debe distribuirse junto con Godot. Puedes encontrar más "
-"detalles sobre este directorio en la sección :ref:`Directorio de "
-"datos<compiling_with_mono_data_directory>`."
+"A diferencia de las compilaciones \"clásicas\" de Rebel Engine, cuando se "
+"compila con el módulo Mono habilitado (y dependiendo de la plataforma de "
+"destino), se puede crear un directorio de datos tanto para el editor como "
+"para las plantillas de exportación. Este directorio es importante para el "
+"correcto funcionamiento y debe distribuirse junto con Rebel Engine. Puedes "
+"encontrar más detalles sobre este directorio en la sección :ref:`Directorio "
+"de datos<compiling_with_mono_data_directory>`."
 
 #: development/compiling/compiling_with_mono.rst:122
 #: tutorials/physics/using_area_2d.rst:130
@@ -12726,17 +12700,16 @@ msgid "Data directory"
 msgstr "Directorio de Datos"
 
 #: development/compiling/compiling_with_mono.rst:163
-#, fuzzy
 msgid ""
 "The data directory is a dependency for Rebel Engine binaries built with the "
 "Mono module enabled. It contains important files for the correct functioning "
 "of Rebel Engine. It must be distributed together with the Rebel Engine "
 "executable."
 msgstr ""
-"El directorio de datos es una dependencia para los binarios de Godot "
+"El directorio de datos es una dependencia para los binarios de Rebel Engine "
 "compilados con el módulo Mono habilitado. Contiene archivos importantes para "
-"el correcto funcionamiento de Godot. Debe distribuirse junto con el "
-"ejecutable de Godot."
+"el correcto funcionamiento de Rebel Engine. Debe distribuirse junto con el "
+"ejecutable de Rebel Engine."
 
 #: development/compiling/compiling_with_mono.rst:167
 msgid ""
@@ -12766,7 +12739,6 @@ msgstr ""
 "release_debug`` o ``data.mono.windows.64.release``."
 
 #: development/compiling/compiling_with_mono.rst:178
-#, fuzzy
 msgid ""
 "This directory must be placed with its original name next to the Rebel "
 "export templates. When exporting a project, the Rebel Editor will also copy "
@@ -12775,10 +12747,11 @@ msgid ""
 "in the project setting ``application/config/name``."
 msgstr ""
 "Este directorio debe colocarse con su nombre original junto a las plantillas "
-"de exportación de Godot. Cuando exportes un proyecto, Godot también copiará "
-"este directorio con el ejecutable del juego, pero el nombre se cambiará a "
-"``data_<APPNAME>``, donde ``<APPNAME>`` es el nombre de la aplicación "
-"especificado en la configuración del proyecto en ``application/config/name``."
+"de exportación de Rebel Engine. Cuando exportes un proyecto, Rebel Engine "
+"también copiará este directorio con el ejecutable del juego, pero el nombre "
+"se cambiará a ``data_<APPNAME>``, donde ``<APPNAME>`` es el nombre de la "
+"aplicación especificado en la configuración del proyecto en ``application/"
+"config/name``."
 
 #: development/compiling/compiling_with_mono.rst:184
 msgid ""
@@ -12796,9 +12769,8 @@ msgid "``bin/data.mono.<platform>.<bits>.<target>/Mono/lib``"
 msgstr "``bin/data.mono.<platform>.<bits>.<target>/Mono/lib``"
 
 #: development/compiling/compiling_with_mono.rst:189
-#, fuzzy
 msgid "``/osx_template.app/Contents/Frameworks/RebelSharp/Mono/lib``"
-msgstr "``/osx_template.app/Contents/Frameworks/GodotSharp/Mono/lib``"
+msgstr "``/osx_template.app/Contents/Frameworks/RebelSharp/Mono/lib``"
 
 #: development/compiling/compiling_with_mono.rst:191
 #: development/compiling/compiling_with_mono.rst:213
@@ -12806,18 +12778,16 @@ msgid "``bin/data.mono.<platform>.<bits>.<target>/Mono/etc``"
 msgstr "``bin/data.mono.<platform>.<bits>.<target>/Mono/etc``"
 
 #: development/compiling/compiling_with_mono.rst:191
-#, fuzzy
 msgid "``/osx_template.app/Contents/Resources/RebelSharp/Mono/etc``"
-msgstr "``/osx_template.app/Contents/Resources/GodotSharp/Mono/etc``"
+msgstr "``/osx_template.app/Contents/Resources/RebeltSharp/Mono/etc``"
 
 #: development/compiling/compiling_with_mono.rst:197
-#, fuzzy
 msgid ""
 "The name of the data directory for the Rebel Engine editor will always be "
 "``RebelSharp``. The contents of this directory are the following:"
 msgstr ""
-"El nombre del directorio de datos para el editor de Godot siempre será "
-"``GodotSharp``. El contenido de este directorio es el siguiente:"
+"El nombre del directorio de datos para el editor de Rebel Engine siempre "
+"será ``RebelSharp``. El contenido de este directorio es el siguiente:"
 
 #: development/compiling/compiling_with_mono.rst:200
 msgid "``Api``"
@@ -12832,14 +12802,13 @@ msgid "``Tools``"
 msgstr "``Tools``"
 
 #: development/compiling/compiling_with_mono.rst:204
-#, fuzzy
 msgid ""
 "The ``Api`` subdirectory contains the Rebel Engine API assemblies. On macOS, "
 "if the Rebel Editor is distributed as a bundle, the contents of the data "
 "directory may be placed in the following locations:"
 msgstr ""
-"El subdirectorio ``Api`` contiene las bibliotecas de la API de Godot. En "
-"macOS, si el editor de Godot se distribuye como paquete, el contenido del "
+"El subdirectorio ``Api`` contiene las bibliotecas del API de Rebel Engine. "
+"En macOS, si el editor de Godot se distribuye como paquete, el contenido del "
 "directorio de datos puede colocarse en las siguientes ubicaciones:"
 
 #: development/compiling/compiling_with_mono.rst:209
@@ -12847,28 +12816,24 @@ msgid "``bin/data.mono.<platform>.<bits>.<target>/Api``"
 msgstr "``bin/data.mono.<platform>.<bits>.<target>/Api``"
 
 #: development/compiling/compiling_with_mono.rst:209
-#, fuzzy
 msgid "``<bundle_name>.app/Contents/Frameworks/RebelSharp/Api``"
-msgstr "``<bundle_name>.app/Contents/Frameworks/GodotSharp/Api``"
+msgstr "``<bundle_name>.app/Contents/Frameworks/RebelSharp/Api``"
 
 #: development/compiling/compiling_with_mono.rst:211
-#, fuzzy
 msgid "``<bundle_name>.app/Contents/Frameworks/RebelSharp/Mono/lib``"
-msgstr "``<bundle_name>.app/Contents/Frameworks/GodotSharp/Mono/lib``"
+msgstr "``<bundle_name>.app/Contents/Frameworks/RebelSharp/Mono/lib``"
 
 #: development/compiling/compiling_with_mono.rst:213
-#, fuzzy
 msgid "``<bundle_name>.app/Contents/Resources/RebelSharp/Mono/etc``"
-msgstr "``<bundle_name>.app/Contents/Resources/GodotSharp/Mono/etc``"
+msgstr "``<bundle_name>.app/Contents/Resources/RebelSharp/Mono/etc``"
 
 #: development/compiling/compiling_with_mono.rst:215
 msgid "``bin/data.mono.<platform>.<bits>.<target>/Tools``"
 msgstr "``bin/data.mono.<platform>.<bits>.<target>/Tools``"
 
 #: development/compiling/compiling_with_mono.rst:215
-#, fuzzy
 msgid "``<bundle_name>.app/Contents/Frameworks/RebelSharp/Tools``"
-msgstr "``<bundle_name>.app/Contents/Frameworks/GodotSharp/Tools``"
+msgstr "``<bundle_name>.app/Contents/Frameworks/RebelSharp/Tools``"
 
 #: development/compiling/compiling_with_mono.rst:218
 msgid ""
@@ -12885,29 +12850,27 @@ msgstr ""
 "editor para crear esta carpeta y su contenido."
 
 #: development/compiling/compiling_with_mono.rst:223
-#, fuzzy
 msgid ""
 "The ``Tools`` subdirectory contains tools required by the editor, like the "
 "``RebelTools`` assemblies and its dependencies."
 msgstr ""
 "El subdirectorio ``Tools`` contiene herramientas necesarias para el editor, "
-"como las bibliotecas ``GodotTools`` y sus dependencias."
+"como las bibliotecas ``RebelTools`` y sus dependencias."
 
 #: development/compiling/compiling_with_mono.rst:227
 msgid "Building the Mono runtime"
 msgstr "Creando el runtime de Mono"
 
 #: development/compiling/compiling_with_mono.rst:229
-#, fuzzy
 msgid ""
 "When building Rebel Engine for the desktop, you will likely use the pre-"
 "built Mono runtime that is installed on your system. This likely won't be "
 "the case when targeting other platforms like Android, iOS and WebAssembly. "
 "You will have to build the Mono runtime yourself for those platforms."
 msgstr ""
-"Cuando compiles Godot para escritorio, es probable que utilices el tiempo de "
-"ejecución de Mono precompilado que está instalado en tu sistema. Esto "
-"probablemente no será así cuando te dirijas a otras plataformas como "
+"Cuando compiles Rebel Engine para escritorio, es probable que utilices el "
+"tiempo de ejecución de Mono precompilado que está instalado en tu sistema. "
+"Esto probablemente no será así cuando te dirijas a otras plataformas como "
 "Android, iOS y WebAssembly. Tendrás que compilar el tiempo de ejecución de "
 "Mono tú mismo para esas plataformas."
 
@@ -12931,7 +12894,6 @@ msgstr ""
 "ya que estos se agregan automáticamente al proyecto de Gradle."
 
 #: development/compiling/compiling_with_mono.rst:243
-#, fuzzy
 msgid ""
 "Once you've built Mono, you can proceed to build Rebel Engine with the "
 "instructions described in this page and the :doc:`Compiling for Android</"
@@ -12940,19 +12902,19 @@ msgid ""
 "mono_prefix=\"$HOME/mono-installs/android-armeabi-v7a-release\"`` (This path "
 "may be different on your system)."
 msgstr ""
-"Una vez que hayas compilado Mono, puedes proceder a compilar Godot siguiendo "
-"las instrucciones descritas en esta página y en la página :ref:`Compilación "
-"para Android<doc_compiling_for_android>`. Asegúrate de informar a SCons "
-"sobre la ubicación del tiempo de ejecución de Mono que acabas de compilar, "
-"por ejemplo: ``scons [...] mono_prefix=\"$HOME/mono-installs/android-armeabi-"
-"v7a-release\"`` (Esta ruta puede ser diferente en tu sistema)."
+"Una vez que hayas compilado Mono, puedes proceder a compilar Rebel Engine "
+"siguiendo las instrucciones descritas en esta página y en la página "
+":doc:`Compilación para Android<doc_compiling_for_android>`. Asegúrate de "
+"informar a SCons sobre la ubicación del tiempo de ejecución de Mono que "
+"acabas de compilar, p.ej.: ``scons [...] mono_prefix=\"$HOME/mono-installs/"
+"android-armeabi-v7a-release\"`` (Esta ruta puede ser diferente en tu sistema)"
+"."
 
 #: development/compiling/compiling_with_mono.rst:251
 msgid "Targeting iOS"
 msgstr "Exportación para iOS"
 
 #: development/compiling/compiling_with_mono.rst:253
-#, fuzzy
 msgid ""
 "Once you've built Mono, you can proceed to build Rebel Engine with the "
 "instructions described in this page and the :doc:`Compiling for iOS</"
@@ -12961,22 +12923,22 @@ msgid ""
 "mono_prefix=\"$HOME/mono-installs/ios-arm64-release\"`` (This path may be "
 "different on your system)."
 msgstr ""
-"Una vez que hayas compilado Mono, puedes proceder a compilar Godot siguiendo "
-"las instrucciones descritas en esta página y en la página :ref:`Compilación "
-"para iOS<doc_compiling_for_ios>`. Asegúrate de informar a SCons sobre la "
-"ubicación del tiempo de ejecución de Mono que acabas de compilar, por "
-"ejemplo: ``scons [...] mono_prefix=\"$HOME/mono-installs/ios-arm64-"
-"release\"`` (Esta ruta puede ser diferente en tu sistema)."
+"Una vez que hayas compilado Mono, puedes proceder a compilar Rebel Engine "
+"siguiendo las instrucciones descritas en esta página y en la página "
+":doc:`Compilación para iOS</development/compiling/compiling_for_ios>`. "
+"Asegúrate de informar a SCons sobre la ubicación del tiempo de ejecución de "
+"Mono que acabas de compilar, por ejemplo: ``scons […] mono_prefix=\"$HOME/"
+"mono-installs/ios-arm64-release\"`` (Esta ruta puede ser diferente en tu "
+"sistema)."
 
 #: development/compiling/compiling_with_mono.rst:260
-#, fuzzy
 msgid ""
 "After building Rebel Engine for each architecture, you will notice SCons has "
 "copied the Mono libraries for each of them to the output directory:"
 msgstr ""
-"Después de compilar Godot para cada arquitectura, notarás que SCons ha "
-"copiado las bibliotecas de Mono para cada una de ellas en el directorio de "
-"salida:"
+"Después de compilar Rebel Engine para cada arquitectura, notarás que SCons "
+"ha copiado las bibliotecas de Mono para cada una de ellas en el directorio "
+"de salida:"
 
 #: development/compiling/compiling_with_mono.rst:273
 msgid ""
@@ -13003,15 +12965,14 @@ msgstr ""
 "``#bin/ios/iphone-mono-libs``:"
 
 #: development/compiling/compiling_with_mono.rst:294
-#, fuzzy
 msgid ""
 "The ``iphone-mono-libs`` folder must be distributed with the export "
 "templates. The Rebel Editor will look for the libraries in ``<templates>/"
 "iphone-mono-libs/lib<name>.iphone.fat.a``."
 msgstr ""
 "La carpeta ``iphone-mono-libs`` debe distribuirse junto con las plantillas "
-"de exportación. El editor de Godot buscará las bibliotecas en ``<templates>/"
-"iphone-mono-libs/lib<nombre>.iphone.fat.a``."
+"de exportación. El editor de Rebel Engine buscará las bibliotecas en "
+"``<templates>/iphone-mono-libs/lib<nombre>.iphone.fat.a``."
 
 #: development/compiling/compiling_with_mono.rst:298
 msgid "Targeting WebAssembly"
@@ -13026,7 +12987,6 @@ msgstr ""
 "independientemente de si el módulo Mono está habilitado o no."
 
 #: development/compiling/compiling_with_mono.rst:302
-#, fuzzy
 msgid ""
 "Once you've built Mono, you can proceed to build Rebel Engine with the "
 "instructions described in this page and the :doc:`Compiling for the Web</"
@@ -13035,19 +12995,19 @@ msgid ""
 "mono_prefix=\"$HOME/mono-installs/wasm-runtime-release\"`` (This path may be "
 "different on your system)."
 msgstr ""
-"Una vez que hayas construido Mono, puedes proceder a construir Godot "
-"siguiendo las instrucciones descritas en esta página y en la página :ref:"
-"`Compiling for the Web<doc_compiling_for_web>`. Asegúrate de indicarle a "
-"SCons la ubicación del tiempo de ejecución de Mono que acabas de construir, "
-"por ejemplo: ``scons [...] mono_prefix=\"$HOME/mono-installs/wasm-runtime-"
-"release\"`` (Esta ruta puede ser diferente en tu sistema)."
+"Una vez que hayas construido Mono, puedes proceder a construir Rebel Engine "
+"siguiendo las instrucciones descritas en esta página y en la página "
+":doc:`Compiling for the Web</development/compiling/compiling_for_web>`. "
+"Asegúrate de indicarle a SCons la ubicación del tiempo de ejecución de Mono "
+"que acabas de construir, por ejemplo: ``scons [...] mono_prefix=\"$HOME/mono-"
+"installs/wasm-runtime-release\"`` (Esta ruta puede ser diferente en tu "
+"sistema)."
 
 #: development/compiling/compiling_with_mono.rst:310
 msgid "Base Class Library"
 msgstr "Biblioteca de Clase Base"
 
 #: development/compiling/compiling_with_mono.rst:312
-#, fuzzy
 msgid ""
 "The export templates must also include the BCL (Base Class Library) for each "
 "target platform. Rebel Engine looks for the BCL folder at ``<templates>/bcl/"
@@ -13056,17 +13016,16 @@ msgid ""
 "``<templates>/bcl/javascript``."
 msgstr ""
 "Las plantillas de exportación también deben incluir la BCL (Biblioteca de "
-"Clases Base) para cada plataforma de destino. Godot busca la carpeta de BCL "
-"en ``<templates>/bcl/<target_platform>``, donde ``<target_platform>`` es el "
-"mismo nombre que se pasa a la opción ``platform`` de SCons, por ejemplo: "
-"``<templates>/bcl/windows``, ``<templates>/bcl/javascript``."
+"Clases Base) para cada plataforma de destino. Rebel Engine busca la carpeta "
+"de BCL en ``<templates>/bcl/<target_platform>``, donde ``<target_platform>`` "
+"es el mismo nombre que se pasa a la opción ``platform`` de SCons, por "
+"ejemplo: ``<templates>/bcl/windows``, ``<templates>/bcl/javascript``."
 
 #: development/compiling/compiling_with_mono.rst:317
-#, fuzzy
 msgid ""
 "Alternatively, Rebel Engine will look for them in the following locations:"
 msgstr ""
-"Alternativamente, Godot buscará las bibliotecas BCL en las siguientes "
+"Alternativamente, Rebel Engine buscará las bibliotecas BCL en las siguientes "
 "ubicaciones:"
 
 #: development/compiling/compiling_with_mono.rst:320
@@ -13109,53 +13068,49 @@ msgstr ""
 "Windows)."
 
 #: development/compiling/compiling_with_mono.rst:335
-#, fuzzy
 msgid ""
 "If the target platform is the same as the platform of the Rebel Editor, then "
 "the editor will use the BCL it's running on (``<data_folder>/Mono/lib/"
 "mono/4.5``) if it cannot find the BCL in the export templates."
 msgstr ""
 "Si la plataforma de destino es la misma que la plataforma del editor de "
-"Godot, entonces el editor utilizará el BCL en el que se está ejecutando "
-"(``<data_folder>/Mono/lib/mono/4.5``) si no puede encontrar el BCL en las "
-"plantillas de exportación."
+"Rebel Engine, entonces el editor utilizará el BCL en el que se está "
+"ejecutando (``<data_folder>/Mono/lib/mono/4.5``) si no puede encontrar el "
+"BCL en las plantillas de exportación."
 
 #: development/compiling/compiling_with_mono.rst:340
 msgid "AOT cross-compilers"
 msgstr "AOT cross-compilers"
 
 #: development/compiling/compiling_with_mono.rst:342
-#, fuzzy
 msgid ""
 "To perform ahead-of-time (AOT) compilation for other platforms, Rebel Engine "
 "needs to have access to the Mono cross-compilers for that platform and "
 "architecture."
 msgstr ""
-"Para realizar la compilación anticipada (AOT) para otras plataformas, Godot "
-"necesita tener acceso a los compiladores cruzados de Mono para esa "
+"Para realizar la compilación anticipada (AOT) para otras plataformas, Rebel "
+"Engine necesita tener acceso a los compiladores cruzados de Mono para esa "
 "plataforma y arquitectura."
 
 #: development/compiling/compiling_with_mono.rst:345
-#, fuzzy
 msgid ""
 "Rebel Engine will look for the cross-compiler executable in the AOT "
 "compilers folder. The location of this folder is ``<data_folder>/Tools/aot-"
 "compilers/``."
 msgstr ""
-"Godot buscará el ejecutable del compilador cruzado en la carpeta de "
+"Rebel Engine buscará el ejecutable del compilador cruzado en la carpeta de "
 "compiladores AOT. La ubicación de esta carpeta es ``<data_folder>/Tools/aot-"
 "compilers/``."
 
 #: development/compiling/compiling_with_mono.rst:348
-#, fuzzy
 msgid ""
 "After building them, copy the executable to the Rebel Engine AOT compilers "
 "directory. The executable name is ``<triple>-mono-sgen``, e.g.: ``aarch64-"
 "apple-darwin-mono-sgen``."
 msgstr ""
 "Después de construirlos, copia el ejecutable en el directorio de "
-"compiladores AOT de Godot. El nombre del ejecutable es ``<triple>-mono-"
-"sgen``, por ejemplo: ``aarch64-apple-darwin-mono-sgen``."
+"compiladores AOT de Rebel Engine. El nombre del ejecutable es ``<triple>-"
+"mono-sgen``, por ejemplo: ``aarch64-apple-darwin-mono-sgen``."
 
 #: development/compiling/compiling_with_mono.rst:352
 msgid "Command-line options"
@@ -13174,9 +13129,8 @@ msgid "**module_mono_enabled**\\ =yes | **no**"
 msgstr "**module_mono_enabled**\\ =yes | **no**"
 
 #: development/compiling/compiling_with_mono.rst:359
-#, fuzzy
 msgid "Build Rebel Engine with the Mono module enabled."
-msgstr "Compila Godot con el módulo Mono habilitado."
+msgstr "Compila Rebel Engine con el módulo Mono habilitado."
 
 #: development/compiling/compiling_with_mono.rst:361
 msgid "**mono_glue**\\ =\\ **yes** | no"
@@ -13223,13 +13177,12 @@ msgid "**copy_mono_root**\\ =yes | **no**"
 msgstr "**copy_mono_root**\\ =yes | **no**"
 
 #: development/compiling/compiling_with_mono.rst:377
-#, fuzzy
 msgid ""
 "Whether to copy the Mono framework assemblies and configuration files "
 "required by the Rebel Editor."
 msgstr ""
 "Si se debe copiar el conjunto de ensamblados y archivos de configuración del "
-"framework de Mono necesarios para el editor de Godot."
+"framework de Mono necesarios para el editor de Rebel Engine."
 
 #: development/compiling/compiling_with_script_encryption_key.rst:2
 msgid "Compiling with script encryption key"
@@ -13270,9 +13223,8 @@ msgid ""
 msgstr ""
 
 #: development/compiling/compiling_with_script_encryption_key.rst:24
-#, fuzzy
 msgid "The output in ``rebel.gdkey`` should be similar to:"
-msgstr "La salida en ``godot.gdkey`` debería ser similar a:"
+msgstr "La salida en ``rebel.gdkey`` debería ser similar a:"
 
 #: development/compiling/compiling_with_script_encryption_key.rst:30
 msgid ""
@@ -13283,21 +13235,19 @@ msgstr ""
 "manera puedes minimizar el riesgo de exponer la clave."
 
 #: development/compiling/compiling_with_script_encryption_key.rst:33
-#, fuzzy
 msgid ""
 "Set this key as environment variable in the console that you will use to "
 "compile Rebel Engine, like this:"
 msgstr ""
 "Establece esta clave como una variable de entorno en la consola que "
-"utilizarás para compilar Godot, de la siguiente manera:"
+"utilizarás para compilar Rebel Engine, de la siguiente manera:"
 
 #: development/compiling/compiling_with_script_encryption_key.rst:49
-#, fuzzy
 msgid ""
 "Compile Rebel export templates and set them as custom export templates in "
 "the export preset options."
 msgstr ""
-"Compila las plantillas de exportación de Godot y establécelas como "
+"Compila las plantillas de exportación de Rebel Engine y establécelas como "
 "plantillas de exportación personalizadas en las opciones de configuración de "
 "la exportación."
 
@@ -13317,22 +13267,21 @@ msgid "Possible Errors"
 msgstr ""
 
 #: development/compiling/compiling_with_script_encryption_key.rst:61
-#, fuzzy
 msgid ""
 "If you get an error like below, it means the key wasn't properly included in "
 "your Rebel Engine build. Rebel Engine is encrypting the scripts during "
 "export, but can't read them at runtime."
 msgstr ""
 "Si te encuentras con un error como los de abajo, significa que la clave no "
-"ha sido debidamente incluida en la compilación de Godot. Se están cifrando "
-"los scripts al exportar, pero no se pueden leer en tiempo de ejecución."
+"ha sido debidamente incluida en la compilación de Rebel Engine. Rebel Engine "
+"está cifrando los scripts al exportar, pero no se pueden leer en tiempo de "
+"ejecución."
 
 #: development/compiling/cross-compiling_for_ios_on_linux.rst:2
 msgid "Cross-compiling for iOS on Linux"
 msgstr "Compilación cruzada pra IOS en Linux"
 
 #: development/compiling/cross-compiling_for_ios_on_linux.rst:6
-#, fuzzy
 msgid ""
 "The procedure for this is somewhat complex and requires a lot of steps, but "
 "once you have the environment properly configured it will be easy to compile "
@@ -13340,7 +13289,7 @@ msgid ""
 msgstr ""
 "El procedimiento para esto es algo complejo y requiere muchos pasos, pero "
 "una vez que tengas el entorno configurado correctamente, será fácil compilar "
-"Godot para iOS cada vez que lo desees."
+"Rebel Engine para iOS cada vez que lo desees."
 
 #: development/compiling/cross-compiling_for_ios_on_linux.rst:11
 msgid "Disclaimer"
@@ -13487,9 +13436,8 @@ msgstr ""
 "``/home/user/iostoolchain/usr/bin``."
 
 #: development/compiling/cross-compiling_for_ios_on_linux.rst:118
-#, fuzzy
 msgid "Compiling Rebel Engine for iPhone"
-msgstr "Compilando Godot para iPhone"
+msgstr "Compilando Rebel Engine para iPhone"
 
 #: development/compiling/cross-compiling_for_ios_on_linux.rst:120
 msgid ""
@@ -13512,21 +13460,19 @@ msgstr ""
 "entorno ``OSXCROSS_IOS`` esté definida como cualquier valor."
 
 #: development/compiling/cross-compiling_for_ios_on_linux.rst:132
-#, fuzzy
 msgid ""
 "Now you can compile for iPhone using SCons like the standard Rebel Engine "
 "way, with some additional arguments to provide the correct paths:"
 msgstr ""
 "Ahora puedes compilar para iPhone utilizando SCons de la misma manera que lo "
-"haces para Godot estándar, pero con algunos argumentos adicionales para "
-"proporcionar las rutas correctas:"
+"haces para Rebel Engine estándar, pero con algunos argumentos adicionales "
+"para proporcionar las rutas correctas:"
 
 #: development/compiling/cross-compiling_for_ios_on_linux.rst:141
 msgid "Producing fat binaries"
 msgstr "Produciendo binarios universales"
 
 #: development/compiling/cross-compiling_for_ios_on_linux.rst:143
-#, fuzzy
 msgid ""
 "Apple requires a fat binary with both architectures (``armv7`` and "
 "``arm64``) in a single file. To do this, use the ``arm-apple-darwin11-lipo`` "
@@ -13536,7 +13482,7 @@ msgstr ""
 "Apple requiere un binario universal con ambas arquitecturas (``armv7`` y "
 "``arm64``) en un solo archivo. Para lograr esto, utiliza el ejecutable ``arm-"
 "apple-darwin11-lipo``. El siguiente ejemplo asume que estás en el directorio "
-"raíz del código fuente de Godot:"
+"raíz del código fuente de Rebel Engine:"
 
 #: development/compiling/cross-compiling_for_ios_on_linux.rst:155
 msgid "Then you will have iOS fat binaries in ``bin`` directory."
@@ -13548,32 +13494,29 @@ msgid "Getting the source"
 msgstr "Consiguiendo el código fuente"
 
 #: development/compiling/getting_source.rst:7
-#, fuzzy
 msgid "Downloading the Rebel Engine source code"
-msgstr "Descargando el código fuente de Godot"
+msgstr "Descargando el código fuente de Rebel Engine"
 
 #: development/compiling/getting_source.rst:9
-#, fuzzy
 msgid ""
 "Before :doc:`getting into the SCons build system </development/compiling/"
 "introduction_to_the_buildsystem>` and compiling Rebel Engine, you need to "
 "actually download the Rebel Engine source code."
 msgstr ""
-"Antes de :ref:`adentrarnos en el sistema de construcción SCons "
-"<doc_introduction_to_the_buildsystem>` y compilar Godot, necesitas descargar "
-"el código fuente."
+"Antes de :doc:`adentrarnos en el sistema de construcción SCons </development/"
+"compiling/introduction_to_the_buildsystem>` y compilar Rebel Engine, "
+"necesitas descargar el código fuente."
 
 #: development/compiling/getting_source.rst:12
-#, fuzzy
 msgid ""
 "The source code is available on `GitHub <https://github.com/RebelToolbox/"
 "RebelEngine>`__ and while you can manually download it via the website, in "
 "general you want to do it via the ``git`` version control system."
 msgstr ""
-"El código fuente está disponible en `GitHub <https://github.com/godotengine/"
-"godot>`__ y aunque puedes descargarlo de manera manual desde la página web, "
-"en general deberías hacerlo a través del sistema de control de versiones "
-"``git``."
+"El código fuente está disponible en `GitHub <https://github.com/RebelToolbox/"
+"RebelEngine>`__ y aunque puedes descargarlo de manera manual desde la página "
+"web, en general deberías hacerlo a través del sistema de control de "
+"versiones ``git``."
 
 #: development/compiling/getting_source.rst:16
 #, fuzzy
@@ -13603,13 +13546,13 @@ msgstr ""
 "visuales."
 
 #: development/compiling/getting_source.rst:24
-#, fuzzy
 msgid ""
 "Afterwards, to get the latest development version of the Rebel Engine source "
 "code (the unstable ``main`` branch), you can use ``git clone``."
 msgstr ""
 "A continuación, para conseguir la última versión de desarrollo del código "
-"fuente de Godot (la rama inestable ``master``), puedes usar ``git clone``."
+"fuente de Rebel Engine (la rama inestable ``main``), puedes usar ``git "
+"clone``."
 
 #: development/compiling/getting_source.rst:27
 msgid ""
@@ -13627,10 +13570,11 @@ msgid ""
 "you want. You can then download and extract the source from the download "
 "link on the page."
 msgstr ""
-"Para conseguir cualquiera de los lanzamientos oficiales de Godot, visita la "
-"`página de lanzamientos <https://github.com/godotengine/godot/releases>`__ y "
-"haz click en el enlace de la versión que versión que necesites. Podrás "
-"descargar y extraer el código fuente de esa misma página de descargas."
+"Para conseguir cualquiera de los lanzamientos oficiales de Rebel Engine, "
+"visita la `página de lanzamientos <https://github.com/RebelToolbox/"
+"RebelEngine/releases>`__ y haz click en el enlace de la versión que versión "
+"que necesites. Podrás descargar y extraer el código fuente de esa misma "
+"página de descargas."
 
 #: development/compiling/getting_source.rst:40
 #, fuzzy
@@ -13642,14 +13586,14 @@ msgstr ""
 "o etiqueta después del argumento ``--branch`` (o simplemente ``-b``)::"
 
 #: development/compiling/getting_source.rst:43
-#, fuzzy
 msgid ""
 "After downloading the Rebel Engine source code, you can :doc:`continue to "
 "compiling Rebel Engine </development/compiling/"
 "introduction_to_the_buildsystem>`."
 msgstr ""
-"Después de descargar el código fuente puedes :ref:`continuar hacia la "
-"sección de compilado de Godot <doc_introduction_to_the_buildsystem>`."
+"Después de descargar el código fuente puedes de Rebel Engine, puede "
+":doc:`continuar hacia la sección de compilado de Rebel Engine </development/"
+"compiling/introduction_to_the_buildsystem>`."
 
 #: development/compiling/introduction_to_the_buildsystem.rst:2
 msgid "Introduction to the buildsystem"
@@ -13660,7 +13604,6 @@ msgid "SCons"
 msgstr "SCons"
 
 #: development/compiling/introduction_to_the_buildsystem.rst:9
-#, fuzzy
 msgid ""
 "Rebel Engine uses `SCons <https://www.scons.org/>`__ to build. We love it, "
 "we are not changing it for anything else. We are not even sure other build "
@@ -13669,22 +13612,22 @@ msgid ""
 "not going to happen. There are many reasons why we have chosen SCons over "
 "other alternatives, for example:"
 msgstr ""
-"Godot utiliza `SCons <https://www.scons.org/>`__ para compilar. Nos encanta, "
-"no lo cambiaremos por ningún otro. Ni siquiera estamos seguros de que otros "
-"sistemas de compilación puedan manejar la construcción de Godot. "
-"Constantemente recibimos solicitudes para cambiar el sistema de compilación "
-"a CMake o Visual Studio, pero esto no va a suceder. Hay muchas razones por "
-"las cuales hemos elegido SCons sobre otras alternativas, por ejemplo:"
+"Rebel Engine utiliza `SCons <https://www.scons.org/>`__ para compilar. Nos "
+"encanta, no lo cambiaremos por ningún otro. Ni siquiera estamos seguros de "
+"que otros sistemas de compilación puedan manejar la construcción de Rebel "
+"Engine. Constantemente recibimos solicitudes para cambiar el sistema de "
+"compilación a CMake o Visual Studio, pero esto no va a suceder. Hay muchas "
+"razones por las cuales hemos elegido SCons sobre otras alternativas, por "
+"ejemplo:"
 
 #: development/compiling/introduction_to_the_buildsystem.rst:16
-#, fuzzy
 msgid ""
 "Rebel Engine can be compiled for a dozen different platforms: all PC "
 "platforms, all mobile platforms, many consoles, and WebAssembly."
 msgstr ""
-"Godot se puede compilar para una docena de plataformas diferentes: todas las "
-"plataformas de PC, todas las plataformas móviles, muchas consolas y "
-"WebAssembly."
+"Rebel Engine se puede compilar para una docena de plataformas diferentes: "
+"todas las plataformas de PC, todas las plataformas móviles, muchas consolas "
+"y WebAssembly."
 
 #: development/compiling/introduction_to_the_buildsystem.rst:18
 msgid ""
@@ -13710,7 +13653,6 @@ msgstr ""
 "de ser alcanzado por un rayo que de necesitar limpiar y reconstruir en SCons."
 
 #: development/compiling/introduction_to_the_buildsystem.rst:25
-#, fuzzy
 msgid ""
 "Rebel Engine build process is not simple. Several files are generated by "
 "code (binders), others are parsed (shaders), and others need to offer "
@@ -13718,33 +13660,32 @@ msgid ""
 "write in an actual programming language (like Python) rather than using a "
 "mostly macro-based language only meant for building."
 msgstr ""
-"El proceso de construcción de Godot no es sencillo. Se generan varios "
-"archivos a partir de código (vinculadores), otros se analizan (sombras), y "
+"El proceso de construcción de Rebel Engine no es sencillo. Se generan varios "
+"archivos a partir de código (vinculaciones), otros se analizan (sombras), y "
 "otros necesitan ofrecer personalización (complementos). Esto requiere lógica "
 "compleja que es más fácil de escribir en un lenguaje de programación real "
 "(como Python) en lugar de usar un lenguaje basado principalmente en macros "
 "destinado únicamente a la construcción."
 
 #: development/compiling/introduction_to_the_buildsystem.rst:30
-#, fuzzy
 msgid ""
 "Rebel Engine build process makes heavy use of cross-compiling tools. Each "
 "platform has a specific detection process, and all these must be handled as "
 "specific cases with special code written for each."
 msgstr ""
-"El proceso de construcción de Godot hace un uso intensivo de herramientas de "
-"compilación cruzada. Cada plataforma tiene un proceso de detección "
-"específico, y todos estos deben ser tratados como casos específicos con "
-"código especial escrito para cada uno."
+"El proceso de construcción de Rebel Engine hace un uso intensivo de "
+"herramientas de compilación cruzada. Cada plataforma tiene un proceso de "
+"detección específico, y todos estos deben ser tratados como casos "
+"específicos con código especial escrito para cada uno."
 
 #: development/compiling/introduction_to_the_buildsystem.rst:34
-#, fuzzy
 msgid ""
 "So, please try to keep an open mind and get at least a little familiar with "
 "it if you are planning to build Rebel Engine yourself."
 msgstr ""
 "Entonces, por favor, trata de mantener una mente abierta y familiarizarte al "
-"menos un poco con ello si tienes la intención de compilar Godot por ti mismo."
+"menos un poco con ello si tienes la intención de compilar Rebel Engine por "
+"ti mismo."
 
 #: development/compiling/introduction_to_the_buildsystem.rst:38
 #: tutorials/2d/2d_lights_and_shadows.rst:19 tutorials/2d/2d_movement.rst:15
@@ -13783,18 +13724,17 @@ msgid "Platform selection"
 msgstr "Seleccion de plataforma"
 
 #: development/compiling/introduction_to_the_buildsystem.rst:52
-#, fuzzy
 msgid ""
 "Rebel Engine's build system will begin by detecting the platforms it can "
 "build for. If not detected, the platform will simply not appear on the list "
 "of available platforms. The build requirements for each platform are "
 "described in the rest of this tutorial section."
 msgstr ""
-"El sistema de compilación de Godot comenzará detectando las plataformas para "
-"las que se puede compilar. Si no se detecta una plataforma, simplemente no "
-"aparecerá en la lista de plataformas disponibles. Los requisitos de "
-"compilación para cada plataforma se describen en el resto de esta sección "
-"del tutorial."
+"El sistema de compilación de Rebel Engine comenzará detectando las "
+"plataformas para las que se puede compilar. Si no se detecta una plataforma, "
+"simplemente no aparecerá en la lista de plataformas disponibles. Los "
+"requisitos de compilación para cada plataforma se describen en el resto de "
+"esta sección del tutorial."
 
 #: development/compiling/introduction_to_the_buildsystem.rst:57
 msgid ""
@@ -13863,7 +13803,6 @@ msgid "A Windows binary with the same configuration will look like this:"
 msgstr "Un binario de Windows con la misma configuración se verá así:"
 
 #: development/compiling/introduction_to_the_buildsystem.rst:116
-#, fuzzy
 msgid ""
 "Copy that binary to any location you like, as it contains the project "
 "manager, editor and all means to execute the game. However, it lacks the "
@@ -13875,7 +13814,7 @@ msgstr ""
 "administrador de proyectos, el editor y todos los medios para ejecutar el "
 "juego. Sin embargo, le falta los datos para exportarlo a las diferentes "
 "plataformas. Para eso, se necesitan las plantillas de exportación (que se "
-"pueden descargar desde `godotengine.org <https://godotengine.org/>`__, o "
+"pueden descargar desde `rebeltoolbox.com <https://rebeltoolbox.com/>`__, o "
 "puedes compilarlas tú mismo)."
 
 #: development/compiling/introduction_to_the_buildsystem.rst:122
@@ -13996,13 +13935,12 @@ msgid "Custom modules"
 msgstr "Módulos personalizados"
 
 #: development/compiling/introduction_to_the_buildsystem.rst:182
-#, fuzzy
 msgid ""
 "It's possible to compile modules residing outside of Rebel Engine's "
 "directory tree, along with the built-in modules."
 msgstr ""
 "Es posible compilar módulos que se encuentren fuera del árbol de directorios "
-"de Godot, junto con los módulos integrados."
+"de Rebel Engine, junto con los módulos integrados."
 
 #: development/compiling/introduction_to_the_buildsystem.rst:185
 msgid ""
@@ -14045,7 +13983,6 @@ msgid "Cleaning generated files"
 msgstr "Limpiando archivos generados"
 
 #: development/compiling/introduction_to_the_buildsystem.rst:210
-#, fuzzy
 msgid ""
 "Sometimes, you may encounter an error due to generated files being present. "
 "You can remove them by using ``scons --clean <options>``, where "
@@ -14055,7 +13992,7 @@ msgstr ""
 "A veces, es posible que encuentres un error debido a que los archivos "
 "generados están presentes. Puedes eliminarlos usando ``scons --clean "
 "<opciones>``, donde ``<opciones>`` es la lista de opciones de compilación "
-"que utilizaste previamente para compilar Godot."
+"que utilizaste previamente para compilar Rebel Engine."
 
 #: development/compiling/introduction_to_the_buildsystem.rst:214
 msgid ""
@@ -14074,15 +14011,14 @@ msgid "Other build options"
 msgstr "Otras opciones de compilación"
 
 #: development/compiling/introduction_to_the_buildsystem.rst:222
-#, fuzzy
 msgid ""
 "There are several other build options that you can use to configure the way "
 "Rebel Engine should be built (compiler, debug options, etc.) as well as the "
 "features to include/disable."
 msgstr ""
 "Hay varias otras opciones de compilación que puedes usar para configurar la "
-"forma en que se debe compilar Godot (compilador, opciones de depuración, "
-"etc.), así como las funciones para incluir o deshabilitar."
+"forma en que se debe compilar Rebel Engine (compilador, opciones de "
+"depuración, etc.), así como las funciones para incluir o deshabilitar."
 
 #: development/compiling/introduction_to_the_buildsystem.rst:226
 msgid ""
@@ -14101,14 +14037,13 @@ msgid "Using a file"
 msgstr "Usando un archivo"
 
 #: development/compiling/introduction_to_the_buildsystem.rst:235
-#, fuzzy
 msgid ""
 "The default ``custom.py`` file can be created at the root of the Rebel "
 "Engine source to initialize any SCons build options passed via the command "
 "line:"
 msgstr ""
 "El archivo predeterminado ``custom.py`` se puede crear en la raíz del código "
-"fuente de Godot Engine para inicializar cualquier opción de compilación de "
+"fuente de Rebel Engine para inicializar cualquier opción de compilación de "
 "SCons que se pase a través de la línea de comandos:"
 
 #: development/compiling/introduction_to_the_buildsystem.rst:247
@@ -14154,24 +14089,22 @@ msgstr ""
 "de la línea de comandos."
 
 #: development/compiling/introduction_to_the_buildsystem.rst:266
-#, fuzzy
 msgid ""
 "For instance, you may want to build Rebel Engine in parallel with the "
 "aforementioned ``-j`` option for all the future builds:"
 msgstr ""
-"Por ejemplo, es posible que desees compilar Godot en paralelo con la opción "
-"mencionada ``-j`` para todas las compilaciones futuras:"
+"Por ejemplo, es posible que desees compilar Rebel Engine en paralelo con la "
+"opción mencionada ``-j`` para todas las compilaciones futuras:"
 
 #: development/compiling/introduction_to_the_buildsystem.rst:285
-#, fuzzy
 msgid ""
 "Official export templates are downloaded from the Rebel Toolbox site: "
 "`rebeltoolbox.com <https://rebeltoolbox.com/>`__. However, you might want to "
 "build them yourself (in case you want newer ones, you are using custom "
 "modules, or simply don't trust your own shadow)."
 msgstr ""
-"Las plantillas de exportación oficiales se descargan desde el sitio de Godot "
-"Engine: `godotengine.org <https://godotengine.org/>`__. Sin embargo, es "
+"Las plantillas de exportación oficiales se descargan desde el sitio de Rebel "
+"Toolbox: `rebeltoolbox.com <https://rebeltoolbox.com/>`__. Sin embargo, es "
 "posible que desees compilarlas tú mismo (en caso de que desees versiones más "
 "nuevas, estés utilizando módulos personalizados o simplemente no confíes en "
 "tu propia sombra)."
@@ -14234,7 +14167,6 @@ msgstr ""
 "compilaciones para plataformas móviles y Web."
 
 #: development/compiling/optimizing_for_size.rst:14
-#, fuzzy
 msgid ""
 "This tutorial aims to give an overview on different methods to create a "
 "smaller binary. Before continuing, it is recommended to read the previous "
@@ -14243,7 +14175,7 @@ msgstr ""
 "Este tutorial tiene como objetivo proporcionar una visión general de "
 "diferentes métodos para crear un archivo binario más pequeño. Antes de "
 "continuar, se recomienda leer los tutoriales anteriores sobre cómo compilar "
-"Godot para cada plataforma."
+"Rebel Engine para cada plataforma."
 
 #: development/compiling/optimizing_for_size.rst:18
 msgid ""
@@ -14330,14 +14262,13 @@ msgid "**Performed in official builds:** Yes, but only for HTML5"
 msgstr "**Realizado en compilaciones oficiales:** Sí, pero solo para HTML5"
 
 #: development/compiling/optimizing_for_size.rst:57
-#, fuzzy
 msgid ""
 "Rebel Engine allows compiling using size optimizations (instead of speed). "
 "To enable this, set the ``optimize`` flag to ``size``:"
 msgstr ""
-"A partir de Godot 3.1 en adelante, es posible compilar utilizando "
-"optimizaciones de tamaño (en lugar de velocidad). Para habilitar esto, "
-"establece la bandera ``optimize`` en ``size``:"
+"Rebel Engine concede compilar utilizando optimizaciones de tamaño (en lugar "
+"de velocidad). Para habilitar esto, establece el indicador ``optimize`` en "
+"``size``:"
 
 #: development/compiling/optimizing_for_size.rst:64
 msgid "Some platforms such as WebAssembly already use this mode by default."
@@ -14537,13 +14468,12 @@ msgid "**Difficulty:** Medium to hard depending on modules"
 msgstr "**Dificultad:** Media a alta según los módulos"
 
 #: development/compiling/optimizing_for_size.rst:153
-#, fuzzy
 msgid ""
 "A lot of Rebel Engine's functions are offered as modules. You can see a list "
 "of modules with the following command:"
 msgstr ""
-"Muchas de las funciones de Godot se ofrecen como módulos. Puedes ver una "
-"lista de los módulos con el siguiente comando:"
+"Muchas de las funciones de Rebel Engine se ofrecen como módulos. Puedes ver "
+"una lista de los módulos con el siguiente comando:"
 
 #: development/compiling/optimizing_for_size.rst:160
 msgid ""
@@ -14602,9 +14532,10 @@ msgid ""
 msgstr ""
 "`Android Studio <https://developer.android.com/studio>`_ es un `JetBrains "
 "<https://www.jetbrains.com/>`_ IDE gratuito para el desarrollo de Android. "
-"Tiene un editor con muchas características que soporta Java y C/C++. Puede "
-"ser usado para trabajar en el núcleo del motor de Godot así como en el "
-"código base de la plataforma Android."
+"Tiene un editor con muchas características que soporta C y C++. Puede ser "
+"usado para trabajar en el núcleo del motor de Rebel Engine así como en el "
+"código base de la plataforma Android. If you want to contribute to Rebel "
+"Engine for Android, it makes sense to use Android Studio."
 
 #: development/configuring_an_ide/android_studio.rst:10
 msgid "Open the Rebel Android project"
@@ -15142,21 +15073,19 @@ msgstr ""
 "vacío."
 
 #: development/configuring_an_ide/code_blocks.rst:37
-#, fuzzy
 msgid ""
 "The Code::Blocks project file needs to be created in the root of the cloned "
 "project folder. To achieve this, first, ensure that the **Project title** is "
 "the same as the folder name that Rebel Engine was cloned into. Unless you "
 "renamed the folder, this will be ``RebelEngine``."
 msgstr ""
-"El archivo del proyecto debe ser creado en la raíz de la carpeta del "
-"proyecto clonado. Para lograr esto, asegúrate primero de que el **Título del "
-"proyecto** sea el mismo que el nombre de la carpeta en la que se clonó "
-"Godot. A menos que hayas clonado el proyecto en una carpeta con un nombre "
-"diferente, esto será ``godot``."
+"El archivo del proyecto Code::Blocks debe ser creado en la raíz de la "
+"carpeta del proyecto clonado. Para lograr esto, asegúrate primero de que el "
+"**Título del proyecto** sea el mismo que el nombre de la carpeta en la que "
+"se clonó Rebel Engine. A menos que hayas clonado el proyecto en una carpeta "
+"con un nombre diferente, esto será ``RebelEngine``."
 
 #: development/configuring_an_ide/code_blocks.rst:42
-#, fuzzy
 msgid ""
 "Second, ensure that the **Folder to create project in** is the folder you "
 "ran the Git clone command from; not the ``RebelEngine`` project folder. "
@@ -15165,9 +15094,9 @@ msgid ""
 msgstr ""
 "En segundo lugar, asegúrate de que la **Carpeta para crear el proyecto en** "
 "sea la carpeta desde la cual ejecutaste el comando de clonación de Git, no "
-"la carpeta del proyecto ``godot``. Confirma que el campo **Nombre de archivo "
-"resultante** creará el archivo del proyecto en la raíz de la carpeta del "
-"proyecto clonado."
+"la carpeta del proyecto ``RebelEngine``. Confirma que el campo **Nombre de "
+"archivo resultante** creará el archivo del proyecto Code:Blocks en la raíz "
+"de la carpeta del proyecto clonado."
 
 #: development/configuring_an_ide/code_blocks.rst:50
 msgid "Project title: \"RebelEngine\" and location: git clone folder"
@@ -15203,22 +15132,21 @@ msgid "Add Rebel files to the project"
 msgstr "Agregando archivos al proyecto"
 
 #: development/configuring_an_ide/code_blocks.rst:69
-#, fuzzy
 msgid ""
 "To add all the Rebel source files to the project, right-click on the "
 "**RebelEngine** project and select **Add files recursively…**."
 msgstr ""
 "Para agregar todos los archivos de código de Godot al proyecto, haz clic "
-"derecho en el nuevo proyecto y selecciona **Add files recursively...**."
+"derecho en el proyecto **RebelEngine** y selecciona **Add files "
+"recursively...**."
 
 #: development/configuring_an_ide/code_blocks.rst:76
 msgid "Add files recursively"
 msgstr ""
 
 #: development/configuring_an_ide/code_blocks.rst:78
-#, fuzzy
 msgid "It should automatically select the project root folder."
-msgstr "En **Ubicación**, selecciona la carpeta raíz de Godot."
+msgstr "Automáticamente seleccionara la carpeta raíz del proyecto."
 
 #: development/configuring_an_ide/code_blocks.rst:84
 #, fuzzy
@@ -15236,9 +15164,9 @@ msgid ""
 msgstr ""
 "En segundo lugar, asegúrate de que la **Carpeta para crear el proyecto en** "
 "sea la carpeta desde la cual ejecutaste el comando de clonación de Git, no "
-"la carpeta del proyecto ``godot``. Confirma que el campo **Nombre de archivo "
-"resultante** creará el archivo del proyecto en la raíz de la carpeta del "
-"proyecto clonado."
+"la carpeta del proyecto **RebelEngine**. Confirma que el campo **Nombre de "
+"archivo resultante** creará el archivo (``.cbp``) del proyecto Code:Blocks "
+"en la raíz de la carpeta del proyecto clonado."
 
 #: development/configuring_an_ide/code_blocks.rst:91
 #, fuzzy
@@ -15374,13 +15302,12 @@ msgid ""
 msgstr ""
 
 #: development/configuring_an_ide/code_blocks.rst:190
-#, fuzzy
 msgid ""
 "Code::Blocks should now be configured to build Rebel Engine. You can either "
 "select **Build > Build**, click the gear button, or press :kbd:`Ctrl+F9`."
 msgstr ""
-"Code::Blocks debería estar configurado ahora para compilar Godot. Puedes "
-"seleccionar **Build > Build**, hacer clic en el botón de engranaje o "
+"Code::Blocks debería estar configurado ahora para compilar Rebel Engine. "
+"Puedes seleccionar **Build > Build**, hacer clic en el botón de engranaje o "
 "presionar :kbd:`Ctrl + F9` para comenzar la compilación."
 
 #: development/configuring_an_ide/code_blocks.rst:194
@@ -15431,15 +15358,14 @@ msgid ""
 msgstr ""
 
 #: development/configuring_an_ide/code_blocks.rst:215
-#, fuzzy
 msgid ""
 "Code::Blocks should now be configured to run your compiled Rebel Engine "
 "executable. You can either select **Build > Run**, click the green arrow "
 "button, or press :kbd:`Ctrl+F10`."
 msgstr ""
-"Code::Blocks ahora está configurado para ejecutar tu ejecutable de Godot "
-"compilado; así que selecciona **Build > Run**, haz clic en el botón de "
-"flecha verde o presiona :kbd:`Ctrl + F10`."
+"Code::Blocks ahora está configurado para ejecutar tu ejecutable de Rebel "
+"Engine compilado; así que selecciona **Build > Run**, haz clic en el botón "
+"de flecha verde o presiona :kbd:`Ctrl + F10`."
 
 #: development/configuring_an_ide/code_blocks.rst:219
 #, fuzzy
@@ -16753,9 +16679,8 @@ msgid "Directory"
 msgstr "Directorio"
 
 #: development/configuring_an_ide/xcode.rst:24
-#, fuzzy
 msgid "A full path to the Rebel Engine root folder"
-msgstr "Una ruta completa a la carpeta raíz de Godot"
+msgstr "Una ruta completa a la carpeta raíz de Rebel Engine"
 
 #: development/configuring_an_ide/xcode.rst:31
 #, fuzzy
@@ -16771,13 +16696,12 @@ msgid "Select **OS X > Application > Command Line Tool**."
 msgstr "Selecciona **OS X > Aplicación > Herramienta de línea de comandos**."
 
 #: development/configuring_an_ide/xcode.rst:44
-#, fuzzy
 msgid ""
 "Name it something so you know not to compile with this target (e.g. "
 "``RebelXcodeIndex``)."
 msgstr ""
 "Nómbralo de manera que sepas que no se debe compilar con este objetivo (por "
-"ejemplo, ``GodotXcodeIndex``)."
+"ejemplo, ``RebelXcodeIndex``)."
 
 #: development/configuring_an_ide/xcode.rst:46
 msgid ""
@@ -16788,7 +16712,6 @@ msgstr ""
 "**Header Search Paths** (Rutas de búsqueda de encabezados)."
 
 #: development/configuring_an_ide/xcode.rst:47
-#, fuzzy
 msgid ""
 "Set **Header Search Paths** to the absolute path to the Rebel Engine root "
 "folder. You need to include subdirectories as well. To achieve that, add two "
@@ -16796,17 +16719,16 @@ msgid ""
 "**``."
 msgstr ""
 "Establece **Header Search Paths** a la ruta absoluta de la carpeta raíz de "
-"Godot. Debes incluir también los subdirectorios. Para lograrlo, agrega dos "
-"asteriscos (``**``) al final de la ruta, por ejemplo, ``/Users/yo/repos/"
-"godot-source/**``."
+"Rebel Engine. Debes incluir también los subdirectorios. Para lograrlo, "
+"agrega dos asteriscos (``**``) al final de la ruta, por ejemplo, ``/Users/yo/"
+"repos/RebelEngine/**``."
 
 #: development/configuring_an_ide/xcode.rst:51
-#, fuzzy
 msgid ""
 "Add the Rebel Engine source to the project by dragging and dropping it into "
 "the project file browser."
 msgstr ""
-"Arrastra y suelta los fuentes de Godot en el navegador de archivos de "
+"Arrastra y suelta los fuentes de Rebel Engine en el navegador de archivos de "
 "proyecto."
 
 #: development/configuring_an_ide/xcode.rst:52
@@ -16895,7 +16817,6 @@ msgid "Check **Debug executable**."
 msgstr "Marca la casilla **Debug executable**."
 
 #: development/configuring_an_ide/xcode.rst:99
-#, fuzzy
 msgid ""
 "You can add two arguments on the **Arguments** tab: the ``-e`` flag opens "
 "the editor instead of the project manager, and the ``--path`` argument tells "
@@ -16906,7 +16827,7 @@ msgstr ""
 "e`` abre el editor en lugar del administrador de proyectos, y el argumento "
 "``--path`` le indica al ejecutable que abra el proyecto especificado (debe "
 "proporcionarse como una ruta *absoluta* a la raíz del proyecto, no el "
-"archivo ``project.godot``)."
+"archivo ``project.rebel``)."
 
 #: development/editor/creating_icons.rst:2
 msgid "Editor icons"
@@ -16940,10 +16861,10 @@ msgstr ""
 "abierto `Inkscape <https://inkscape.org/>`_."
 
 #: development/editor/creating_icons.rst:15
-#, fuzzy
 msgid "Clone the ``RebelEngine`` repository containing all the editor icons:"
 msgstr ""
-"Clona el repositorio ``godot`` que contiene todos los íconos del editor:"
+"Clona el repositorio ``RebelEngine`` que contiene todos los íconos del "
+"editor:"
 
 #: development/editor/creating_icons.rst:21
 msgid ""
@@ -16997,11 +16918,9 @@ msgid ""
 "Try to restrict your icon's color palette to colors found in the list above. "
 "Otherwise, your icon may become difficult to read on a light background."
 msgstr ""
-"Si el usuario ha configurado su editor para usar un tema claro, Godot "
-"convertirá los colores del ícono basándose en un `conjunto de mapeos de "
-"color predefinidos <https://github.com/godotengine/godot/blob/"
-"b9f2e57d6240346f1833fd0390de195c956299e7/editor/editor_themes.cpp#L122-"
-"L184>`__. Esto asegura que el ícono siempre se muestre con una tasa de "
+"Si el usuario ha configurado su editor para usar un tema claro, Rebel Engine "
+"convertirá los colores del ícono basándose en un conjunto de mapeos de color "
+"predefinidos. Esto asegura que el icono siempre se muestre con una tasa de "
 "contraste suficiente. Trata de restringir la paleta de colores de tu ícono a "
 "los colores encontrados en la lista mencionada anteriormente. De lo "
 "contrario, tu ícono podría volverse difícil de leer sobre un fondo claro."
@@ -17080,17 +16999,16 @@ msgstr ""
 "motor para que tome los nuevos íconos para las clases."
 
 #: development/editor/creating_icons.rst:80
-#, fuzzy
 msgid ""
 "It's also possible to create custom icons within a module. If you're "
 "creating your own module and don't plan to integrate it with Rebel Engine, "
 "you don't need to make a separate pull request for your icons to be "
 "available within the editor as they can be self-contained."
 msgstr ""
-"También es posible crear íconos personalizados dentro de un módulo. Si estás "
-"creando tu propio módulo y no planeas integrarlo con Godot, no es necesario "
-"hacer una solicitud de extracción separada para que tus íconos estén "
-"disponibles dentro del editor, ya que pueden ser autocontenidos."
+"También es posible crear iconos personalizados dentro de un módulo. Si estás "
+"creando tu propio módulo y no planeas integrarlo con Rebel Engine, no es "
+"necesario hacer una solicitud de extracción separada para que tus iconos "
+"estén disponibles dentro del editor, ya que pueden ser autocontenidos."
 
 #: development/editor/creating_icons.rst:85
 #, fuzzy
@@ -17123,12 +17041,11 @@ msgstr ""
 "predeterminada). Sin él, los íconos no aparecerán en el editor en absoluto."
 
 #: development/editor/creating_icons.rst:100
-#, fuzzy
 msgid ""
 "`editor/icons <https://github.com/RebelToolbox/RebelEngine/tree/main/editor/"
 "icons>`__"
 msgstr ""
-"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
+"`editor/icons <https://github.com/RebelToolbox/RebelEngine/tree/main/editor/"
 "icons>`__"
 
 #: development/editor/editor_style_guide.rst:2
@@ -17136,20 +17053,18 @@ msgid "Editor style guide"
 msgstr "Guía de estilo del editor"
 
 #: development/editor/editor_style_guide.rst:7
-#, fuzzy
 msgid "Thanks for your interest in contributing to the Rebel Editor!"
-msgstr "¡Gracias por tú interes en contribuir al editor de Godot!"
+msgstr "¡Gracias por tu interés en contribuir al editor de Rebel Engine!"
 
 #: development/editor/editor_style_guide.rst:9
-#, fuzzy
 msgid ""
 "This page describes the grammar and writing style used throughout the Rebel "
 "Editor. Following this style guide will help your contribution get merged "
 "faster since there will be fewer review steps required."
 msgstr ""
 "Está página describe los estilos de gramática y escritura usados a lo largo "
-"del editor de Godot. Seguir esta guía de estilos ayudará a que tú "
-"contribución se fusione (merge) más rapido ya que se necesitarán menos pasos "
+"del editor de Rebel Engine. Seguir esta guía de estilos ayudará a que tú "
+"contribución se fusione (merge) más rápido ya que se necesitarán menos pasos "
 "para su revisión."
 
 #: development/editor/editor_style_guide.rst:14
@@ -17270,7 +17185,6 @@ msgid "Inspector performance hints"
 msgstr "Hints de rendimiento del inspector"
 
 #: development/editor/editor_style_guide.rst:60
-#, fuzzy
 msgid ""
 "Enum properties that noticeably impact performance should have a performance "
 "hint associated. The hint should refer to the *absolute* performance impact, "
@@ -17281,7 +17195,7 @@ msgstr ""
 "rendimiento deben tener una indicación de rendimiento asociada. La "
 "indicación debe referirse al impacto de rendimiento *absoluto*, en lugar de "
 "ser relativo a las otras opciones proporcionadas en el enumerado. Aquí "
-"tienes algunos ejemplos tomados del editor de Godot:"
+"tienes algunos ejemplos tomados del editor de Rebel Engine:"
 
 #: development/editor/editor_style_guide.rst:65
 msgid "**Screen-space antialiasing:** *Disabled (Fastest), FXAA (Fast)*"
@@ -17392,45 +17306,41 @@ msgid "On this page, you will learn:"
 msgstr "En esta pagina aprenderás:"
 
 #: development/editor/introduction_to_editor_development.rst:6
-#, fuzzy
 msgid "The **design decisions** behind the Rebel Editor."
-msgstr "Las **decisiones de diseño** detrás del editor de Godot."
+msgstr "Las **decisiones de diseño** detrás del editor de Rebel Editor."
 
 #: development/editor/introduction_to_editor_development.rst:7
-#, fuzzy
 msgid "How to work efficiently on the Rebel Editor's C++ code."
-msgstr "Cómo trabajar eficientemente en el código C++ del editor de Godot."
+msgstr ""
+"Cómo trabajar eficientemente en el código C++ del editor de Rebel Editor."
 
 #: development/editor/introduction_to_editor_development.rst:9
-#, fuzzy
 msgid ""
 "This guide is aimed at current or future engine contributors. To create "
 "editor plugins in GDScript, see :doc:`/tutorials/plugins/editor/"
 "making_plugins` instead."
 msgstr ""
-"Esta guía está dirigida a los colaboradores actuales o futuros del motor de "
-"Godot. Para crear complementos de editor en GDScript, consulta :ref:"
-"`doc_making_plugins` en su lugar."
+"Esta guía está dirigida a los colaboradores actuales o futuros del motor. "
+"Para crear complementos de editor en GDScript, consulta :doc:`/tutorials/"
+"plugins/editor/making_plugins` en su lugar."
 
 #: development/editor/introduction_to_editor_development.rst:14
-#, fuzzy
 msgid ""
 "If you are new to Rebel, we recommended you to read :doc:`/getting_started/"
 "introduction/design_philosophy` before continuing. Since the Rebel Editor is "
 "a Rebel project written in C++, much of the engine's philosophy applies to "
 "the editor."
 msgstr ""
-"Si eres nuevo en Godot, te recomendamos que leas :ref:"
-"`doc_godot_design_philosophy` antes de continuar. Dado que el editor de "
-"Godot es un proyecto de Godot escrito en C++, gran parte de la filosofía del "
-"motor se aplica al editor también."
+"Si eres nuevo en Rebel, te recomendamos que leas :doc:`/getting_started/"
+"introduction/design_philosophy` antes de continuar. Dado que el editor de "
+"Rebel Editor es un proyecto de Rebel escrito en C++, gran parte de la "
+"filosofía del motor se aplica al editor también."
 
 #: development/editor/introduction_to_editor_development.rst:20
 msgid "Technical choices"
 msgstr "Elecciones tecnicas"
 
 #: development/editor/introduction_to_editor_development.rst:22
-#, fuzzy
 msgid ""
 "The Rebel Editor is drawn using Rebel's renderer and :ref:`UI system <toc-"
 "gui-basics>`. It does *not* rely on a toolkit such as GTK or Qt. This is "
@@ -17438,12 +17348,12 @@ msgid ""
 "easier to achieve a \"native\" appearance, they are also quite heavy and "
 "their licensing is not compatible with Rebel Engine's."
 msgstr ""
-"El editor de Godot se dibuja utilizando el motor de renderizado y el :ref:"
-"`sistema de interfaz de usuario <toc-gui-basics>` de Godot. No depende de un "
-"kit de herramientas como GTK o Qt. Esto es similar en espíritu a software "
-"como Blender. Si bien el uso de kits de herramientas facilita lograr una "
-"apariencia \"nativa\", también son bastante pesados y su licencia no es "
-"compatible con la de Godot."
+"El editor de Rebel Editor se dibuja utilizando el motor de renderizado y el "
+":ref:`sistema de interfaz de usuario <toc-gui-basics>` de Rebel. No depende "
+"de un kit de herramientas como GTK o Qt. Esto es similar en espíritu a "
+"software como Blender. Si bien el uso de kits de herramientas facilita "
+"lograr una apariencia \"nativa\", también son bastante pesados y su licencia "
+"no es compatible con la de Rebel Engine."
 
 #: development/editor/introduction_to_editor_development.rst:28
 msgid ""
@@ -17457,18 +17367,16 @@ msgid "Directory structure"
 msgstr "Estructura de directorios"
 
 #: development/editor/introduction_to_editor_development.rst:33
-#, fuzzy
 msgid ""
 "The editor's code is fully self-contained in the `editor/ <https://github."
 "com/RebelToolbox/RebelEngine/tree/main/editor>`__ folder of the Rebel Engine "
 "source repository."
 msgstr ""
 "El código del editor está completamente contenido en la carpeta `editor/ "
-"<https://github.com/godotengine/godot/tree/master/editor>`__ del repositorio "
-"de código fuente de Godot."
+"<https://github.com/RebelToolbox/RebelEngine/tree/main/editor>`__ del "
+"repositorio de código fuente de Rebel Engine."
 
 #: development/editor/introduction_to_editor_development.rst:37
-#, fuzzy
 msgid ""
 "Some editor functionality is also implemented via :doc:`modules </"
 "development/engine/custom_modules_in_cpp>`. Some of these are only enabled "
@@ -17476,93 +17384,86 @@ msgid ""
 "`modules/ <https://github.com/RebelToolbox/RebelEngine/tree/main/modules>`__ "
 "folder in the Rebel Engine source repository."
 msgstr ""
-"Algunas funcionalidades del editor también se implementan mediante :ref:"
-"`módulos <doc_custom_modules_in_c++>`. Algunos de estos módulos solo están "
-"habilitados en las compilaciones del editor para reducir el tamaño binario "
-"de las plantillas de exportación. Consulta la carpeta `modules/ <https://"
-"github.com/godotengine/godot/tree/master/modules>`__ en el repositorio de "
-"código fuente de Godot para obtener más información."
+"Algunas funcionalidades del editor también se implementan mediante "
+":doc:`módulos </development/engine/custom_modules_in_cpp>`. Algunos de estos "
+"módulos solo están habilitados en las compilaciones del editor para reducir "
+"el tamaño binario de las plantillas de exportación. Consulta la carpeta "
+"`modules/ <https://github.com/RebelToolbox/RebelEngine/tree/main/modules>`__ "
+"en el repositorio de código fuente de Godot para obtener más información."
 
 #: development/editor/introduction_to_editor_development.rst:43
 msgid "Some important files in the editor are:"
 msgstr "Algunos archivos importantes en el editor son:"
 
 #: development/editor/introduction_to_editor_development.rst:45
-#, fuzzy
 msgid ""
 "`editor/editor_node.h <https://github.com/RebelToolbox/RebelEngine/blob/main/"
 "editor/editor_node.h>`__: Main editor initialization file. Effectively the "
 "\"main scene\" of the editor."
 msgstr ""
-"`editor/editor_node.cpp <https://github.com/godotengine/godot/blob/3.x/"
-"editor/editor_node.cpp>`__: Archivo principal de inicialización del editor. "
-"Es efectivamente la \"escena principal\" del editor."
+"`editor/editor_node.h <https://github.com/RebelToolbox/RebelEngine/blob/main/"
+"editor/editor_node.h>`__: Archivo principal de inicialización del editor. Es "
+"efectivamente la \"escena principal\" del editor."
 
 #: development/editor/introduction_to_editor_development.rst:47
-#, fuzzy
 msgid ""
 "`editor/project_manager.h <https://github.com/RebelToolbox/RebelEngine/blob/"
 "main/editor/project_manager.h>`__: Main project manager initialization file. "
 "Effectively the \"main scene\" of the project manager."
 msgstr ""
-"`editor/project_manager.cpp <https://github.com/godotengine/godot/blob/3.x/"
-"editor/project_manager.cpp>`__: Archivo principal de inicialización del "
+"`editor/project_manager.h <https://github.com/RebelToolbox/RebelEngine/blob/"
+"main/editor/project_manager.h>`__: Archivo principal de inicialización del "
 "administrador de proyectos. Es efectivamente la \"escena principal\" del "
 "administrador de proyectos."
 
 #: development/editor/introduction_to_editor_development.rst:49
-#, fuzzy
 msgid ""
 "`editor/plugins/canvas_item_editor_plugin.h <https://github.com/RebelToolbox/"
 "RebelEngine/blob/main/editor/plugins/canvas_item_editor_plugin.h>`__: The 2D "
 "editor viewport and related functionality (toolbar at the top, editing "
 "modes, overlaid helpers/panels, …)."
 msgstr ""
-"`editor/plugins/canvas_item_editor_plugin.cpp <https://github.com/"
-"godotengine/godot/blob/3.x/editor/plugins/canvas_item_editor_plugin.cpp>`__: "
-"El visor de edición 2D y la funcionalidad relacionada (barra de herramientas "
-"en la parte superior, modos de edición, ayudantes o paneles "
-"superpuestos, ...)."
+"`editor/plugins/canvas_item_editor_plugin.h <https://github.com/RebelToolbox/"
+"RebelEngine/blob/main/editor/plugins/canvas_item_editor_plugin.h>`__: El "
+"visor de edición 2D y la funcionalidad relacionada (barra de herramientas en "
+"la parte superior, modos de edición, ayudantes o paneles superpuestos, ...)."
 
 #: development/editor/introduction_to_editor_development.rst:51
-#, fuzzy
 msgid ""
 "`editor/plugins/spatial_editor_plugin.h <https://github.com/RebelToolbox/"
 "RebelEngine/blob/main/editor/plugins/spatial_editor_plugin.h>`__: The 3D "
 "editor viewport and related functionality (toolbar at the top, editing "
 "modes, overlaid panels, …)."
 msgstr ""
-"`editor/plugins/spatial_editor_plugin.cpp <https://github.com/godotengine/"
-"godot/blob/3.x/editor/plugins/spatial_editor_plugin.cpp>`__: El visor de "
-"edición 3D y la funcionalidad relacionada (barra de herramientas en la parte "
-"superior, modos de edición, paneles superpuestos, ...)."
+"`editor/plugins/spatial_editor_plugin.h <https://github.com/RebelToolbox/"
+"RebelEngine/blob/main/editor/plugins/spatial_editor_plugin.h>`__: El visor "
+"de edición 3D y la funcionalidad relacionada (barra de herramientas en la "
+"parte superior, modos de edición, paneles superpuestos, …)."
 
 #: development/editor/introduction_to_editor_development.rst:53
-#, fuzzy
 msgid ""
 "`editor/spatial_editor_gizmos.h <https://github.com/RebelToolbox/RebelEngine/"
 "blob/main/editor/spatial_editor_gizmos.h>`__: Where the 3D editor gizmos are "
 "defined and drawn. This file doesn't have a 2D counterpart as 2D gizmos are "
 "drawn by the nodes themselves."
 msgstr ""
-"`editor/spatial_editor_gizmos.cpp <https://github.com/godotengine/godot/"
-"blob/3.x/editor/spatial_editor_gizmos.cpp>`__: Donde se definen y dibujan "
-"los gizmos del editor 3D. Este archivo no tiene un equivalente en 2D, ya que "
-"los gizmos en 2D son dibujados por los propios nodos."
+"`editor/spatial_editor_gizmos.h <https://github.com/RebelToolbox/RebelEngine/"
+"blob/main/editor/spatial_editor_gizmos.h>`__: Donde se definen y dibujan los "
+"gizmos del editor 3D. Este archivo no tiene un equivalente en 2D, ya que los "
+"gizmos en 2D son dibujados por los propios nodos."
 
 #: development/editor/introduction_to_editor_development.rst:58
 msgid "Editor dependencies in ``scene/`` files"
 msgstr "Dependencias del editor en archivos de ``scene/``"
 
 #: development/editor/introduction_to_editor_development.rst:60
-#, fuzzy
 msgid ""
 "When working on an editor feature, you may have to modify files in Rebel "
 "Engine's GUI nodes, which you can find in the ``scene/`` folder."
 msgstr ""
 "Cuando trabajas en una función del editor, es posible que tengas que "
-"modificar archivos en los nodos de la interfaz gráfica de Godot, los cuales "
-"puedes encontrar en la carpeta ``scene/``."
+"modificar archivos en los nodos de la interfaz gráfica de Rebel Engine, los "
+"cuales puedes encontrar en la carpeta ``scene/``."
 
 #: development/editor/introduction_to_editor_development.rst:63
 msgid ""
@@ -17613,7 +17514,6 @@ msgid "Development tips"
 msgstr "Tips de desarrollo"
 
 #: development/editor/introduction_to_editor_development.rst:82
-#, fuzzy
 msgid ""
 "To iterate quickly on the editor, we recommend to set up a test project and :"
 "doc:`open it from the command line </tutorials/editor/"
@@ -17621,10 +17521,10 @@ msgid ""
 "to go through the project manager every time you start Rebel Editor."
 msgstr ""
 "Para iterar rápidamente en el editor, te recomendamos configurar un proyecto "
-"de prueba y :ref:`abrirlo desde la línea de comandos "
-"<doc_command_line_tutorial>` después de compilar el editor. De esta manera, "
-"no tendrás que pasar por el administrador de proyectos cada vez que inicies "
-"Godot."
+"de prueba y :doc:`abrirlo desde la línea de comandos </tutorials/editor/"
+"command_line_tutorial>` después de compilar el editor. De esta manera, no "
+"tendrás que pasar por el administrador de proyectos cada vez que inicies "
+"Rebel Editor."
 
 #: development/engine/binding_to_external_libraries.rst:2
 msgid "Binding to external libraries"
@@ -17711,7 +17611,6 @@ msgstr ""
 "continuación, como referencia."
 
 #: development/engine/binding_to_external_libraries.rst:130
-#, fuzzy
 msgid ""
 "The voices that Festival uses (and any other potential external/3rd-party "
 "resource) all have varying licenses and terms of use; some (if not most) of "
@@ -17721,9 +17620,9 @@ msgid ""
 msgstr ""
 "Las voces que utiliza Festival (y cualquier otro recurso externo o de "
 "terceros potencial) tienen diferentes licencias y términos de uso; algunos "
-"(si no la mayoría) de ellos pueden ser problemáticos con Godot, incluso si "
-"la propia biblioteca de Festival es compatible con la Licencia MIT. "
-"Asegúrate de verificar las licencias y los términos de uso."
+"(si no la mayoría) de ellos pueden ser problemáticos con Rebel Engine, "
+"incluso si la propia Biblioteca de Festival es compatible con la Licencia "
+"MIT. Asegúrate de verificar las licencias y los términos de uso."
 
 #: development/engine/binding_to_external_libraries.rst:135
 msgid ""
@@ -17750,7 +17649,6 @@ msgstr ""
 "el directorio modules/tts/), como se muestra a continuación:"
 
 #: development/engine/binding_to_external_libraries.rst:154
-#, fuzzy
 msgid ""
 "Please note that Git submodules are not used in the Rebel Engine repository. "
 "If you are developing a module to be merged into the main Rebel Engine "
@@ -17759,10 +17657,10 @@ msgid ""
 "plugin."
 msgstr ""
 "Ten en cuenta que los submódulos de Git no se utilizan en el repositorio de "
-"Godot. Si estás desarrollando un módulo para ser fusionado en el repositorio "
-"principal de Godot, no debes usar submódulos. Si tu módulo no se fusiona, "
-"siempre puedes intentar implementar la biblioteca externa como un "
-"complemento GDNative en C++."
+"Rebel Engine. Si estás desarrollando un módulo para ser fusionado en el "
+"repositorio principal de Rebel Engine, no debes usar submódulos. Si tu "
+"módulo no se fusiona, siempre puedes intentar implementar la biblioteca "
+"externa como un complemento GDNative en C++."
 
 #: development/engine/binding_to_external_libraries.rst:159
 #: development/engine/custom_modules_in_cpp.rst:164
@@ -17774,16 +17672,16 @@ msgstr ""
 "vistos por el compilador:"
 
 #: development/engine/binding_to_external_libraries.rst:179
-#, fuzzy
 msgid ""
 "If you want to add custom compiler flags when building your module, you need "
 "to clone `env` first, so it won't add those flags to whole Rebel Engine "
 "build (which can cause errors). Example `SCsub` with custom flags:"
 msgstr ""
-"Si deseas agregar banderas personalizadas del compilador al construir tu "
-"módulo, primero debes clonar `env`, para evitar que agregue esas banderas a "
-"toda la compilación de Godot (lo que puede causar errores). A continuación, "
-"te muestro un ejemplo de `SCsub` con banderas personalizadas:"
+"Si deseas agregar indicadores personalizados del compilador al construir tu "
+"módulo, primero debes clonar `env`, para evitar que agregue esos indicadores "
+"a toda la compilación de Rebel Engine (lo que puede causar errores). A "
+"continuación, te muestro un ejemplo de `SCsub` con indicadores "
+"personalizados:"
 
 #: development/engine/binding_to_external_libraries.rst:197
 msgid "The final module should look like this:"
@@ -17808,13 +17706,12 @@ msgid "Common engine methods and macros"
 msgstr "Métodos y macros comunes del motor"
 
 #: development/engine/common_engine_methods_and_macros.rst:4
-#, fuzzy
 msgid ""
 "Rebel Engine's C++ codebase makes use of dozens of custom methods and macros "
 "which are used in almost every file. This page is geared towards beginner "
 "contributors, but it can also be useful for those writing custom C++ modules."
 msgstr ""
-"El código base de Godot en C++ utiliza docenas de métodos y macros "
+"El código base de Rebel Engine en C++ utiliza docenas de métodos y macros "
 "personalizados que se utilizan en casi todos los archivos. Esta página está "
 "dirigida a colaboradores principiantes, pero también puede ser útil para "
 "aquellos que escriben módulos C++ personalizados."
@@ -17865,9 +17762,8 @@ msgid "Internationalize a string"
 msgstr "Internacionalizando una cadena"
 
 #: development/engine/common_engine_methods_and_macros.rst:68
-#, fuzzy
 msgid "There are two types of internationalization in Rebel Engine's codebase:"
-msgstr "Existen dos tipos de internacionalización en el código de Godot:"
+msgstr "Existen dos tipos de internacionalización en el código de Rebel Engine:"
 
 #: development/engine/common_engine_methods_and_macros.rst:70
 msgid ""
@@ -17918,13 +17814,12 @@ msgid "Clamp a value"
 msgstr "Restringir un valor"
 
 #: development/engine/common_engine_methods_and_macros.rst:103
-#, fuzzy
 msgid ""
 "Rebel Engine provides macros for clamping a value with a lower bound "
 "(``MAX``), an upper bound (``MIN``) or both (``CLAMP``):"
 msgstr ""
-"Godot proporciona macros para limitar un valor con un límite inferior "
-"(``MAX``), un límite superior (``MIN``) o ambos (``CLAMP``):"
+"Rebel Engine proporciona macros para limitar un valor con un acotado "
+"inferior (``MAX``), una acotación superior (``MIN``) o ambos (``CLAMP``):"
 
 #: development/engine/common_engine_methods_and_macros.rst:115
 msgid ""
@@ -18001,13 +17896,12 @@ msgid "Error macros"
 msgstr "Macros de error"
 
 #: development/engine/common_engine_methods_and_macros.rst:174
-#, fuzzy
 msgid ""
 "Rebel Engine features many error macros to make error reporting more "
 "convenient."
 msgstr ""
-"Godot cuenta con muchos macros de error para facilitar la notificación de "
-"errores de manera más conveniente."
+"Rebel Engine cuenta con muchos macros de error para facilitar la "
+"notificación de errores de manera más conveniente."
 
 #: development/engine/common_engine_methods_and_macros.rst:178
 msgid ""
@@ -18053,18 +17947,16 @@ msgstr ""
 "seguir funcionando correctamente."
 
 #: development/engine/common_engine_methods_and_macros.rst:238
-#, fuzzy
 msgid ""
 "See `core/error_macros.h <https://github.com/RebelToolbox/RebelEngine/blob/"
 "main/core/error_macros.h>`__ in Rebel Engine's codebase for more information "
 "about each error macro."
 msgstr ""
-"Puedes consultar `core/error_macros.h <https://github.com/godotengine/godot/"
-"blob/3.x/core/error_macros.h>`__ en el código fuente de Godot para obtener "
-"más información sobre cada macro de error."
+"Puedes consultar `core/error_macros.h <https://github.com/RebelToolbox/"
+"RebelEngine/blob/main/core/error_macros.h>`__ en el código fuente de Rebel "
+"Engine para obtener más información sobre cada macro de error."
 
 #: development/engine/common_engine_methods_and_macros.rst:241
-#, fuzzy
 msgid ""
 "Some functions return an error code (materialized by a return type of "
 "``Error``). This value can be returned directly from an error macro. See the "
@@ -18073,21 +17965,20 @@ msgid ""
 msgstr ""
 "Algunas funciones devuelven un código de error (representado por un tipo de "
 "retorno de ``Error``). Este valor puede devolverse directamente desde un "
-"macro de error. Puedes ver la lista de códigos de error disponibles en `core/"
-"error_list.h <https://github.com/godotengine/godot/blob/3.x/core/error_list."
-"h>`__."
+"macro de error. Puedes ver la lista de códigos de error disponibles en "
+"`<https://github.com/RebelToolbox/RebelEngine/blob/main/core/error_list.h>"
+"`__."
 
 #: development/engine/core_types.rst:2
 msgid "Core types"
 msgstr "Tipos principales"
 
 #: development/engine/core_types.rst:4
-#, fuzzy
 msgid ""
 "Rebel Engine has a rich set of classes and templates that compose its core, "
 "and everything is built upon them."
 msgstr ""
-"Godot tiene una colección rica de clases y plantillas que componen su "
+"Rebel Engine tiene una colección rica de clases y plantillas que componen su "
 "núcleo, y todo está construido a base de ellas."
 
 #: development/engine/core_types.rst:7
@@ -18100,14 +17991,13 @@ msgid "Definitions"
 msgstr "Definiciones"
 
 #: development/engine/core_types.rst:13
-#, fuzzy
 msgid ""
 "Rebel Engine uses the standard C99 datatypes, such as ``uint8_t``, "
 "``uint32_t``, ``int64_t``, etc. which are nowadays supported by every "
 "compiler. Reinventing the wheel for those is not fun, as it makes code more "
 "difficult to read."
 msgstr ""
-"Godot utiliza los tipos de datos estándar de C99, como ``uint8_t``, "
+"Rebel Engine utiliza los tipos de datos estándar de C99, como ``uint8_t``, "
 "``uint32_t``, ``int64_t``, etc., que en la actualidad son compatibles con "
 "todos los compiladores. Reinventar la rueda para estos tipos de datos no es "
 "divertido y hace que el código sea más difícil de leer."
@@ -18149,12 +18039,11 @@ msgstr ""
 "forzado y ``CharType`` se mapea directamente a ``wchar_t``."
 
 #: development/engine/core_types.rst:34
-#, fuzzy
 msgid ""
 "`core/typedefs.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
 "typedefs.h>`__"
 msgstr ""
-"`core/typedefs.h <https://github.com/godotengine/godot/blob/3.x/core/"
+"`core/typedefs.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
 "typedefs.h>`__"
 
 #: development/engine/core_types.rst:37
@@ -18220,7 +18109,6 @@ msgstr ""
 "asignaciones pequeñas resolverá el problema."
 
 #: development/engine/core_types.rst:62
-#, fuzzy
 msgid ""
 "Rebel Engine ensures that all objects that can be allocated dynamically are "
 "small (less than a few kb at most). But what happens if an allocation is too "
@@ -18230,13 +18118,13 @@ msgid ""
 "will be rearranged and compacted on demand. Depending on the need of the "
 "game, the programmer can configure the dynamic memory pool size."
 msgstr ""
-"Godot se asegura de que todos los objetos que pueden ser asignados "
+"Rebel Engine se asegura de que todos los objetos que pueden ser asignados "
 "dinámicamente sean pequeños (como máximo unos pocos kb). Pero, ¿qué sucede "
 "si una asignación es demasiado grande (como una imagen o geometría de malla "
-"o una matriz grande)? En este caso, Godot tiene la opción de utilizar un "
-"\"pool\" de memoria dinámica. Esta memoria debe estar bloqueada para poder "
-"acceder a ella, y si una asignación se queda sin memoria, el \"pool\" se "
-"reorganizará y compactará según sea necesario. Dependiendo de las "
+"o una matriz grande)? En este caso, Rebel Engine tiene la opción de utilizar "
+"un \"pool\" de memoria dinámica. Esta memoria debe estar bloqueada para "
+"poder acceder a ella, y si una asignación se queda sin memoria, el \"pool\" "
+"se reorganizará y compactará según sea necesario. Dependiendo de las "
 "necesidades del juego, el programador puede configurar el tamaño del "
 "\"pool\" de memoria dinámica."
 
@@ -18245,22 +18133,21 @@ msgid "Allocating memory"
 msgstr "Asignación de memoria"
 
 #: development/engine/core_types.rst:73
-#, fuzzy
 msgid ""
 "Rebel Engine has many tools for tracking memory usage in a game, especially "
 "during debug. Because of this, the regular C and C++ library calls should "
 "not be used. Instead, a few other ones are provided."
 msgstr ""
-"Godot tiene muchas herramientas para rastrear el uso de memoria en un juego, "
-"especialmente durante la depuración. Debido a esto, no se deben usar las "
-"llamadas regulares a las bibliotecas C y C++. En su lugar, se proporcionan "
-"algunas otras."
+"Rebel Engine tiene muchas herramientas para rastrear el uso de memoria en un "
+"juego, especialmente durante la depuración. Debido a esto, no se deben usar "
+"las llamadas regulares a las bibliotecas C y C++. En su lugar, se "
+"proporcionan algunas otras."
 
 #: development/engine/core_types.rst:77
-#, fuzzy
 msgid "For C-style allocation, Rebel Engine provides a few macros:"
 msgstr ""
-"Para la asignación de memoria de estilo C, Godot proporciona algunos macros:"
+"Para la asignación de memoria de estilo C, Rebel Engine proporciona algunos "
+"macros:"
 
 #: development/engine/core_types.rst:85
 msgid ""
@@ -18319,31 +18206,28 @@ msgstr ""
 "accesos."
 
 #: development/engine/core_types.rst:130
-#, fuzzy
 msgid ""
 "`core/os/memory.h <https://github.com/RebelToolbox/RebelEngine/blob/main/"
 "core/os/memory.h>`__"
 msgstr ""
-"`core/os/memory.h <https://github.com/godotengine/godot/blob/3.x/core/os/"
-"memory.h>`__"
+"`core/os/memory.h <https://github.com/RebelToolbox/RebelEngine/blob/main/"
+"core/os/memory.h>`__"
 
 #: development/engine/core_types.rst:131
-#, fuzzy
 msgid ""
 "`core/pool_vector.h <https://github.com/RebelToolbox/RebelEngine/blob/main/"
 "core/pool_vector.h>`__"
 msgstr ""
-"`core/pool_vector.h <https://github.com/godotengine/godot/blob/3.x/core/"
-"pool_vector.cpp>`__"
+"`core/pool_vector.h <https://github.com/RebelToolbox/RebelEngine/blob/main/"
+"core/pool_vector.h>`__"
 
 #: development/engine/core_types.rst:134
 msgid "Containers"
 msgstr "Contenedores"
 
 #: development/engine/core_types.rst:136
-#, fuzzy
 msgid "Rebel Engine provides also a set of common containers:"
-msgstr "Godot también proporciona un conjunto de contenedores comunes:"
+msgstr "Rebel Engine también proporciona un conjunto de contenedores comunes:"
 
 #: development/engine/core_types.rst:138
 msgid "Vector"
@@ -18394,37 +18278,36 @@ msgstr ""
 "contador de referencias."
 
 #: development/engine/core_types.rst:163
-#, fuzzy
 msgid ""
 "`core/vector.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
 "vector.h>`__"
 msgstr ""
-"`core/vector.h <https://github.com/godotengine/godot/blob/3.x/core/vector."
-"h>`__"
+"`core/vector.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
+"vector.h>`__"
 
 #: development/engine/core_types.rst:164
-#, fuzzy
 msgid ""
 "`core/list.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
 "list.h>`__"
 msgstr ""
-"`core/list.h <https://github.com/godotengine/godot/blob/3.x/core/list.h>`__"
+"`core/list.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
+"list.h>`__"
 
 #: development/engine/core_types.rst:165
-#, fuzzy
 msgid ""
 "`core/set.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/set."
 "h>`__"
 msgstr ""
-"`core/set.h <https://github.com/godotengine/godot/blob/3.x/core/set.h>`__"
+"`core/set.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
+"set.h>`__"
 
 #: development/engine/core_types.rst:166
-#, fuzzy
 msgid ""
 "`core/map.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/map."
 "h>`__"
 msgstr ""
-"`core/map.h <https://github.com/godotengine/godot/blob/3.x/core/map.h>`__"
+"`core/map.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
+"map.h>`__"
 
 #: development/engine/core_types.rst:169
 #: tutorials/plugins/editor/import_plugins.rst:246
@@ -18434,27 +18317,25 @@ msgid "String"
 msgstr "Cadena"
 
 #: development/engine/core_types.rst:171
-#, fuzzy
 msgid ""
 "Rebel Engine also provides a String class. This class has a huge amount of "
 "features, full Unicode support in all the functions (like case operations) "
 "and utf8 parsing/extracting, as well as helpers for conversion and "
 "visualization."
 msgstr ""
-"Godot también proporciona una clase String. Esta clase tiene una gran "
+"Rebel Engine también proporciona una clase String. Esta clase tiene una gran "
 "cantidad de funciones, soporte completo para Unicode en todas las "
 "operaciones (como operaciones de mayúsculas y minúsculas) y análisis/"
 "extracción de utf8, así como funciones de ayuda para conversiones y "
 "visualización."
 
 #: development/engine/core_types.rst:178
-#, fuzzy
 msgid ""
 "`core/ustring.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
 "ustring.h>`__"
 msgstr ""
-"`core/ustring.h <https://github.com/godotengine/godot/blob/3.x/core/ustring."
-"h>`__"
+"`core/ustring.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
+"ustring.h>`__"
 
 #: development/engine/core_types.rst:181
 msgid "StringName"
@@ -18481,13 +18362,12 @@ msgstr ""
 "comparación es rápida."
 
 #: development/engine/core_types.rst:193
-#, fuzzy
 msgid ""
 "`core/string_name.h <https://github.com/RebelToolbox/RebelEngine/blob/main/"
 "core/string_name.h>`__"
 msgstr ""
-"`core/string_name.h <https://github.com/godotengine/godot/blob/3.x/core/"
-"string_name.h>`__"
+"`core/string_name.h <https://github.com/RebelToolbox/RebelEngine/blob/main/"
+"core/string_name.h>`__"
 
 #: development/engine/core_types.rst:196
 msgid "Math types"
@@ -18501,12 +18381,12 @@ msgstr ""
 "math.."
 
 #: development/engine/core_types.rst:203
-#, fuzzy
 msgid ""
 "`core/math <https://github.com/RebelToolbox/RebelEngine/tree/main/core/"
 "math>`__"
 msgstr ""
-"`core/math <https://github.com/godotengine/godot/tree/3.x/core/math>`__"
+"`core/math <https://github.com/RebelToolbox/RebelEngine/tree/main/core/math>"
+"`__"
 
 #: development/engine/core_types.rst:206 development/file_formats/tscn.rst:138
 msgid "NodePath"
@@ -18521,13 +18401,12 @@ msgstr ""
 "de escena y hacer referencia a ellas de manera rápida."
 
 #: development/engine/core_types.rst:213
-#, fuzzy
 msgid ""
 "`core/node_path.h <https://github.com/RebelToolbox/RebelEngine/blob/main/"
 "core/node_path.h>`__"
 msgstr ""
-"`core/node_path.h <https://github.com/godotengine/godot/blob/3.x/core/"
-"node_path.h>`__"
+"`core/node_path.h <https://github.com/RebelToolbox/RebelEngine/blob/main/"
+"core/node_path.h>`__"
 
 #: development/engine/core_types.rst:216
 msgid "RID"
@@ -18547,12 +18426,12 @@ msgstr ""
 
 #: development/engine/core_types.rst:225
 #: development/engine/custom_servers.rst:312
-#, fuzzy
 msgid ""
 "`core/rid.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/rid."
 "h>`__"
 msgstr ""
-"`core/rid.h <https://github.com/godotengine/godot/blob/3.x/core/rid.h>`__"
+"`core/rid.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
+"rid.h>`__"
 
 #: development/engine/custom_audiostreams.rst:2
 msgid "Custom AudioStreams"
@@ -18593,23 +18472,21 @@ msgstr ""
 #: development/engine/custom_audiostreams.rst:22
 #: development/engine/custom_audiostreams.rst:115
 #: development/engine/custom_audiostreams.rst:346
-#, fuzzy
 msgid ""
 "`servers/audio/audio_stream.h <https://github.com/RebelToolbox/RebelEngine/"
 "blob/main/servers/audio/audio_stream.h>`__"
 msgstr ""
-"`servers/audio/audio_stream.h <https://github.com/godotengine/godot/blob/"
-"master/servers/audio/audio_stream.h>`__"
+"`servers/audio/audio_stream.h <https://github.com/RebelToolbox/RebelEngine/"
+"blob/main/servers/audio/audio_stream.h>`__"
 
 #: development/engine/custom_audiostreams.rst:23
 #: development/engine/custom_audiostreams.rst:347
-#, fuzzy
 msgid ""
 "`audio/audio_stream_player.h <https://github.com/RebelToolbox/RebelEngine/"
 "blob/main/scene/audio/audio_stream_player.h>`__"
 msgstr ""
-"`servers/audio/audio_stream.h <https://github.com/godotengine/godot/blob/"
-"master/servers/audio/audio_stream.h>`__"
+"`audio/audio_stream_player.h <https://github.com/RebelToolbox/RebelEngine/"
+"blob/main/scene/audio/audio_stream_player.h>`__"
 
 #: development/engine/custom_audiostreams.rst:26
 #: development/engine/custom_modules_in_cpp.rst:20
@@ -18687,15 +18564,14 @@ msgid "Resampling"
 msgstr "Remuestreo"
 
 #: development/engine/custom_audiostreams.rst:230
-#, fuzzy
 msgid ""
 "Rebel Engine's AudioServer currently uses 44100 Hz sample rate. When other "
 "sample rates are needed such as 48000, either provide one or use "
 "AudioStreamPlaybackResampled. Rebel Engine provides cubic interpolation for "
 "audio resampling."
 msgstr ""
-"El AudioServer de Godot actualmente utiliza una frecuencia de muestreo "
-"(sample rate) de 44100 Hz. Cuando se necesiten otras frecuencias de "
+"El AudioServer de Rebel Engine actualmente utiliza una frecuencia de "
+"muestreo (sample rate) de 44100 Hz. Cuando se necesiten otras frecuencias de "
 "muestreo, como 48000 Hz, es necesario proporcionar una o utilizar "
 "AudioStreamPlaybackResampled. Godot ofrece interpolación cúbica para el "
 "remuestreo de audio."
@@ -18711,30 +18587,29 @@ msgstr ""
 "para obtener la frecuencia de mezcla actual."
 
 #: development/engine/custom_audiostreams.rst:345
-#, fuzzy
 msgid ""
 "`core/math/audio_frame.h <https://github.com/RebelToolbox/RebelEngine/blob/"
 "main/core/math/audio_frame.h>`__"
 msgstr ""
-"`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/"
-"core/math/audio_frame.h>`__"
+"`core/math/audio_frame.h <https://github.com/RebelToolbox/RebelEngine/blob/"
+"main/core/math/audio_frame.h>`__"
 
 #: development/engine/custom_modules_in_cpp.rst:2
 msgid "Custom modules in C++"
 msgstr "Módulos personalizados en C++"
 
 #: development/engine/custom_modules_in_cpp.rst:7
-#, fuzzy
 msgid ""
 "Rebel Engine allows extending the engine in a modular way. New modules can "
 "be created and then enabled/disabled. This allows for adding new engine "
 "functionality at every level without modifying the core, which can be split "
 "for use and reuse in different modules."
 msgstr ""
-"Godot permite extender el motor de forma modular. Se pueden crear nuevos "
-"módulos, y después, activarlos o desactivarlos. Esto permite añadir nuevas "
-"funcionalidades para el motor en todos los niveles sin modificar el núcleo, "
-"el cual se puede escindir para su uso y reutilizar en diferentes módulos."
+"Rebel Engine permite extender el motor de forma modular. Se pueden crear "
+"nuevos módulos, y después, activarlos o desactivarlos. Esto permite añadir "
+"nuevas funcionalidades para el motor en todos los niveles sin modificar el "
+"núcleo, el cual se puede escindir para su uso y reutilizar en diferentes "
+"módulos."
 
 #: development/engine/custom_modules_in_cpp.rst:12
 msgid ""
@@ -18762,9 +18637,8 @@ msgstr ""
 "módulos C++ puede resultar útil en los siguientes escenarios:"
 
 #: development/engine/custom_modules_in_cpp.rst:26
-#, fuzzy
 msgid "Binding an external library to Rebel Engine (like PhysX, FMOD, etc)."
-msgstr "Vincular una biblioteca externa a Godot (como PhysX, FMOD, etc.)."
+msgstr "Vincular una biblioteca externa a Rebel Engine (como PhysX, FMOD, etc)."
 
 #: development/engine/custom_modules_in_cpp.rst:27
 msgid "Optimize critical parts of a game."
@@ -18787,13 +18661,12 @@ msgid "Creating a new module"
 msgstr "Crear un nuevo módulo"
 
 #: development/engine/custom_modules_in_cpp.rst:35
-#, fuzzy
 msgid ""
 "Before creating a module, make sure to :ref:`download the source code of "
 "Rebel Engine and compile it <toc-devel-compiling>`."
 msgstr ""
 "Antes de crear un módulo, asegúrate de :ref:`descargar el código fuente de "
-"Godot y compilarlo <toc-devel-compiling>`."
+"Rebel Engine y compilarlo <toc-devel-compiling>`."
 
 #: development/engine/custom_modules_in_cpp.rst:38
 msgid ""
@@ -18806,12 +18679,11 @@ msgstr ""
 "VCS diferente en módulos para utilizarlo."
 
 #: development/engine/custom_modules_in_cpp.rst:42
-#, fuzzy
 msgid ""
 "The example module will be called \"summator\" (``rebel/modules/summator``). "
 "Inside we will create a simple summator class:"
 msgstr ""
-"El módulo de ejemplo será llamado \"summator\" (``godot/modules/summator``). "
+"El módulo de ejemplo será llamado \"summator\" (``rebel/modules/summator``). "
 "Dentro crearemos una clase summator simple:"
 
 #: development/engine/custom_modules_in_cpp.rst:72
@@ -18843,7 +18715,6 @@ msgstr ""
 "una lista de cadenas de Python:"
 
 #: development/engine/custom_modules_in_cpp.rst:160
-#, fuzzy
 msgid ""
 "This allows for powerful possibilities using Python to construct the file "
 "list using loops and logic statements. Look at some modules that ship with "
@@ -18851,19 +18722,18 @@ msgid ""
 msgstr ""
 "Esto permite grandes posibilidades usando Python para construir la lista de "
 "archivos usando bucles y declaraciones lógicas. Eche un vistazo a algunos "
-"módulos que vienen con Godot por defecto para ver ejemplos."
+"módulos que vienen con Rebel Engine por defecto para ver ejemplos."
 
 #: development/engine/custom_modules_in_cpp.rst:172
-#, fuzzy
 msgid ""
 "If you want to add custom compiler flags when building your module, you need "
 "to clone ``env`` first, so it won't add those flags to whole Rebel Engine "
 "build (which can cause errors). Example ``SCsub`` with custom flags:"
 msgstr ""
-"Si desea añadir banderas personalizadas de compilador al construir su "
+"Si desea añadir indicadores personalizadas de compilador al construir su "
 "módulo, primero necesita clonar `` env ``, para que no añada esas banderas a "
-"toda la compilación de Godot (lo cual puede causar errores). Ejemplo de `` "
-"SCsub`` con banderas personalizadas:"
+"toda la compilación de Rebel Engine (lo cual puede causar errores). Ejemplo "
+"de `` SCsub`` con banderas personalizadas:"
 
 #: development/engine/custom_modules_in_cpp.rst:190
 msgid ""
@@ -19060,13 +18930,12 @@ msgstr ""
 "utiliza :ref:`GDNative <doc_what_is_gdnative>` en su lugar."
 
 #: development/engine/custom_modules_in_cpp.rst:316
-#, fuzzy
 msgid ""
 "So far, we defined a clean SCsub that allows us to add the sources of our "
 "new module as part of the Rebel Engine binary."
 msgstr ""
 "Hasta ahora, hemos definido un SCsub limpio que nos permite agregar las "
-"fuentes de nuestro nuevo módulo como parte del binario de Godot."
+"fuentes de nuestro nuevo módulo como parte del binario de Rebel Engine."
 
 #: development/engine/custom_modules_in_cpp.rst:319
 msgid ""
@@ -19099,7 +18968,6 @@ msgstr ""
 "de nuestro juego."
 
 #: development/engine/custom_modules_in_cpp.rst:367
-#, fuzzy
 msgid ""
 "Once compiled, we should end up with a ``bin`` directory containing both the "
 "``rebel*`` binary and our ``libsummator*.so``. However given the .so is not "
@@ -19107,8 +18975,8 @@ msgid ""
 "it during runtime with the ``LD_LIBRARY_PATH`` environment variable:"
 msgstr ""
 "Una vez compilado, deberíamos obtener un directorio ``bin`` que contenga "
-"tanto el ejecutable ``godot*`` como nuestra librería ``libsummator*.so``. "
-"Sin embargo, dado que la librería .so no se encuentra en un directorio "
+"tanto el ejecutable ``rebel**`` como nuestra biblioteca ``libsummator*.so``. "
+"Sin embargo, dado que la biblioteca .so no se encuentra en un directorio "
 "estándar (como ``/usr/lib``), debemos ayudar a nuestro ejecutable a "
 "encontrarla durante la ejecución usando la variable de entorno "
 "``LD_LIBRARY_PATH``:"
@@ -19122,7 +18990,6 @@ msgstr ""
 "ejecutar tu proyecto desde el editor."
 
 #: development/engine/custom_modules_in_cpp.rst:381
-#, fuzzy
 msgid ""
 "On top of that, it would be nice to be able to select whether to compile our "
 "module as shared library (for development) or as a part of the Rebel Engine "
@@ -19131,18 +18998,18 @@ msgid ""
 msgstr ""
 "Además, sería conveniente poder seleccionar si queremos compilar nuestro "
 "módulo como una biblioteca compartida (para desarrollo) o como parte del "
-"binario de Godot (para distribución). Para hacer esto, podemos definir una "
-"bandera personalizada que se pasará a SCons usando el comando ``ARGUMENT``:"
+"binario de Rebel Engine (para distribución). Para hacer esto, podemos "
+"definir un indicador personalizado que se pasará a SCons usando el comando "
+"``ARGUMENT``:"
 
 #: development/engine/custom_modules_in_cpp.rst:412
-#, fuzzy
 msgid ""
 "Now by default ``scons`` command will build our module as part of Rebel "
 "Engine's binary and as a shared library when passing ``summator_shared=yes``."
 msgstr ""
 "Ahora, por defecto, el comando ``scons`` construirá nuestro módulo como "
-"parte del binario de Godot y como una biblioteca compartida cuando se le "
-"pase ``summator_shared=yes``."
+"parte del binario de Rebel Engine y como una biblioteca compartida cuando se "
+"le pase ``summator_shared=yes``."
 
 #: development/engine/custom_modules_in_cpp.rst:415
 msgid ""
@@ -19215,29 +19082,27 @@ msgid "Now we can generate the documentation:"
 msgstr "Ahora podemos generar la documentación:"
 
 #: development/engine/custom_modules_in_cpp.rst:470
-#, fuzzy
 msgid ""
 "We can do this via running Rebel Engine with the --generate-docs option, "
 "which will generate the Rebel Engine API reference in XML format."
 msgstr ""
-"Podemos hacer esto ejecutando la herramienta de documentación de Godot, es "
-"decir, ``godot --doctool <ruta>``, lo que volcará la referencia de la API "
-"del motor en el directorio proporcionado ``<ruta>`` en formato XML."
+"Podemos hacer esto ejecutando la herramienta de documentación de Rebel "
+"Engine, es decir, ``godot --doctool <ruta>``, lo que volcará la referencia "
+"del API del motor en el directorio proporcionado ``<ruta>`` en formato XML."
 
 #: development/engine/custom_modules_in_cpp.rst:473
 msgid "Run command:"
 msgstr "Ejecute el comando:"
 
 #: development/engine/custom_modules_in_cpp.rst:479
-#, fuzzy
 msgid ""
 "Now if you go to the ``RebelEngine/modules/summator/docs`` folder, you will "
 "see that it contains a ``Summator.xml`` file, or any other classes that you "
 "referenced in your ``get_classes`` function."
 msgstr ""
-"Ahora, si vas a la carpeta ``godot/modules/summator/doc_classes``, verás que "
-"contiene un archivo llamado ``Summator.xml``, o cualquier otra clase que "
-"hayas referenciado en tu función ``get_doc_classes``."
+"Ahora, si vas a la carpeta ``RebelEngine/modules/summator/doc_classes``, "
+"verás que contiene un archivo llamado ``Summator.xml``, o cualquier otra "
+"clase que hayas referenciado en tu función ``get_doc_classes``."
 
 #: development/engine/custom_modules_in_cpp.rst:483
 #, fuzzy
@@ -19265,17 +19130,16 @@ msgstr ""
 "modificar uno de los archivos XML y recompilar el motor a partir de ahora."
 
 #: development/engine/custom_modules_in_cpp.rst:491
-#, fuzzy
 msgid ""
 "If you change your module's API, you can also re-extract the docs, they will "
 "contain the things that you previously added. Of course if you point it to "
 "your Rebel Engine folder, make sure you don't lose work by extracting older "
 "docs from an older engine build on top of the newer ones."
 msgstr ""
-"Si cambias la API de tu módulo, también puedes extraer nuevamente la "
+"Si cambias el API de tu módulo, también puedes extraer nuevamente la "
 "documentación; esta contendrá las cosas que agregaste previamente. Por "
-"supuesto, si apuntas la extracción a tu carpeta de Godot, asegúrate de no "
-"perder el trabajo al extraer documentación más antigua de una versión "
+"supuesto, si apuntas la extracción a tu carpeta de Rebel Engine, asegúrate "
+"de no perder el trabajo al extraer documentación más antigua de una versión "
 "anterior del motor sobre las más recientes."
 
 #: development/engine/custom_modules_in_cpp.rst:497
@@ -19335,10 +19199,9 @@ msgid "Remember to:"
 msgstr "Recordar a:"
 
 #: development/engine/custom_modules_in_cpp.rst:519
-#, fuzzy
 msgid "use ``GDCLASS`` macro for inheritance, so Rebel Engine can wrap it"
 msgstr ""
-"use la macro `` GDCLASS '' para la herencia, para que Godot pueda "
+"use la macro `` GDCLASS '' para la herencia, para que Rebel Engine pueda "
 "encapsularla"
 
 #: development/engine/custom_modules_in_cpp.rst:520
@@ -19402,14 +19265,13 @@ msgstr ""
 "sin procesar."
 
 #: development/engine/custom_resource_format_loaders.rst:12
-#, fuzzy
 msgid ""
 "This guide assumes the reader knows how to create C++ modules and Rebel "
 "Engine data types. If not, refer to this guide :doc:`custom_modules_in_cpp`."
 msgstr ""
 "Esta guía asume que el lector sabe cómo crear módulos en C++ y tipos de "
-"datos de Godot. Si no es así, consulta esta guía: :ref:"
-"`doc_custom_modules_in_c++`."
+"datos de Rebel Engine. Si no es así, consulta esta guía "
+":doc:`custom_modules_in_cpp`."
 
 #: development/engine/custom_resource_format_loaders.rst:17
 msgid ":ref:`ResourceLoader<class_resourceloader>`"
@@ -19418,13 +19280,12 @@ msgstr ":ref:`ResourceLoader<class_resourceloader>`"
 #: development/engine/custom_resource_format_loaders.rst:18
 #: development/engine/custom_resource_format_loaders.rst:352
 #: development/engine/object_class.rst:296
-#, fuzzy
 msgid ""
 "`core/io/resource_loader.h <https://github.com/RebelToolbox/RebelEngine/blob/"
 "main/core/io/resource_loader.h>`__"
 msgstr ""
-"`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/3.x/"
-"core/io/resource_loader.h>`__"
+"`core/io/resource_loader.h <https://github.com/RebelToolbox/RebelEngine/blob/"
+"main/core/io/resource_loader.h>`__"
 
 #: development/engine/custom_resource_format_loaders.rst:23
 msgid "Adding new support for many file formats"
@@ -19455,13 +19316,12 @@ msgid "ImageFormatLoader should be used to load images."
 msgstr "ImageFormatLoader se deve usar para cargar imagenes."
 
 #: development/engine/custom_resource_format_loaders.rst:37
-#, fuzzy
 msgid ""
 "`core/io/image_loader.h <https://github.com/RebelToolbox/RebelEngine/blob/"
 "main/core/io/image_loader.h>`__"
 msgstr ""
-"`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
-"core/io/image_loader.h>`_"
+"`core/io/image_loader.h <https://github.com/RebelToolbox/RebelEngine/blob/"
+"main/core/io/image_loader.h>`__"
 
 #: development/engine/custom_resource_format_loaders.rst:41
 msgid "Creating a ResourceFormatLoader"
@@ -19475,15 +19335,14 @@ msgstr ""
 "``ResourceFormatLoader``."
 
 #: development/engine/custom_resource_format_loaders.rst:45
-#, fuzzy
 msgid ""
 "ResourceFormatLoaders are usually simple classes which return all the "
 "necessary metadata for supporting new extensions in Rebel Engine. The class "
 "must return the format name and the extension string."
 msgstr ""
 "Los ResourceFormatLoaders son generalmente clases simples que devuelven toda "
-"la información necesaria para admitir nuevas extensiones en Godot. La clase "
-"debe devolver el nombre del formato y la cadena de extensión."
+"la información necesaria para admitir nuevas extensiones en Rebel Engine. La "
+"clase debe devolver el nombre del formato y la cadena de extensión."
 
 #: development/engine/custom_resource_format_loaders.rst:49
 msgid ""
@@ -19512,16 +19371,15 @@ msgid "Creating custom data types"
 msgstr "Creando tipos de datos personalizados"
 
 #: development/engine/custom_resource_format_loaders.rst:156
-#, fuzzy
 msgid ""
 "Rebel Engine may not have a proper substitute within its :doc:`core_types` "
 "or managed resources. Rebel Engine needs a new registered data type to "
 "understand additional binary formats such as machine learning models."
 msgstr ""
-"Es posible que Godot no tenga un sustituto adecuado dentro de sus :ref:"
-"`doc_core_types` o recursos gestionados. Godot necesita un nuevo tipo de "
-"datos registrado para comprender formatos binarios adicionales, como modelos "
-"de aprendizaje automático (machine learning models)."
+"Es posible que Rebel Engine no tenga un sustituto adecuado dentro de sus "
+":doc:`core_types` o recursos gestionados. Rebel Engine necesita un nuevo "
+"tipo de datos registrado para comprender formatos binarios adicionales, como "
+"modelos de aprendizaje automático (machine learning models)."
 
 #: development/engine/custom_resource_format_loaders.rst:160
 msgid "Here is an example of creating a custom datatype:"
@@ -19532,14 +19390,13 @@ msgid "Considerations"
 msgstr "Consideraciones"
 
 #: development/engine/custom_resource_format_loaders.rst:260
-#, fuzzy
 msgid ""
 "Some libraries may not define certain common routines such as IO handling. "
 "Therefore, Rebel Engine call translations are required."
 msgstr ""
 "Algunas bibliotecas pueden no definir ciertas rutinas comunes, como el "
 "manejo de E/S (entrada/salida). Por lo tanto, se requieren traducciones de "
-"llamadas en Godot."
+"llamadas en Rebel Engine."
 
 #: development/engine/custom_resource_format_loaders.rst:263
 msgid ""
@@ -19562,28 +19419,26 @@ msgstr ""
 "kw=streambuf>`_"
 
 #: development/engine/custom_resource_format_loaders.rst:302
-#, fuzzy
 msgid ""
 "`core/os/file_access.h <https://github.com/RebelToolbox/RebelEngine/blob/"
 "main/core/os/file_access.h>`__"
 msgstr ""
-"`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
-"os/file_access.h>`_"
+"`core/os/file_access.h <https://github.com/RebelToolbox/RebelEngine/blob/"
+"main/core/os/file_access.h>`__"
 
 #: development/engine/custom_resource_format_loaders.rst:305
 msgid "Registering the new file format"
 msgstr "Registrando un nuevo formato de archivo"
 
 #: development/engine/custom_resource_format_loaders.rst:307
-#, fuzzy
 msgid ""
 "Rebel Engine registers ``ResourcesFormatLoader`` with a ``ResourceLoader`` "
 "handler. The handler selects the proper loader automatically when ``load`` "
 "is called."
 msgstr ""
-"Godot registra \"ResourceFormatLoader\" con un manejador \"ResourceLoader\". "
-"El manejador selecciona automáticamente el cargador adecuado cuando se llama "
-"a \"load\"."
+"Rebel Engine registra ``ResourceFormatLoader`` con un manejador "
+"``ResourceLoader``. El manejador selecciona automáticamente el cargador "
+"adecuado cuando se llama a ``load``."
 
 #: development/engine/custom_resource_format_loaders.rst:355
 msgid "Loading it on GDScript"
@@ -19602,12 +19457,10 @@ msgid "Then attach the following script to any node::"
 msgstr "Posteriormente añádele el siguiente script a cualquier nodo::"
 
 #: development/engine/custom_servers.rst:2
-#, fuzzy
 msgid "Custom Servers"
-msgstr "Servidores Godot personalizados"
+msgstr "Servidores Personalizados"
 
 #: development/engine/custom_servers.rst:7
-#, fuzzy
 msgid ""
 "Rebel Engine implements multi-threading as servers. Servers are daemons "
 "which manage data, process it, and push the result. Servers implement the "
@@ -19615,21 +19468,20 @@ msgid ""
 "engine and other modules. In addition, the server claims ownership for its "
 "RID allocations."
 msgstr ""
-"Godot implementa el multihilo como servidores. Los servidores son demonios "
-"que gestionan datos, los procesan y envían el resultado. Los servidores "
-"implementan el patrón mediador, que interpreta el ID del recurso y procesa "
-"datos para el motor y otros módulos. Además, el servidor reclama la "
-"propiedad de sus asignaciones de RID (Resource ID)."
+"Rebel Engine implementa el multi‐hilo como servidores. Los servidores son "
+"demonios que gestionan datos, los procesan y envían el resultado. Los "
+"servidores implementan el patrón mediador, que interpreta el ID del recurso "
+"y procesa datos para el motor y otros módulos. Además, el servidor reclama "
+"la propiedad de sus asignaciones de RID (Resource ID)."
 
 #: development/engine/custom_servers.rst:13
-#, fuzzy
 msgid ""
 "This guide assumes the reader knows how to create C++ modules and Rebel "
 "Engine data types. If not, refer to :doc:`custom_modules_in_cpp`."
 msgstr ""
 "Esta guía asume que el lector sabe cómo crear módulos en C++ y tipos de "
-"datos de Godot. Si no es así, consulta :ref:`doc_custom_modules_in_c++` para "
-"obtener más información al respecto."
+"datos de Rebel Engine. Si no es así, consulta :doc:`custom_modules_in_cpp` "
+"para obtener más información al respecto."
 
 #: development/engine/custom_servers.rst:18
 msgid "`Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
@@ -19665,9 +19517,8 @@ msgid "And more…"
 msgstr "Y más."
 
 #: development/engine/custom_servers.rst:32
-#, fuzzy
 msgid "Creating a Rebel Server"
-msgstr "Creando un servidor Godot"
+msgstr "Creando un Rebel Server"
 
 #: development/engine/custom_servers.rst:34
 msgid ""
@@ -19683,18 +19534,17 @@ msgid "Custom managed resource data"
 msgstr "Datos de recursos personalizados gestionados"
 
 #: development/engine/custom_servers.rst:270
-#, fuzzy
 msgid ""
 "Rebel Servers implement a mediator pattern. All data types inherit "
 "``RID_Data``. ``RID_Owner<MyRID_Data>`` owns the object when ``make_rid`` is "
 "called. During debug mode only, RID_Owner maintains a list of RIDs. In "
 "practice, RIDs are similar to writing object-oriented C code."
 msgstr ""
-"Los servidores de Godot implementan un patrón mediador. Todos los tipos de "
-"datos heredan de ``RID_Data``. ``RID_Owner<MyRID_Data>`` es el propietario "
-"del objeto cuando se llama a ``make_rid``. Durante el modo de depuración "
-"solamente, ``RID_Owner`` mantiene una lista de RIDs. En la práctica, los "
-"RIDs son similares a escribir código en C orientado a objetos."
+"Los Rebel Servers implementan un patrón mediador. Todos los tipos de datos "
+"heredan de ``RID_Data``. ``RID_Owner<MyRID_Data>`` es el propietario del "
+"objeto cuando se llama a ``make_rid``. Durante el modo de depuración "
+"solamente, ``RID_Owner`` mantiene una lista de los RID. En la práctica, los "
+"RID son similares a escribir código en C orientado a objetos."
 
 #: development/engine/custom_servers.rst:311
 msgid ":ref:`RID<class_rid>`"
@@ -19715,17 +19565,16 @@ msgstr ""
 "mientras que ``unregister_types.cpp`` limpia el servidor."
 
 #: development/engine/custom_servers.rst:321
-#, fuzzy
 msgid ""
 "Since a Rebel Server class creates an instance and binds it to a static "
 "singleton, binding the class might not reference the correct instance. "
 "Therefore, a dummy class must be created to reference the proper Rebel "
 "Server."
 msgstr ""
-"Ya que una clase de servidor Godot crea una instancia y la enlaza a un "
+"Ya que una clase de Rebel Server crea una instancia y la enlaza a un "
 "singleton estático, enlazar la clase podría no hacer referencia a la "
-"instancia correcta. Por lo tanto, se debe crear una clase dummy para hacer "
-"referencia al servidor Godot apropiado."
+"instancia correcta. Por lo tanto, se debe crear una clase simulada para "
+"hacer referencia al Rebel Server apropiado."
 
 #: development/engine/custom_servers.rst:325
 msgid ""
@@ -19736,13 +19585,12 @@ msgstr ""
 ">add_singleton`` para registrar la clase ficticia (dummy class) en GDScript."
 
 #: development/engine/custom_servers.rst:369
-#, fuzzy
 msgid ""
 "`servers/register_server_types.h <https://github.com/RebelToolbox/"
 "RebelEngine/blob/main/servers/register_server_types.h>`__"
 msgstr ""
-"`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
-"blob/master/servers/register_server_types.cpp>`__"
+"`servers/register_server_types.h <https://github.com/RebelToolbox/"
+"RebelEngine/blob/main/servers/register_server_types.h>`__"
 
 #: development/engine/custom_servers.rst:372
 msgid "Bind methods"
@@ -19788,13 +19636,12 @@ msgstr ""
 "``SceneTree::iteration``."
 
 #: development/engine/custom_servers.rst:469
-#, fuzzy
 msgid ""
 "`core/message_queue.h <https://github.com/RebelToolbox/RebelEngine/blob/main/"
 "core/message_queue.h>`__"
 msgstr ""
-"`core/message_queue.cpp <https://github.com/godotengine/godot/blob/3.x/core/"
-"message_queue.cpp>`__"
+"`core/message_queue.h <https://github.com/RebelToolbox/RebelEngine/blob/main/"
+"core/message_queue.h>`__"
 
 #: development/engine/custom_servers.rst:472
 msgid "Summing it up"
@@ -19823,9 +19670,8 @@ msgid "Engine development"
 msgstr "Desarrollo del motor"
 
 #: development/engine/index.rst:5
-#, fuzzy
 msgid "Getting started with Rebel Engine's source code"
-msgstr "Comenzando con el código fuente de Godot"
+msgstr "Comenzando con el código fuente de Rebel Engine"
 
 #: development/engine/index.rst:7
 msgid ""
@@ -19836,18 +19682,16 @@ msgstr ""
 "archivos fuente."
 
 #: development/engine/index.rst:21
-#, fuzzy
 msgid "Extending Rebel Engine by modifying its source code"
-msgstr "Ampliando Godot mediante la modificación de su código fuente"
+msgstr "Ampliando Rebel Engine mediante la modificación de su código fuente"
 
 #: development/engine/index.rst:23
-#, fuzzy
 msgid ""
 "This section covers what you can do by modifying Rebel Engine's C++ source "
 "code."
 msgstr ""
 "Esta sección cubre lo que puedes hacer modificando el código fuente en C++ "
-"de Godot."
+"de Rebel Engine."
 
 #: development/engine/index.rst:36
 msgid "Debugging and profiling"
@@ -19897,37 +19741,34 @@ msgid "Introduction to Rebel Engine development"
 msgstr "Introducción al desarrollo del editor"
 
 #: development/engine/introduction_to_rebel_development.rst:4
-#, fuzzy
 msgid ""
 "This page is meant to introduce the global organization of Rebel Engine's "
 "source code, and give useful tips for extending/fixing the engine on the C++ "
 "side."
 msgstr ""
 "Esta página pretende introducir la organización global del código fuente del "
-"Motor Godot, y dar consejos útiles para extender/fijar el motor en el lado C+"
-"+."
+"Rebel Engine, y dar consejos útiles para extender/fijar el motor en el lado "
+"C++."
 
 #: development/engine/introduction_to_rebel_development.rst:9
 msgid "Architecture diagram"
 msgstr "Diagrama de la arquitectura"
 
 #: development/engine/introduction_to_rebel_development.rst:11
-#, fuzzy
 msgid ""
 "The following diagram describes the architecture used by Rebel Engine, from "
 "the core components down to the abstracted drivers, via the scene structure "
 "and the servers."
 msgstr ""
-"El siguiente diagrama describe la arquitectura utilizada por Godot, desde "
-"los componentes centrales hasta los conductores abstractos, pasando por la "
-"estructura de la escena y los servidores."
+"El siguiente diagrama describe la arquitectura utilizada por Rebel Engine, "
+"desde los componentes centrales hasta los conductores abstractos, pasando "
+"por la estructura de la escena y los servidores."
 
 #: development/engine/introduction_to_rebel_development.rst:18
 msgid "Debugging the editor with gdb"
 msgstr "Depurar el editor con gdb"
 
 #: development/engine/introduction_to_rebel_development.rst:20
-#, fuzzy
 msgid ""
 "If you are writing or correcting bugs affecting Rebel Editor, remember that "
 "the binary will by default run the project manager first, and then only run "
@@ -19935,11 +19776,11 @@ msgid ""
 "project directly, you need to run the editor by passing the ``-e`` argument "
 "to Rebel Engine's binary from within your project's folder. Typically:"
 msgstr ""
-"Si estás escribiendo o corrigiendo errores que afectan al editor de Godot "
+"Si estás escribiendo o corrigiendo errores que afectan al editor de Rebel "
 "Engine, recuerda que el binario por defecto ejecutará primero el gestor de "
 "proyectos, y luego sólo ejecutará el editor en otro proceso una vez que "
 "hayas seleccionado un proyecto. Para lanzar un proyecto directamente, "
-"necesitas ejecutar el editor pasando el argumento ``-e`` al binario de Godot "
+"necesitas ejecutar el editor pasando el argumento ``-e`` al binario de Rebel "
 "Engine desde la carpeta de tu proyecto. Generalmente:"
 
 #: development/engine/introduction_to_rebel_development.rst:33
@@ -19951,9 +19792,8 @@ msgid "Debugging on macOS"
 msgstr "Depurando en macOS"
 
 #: development/engine/macos_debug.rst:5
-#, fuzzy
 msgid "Debugging Rebel Editor"
-msgstr "Depurando el editor de Godot"
+msgstr "Depurando el editor de Rebel Editor"
 
 #: development/engine/macos_debug.rst:7
 msgid ""
@@ -19999,22 +19839,20 @@ msgid "Object class"
 msgstr "Clase Object"
 
 #: development/engine/object_class.rst:6
-#, fuzzy
 msgid ""
 "This page describes the C++ implementation of objects in Rebel Engine. "
 "Looking for the class' API documentation? :ref:`Have a look here. "
 "<class_Object>`"
 msgstr ""
-"Esta página describe la implementación en C++ de los objetos en Godot. "
-"¿Buscas la referencia de la clase Object? :ref:`Échale un vistazo aquí. "
-"<class_Object>`"
+"Esta página describe la implementación en C++ de los objetos en Rebel "
+"Engine. ¿Buscas la documentación de la clase API? :ref:`Échale un vistazo "
+"aquí. <class_Object>`"
 
 #: development/engine/object_class.rst:10
 msgid "General definition"
 msgstr "Definición General"
 
 #: development/engine/object_class.rst:12
-#, fuzzy
 msgid ""
 ":ref:`Object <class_object>` is the base class for almost everything. Most "
 "classes in Rebel Engine inherit directly or indirectly from it. Objects "
@@ -20022,9 +19860,9 @@ msgid ""
 "of using a single macro like this."
 msgstr ""
 ":ref:`Object <class_object>` es la clase base para casi todo. La mayoría de "
-"las clases en Godot heredan directa o indirectamente de ella. Los objetos "
-"proporcionan reflexión y propiedades editables, y declararlos es cuestión de "
-"usar una sola macro como esta."
+"las clases en Rebel Engine heredan directa o indirectamente de ella. Los "
+"objetos proporcionan reflexión y propiedades editables, y declararlos es "
+"cuestión de usar una sola macro como esta."
 
 #: development/engine/object_class.rst:24
 msgid "This makes Objects gain a lot of functionality, like for example"
@@ -20032,13 +19870,12 @@ msgstr ""
 "Esto hace que los objetos adquieran muchas funcionalidades, como por ejemplo"
 
 #: development/engine/object_class.rst:35
-#, fuzzy
 msgid ""
 "`core/object.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
 "object.h>`__"
 msgstr ""
-"`core/object.h <https://github.com/godotengine/godot/blob/3.x/core/object."
-"h>`__"
+"`core/object.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
+"object.h>`__"
 
 #: development/engine/object_class.rst:38
 msgid "Registering an Object"
@@ -20129,12 +19966,11 @@ msgstr ""
 "mayor concisión."
 
 #: development/engine/object_class.rst:92
-#, fuzzy
 msgid ""
 "`core/class_db.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
 "class_db.h>`__"
 msgstr ""
-"`core/class_db.h <https://github.com/godotengine/godot/blob/3.x/core/"
+"`core/class_db.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
 "class_db.h>`__"
 
 #: development/engine/object_class.rst:95
@@ -20296,13 +20132,12 @@ msgid "Dynamic casting"
 msgstr "Casteo dinámico"
 
 #: development/engine/object_class.rst:197
-#, fuzzy
 msgid ""
 "Rebel Engine provides dynamic casting between Object-derived classes, for "
 "example:"
 msgstr ""
-"Godot proporciona el casteo dinámico entre clases derivadas de Object, por "
-"ejemplo:"
+"Rebel Engine proporciona el casteo dinámico entre clases derivadas de "
+"Object, por ejemplo:"
 
 #: development/engine/object_class.rst:207
 msgid ""
@@ -20356,18 +20191,17 @@ msgid "Notifications"
 msgstr "Notificaciones"
 
 #: development/engine/object_class.rst:237
-#, fuzzy
 msgid ""
 "All objects in Rebel Engine have a :ref:`_notification "
 "<class_Object_method__notification>` method that allows it to respond to "
 "engine level callbacks that may relate to it. More information can be found "
 "on the :doc:`/tutorials/best_practices/notifications` page."
 msgstr ""
-"Todos los objetos en Godot tienen un método :ref:`_notification "
+"Todos los objetos en Rebel Engine tienen un método :ref:`_notification "
 "<class_Object_method__notification>` que les permite responder a "
 "devoluciones de llamada a nivel del motor que puedan estar relacionadas con "
-"ellos. Se puede encontrar más información en la página :ref:"
-"`doc_godot_notifications`."
+"ellos. Se puede encontrar más información en la página :doc:`/tutorials/"
+"best_practices/notifications`."
 
 #: development/engine/object_class.rst:242
 msgid "References"
@@ -20393,13 +20227,12 @@ msgstr ""
 "haya más plantillas Ref<> apuntando a él."
 
 #: development/engine/object_class.rst:261
-#, fuzzy
 msgid ""
 "`core/reference.h <https://github.com/RebelToolbox/RebelEngine/blob/main/"
 "core/reference.h>`__"
 msgstr ""
-"`core/reference.h <https://github.com/godotengine/godot/blob/3.x/core/"
-"reference.h>`__"
+"`core/reference.h <https://github.com/RebelToolbox/RebelEngine/blob/main/"
+"core/reference.h>`__"
 
 #: development/engine/object_class.rst:264
 msgid "Resources:"
@@ -20425,12 +20258,11 @@ msgid "Resources without a path are fine too."
 msgstr "Los recursos sin una ruta también son aceptables."
 
 #: development/engine/object_class.rst:276
-#, fuzzy
 msgid ""
 "`core/resource.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
 "resource.h>`__"
 msgstr ""
-"`core/resource.h <https://github.com/godotengine/godot/blob/3.x/core/"
+"`core/resource.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
 "resource.h>`__"
 
 #: development/engine/object_class.rst:279
@@ -20479,26 +20311,25 @@ msgstr ""
 "``res://somerecurso.res::1``. Esto también ayuda a cachearlos al cargarlos."
 
 #: development/engine/object_class.rst:314
-#, fuzzy
 msgid ""
 "`core/io/resource_saver.h <https://github.com/RebelToolbox/RebelEngine/blob/"
 "main/core/io/resource_saver.h>`__"
 msgstr ""
-"`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/3.x/"
-"core/io/resource_saver.h>`__"
+"`core/io/resource_saver.h <https://github.com/RebelToolbox/RebelEngine/blob/"
+"main/core/io/resource_saver.h>`__"
 
 #: development/engine/using_cpp_profilers.rst:2
 msgid "Using C++ profilers"
 msgstr "Usando perfiladores de C++"
 
 #: development/engine/using_cpp_profilers.rst:4
-#, fuzzy
 msgid ""
 "To optimize Rebel Engine's performance, you need to know what to optimize "
 "first. To this end, profilers are useful tools."
 msgstr ""
-"Para optimizar el rendimiento de Godot, es necesario saber qué aspectos "
-"optimizar primero. Para lograr esto, los perfiles son herramientas útiles."
+"Para optimizar el rendimiento de Rebel Engine, es necesario saber qué "
+"aspectos optimizar primero. Para lograr esto, los perfiles son herramientas "
+"útiles."
 
 #: development/engine/using_cpp_profilers.rst:9
 msgid ""
@@ -20544,16 +20375,15 @@ msgid "Setting up Rebel Engine"
 msgstr "Configurando la escena"
 
 #: development/engine/using_cpp_profilers.rst:26
-#, fuzzy
 msgid ""
 "To get useful profiling information, it is **absolutely required** to use a "
 "Rebel Engine build that includes debugging symbols. Official binaries do not "
 "include debugging symbols, since these would make the download size "
 "significantly larger."
 msgstr ""
-"Para obtener información de perfilación útil, es **absolutamente necesario** "
-"utilizar una compilación de Godot que incluya símbolos de depuración. Los "
-"binarios oficiales no incluyen símbolos de depuración, ya que esto "
+"Para obtener información de perfilado útil, es **absolutamente necesario** "
+"utilizar una compilación de Rebel Engine que incluya símbolos de depuración. "
+"Los binarios oficiales no incluyen símbolos de depuración, ya que esto "
 "aumentaría significativamente el tamaño de la descarga."
 
 #: development/engine/using_cpp_profilers.rst:30
@@ -20606,7 +20436,6 @@ msgid "Benchmarking startup/shutdown times"
 msgstr "Realización de pruebas de referencia de los tiempos de inicio/apagado"
 
 #: development/engine/using_cpp_profilers.rst:50
-#, fuzzy
 msgid ""
 "If you're looking into optimizing Rebel Engine's startup/shutdown "
 "performance, you can tell the profiler to use the ``--quit`` command line "
@@ -20615,21 +20444,21 @@ msgid ""
 "project-manager`` or ``--path <path to project directory>`` (which runs a "
 "project directly)."
 msgstr ""
-"Si estás buscando optimizar el rendimiento de inicio y apagado de Godot, "
-"puedes indicar al perfilador que use la opción de línea de comandos ``--"
-"quit`` en el binario de Godot. Esto hará que Godot se cierre justo después "
-"de que haya terminado de iniciarse. La opción ``--quit`` funciona con ``--"
-"editor``, ``--project-manager`` o ``--path <ruta al directorio del "
-"proyecto>`` (que ejecuta un proyecto directamente)."
+"Si estás buscando optimizar el rendimiento de inicio y apagado de Rebel "
+"Engine, puedes indicar al perfilador que use la opción de línea de comandos "
+"``--quit`` en el binario de Rebel Engine. Esto hará que Rebel Engine se "
+"cierre justo después de que haya terminado de iniciarse. La opción ``--"
+"quit`` funciona con ``--editor``, ``--project-manager`` o ``--path <ruta al "
+"directorio del proyecto>`` (que ejecuta un proyecto directamente)."
 
 #: development/engine/using_cpp_profilers.rst:58
-#, fuzzy
 msgid ""
 "See :doc:`/tutorials/editor/command_line_tutorial` for more command line "
 "arguments supported by Rebel Engine."
 msgstr ""
-"Consulta :ref:`doc_command_line_tutorial` para obtener más información sobre "
-"los argumentos de línea de comandos admitidos por Godot."
+"Consulta :doc:`/tutorials/editor/command_line_tutorial` para obtener más "
+"información sobre los argumentos de línea de comandos admitidos por Rebel "
+"Engine."
 
 #: development/engine/using_cpp_profilers.rst:62
 msgid "Profiler-specific instructions"
@@ -20640,27 +20469,25 @@ msgid "VerySleepy"
 msgstr "VerySleepy"
 
 #: development/engine/using_cpp_profilers.rst:67
-#, fuzzy
 msgid ""
 "Start the Rebel Editor or your project first. If you start the project "
 "manager, make sure to edit or run a project first. Otherwise, the profiler "
 "will not track the child process since the project manager will spawn a "
 "child process for every project edited or run."
 msgstr ""
-"Primero, inicia el editor de Godot o tu proyecto. Si inicias el gestor de "
-"proyectos, asegúrate de editar o ejecutar un proyecto primero. De lo "
-"contrario, el perfilador no seguirá el proceso secundario ya que el gestor "
-"de proyectos generará un proceso secundario para cada proyecto editado o "
-"ejecutado."
+"Primero, inicia el editor de Rebel Editor o tu proyecto. Si inicias el "
+"gestor de proyectos, asegúrate de editar o ejecutar un proyecto primero. De "
+"lo contrario, el perfilador no seguirá el proceso secundario ya que el "
+"gestor de proyectos generará un proceso secundario para cada proyecto "
+"editado o ejecutado."
 
 #: development/engine/using_cpp_profilers.rst:71
-#, fuzzy
 msgid ""
 "Open VerySleepy and select the Rebel Engine executable in the list of "
 "processes on the left:"
 msgstr ""
-"Abre VerySleepy y selecciona el ejecutable de Godot en la lista de procesos "
-"que aparece a la izquierda:"
+"Abre VerySleepy y selecciona el ejecutable de Rebel Engine en la lista de "
+"procesos que aparece a la izquierda:"
 
 #: development/engine/using_cpp_profilers.rst:75
 msgid "Click the **Profile All** button on the right to start profiling."
@@ -20681,7 +20508,6 @@ msgid "Wait for the results window to appear."
 msgstr "Espera a que aparezca la ventana de resultados."
 
 #: development/engine/using_cpp_profilers.rst:78
-#, fuzzy
 msgid ""
 "Once the results window appears, filter the view to remove external modules "
 "(such as the graphics driver). You can filter by module by finding a line "
@@ -20692,8 +20518,9 @@ msgstr ""
 "Una vez que aparezca la ventana de resultados, filtra la vista para eliminar "
 "los módulos externos (como el controlador de gráficos). Puedes filtrar por "
 "módulo buscando una línea cuyo **Module** coincida con el nombre del "
-"ejecutable de Godot, haz clic derecho en esa línea y elige **Filter Module "
-"to <Godot executable name>** en el menú desplegable que aparece."
+"ejecutable de Rebel Engine, haz clic secundario en esa línea y elige "
+"**Filter Module to <Rebel Engine executable name>** en el menú desplegable "
+"que aparece."
 
 #: development/engine/using_cpp_profilers.rst:82
 msgid "Your results window should now look something like this:"
@@ -20708,13 +20535,12 @@ msgid "Open HotSpot. Click **Record Data**:"
 msgstr "Abre HotSpot. Haz clic en **Record Data** (Registrar Datos):"
 
 #: development/engine/using_cpp_profilers.rst:93
-#, fuzzy
 msgid ""
 "In the next window, specify the path to the Rebel Engine binary that "
 "includes debug symbols."
 msgstr ""
-"En la siguiente ventana, especifica la ruta al ejecutable de Godot que "
-"incluye los símbolos de depuración."
+"En la siguiente ventana, especifica la ruta al ejecutable de Rebel Engine "
+"que incluye los símbolos de depuración."
 
 #: development/engine/using_cpp_profilers.rst:94
 msgid ""
@@ -20736,7 +20562,6 @@ msgstr ""
 "válida."
 
 #: development/engine/using_cpp_profilers.rst:98
-#, fuzzy
 msgid ""
 "Make sure **Elevate Privileges** is checked if you have administrative "
 "privileges. While not essential for profiling Rebel Engine, this will ensure "
@@ -20745,7 +20570,7 @@ msgid ""
 msgstr ""
 "Asegúrate de que **Elevate Privileges** (Elevar Privilegios) esté marcado si "
 "tienes privilegios administrativos. Aunque no es esencial para perfilar "
-"Godot, esto asegurará que todos los eventos se puedan capturar. De lo "
+"Rebel Engine, esto asegurará que todos los eventos se puedan capturar. De lo "
 "contrario, algunos eventos podrían faltar en la captura. Tus configuraciones "
 "deberían verse algo como esto:"
 
@@ -20845,7 +20670,6 @@ msgstr ""
 "**Instruments** (Instrumentos):"
 
 #: development/engine/using_cpp_profilers.rst:141
-#, fuzzy
 msgid ""
 "In the Time Profiler window, click on the **Target** menu, select **Choose "
 "target…** and specify the path to the Rebel Engine binary, command line "
@@ -20853,8 +20677,9 @@ msgid ""
 msgstr ""
 "En la ventana de **Time Profiler** (Perfilador de Tiempo), haz clic en el "
 "menú **Target** (Objetivo), selecciona **Choose target...** (Elegir "
-"objetivo) y especifica la ruta del ejecutable de Godot, los argumentos de "
-"línea de comandos y las variables de entorno en la siguiente ventana."
+"objetivo) y especifica la ruta del ejecutable de Rebel Engine, los "
+"argumentos de línea de comandos y las variables de entorno en la siguiente "
+"ventana."
 
 #: development/engine/using_cpp_profilers.rst:147
 msgid ""
@@ -20920,7 +20745,6 @@ msgid "About"
 msgstr "Acerca de"
 
 #: development/engine/variant_class.rst:7
-#, fuzzy
 msgid ""
 "Variant is the most important datatype of Rebel Engine, it's the most "
 "important class in the engine. A Variant takes up only 20 bytes and can "
@@ -20928,8 +20752,8 @@ msgid ""
 "hold information for long periods of time, instead they are used mainly for "
 "communication, editing, serialization and generally moving data around."
 msgstr ""
-"La variante (variant) es el tipo de datos más importante de Godot, es la "
-"clase más importante del motor. Una variante ocupa solo 20 bytes y puede "
+"La variante (variant) es el tipo de datos más importante de Rebel Engine, es "
+"la clase más importante del motor. Una variante ocupa solo 20 bytes y puede "
 "almacenar casi cualquier tipo de datos del motor dentro de ella. Las "
 "variantes rara vez se utilizan para almacenar información durante largos "
 "períodos de tiempo, sino que se utilizan principalmente para la "
@@ -20962,12 +20786,11 @@ msgid "Be used to convert safely between datatypes"
 msgstr "Es utilizado para convertir de forma segura entre tipos de datos"
 
 #: development/engine/variant_class.rst:21
-#, fuzzy
 msgid ""
 "Be used to abstract calling methods and their arguments (Rebel Engine "
 "exports all its functions through variants)"
 msgstr ""
-"Es utilizado para abstraer métodos de llamada y sus argumentos (Godot "
+"Es utilizado para abstraer métodos de llamada y sus argumentos (Rebel Engine "
 "exporta todas sus funciones a través de variantes)"
 
 #: development/engine/variant_class.rst:23
@@ -20998,25 +20821,23 @@ msgid "Be used for dictionaries, arrays, parsers, etc."
 msgstr "Puede ser utilizado para diccionarios, arreglos, analizadores, etc."
 
 #: development/engine/variant_class.rst:31
-#, fuzzy
 msgid ""
 "Basically, thanks to the Variant class, writing Rebel Engine itself was a "
 "much, much easier task, as it allows for highly dynamic constructs not "
 "common of C++ with little effort. Become a friend of Variant today."
 msgstr ""
-"Básicamente, gracias a la clase Variant, escribir Godot en sí fue una tarea "
-"mucho, mucho más fácil, ya que permite construcciones altamente dinámicas "
-"que no son comunes en C++ con poco esfuerzo. Conviértete en amigo de Variant "
-"hoy mismo."
+"Básicamente, gracias a la clase Variant, escribir Rebel Engine en sí fue una "
+"tarea mucho, mucho más fácil, ya que permite construcciones altamente "
+"dinámicas que no son comunes en C++ con poco esfuerzo. Conviértete en amigo "
+"de Variant hoy mismo."
 
 #: development/engine/variant_class.rst:37
-#, fuzzy
 msgid ""
 "`core/variant.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
 "variant.h>`__"
 msgstr ""
-"`core/variant.h <https://github.com/godotengine/godot/blob/3.x/core/variant."
-"h>`__"
+"`core/variant.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
+"variant.h>`__"
 
 #: development/engine/variant_class.rst:40
 msgid "Containers: Dictionary and Array"
@@ -21045,21 +20866,20 @@ msgstr ""
 "multihilo."
 
 #: development/engine/variant_class.rst:53
-#, fuzzy
 msgid ""
 "`core/dictionary.h <https://github.com/RebelToolbox/RebelEngine/blob/main/"
 "core/dictionary.h>`__"
 msgstr ""
-"`core/dictionary.h <https://github.com/godotengine/godot/blob/3.x/core/"
-"dictionary.h>`__"
+"`core/dictionary.h <https://github.com/RebelToolbox/RebelEngine/blob/main/"
+"core/dictionary.h>`__"
 
 #: development/engine/variant_class.rst:54
-#, fuzzy
 msgid ""
 "`core/array.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
 "array.h>`__"
 msgstr ""
-"`core/array.h <https://github.com/godotengine/godot/blob/3.x/core/array.h>`__"
+"`core/array.h <https://github.com/RebelToolbox/RebelEngine/blob/main/core/"
+"array.h>`__"
 
 #: development/file_formats/gdscript_grammar.rst:2
 msgid "GDScript grammar"
@@ -21094,19 +20914,17 @@ msgid "TSCN file format"
 msgstr "Formato de archivo TSCN"
 
 #: development/file_formats/tscn.rst:4
-#, fuzzy
 msgid ""
 "The TSCN (text scene) file format represents a single scene tree inside a "
 "Rebel project. Unlike binary SCN files, TSCN files have the advantage of "
 "being mostly human-readable and easy for version control systems to manage."
 msgstr ""
 "El formato de archivo TSCN (escena de texto) representa un solo árbol de "
-"escena dentro de Godot. A diferencia de los archivos binarios SCN, los "
-"archivos TSCN tienen la ventaja de ser principalmente legibles por humanos y "
-"fáciles de gestionar en sistemas de control de versiones."
+"escena dentro del proyecto Rebel. A diferencia de los archivos binarios SCN, "
+"los archivos TSCN tienen la ventaja de ser principalmente legibles por "
+"humanos y fáciles de gestionar en sistemas de control de versiones."
 
 #: development/file_formats/tscn.rst:8
-#, fuzzy
 msgid ""
 "The ESCN (exported scene) file format is identical to the TSCN file format, "
 "but is used to indicate to Rebel Engine that the file has been exported from "
@@ -21117,16 +20935,15 @@ msgid ""
 "compared to text-based formats."
 msgstr ""
 "El formato de archivo ESCN (escena exportada) es idéntico al formato de "
-"archivo TSCN, pero se utiliza para indicar a Godot que el archivo ha sido "
-"exportado desde otro programa y no debe ser editado por el usuario desde "
-"dentro de Godot. A diferencia de los archivos SCN y TSCN, durante la "
+"archivo TSCN, pero se utiliza para indicar a Rebel Engine que el archivo ha "
+"sido exportado desde otro programa y no debe ser editado por el usuario "
+"desde dentro de Godot. A diferencia de los archivos SCN y TSCN, durante la "
 "importación, los archivos ESCN se compilan a archivos SCN binarios que se "
 "almacenan dentro de la carpeta ``.import/``. Esto reduce el tamaño de los "
 "datos y acelera la carga, ya que los formatos binarios se cargan más rápido "
 "en comparación con los formatos basados en texto."
 
 #: development/file_formats/tscn.rst:16
-#, fuzzy
 msgid ""
 "For those looking for a complete description, the parsing is handled in the "
 "`scene/resources/resource_format_text.h <https://github.com/RebelToolbox/"
@@ -21134,9 +20951,9 @@ msgid ""
 "``ResourceFormatLoaderText`` class."
 msgstr ""
 "Para los que buscan una descripción completa, el análisis sintáctico se "
-"maneja en el archivo `resource_format_text.cpp <https://github.com/"
-"godotengine/godot/blob/master/scene/resources/resource_format_text.cpp>`_ en "
-"la clase ``ResourceFormatLoaderText``."
+"maneja en el archivo `scene/resources/resource_format_text.h <https://"
+"github.com/RebelToolbox/RebelEngine/blob/main/scene/resources/"
+"resource_format_text.h>`_ en la clase ``ResourceFormatLoaderText``."
 
 #: development/file_formats/tscn.rst:21
 msgid "File structure"
@@ -21203,7 +21020,6 @@ msgstr ""
 "de todos los recursos externos debe comenzar con ``[ext_resource .....]``."
 
 #: development/file_formats/tscn.rst:43
-#, fuzzy
 msgid ""
 "A TSCN file may contain single-line comments starting with a semicolon (``;"
 "``). However, comments will be discarded when saving the file using the "
@@ -21211,7 +21027,7 @@ msgid ""
 msgstr ""
 "Los archivos TSCN pueden contener comentarios de una sola línea que empiezan "
 "con un punto y coma (``;``). Sin embargo, los comentarios serán descartados "
-"cuando se guarde el archivo usando el editor de Godot."
+"cuando se guarde el archivo usando el editor de Rebel Editor."
 
 #: development/file_formats/tscn.rst:47
 msgid "Entries inside the file"
@@ -21297,7 +21113,6 @@ msgid "``groups``"
 msgstr "``groups``"
 
 #: development/file_formats/tscn.rst:83
-#, fuzzy
 msgid ""
 "The first node in the file, which is also the scene root, must not have a "
 "``parent=Path/To/Node`` entry in its heading. All scene files should have "
@@ -21310,11 +21125,11 @@ msgstr ""
 "El primer nodo en el archivo, que también es la raíz de la escena, no debe "
 "tener una entrada ``parent=Path/To/Node`` en su encabezado. Todos los "
 "archivos de escena deben tener exactamente *una* raíz de escena. Si no la "
-"tiene, Godot no podrá importar el archivo. La ruta del padre de otros nodos "
-"debe ser absoluta, pero no debe contener el nombre de la raíz de la escena. "
-"Si el nodo es un hijo directo de la raíz de la escena, la ruta debe ser ``\"."
-"\"``. Aquí tienes un ejemplo del árbol de escena (pero sin contenido de "
-"nodos):"
+"tiene, Rebel Engine no podrá importar el archivo. La ruta del padre de otros "
+"nodos debe ser absoluta, pero no debe contener el nombre de la raíz de la "
+"escena. Si el nodo es un hijo directo de la raíz de la escena, la ruta debe "
+"ser ``\".\"``. Aquí tienes un ejemplo del árbol de escena (pero sin "
+"contenido de nodos):"
 
 #: development/file_formats/tscn.rst:99
 msgid ""
@@ -21327,7 +21142,6 @@ msgstr ""
 "guardar un archivo con ese nodo en él. Algunos ejemplos de nodos son:"
 
 #: development/file_formats/tscn.rst:140
-#, fuzzy
 msgid ""
 "A tree structure is not enough to represent the whole scene. Rebel Engine "
 "uses a ``NodePath(Path/To/Node)`` structure to refer to another node or "
@@ -21336,11 +21150,11 @@ msgid ""
 "``NodePath()`` to point to node properties to animate."
 msgstr ""
 "Una estructura de árbol no es suficiente para representar toda la escena. "
-"Godot utiliza una estructura de ``NodePath(Path/To/Node)`` para hacer "
+"Rebel Engine utiliza una estructura de ``NodePath(Path/To/Node)`` para hacer "
 "referencia a otro nodo o atributo del nodo en cualquier lugar del árbol de "
 "la escena. Por ejemplo, MeshInstance utiliza ``NodePath()`` para apuntar a "
-"su esqueleto. Del mismo modo, las pistas de animación utilizan "
-"``NodePath()`` para apuntar a propiedades del nodo a animar."
+"su esqueleto. Del mismo modo, las pistas de animación utilizan ``NodePath()"
+"`` para apuntar a propiedades del nodo a animar."
 
 #: development/file_formats/tscn.rst:165
 msgid "Skeleton"
@@ -21502,22 +21316,20 @@ msgstr ""
 "y un ID."
 
 #: development/file_formats/tscn.rst:282
-#, fuzzy
 msgid ""
 "Rebel Engine always generates absolute paths relative to the resource "
 "directory and thus prefixed with ``res://``, but paths relative to the TSCN "
 "file's location are also valid."
 msgstr ""
-"Godot siempre genera rutas absolutas relativas al directorio de recursos y, "
-"por lo tanto, se les agrega el prefijo ``res://``, pero las rutas relativas "
-"a la ubicación del archivo TSCN también son válidas."
+"Rebel Engine siempre genera rutas absolutas relativas al directorio de "
+"recursos y, por lo tanto, se les agrega el prefijo ``res://``, pero las "
+"rutas relativas a la ubicación del archivo TSCN también son válidas."
 
 #: development/file_formats/tscn.rst:286
 msgid "Some example external resources are:"
 msgstr "Algunos ejemplos de recursos externos son:"
 
 #: development/file_formats/tscn.rst:294
-#, fuzzy
 msgid ""
 "Like TSCN files, a TRES file may contain single-line comments starting with "
 "a semicolon (``;``). However, comments will be discarded when saving the "
@@ -21526,7 +21338,7 @@ msgstr ""
 "Como los archivos TSCN, un archivo TRES puede contener comentarios de una "
 "sola línea que comienzan con un punto y coma (``;``). Sin embargo, los "
 "comentarios serán descartados al guardar el recurso utilizando el editor de "
-"Godot."
+"Rebel Editor."
 
 #: development/file_formats/tscn.rst:301
 msgid ""
@@ -21556,7 +21368,6 @@ msgstr ""
 "orden es importante en la sección de recursos internos del archivo."
 
 #: development/file_formats/tscn.rst:320
-#, fuzzy
 msgid ""
 "Unfortunately, documentation on the formats for these subresources isn't "
 "complete. Some examples can be found by inspecting saved resource files, but "
@@ -21565,7 +21376,7 @@ msgstr ""
 "Lamentablemente, la documentación sobre los formatos de estos subrecursos no "
 "está completa. Algunos ejemplos se pueden encontrar inspeccionando archivos "
 "de recursos guardados, pero otros solo se pueden encontrar revisando el "
-"código fuente de Godot."
+"código fuente de Rebel Engine."
 
 #: development/file_formats/tscn.rst:325
 #: tutorials/3d/procedural_geometry/arraymesh.rst:77
@@ -46224,14 +46035,13 @@ msgstr ""
 "menudo, es difícil encontrar software convencional destinado a esto."
 
 #: tutorials/animation/2d_skeletons.rst:11
-#, fuzzy
 msgid ""
 "One option is to create animations in third-party software such as Spine or "
 "Dragonbones. In Rebel Engine this functionality is built-in!"
 msgstr ""
 "Una opción es crear animaciones en software de terceros como Spine o "
-"Dragonbones. A partir de Godot 3.1, sin embargo, esta funcionalidad es "
-"soportada de forma integrada."
+"Dragonbones. ¡A partir de Godot 3.1, sin embargo, esta funcionalidad es "
+"soportada de forma integrada!"
 
 #: tutorials/animation/2d_skeletons.rst:14
 #, fuzzy
