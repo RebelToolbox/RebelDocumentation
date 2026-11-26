@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Rebel Documentation 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/RebelToolbox/RebelDocumentation\n"
 "POT-Creation-Date: 2026-11-14 04:29+0000\n"
-"PO-Revision-Date: 2026-11-25 22:51+0000\n"
+"PO-Revision-Date: 2026-11-26 20:20+0000\n"
 "Last-Translator: fserrador <fserrador@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/rebel-toolbox/"
 "rebel-documentation/es/>\n"
@@ -358,9 +358,8 @@ msgstr ""
 "una copia de la licencia en"
 
 #: about/complying_with_licenses.rst:148
-#, fuzzy
 msgid "https://www.apache.org/licenses/LICENSE-2.0"
-msgstr "http://www.apache.org/licenses/LICENSE-2.0"
+msgstr "https://www.apache.org/licenses/LICENSE-2.0"
 
 #: about/complying_with_licenses.rst:150
 msgid ""
@@ -377,16 +376,15 @@ msgstr ""
 "de la Licencia."
 
 #: about/complying_with_licenses.rst:158
-#, fuzzy
 msgid ""
 "If you exported your project using a :doc:`custom build with specific "
 "modules disabled </development/compiling/optimizing_for_size>`, you don't "
 "need to list the disabled modules' licenses in your exported project."
 msgstr ""
-"Si exportó su proyecto usando una :ref:`compilación personalizada con "
-"módulos específicos deshabilitados <doc_optimizing_for_size>`, no necesita "
-"enumerar las licencias de los módulos deshabilitados en su proyecto "
-"exportado."
+"Si exportó su proyecto usando una :doc:`compilación personalizada con "
+"módulos específicos inhabilitados </development/compiling/"
+"optimizing_for_size>``, no necesita enumerar las licencias de los módulos "
+"deshabilitados en su proyecto exportado."
 
 #: about/faq.rst:-1
 msgid "FAQ"
@@ -826,7 +824,6 @@ msgid "What type of 3D model formats does Rebel Engine support?"
 msgstr "¿Qué tipo de formatos para modelos 3D soporta Rebel Engine?"
 
 #: about/faq.rst:146
-#, fuzzy
 msgid ""
 "Rebel Engine supports Collada via the `OpenCollada <https://github.com/"
 "KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`__ exporter (Maya, 3DSMax). "
@@ -834,9 +831,10 @@ msgid ""
 "github.com/godotengine/collada-exporter>`__."
 msgstr ""
 "Rebel Engine admite Collada a través del exportador `OpenCollada <https://"
-"github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ (Maya, 3DS Max)"
-". Si estás usando Blender, echa un vistazo a nuestro `Exportador mejorado de "
-"Collada <https://github.com/godotengine/collada-exporter>`_ de Godot."
+"github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`__ (Maya, 3DS "
+"Max). Si estás usando Blender, echa un vistazo a nuestro `Exportador "
+"mejorado de Collada <https://github.com/godotengine/collada-exporter>`_ de "
+"Godot."
 
 #: about/faq.rst:149
 msgid "glTF is supported."
@@ -861,7 +859,6 @@ msgstr ""
 "por Rebel Engine?"
 
 #: about/faq.rst:157
-#, fuzzy
 msgid ""
 "The aim of Rebel Toolbox is to create a free and open-source MIT-licensed "
 "software that is modular and extendable. There are no plans for Rebel "
@@ -872,7 +869,7 @@ msgstr ""
 "código abierto que sea modular y ampliable. No hay planes para que la "
 "comunidad central de desarrollo de motores admita ningún SDK de código "
 "cerrado/propietario de terceros, ya que la integración con ellos iría en "
-"contra del espíritu de Rebel Engine."
+"contra del espíritu de Rebel Toolbox."
 
 #: about/faq.rst:161
 msgid ""
@@ -1349,11 +1346,9 @@ msgid "When is the next release of Rebel Engine out?"
 msgstr "¿Cuándo sale la próxima versión de Rebel Engine?"
 
 #: about/faq.rst:351
-#, fuzzy
 msgid "When it's ready! See :doc:`release_policy` for more information."
 msgstr ""
-"¡Cuando esté lista! Vea :ref:`doc_release_policy_when_is_next_release_out` "
-"para más información."
+"¡Cuando esté lista! Consulte :doc:`release_policy` para más información."
 
 #: about/faq.rst:355
 msgid "I would like to contribute! How can I get started?"
@@ -1590,7 +1585,8 @@ msgstr ""
 "Este kit de herramientas de interfaz de usuario :ref:`no puede usarse como "
 "biblioteca <about/faq:Is it possible to use Rebel Engine as a library?>`, "
 "pero sí puedes :ref:`utilizar Rebel Engine para crear aplicaciones que no "
-"son juegos mediante el uso del editor <doc_faq_non_game_applications>`."
+"son juegos mediante el uso del editor <about/faq:¿Es posible utilizar Rebel "
+"Engine para crear applications distintas del juego?>`"
 
 #: about/faq.rst:445
 msgid "Why does Rebel Engine not use STL (Standard Template Library)?"
@@ -1748,9 +1744,8 @@ msgid "How can I support Rebel Engine development or contribute?"
 msgstr "¿Cómo puedo apoyar el desarrollo de Rebel Engine o contribuir?"
 
 #: about/faq.rst:499
-#, fuzzy
 msgid "See :doc:`/contributing/ways_to_contribute`."
-msgstr "Mira :ref:`doc_ways_to_contribute`."
+msgstr "Consulte :doc:`/contributing/ways_to_contribute`."
 
 #: about/list_of_features.rst:2
 msgid "List of features"
@@ -1821,18 +1816,16 @@ msgid "iOS 10.0 and later."
 msgstr "iOS 10.0 y posteriores."
 
 #: about/list_of_features.rst:32
-#, fuzzy
 msgid ":doc:`Consoles </tutorials/platforms/consoles>`."
-msgstr ":ref:`Consolas <doc_consoles>`."
+msgstr ":doc:`Consolas </tutorials/platforms/consoles>`."
 
 #: about/list_of_features.rst:33
-#, fuzzy
 msgid ""
 ":doc:`Headless Linux and macOS servers </tutorials/export/"
 "exporting_for_dedicated_servers>`."
 msgstr ""
-":ref:`Servidores Linux y macOS sin cabeza (headless) "
-"<doc_exporting_for_dedicated_servers>`."
+":doc:`Servidores Linux y macOS sin cabeza (headless) </tutorials/export/"
+"exporting_for_dedicated_servers>`"
 
 #: about/list_of_features.rst:35
 msgid ""
@@ -1862,18 +1855,16 @@ msgid "Built-in script editor."
 msgstr "Editor de scripts integrado."
 
 #: about/list_of_features.rst:45
-#, fuzzy
 msgid ""
 "Support for :doc:`external script editors </tutorials/editor/"
 "external_editor>` such as Visual Studio Code or Vim."
 msgstr ""
-"Soporte para :ref:`editores externos de código <doc_external_editor_>`tal "
-"como Visual Studio Code o Vim."
+"Asistencia para :doc:`editores externos de código </tutorials/editor/"
+"external_editor>` tales como Visual Studio Code o Vim."
 
 #: about/list_of_features.rst:47
-#, fuzzy
 msgid "GDScript :doc:`debugger </tutorials/scripting/debug/debugger_panel>`."
-msgstr "GDScript :ref:`depurador <doc_debugger_panel>`."
+msgstr ":doc:`Depurador GDScript </tutorials/scripting/debug/debugger_panel>`."
 
 #: about/list_of_features.rst:49
 msgid "No support for debugging in threads yet."
@@ -1929,14 +1920,15 @@ msgid "**Plugins:**"
 msgstr "**Plugins:**"
 
 #: about/list_of_features.rst:68
-#, fuzzy
 msgid ""
 "Editor plugins are used to extend editor functionality. :doc:`Create your "
 "own plugins </tutorials/plugins/editor/making_plugins>` using GDScript to "
 "add new features or speed up your workflow."
 msgstr ""
-":ref:` Crea tus propios plugins <doc_making_plugins>` usando GDScript para "
-"añadir nuevas características o acelerar tu flujo de trabajo."
+"Complementos de editor son utilizados para ampliar la funcionalidad del "
+"editor. :doc:`Crea tus propios plugins </tutorials/plugins/editor/"
+"making_plugins>` usando GDScript para añadir características nuevas o "
+"acelerar tu flujo de trabajo."
 
 #: about/list_of_features.rst:72
 msgid "2D graphics"
@@ -2009,13 +2001,12 @@ msgstr ""
 "Fuentes de Bitmap pueden ser exportadas usando herramientas como BMFont."
 
 #: about/list_of_features.rst:102
-#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF and WOFF1."
 msgstr ""
-"DynamicFont soporta fuentes monocromáticas así como fuentes de color (p. ej. "
-"para emoji). Los formatos soportados son TTF, OTF, WOFF1 y WOFF2."
+"DynamicFont admite fuentes monocromáticas así como fuentes de color (p. ej. "
+"para emoji). Los formatos admitidos son TTF, OTF, y WOFF1."
 
 #: about/list_of_features.rst:104
 msgid ""
@@ -2224,7 +2215,6 @@ msgid "*GLES3:* Sub-surface scattering and transmittance."
 msgstr "* GLES3: * Transmitancia y dispersión subsuperficial."
 
 #: about/list_of_features.rst:175
-#, fuzzy
 msgid ""
 "*GLES3:* Refraction with support for material roughness (resulting in blurry "
 "refraction). On GLES2, refraction is still functional but lacks support for "
@@ -2429,7 +2419,6 @@ msgid "*GLES3:* Near and far depth of field."
 msgstr "*GLES3:* Profundidad de campo cercana y lejana."
 
 #: about/list_of_features.rst:243
-#, fuzzy
 msgid "*GLES3:* Screen-space ambient occlusion."
 msgstr "*GLES3:* Oclusión ambiental del espacio en pantalla (SSAO)."
 
@@ -2509,26 +2498,24 @@ msgid "**Performance:**"
 msgstr "**Rendimiento:**"
 
 #: about/list_of_features.rst:269
-#, fuzzy
 msgid ""
 "Occlusion culling with :doc:`rooms and portals </tutorials/3d/portals/"
 "index>`. Supports gameplay notifications with primary and secondary "
 "visibility to disable AI/physics processing for nodes that don't need it."
 msgstr ""
-"Occlusion culling con :ref:`salas y portales <doc_rooms_and_portals>`. Es "
-"compatible con notificaciones de gameplay de visibilidad primaria y "
-"secundaria para deshabilitar la IA/cálculo físico para nodos que no los "
-"necesitan."
+"Eliminación de oclusiones con :doc:`salas y portales </tutorials/3d/portals/"
+"index>`. Es compatible con notificaciones de jugabilidad de visibilidad "
+"primaria y secundaria para deshabilitar la IA/cálculo físico para nodos que "
+"no los necesitan."
 
 #: about/list_of_features.rst:272
-#, fuzzy
 msgid ""
 "Real-time occluder spheres. Not as effective as rooms and portals (and "
 "doesn't support gameplay notifications), but easier to set up."
 msgstr ""
-"Formas ocluidas a tiempo real (esferas y polígonos). No tan efectivo como "
-"habitaciones y portales (tampoco soporta notificaciones en la jugabilidad), "
-"pero más sencillo de configurar."
+"Esferas ocluidas a tiempo real. No tan efectivo como habitaciones y portales "
+"(tampoco soporta notificaciones en la jugabilidad), pero más sencillo de "
+"configurar."
 
 #: about/list_of_features.rst:277
 msgid ""
@@ -30577,16 +30564,15 @@ msgid "Available scripting languages"
 msgstr "Lenguajes de scripting disponibles"
 
 #: getting_started/step_by_step/scripting_languages.rst:24
-#, fuzzy
 msgid ""
 "Rebel Engine offers **five gameplay programming languages**: GDScript, C#, "
 "VisualScript, and, via its GDNative technology, C and C++. There are more :"
 "ref:`community-supported languages <tutorials/scripting/gdnative/"
 "what_is_gdnative:version compatibility>`, but these are the official ones."
 msgstr ""
-"Godot ofrece **cinco lenguajes de programación de juegos**: GDScript, C#, "
-"VisualScript y C++ y C a través de su tecnología GDNative. Hay más :ref:"
-"`lenguajes admitidos por la comunidad "
+"Godot ofrece **cinco lenguajes de programación de jugabilidad**: GDScript, "
+"C#, VisualScript y C++ y C a través de su tecnología GDNative. Hay más "
+":ref:`lenguajes admitidos por la comunidad "
 "<doc_what_is_gdnative_third_party_bindings>`, pero estos son los oficiales."
 
 #: getting_started/step_by_step/scripting_languages.rst:29
@@ -40154,7 +40140,6 @@ msgstr ""
 "con la jugabilidad."
 
 #: tutorials/3d/portals/advanced_room_and_portal_usage.rst:13
-#, fuzzy
 msgid ""
 "The gameplay area is not confined to just the objects you can see in front "
 "of you. AI monsters behind you still need to attack you when your back is "
@@ -55943,13 +55928,12 @@ msgstr ""
 "suceden las transiciones del juego."
 
 #: tutorials/best_practices/scene_organization.rst:282
-#, fuzzy
 msgid ""
 "The next step is to consider what gameplay systems one's project requires. "
 "If one has a system that…"
 msgstr ""
-"El siguiente paso es considerar qué sistemas de juego se requieren. Si uno "
-"tiene un sistema que..."
+"El siguiente paso es considerar qué sistemas de jugabilidad se requieren. Si "
+"uno tiene un sistema que…"
 
 #: tutorials/best_practices/scene_organization.rst:285
 msgid "tracks all of its data internally"
